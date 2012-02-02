@@ -280,7 +280,7 @@ window.Specs = {
 		"properties": {
 			"transform-style": ["flat", "preserve-3d"],
 			"perspective": ["none", "0", "600px"],
-			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%" "right 10px bottom 20px"],
+			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"],
 			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "left 0% 10px"],
 			"backface-visibility": ["visible", "hidden"],
 			"transform": [
