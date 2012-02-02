@@ -284,11 +284,11 @@ window.Specs = {
 			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "left 0% 10px"],
 			"backface-visibility": ["visible", "hidden"],
 			"transform": [
-				"translate(0, 0, 5px)", "translateZ(5px)",
+				"translate3d(0, 0, 5px)", "translateZ(5px)",
 				"scale3d(1, 0, -1)", "scaleZ(1.5)",
 				"rotate3d(1, 1, 1, 45deg)", "rotateX(-45deg)", "rotateY(-45deg)", "rotateZ(-45deg)",
 				"matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "matrix3d(0,0,0,0,0,0,0,0,0,0,1,0,10,10,0,1)",
-				"translate(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
+				"translate3d(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
 				"perspective(600px)"
 			]
 		}
@@ -423,10 +423,13 @@ window.Specs = {
 			],
 			"rem": "5rem",
 			"ch": "5ch",
-			"vh": "5vh",
 			"vw": "5vw",
+			"vh": "5vh",
+			"vmin": "5vmin",
 			"attr()": "attr(data-px)",
-			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)"],
+			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
+			"min()": ["min(10px, 3em)", "min(10% + 20px, 300px)"],
+			"max()": ["max(30px, 3em)", "max(10% + 20px, 300px)"],
 			"cycle()": "cycle(1px, 2x)"
 		}
 	}
