@@ -340,7 +340,7 @@ onload = function() {
 			timeTaken.textContent = +new Date - timeBefore + 'ms';
 			
 			// Send to Browserscope
-			var testKey = 'agt1YS1wcm9maWxlcnINCxIEVGVzdBjk97ENDA';
+			var testKey = 'agt1YS1wcm9maWxlcnINCxIEVGVzdBidzawNDA';
 			
 			_bTestResults['Overall'] = mainScore.percent();
 			  
