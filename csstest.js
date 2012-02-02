@@ -170,7 +170,7 @@ Test.prototype = {
 			thisSection.appendChild(dl);
 			
 			// Add to browserscope
-			_bTestResults[this.id + ' / ' + feature] = 100 * Math.round(passed / tests.length);
+			_bTestResults[this.id + ' / ' + feature.replace(/[,=]/g, '')] = Math.round(100 * passed / tests.length);
 		}
 	}
 }
