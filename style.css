@@ -259,6 +259,8 @@ aside {
 			
 footer {
 	margin-left: 65%;
+	font-size: 85%;
+	word-spacing: -1px;
 }
 
 	footer > p {
