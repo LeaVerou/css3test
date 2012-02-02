@@ -224,7 +224,7 @@ window.Specs = {
 		"title": "Transitions",
 		"properties": {
 			"transition-property": ["none", "all", "width", "width, height"],
-			"transition-duration": ["0s", "1s", "100ms"],
+			"transition-duration": ["0s", "1s", "100ms", "-1s"],
 			"transition-timing-function": [
 				"ease", "linear", "ease-in", "ease-out", "ease-in-out",
 				"cubic-bezier(.5, .5, .5, .5)",
@@ -240,7 +240,7 @@ window.Specs = {
 		"title": "Animations",
 		"properties": {
 			"animation-name": ["foo", "foo, bar"],
-			"animation-duration": ["0s", "1s", "100ms"],
+			"animation-duration": ["0s", "1s", "100ms", "-1s"],
 			"animation-timing-function": [
 				"ease", "linear", "ease-in", "ease-out", "ease-in-out",
 				"cubic-bezier(.5, .5, .5, .5)",
@@ -265,11 +265,13 @@ window.Specs = {
 			"transform": [
 				"none",
 				"translate(5px)", "translate(5px, 10px)", "translateY(5px)", "translateX(5px)", "translateY(5%)", "translateX(5%)",
-				"scale(2)", "scale(2, -1)", "scaleX(2)", "scaleY(2)",
-				"rotate(45deg)", "skewX(45deg)", "skewY(45deg)",
-				"matrix(1,-.2,0,1,0,0)"
+				"scale(2)", "scale(2, -1)", "scaleX(2)", "scaleY(2.5)",
+				"rotate(45deg)",
+				"skew(45deg)", "skew(45deg, 15deg)", "skewX(45deg)", "skewY(45deg)",
+				"matrix(1,-.2,0,1,0,0)", "matrix(1,-.2,0,1,10,10)",
+				"translate(50px, -24px) rotate(180deg) scale(.5) skew(0, 22.5deg)"
 			],
-			"transform-origin": ["top left", "50% 100%", "right 10px bottom 20px"]
+			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"]
 		}
 	},
 	
@@ -278,13 +280,16 @@ window.Specs = {
 		"properties": {
 			"transform-style": ["flat", "preserve-3d"],
 			"perspective": ["none", "0", "600px"],
-			"perspective-origin": ["top left", "50% 100%", "right 10px bottom 20px"],
+			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%" "right 10px bottom 20px"],
+			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "left 0% 10px"],
 			"backface-visibility": ["visible", "hidden"],
 			"transform": [
-				"matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "translateZ(5px)",
+				"translate(0, 0, 5px)", "translateZ(5px)",
 				"scale3d(1, 0, -1)", "scaleZ(1.5)",
-				"rotate3d(1, 1, 1, 45deg)", "rotateZ(-45deg)",
-				"perspective(600)"
+				"rotate3d(1, 1, 1, 45deg)", "rotateX(-45deg)", "rotateY(-45deg)", "rotateZ(-45deg)",
+				"matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "matrix3d(0,0,0,0,0,0,0,0,0,0,1,0,10,10,0,1)",
+				"translate(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
+				"perspective(600px)"
 			]
 		}
 	},
