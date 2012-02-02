@@ -423,10 +423,13 @@ window.Specs = {
 			],
 			"rem": "5rem",
 			"ch": "5ch",
-			"vh": "5vh",
 			"vw": "5vw",
+			"vh": "5vh",
+			"vmin": "5vmin",
 			"attr()": "attr(data-px)",
-			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)"],
+			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
+			"min()": ["min(10px, 3em)", "min(10% + 20px, 300px)"],
+			"max()": ["max(30px, 3em)", "max(10% + 20px, 300px)"],
 			"cycle()": "cycle(1px, 2x)"
 		}
 	}
