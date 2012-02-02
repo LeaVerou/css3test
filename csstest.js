@@ -347,7 +347,7 @@ onload = function() {
 			$u.element.create({
 				tag: 'script',
 				properties: {
-					src: 'http://www.browserscope.org/user/beacon/' + testKey
+					src: '//www.browserscope.org/user/beacon/' + testKey
 				},
 				inside: $('head')
 			});
