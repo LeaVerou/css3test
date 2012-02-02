@@ -10,6 +10,7 @@ var dummy = document.createElement('_'),
 document.documentElement.appendChild(style);
 dummy.setAttribute('data-foo', 'bar');
 dummy.setAttribute('data-px', '1px');
+document.documentElement.appendChild(dummy);
 
 var _ = window.Supports = {
 	prefixes: ['', '-moz-', '-webkit-', '-o-', '-ms-', 'ms-', '-khtml-'],
