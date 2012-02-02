@@ -421,7 +421,7 @@ window.Specs = {
 			"vh": "5vh",
 			"vw": "5vw",
 			"attr()": "attr(data-px)",
-			"calc()": ["calc(1px+2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)"],
+			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)"],
 			"cycle()": "cycle(1px, 2x)"
 		}
 	}
