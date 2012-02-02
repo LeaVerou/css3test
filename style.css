@@ -1,0 +1,268 @@
+body {
+	max-width: 60em;
+	padding: 1em;
+	margin: auto;
+	background: url(http://dabblet.com/img/noise.png) hsl(24, 20%, 95%);
+	font: 100%/1.5 sans-serif;
+	text-shadow: 0 1px white;
+}
+
+a {
+	color: hsl(200, 10%, 20%);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+h1, h2 {
+	margin: 1em 0 .5em;
+	font-weight: normal;
+	line-height: 1;
+}
+
+	body > section section section h1 {
+		font-size: 200%;
+	}
+	
+	section section section section h1 {
+		color: hsla(200, 10%, 20%, .5);
+		font-size: 120%;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+	
+		h1 > .score {
+			float: right;
+			font-weight: bold;
+		}
+		
+		h1 > .spec-link {
+			display: inline-block;
+			padding: .3em .4em;
+			margin: 0 0 0 .3em;
+			font-size: 50%;
+			background: hsl(200, 10%, 20%);
+			color: white;
+			border-radius: .3em;
+			vertical-align: middle;
+			text-shadow: 0 .1em .1em black;
+		}
+		
+		h1 > .spec-link:hover {
+			background: #f06;
+		}
+
+body > h1 {
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: .5em 1em;
+	background: hsl(200, 10%, 20%);
+	box-shadow: -2px 2px 10px rgba(0,0,0,.5);
+	color: white;
+	font-size: 150%;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 .1em .1em black;
+	
+	-webkit-transform:  rotate(-90deg) translateX(-100%);
+	-webkit-transform-origin: top left;
+	-moz-transform:  rotate(-90deg) translateX(-100%);
+	-moz-transform-origin: top left;
+	-ms-transform:  rotate(-90deg) translateX(-100%);
+	-ms-transform-origin: top left;
+	-o-transform:  rotate(-90deg) translateX(-100%);
+	-o-transform-origin: top left;
+	transform:  rotate(-90deg) translateX(-100%);
+	transform-origin: top left;
+}
+
+#mark img {
+	position: fixed;
+	left: 10px;
+	top: 230px;
+	width: 50px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+	
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+
+#tests {
+	float: left;
+	width: 65%;
+	margin-right: 2em;
+}
+
+	#tests hgroup {
+		text-align: center;
+	}
+	
+		#tests > hgroup > h1 {
+			font-size: 250%;
+		}
+	
+			#tests h1 > strong {
+				display: block;
+				margin-top: .1em;
+				font-size: 500%;
+				line-height: .7;
+			}
+		
+		#tests h2 {
+			font-size: 80%;
+		}
+
+dl {
+	margin: .3em 0;
+	font: 100% Monaco, Consolas, monospace;
+}
+
+	dl dl {
+		margin:0;
+	}
+
+dt, dd[class] {
+	padding: .5em;
+	background: gray;
+	color: white;
+	border-radius: .3em;
+	text-shadow: 0 -.05em .1em rgba(0,0,0,.5);
+}
+
+dt {
+	cursor: pointer;
+}
+
+dd {
+	margin: .3em 0 .3em 2em;
+	font-size: 90%;
+}
+
+	dd dd {
+		border: 1px solid white;
+	}
+	
+	dd small {
+		display: block;
+		opacity: .8;
+	}
+	
+dl .pass,
+#specsTested li.pass:before {
+	background-color: #490;
+}
+
+dl .almost-pass,
+#specsTested li.almost-pass:before {
+	background-color: #8c0;
+}
+
+dl .slightly-buggy,
+#specsTested li.slightly-buggy:before {
+	background-color: #bb0;
+}
+
+dl .buggy,
+#specsTested li.buggy:before {
+	background-color: #e80;
+}
+
+dl .very-buggy,
+#specsTested li.very-buggy:before {
+	background-color: #e40;
+}
+
+dl .fail,
+#specsTested li.fail:before {
+	background-color: #e20;
+}
+
+dl .epic-fail,
+#specsTested li.epic-fail:before {
+	background-color: #b00;
+}
+
+dt:before {
+	content: '▶';
+	display: inline-block;
+	margin-right: .5em;
+	font-size: 60%;
+	opacity: .5;
+}
+
+dl.open > dt:before {
+	content: '▼';
+}
+
+dl > dd {
+	display: none;
+}
+
+dl.open > dd {
+	display: block;
+}
+
+aside {
+	font-size: 85%;
+}
+
+	aside section {
+		margin-left: 65%;
+	}
+	
+	aside .caution p {
+		padding: 1em;
+		margin-left: 2em;
+		background: hsl(200, 10%, 20%);
+		color: white;
+		text-shadow: 0 -.1em .2em black;
+	}
+	
+		aside h1 {
+			font-size: 150%;
+		}
+	
+		aside ul {
+			margin: .5em 0;
+			padding: 0 0 0 2em;
+		}
+	
+			aside li {
+				list-style: none;
+				padding: .3em 0;
+				border-bottom: 2px dotted rgba(0,0,0,.25);
+				border-top: 2px dotted white;
+			}
+			
+			aside li:first-child {
+				border-top: none;
+			}
+			
+			aside li:last-child {
+				border-bottom: none;
+			}
+			
+			#specsTested li:before {
+				content: '';
+				display: inline-block;
+				width: 1.2em;
+				height: 1.2em;
+				margin-right: .5em;
+				border-radius: 50%;
+				box-shadow: 0 2px white;
+			}
+			
+footer {
+	margin-left: 65%;
+}
+
+	footer > p {
+		margin-left: 2em;
+		padding: 1em 0;
+		border-top: 1px solid hsl(200, 10%, 20%);
+		text-align: center;
+	}

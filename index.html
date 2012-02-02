@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<title>CSS browser support tests</title>
+<link rel="stylesheet" href="style.css" />
+
+<script>var _gaq = [['_setAccount', 'UA-28874455-1'], ['_trackPageview']];</script>
+<script src="http://www.google-analytics.com/ga.js" async></script>
+
+</head>
+<body>
+
+<h1>The CSS3 test</h1>
+
+<section id="tests">
+	<hgroup>
+		<h1>Your browser scores <strong id="score">0%</strong></h1>
+		<h2>Determined by passing <strong id="passedTests"></strong> tests out of <strong id="totalTests"></strong> total for <strong id="total"></strong> features</h2>
+	</hgroup>
+	
+	<section id="all"></section>
+</section>
+
+<aside>
+	<section class="caution">
+		<p><strong>Caution:</strong> 
+		This test checks which CSS3 features the browser <em>recognizes</em>, whether they are implemented correctly or not.</p>
+	</section>
+	
+	<p>Time taken: <strong id="timeTaken"></strong></p>
+	<section>
+		<h1>Specs tested:</h1>
+		<ul id="specsTested"></ul>
+		Want more tests? <a href="https://github.com/LeaVerou/css3test" target="_blank">Be my guest!</a>
+	</section>
+	
+	<section>
+		<h1>Cheaters</h1>
+		<ul>
+			<li>WebKit claims to support CSS3 background-repeat, but it’s LYING</li>
+		</ul>
+	</section>
+</aside>
+
+<footer>
+	<a id="mark" href="http://lea.verou.me"><img src="http://lea.verou.me/mark.svg" title="Lea Verou was here" /></a>
+	<p>Handcrafted by <a href="http://lea.verou.me">Lea Verou</a></p>
+</footer>
+
+<script src="utopia.js"></script>
+<script src="supports.js"></script>
+<script src="csstest.js"></script>
+<script src="tests.js"></script>
+
+</body>
+</html>
