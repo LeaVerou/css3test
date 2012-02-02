@@ -21,7 +21,11 @@ Score.prototype = {
 	},
 	
 	toString: function() {
-		return Math.round(100 * this.passed / this.total) + '%';
+		return this.percent() + '%';
+	},
+	
+	percent: function() {
+		return Math.round(100 * this.passed / this.total);
 	}
 };
 
@@ -337,6 +341,8 @@ onload = function() {
 			
 			// Send to Browserscope
 			var testKey = 'agt1YS1wcm9maWxlcnINCxIEVGVzdBjk97ENDA';
+			
+			_bTestResults['Overall'] = mainScore.percent();
 			  
 			$u.element.create({
 				tag: 'script',
