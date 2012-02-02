@@ -252,6 +252,7 @@ aside {
 				width: 1.2em;
 				height: 1.2em;
 				margin-right: .5em;
+				vertical-align: -.2em;
 				border-radius: 50%;
 				box-shadow: 0 2px white;
 			}
