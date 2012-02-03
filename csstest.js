@@ -79,6 +79,9 @@ var Test = function (tests, spec, title) {
 		this.group(id, Test.groups[id]);
 	}
 	
+	// Add overall spec score to BrowserScope
+	_bTestResults[this.id] = mainScore.percent();
+	
 	// Display score for this spec
 	$u.element.create({
 		tag: 'span',
