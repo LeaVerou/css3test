@@ -22,7 +22,7 @@ window.Specs = {
 			"border-image-outset": ["10px", "20", "10px 20", "10px 20px", "20 30", "2px 3px 4", "1 2px 3px 4"],
 			"border-image-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
 			"border-image": [
-				"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill", 
+				"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill",
 				"url(foo.png) 10 round", "url(foo.png) 10 stretch repeat",
 				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10px / 10%",
 				"url(foo.png) fill 10 / 10px / 10%", "url(foo.png) fill 10 / 10px / 10% space"
@@ -34,7 +34,7 @@ window.Specs = {
 			]
 		}
 	},
-	
+
 	"css3-images": {
 		"title": "Image Values and Replaced Content",
 		"values": {
@@ -45,7 +45,7 @@ window.Specs = {
 				"border-image",
 				"cursor",
 				"content"
-				
+
 			],
 			"linear-gradient": [
 				"linear-gradient(white, black)",
@@ -87,7 +87,7 @@ window.Specs = {
 			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad"]
 		}
 	},
-	
+
 	"css3-selectors": {
 		"title": "Selectors",
 		"selectors": {
@@ -110,28 +110,28 @@ window.Specs = {
 				":nth-child(even)", ":nth-child(odd)",
 				":nth-child(n)", ":nth-child(-n)", ":nth-child(0n)",
 				":nth-child(1)", ":nth-child(-1)", ":nth-child(0)",
-				":nth-child(n+1)",":nth-child(3n+1)", ":nth-child(3n + 1)",
+				":nth-child(n+1)", ":nth-child(3n+1)", ":nth-child(3n + 1)",
 				":nth-child(-n+1)", ":nth-child(-n-1)", ":nth-child(3n-1)"
 			],
 			":nth-last-child": [
 				":nth-last-child(even)", ":nth-last-child(odd)",
 				":nth-last-child(n)", ":nth-last-child(-n)", ":nth-last-child(0n)",
 				":nth-last-child(1)", ":nth-last-child(-1)", ":nth-last-child(0)",
-				":nth-last-child(n+1)",":nth-last-child(3n+1)", ":nth-last-child(3n + 1)",
+				":nth-last-child(n+1)", ":nth-last-child(3n+1)", ":nth-last-child(3n + 1)",
 				":nth-last-child(-n+1)", ":nth-last-child(-n-1)", ":nth-last-child(3n-1)"
 			],
 			":nth-of-type": [
 				":nth-of-type(even)", ":nth-of-type(odd)",
 				":nth-of-type(n)", ":nth-of-type(-n)", ":nth-of-type(0n)",
 				":nth-of-type(1)", ":nth-of-type(-1)", ":nth-of-type(0)",
-				":nth-of-type(n+1)",":nth-of-type(3n+1)", ":nth-of-type(3n + 1)",
+				":nth-of-type(n+1)", ":nth-of-type(3n+1)", ":nth-of-type(3n + 1)",
 				":nth-of-type(-n+1)", ":nth-of-type(-n-1)", ":nth-of-type(3n-1)"
 			],
 			":nth-last-of-type": [
 				":nth-last-of-type(even)", ":nth-last-of-type(odd)",
 				":nth-last-of-type(n)", ":nth-last-of-type(-n)", ":nth-last-of-type(0n)",
 				":nth-last-of-type(1)", ":nth-last-of-type(-1)", ":nth-last-of-type(0)",
-				":nth-last-of-type(n+1)",":nth-last-of-type(3n+1)", ":nth-last-of-type(3n + 1)",
+				":nth-last-of-type(n+1)", ":nth-last-of-type(3n+1)", ":nth-last-of-type(3n + 1)",
 				":nth-last-of-type(-n+1)", ":nth-last-of-type(-n-1)", ":nth-last-of-type(3n-1)"
 			],
 			":last-child": ":last-child",
@@ -140,10 +140,10 @@ window.Specs = {
 			":last-of-type": ":last-of-type",
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
-			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
+			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"]
 		}
 	},
-	
+
 	"css3-mediaqueries": {
 		"title": "Media Queries",
 		"Media queries": {
@@ -181,7 +181,7 @@ window.Specs = {
 			"grid": ["(grid)", "(grid: 0)", "(grid:-0)", "(grid: 1)"]
 		}
 	},
-	
+
 	"css3-ui": {
 		"title": "Basic User Interface",
 		"properties": {
@@ -219,7 +219,7 @@ window.Specs = {
 			"::repeat-index": "::repeat-index"
 		}
 	},
-	
+
 	"css3-transitions": {
 		"title": "Transitions",
 		"properties": {
@@ -235,7 +235,7 @@ window.Specs = {
 			"transition": "1s 2s width linear"
 		}
 	},
-	
+
 	"css3-animations": {
 		"title": "Animations",
 		"properties": {
@@ -258,7 +258,7 @@ window.Specs = {
 			"@keyframes": "@keyframes foo"
 		}
 	},
-	
+
 	"css3-2d-transforms": {
 		"title": "2D Transforms",
 		"properties": {
@@ -274,7 +274,7 @@ window.Specs = {
 			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"]
 		}
 	},
-	
+
 	"css3-3d-transforms": {
 		"title": "3D Transforms",
 		"properties": {
@@ -293,7 +293,7 @@ window.Specs = {
 			]
 		}
 	},
-	
+
 	"css3-text": {
 		"title": "Text",
 		"properties": {
@@ -317,7 +317,7 @@ window.Specs = {
 			"text-decoration-style": ["solid", "double", "dotted", "dashed", "wavy"],
 			"text-decoration": "underline dotted green",
 			"text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "objects edges"],
-			"text-underline-position": ["auto", "alphabetic","below", "left", "below right"],
+			"text-underline-position": ["auto", "alphabetic", "below", "left", "below right"],
 			"text-emphasis-style": ["none", "filled", "open dot", "circle", "double-circle", "triangle", "sesame", "'foo'"],
 			"text-emphasis-color": "green",
 			"text-emphasis": "open dot green",
@@ -325,7 +325,7 @@ window.Specs = {
 			"text-shadow": ["1px 1px", "0 0 black", "1px 2px 3px black"]
 		}
 	},
-	
+
 	"css3-fonts": {
 		"title": "Fonts",
 		"properties": {
@@ -365,14 +365,15 @@ window.Specs = {
 				"full-width", "proportional-width",
 				"ruby", "simplified full-width ruby"
 			],
-			"font-variant": "sub lining-nums contextual ruby"
+			"font-variant": "sub lining-nums contextual ruby",
+			"font-feature-settings": "'smcp=1'"
 		},
 		"@rules": {
 			"@font-face": "@font-face",
 			"@font-feature-values": "@font-feature-values Jupiter Sans"
 		}
 	},
-	
+
 	"css3-color": {
 		"title": "Color",
 		"values": {
@@ -393,7 +394,7 @@ window.Specs = {
 			"opacity": ["-5", "0", ".5", "1", "2"]
 		}
 	},
-	
+
 	"css3-multicol": {
 		"title": "Multi-column Layout",
 		"properties": {
@@ -412,7 +413,7 @@ window.Specs = {
 			"column-fill": ["auto", "balance"]
 		}
 	},
-	
+
 	"css3-values": {
 		"title": "Values and Units",
 		"values": {
