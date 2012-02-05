@@ -314,7 +314,7 @@ onload = function() {
 		specs.push(spec);
 	}
 	
-	(function checkIfDone() {
+	(function() {
 		if(specs.length) {
 			// Get spec id
 			var spec = specs.shift();
@@ -333,7 +333,7 @@ onload = function() {
 			total.textContent = mainScore.total;
 			
 			// Schedule next test
-			setTimeout(checkIfDone, 50)
+			setTimeout(arguments.callee, 50)
 		}
 		else {
 			// Done!
