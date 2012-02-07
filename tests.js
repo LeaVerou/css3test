@@ -76,6 +76,7 @@ window.Specs = {
 			"image()": [
 				"image('sprites.png#xywh=10,30,60,20')",
 				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
+				"image('arrow.png' ltr)",
 				"image('dark.png', black)", "image(green)"
 			],
 			"element()": "element(#foo)"
