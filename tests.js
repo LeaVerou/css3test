@@ -41,7 +41,6 @@ window.Specs = {
 			"properties": [
 				"background-image",
 				"list-style-image",
-				"foo",
 				"border-image",
 				"cursor",
 				"content"
@@ -260,8 +259,8 @@ window.Specs = {
 		}
 	},
 	
-	"css3-2d-transforms": {
-		"title": "2D Transforms",
+	"css3-transforms": {
+		"title": "Transforms",
 		"properties": {
 			"transform": [
 				"none",
@@ -270,28 +269,19 @@ window.Specs = {
 				"rotate(45deg)",
 				"skew(45deg)", "skew(45deg, 15deg)", "skewX(45deg)", "skewY(45deg)",
 				"matrix(1,-.2,0,1,0,0)", "matrix(1,-.2,0,1,10,10)",
-				"translate(50px, -24px) rotate(180deg) scale(.5) skew(0, 22.5deg)"
-			],
-			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"]
-		}
-	},
-	
-	"css3-3d-transforms": {
-		"title": "3D Transforms",
-		"properties": {
-			"transform-style": ["flat", "preserve-3d"],
-			"perspective": ["none", "0", "600px"],
-			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"],
-			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "left 0% 10px"],
-			"backface-visibility": ["visible", "hidden"],
-			"transform": [
+				"translate(50px, -24px) rotate(180deg) scale(.5) skew(0, 22.5deg)",
 				"translate3d(0, 0, 5px)", "translateZ(5px)",
 				"scale3d(1, 0, -1)", "scaleZ(1.5)",
 				"rotate3d(1, 1, 1, 45deg)", "rotateX(-45deg)", "rotateY(-45deg)", "rotateZ(-45deg)",
 				"matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "matrix3d(0,0,0,0,0,0,0,0,0,0,1,0,10,10,0,1)",
 				"translate3d(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
 				"perspective(600px)"
-			]
+			],
+			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"],
+			"transform-style": ["flat", "preserve-3d"],
+			"perspective": ["none", "0", "600px"],
+			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"],
+			"backface-visibility": ["visible", "hidden"],
 		}
 	},
 	
