@@ -150,13 +150,14 @@ Test.prototype = {
 			tests = tests instanceof Array? tests : [tests];
 		
 			for(var i=0, test; test = tests[i++];) {
-				var results = testCallback(test, feature, theseTests);
+				var results = testCallback(test, feature, theseTests),
+				    success, note;
 				
 				if(typeof results === 'object') {
-					var success = results.success,
-					    note = results.note;
+					success = results.success;
+					note = results.note;
 				}
-				else { var success = +!!results }
+				else { success = +!!results }
 				
 				passed += +success;
 				
@@ -264,12 +265,13 @@ document.onclick = function(evt) {
 Array.prototype.and = function(arr2, separator) {
 	separator = separator || ' ';
 	
-	var ret = [];
+	var ret = [],
+		map = function(val) {
+			return val + separator + arr2[j]
+		};
 	
 	for(var j=0; j<arr2.length; j++) {
-		ret = ret.concat(this.map(function(val) {
-			return val + separator + arr2[j]
-		}));
+		ret = ret.concat(this.map(map));
 	}
 	
 	return ret;

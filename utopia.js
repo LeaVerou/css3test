@@ -49,17 +49,17 @@ var _ = window.Utopia = {
 	 * @return {Object} Null or the return value of func, if it broke the loop at some point.
 	 */
 	each: function(obj, func, context) {
-		if(!_.type(func) == 'function') {
+		if(_.type(func) !== 'function') {
 			throw Error('The second argument in Utopia.each() must be a function');
-		};
+		}
 
 		context = context || obj;
 
 		for (var i in obj) {
-			if(obj.hasOwnProperty && obj.hasOwnProperty(i)) {
+			if(Object.prototype.hasOwnProperty.call(obj, i)) {
 				var ret = func.call(context, obj[i], i);
 
-				if(!!ret || ret === 0 || ret === '') {
+				if(ret || ret === 0 || ret === '') {
 					return ret;
 				}
 			}
@@ -71,9 +71,11 @@ var _ = window.Utopia = {
 	/**
 	 * Copies the properties of one object onto another.
 	 *
+	 * @param objects... {Object} some objects to copy
+	 *
 	 * @return {Object} destination object
 	 */
-	merge: function(objects) {
+	merge: function() {
 		var ret = {};
 		
 		for(var i=0; i<arguments.length; i++) {
@@ -175,7 +177,7 @@ var _ = window.Utopia = {
 			}
 			else {
 				for (var name in event) {
-					_.event.bind(target, name, event[name], arguments[2]);
+					_.event.bind(target, name, event[name], traditional);
 				}
 			}
 		},
