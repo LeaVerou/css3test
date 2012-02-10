@@ -364,6 +364,19 @@ window.Specs = {
 		}
 	},
 	
+	"css3-writing-modes": {
+		"title": "Writing Modes",
+		"properties": {
+			"direction": ["ltr", "rtl"],
+			"unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "plaintext"],
+			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
+			"text-orientation": ["upright-right", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
+			"caption-side": ["before", "after"],
+			"text-combine-horizontal": ["none", "all", "digits 2", "ascii-digits 2", "alpha 2", "latin 2", "alphanumeric 2"],
+			"text-combine-mode": ["auto", "compress", "no-compress", "use-glyphs"]
+		}
+	},
+	
 	"css3-color": {
 		"title": "Color",
 		"values": {
