@@ -367,8 +367,7 @@ window.Specs = {
 	"css3-writing-modes": {
 		"title": "Writing Modes",
 		"properties": {
-			"direction": ["ltr", "rtl"],
-			"unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "plaintext"],
+			"unicode-bidi": ["isolate", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
 			"text-orientation": ["upright-right", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
 			"caption-side": ["before", "after"],
