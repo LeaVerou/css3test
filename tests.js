@@ -492,35 +492,5 @@ window.Specs = {
 			"flex-align": ["start", "end", "center", "baseline", "stretch"],
 			"flex-line-pack": ["start", "end", "center", "justify"]
 		}
-	},
-	
-	"css3-page": {
-		"title": "Paged Media",
-		"properties": {
-			"size": ["auto", "portrait", "landscape", "8.5in 11in", "A4", "legal"],
-			"page": ["auto", "foo"],
-			"image-orientation": ["auto", "0", "90deg", "-1deg"],
-			"fit": ["fill", "hidden", "meet", "slice"],
-			"fit-position": ["0 0", "14% 84%", "2cm 2cm", "top", "center", "bottom", "left", "center", "right", "auto", "bottom left"]
-		},
-		"@rules": {
-			"@page": "@page foo",
-			"@top-left-corner": "@top-left-corner",
-			"@top-left": "@top-left",
-			"@top-center": "@top-center",
-			"@top-right": "@top-right",
-			"@top-right-corner": "@top-right-corner",
-			"@bottom-left-corner": "@bottom-left-corner",
-			"@bottom-left": "@bottom-left",
-			"@bottom-center": "@bottom-center",
-			"@bottom-right": "@bottom-right",
-			"@bottom-right-corner": "@bottom-right-corner",
-			"@left-top": "@left-top",
-			"@left-middle": "@left-middle",
-			"@right-bottom": "@right-bottom",
-			"@right-top": "@right-top",
-			"@right-middle": "@right-middle",
-			"@right-bottom": "@right-bottom"
-		}
-	},
+	}
 };
