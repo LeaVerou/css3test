@@ -144,41 +144,49 @@ window.Specs = {
 		}
 	},
 	
+	/*
+	 * Note: the following media queries must be true in supporting UAs!
+	 */
 	"css3-mediaqueries": {
 		"title": "Media Queries",
 		"Media queries": {
-			"width": ["(width:10px)", "(min-width:10px)", "(max-width:10px)"],
-			"height": ["(height:10px)", "(min-height:10px)", "(max-height:10px)"],
-			"device-width": ["(device-width:10px)", "(device-min-width:10px)", "(device-max-width:10px)"],
-			"device-height": ["(device-height:10px)", "(device-min-height:10px)", "(device-max-height:10px)"],
-			"orientation": ["(orientation:portrait)", "(orientation:landscape)"],
+			"negation": ["not print", "(not width:1px)"],
+			"width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
+			"height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
+			"device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
+			"device-height": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"],
+			"orientation": "(orientation:portrait), (orientation:landscape)",
 			"aspect-ratio": [
-				"(aspect-ratio:3/4)", "(aspect-ratio:3 /4)", "(aspect-ratio:3/ 4)",
-				"(min-aspect-ratio:3/4)", "(max-aspect-ratio:3/4)"
+				"(aspect-ratio)",
+				"(min-aspect-ratio:1/1000000)",
+				"(min-aspect-ratio:1 / 1000000)",
+				"(max-aspect-ratio:1000000/1)",
 			],
 			"device-aspect-ratio": [
-				"(device-aspect-ratio:3/4)", "(device-aspect-ratio:3 /4)", "(device-aspect-ratio:3/ 4)",
-				"(min-device-aspect-ratio:3/4)", "(max-device-aspect-ratio:3/4)"
+				"(device-aspect-ratio)",
+				"(min-device-aspect-ratio:1/1000000)",
+				"(min-device-aspect-ratio:1 / 1000000)",
+				"(max-device-aspect-ratio:1000000/1)",
 			],
 			"color": [
-				"(color)", "(color: 0)", "(color: 1)", "(color: 100)",
-				"(min-color: 2)", "(max-color: 3)"
+				"(color)", "(min-color: 0)", "(max-color: 100)"
 			],
 			"color-index": [
-				"(color-index)", "(color-index: 0)", "(color-index: 1)", "(color-index: 100)",
-				"(min-color-index: 2)", "(max-color-index: 3)"
+				"all, (color-index)",
+				"(min-color-index: 0)",
+				"(max-color-index: 10000000)"
 			],
 			"monochrome": [
-				"(monochrome)", "(monochrome: 0)", "(monochrome: 1)", "(monochrome: 100)",
-				"(min-monochrome: 2)", "(max-monochrome: 3)"
+				"all, (monochrome)", "(min-monochrome: 0)", "(max-monochrome: 10000)"
 			],
 			"resolution": [
-				"(resolution: 300dpi)", "(resolution: 120dpcm)",
-				"(min-resolution: 300dpi)", "(min-resolution: 120dpcm)",
-				"(max-resolution: 300dpi)", "(max-resolution: 120dpcm)"
+				"(resolution)",
+				"(min-resolution: 1dpi)",
+				"(max-resolution: 1000000dpi)",
+				"(max-resolution: 1000000dpcm)"
 			],
-			"scan": ["(scan: progressive)", "(scan: interlace)"],
-			"grid": ["(grid)", "(grid: 0)", "(grid:-0)", "(grid: 1)"]
+			"scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
+			"grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
 		}
 	},
 	

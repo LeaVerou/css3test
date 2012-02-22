@@ -220,7 +220,9 @@ Test.groups = {
 	},
 	
 	'Media queries': function(test) {
-		return Supports.mq(test);
+		var matches = matchMedia(test);
+		
+		return matches.media !== 'invalid' && matches.matches;
 	}
 };
 
