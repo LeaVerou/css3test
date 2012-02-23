@@ -445,18 +445,6 @@ window.Specs = {
 		}
 	},
 	
-	"css3-marquee": {
-		"title": "Marquee",
-		"properties": {
-			"overflow-style": ["auto", "marquee-line", "marquee-block"],
-			"marquee-style": ["scroll", "slide", "alternate"],
-			"marquee-play-count": ["0", "1", "infinite"],
-			"marquee-direction": ["forward", "reverse"],
-			"marquee-speed": ["slow", "normal", "fast"],
-			"text-combine-mode": ["auto", "compress", "no-compress", "use-glyphs"]
-		}
-	},
-	
 	"css3-speech": {
 		"title": "Speech",
 		"properties": {
