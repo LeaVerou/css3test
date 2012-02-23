@@ -443,5 +443,42 @@ window.Specs = {
 			"max()": ["max(30px, 3em)", "max(10% + 20px, 300px)"],
 			"cycle()": "cycle(1px, 2x)"
 		}
+	},
+	
+	"css3-speech": {
+		"title": "Speech",
+		"properties": {
+			"voice-volume": ["silent", "x-soft", "soft", "medium", "loud", "x-loud", "-6dB", "0", "6db"],
+			"voice-balance": ["left", "center", "right", "leftwards", "rightwards", "-100", "0", "100"],
+			"speak": ["auto"],
+			"speak-as": ["normal", "spell-out", "digits", "literal-punctuation", "no-punctuation"],
+			"pause-before": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
+			"pause-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
+			"pause": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
+			"rest-before": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
+			"rest-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
+			"rest": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
+			"cue-before": ["-6dB", "0", "6db"],
+			"cue-after": ["-6dB", "0", "6db"],
+			"cue": ["-6dB", "0", "6db"],
+			"voice-family": ["preserve"],
+			"voice-rate": ["normal", "x-slow", "slow", "medium", "fast", "x-fast", "0", "100%"],
+			"voice-pitch": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", "-3.5st", "3.5st"],
+			"voice-range": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", "-3.5st", "3.5st"],
+			"voice-stress": ["normal", "strong", "moderate", "none", "reduced "],
+			"voice-duration": ["auto", "+3s", "250ms"]
+		}
+	},
+	
+	"css3-flexbox": {
+		"title": "Flexible Box Layout",
+		"properties": {
+			"display": ["flexbox", "inline-flexbox"],
+			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
+			"flex-order": ["0", "1"],
+			"flex-pack": ["start", "end", "center", "justify"],
+			"flex-align": ["start", "end", "center", "baseline", "stretch"],
+			"flex-line-pack": ["start", "end", "center", "justify"]
+		}
 	}
 };
