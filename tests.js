@@ -410,7 +410,7 @@ window.Specs = {
 		"properties": {
 			"column-width": ["10em", "auto"],
 			"column-count": ["2", "auto"],
-			"columns": ["10em 2", "auto 2", "10em auto", "auto auto", "2 10em", "auto 10em", "2 auto"],
+			"columns": ["100px", "3", "10em 2", "auto 2", "10em auto", "auto auto", "2 10em", "auto 10em", "2 auto"],
 			"column-gap": ["1em", "normal"],
 			"column-rule-color": "red",
 			"column-rule-style": ["none", "solid", "dotted"],
