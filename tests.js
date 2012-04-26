@@ -256,7 +256,7 @@ window.Specs = {
 				"step-start", "step-end", "steps(3, start)", "steps(5, end)"
 			],
 			"animation-iteration-count": ["infinite", "8", "4.35"],
-			"animation-direction": ["normal", "alternate"],
+			"animation-direction": ["normal", "alternate", "reverse", "alternate-reverse"],
 			"animation-play-state": ["running", "paused"],
 			"animation-delay": ["1s", "-1s"],
 			"animation-fill-mode": ["none", "forwards", "backwards", "both"],
