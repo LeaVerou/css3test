@@ -75,10 +75,8 @@ window.Specs = {
 			"image()": [
 				"image('sprites.png#xywh=10,30,60,20')",
 				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
-				"image('arrow.png' ltr)",
 				"image('dark.png', black)", "image(green)"
 			],
-			"element()": "element(#foo)"
 		},
 		"properties": {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
@@ -377,9 +375,9 @@ window.Specs = {
 		"properties": {
 			"unicode-bidi": ["isolate", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
-			"text-orientation": ["upright-right", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
+			"text-orientation": ["mixed-right", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
 			"caption-side": ["before", "after"],
-			"text-combine-horizontal": ["none", "all", "digits 2", "ascii-digits 2", "alpha 2", "latin 2", "alphanumeric 2"],
+			"text-combine-horizontal": ["none", "all", "numeric 2", "digits 2", "alpha 2", "latin 2", "alphanumeric 2"],
 			"text-combine-mode": ["auto", "compress", "no-compress", "use-glyphs"]
 		}
 	},
@@ -439,8 +437,6 @@ window.Specs = {
 			"vmin": "5vmin",
 			"attr()": "attr(data-px)",
 			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
-			"min()": ["min(10px, 3em)", "min(10% + 20px, 300px)"],
-			"max()": ["max(30px, 3em)", "max(10% + 20px, 300px)"],
 			"cycle()": "cycle(1px, 2x)"
 		}
 	},
