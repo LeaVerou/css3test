@@ -469,7 +469,7 @@ window.Specs = {
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
-			"display": ["flexbox", "inline-flexbox"],
+			"display": ["flex", "inline-flex"],
 			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
 			"flex-order": ["0", "1"],
 			"flex-pack": ["start", "end", "center", "justify"],
