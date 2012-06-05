@@ -471,10 +471,11 @@ window.Specs = {
 		"properties": {
 			"display": ["flex", "inline-flex"],
 			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-			"flex-order": ["0", "1"],
-			"flex-pack": ["start", "end", "center", "justify"],
-			"flex-align": ["start", "end", "center", "baseline", "stretch"],
-			"flex-line-pack": ["start", "end", "center", "justify"]
+			"order": ["0", "1"],
+			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+			"align-content": ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"],
+			"align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
+			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"]
 		}
 	}
 };
