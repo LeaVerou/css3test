@@ -241,8 +241,8 @@ function passclass(info) {
 	
 	var classes = [
 		'fail',
-		'buggy',
 		'very-buggy',
+		'buggy',
 		'slightly-buggy',
 		'almost-pass',
 	];
