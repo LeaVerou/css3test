@@ -295,12 +295,10 @@ window.Specs = {
 		"title": "Text",
 		"properties": {
 			"text-transform": ["full-width", "full-size-kana"],
-			"text-space-collapse": ["collapse", "preserve", "preserve-breaks"],
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict"],
 			"word-break": ["normal", "keep-all", "break-all"],
 			"hyphens": ["auto", "manual", "none"],
-			"text-wrap": ["normal", "none", "avoid"],
 			"overflow-wrap": ["normal", "break-word"],
 			"text-align": ["start", "end", "'a'", "match-parent", "start end"],
 			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
