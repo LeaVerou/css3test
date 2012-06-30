@@ -295,12 +295,10 @@ window.Specs = {
 		"title": "Text",
 		"properties": {
 			"text-transform": ["full-width", "full-size-kana"],
-			"text-space-collapse": ["collapse", "preserve", "preserve-breaks"],
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict"],
 			"word-break": ["normal", "keep-all", "break-all"],
 			"hyphens": ["auto", "manual", "none"],
-			"text-wrap": ["normal", "none", "avoid"],
 			"overflow-wrap": ["normal", "break-word"],
 			"text-align": ["start", "end", "'a'", "match-parent", "start end"],
 			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
@@ -437,7 +435,7 @@ window.Specs = {
 			"vmin": "5vmin",
 			"attr()": "attr(data-px)",
 			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
-			"cycle()": "cycle(1px, 2x)"
+			"toggle()": "toggle(1px, 2px)"
 		}
 	},
 	
@@ -469,13 +467,21 @@ window.Specs = {
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
-			"display": ["flex", "inline-flex"],
-			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-			"order": ["0", "1"],
-			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
 			"align-content": ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"],
 			"align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
 			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"]
+			"display": ["flex", "inline-flex"],
+			"flex": ["none","5 7 10%"],
+			"flex-basis": ["auto","1px"],
+			"flex-direction": ["row","row-reverse","column","column-reverse"],
+			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
+			"flex-grow": ["0","5"],
+			"flex-shrink": ["1","10"],
+			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
+			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+			"min-height": ["auto"],
+			"min-width": ["auto"],
+			"order": ["0", "1"],
 		}
 	}
 };
