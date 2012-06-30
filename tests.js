@@ -467,13 +467,21 @@ window.Specs = {
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
-			"display": ["flex", "inline-flex"],
-			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-			"order": ["0", "1"],
-			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
 			"align-content": ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"],
 			"align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
 			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"]
+			"display": ["flex", "inline-flex"],
+			"flex": ["none","5 7 10%"],
+			"flex-basis": ["auto","1px"],
+			"flex-direction": ["row","row-reverse","column","column-reverse"],
+			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
+			"flex-grow": ["0","5"],
+			"flex-shrink": ["1","10"],
+			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
+			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+			"min-height": ["auto"],
+			"min-width": ["auto"],
+			"order": ["0", "1"],
 		}
 	}
 };
