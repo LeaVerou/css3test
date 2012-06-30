@@ -435,7 +435,7 @@ window.Specs = {
 			"vmin": "5vmin",
 			"attr()": "attr(data-px)",
 			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
-			"cycle()": "cycle(1px, 2x)"
+			"toggle()": "toggle(1px, 2px)"
 		}
 	},
 	
