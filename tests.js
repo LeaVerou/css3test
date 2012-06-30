@@ -469,7 +469,7 @@ window.Specs = {
 		"properties": {
 			"align-content": ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"],
 			"align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
-			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"]
+			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"],
 			"display": ["flex", "inline-flex"],
 			"flex": ["none","5 7 10%"],
 			"flex-basis": ["auto","1px"],
