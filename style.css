@@ -131,6 +131,7 @@ dt, dd[class] {
 	color: white;
 	border-radius: .3em;
 	text-shadow: 0 -.05em .1em rgba(0,0,0,.5);
+	position: relative;
 }
 
 dt {
@@ -205,6 +206,23 @@ dl > dd {
 dl.open > dd {
 	display: block;
 }
+
+dt:after,
+dd[class]:after {
+	letter-spacing: -3px;
+	line-height: 35px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+
+.buggy:after { content: ':|'; }
+
+.epic-fail:after { content: '>:('; }
+
+.pass:after { content: ':)'; }
+
+.very-buggy:after { content: ':('; }
 
 aside {
 	font-size: 85%;
