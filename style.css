@@ -207,24 +207,43 @@ dl.open > dd {
 	display: block;
 }
 
+/* Emoticons */
+
+dt:after,
+dd[class]:after,
+#specsTested li:after {
+	opacity: 0.75;
+	position: absolute;
+	top: 0;
+}
+
 dt:after,
 dd[class]:after {
 	letter-spacing: -2px;
 	line-height: 35px;
-	position: absolute;
 	right: 10px;
-	top: 0;
 }
 
-.buggy:after { content: ':|'; }
+#specsTested li:after {
+	line-height: 29px;
+	right: 0;
+}
+
+.almost-pass:after { content: ':)'; }
+
+.buggy:after { content: ':('; }
 
 .epic-fail:after { content: '>:('; }
 
+.fail:after { content: ':′('; }
+
 .pass:after { content: ':D'; }
 
-.slightly-buggy:after { content: ':)'; }
+.slightly-buggy:after { content: ':|'; }
 
-.very-buggy:after { content: ':('; }
+.very-buggy:after { content: ':o'; }
+
+/* End emoticons */
 
 aside {
 	font-size: 85%;
@@ -266,6 +285,10 @@ aside {
 				border-bottom: none;
 			}
 			
+			#specsTested li {
+				position: relative;
+			}
+
 			#specsTested li:before {
 				content: '';
 				display: inline-block;
