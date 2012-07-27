@@ -225,7 +225,7 @@ dd[class]:after {
 }
 
 #specsTested li:after {
-	line-height: 29px;
+	font: 83.3%/29px Monaco, Consolas, monospace;
 	right: 0;
 }
 
