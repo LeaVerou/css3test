@@ -233,7 +233,7 @@ dd[class]:after {
 
 .buggy:after { content: ':('; }
 
-.epic-fail:after { content: '>:('; }
+.epic-fail:after { content: '›:('; }
 
 .fail:after { content: ':′('; }
 
