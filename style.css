@@ -131,6 +131,7 @@ dt, dd[class] {
 	color: white;
 	border-radius: .3em;
 	text-shadow: 0 -.05em .1em rgba(0,0,0,.5);
+	position: relative;
 }
 
 dt {
@@ -206,6 +207,44 @@ dl.open > dd {
 	display: block;
 }
 
+/* Emoticons */
+
+dt:after,
+dd[class]:after,
+#specsTested li:after {
+	opacity: 0.75;
+	position: absolute;
+	top: 0;
+}
+
+dt:after,
+dd[class]:after {
+	letter-spacing: -2px;
+	line-height: 35px;
+	right: 10px;
+}
+
+#specsTested li:after {
+	font: 83.3%/29px Monaco, Consolas, monospace;
+	right: 0;
+}
+
+.almost-pass:after { content: ':)'; }
+
+.buggy:after { content: ':('; }
+
+.epic-fail:after { content: '›:('; }
+
+.fail:after { content: ':′('; }
+
+.pass:after { content: ':D'; }
+
+.slightly-buggy:after { content: ':|'; }
+
+.very-buggy:after { content: ':o'; }
+
+/* End emoticons */
+
 aside {
 	font-size: 85%;
 }
@@ -246,6 +285,10 @@ aside {
 				border-bottom: none;
 			}
 			
+			#specsTested li {
+				position: relative;
+			}
+
 			#specsTested li:before {
 				content: '';
 				display: inline-block;
