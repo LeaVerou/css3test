@@ -17,7 +17,7 @@ window.Specs = {
 			],
 			"border-radius": ["10px", "50%", "10px / 20px", "2px 4px 8px 16px"],
 			"border-image-source": ["none", "url(foo.png)"],
-			"border-image-slice": ['10', '30%'].times(1, 4).concat(["fill 30%", "fill 10", "fill 2 4 8% 16%", "30% fill", "10 fill", "2 4 8% 16% fill"]),
+			"border-image-slice": ["10", "30%"].times(1, 4).concat(["fill 30%", "fill 10", "fill 2 4 8% 16%", "30% fill", "10 fill", "2 4 8% 16% fill"]),
 			"border-image-width": ["10px", "5%", "28", "auto", "10px 10px", "5% 10px", "28 10px", "auto 10px", "10px 5%", "5% 5%", "28 5%", "auto 5%", "10px 28", "5% 28", "28 28", "auto 28", "10px auto", "5% auto", "28 auto", "auto auto", "10px 10% 10", "5% 10px 20 auto"],
 			"border-image-outset": ["10px", "20", "10px 20", "10px 20px", "20 30", "2px 3px 4", "1 2px 3px 4"],
 			"border-image-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
@@ -294,7 +294,7 @@ window.Specs = {
 	"css3-text": {
 		"title": "Text",
 		"properties": {
-			"text-transform": ["full-width", "full-size-kana"],
+			"text-transform": ["full-width"],
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict"],
 			"word-break": ["normal", "keep-all", "break-all"],
@@ -330,7 +330,7 @@ window.Specs = {
 			"font-kerning": ["auto", "normal", "none"],
 			"font-variant-position": ["normal", "sub", "super"],
 			"font-variant-ligatures": [
-				"normal",
+				"normal", "none",
 				"common-ligatures", "no-common-ligatures",
 				"discretionary-ligatures", "no-discretionary-ligatures",
 				"historical-ligatures", "no-historical-ligatures",
@@ -360,7 +360,10 @@ window.Specs = {
 				"full-width", "proportional-width",
 				"ruby", "simplified full-width ruby"
 			],
-			"font-variant": "sub lining-nums contextual ruby"
+			"font-variant": "sub lining-nums contextual ruby",
+			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
+			"font-language-override": ["normal", "'SRB'"],
+			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
 		},
 		"@rules": {
 			"@font-face": "@font-face",
@@ -390,9 +393,9 @@ window.Specs = {
 				"text-decoration-color",
 				"column-rule-color"
 			],
-			"rgba": 'rgba(0,0,0,.5)',
-			"hsl": 'hsl(0,0%,0%)',
-			"hsla": 'hsla(0,0%,0%,.5)',
+			"rgba": "rgba(0,0,0,.5)",
+			"hsl": "hsl(0,0%,0%)",
+			"hsla": "hsla(0,0%,0%,.5)",
 			"transparent": "transparent",
 			"currentColor": "currentColor"
 		},
