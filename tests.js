@@ -294,7 +294,7 @@ window.Specs = {
 	"css3-text": {
 		"title": "Text",
 		"properties": {
-			"text-transform": ["full-width", "full-size-kana"],
+			"text-transform": ["full-width"],
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict"],
 			"word-break": ["normal", "keep-all", "break-all"],
