@@ -330,7 +330,7 @@ window.Specs = {
 			"font-kerning": ["auto", "normal", "none"],
 			"font-variant-position": ["normal", "sub", "super"],
 			"font-variant-ligatures": [
-				"normal",
+				"normal", "none",
 				"common-ligatures", "no-common-ligatures",
 				"discretionary-ligatures", "no-discretionary-ligatures",
 				"historical-ligatures", "no-historical-ligatures",
@@ -360,7 +360,10 @@ window.Specs = {
 				"full-width", "proportional-width",
 				"ruby", "simplified full-width ruby"
 			],
-			"font-variant": "sub lining-nums contextual ruby"
+			"font-variant": "sub lining-nums contextual ruby",
+			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
+			"font-language-override": ["normal", "'SRB'"],
+			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
 		},
 		"@rules": {
 			"@font-face": "@font-face",
