@@ -82,7 +82,7 @@ window.Specs = {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
 			"object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
 			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"],
-			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad"]
+			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"]
 		}
 	},
 	
