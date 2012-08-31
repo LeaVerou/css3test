@@ -82,7 +82,7 @@ window.Specs = {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
 			"object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
 			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"],
-			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad"]
+			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"]
 		}
 	},
 	
@@ -436,7 +436,8 @@ window.Specs = {
 			"vw": "5vw",
 			"vh": "5vh",
 			"vmin": "5vmin",
-			"attr()": "attr(data-px)",
+			"vmax": "5vmax",
+			"attr()": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"],
 			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
 			"toggle()": "toggle(1px, 2px)"
 		}
@@ -460,8 +461,8 @@ window.Specs = {
 			"cue": ["-6dB", "0", "6db"],
 			"voice-family": ["preserve"],
 			"voice-rate": ["normal", "x-slow", "slow", "medium", "fast", "x-fast", "0", "100%"],
-			"voice-pitch": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", "-3.5st", "3.5st"],
-			"voice-range": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", "-3.5st", "3.5st"],
+			"voice-pitch": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", ".2kHz", "-3.5st", "3.5st"],
+			"voice-range": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", ".2kHz", "-3.5st", "3.5st"],
 			"voice-stress": ["normal", "strong", "moderate", "none", "reduced "],
 			"voice-duration": ["auto", "+3s", "250ms"]
 		}
