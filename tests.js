@@ -230,7 +230,7 @@ window.Specs = {
 		"title": "Transitions",
 		"properties": {
 			"transition-property": ["none", "all", "width", "width, height"],
-			"transition-duration": ["0s", "1s", "100ms", "-1s"],
+			"transition-duration": ["0s", "1s", "100ms"],
 			"transition-timing-function": [
 				"ease", "linear", "ease-in", "ease-out", "ease-in-out",
 				"cubic-bezier(.5, .5, .5, .5)",
@@ -246,7 +246,7 @@ window.Specs = {
 		"title": "Animations",
 		"properties": {
 			"animation-name": ["foo", "foo, bar"],
-			"animation-duration": ["0s", "1s", "100ms", "-1s"],
+			"animation-duration": ["0s", "1s", "100ms"],
 			"animation-timing-function": [
 				"ease", "linear", "ease-in", "ease-out", "ease-in-out",
 				"cubic-bezier(.5, .5, .5, .5)",
