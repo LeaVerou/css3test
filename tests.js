@@ -283,7 +283,7 @@ window.Specs = {
 				"translate3d(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
 				"perspective(600px)"
 			],
-			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"],
+			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right bottom 20px"],
 			"transform-style": ["flat", "preserve-3d"],
 			"perspective": ["none", "0", "600px"],
 			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "right 10px bottom 20px"],
