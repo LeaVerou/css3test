@@ -432,8 +432,7 @@ window.Specs = {
 		"values": {
 			"properties": [
 				"width",
-				"padding",
-				"border-width"
+				"padding"
 			],
 			"rem": "5rem",
 			"ch": "5ch",
