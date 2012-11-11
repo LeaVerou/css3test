@@ -148,7 +148,7 @@ window.Specs = {
 	"css3-mediaqueries": {
 		"title": "Media Queries",
 		"Media queries": {
-			"negation": ["not print", "(not width:1px)"],
+			"negation": ["not print", "not all and (width:1px)"],
 			"width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
 			"height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
 			"device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
