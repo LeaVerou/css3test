@@ -306,7 +306,13 @@ window.Specs = {
 			"word-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
 			"letter-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
-			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"],
+			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
+		}
+	},
+
+	"css-text-decor-3": {
+		"title": "Text Decoration",
+		"properties": {
 			"text-decoration-line": ["none", "underline", "overline", "line-through", "underline overline"],
 			"text-decoration-color": "white",
 			"text-decoration-style": ["solid", "double", "dotted", "dashed", "wavy"],
