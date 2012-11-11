@@ -24,8 +24,8 @@ window.Specs = {
 			"border-image": [
 				"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill", 
 				"url(foo.png) 10 round", "url(foo.png) 10 stretch repeat",
-				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10px / 10%",
-				"url(foo.png) fill 10 / 10px / 10%", "url(foo.png) fill 10 / 10px / 10% space"
+				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10% / 10px",
+				"url(foo.png) fill 10 / 10% / 10px", "url(foo.png) fill 10 / 10% / 10px space"
 			],
 			"box-decoration-break": ["slice", "clone"],
 			"box-shadow": [
