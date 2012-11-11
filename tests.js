@@ -340,7 +340,8 @@ window.Specs = {
 				"common-ligatures", "no-common-ligatures",
 				"discretionary-ligatures", "no-discretionary-ligatures",
 				"historical-ligatures", "no-historical-ligatures",
-				"common-ligatures discretionary-ligatures historical-ligatures"
+				"contextual", "no-contextual",
+				"common-ligatures discretionary-ligatures historical-ligatures contextual"
 			],
 			"font-variant-caps": ["normal", "small-caps", "all-small-caps", "petite-caps", "all-petite-caps", "titling-caps", "unicase"],
 			"font-variant-numeric": [
@@ -355,9 +356,7 @@ window.Specs = {
 			],
 			"font-variant-alternates": [
 				"normal",
-				"contextual", "no-contextual",
-				"historical-forms",
-				"contextual historical-forms"
+				"historical-forms"
 				// TODO add tests for functions
 			],
 			"font-variant-east-asian": [
@@ -366,7 +365,7 @@ window.Specs = {
 				"full-width", "proportional-width",
 				"ruby", "simplified full-width ruby"
 			],
-			"font-variant": "sub lining-nums contextual ruby",
+			"font-variant": ["none", "sub lining-nums contextual ruby"],
 			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
 			"font-language-override": ["normal", "'SRB'"],
 			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
