@@ -379,12 +379,11 @@ window.Specs = {
 	"css3-writing-modes": {
 		"title": "Writing Modes",
 		"properties": {
-			"unicode-bidi": ["isolate", "plaintext"],
+			"unicode-bidi": ["isolate", "isolate-override", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
-			"text-orientation": ["mixed-right", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
+			"text-orientation": ["mixed", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
 			"caption-side": ["before", "after"],
-			"text-combine-horizontal": ["none", "all", "numeric 2", "digits 2", "alpha 2", "latin 2", "alphanumeric 2"],
-			"text-combine-mode": ["auto", "compress", "no-compress", "use-glyphs"]
+			"text-combine-horizontal": ["none", "all"]
 		}
 	},
 	
