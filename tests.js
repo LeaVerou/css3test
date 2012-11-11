@@ -198,7 +198,7 @@ window.Specs = {
 			"resize": ["none", "both", "horizontal", "vertical"],
 			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
 			"cursor": [
-				"url(foo.png) 2 2", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
+				"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
 				"ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in", "zoom-out"
 			],
 			"nav-index": ["auto", "1", "10"],
