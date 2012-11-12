@@ -24,8 +24,8 @@ window.Specs = {
 			"border-image": [
 				"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill", 
 				"url(foo.png) 10 round", "url(foo.png) 10 stretch repeat",
-				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10px / 10%",
-				"url(foo.png) fill 10 / 10px / 10%", "url(foo.png) fill 10 / 10px / 10% space"
+				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10% / 10px",
+				"url(foo.png) fill 10 / 10% / 10px", "url(foo.png) fill 10 / 10% / 10px space"
 			],
 			"box-decoration-break": ["slice", "clone"],
 			"box-shadow": [
@@ -148,7 +148,7 @@ window.Specs = {
 	"css3-mediaqueries": {
 		"title": "Media Queries",
 		"Media queries": {
-			"negation": ["not print", "(not width:1px)"],
+			"negation": ["not print", "not all and (width:1px)"],
 			"width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
 			"height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
 			"device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
@@ -198,7 +198,7 @@ window.Specs = {
 			"resize": ["none", "both", "horizontal", "vertical"],
 			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
 			"cursor": [
-				"url(foo.png) 2 2", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
+				"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
 				"ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in", "zoom-out"
 			],
 			"nav-index": ["auto", "1", "10"],
@@ -306,17 +306,23 @@ window.Specs = {
 			"word-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
 			"letter-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
-			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"],
+			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
+		}
+	},
+
+	"css-text-decor-3": {
+		"title": "Text Decoration",
+		"properties": {
 			"text-decoration-line": ["none", "underline", "overline", "line-through", "underline overline"],
 			"text-decoration-color": "white",
 			"text-decoration-style": ["solid", "double", "dotted", "dashed", "wavy"],
 			"text-decoration": "underline dotted green",
-			"text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "objects edges"],
-			"text-underline-position": ["auto", "alphabetic","below", "left", "below right"],
+			"text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "box-decoration", "objects edges"],
+			"text-underline-position": ["auto", "alphabetic","under", "left", "under right"],
 			"text-emphasis-style": ["none", "filled", "open dot", "circle", "double-circle", "triangle", "sesame", "'foo'"],
 			"text-emphasis-color": "green",
 			"text-emphasis": "open dot green",
-			"text-emphasis-position": ["above right", "below left"],
+			"text-emphasis-position": ["over right", "under left"],
 			"text-shadow": ["1px 1px", "0 0 black", "1px 2px 3px black"]
 		}
 	},
@@ -334,7 +340,8 @@ window.Specs = {
 				"common-ligatures", "no-common-ligatures",
 				"discretionary-ligatures", "no-discretionary-ligatures",
 				"historical-ligatures", "no-historical-ligatures",
-				"common-ligatures discretionary-ligatures historical-ligatures"
+				"contextual", "no-contextual",
+				"common-ligatures discretionary-ligatures historical-ligatures contextual"
 			],
 			"font-variant-caps": ["normal", "small-caps", "all-small-caps", "petite-caps", "all-petite-caps", "titling-caps", "unicase"],
 			"font-variant-numeric": [
@@ -349,9 +356,7 @@ window.Specs = {
 			],
 			"font-variant-alternates": [
 				"normal",
-				"contextual", "no-contextual",
-				"historical-forms",
-				"contextual historical-forms"
+				"historical-forms"
 				// TODO add tests for functions
 			],
 			"font-variant-east-asian": [
@@ -360,7 +365,7 @@ window.Specs = {
 				"full-width", "proportional-width",
 				"ruby", "simplified full-width ruby"
 			],
-			"font-variant": "sub lining-nums contextual ruby",
+			"font-variant": ["none", "sub lining-nums contextual ruby"],
 			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
 			"font-language-override": ["normal", "'SRB'"],
 			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
@@ -374,12 +379,11 @@ window.Specs = {
 	"css3-writing-modes": {
 		"title": "Writing Modes",
 		"properties": {
-			"unicode-bidi": ["isolate", "plaintext"],
+			"unicode-bidi": ["isolate", "isolate-override", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
-			"text-orientation": ["mixed-right", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
+			"text-orientation": ["mixed", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
 			"caption-side": ["before", "after"],
-			"text-combine-horizontal": ["none", "all", "numeric 2", "digits 2", "alpha 2", "latin 2", "alphanumeric 2"],
-			"text-combine-mode": ["auto", "compress", "no-compress", "use-glyphs"]
+			"text-combine-horizontal": ["none", "all"]
 		}
 	},
 	
@@ -428,8 +432,7 @@ window.Specs = {
 		"values": {
 			"properties": [
 				"width",
-				"padding",
-				"border-width"
+				"padding"
 			],
 			"rem": "5rem",
 			"ch": "5ch",
