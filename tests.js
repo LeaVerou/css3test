@@ -4,6 +4,7 @@ window.Specs = {
 		"properties": {
 			"background-repeat": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2)),
 			"background-attachment": "local",
+			"background-image": ["url(foo.png)", "none", "inherit"],
 			"background-position": ["bottom 10px right 20px", "bottom 10px right", "top right 10px"],
 			"background-clip": ["border-box", "padding-box", "content-box"],
 			"background-origin": ["border-box", "padding-box", "content-box"],
