@@ -460,7 +460,7 @@ window.Specs = {
 			"rest-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
 			"rest": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
 			"cue-before": ["-6dB", "0", "6db"],
-			"cue-after": ["-6dB", "0", "6db"],
+			"cue"-after": ["-6dB", "0", "6db"],
 			"cue": ["-6dB", "0", "6db"],
 			"voice-family": ["preserve"],
 			"voice-rate": ["normal", "x-slow", "slow", "medium", "fast", "x-fast", "0", "100%"],
@@ -486,7 +486,14 @@ window.Specs = {
 			"flex-shrink": ["1","10"],
 			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
 			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
-			"order": ["0", "1"],
+			"order": ["0", "1"]
+		}
+	},
+	
+	"css3-cascade": {
+		"title": "Resetting All Properties",
+		"properties": {
+			"all": ["initial", "inherit", "default"]
 		}
 	}
 };
