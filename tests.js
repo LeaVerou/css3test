@@ -460,7 +460,7 @@ window.Specs = {
 			"rest-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
 			"rest": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
 			"cue-before": ["-6dB", "0", "6db"],
-			"cue"-after": ["-6dB", "0", "6db"],
+			"cue-after": ["-6dB", "0", "6db"],
 			"cue": ["-6dB", "0", "6db"],
 			"voice-family": ["preserve"],
 			"voice-rate": ["normal", "x-slow", "slow", "medium", "fast", "x-fast", "0", "100%"],
