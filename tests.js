@@ -193,7 +193,11 @@ window.Specs = {
 			"content": "icon",
 			"icon": ["auto", "url(foo.png)", "url(foo.png), url(foo.gif)"],
 			"box-sizing": ["border-box", "padding-box", "content-box"],
+			"outline-color": ["invert", "black"],
 			"outline-offset": ["-5px", "0", "5px"],
+			"outline-style": ["auto", "solid"],
+			"outline-width": ["1px", "thick"],
+			"outline": ["thick solid black"],
 			"resize": ["none", "both", "horizontal", "vertical"],
 			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
 			"cursor": [
