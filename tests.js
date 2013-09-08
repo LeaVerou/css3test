@@ -22,7 +22,7 @@ window.Specs = {
 			"border-image-outset": ["10px", "20", "10px 20", "10px 20px", "20 30", "2px 3px 4", "1 2px 3px 4"],
 			"border-image-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
 			"border-image": [
-				"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill", 
+				"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill",
 				"url(foo.png) 10 round", "url(foo.png) 10 stretch repeat",
 				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10% / 10px",
 				"url(foo.png) fill 10 / 10% / 10px", "url(foo.png) fill 10 / 10% / 10px space"
@@ -34,7 +34,7 @@ window.Specs = {
 			]
 		}
 	},
-	
+
 	"css3-images": {
 		"title": "Image Values and Replaced Content",
 		"values": {
@@ -44,7 +44,7 @@ window.Specs = {
 				"border-image",
 				"cursor",
 				"content"
-				
+
 			],
 			"linear-gradient": [
 				"linear-gradient(white, black)",
@@ -85,7 +85,7 @@ window.Specs = {
 			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"]
 		}
 	},
-	
+
 	"css3-selectors": {
 		"title": "Selectors",
 		"selectors": {
@@ -141,7 +141,7 @@ window.Specs = {
 			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
 		}
 	},
-	
+
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
@@ -187,7 +187,7 @@ window.Specs = {
 			"grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
 		}
 	},
-	
+
 	"css3-ui": {
 		"title": "Basic User Interface",
 		"properties": {
@@ -225,7 +225,7 @@ window.Specs = {
 			"::repeat-index": "::repeat-index"
 		}
 	},
-	
+
 	"css3-transitions": {
 		"title": "Transitions",
 		"properties": {
@@ -241,7 +241,7 @@ window.Specs = {
 			"transition": "1s 2s width linear"
 		}
 	},
-	
+
 	"css3-animations": {
 		"title": "Animations",
 		"properties": {
@@ -264,7 +264,7 @@ window.Specs = {
 			"@keyframes": "@keyframes foo"
 		}
 	},
-	
+
 	"css3-transforms": {
 		"title": "Transforms",
 		"properties": {
@@ -290,7 +290,7 @@ window.Specs = {
 			"backface-visibility": ["visible", "hidden"],
 		}
 	},
-	
+
 	"css3-text": {
 		"title": "Text",
 		"properties": {
@@ -326,7 +326,7 @@ window.Specs = {
 			"text-shadow": ["1px 1px", "0 0 black", "1px 2px 3px black"]
 		}
 	},
-	
+
 	"css3-fonts": {
 		"title": "Fonts",
 		"properties": {
@@ -375,18 +375,19 @@ window.Specs = {
 			"@font-feature-values": "@font-feature-values Jupiter Sans"
 		}
 	},
-	
+
 	"css3-writing-modes": {
 		"title": "Writing Modes",
 		"properties": {
-			"unicode-bidi": ["isolate", "isolate-override", "plaintext"],
+			"direction": ["ltr", "rtl"],
+			"unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
 			"text-orientation": ["mixed", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
-			"caption-side": ["before", "after"],
-			"text-combine-horizontal": ["none", "all"]
+			"caption-side": ["block-start", "block-end"],
+			"text-combine-horizontal": ["none", "all", "digits 2"]
 		}
 	},
-	
+
 	"css3-color": {
 		"title": "Color",
 		"values": {
@@ -407,7 +408,7 @@ window.Specs = {
 			"opacity": ["-5", "0", ".5", "1", "2"]
 		}
 	},
-	
+
 	"css3-multicol": {
 		"title": "Multi-column Layout",
 		"properties": {
@@ -426,7 +427,7 @@ window.Specs = {
 			"column-fill": ["auto", "balance"]
 		}
 	},
-	
+
 	"css3-values": {
 		"title": "Values and Units",
 		"values": {
@@ -445,7 +446,7 @@ window.Specs = {
 			"toggle()": "toggle(1px, 2px)"
 		}
 	},
-	
+
 	"css3-speech": {
 		"title": "Speech",
 		"properties": {
@@ -470,7 +471,7 @@ window.Specs = {
 			"voice-duration": ["auto", "+3s", "250ms"]
 		}
 	},
-	
+
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
@@ -489,7 +490,7 @@ window.Specs = {
 			"order": ["0", "1"]
 		}
 	},
-	
+
 	"css3-cascade": {
 		"title": "Resetting All Properties",
 		"properties": {
