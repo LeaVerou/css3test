@@ -446,6 +446,17 @@ window.Specs = {
 		}
 	},
 
+	"css3-regions": {
+		"title": "Regions",
+		"properties": {
+			"break-after": ["region"],
+			"break-before": ["region"],
+			"flow-from": ["none", "named-flow"],
+			"flow-into": ["none", "named-flow"],
+			"region-fragment": ["auto", "break"]
+		}
+	},
+
 	"css3-speech": {
 		"title": "Speech",
 		"properties": {
