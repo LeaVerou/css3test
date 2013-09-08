@@ -317,12 +317,12 @@ window.Specs = {
 			"text-decoration-style": ["solid", "double", "dotted", "dashed", "wavy"],
 			"text-decoration": "underline dotted green",
 			"text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "box-decoration", "objects edges"],
-			"text-underline-position": ["auto", "alphabetic","under", "left", "under right"],
-			"text-emphasis-style": ["none", "filled", "open dot", "circle", "double-circle", "triangle", "sesame", "'foo'"],
+			"text-underline-position": ["auto", "under", "left", "right", "under left", "under right"],
+			"text-emphasis-style": ["none", "filled", "open", "dot", "circle", "double-circle", "triangle", "sesame", "open dot", "'foo'"],
 			"text-emphasis-color": "green",
 			"text-emphasis": "open dot green",
-			"text-emphasis-position": ["over right", "under left"],
-			"text-shadow": ["1px 1px", "0 0 black", "1px 2px 3px black"]
+			"text-emphasis-position": ["over left", "over right", "under left", "under right"],
+			"text-shadow": ["none", "1px 1px", "0 0 black", "1px 2px 3px black"]
 		}
 	},
 
