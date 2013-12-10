@@ -525,10 +525,31 @@ window.Specs = {
 		}
 	},
 
-	"css3-cascade": {
-		"title": "Resetting All Properties",
+    "css3-cascade": {
+        "title": "Resetting All Properties",
+        "properties": {
+            "all": ["initial", "inherit", "unset"]
+        }
+    },
+
+	"css3-box": {
+		"title": "Basic Box Model",
 		"properties": {
-			"all": ["initial", "inherit", "unset"]
+            "margin": ["fill"],
+            "padding": ["auto"],
+            "width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content", "complex"],
+            "min-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "min-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "max-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "max-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "alignment": ["top", "right", "bottom", "left", "center"],
+            "child-align": ["top", "middle", "bottom", "left", "right", "auto"],
+            "overflow": ["no-display", "no-content", "visible hidden", "scroll auto", "no-display hidden", "no-content hidden"],
+            "overflow-x": ["no-display", "no-content"],
+            "overflow-y": ["no-display", "no-content"]
 		}
 	}
+
+
 };
