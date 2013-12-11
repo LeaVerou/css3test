@@ -551,10 +551,7 @@ window.Specs = {
             "max-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
             "max-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
             "alignment": ["top", "right", "bottom", "left", "center"],
-            "child-align": ["top", "middle", "bottom", "left", "right", "auto"],
-            "overflow": ["no-display", "no-content", "visible hidden", "scroll auto", "no-display hidden", "no-content hidden"],
-            "overflow-x": ["no-display", "no-content"],
-            "overflow-y": ["no-display", "no-content"]
+            "child-align": ["top", "middle", "bottom", "left", "right", "auto"]
 		}
 	}
 
