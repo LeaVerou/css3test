@@ -532,6 +532,13 @@ window.Specs = {
         }
     },
 
+    "css3-positioning": {
+        "title": "Positioned Layout Module",
+        "properties": {
+            "position": ["sticky", "center", "page"]
+        }
+    },
+
 	"css3-box": {
 		"title": "Basic Box Model",
 		"properties": {
