@@ -486,9 +486,9 @@ window.Specs = {
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
-			"align-content": ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"],
-			"align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
-			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"],
+			"align-content": ["flex-start", "flex-end", "space-between", "space-around"],
+			"align-items": ["flex-start", "flex-end"],
+			"align-self": ["flex-start", "flex-end"],
 			"display": ["flex", "inline-flex"],
 			"flex": ["none","5 7 10%"],
 			"flex-basis": ["auto","1px"],
@@ -497,7 +497,7 @@ window.Specs = {
 			"flex-grow": ["0","5"],
 			"flex-shrink": ["1","10"],
 			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
-			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+			"justify-content": ["flex-start", "flex-end", "space-between", "space-around"],
 			"order": ["0", "1"]
 		}
 	},
@@ -522,6 +522,18 @@ window.Specs = {
 			"grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"]
+		}
+	},
+
+	"css3-align": {
+		"title": "Box Alignment",
+		"properties": {
+			"align-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
+			"align-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
+			"align-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start flex-end", "start start self-end", "start start safe", "start start self-end safe"],
+			"justify-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe"],
+			"justify-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe", "legacy", "legacy left", "legacy right", "legacy center"],
+			"justify-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start self-end", "start start self-end", "start start safe", "start start self-end safe"]
 		}
 	},
 
