@@ -542,5 +542,14 @@ window.Specs = {
 		"properties": {
 			"all": ["initial", "inherit", "unset"]
 		}
-	}
+	},
+
+	"compositing": {
+		"title": "Compositing and Blending",
+		"properties": {
+			"mix-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"],
+			"isolation": ["auto", "isolate"],
+			"background-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity", "normal, multiply"]
+		}
+  }
 };
