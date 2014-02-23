@@ -555,13 +555,13 @@ window.Specs = {
 			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "no-clip"],
 			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box"],
 			"mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
-			"mask": ["top", "space", "url(image.png#')", "url(image.png') luminance", "url(image.png') luminance top space"],
-			"mask-box-source": ["none", "url(image.png#mask)"],
+			"mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
+			"mask-box-source": ["none", "url(image.png)"],
 			"mask-box-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
 			"mask-box-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
 			"mask-box-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
 			"mask-box-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
-			"mask-box": ["url(image.png)", "url(image.png) 10px", "url(image.png#mask) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png#mask) 1 fill 10px 2"],
+			"mask-box": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
 			"mask-source-type": ["luminance", "alpha"]
 		}
   },
