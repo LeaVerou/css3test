@@ -597,6 +597,17 @@ window.Specs = {
 		}
 	},
 
+	"css-display": {
+		"title": "Display",
+		"properties": {
+			"display-inside": ["auto", "block", "table", "flex", "grid"],
+			"display-outside": ["block-level", "inline-level", "none", "table-row-group", "table-header-group", "table-footer-group", "table-row", "table-cell", "table-column-group", "table-column", "table-caption"],
+			"display-extras": ["none", "list-item"],
+			"display": ["auto", "block-level", "inline-level"],
+			"display-box": ["normal", "none", "contents"]
+		}
+	},
+
 	"css-shapes": {
 		"title": "Shapes",
 		"properties": {
@@ -605,7 +616,7 @@ window.Specs = {
 			"shape-margin": ["0", "10px", "50%"]
 		}
 	},
-	
+
 	"css3-exclusions": {
 		"title": "Exclusions",
 		"properties": {
@@ -627,13 +638,13 @@ window.Specs = {
 			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 		}
 	},
-	
+
 	"fullscreen": {
 		"title": "Fullscreen API",
 		"selectors": {
 			"::backdrop": "::backdrop",
 			":fullscreen": ":fullscreen"
-		}	
+		}
 	},
 
 	"css3-break": {
@@ -675,10 +686,10 @@ window.Specs = {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
 			"ruby-position" : ["over", "under", "inter-character"],
 			"ruby-merge" : ["separate", "collapse", "auto"],
-			"ruby-align" : ["start", "center", "space-between",	"space-around"]			
+			"ruby-align" : ["start", "center", "space-between",	"space-around"]
 		}
 	},
-	
+
 	"css-snappoints": {
 		"title": "Scroll Snap Points",
 		"properties": {
@@ -738,12 +749,12 @@ window.Specs = {
 			"border-image-transform": ["logical", "physical", "rotate"]
 		}
 	},
-	
+
 	"css-lists": {
 		"title": "Lists and Counters",
 		"properties": {
 			"list-style" : [
-				"outside", "disc", "disc outside", "outside disc", "disc none", "none disc", "none disc outside", "none outside disc", "disc none outside", "disc outside none", "outside none disc", "outside disc none", "inside none", "none inside", "none none inside", "square", "none", "none none", "outside none none", "none outside none", "none none outside", "none outside", "outside none", "outside outside", "outside inside", 
+				"outside", "disc", "disc outside", "outside disc", "disc none", "none disc", "none disc outside", "none outside disc", "disc none outside", "disc outside none", "outside none disc", "outside disc none", "inside none", "none inside", "none none inside", "square", "none", "none none", "outside none none", "none outside none", "none none outside", "none outside", "outside none", "outside outside", "outside inside",
 				"\\32 style", "\\32 style inside", '"-"', "'-'", "inside '-'", "'-' outside", "none '-'", "inside none '-'",
 				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"symbols(cyclic \"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
@@ -766,8 +777,8 @@ window.Specs = {
 				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside none',
 				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none outside'*/
 			],
-			"list-style-type": [ 
-				"disc", "none", "circle", "square", 
+			"list-style-type": [
+				"disc", "none", "circle", "square",
 				"disclosure-closed", "disclosure-open",
 				"decimal", "decimal-leading-zero",
 				"lower-roman", "upper-roman", "lower-greek",
