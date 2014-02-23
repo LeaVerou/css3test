@@ -544,6 +544,20 @@ window.Specs = {
 		}
 	},
 
+	"css3-conditional": {
+		"title": "Conditional Rules",
+		"@rules": {
+			"@support": [
+				"@supports (color: green)",
+				"@supports not (foo: bar)",
+				"@supports (color: green) or (color: red)",
+				"@supports (color: green) and (color: red)",
+				"@supports (color: green) and (not (foo: bar))",
+				"@supports (color: green) or (not (foo: bar))"
+			]
+		}
+	},
+
 	"css-masking": {
 		"title": "Masking",
 		"properties": {
