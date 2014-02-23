@@ -578,7 +578,7 @@ window.Specs = {
 			"mask-box": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
 			"mask-source-type": ["luminance", "alpha"]
 		}
-  },
+	},
 
 	"compositing": {
 		"title": "Compositing and Blending",
@@ -587,6 +587,15 @@ window.Specs = {
 			"isolation": ["auto", "isolate"],
 			"background-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity", "normal, multiply"]
 		}
-  }
+	},
+
+	"css-shapes": {
+		"title": "Shapes",
+		"properties": {
+			"shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
+			"shape-image-threshold": ["0", "1", "0.0", "0.1"],
+			"shape-margin": ["0", "10px", "50%"]
+		}
+	}
 
 };
