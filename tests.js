@@ -16,6 +16,10 @@ window.Specs = {
 				"url(foo.png) bottom right / cover padding-box content-box"
 			],
 			"border-radius": ["10px", "50%", "10px / 20px", "2px 4px 8px 16px"],
+            "border-top-left-radius":["10px", "50%", "2em 0.5em"],
+            "border-top-right-radius":["10px", "50%", "2em 0.5em"],
+            "border-bottom-right-radius":["10px", "50%", "2em 0.5em"],
+            "border-bottom-left-radius":["10px", "50%", "2em 0.5em"],
 			"border-image-source": ["none", "url(foo.png)"],
 			"border-image-slice": ["10", "30%"].times(1, 4).concat(["fill 30%", "fill 10", "fill 2 4 8% 16%", "30% fill", "10 fill", "2 4 8% 16% fill"]),
 			"border-image-width": ["10px", "5%", "28", "auto", "10px 10px", "5% 10px", "28 10px", "auto 10px", "10px 5%", "5% 5%", "28 5%", "auto 5%", "10px 28", "5% 28", "28 28", "auto 28", "10px auto", "5% auto", "28 auto", "auto auto", "10px 10% 10", "5% 10px 20 auto"],
@@ -525,6 +529,36 @@ window.Specs = {
 		}
 	},
 
+    "css3-cascade": {
+        "title": "Resetting All Properties",
+        "properties": {
+            "all": ["initial", "inherit", "unset"]
+        }
+    },
+
+    "css3-positioning": {
+        "title": "Positioned Layout Module",
+        "properties": {
+            "position": ["sticky", "center", "page"]
+        }
+    },
+
+	"css3-box": {
+		"title": "Basic Box Model",
+        "properties": {
+            "margin": ["fill"],
+            "padding": ["auto"],
+            "width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content", "complex"],
+            "min-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "min-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "max-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "max-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "alignment": ["top", "right", "bottom", "left", "center"],
+            "child-align": ["top", "middle", "bottom", "left", "right", "auto"]
+        }
+    },
+
 	"css3-align": {
 		"title": "Box Alignment",
 		"properties": {
@@ -534,13 +568,6 @@ window.Specs = {
 			"justify-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe"],
 			"justify-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe", "legacy", "legacy left", "legacy right", "legacy center"],
 			"justify-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start self-end", "start start self-end", "start start safe", "start start self-end safe"]
-		}
-	},
-
-	"css3-cascade": {
-		"title": "Resetting All Properties",
-		"properties": {
-			"all": ["initial", "inherit", "unset"]
 		}
 	},
 
@@ -601,8 +628,7 @@ window.Specs = {
 	"filter-effects": {
 		"title": "Filter Effects",
 		"properties": {
-			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
+			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"]
 		}
 	}
-
 };
