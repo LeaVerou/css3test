@@ -22,19 +22,19 @@ h1, h2 {
 	body > section section section h1 {
 		font-size: 180%;
 	}
-	
+
 	section section section section h1 {
 		color: hsla(200, 10%, 20%, .5);
 		font-size: 120%;
 		font-weight: bold;
 		text-transform: capitalize;
 	}
-	
+
 		h1 > .score {
 			float: right;
 			font-weight: bold;
 		}
-		
+
 		h1 > .spec-link {
 			display: inline-block;
 			padding: .3em .4em;
@@ -46,7 +46,7 @@ h1, h2 {
 			vertical-align: middle;
 			text-shadow: 0 .1em .1em black;
 		}
-		
+
 		h1 > .spec-link:hover {
 			background: #f06;
 		}
@@ -63,7 +63,8 @@ body > h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-shadow: 0 .1em .1em black;
-	
+	z-index: 1;
+
 	-webkit-transform:  rotate(-90deg) translateX(-100%);
 	-webkit-transform-origin: top left;
 	-moz-transform:  rotate(-90deg) translateX(-100%);
@@ -83,7 +84,8 @@ body > h1 {
 	width: 50px;
 	border-radius: 50%;
 	box-shadow: 2px 2px 10px rgba(0,0,0,.5);
-	
+	z-index: 2;
+
 	-webkit-transform: rotate(-15deg);
 	-moz-transform: rotate(-15deg);
 	-ms-transform: rotate(-15deg);
@@ -97,21 +99,21 @@ body > h1 {
 	margin-right: 2em;
 }
 
-	#tests hgroup {
+	#tests #hgroup {
 		text-align: center;
 	}
-	
-		#tests > hgroup > h1 {
+
+		#tests > #hgroup > h1 {
 			font-size: 250%;
 		}
-	
+
 			#tests h1 > strong {
 				display: block;
 				margin-top: .1em;
 				font-size: 500%;
 				line-height: .7;
 			}
-		
+
 		#tests h2 {
 			font-size: 80%;
 		}
@@ -146,12 +148,12 @@ dd {
 	dd dd {
 		border: 1px solid white;
 	}
-	
+
 	dd small {
 		display: block;
 		opacity: .8;
 	}
-	
+
 dl .pass,
 #specsTested li.pass:before {
 	background-color: #490;
@@ -252,7 +254,7 @@ aside {
 	aside section {
 		margin-left: 66%;
 	}
-	
+
 	aside .caution p {
 		padding: 1em;
 		margin-left: 2em;
@@ -260,31 +262,31 @@ aside {
 		color: white;
 		text-shadow: 0 -.1em .2em black;
 	}
-	
+
 		aside h1 {
 			font-size: 150%;
 		}
-	
+
 		aside ul {
 			margin: .5em 0;
 			padding: 0 0 0 2em;
 		}
-	
+
 			aside li {
 				list-style: none;
 				padding: .3em 0;
 				border-bottom: 2px dotted rgba(0,0,0,.25);
 				border-top: 2px dotted white;
 			}
-			
+
 			aside li:first-child {
 				border-top: none;
 			}
-			
+
 			aside li:last-child {
 				border-bottom: none;
 			}
-			
+
 			#specsTested li {
 				position: relative;
 			}
@@ -299,7 +301,7 @@ aside {
 				border-radius: 50%;
 				box-shadow: 0 2px white;
 			}
-			
+
 footer {
 	margin-left: 65%;
 	font-size: 85%;
@@ -312,7 +314,7 @@ footer {
 		border-top: 1px solid hsl(200, 10%, 20%);
 		text-align: center;
 	}
-	
+
 /* Ad packs */
 .bsa_it_ad {
 	padding:10px !important;
@@ -325,20 +327,20 @@ footer {
 		float:none;
 		margin: 0 10px 5px 0 !important;
 	}
-	
+
 	.bsa_it_ad img {
 		padding:0;
 		border:none;
 	}
-	
+
 	.bsa_it_ad .bsa_it_t {
 		padding:1px 0 0 0;
 	}
-	
+
 	.bsa_it_d {
 		font-size: 70% !important;
 	}
-	
+
 .bsa_it_p {
 	display: none !important;
 }

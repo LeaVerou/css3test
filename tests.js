@@ -16,6 +16,10 @@ window.Specs = {
 				"url(foo.png) bottom right / cover padding-box content-box"
 			],
 			"border-radius": ["10px", "50%", "10px / 20px", "2px 4px 8px 16px"],
+            "border-top-left-radius":["10px", "50%", "2em 0.5em"],
+            "border-top-right-radius":["10px", "50%", "2em 0.5em"],
+            "border-bottom-right-radius":["10px", "50%", "2em 0.5em"],
+            "border-bottom-left-radius":["10px", "50%", "2em 0.5em"],
 			"border-image-source": ["none", "url(foo.png)"],
 			"border-image-slice": ["10", "30%"].times(1, 4).concat(["fill 30%", "fill 10", "fill 2 4 8% 16%", "30% fill", "10 fill", "2 4 8% 16% fill"]),
 			"border-image-width": ["10px", "5%", "28", "auto", "10px 10px", "5% 10px", "28 10px", "auto 10px", "10px 5%", "5% 5%", "28 5%", "auto 5%", "10px 28", "5% 28", "28 28", "auto 28", "10px auto", "5% auto", "28 auto", "auto auto", "10px 10% 10", "5% 10px 20 auto"],
@@ -486,9 +490,9 @@ window.Specs = {
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
-			"align-content": ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"],
-			"align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
-			"align-self": ["flex-start", "flex-end", "center", "baseline", "stretch", "auto"],
+			"align-content": ["flex-start", "flex-end", "space-between", "space-around"],
+			"align-items": ["flex-start", "flex-end"],
+			"align-self": ["flex-start", "flex-end"],
 			"display": ["flex", "inline-flex"],
 			"flex": ["none","5 7 10%"],
 			"flex-basis": ["auto","1px"],
@@ -497,7 +501,7 @@ window.Specs = {
 			"flex-grow": ["0","5"],
 			"flex-shrink": ["1","10"],
 			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
-			"justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+			"justify-content": ["flex-start", "flex-end", "space-between", "space-around"],
 			"order": ["0", "1"]
 		}
 	},
@@ -541,7 +545,7 @@ window.Specs = {
 
 	"css3-box": {
 		"title": "Basic Box Model",
-		"properties": {
+        "properties": {
             "margin": ["fill"],
             "padding": ["auto"],
             "width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
@@ -552,8 +556,79 @@ window.Specs = {
             "max-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
             "alignment": ["top", "right", "bottom", "left", "center"],
             "child-align": ["top", "middle", "bottom", "left", "right", "auto"]
+        }
+    },
+
+	"css3-align": {
+		"title": "Box Alignment",
+		"properties": {
+			"align-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
+			"align-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
+			"align-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start flex-end", "start start self-end", "start start safe", "start start self-end safe"],
+			"justify-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe"],
+			"justify-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe", "legacy", "legacy left", "legacy right", "legacy center"],
+			"justify-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start self-end", "start start self-end", "start start safe", "start start self-end safe"]
+		}
+	},
+
+	"css3-conditional": {
+		"title": "Conditional Rules",
+		"@rules": {
+			"@support": [
+				"@supports (color: green)",
+				"@supports not (foo: bar)",
+				"@supports (color: green) or (color: red)",
+				"@supports (color: green) and (color: red)",
+				"@supports (color: green) and (not (foo: bar))",
+				"@supports (color: green) or (not (foo: bar))"
+			]
+		}
+	},
+
+	"css-masking": {
+		"title": "Masking",
+		"properties": {
+			"clip-path": ["url('#clip')", "rectangle", "inset-rectangle", "circle", "ellipse", "border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "none"],
+			"mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
+			"mask-type": ["alpha", "luminance", "auto"],
+			"mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
+			"mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
+			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "no-clip"],
+			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box"],
+			"mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
+			"mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
+			"mask-box-source": ["none", "url(image.png)"],
+			"mask-box-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
+			"mask-box-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
+			"mask-box-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
+			"mask-box-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
+			"mask-box": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
+			"mask-source-type": ["luminance", "alpha"]
+		}
+	},
+
+	"compositing": {
+		"title": "Compositing and Blending",
+		"properties": {
+			"mix-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"],
+			"isolation": ["auto", "isolate"],
+			"background-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity", "normal, multiply"]
+		}
+	},
+
+	"css-shapes": {
+		"title": "Shapes",
+		"properties": {
+			"shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
+			"shape-image-threshold": ["0", "1", "0.0", "0.1"],
+			"shape-margin": ["0", "10px", "50%"]
+		}
+	},
+
+	"filter-effects": {
+		"title": "Filter Effects",
+		"properties": {
+			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"]
 		}
 	}
-
-
 };
