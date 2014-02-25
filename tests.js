@@ -544,6 +544,13 @@ window.Specs = {
 		}
 	},
 
+    "css3-positioning": {
+        "title": "Positioned Layout Module",
+        "properties": {
+            "position": ["sticky", "center", "page"]
+        }
+    },
+
 	"css3-conditional": {
 		"title": "Conditional Rules",
 		"@rules": {
@@ -557,6 +564,22 @@ window.Specs = {
 			]
 		}
 	},
+
+    "css3-box": {
+        "title": "Basic Box Model",
+        "properties": {
+            "margin": ["fill"],
+            "padding": ["auto"],
+            "width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content", "complex"],
+            "min-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "min-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "max-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "max-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "alignment": ["top", "right", "bottom", "left", "center"],
+            "child-align": ["top", "middle", "bottom", "left", "right", "auto"]
+        }
+    },
 
 	"css-masking": {
 		"title": "Masking",
