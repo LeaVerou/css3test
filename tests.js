@@ -610,6 +610,16 @@ window.Specs = {
 		"properties": {
 			"touch-action": ["auto", "none", "pan-x", "pan-y"]
 		}
-	}
+	},
 
+	"css3-break": {
+		"title": "Fragmentation",
+		"properties": {
+			"break-after": ["any", "recto", "verso"],
+			"break-before": ["any", "recto", "verso"],
+			"break-inside": ["avoid-region"],
+			"orphans": ["1", "2"],
+			"widows": ["1", "2"]
+		}
+	}
 };
