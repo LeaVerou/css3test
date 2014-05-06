@@ -635,6 +635,13 @@ window.Specs = {
 		}
 	},
 
+    "css-will-change": {
+        "title": "Will Change",
+        "properties": {
+            "will-change": ["auto", "scroll-position", "contents", "transform"]
+        }
+    },
+
 	"css3-break": {
 		"title": "Fragmentation",
 		"properties": {
