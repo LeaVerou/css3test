@@ -570,12 +570,12 @@ window.Specs = {
         "properties": {
             "margin": ["fill"],
             "padding": ["auto"],
-            "width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
-            "height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content", "complex"],
-            "min-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
-            "min-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
-            "max-width": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
-            "max-height": ["border-box", "content-box", "available", "min-content", "max-content", "fit-content"],
+            "width": ["border-box", "content-box", "available", "fill-available", "min-content", "max-content", "fit-content"],
+            "height": ["border-box", "content-box", "available", "fill-available", "min-content", "max-content", "fit-content", "complex"],
+            "min-width": ["border-box", "content-box", "available", "fill-available", "min-content", "max-content", "fit-content"],
+            "min-height": ["border-box", "content-box", "available", "fill-available", "min-content", "max-content", "fit-content"],
+            "max-width": ["border-box", "content-box", "available", "fill-available", "min-content", "max-content", "fit-content"],
+            "max-height": ["border-box", "content-box", "available", "fill-available", "min-content", "max-content", "fit-content"],
             "alignment": ["top", "right", "bottom", "left", "center"],
             "child-align": ["top", "middle", "bottom", "left", "right", "auto"]
         }
