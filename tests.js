@@ -608,7 +608,7 @@ window.Specs = {
 	"pointerevents": {
 		"title": "Pointer Events",
 		"properties": {
-			"touch-action": ["auto", "none", "pan-x", "pan-y"]
+			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 		}
 	},
 
