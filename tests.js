@@ -442,7 +442,7 @@ window.Specs = {
 			"vmin": "5vmin",
 			"vmax": "5vmax",
 			"attr()": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"],
-			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)"],
+			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)"],
 			"toggle()": "toggle(1px, 2px)"
 		}
 	},
@@ -626,6 +626,23 @@ window.Specs = {
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
 		}
-	}
+	},
 
+	"pointerevents": {
+		"title": "Pointer Events",
+		"properties": {
+			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
+		}
+	},
+
+	"css3-break": {
+		"title": "Fragmentation",
+		"properties": {
+			"break-after": ["any", "recto", "verso"],
+			"break-before": ["any", "recto", "verso"],
+			"break-inside": ["avoid-region"],
+			"orphans": ["1", "2"],
+			"widows": ["1", "2"]
+		}
+	}
 };
