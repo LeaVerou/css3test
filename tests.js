@@ -532,7 +532,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-variables": {
+	"css-variables-1": {
 		"title": "CSS variables",
 		"values": {
 			"properties": [
