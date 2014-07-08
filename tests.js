@@ -530,5 +530,25 @@ window.Specs = {
 		"properties": {
 			"all": ["initial", "inherit", "unset"]
 		}
+	},
+
+	"css3-variables": {
+		"title": "CSS variables",
+		"values": {
+			"properties": [
+				"--foo",
+				"--FOO"
+			],
+			"color": "hsla(0,0%,0%,.5)",
+			"integer": "3",
+			"length": "transparent",
+			"string": "\"foo\"",
+			"variables": [
+				"var(--bar)",
+				"var(--BAR)",
+				"var(--bar) var(--BAR)",
+				"var(--bar), var(--BAR)"
+			]
+		}
 	}
 };
