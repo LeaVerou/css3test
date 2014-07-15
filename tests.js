@@ -561,22 +561,24 @@ window.Specs = {
 	"css-masking": {
 		"title": "Masking",
 		"properties": {
-			"clip-path": ["url('#clip')", "rectangle", "inset-rectangle", "circle", "ellipse", "border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "none"],
+			"clip-path": ["url('#clip')", "inset(50%)", "circle()", "ellipse()", "polygon(0 10px, 30px 0)", "circle() border-box", "border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "none"],
+			"clip-rule": ["nonzero", "evenodd"],
 			"mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
-			"mask-type": ["alpha", "luminance", "auto"],
+			"mask-mode": ["alpha", "luminance", "auto"],
 			"mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
 			"mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
 			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "no-clip"],
 			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box"],
 			"mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
+			"mask-composite": ["add", "subtract", "intersect", "exclude"],
 			"mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
-			"mask-box-source": ["none", "url(image.png)"],
-			"mask-box-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
-			"mask-box-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
-			"mask-box-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
-			"mask-box-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
-			"mask-box": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
-			"mask-source-type": ["luminance", "alpha"]
+			"mask-border-source": ["none", "url(image.png)"],
+			"mask-border-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
+			"mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
+			"mask-border-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
+			"mask-border-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
+			"mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
+			"mask-type": ["luminance", "alpha"]
 		}
 	},
 
