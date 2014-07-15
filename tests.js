@@ -303,8 +303,7 @@ window.Specs = {
 			"text-align": ["start", "end", "match-parent", "start end"],
 			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
 			"text-justify": ["auto", "none", "inter-word", "distribute"],
-			"word-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
-			"letter-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
+			"word-spacing": ["50%"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
 		}
