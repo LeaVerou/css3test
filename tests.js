@@ -629,6 +629,5 @@ window.Specs = {
 		"properties": {
 			"position": ["sticky"]
 		}
-	},
-
+	}
 };
