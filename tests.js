@@ -622,12 +622,5 @@ window.Specs = {
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
 		}
-	},
-
-	"css3-positioning": {
-		"title": "Positioning",
-		"properties": {
-			"position": ["sticky"]
-		}
 	}
 };
