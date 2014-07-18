@@ -616,7 +616,7 @@ window.Specs = {
 			"break-after": ["any", "recto", "verso"],
 			"break-before": ["any", "recto", "verso"],
 			"break-inside": ["avoid-region"],
-            "box-decoration-break": ["slice", "clone"],
+			"box-decoration-break": ["slice", "clone"],
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
 		}
