@@ -27,7 +27,6 @@ window.Specs = {
 				"url(foo.png) 10 / 10px", "url(foo.png) 10 / 10% / 10px",
 				"url(foo.png) fill 10 / 10% / 10px", "url(foo.png) fill 10 / 10% / 10px space"
 			],
-			"box-decoration-break": ["slice", "clone"],
 			"box-shadow": [
 				"1px 1px", "0 0 black", "1px 2px 3px black", "1px 2px 3px 4px black",
 				"inset 1px 1px", "1px 2px 3px 4px black inset"
@@ -617,6 +616,7 @@ window.Specs = {
 			"break-after": ["any", "recto", "verso"],
 			"break-before": ["any", "recto", "verso"],
 			"break-inside": ["avoid-region"],
+            "box-decoration-break": ["slice", "clone"],
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
 		}
