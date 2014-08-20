@@ -75,6 +75,13 @@ window.Specs = {
 				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
 				"image('dark.png', black)", "image(green)"
 			],
+            "image-set()":[
+                "image-set(url(foo.png) 1x, url(foo-2x.png) 2x)",
+                "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-print.png) 600dpi)"
+            ],
+            "element()": [
+                "element(#foo)"
+            ]
 		},
 		"properties": {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
@@ -96,7 +103,8 @@ window.Specs = {
 			"[att*=val]": ["[att*=val]", "[att*=\"val\"]"],
 			"[att$=val]": ["[att$=val]", "[att$=\"val\"]"],
 			"Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"],
-			":target": ":target",
+			":target": [":target", ":target::before"],
+            ":lang()": ":lang(fr-be)",
 			":enabled": ":enabled",
 			":disabled": ":disabled",
 			":checked": ":checked",
@@ -137,6 +145,12 @@ window.Specs = {
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
 			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
+            ":matches()": [":matches(h1, h2, h3 ,h4 ,h5 ,h6)", ":matches(:hover, :focus)"],
+            ":scope": ":scope",
+            ":drop()": [":drop(active)" ,":drop(valid active invalid)"],
+            ":current()": ":current(p, li, dt, dd)",
+            ":blank": ":blank",
+             
 		}
 	},
 
@@ -542,6 +556,13 @@ window.Specs = {
 		}
 	},
 
+    "css3-positioning": {
+        "title": "Positioned Layout Module",
+        "properties": {
+            "position": ["sticky", "center", "page"]
+        }
+    },
+
 	"css3-conditional": {
 		"title": "Conditional Rules",
 		"@rules": {
@@ -555,6 +576,19 @@ window.Specs = {
 			]
 		}
 	},
+
+    "css3-sizing": {
+        "title": "Intrinsic & Extrinsic Sizing",
+        "properties": {
+            "width": ["fill", "min-content", "max-content", "fit-content"],
+            "height": ["fill", "min-content", "max-content", "fit-content"],
+            "min-width": ["contain-floats", "fill", "min-content", "max-content", "fit-content"],
+            "min-height": ["contain-floats", "fill", "min-content", "max-content", "fit-content"],
+            "max-width": ["fill", "min-content", "max-content", "fit-content"],
+            "max-height": ["fill", "min-content", "max-content", "fit-content"],
+            "column-width":["fill", "min-content", "max-content", "fit-content"]
+        }
+    },
 
 	"css-masking": {
 		"title": "Masking",
@@ -611,6 +645,13 @@ window.Specs = {
 			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 		}
 	},
+
+    "css-will-change": {
+        "title": "Will Change",
+        "properties": {
+            "will-change": ["auto", "scroll-position", "contents", "transform"]
+        }
+    },
 
 	"css3-break": {
 		"title": "Fragmentation",
