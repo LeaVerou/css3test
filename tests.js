@@ -77,11 +77,24 @@ window.Specs = {
 				"image('dark.png', black)", "image(green)"
 			],
             "image-set()":[
+                "image-set('foo.png' 1x, 'foo-2x.png' 2x);",
+                "image-set('foo.png' 1x, 'foo-2x.png' 2x #ccc);",
+                "image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi );"
+            ],
+            "-webkit-image-set()":[
                 "image-set(url(foo.png) 1x, url(foo-2x.png) 2x)",
-                "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-print.png) 600dpi)"
+                "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-3x.png) 3x)"
             ],
             "element()": [
                 "element(#foo)"
+            ],
+            //http://trac.webkit.org/changeset/100535
+            // Demo: http://peter.sh/files/examples/cross-fading.html
+            // 新语法：cross-fade() = cross-fade( [ <percentage>? && <image> ] [, <image> | <color> ]? )
+            "-webkit-cross-fade()": [
+                "cross-fade(url(foo.png), url(bar.png), 20%);",
+                "cross-fade(url(foo.png), url(bar.png), 100%);",
+                "cross-fade(url(foo.png), url(bar.png), 0.2);"
             ]
 		},
 		"properties": {
@@ -105,7 +118,7 @@ window.Specs = {
 			"[att$=val]": ["[att$=val]", "[att$=\"val\"]"],
 			"Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"],
 			":target": [":target", ":target::before"],
-            ":lang()": ":lang(fr-be)",
+      ":lang()": ":lang(fr-be)",
 			":enabled": ":enabled",
 			":disabled": ":disabled",
 			":checked": ":checked",
@@ -146,14 +159,33 @@ window.Specs = {
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
 			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
-            ":matches()": [":matches(h1, h2, h3 ,h4 ,h5 ,h6)", ":matches(:hover, :focus)"],
-            ":scope": ":scope",
-            ":drop()": [":drop(active)" ,":drop(valid active invalid)"],
-            ":current()": ":current(p, li, dt, dd)",
-            ":blank": ":blank",
-             
+      ":matches()": [":matches(h1, h2, h3 ,h4 ,h5 ,h6)", ":matches(:hover, :focus)"],
+      ":drop()": [":drop(active)" ,":drop(valid active invalid)"],
+      ":current()": ":current(p, li, dt, dd)",
+      ":blank": ":blank"
 		}
 	},
+
+  "css-scoping": {
+    "title": "CSS Scoping Module Level 1",
+    "selectors": {
+      ":scope": ":scope",
+      ":unresolved": ":unresolved",
+      ":host": ":host",
+      ":host()": ":host(.foo)",
+      ":host-context()": ":host-context(.foo)",
+      "::shadow": "::shadow",
+      "::content": "::content",
+      "::region": "::region",
+      "deep": "/deep/"
+    },
+    "@rules": {
+      "@scope": [
+        "@scope div",
+        "@scope .foo"
+      ]
+    }
+  },
 
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
@@ -197,9 +229,15 @@ window.Specs = {
 				"(max-resolution: 1000000dpcm)"
 			],
 			"scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
-			"grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
+			"grid": ["all, (grid)", "(grid: 0), (grid: 1)"],
+      "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
+      "hover": ["(hover: hover)", "(hover: on-demand)", "(hover: none)"],
+      "any-pointer": ["(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
+      "any-hover": ["(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"]
 		}
 	},
+
+
 
 	"css3-ui": {
 		"title": "Basic User Interface",
@@ -251,7 +289,10 @@ window.Specs = {
 				"step-start", "step-end", "steps(3, start)", "steps(5, end)"
 			],
 			"transition-delay": ["1s", "-1s"],
-			"transition": "1s 2s width linear"
+			"transition": [
+        "1s 2s width linear",
+        "0"
+      ]
 		}
 	},
 
@@ -271,7 +312,10 @@ window.Specs = {
 			"animation-play-state": ["running", "paused"],
 			"animation-delay": ["1s", "-1s"],
 			"animation-fill-mode": ["none", "forwards", "backwards", "both"],
-			"animation": "foo 1s 2s infinite linear alternate both"
+      "animation": [
+        "foo 200ms ease .8s infinite alternate both paused",
+        "0"
+      ]
 		},
 		"@rules": {
 			"@keyframes": "@keyframes foo"
@@ -314,11 +358,12 @@ window.Specs = {
 			"hyphens": ["auto", "manual", "none"],
 			"overflow-wrap": ["normal", "break-word"],
 			"word-wrap": ["normal", "break-word"],
-			"text-align": ["start", "end", "match-parent", "start end"],
+			"text-align": ["start", "end", "match-parent", "justify-all", "start end"],
 			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
+      "text-align-all": ["start", "end", "left", "right", "center", "justify", "match-parent"],
 			"text-justify": ["auto", "none", "inter-word", "distribute"],
-			"word-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
-			"letter-spacing": ["50%", "1em .5em", "1em .5em 2em", "normal 1em 2em"],
+			"word-spacing": ["50%", "1em", "normal"],
+			"letter-spacing": ["normal"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
 		}
@@ -430,7 +475,7 @@ window.Specs = {
 			"column-count": ["2", "auto"],
 			"columns": ["100px", "3", "10em 2", "auto 2", "10em auto", "auto auto", "2 10em", "auto 10em", "2 auto"],
 			"column-gap": ["1em", "normal"],
-			"column-rule-color": "red",
+			"column-rule-color": ["red"],
 			"column-rule-style": ["none", "solid", "dotted"],
 			"column-rule-width": "1px",
 			"column-rule": ["transparent", "1px solid black"],
@@ -447,7 +492,30 @@ window.Specs = {
 		"values": {
 			"properties": [
 				"width",
-				"padding"
+                "height",
+                "min-width",
+                "max-width",
+                "min-height",
+                "max-height",
+                "left",
+                "line-height",
+                "letter-spacing",
+                "word-spacing",
+                "text-indent",
+                "vertical-align",
+                "border-spacing",
+                "outline-width",
+                "magrin",
+				"padding",
+                "border-left-width",
+                "border-image-width",
+                "background-position",
+                "background-size",
+                "column-gap",
+                "column-rule-width",
+                "column-width",
+                //integer
+                "flex-basis"
 			],
 			"rem": "5rem",
 			"ch": "5ch",
@@ -456,9 +524,12 @@ window.Specs = {
 			"vmin": "5vmin",
 			"vmax": "5vmax",
 			"attr()": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"],
-			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)"],
+			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(5px/2 - 2*1px)", "calc(100%/10)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)"], 
 			"toggle()": "toggle(1px, 2px)"
-		}
+		},    
+        "properties": {
+            "content": ["attr(data-foo)", "attr(class)", "attr(width px, auto)"]
+        }
 	},
 
 	"css3-regions": {
@@ -500,18 +571,18 @@ window.Specs = {
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"properties": {
-			"align-content": ["flex-start", "flex-end", "space-between", "space-around"],
-			"align-items": ["flex-start", "flex-end"],
-			"align-self": ["flex-start", "flex-end"],
-			"display": ["flex", "inline-flex"],
-			"flex": ["none","5 7 10%"],
-			"flex-basis": ["auto","1px"],
-			"flex-direction": ["row","row-reverse","column","column-reverse"],
-			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-			"flex-grow": ["0","5"],
-			"flex-shrink": ["1","10"],
-			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
-			"justify-content": ["flex-start", "flex-end", "space-between", "space-around"],
+      "display": ["flex", "inline-flex"],
+      "align-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+      "justify-content": ["flex-start", "flex-end", "center", "space-between", "space-around"],
+      "align-items": ["flex-start", "flex-end", "center", "baseline", "stretch"],
+      "align-self": ["auto", "flex-start", "flex-end", "center", "baseline", "stretch"],
+      "flex-direction": ["row","row-reverse","column","column-reverse"],
+      "flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
+      "flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
+      "flex": ["none", "auto", "0", "5 7 10%"],
+      "flex-grow": ["0","5"],
+      "flex-shrink": ["1","10"],
+      "flex-basis": ["auto","main-size","1px"],
 			"order": ["0", "1"]
 		}
 	},
@@ -520,34 +591,38 @@ window.Specs = {
 		"title": "Grid Layout",
 		"properties": {
 			"display": ["grid", "inline-grid"],
-			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px, 1fr, 100px, 1fr, 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (col-start) 250px (col-end)"],
-			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px, 1fr, 100px, 1fr, 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (row-start) 250px (row-end)"],
-			"grid-template-areas": ["none", "articles", "nav articles"],
-			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / (row-start) 'a   a   a' (row-end)"],
-			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
-			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
-			"grid-auto-flow": ["none", "rows", "colums"],
-			"grid-auto-position": ["1 / 1"],
-			"grid": ["columns 1fr / auto"],
+			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr 100px 1fr 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (col-start) 250px (col-end)"],
+			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr 100px 1fr 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (row-start) 250px (row-end)"],
+			"grid-template-areas": ["none", "'articles'", "'nav articles'", "'. a' 'b a' '. a'"],
+			"grid-template": ["none", "subgrid", "auto 1fr auto / auto 1fr", "auto 1fr auto / (row-start) 'a   a   a' (row-end)"],
+			"grid-auto-columns": ["auto", "1fr", "100px", "min-content", "max-content", "minmax(min-content, 1fr)"],
+			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "max-content", "minmax(min-content, 1fr)"],
+			"grid-auto-flow": ["row", "column", "dense", "stack", "dense stack", "row dense", "dense row", "dense column", "stack column", "stack row"],
+			/*
+            Removed
+            http://www.w3.org/blog/CSS/2014/02/22/minutes-seattle-f2f-part-ii/
+            "grid-auto-position": ["1 / 1"], 
+            */
+			"grid": ["auto" ,"columns 1fr / auto", "subgrid", "row", "column", "rows 1fr"],
 			"grid-row-start": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
 			"grid-column-start": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
 			"grid-row-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
 			"grid-column-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
 			"grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
-			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"]
+			"grid-area": ["auto", "1 / 1", "1 / span 1", "span / 10 / -1", "articles"]
 		}
 	},
 
 	"css3-align": {
 		"title": "Box Alignment",
-		"properties": {
-			"align-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
-			"align-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
-			"align-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start flex-end", "start start self-end", "start start safe", "start start self-end safe"],
-			"justify-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe"],
-			"justify-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe", "self-start true", "self-end safe", "legacy", "legacy left", "legacy right", "legacy center"],
-			"justify-content": ["auto", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "start start", "start self-end", "start start self-end", "start start safe", "start start self-end safe"]
+    "properties": {
+			"justify-self": ["auto", "stretch", "baseline", "last-baseline", "center", "start", "end", "self-start", "self-end", "flex-start", "flex-end", "left", "right", "center", "center safe", "start safe", "end safe", "self-start safe", "self-end safe", "flex-start safe", "flex-end safe", "left safe", "right safe"],
+      "align-self": ["auto", "stretch", "baseline", "last-baseline", "center", "start", "end", "self-start", "self-end", "flex-start", "flex-end", "left", "right", "center", "center safe", "start safe", "end safe", "self-start safe", "self-end safe", "flex-start safe", "flex-end safe", "left safe", "right safe"],
+			"justify-items": ["auto", "stretch", "baseline", "last-baseline", "center", "start", "end", "self-start", "self-end", "flex-start", "flex-end", "left", "right", "center", "center safe", "start safe", "end safe", "self-start safe", "self-end safe", "flex-start safe", "flex-end safe", "legacy  left", "legacy right", "legacy center"],
+      "align-items": ["auto", "stretch", "baseline", "last-baseline", "center", "start", "end", "self-start", "self-end", "flex-start", "flex-end", "left", "right", "center", "center safe", "start safe", "end safe", "self-start safe", "self-end safe", "flex-start safe", "flex-end safe"],
+			"justify-content": ["auto", "baseline", "last-baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "left", "right", "center safe", "start safe", "end safe", "flex-start safe", "flex-end safe", "left safe", "right safe", "center true", "start true", "end true", "flex-start true", "flex-end true", "left true", "right true", "space-between center", "space-around start", "space-evenly end", "stretch flex-start", "space-between flex-end", "space-between left", "space-between right", "space-between center safe", "space-around start true"],
+      "align-content": ["auto", "baseline", "last-baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "left", "right", "center safe", "start safe", "end safe", "flex-start safe", "flex-end safe", "left safe", "right safe", "center true", "start true", "end true", "flex-start true", "flex-end true", "left true", "right true", "space-between center", "space-around start", "space-evenly end", "stretch flex-start", "space-between flex-end", "space-between left", "space-between right", "space-between center safe", "space-around start true"],
 		}
 	},
 
@@ -555,7 +630,18 @@ window.Specs = {
 		"title": "Resetting All Properties",
 		"properties": {
 			"all": ["initial", "inherit", "unset"]
-		}
+		},
+    "values": {
+      "properties": [
+        "unicode-bidi",
+        "direction",
+        "background-color",
+        "border-color",
+        "text-decoration",
+        "column-rule-color"
+      ],
+      "unset": "unset"
+    },
 	},
 
     "css3-positioning": {
@@ -569,7 +655,8 @@ window.Specs = {
 		"title": "Conditional Rules",
 		"@rules": {
 			"@support": [
-				"@supports (color: green)",
+				"@supports (color: green){display:block}",
+        "@supports (color: green !important)",
 				"@supports not (foo: bar)",
 				"@supports (color: green) or (color: red)",
 				"@supports (color: green) and (color: red)",
@@ -578,6 +665,16 @@ window.Specs = {
 			]
 		}
 	},
+
+  "css-counter-styles": {
+    "title": "CSS Counter Styles",
+    "@rules": {
+      "@counter-style": [
+        "@counter-style triangle {system: cyclic;}",
+        "@counter-style box-corner"
+      ]
+    }
+  },
 
     "css3-sizing": {
         "title": "Intrinsic & Extrinsic Sizing",
@@ -596,20 +693,24 @@ window.Specs = {
 		"title": "Masking",
 		"properties": {
 			"clip-path": ["url('#clip')", "rectangle", "inset-rectangle", "circle", "ellipse", "border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "none"],
+      "clip-rule": ["nonzero", "evenodd"],
 			"mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
-			"mask-type": ["alpha", "luminance", "auto"],
+      "mask-mode": ["auto", "alpha", "luminance"],
+			"mask-type": ["alpha", "luminance"],
 			"mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
 			"mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
-			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "no-clip"],
-			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box"],
+			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "no-clip"],
+			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box"],
 			"mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
-			"mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
-			"mask-box-source": ["none", "url(image.png)"],
-			"mask-box-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
-			"mask-box-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
-			"mask-box-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
-			"mask-box-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
-			"mask-box": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
+			"mask-composite": ["add", "subtract", "intersect", "exclude"],
+      "mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
+			"mask-border-source": ["none", "url(image.png)"],
+      "mask-border-mode": ["luminance ", "alpha"],
+			"mask-border-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
+			"mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
+			"mask-border-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
+			"mask-border-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
+			"mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
 			"mask-source-type": ["luminance", "alpha"]
 		}
 	},
@@ -662,5 +763,34 @@ window.Specs = {
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
 		}
-	}
+	},
+
+  "css-logical-props": {
+  "title": "Logical Properties",
+  "properties": {
+    "measure": ["20px", "15%", "auto"],
+    "length": ["20px", "15%", "auto"],
+    "min-measure": ["20px", "15%"],
+    "min-length": ["20px", "15%"],
+    "max-length": ["20px", "15%", "none"],
+    "margin-before": ["20px", "15%", "auto"],
+    "margin-after": ["20px", "15%", "auto"],
+    "margin-start": ["20px", "15%", "auto"],
+    "margin-end": ["20px", "15%", "auto"],
+    "padding-before": ["20px", "15%"],
+    "padding-after": ["20px", "15%"],
+    "padding-start": ["20px", "15%"],
+    "padding-end": ["20px", "15%"],
+    "border-before": ["20px solid blue"],
+    "border-after": ["20px solid blue"],
+    "border-start": ["20px solid blue"],
+    "border-end": ["20px solid blue"],
+    "offset-before": ["20px", "15%", "auto"],
+    "offset-after": ["20px", "15%", "auto"],
+    "offset-start": ["20px", "15%", "auto"],
+    "offset-end": ["20px", "15%", "auto"],
+    "background-image-transform": ["logical", "physical", "rotate"],
+    "border-image-transform": ["logical", "physical", "rotate"]
+  }
+}
 };

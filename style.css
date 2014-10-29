@@ -272,6 +272,13 @@ aside {
 			padding: 0 0 0 2em;
 		}
 
+    #specsTested {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 10px;
+      background: url(http://dabblet.com/img/noise.png) hsl(24, 20%, 95%);
+    }
+
 			aside li {
 				list-style: none;
 				padding: .3em 0;
