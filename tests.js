@@ -159,7 +159,8 @@ window.Specs = {
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
 			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
-      ":matches()": [":matches(h1, h2, h3 ,h4 ,h5 ,h6)", ":matches(:hover, :focus)"],
+      ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", "matches(section, nav) h1", "matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)"],
+      ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", "any(section, nav) h1", "any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
       ":drop()": [":drop(active)" ,":drop(valid active invalid)"],
       ":current()": ":current(p, li, dt, dd)",
       ":blank": ":blank"
