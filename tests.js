@@ -319,6 +319,7 @@ window.Specs = {
             "animation-delay": ["1s", "-1s"],
             "animation-fill-mode": ["none", "forwards", "backwards", "both"],
             "animation": [
+                "foo 200ms ease .8s infinite alternate both",
                 "foo 200ms ease .8s infinite alternate both paused",
                 "0"
             ]
