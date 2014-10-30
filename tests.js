@@ -806,4 +806,15 @@ window.Specs = {
         "scroll-behavior": ["auto", "smooth"]
       }
     },
+
+    "css-snappoints": {
+      "title": "CSS Scroll Snap Points Module",
+      "properties": {
+        "scroll-snap-type": ["none", "mandatory", "proximity"],
+        "scroll-snap-points-x": ["repeat(100%)", "repeat(50px)"],
+        "scroll-snap-points-y": ["repeat(100%)", "repeat(50px)"],
+        "scroll-snap-destination": ["0 0", "20px 90px", "center bottom", "bottom 10px right 20px"],
+        "scroll-snap-coordinate": ["none", "0 0", "20px 90px", "center bottom", "bottom 10px right 20px"]
+      }
+    },
 };
