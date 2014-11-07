@@ -3,6 +3,7 @@ window.Specs = {
         "title": "Backgrounds and Borders",
         "properties": {
             "background-repeat": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2)),
+            "background-image": "url(foo.png), url(bar.svg)",
             "background-attachment": "local",
             "background-position": ["bottom 10px right 20px", "bottom 10px right", "top right 10px"],
             "background-clip": ["border-box", "padding-box", "content-box"],
@@ -39,6 +40,7 @@ window.Specs = {
         "title": "Image Values and Replaced Content",
         "values": {
             "properties": [
+                "background",
                 "background-image",
                 "list-style-image",
                 "border-image",
@@ -75,27 +77,29 @@ window.Specs = {
             "image()": [
                 "image('sprites.png#xywh=10,30,60,20')",
                 "image('wavy.svg', 'wavy.png' , 'wavy.gif')",
-                "image('dark.png', black)", "image(green)"
+                "image('dark.png', black)", "image(green)",
+                "image(rgba(0,0,255,.5)), url('bg-image.png')"
             ],
             "image-set()": [
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x);",
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x #ccc);",
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi );"
             ],
+            "element()": [
+                "element(#foo)"
+            ],
             "-webkit-image-set()": [
                 "image-set(url(foo.png) 1x, url(foo-2x.png) 2x)",
                 "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-3x.png) 3x)"
             ],
-            "element()": [
-                "element(#foo)"
-            ],
+            
             //http://trac.webkit.org/changeset/100535
             // Demo: http://peter.sh/files/examples/cross-fading.html
             // 新语法：cross-fade() = cross-fade( [ <percentage>? && <image> ] [, <image> | <color> ]? )
             "-webkit-cross-fade()": [
-                "cross-fade(url(foo.png), url(bar.png), 20%);",
-                "cross-fade(url(foo.png), url(bar.png), 100%);",
-                "cross-fade(url(foo.png), url(bar.png), 0.2);"
+                "cross-fade(url(foo.png), url(bar.png), 20%)",
+                "cross-fade(url(foo.png), url(bar.png), 100%)",
+                "cross-fade(url(foo.png), url(bar.png), 0.2)"
             ]
         },
         "properties": {
@@ -804,7 +808,7 @@ window.Specs = {
     "cssom-view": {
       "title": "CSSOM View Module",
       "properties": {
-        "scroll-behavior": ["auto", "smooth"]
+        "scroll-behavior": ["auto", "smooth", "auto"]
       }
     },
 
