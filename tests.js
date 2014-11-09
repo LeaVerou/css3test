@@ -629,5 +629,12 @@ window.Specs = {
 		"properties": {
 			"position": ["sticky"]
 		}
-	}
+	},
+
+    "css-will-change": {
+        "title": "Will Change",
+        "properties": {
+            "will-change": ["scroll-position", "contents", "transform", "top, left"]
+        }
+    }
 };
