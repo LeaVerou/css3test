@@ -1,6 +1,6 @@
 window.Specs = {
     "css3-background": {
-        "title": "Backgrounds and Borders",
+        "title": "Backgrounds and Borders 3",
         "properties": {
             "background-repeat": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2)),
             "background-image": "url(foo.png), url(bar.svg)",
@@ -36,8 +36,21 @@ window.Specs = {
         }
     },
 
+    "css3-background-4": {
+        "title": "Backgrounds and Borders 4",
+        "properties": {
+            "background-repeat": ["extend"],
+            "background-position": ["start 20px", "end 20px"],
+            "corner-shape": ["round", "bevel", "scoop", "notch", "round bevel", "round bevel scoop notch"],
+            "corners": ["bevel 50%", "bevel 0.25em 0.25em 0 0 / 50% 50% 0 0"],
+            "border-limit": ["all", "sides", "corners", "sides 50%", "left 4em", "corners 10px", "corners", "corners"],
+            "border-clip": ["normal", "10px", "10px 30% 50px", "0 5px 2em 25px", "40px 20px 0 1fr repeat(20px 20px) 0 1fr 40px"],
+            "background-position": ["start 20px", "end 20px"]
+        }
+    },
+
     "css3-images": {
-        "title": "Image Values and Replaced Content",
+        "title": "Image Values and Replaced Content 3",
         "values": {
             "properties": [
                 "background",
@@ -74,25 +87,16 @@ window.Specs = {
             ],
             "repeating-linear-gradient": "repeating-linear-gradient(white, black)",
             "repeating-radial-gradient": "repeating-radial-gradient(white, black)",
-            "image()": [
-                "image('sprites.png#xywh=10,30,60,20')",
-                "image('wavy.svg', 'wavy.png' , 'wavy.gif')",
-                "image('dark.png', black)", "image(green)",
-                "image(rgba(0,0,255,.5)), url('bg-image.png')"
-            ],
             "image-set()": [
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x);",
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x #ccc);",
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi );"
             ],
-            "element()": [
-                "element(#foo)"
-            ],
             "-webkit-image-set()": [
                 "image-set(url(foo.png) 1x, url(foo-2x.png) 2x)",
                 "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-3x.png) 3x)"
             ],
-            
+
             //http://trac.webkit.org/changeset/100535
             // Demo: http://peter.sh/files/examples/cross-fading.html
             // 新语法：cross-fade() = cross-fade( [ <percentage>? && <image> ] [, <image> | <color> ]? )
@@ -106,12 +110,51 @@ window.Specs = {
             "object-fit": ["fill", "contain", "cover", "none", "scale-down"],
             "object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
             "image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"],
-            "image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"]
+            "image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"],
+            "image-rendering": ["auto", "crisp-edges", "pixelated"]
+        }
+    },
+
+    "css-images-4": {
+        "title": "Image Values and Replaced Content 4",
+        "values": {
+            "properties": [
+                "background",
+                "background-image",
+                "list-style-image",
+                "border-image",
+                "cursor",
+                "content"
+            ],
+            "image()": [
+                "image('sprites.png#xywh=10,30,60,20')",
+                "image('wavy.svg', 'wavy.png' , 'wavy.gif')",
+                "image('dark.png', black)", "image(green)",
+                "image(rgba(0,0,255,.5)), url('bg-image.png')"
+            ],
+
+            "element()": [
+                "element(#foo)"
+            ],
+        },
+        "properties": {
+            "conic-gradient": [
+                "conic-gradient(white, black)",
+                "conic-gradient(circle, white, black)",
+                "conic-gradient(ellipse, white, black)",
+                "conic-gradient(closest-corner, white, black)",
+                "conic-gradient(circle closest-corner, white, black)",
+                "conic-gradient(farthest-side, white, black)",
+                "conic-gradient(circle farthest-side, white, black)",
+                "conic-gradient(50%, white, black)",
+                "conic-gradient(60% 60%, white, black)"
+            ],
+            "repeating-conic-gradient": "repeating-conic-gradient(white, black)"
         }
     },
 
     "css3-selectors": {
-        "title": "Selectors",
+        "title": "Selectors 3",
         "selectors": {
             "Sibling combinator": "foo ~ bar",
             "::before": "::before",
@@ -163,16 +206,42 @@ window.Specs = {
             ":first-of-type": ":first-of-type",
             ":last-of-type": ":last-of-type",
             ":only-of-type": ":only-of-type",
+            ":empty": ":empty",
+            ":blank": ":blank",
+            ":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"]
+        }
+    },
+
+    "selectors4": {
+        "title": "Selectors 4",
+        "selectors": {
+            ":current()": ":current(p, li, dt, dd)",
             ":past": ":past",
             ":future": ":future",
-            ":empty": ":empty",
-            ":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
             ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)"],
             ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", "any(section, nav) h1", "any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
             ":drop()": [":drop(active)", ":drop(valid active invalid)"],
-            ":current()": ":current(p, li, dt, dd)",
-            ":blank": ":blank",
-            ":any-link": ":any-link"
+            ":any-link": ":any-link",
+            ":focus-within": ":focus-within",
+            ":nth-column": ":future",
+            ":nth-column": [
+                ":nth-column(even)", ":nth-column(odd)",
+                ":nth-column(n)", ":nth-column(-n)", ":nth-column(0n)",
+                ":nth-column(1)", ":nth-column(-1)", ":nth-column(0)",
+                ":nth-column(n+1)", ":nth-column(3n+1)", ":nth-column(3n + 1)",
+                ":nth-column(-n+1)", ":nth-column(-n-1)", ":nth-column(3n-1)"
+            ],
+            ":nth-last-column": [
+                ":nth-last-column(even)", ":nth-last-column(odd)",
+                ":nth-last-column(n)", ":nth-last-column(-n)", ":nth-last-column(0n)",
+                ":nth-last-column(1)", ":nth-last-column(-1)", ":nth-last-column(0)",
+                ":nth-last-column(n+1)", ":nth-last-column(3n+1)", ":nth-last-column(3n + 1)",
+                ":nth-last-column(-n+1)", ":nth-last-column(-n-1)", ":nth-last-column(3n-1)"
+            ],
+
+            ":future": ":future",
+            ":nth-child(An+B [of sel]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))"],
+            ":nth-last-child(An+B [of sel]?)": [":nth-last-child(-n+3 of li.important)", ":nth-last-child(even of :not([hidden]))"],
         }
     },
 
@@ -241,12 +310,31 @@ window.Specs = {
             "scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
             "grid": ["all, (grid)", "(grid: 0), (grid: 1)"],
             "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
-            "hover": ["(hover: hover)", "(hover: on-demand)", "(hover: none)"],
+            "hover": ["(hover)", "(hover: on-demand)", "(hover: none)"],
             "any-pointer": ["(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
-            "any-hover": ["(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"]
+            "any-hover": ["(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"],
+            "scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
+            "light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
+            "update-frequency": ["(update-frequency: none)", "(update-frequency: slow)", "(update-frequency: normal)"],
+            "overflow-block": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"],
+            "overflow-inline": ["(overflow-inline: none)", "(overflow-inline: scroll)"]
         }
     },
 
+    "mediaqueries-4": {
+        "title": "Media Queries 4",
+        "Media queries": {
+            "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
+            "hover": ["(hover)", "(hover: on-demand)", "(hover: none)"],
+            "any-pointer": ["(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
+            "any-hover": ["(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"],
+            "scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
+            "light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
+            "update-frequency": ["(update-frequency: none)", "(update-frequency: slow)", "(update-frequency: normal)"],
+            "overflow-block": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"],
+            "overflow-inline": ["(overflow-inline: none)", "(overflow-inline: scroll)"]
+        }
+    },
 
 
     "css3-ui": {
@@ -806,20 +894,30 @@ window.Specs = {
     },
 
     "cssom-view": {
-      "title": "CSSOM View Module",
-      "properties": {
-        "scroll-behavior": ["auto", "smooth", "auto"]
-      }
+        "title": "CSSOM View Module",
+        "properties": {
+            "scroll-behavior": ["auto", "smooth", "auto"]
+        }
     },
 
     "css-snappoints": {
-      "title": "CSS Scroll Snap Points Module",
-      "properties": {
-        "scroll-snap-type": ["none", "mandatory", "proximity"],
-        "scroll-snap-points-x": ["repeat(100%)", "repeat(50px)"],
-        "scroll-snap-points-y": ["repeat(100%)", "repeat(50px)"],
-        "scroll-snap-destination": ["0 0", "20px 90px", "center bottom", "bottom 10px right 20px"],
-        "scroll-snap-coordinate": ["none", "0 0", "20px 90px", "center bottom", "bottom 10px right 20px"]
-      }
+        "title": "CSS Scroll Snap Points Module",
+        "properties": {
+            "scroll-snap-type": ["none", "mandatory", "proximity"],
+            "scroll-snap-points-x": ["repeat(100%)", "repeat(50px)"],
+            "scroll-snap-points-y": ["repeat(100%)", "repeat(50px)"],
+            "scroll-snap-destination": ["0 0", "20px 90px", "center bottom", "bottom 10px right 20px"],
+            "scroll-snap-coordinate": ["none", "0 0", "20px 90px", "center bottom", "bottom 10px right 20px"]
+        }
+    },
+
+    // 参考 css-shapes 语法
+    "css-motion-1": {
+        "title": "Motion Path Module Level 1",
+        "properties": {
+            "motion-path": ["none", "url(../images/foo.svg)", "polygon(0% 50%, 50% 100%, 0 100%)", "fill-box", "stroke-box", "view-box"],
+            "motion-position": ["0", "123px", "30%"],
+            "motion-rotation": ["auto", "reverse", "-45deg", "auto 180deg", "reverse 45deg"]
+        }
     },
 };
