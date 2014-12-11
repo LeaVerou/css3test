@@ -324,6 +324,8 @@ window.Specs = {
     "mediaqueries-4": {
         "title": "Media Queries 4",
         "Media queries": {
+            "width": ["(width >= 500px)", "(width <= 1200px)", "(500px <= width <= 1200px)"],
+            "height": ["(height >= 500px)", "(height <= 1200px)", "(500px <= height <= 1200px)"],
             "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
             "hover": ["(hover)", "(hover: on-demand)", "(hover: none)"],
             "any-pointer": ["(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
