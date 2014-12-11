@@ -36,7 +36,7 @@ window.Specs = {
         }
     },
 
-    "css3-background-4": {
+    "css-background-4": {
         "title": "Backgrounds and Borders 4",
         "properties": {
             "background-repeat": ["extend"],
