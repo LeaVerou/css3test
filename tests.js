@@ -308,16 +308,7 @@ window.Specs = {
                 "(max-resolution: 1000000dpcm)"
             ],
             "scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
-            "grid": ["all, (grid)", "(grid: 0), (grid: 1)"],
-            "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
-            "hover": ["(hover)", "(hover: on-demand)", "(hover: none)"],
-            "any-pointer": ["(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
-            "any-hover": ["(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"],
-            "scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
-            "light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
-            "update-frequency": ["(update-frequency: none)", "(update-frequency: slow)", "(update-frequency: normal)"],
-            "overflow-block": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"],
-            "overflow-inline": ["(overflow-inline: none)", "(overflow-inline: scroll)"]
+            "grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
         }
     },
 
