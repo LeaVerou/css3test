@@ -273,7 +273,7 @@ window.Specs = {
         "title": "Media Queries",
         "Media queries": {
             "negation": ["not print", "not all and (width:1px)"],
-            "width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
+            "width": ["(width)", "(min-width:1px)", "(max-width:1000000px)", "(min-width: calc(200px - 10px) )"],
             "height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
             "device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
             "device-height": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"],
@@ -286,9 +286,11 @@ window.Specs = {
             ],
             "device-aspect-ratio": [
                 "(device-aspect-ratio)",
+                "(device-aspect-ratio: 16/9)",
+                "(device-aspect-ratio: 1280/720)",
                 "(min-device-aspect-ratio:1/1000000)",
                 "(min-device-aspect-ratio:1 / 1000000)",
-                "(max-device-aspect-ratio:1000000/1)",
+                "(max-device-aspect-ratio:3/2)",
             ],
             "color": [
                 "(color)", "(min-color: 0)", "(max-color: 100)"
@@ -304,11 +306,12 @@ window.Specs = {
             "resolution": [
                 "(resolution)",
                 "(min-resolution: 1dpi)",
+                "(max-resolution: 1.5dppx)",
                 "(max-resolution: 1000000dpi)",
                 "(max-resolution: 1000000dpcm)"
             ],
             "scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
-            "grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
+            "grid": ["all, (grid)", "(grid: 0), (grid: 1)", "(grid: -0)"]
         }
     },
 
@@ -540,7 +543,7 @@ window.Specs = {
     },
 
     "css3-color": {
-        "title": "Color",
+        "title": "CSS Color Module Level 3",
         "values": {
             "properties": [
                 "color",
@@ -557,6 +560,32 @@ window.Specs = {
         },
         "properties": {
             "opacity": ["-5", "0", ".5", "1", "2"]
+        }
+    },
+
+    "css-color": {
+        "title": "CSS Color Module Level 4",
+        "values": {
+            "properties": [
+                "color",
+                "background-color",
+                "border-color",
+                "text-decoration-color",
+                "column-rule-color"
+            ],
+            "#rrggbbaa": ["#0033ffcc", "#03fc"],
+            "rgba": "rgba(0, 0, 100%, 80%)",
+            "hsl": ["hsl(0deg, 80%, 50%)", "hsl(120deg, 20%, 56%)", "hsl(orange greenish, 20%, 56%)", "hsl(orangish(20%) red, 20%, 56%)"],
+            "hsla": "hsla(0, 0%, 0%, 80%)",
+            "gray()": ["gray(0)", "gray(16)", "gray(255, 50%)", "gray(255, .2)"],
+            "hwb()": ["hwb(90, 0%, 0%, 0.5)", "hwb(190, 50%, 0%)", "hwb(190, 50%, 10%, .2)", "hwb(120deg, 44%, 50%)"],
+            "color()": ["color(yellow blend(blue 50%))", "color(red)", "color(red tint(50%))", "color(hsla(125, 50%, 50%, .4) hue(200))", "color(yellow blend(blue 50% hsl))", ],
+            "device-cmyk()": "device-cmyk(0, 81%, 81%, 30%)"
+        },
+        "properties": {
+            "opacity": ["0%", "63%", "100%"],
+            "color-correction": ["auto", "sRGB"],
+            "color-adjust": ["economy", "exact"]
         }
     },
 
@@ -632,31 +661,6 @@ window.Specs = {
             "flow-from": ["none", "named-flow"],
             "flow-into": ["none", "named-flow"],
             "region-fragment": ["auto", "break"]
-        }
-    },
-
-    "css3-speech": {
-        "title": "Speech",
-        "properties": {
-            "voice-volume": ["silent", "x-soft", "soft", "medium", "loud", "x-loud", "-6dB", "0", "6db"],
-            "voice-balance": ["left", "center", "right", "leftwards", "rightwards", "-100", "0", "100"],
-            "speak": ["auto"],
-            "speak-as": ["normal", "spell-out", "digits", "literal-punctuation", "no-punctuation"],
-            "pause-before": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
-            "pause-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
-            "pause": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
-            "rest-before": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
-            "rest-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
-            "rest": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
-            "cue-before": ["-6dB", "0", "6db"],
-            "cue-after": ["-6dB", "0", "6db"],
-            "cue": ["-6dB", "0", "6db"],
-            "voice-family": ["preserve"],
-            "voice-rate": ["normal", "x-slow", "slow", "medium", "fast", "x-fast", "0", "100%"],
-            "voice-pitch": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", ".2kHz", "-3.5st", "3.5st"],
-            "voice-range": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", ".2kHz", "-3.5st", "3.5st"],
-            "voice-stress": ["normal", "strong", "moderate", "none", "reduced "],
-            "voice-duration": ["auto", "+3s", "250ms"]
         }
     },
 
