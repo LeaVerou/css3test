@@ -631,10 +631,20 @@ window.Specs = {
 		}
 	},
 
-    "css-will-change": {
-        "title": "Will Change",
-        "properties": {
-            "will-change": ["scroll-position", "contents", "transform", "top, left"]
-        }
-    }
+	"css-will-change": {
+		"title": "Will Change",
+		"properties": {
+			"will-change": ["scroll-position", "contents", "transform", "top, left"]
+		}
+	},
+
+	"css-ruby-1": {
+		"title": "Ruby",
+		"properties": {
+			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-containe"],
+			"ruby-position" : ["over", "under", "inter-character", "right", "left", "over right"],
+			"ruby-merge" : ["separate", "collapse", "auto"],
+			"ruby-align" : ["start", "center", "space-between",  "space-around"]			
+		}
+	}
 };
