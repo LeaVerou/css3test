@@ -67,7 +67,15 @@ window.Specs = {
                 "linear-gradient(white 50%, black)",
                 "linear-gradient(white 5px, black)",
                 "linear-gradient(white, #f06, black)",
-                "linear-gradient(currentColor, black)"
+                "linear-gradient(currentColor, black)",
+                "linear-gradient(to top right, red, white, blue)",
+                "linear-gradient(30grad left 35px, red, blue)",
+                "linear-gradient(10deg 20px, red, blue)",
+                "linear-gradient(218rad, red 50%, 50%, blue 50%)",
+                "linear-gradient(to bottom, yellow 0%, blue 100%)",
+                "linear-gradient(red -50%, white 25%, blue 100%)",
+                "linear-gradient(red -50px, white calc(-25px + 50%), blue 100%)",
+                "linear-gradient(90deg, red, transparent, blue)"
             ],
             "radial-gradient": [
                 "radial-gradient(white, black)",
@@ -219,7 +227,7 @@ window.Specs = {
             ":past": ":past",
             ":future": ":future",
             ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)"],
-            ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", "any(section, nav) h1", "any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
+            ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", ":any(section, nav) h1", ":any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
             ":drop()": [":drop(active)", ":drop(valid active invalid)"],
             ":any-link": ":any-link",
             ":focus-within": ":focus-within",
@@ -242,6 +250,7 @@ window.Specs = {
             ":future": ":future",
             ":nth-child(An+B [of sel]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))"],
             ":nth-last-child(An+B [of sel]?)": [":nth-last-child(-n+3 of li.important)", ":nth-last-child(even of :not([hidden]))"],
+            ":lang()": [":lang(*-Hant)", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en, de-DE)"]
         }
     },
 
@@ -273,7 +282,7 @@ window.Specs = {
         "title": "Media Queries",
         "Media queries": {
             "negation": ["not print", "not all and (width:1px)"],
-            "width": ["(width)", "(min-width:1px)", "(max-width:1000000px)", "(min-width: calc(200px - 10px) )"],
+            "width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
             "height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
             "device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
             "device-height": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"],
