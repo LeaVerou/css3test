@@ -785,13 +785,13 @@ window.Specs = {
     "css3-sizing": {
         "title": "Intrinsic & Extrinsic Sizing",
         "properties": {
-            "width": ["fill", "min-content", "max-content", "fit-content"],
-            "height": ["fill", "min-content", "max-content", "fit-content"],
-            "min-width": ["contain-floats", "fill", "min-content", "max-content", "fit-content"],
-            "min-height": ["contain-floats", "fill", "min-content", "max-content", "fit-content"],
-            "max-width": ["fill", "min-content", "max-content", "fit-content"],
-            "max-height": ["fill", "min-content", "max-content", "fit-content"],
-            "column-width": ["fill", "min-content", "max-content", "fit-content"]
+            "width":        ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
+            "height":       ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
+            "min-width":    ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content", "contain-floats"],
+            "min-height":   ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content", "contain-floats"],
+            "max-width":    ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
+            "max-height":   ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
+            "column-width": ["fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"]
         }
     },
 
