@@ -57,6 +57,7 @@ window.Specs = {
                 "background-image",
                 "list-style-image",
                 "border-image",
+                "border-image-source",
                 "cursor",
                 "content"
             ],
@@ -132,6 +133,7 @@ window.Specs = {
                 "background-image",
                 "list-style-image",
                 "border-image",
+                "border-image-source",
                 "cursor",
                 "content"
             ],
