@@ -253,7 +253,11 @@ window.Specs = {
             ":future": ":future",
             ":nth-child(An+B [of sel]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))"],
             ":nth-last-child(An+B [of sel]?)": [":nth-last-child(-n+3 of li.important)", ":nth-last-child(even of :not([hidden]))"],
-            ":lang()": [":lang(*-Hant)", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"]
+            ":lang()": [":lang('*-Hant')", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"],
+            //https://bugs.webkit.org/show_bug.cgi?id=118162
+            //https://bugzilla.mozilla.org/show_bug.cgi?id=1069012
+            //http://caniuse.com/#feat=css-placeholder
+            ":placeholder-shown": ":placeholder-shown"
         }
     },
 
@@ -334,8 +338,8 @@ window.Specs = {
             "height": ["(height >= 500px)", "(height <= 1200px)", "(500px <= height <= 1200px)"],
             "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
             "hover": ["(hover)", "(hover: on-demand)", "(hover: none)"],
-            "any-pointer": ["(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
-            "any-hover": ["(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"],
+            "any-pointer": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
+            "any-hover": ["(any-hover)", "(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"],
             "scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
             "light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
             "update-frequency": ["(update-frequency: none)", "(update-frequency: slow)", "(update-frequency: normal)"],
