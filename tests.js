@@ -251,7 +251,7 @@ window.Specs = {
             ],
 
             ":future": ":future",
-            ":nth-child(An+B [of sel]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))"],
+            ":nth-child(An+B [of sel]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))", "tr:nth-child(even of tr:nth-child(odd)"],
             ":nth-last-child(An+B [of sel]?)": [":nth-last-child(-n+3 of li.important)", ":nth-last-child(even of :not([hidden]))"],
             ":lang()": [":lang('*-Hant')", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"],
             //https://bugs.webkit.org/show_bug.cgi?id=118162
