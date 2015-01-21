@@ -721,7 +721,7 @@ window.Specs = {
             "flex": ["none", "auto", "0", "5 7 10%"],
             "flex-grow": ["0", "5"],
             "flex-shrink": ["1", "10"],
-            "flex-basis": ["auto", "main-size", "1px"],
+            "flex-basis": ["auto", "main-size", "content", "1px"],
             "order": ["0", "1"]
         }
     },
