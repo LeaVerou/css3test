@@ -718,10 +718,10 @@ window.Specs = {
             "flex-direction": ["row", "row-reverse", "column", "column-reverse"],
             "flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
             "flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-            "flex": ["none", "auto", "0", "5 7 10%"],
+            "flex": ["none", "auto", "0", "5 7 10%", "0 0 calc(100%/3)"],
             "flex-grow": ["0", "5"],
             "flex-shrink": ["1", "10"],
-            "flex-basis": ["auto", "1px", "content", "fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
+            "flex-basis": ["auto", "1px", "calc(100%/3)", "content", "fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
             "order": ["0", "1"]
         }
     },
