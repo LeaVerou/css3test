@@ -175,6 +175,7 @@ window.Specs = {
             "[att^=val]": ["[att^=val]", "[att^=\"val\"]"],
             "[att*=val]": ["[att*=val]", "[att*=\"val\"]"],
             "[att$=val]": ["[att$=val]", "[att$=\"val\"]"],
+            "[att|=en]":  ["[att|=en]", "[att|=\"en\"]"],
             "Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"],
             ":target": [":target", ":target::before"],
             ":dir()": [":dir(rtl)", ":dir(ltr)"],
@@ -218,8 +219,8 @@ window.Specs = {
             ":last-of-type": ":last-of-type",
             ":only-of-type": ":only-of-type",
             ":empty": ":empty",
-            ":blank": ":blank",
-            ":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"]
+            ":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)", "h2:not(:first-of-type):not(:last-of-type)"],
+            ":blank": ":blank"
         }
     },
 
@@ -227,12 +228,13 @@ window.Specs = {
         "title": "Selectors 4",
         "selectors": {
             "Column combinator": "col.selected || td",
-            ":current()": ":current(p, li, dt, dd)",
+            "[i]": "[frame=hsides i]", //Case-sensitivity
+            ":current()": ["a:current", ":current(p, li, dt, dd)"],
             ":past": ":past",
             ":future": ":future",
             ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)"],
             ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", ":any(section, nav) h1", ":any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
-            ":not()": [":not(element, .class, #id)", ":not(element, .class, #id):not(.foo, .bar)"],
+            ":not()": [":not(element, .class, #id)", ":not(element, .class, #id):not(.foo, .bar)","h2:not(:first-of-type, :last-of-type)"],
             ":has()": ["a:has(> img)","dt:has(+ dt)","section:not(:has(h1, h2, h3, h4, h5, h6))"],
             ":drop()": [":drop(active)", ":drop(valid active invalid)"],
             ":any-link": ":any-link",
@@ -256,7 +258,7 @@ window.Specs = {
             ":future": ":future",
             ":nth-child(An+B [of sel]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))", "tr:nth-child(even of tr:nth-child(odd))"],
             ":nth-last-child(An+B [of sel]?)": [":nth-last-child(-n+3 of li.important)", ":nth-last-child(even of :not([hidden]))"],
-            ":lang()": [":lang('*-Hant')", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"],
+            ":lang()": [":lang('*-Hant')", ":lang(zh, '*-hant')", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"],
             //https://bugs.webkit.org/show_bug.cgi?id=118162
             //https://bugzilla.mozilla.org/show_bug.cgi?id=1069012
             //http://caniuse.com/#feat=css-placeholder
