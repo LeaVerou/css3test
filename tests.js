@@ -642,7 +642,7 @@ window.Specs = {
 		"title": "Ruby",
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
-			"ruby-position" : ["over right", "under right", "inter-character right", "over left"],
+			"ruby-position" : ["over", "under", "inter-character"],
 			"ruby-merge" : ["separate", "collapse", "auto"],
 			"ruby-align" : ["start", "center", "space-between",  "space-around"]			
 		}
