@@ -227,6 +227,7 @@ window.Specs = {
     "selectors4": {
         "title": "Selectors 4",
         "selectors": {
+            ">>": ">>",
             "Column combinator": "col.selected || td",
             "[i]": "[frame=hsides i]", //Case-sensitivity
             ":current()": ["a:current", ":current(p, li, dt, dd)"],
@@ -277,7 +278,8 @@ window.Specs = {
             "::shadow": "::shadow",
             "::content": "::content",
             "::region": "::region",
-            "deep": "/deep/"
+            "deep": "/deep/",
+            ">>>": ">>>"
         },
         "@rules": {
             "@scope": [
@@ -465,7 +467,7 @@ window.Specs = {
     },
 
     "css3-text": {
-        "title": "Text",
+        "title": "Text Level 3",
         "properties": {
             "text-transform": ["full-width"],
             "tab-size": ["4", "1em"],
@@ -482,6 +484,21 @@ window.Specs = {
             "letter-spacing": ["normal"],
             "text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
             "hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
+        }
+    },
+
+    "css-text-4": {
+        "title": "Text Level 4",
+        "properties": {
+           "text-space-collapse": ["collapse", "discard", "preserve", "preserve-breaks"],
+           "text-space-trim": ["none", "trim-inner", "consume-before", "consume-after", "consume-before consume-after", "none consume-before", "trim-inner consume-after"],
+           "text-wrap": ["normal", "none", "avoid", "balance"],
+           "hyphenate-character": ["auto", "\"\\2010\"", "'\\2010'"],
+           "hyphenate-limit-zone": ["20%", "5em", ".86em", "30px"],
+           "hyphenate-limit-chars": ["5", "5 2", "5 2 2"],
+           "hyphenate-limit-lines": ["no-limit", "0", "13"],
+           "hyphenate-limit-last": ["none", "always", "column", "page", "spread"],
+           "text-spacing": ["normal", "none", "trim-start", "space-start", "trim-end", "space-end", "allow-end", "trim-adjacent", "space-adjacent", "no-compress", "ideograph-alpha", "ideograph-numeric", "punctuation", "space-start allow-end trim-adjacent"]
         }
     },
 
