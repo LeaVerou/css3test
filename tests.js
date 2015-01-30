@@ -982,6 +982,7 @@ window.Specs = {
             "motion": ["none 50% auto 400grad", "path('M 20 20 H 80 V 30') 0rad 100px", "10px 90deg reverse none", "path('M 1 2 V 3') 4px 5deg", "none 10px reverse 90deg"],
         }
     },
+
     "css-device-adapt": {
         "title": "CSS Device Adaptation",
         "@rules": {
@@ -1005,4 +1006,11 @@ window.Specs = {
             "orientation": ["auto", "portrait", "landscape"],
         }
     },
+
+    "css-size-adjust": {
+        "title": "CSS Mobile Text Size Adjustment",
+        "properties": {
+            "text-size-adjust": ["auto", "none", "32.56%", "189%"]
+        }
+    }
 };
