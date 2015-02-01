@@ -103,7 +103,9 @@ window.Specs = {
             ],
             "-webkit-image-set()": [
                 "image-set(url(foo.png) 1x, url(foo-2x.png) 2x)",
-                "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-3x.png) 3x)"
+                "image-set(url(foo.png) 1x, url(foo-2x.png) 2x, url(foo-3x.png) 3x)",
+                "image-set(url(foo.png) 1.5x)",
+                "image-set(url(foo.png) 600dpi)"
             ],
 
             //http://trac.webkit.org/changeset/100535
