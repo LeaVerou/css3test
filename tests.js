@@ -620,5 +620,41 @@ window.Specs = {
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
 		}
+	},
+
+	"css-logical-properties": {
+		"title": "Logical Properties",
+		"properties": {
+			"block-size": ["100px", "100%", "auto"],
+			"inline-size": ["100px", "100%", "auto"],
+			"min-block-size": ["100px", "100%", "auto"],
+			"min-inline-size": ["100px", "100%", "auto"],
+			"max-block-size": ["100px", "100%", "auto"],
+			"max-inline-size": ["100px", "100%", "auto"],
+			"margin-block-start": ["10px", "10%", "auto"],
+			"margin-block-end": ["10px", "10%", "auto"],
+			"margin-inline-start": ["10px", "10%", "auto"],
+			"margin-inline-end": ["10px", "10%", "auto"],
+			"offset-block-start": ["10px", "10%", "auto"],
+			"offset-block-end": ["10px", "10%", "auto"],
+			"offset-inline-start": ["10px", "10%", "auto"],
+			"offset-inline-end": ["10px", "10%", "auto"],
+			"padding-block-start": ["10px", "10%"],
+			"padding-block-end": ["10px", "10%"],
+			"padding-inline-start": ["10px", "10%"],
+			"padding-inline-end": ["10px", "10%"],
+			"border-block-start-width": ["thin", "5px"],
+			"border-block-end-width": ["thin", "5px"],
+			"border-inline-start-width": ["thin", "5px"],
+			"border-inline-end-width": ["thin", "5px"],
+			"border-block-start-style": ["dotted"],
+			"border-block-end-style": ["dotted"],
+			"border-inline-start-style": ["dotted"],
+			"border-inline-end-style": ["dotted"],
+			"border-block-start-color": ["navy"],
+			"border-block-end-color": ["navy"],
+			"border-inline-start-color": ["navy"],
+			"border-inline-end-color": ["navy"]
+		}
 	}
 };
