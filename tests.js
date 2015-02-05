@@ -625,6 +625,11 @@ window.Specs = {
 	"css-logical-properties": {
 		"title": "Logical Properties",
 		"properties": {
+		  "caption-side": ["block-start", "block-end", "inline-start", "inline-end"],
+		  "float": ["inline-start", "inline-end"],
+		  "clear": ["inline-start", "inline-end"],
+		  "text-align": ["start", "end"],
+		  "resize": ["block", "inline"],
 			"block-size": ["100px", "100%", "auto"],
 			"inline-size": ["100px", "100%", "auto"],
 			"min-block-size": ["100px", "100%", "auto"],
@@ -654,7 +659,15 @@ window.Specs = {
 			"border-block-start-color": ["navy"],
 			"border-block-end-color": ["navy"],
 			"border-inline-start-color": ["navy"],
-			"border-inline-end-color": ["navy"]
+			"border-inline-end-color": ["navy"],
+	    "margin": ["logical 5px 10px 15px 20px"],
+	    "padding": ["logical 5px 10px 15px 20px"],
+	    "border-color": ["logical red green blue yellow"],
+	    "border-style": ["logical solid dotted dashed none"],
+	    "border-width": ["logical 5px 10px 15px 20px"],
+	    "background-image-transform": ["logical", "physical", "rotate"],
+	    "background-repeat": ["logical repeat-x no-repeat"],
+	    "border-image-transform": ["logical", "physical", "rotate"]
 		}
 	}
 };
