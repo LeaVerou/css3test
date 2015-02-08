@@ -507,7 +507,7 @@ window.Specs = {
 			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px, 1fr, 100px, 1fr, 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (col-start) 250px (col-end)"],
 			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px, 1fr, 100px, 1fr, 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (row-start) 250px (row-end)"],
 			"grid-template-areas": ["none", "articles", "nav articles"],
-			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / (row-start) 'a   a   a' (row-end)"],
+			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / (row-start) 'a	 a	 a' (row-end)"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
 			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
 			"grid-auto-flow": ["none", "rows", "colums"],
@@ -644,7 +644,7 @@ window.Specs = {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
 			"ruby-position" : ["over", "under", "inter-character"],
 			"ruby-merge" : ["separate", "collapse", "auto"],
-			"ruby-align" : ["start", "center", "space-between",  "space-around"]			
+			"ruby-align" : ["start", "center", "space-between",	"space-around"]			
 		}
 	},
 	
@@ -658,6 +658,55 @@ window.Specs = {
 			"scroll-snap-points-y": ["none", "repeat(100%)", "repeat(120px), repeat(calc(3*25px))"],
 			"scroll-snap-destination": ["0px 0px", "25% 25%", "6px 5px", "20% 3em", "0 0", "0in 1in", "top", "right", "top left", "top right", "center", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px", "5px calc(3*25px)", "calc(20%) calc(3*25px)", "calc(25px*3)", "calc(3*25px + 50%)"],
 			"scroll-snap-coordinate": ["none", "25% 25%", "6px 5px", "20% 3em", "0 0", "0in 1in", "top", "right", "top left", "top right", "center", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px", "5px calc(3*25px)", "calc(20%) calc(3*25px)", "calc(25px*3)", "calc(3*25px + 50%)", "calc(20%) calc(3*25px), center"],
+		}
+	},
+
+	"css-logical-properties": {
+		"title": "Logical Properties",
+		"properties": {
+			"caption-side": ["block-start", "block-end", "inline-start", "inline-end"],
+			"float": ["inline-start", "inline-end"],
+			"clear": ["inline-start", "inline-end"],
+			"text-align": ["start", "end"],
+			"resize": ["block", "inline"],
+			"block-size": ["100px"],
+			"inline-size": ["100px"],
+			"min-block-size": ["100px"],
+			"min-inline-size": ["100px"],
+			"max-block-size": ["100px"],
+			"max-inline-size": ["100px"],
+			"margin-block-start": ["10px"],
+			"margin-block-end": ["10px"],
+			"margin-inline-start": ["10px"],
+			"margin-inline-end": ["10px"],
+			"offset-block-start": ["10px"],
+			"offset-block-end": ["10px"],
+			"offset-inline-start": ["10px"],
+			"offset-inline-end": ["10px"],
+			"padding-block-start": ["10px"],
+			"padding-block-end": ["10px"],
+			"padding-inline-start": ["10px"],
+			"padding-inline-end": ["10px"],
+			"border-block-start-width": ["thin"],
+			"border-block-end-width": ["thin"],
+			"border-inline-start-width": ["thin"],
+			"border-inline-end-width": ["thin"],
+			"border-block-start-style": ["dotted"],
+			"border-block-end-style": ["dotted"],
+			"border-inline-start-style": ["dotted"],
+			"border-inline-end-style": ["dotted"],
+			"border-block-start-color": ["navy"],
+			"border-block-end-color": ["navy"],
+			"border-inline-start-color": ["navy"],
+			"border-inline-end-color": ["navy"],
+			"margin": ["logical 5px 10px 15px 20px"],
+			"padding": ["logical 5px 10px 15px 20px"],
+			"border-color": ["logical red green blue yellow"],
+			"border-style": ["logical solid dotted dashed none"],
+			"border-width": ["logical 5px 10px 15px 20px"],
+			"background-image-transform": ["logical", "physical", "rotate"],
+			"background-repeat": ["logical repeat-x no-repeat"],
+			"border-image-transform": ["logical", "physical", "rotate"]
 		}
 	}
 };
