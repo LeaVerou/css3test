@@ -494,7 +494,7 @@ window.Specs = {
         "properties": {
            "text-space-collapse": ["collapse", "discard", "preserve", "preserve-breaks"],
            "text-space-trim": ["none", "trim-inner", "consume-before", "consume-after", "consume-before consume-after", "none consume-before", "trim-inner consume-after"],
-           "text-wrap": ["normal", "none", "avoid", "balance"],
+           "text-wrap": ["normal", "nowrap", "avoid", "balance"],
            "hyphenate-character": ["auto", "\"\\2010\"", "'\\2010'"],
            "hyphenate-limit-zone": ["20%", "5em", ".86em", "30px"],
            "hyphenate-limit-chars": ["5", "5 2", "5 2 2"],
