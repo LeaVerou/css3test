@@ -489,7 +489,7 @@ window.Specs = {
 			"align-self": ["flex-start", "flex-end"],
 			"display": ["flex", "inline-flex"],
 			"flex": ["none", "5 7 10%"],
-			"flex-basis": ["auto", "main-size", "1px"],
+			"flex-basis": ["auto", "content", "1px"],
 			"flex-direction": ["row","row-reverse","column","column-reverse"],
 			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
 			"flex-grow": ["0","5"],
