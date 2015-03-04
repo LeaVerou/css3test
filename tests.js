@@ -930,11 +930,36 @@ window.Specs = {
     "css-logical-props": {
         "title": "Logical Properties",
         "properties": {
-            "measure": ["20px", "15%", "auto"],
-            "length": ["20px", "15%", "auto"],
-            "min-measure": ["20px", "15%"],
-            "min-length": ["20px", "15%"],
-            "max-length": ["20px", "15%", "none"],
+            "caption-side": ["block-start", "block-end", "inline-start", "inline-end"],
+            "float": ["inline-start", "inline-end"],
+            "clear": ["inline-start", "inline-end"],
+            "text-align": ["start", "end"],
+            "resize": ["block", "inline"],
+            "inline-size": ["20px", "15%", "auto", "fill", "min-content", "max-content", "fit-content"],
+            "block-size": ["20px", "15%", "auto", "fill", "min-content", "max-content", "fit-content"],
+            "min-inline-size": ["20px", "15%", "auto", "fill", "min-content", "max-content", "fit-content"],
+            "min-block-size": ["20px", "15%", "auto", "fill", "min-content", "max-content", "fit-content"],
+            "max-inline-size": ["20px", "15%", "none", "fill", "min-content", "max-content", "fit-content"],
+            "max-block-size": ["20px", "15%", "none", "fill", "min-content", "max-content", "fit-content"],
+            "offset-block-start": ["20px", "15%", "auto"],
+            "offset-block-end": ["20px", "15%", "auto"],
+            "offset-inline-start": ["20px", "15%", "auto"],
+            "offset-inline-end": ["20px", "15%", "auto"],
+
+            "margin-block-start": ["20px", "15%", "auto"],
+            "margin-block-end": ["20px", "15%", "auto"],
+            "margin-inline-start": ["20px", "15%", "auto"],
+            "margin-inline-end": ["20px", "15%", "auto"],
+            "padding-block-start": ["20px", "15%"],
+            "padding-block-end": ["20px", "15%"],
+            "padding-inline-start": ["20px", "15%"],
+            "padding-inline-end": ["20px", "15%"],
+            "border-block-start": ["20px solid blue"],
+            "border-block-end": ["20px solid blue"],
+            "border-inline-start": ["20px solid blue"],
+            "border-inline-end": ["20px solid blue"],
+
+            //旧版本
             "margin-before": ["20px", "15%", "auto"],
             "margin-after": ["20px", "15%", "auto"],
             "margin-start": ["20px", "15%", "auto"],
@@ -947,13 +972,25 @@ window.Specs = {
             "border-after": ["20px solid blue"],
             "border-start": ["20px solid blue"],
             "border-end": ["20px solid blue"],
-            "offset-before": ["20px", "15%", "auto"],
-            "offset-after": ["20px", "15%", "auto"],
-            "offset-start": ["20px", "15%", "auto"],
-            "offset-end": ["20px", "15%", "auto"],
+
+            "background-repeat": ["logical repeat-x", "logical repeat-x no-repeat"],
             "background-image-transform": ["logical", "physical", "rotate"],
             "border-image-transform": ["logical", "physical", "rotate"]
-        }
+        },
+        "values": {
+            "properties": [
+                "margin",
+                "padding",
+                "border-width",
+                "border-color",
+                "border-style"
+            ],
+            "logical": [
+                "logical 10px 23% 3em 0",
+                "logical red green blue yellow", //border-color
+                "logical solid dotted dashed none" //border-style
+            ]
+        },
     },
 
     "cssom-view": {
