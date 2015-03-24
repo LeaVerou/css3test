@@ -689,7 +689,7 @@ window.Specs = {
                 "mask-border-width",
                 "shape-image-threshold",
                 "shape-margin",
-                "motion-position",
+                "motion-offset",
                 "motion-rotation",
                 "object-position",
                 "image-resolution",
@@ -1012,11 +1012,13 @@ window.Specs = {
     },
 
     // 参考 css-shapes 语法
+    //https://code.google.com/p/chromium/issues/detail?id=416731
+    //https://code.google.com/p/chromium/issues/detail?id=464242
     "css-motion-1": {
         "title": "http://dev.w3.org/fxtf/motion-1/",
         "properties": {
             "motion-path": ["none", "url(../images/foo.svg)", "path('M 1 2 V 3')", "polygon(0% 50%, 50% 100%, 0 100%)", "fill-box", "stroke-box", "view-box"],
-            "motion-position": ["0", "123px", "30%", "-200px", "unset"],
+            "motion-offset": ["0", "123px", "123vw", "18rem", "-200px", "30%", "unset"],
             "motion-rotation": ["auto", "0", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"],
             "motion": ["none 50% auto 400grad", "path('M 20 20 H 80 V 30') 0rad 100px", "10px 90deg reverse none", "path('M 1 2 V 3') 4px 5deg", "none 10px reverse 90deg"],
         }
