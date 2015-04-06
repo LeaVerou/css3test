@@ -716,7 +716,7 @@ window.Specs = {
 			"border-image-transform": ["logical", "physical", "rotate"]
 		}
 	},
-
+	
 	"css-lists": {
 		"title": "Lists and Counters",
 		"properties": {
@@ -731,7 +731,8 @@ window.Specs = {
 				"none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"inside none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"inside none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
+				// render problem (too long)
+				/*'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
 				'none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
 				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none',
 				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside',
@@ -741,7 +742,7 @@ window.Specs = {
 				'none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside',
 				'none outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
 				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside none',
-				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none outside'
+				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none outside'*/
 			],
 			"list-style-type": [ 
 				"disc", "none", "circle", "square", 
@@ -755,7 +756,7 @@ window.Specs = {
 				"japanese-informal", "japanese-formal", "korean-hangul-formal",
 				"korean-hanja-informal", "korean-hanja-formal",
 				"simp-chinese-informal", "simp-chinese-formal",
-				"trad-chinese-informal", "trad-chinese-forma
+				"trad-chinese-informal", "trad-chinese-formal",
 				"cjk-heavenly-stem", "cjk-earthly-branch",
 				"trad-chinese-informal", "trad-chinese-formal",
 				"simp-chinese-informal", "simp-chinese-formal",
@@ -776,5 +777,4 @@ window.Specs = {
 			]
 		}
 	}
-	
 };
