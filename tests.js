@@ -297,7 +297,8 @@ window.Specs = {
     "css3-mediaqueries": {
         "title": "Media Queries",
         "Media queries": {
-            "negation": ["not print", "not all and (width:1px)"],
+            "not": ["not print", "not all and (width:1px)", "not grid and (width:1px)", "not (max-width: 50px)", "all and not (monochrome)", "not ((any-pointer:none) or (any-pointer:on-demand))"],
+            "only": ["only print", "only print and (color)", "only screen and (color)", "only speech and (width:1px)", "only grid and (width:1px)", "only (max-width: 50px)", "all and only (monochrome)", "only ((any-pointer:none) or (any-pointer:on-demand))"],
             "width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
             "height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
             "device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
@@ -347,7 +348,7 @@ window.Specs = {
             "height": ["(height >= 500px)", "(height <= 1200px)", "(500px <= height <= 1200px)"],
             "pointer": ["(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
             "hover": ["(hover)", "(hover: on-demand)", "(hover: none)"],
-            "any-pointer": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
+            "any-pointer": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)", "not (any-pointer: fine)"],
             "any-hover": ["(any-hover)", "(any-hover: hover)", "(any-hover: on-demand)", "(any-hover: none)"],
             "scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
             "light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
@@ -788,8 +789,8 @@ window.Specs = {
         }
     },
 
-    "css3-cascade": {
-        "title": "Resetting All Properties",
+    "css-cascade-3": {
+        "title": "CSS Cascading and Inheritance Level 3",
         "properties": {
             "all": ["initial", "inherit", "unset"]
         },
@@ -804,6 +805,35 @@ window.Specs = {
             ],
             "unset": "unset"
         },
+        "@rules": {
+            "@import": [
+                "@import url('mystyle.css')",
+                "@import url('fineprint.css') print",
+                "@import url('bluish.css') projection, tv",
+                "@import url('narrow.css') handheld and (max-width: 400px)"
+            ]
+        }
+    },
+
+    "css-cascade-4": {
+        "title": "CSS Cascading and Inheritance Level 4",
+        "values": {
+            "properties": [
+                "unicode-bidi",
+                "direction",
+                "background-color",
+                "border-color",
+                "text-decoration",
+                "column-rule-color"
+            ],
+            "default": "default"
+        },
+        "@rules": {
+            "@import": [
+                "@import url('fallback-layout.css') supports(display: block)",
+                "@import url('fallback-layout.css') supports(not (display: flex))"
+            ]
+        }
     },
 
     "css3-positioning": {
