@@ -479,7 +479,7 @@ window.Specs = {
             "hyphens": ["auto", "manual", "none"],
             "overflow-wrap": ["normal", "break-word"],
             "word-wrap": ["normal", "break-word"],
-            "text-align": ["start", "end", "match-parent", "justify-all", "start end"],
+            "text-align": ["start", "end", "justify", "match-parent", "justify-all"],
             "text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
             "text-align-all": ["start", "end", "left", "right", "center", "justify", "match-parent"],
             "text-justify": ["auto", "none", "inter-word", "distribute"],
