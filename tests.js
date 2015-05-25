@@ -938,7 +938,8 @@ window.Specs = {
         }
     },
 
-     "filters-2": {
+    //WebKit(-webkit-backdrop-filter): http://trac.webkit.org/changeset/175716
+    "filters-2": {
         "title": "Filter Effects Module Level 2",
         "group": "fxtf",
         "properties": {
