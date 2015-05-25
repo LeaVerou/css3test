@@ -882,8 +882,19 @@ window.Specs = {
         }
     },
 
-    "css-masking": {
+    "css-shapes": {
+        "title": "Shapes",
+        "properties": {
+            "shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
+            "shape-image-threshold": ["0", "1", "0.0", "0.1"],
+            "shape-margin": ["0", "10px", "50%"]
+        }
+    },
+
+    //fxtf group
+    "css-masking-1": {
         "title": "Masking",
+        "group": "fxtf",
         "properties": {
             "clip-path": ["url('#clip')", "rectangle", "inset-rectangle", "circle", "ellipse", "border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "none"],
             "clip-rule": ["nonzero", "evenodd"],
@@ -908,8 +919,9 @@ window.Specs = {
         }
     },
 
-    "compositing": {
+    "compositing-1": {
         "title": "Compositing and Blending",
+        "group": "fxtf",
         "properties": {
             "mix-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"],
             "isolation": ["auto", "isolate"],
@@ -917,19 +929,20 @@ window.Specs = {
         }
     },
 
-    "css-shapes": {
-        "title": "Shapes",
+    //filters-1
+    "filter-effects": {
+        "title": "Filter Effects Module Level 1",
+        "group": "fxtf",
         "properties": {
-            "shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
-            "shape-image-threshold": ["0", "1", "0.0", "0.1"],
-            "shape-margin": ["0", "10px", "50%"]
+            "filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
         }
     },
 
-    "filter-effects": {
-        "title": "Filter Effects",
+     "filters-2": {
+        "title": "Filter Effects Module Level 2",
+        "group": "fxtf",
         "properties": {
-            "filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
+            "backdrop-filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
         }
     },
 
@@ -1045,8 +1058,9 @@ window.Specs = {
     // 参考 css-shapes 语法
     //https://code.google.com/p/chromium/issues/detail?id=416731
     //https://code.google.com/p/chromium/issues/detail?id=464242
-    "css-motion-1": {
-        "title": "http://dev.w3.org/fxtf/motion-1/",
+    "motion-1": {
+        "title": "Motion Path Module Level 1",
+        "group": "fxtf",
         "properties": {
             "motion-path": ["none", "url(../images/foo.svg)", "path('M 1 2 V 3')", "polygon(0% 50%, 50% 100%, 0 100%)", "fill-box", "stroke-box", "view-box"],
             "motion-offset": ["0", "123px", "123vw", "18rem", "-200px", "30%", "unset"],
