@@ -235,9 +235,9 @@ window.Specs = {
             ":current()": ["a:current", ":current(p, li, dt, dd)"],
             ":past": ":past",
             ":future": ":future",
-            ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)"],
+            ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)", ":matches(h1 + h2, h3 > h4)", ":matches(:not(.foo))", ":matches(.foo :matches(h1, h2))"],
             ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", ":any(section, nav) h1", ":any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
-            ":not()": [":not(element, .class, #id)", ":not(element, .class, #id):not(.foo, .bar)","h2:not(:first-of-type, :last-of-type)"],
+            ":not()": [":not(element, .class, #id)", ":not(element, .class, #id):not(.foo, .bar)","h2:not(:first-of-type, :last-of-type)", ":not(:matches(h1, h2))", ],
             ":has()": ["a:has(> img)","dt:has(+ dt)","section:not(:has(h1, h2, h3, h4, h5, h6))"],
             ":drop()": [":drop(active)", ":drop(valid active invalid)"],
             ":any-link": ":any-link",
@@ -643,11 +643,11 @@ window.Specs = {
             "column-rule-style": ["none", "solid", "dotted"],
             "column-rule-width": "1px",
             "column-rule": ["transparent", "1px solid black"],
+            "column-span": ["none", "all"],
+            "column-fill": ["auto", "balance"],
             "break-before": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
             "break-after": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
-            "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"],
-            "column-span": ["none", "all"],
-            "column-fill": ["auto", "balance"]
+            "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"]
         }
     },
 
