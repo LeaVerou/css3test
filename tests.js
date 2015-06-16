@@ -178,7 +178,7 @@ window.Specs = {
             "[att*=val]": ["[att*=val]", "[att*=\"val\"]"],
             "[att$=val]": ["[att$=val]", "[att$=\"val\"]"],
             "[att|=en]":  ["[att|=en]", "[att|=\"en\"]"],
-            "Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"],
+            "Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]", "foo|h1", "foo|*", "|h1", "*|h1"],
             ":target": [":target", ":target::before"],
             ":dir()": [":dir(rtl)", ":dir(ltr)"],
             ":lang()": ":lang(fr-be)",
@@ -221,7 +221,7 @@ window.Specs = {
             ":last-of-type": ":last-of-type",
             ":only-of-type": ":only-of-type",
             ":empty": ":empty",
-            ":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)", "h2:not(:first-of-type):not(:last-of-type)"],
+            ":not()": [":not(*)", "*:not(FOO)", ":not(element)", "html|*:not(:link):not(:visited)", ":not(.class):not(#id):not([attr]):not(:link)", "h2:not(:first-of-type):not(:last-of-type)"],
             ":blank": ":blank"
         }
     },
@@ -235,7 +235,7 @@ window.Specs = {
             ":current()": ["a:current", ":current(p, li, dt, dd)"],
             ":past": ":past",
             ":future": ":future",
-            ":matches()": [".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)", ":matches(h1 + h2, h3 > h4)", ":matches(.foo :matches(h1, h2))", ":matches(:matches(h1, h2), h3)", ":matches(:not(.foo, .bar))"],
+            ":matches()": ["*|*:matches(:hover, :focus)", "*|*:matches(*:hover, *:focus)", ".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)", ":matches(h1 + h2, h3 > h4)", ":matches(.foo :matches(h1, h2))", ":matches(:matches(h1, h2), h3)", ":matches(:not(.foo, .bar))"],
             ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", ":any(section, nav) h1", ":any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
             ":not()": [":not(element, .class, #id)", ":not(element, .class, #id):not(.foo, .bar)","h2:not(:first-of-type, :last-of-type)", ":not(:matches(h1, h2))", ":not(:matches(h1, h2), h3)", ":not(:matches(:not(h1, h2)))", ":not(:not(.foo), .bar)", ":not(:not(:not(.foo)), .bar)"],
             ":has()": ["a:has(> img)","dt:has(+ dt)","section:not(:has(h1, h2, h3, h4, h5, h6))"],
@@ -261,7 +261,7 @@ window.Specs = {
             ":future": ":future",
             ":nth-child(An+B [of s]?)": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden]))", "tr:nth-child(even of tr:nth-child(odd))"],
             ":nth-last-child(An+B [of s]?)": [":nth-last-child(-n+3 of li.important)", ":nth-last-child(even of :not([hidden]))"],
-            ":lang()": [":lang('*-Hant')", ":lang(zh, '*-hant')", ":lang(*-Hant-CN)", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"],
+            ":lang()": [":lang('*-Hant')", ":lang('*-Hant-CN')", ":lang(zh, '*-hant')", ":lang(en-)", ":lang(en--)", ":lang(en, de-DE)"],
             //https://bugs.webkit.org/show_bug.cgi?id=118162
             //https://bugzilla.mozilla.org/show_bug.cgi?id=1069012
             //http://caniuse.com/#feat=css-placeholder
