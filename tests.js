@@ -713,7 +713,7 @@ window.Specs = {
             "vmax": "5vmax",
             //More case http://dev.w3.org/csswg/css-egg/#celestial-css
             "attr()": ["attr(data-px)", "attr(title color)", "attr(data-px px)", "attr(data-px px, initial)", "attr(end-of-quote string, inherit)", "linear-gradient(attr(data-bg-rotation deg), blue, green)", "calc( 10px + attr(data-addition px))"],
-            "calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(5px/2 - 2*1px)", "calc(100%/10)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)"],
+            "calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(5px/2 - 2*1px)", "calc(100%/10)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)", "calc(100% - -35px)"],
             "toggle()": "toggle(1px, 2px)"
         },
         "properties": {
