@@ -483,7 +483,7 @@ window.Specs = {
             "text-align": ["start", "end", "justify", "match-parent", "justify-all"],
             "text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
             "text-align-all": ["start", "end", "left", "right", "center", "justify", "match-parent"],
-            "text-justify": ["auto", "none", "inter-word", "distribute"],
+            "text-justify": ["auto", "none", "inter-word", "inter-character"],
             "word-spacing": ["50%", "1em", "normal"],
             "letter-spacing": ["normal"],
             "text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
