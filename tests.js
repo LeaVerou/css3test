@@ -475,6 +475,7 @@ window.Specs = {
             "text-transform": ["full-width"],
             "tab-size": ["4", "1em"],
             "line-break": ["auto", "loose", "normal", "strict"],
+            "white-space": ["pre-wrap-auto"], //http://dev.w3.org/csswg/css-text-3/#valdef-white-space-pre-wrap-auto
             "word-break": ["normal", "keep-all", "break-all"],
             "hyphens": ["auto", "manual", "none"],
             "overflow-wrap": ["normal", "break-word"],
