@@ -869,6 +869,60 @@ window.Specs = {
                 "@counter-style triangle {system: cyclic;}",
                 "@counter-style box-corner"
             ]
+        },
+        // "values": {
+        //     "properties": [
+        //         "margin",
+        //         "padding",
+        //         "border-width",
+        //         "border-color",
+        //         "border-style"
+        //     ],
+        //     "logical": [
+        //         "logical 10px 23% 3em 0",
+        //         "logical red green blue yellow", //border-color
+        //         "logical solid dotted dashed none" //border-style
+        //     ]
+        // },
+         "properties": {
+            "list-style-type": [
+                "string",
+
+                "japanese-formal",
+                "japanese-informal",
+                "simp-chinese-formal",
+                "trad-chinese-formal",
+                "simp-chinese-informal",
+                "trad-chinese-informal",
+
+                "korean-hangul-formal",
+                "korean-hanja-informal",
+                "korean-hanja-formal",
+                "cjk-decimal",
+
+                "ethiopic-numeric",
+                "persian",
+                "arabic-indic",
+                "devanagari",
+                "bengali",
+                "gurmukhi",
+                "gujarati",
+                "oriya",
+                "tamil",
+                "telugu",
+                "kannada",
+                "malayalam",
+                "thai",
+                "lao",
+                "myanmar",
+                "khmer",
+                "cjk-heavenly-stem",
+                "cjk-earthly-branch",
+
+                "disclosure-open",
+                "disclosure-closed",
+                "mongolian"
+            ]
         }
     },
 
