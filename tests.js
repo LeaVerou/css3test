@@ -912,6 +912,7 @@ window.Specs = {
                 "telugu",
                 "kannada",
                 "malayalam",
+                "mongolian",
                 "thai",
                 "lao",
                 "myanmar",
@@ -919,9 +920,10 @@ window.Specs = {
                 "cjk-heavenly-stem",
                 "cjk-earthly-branch",
 
+                "cjk-ideographic",
+
                 "disclosure-open",
-                "disclosure-closed",
-                "mongolian"
+                "disclosure-closed"
             ]
         }
     },
