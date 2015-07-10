@@ -1107,14 +1107,19 @@ window.Specs = {
         }
     },
 
+    // Blink bug: https://code.google.com/p/chromium/issues/detail?id=311234
+    // Firefox bug: https://bugzilla.mozilla.org/show_bug.cgi?id=945584
     "css-snappoints": {
         "title": "CSS Scroll Snap Points Module",
         "properties": {
             "scroll-snap-type": ["none", "mandatory", "proximity"],
-            "scroll-snap-points-x": ["repeat(100%)", "repeat(50px)"],
-            "scroll-snap-points-y": ["repeat(100%)", "repeat(50px)"],
-            "scroll-snap-destination": ["0 0", "20px 90px", "center bottom", "bottom 10px right 20px"],
-            "scroll-snap-coordinate": ["none", "0 0", "20px 90px", "center bottom", "bottom 10px right 20px"]
+            "scroll-snap-type-x": ["none", "mandatory", "proximity"],
+            "scroll-snap-type-y": ["none", "mandatory", "proximity"],
+            "scroll-snap-points-x": ["repeat(100%)", "repeat(50px)", "repeat(calc(25px + 1%))"],
+            "scroll-snap-points-y": ["repeat(100%)", "repeat(50px)", "repeat(calc(25px + 1%))"],
+            "scroll-snap-destination": ["left", "bottom", "20px -90px", "center bottom", "calc(10% + 20px) 40%", "calc(10% + 20px) calc(3 * 25px + 50%)", "top right 10px", "bottom 10px right 20px"],
+            // scroll-snap-coordinate 支持多个值
+            "scroll-snap-coordinate": ["none", "left", "bottom", "20px -90px", "center bottom", "200px calc(10% + 20px)", "calc(10% + 20px) 150%, 200px calc(10% + 20px)", "top right 10px", "bottom 10px right 20px", "50px 100px, 150px 100px, left 200px top 100px", "50% 100%, left top 100%, 200% 100%"]
         }
     },
 
