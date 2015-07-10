@@ -611,6 +611,14 @@ window.Specs = {
 			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 		}
 	},
+	
+	"fullscreen": {
+		"title": "Fullscreen API",
+		"selectors": {
+			"::backdrop": "::backdrop",
+			":fullscreen": ":fullscreen"
+		}	
+	},
 
 	"css3-break": {
 		"title": "Fragmentation",
