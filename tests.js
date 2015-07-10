@@ -597,6 +597,14 @@ window.Specs = {
 			"shape-margin": ["0", "10px", "50%"]
 		}
 	},
+	
+	"css3-exclusions": {
+		"title": "Exclusions",
+		"properties": {
+			"wrap-flow": ["auto", "both", "start", "end", "minimum", "maximum", "clear"],
+			"wrap-through": ["wrap", "none"]
+		}
+	},
 
 	"filter-effects": {
 		"title": "Filter Effects",
