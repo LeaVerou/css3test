@@ -222,7 +222,7 @@ window.Specs = {
             ":only-of-type": ":only-of-type",
             ":empty": ":empty",
             ":not()": [":not(*)", "*:not(FOO)", ":not(element)", "html|*:not(:link):not(:visited)", ":not(.class):not(#id):not([attr]):not(:link)", "h2:not(:first-of-type):not(:last-of-type)"],
-            ":blank": ":blank"
+            ":blank": ":blank" //:-moz-whitespace-only
         }
     },
 
@@ -232,16 +232,18 @@ window.Specs = {
             ">>": ">>",
             "Column combinator": "col.selected || td",
             "[i]": "[frame=hsides i]", //Case-sensitivity
-            ":current()": ["a:current", ":current(p, li, dt, dd)"],
+            ":current": ":current",
+            ":current()": [":current(p, li, dt, dd)"],
             ":past": ":past",
             ":future": ":future",
             ":matches()": ["*|*:matches(:hover, :focus)", "*|*:matches(*:hover, *:focus)", ".foo :matches(h1, h2, h3, h4, h5, h6)", ":matches(section, nav) h1", ":matches(section, nav) ~ :matches(h1, h2)", ":matches(:hover, :focus)", ":matches(h1 + h2, h3 > h4)", ":matches(.foo :matches(h1, h2))", ":matches(:matches(h1, h2), h3)", ":matches(:not(.foo, .bar))"],
             ":any()": [".foo :any(h1, h2, h3, h4, h5, h6)", ":any(section, nav) h1", ":any(section, nav) ~ :any(h1, h2)", ":any(:hover, :focus)"],
             ":not()": [":not(element, .class, #id)", ":not(element, .class, #id):not(.foo, .bar)","h2:not(:first-of-type, :last-of-type)", ":not(:matches(h1, h2))", ":not(:matches(h1, h2), h3)", ":not(:matches(:not(h1, h2)))", ":not(:not(.foo), .bar)", ":not(:not(:not(.foo)), .bar)"],
             ":has()": ["a:has(> img)","dt:has(+ dt)","section:not(:has(h1, h2, h3, h4, h5, h6))"],
+            ":focus-within": ":focus-within",
+            ":drop": ":drop",
             ":drop()": [":drop(active)", ":drop(valid active invalid)"],
             ":any-link": ":any-link",
-            ":focus-within": ":focus-within",
             ":nth-column": ":future",
             ":nth-column": [
                 ":nth-column(even)", ":nth-column(odd)",
@@ -265,7 +267,27 @@ window.Specs = {
             //https://bugs.webkit.org/show_bug.cgi?id=118162
             //https://bugzilla.mozilla.org/show_bug.cgi?id=1069012
             //http://caniuse.com/#feat=css-placeholder
-            ":placeholder-shown": ":placeholder-shown"
+            ":placeholder-shown": ":placeholder-shown",
+
+            //  Input Pseudo-classes
+            ":user-error": ":user-error", //:-moz-ui-valid
+            ":-moz-ui-valid":":-moz-ui-valid",
+
+            // Transfer from CSS UI 3
+            ":indeterminate": ":indeterminate",
+            ":default": ":default",
+            ":valid": ":valid",
+            ":invalid": ":invalid",
+            ":in-range": ":in-range",
+            ":out-of-range": ":out-of-range",
+            ":required": ":required",
+            ":optional": ":optional",
+            ":read-only": ":read-only",
+            ":read-write": ":read-write",
+            "::value": "::value", // 已删除 dropped
+            "::choices": "::choices", // 已删除 dropped
+            "::repeat-item": "::repeat-item",
+            "::repeat-index": "::repeat-index"
         }
     },
 
@@ -359,12 +381,13 @@ window.Specs = {
     },
 
 
+    // Changes http://www.w3.org/TR/css-ui-3/#changes
     "css3-ui": {
         "title": "Basic User Interface",
         "properties": {
-            "content": "icon",
-            "icon": ["auto", "url(foo.png)", "url(foo.png), url(foo.gif)"],
-            "box-sizing": ["border-box", "padding-box", "content-box"],
+            //Dropped "icon": ["auto", "url(foo.png)", "url(foo.png), url(foo.gif)"],
+            // Dropped padding-box
+            "box-sizing": ["border-box", "content-box"],
             "outline-offset": ["-5px", "0", "5px"],
             "resize": ["none", "both", "horizontal", "vertical"],
             "text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
@@ -372,6 +395,7 @@ window.Specs = {
                 "url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
                 "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in", "zoom-out"
             ],
+            "caret-color": ["auto", "#00aacc", "rgba(65, 20, 109, .6)", "transparent", "currentColor"], // New
             "nav-index": ["auto", "1", "10"],
             "nav-up": ["auto", "#foo", "#foo current", "#foo root"],
             "nav-right": ["auto", "#foo", "#foo current", "#foo root"],
@@ -379,21 +403,10 @@ window.Specs = {
             "nav-left": ["auto", "#foo", "#foo current", "#foo root"],
             "ime-mode": ["auto", "normal", "active", "inactive", "disabled"]
         },
+        // Move to Selectors Level 4
         "selectors": {
-            ":indeterminate": ":indeterminate",
-            ":default": ":default",
-            ":valid": ":valid",
-            ":invalid": ":invalid",
-            ":in-range": ":in-range",
-            ":out-of-range": ":out-of-range",
-            ":required": ":required",
-            ":optional": ":optional",
-            ":read-only": ":read-only",
-            ":read-write": ":read-write",
-            "::value": "::value",
-            "::choices": "::choices",
-            "::repeat-item": "::repeat-item",
-            "::repeat-index": "::repeat-index"
+            //"::value": "::value", // 已删除 dropped
+            //"::choices": "::choices", // 已删除 dropped
         }
     },
 
