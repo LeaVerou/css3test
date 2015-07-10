@@ -1130,10 +1130,10 @@ window.Specs = {
         "title": "Motion Path Module Level 1",
         "group": "fxtf",
         "properties": {
-            "motion-path": ["none", "url(../images/foo.svg)", "path('M 1 2 V 3')", "polygon(0% 50%, 50% 100%, 0 100%)", "fill-box", "stroke-box", "view-box"],
+            "motion-path": ["none", "path('M 1 2 V 3')", "url(../images/foo.svg)", "polygon(0% 50%, 50% 100%, 0 100%)", "fill-box", "stroke-box", "view-box"],
             "motion-offset": ["0", "123px", "123vw", "18rem", "-200px", "30%", "unset"],
             "motion-rotation": ["auto", "0", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"],
-            "motion": ["none 50% auto 400grad", "path('M 20 20 H 80 V 30') 0rad 100px", "10px 90deg reverse none", "path('M 1 2 V 3') 4px 5deg", "none 10px reverse 90deg"],
+            "motion": ["none 50% auto 400grad", "path('M 20 20 H 80 V 30') 0rad 100px", "10px 90deg reverse none", "path('M 1 2 V 3') 4px 5deg", "none 10px reverse 90deg", "url(../images/foo.svg) 0rad 100px"],
         }
     },
 
