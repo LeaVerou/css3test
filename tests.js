@@ -275,6 +275,7 @@ window.Specs = {
 				"perspective(600px)"
 			],
 			"transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "left 50% 0"],
+			"transform-box": ["border-box", "fill-box", "view-box"],
 			"transform-style": ["flat", "preserve-3d"],
 			"perspective": ["none", "600px"],
 			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%"],
