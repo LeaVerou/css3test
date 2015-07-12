@@ -189,9 +189,7 @@ window.Specs = {
 	"css3-ui": {
 		"title": "Basic User Interface",
 		"properties": {
-			"content": "icon",
-			"icon": ["auto", "url(foo.png)", "url(foo.png), url(foo.gif)"],
-			"box-sizing": ["border-box", "padding-box", "content-box"],
+			"box-sizing": ["border-box", "content-box"],
 			"outline-offset": ["-5px", "0", "5px"],
 			"resize": ["none", "both", "horizontal", "vertical"],
 			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
@@ -199,12 +197,11 @@ window.Specs = {
 				"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
 				"ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in", "zoom-out"
 			],
-			"nav-index": ["auto", "1", "10"],
+			"caret-color": ["auto", "green"],
 			"nav-up": ["auto", "#foo", "#foo current", "#foo root"],
 			"nav-right": ["auto", "#foo", "#foo current", "#foo root"],
 			"nav-down": ["auto", "#foo", "#foo current", "#foo root"],
-			"nav-left": ["auto", "#foo", "#foo current", "#foo root"],
-			"ime-mode": ["auto", "normal", "active", "inactive", "disabled"]
+			"nav-left": ["auto", "#foo", "#foo current", "#foo root"]
 		},
 		"selectors": {
 			":indeterminate": ":indeterminate",
@@ -216,11 +213,7 @@ window.Specs = {
 			":required": ":required",
 			":optional": ":optional",
 			":read-only": ":read-only",
-			":read-write": ":read-write",
-			"::value": "::value",
-			"::choices": "::choices",
-			"::repeat-item": "::repeat-item",
-			"::repeat-index": "::repeat-index"
+			":read-write": ":read-write"
 		}
 	},
 
