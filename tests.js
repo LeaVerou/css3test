@@ -479,7 +479,7 @@ window.Specs = {
             "perspective": ["none", "600px"],
             "perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%"],
             "backface-visibility": ["visible", "hidden"],
-            "transform-box": ["border-box", "fill-box", "view-box"]
+            "transform-box": ["border-box", "fill-box", "view-box"] //https://bugs.webkit.org/show_bug.cgi?id=145783
         }
     },
 
