@@ -180,13 +180,13 @@ window.Specs = {
             "[att|=en]":  ["[att|=en]", "[att|=\"en\"]"],
             "Namespaces": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]", "foo|h1", "foo|*", "|h1", "*|h1"],
             ":target": [":target", ":target::before"],
-            ":dir()": [":dir(rtl)", ":dir(ltr)"],
-            ":lang()": ":lang(fr-be)",
-            ":enabled": ":enabled",
-            ":disabled": ":disabled",
-            ":checked": ":checked",
-            ":indeterminate": ":indeterminate",
-            ":root": ":root",
+            ":dir()": [":dir(rtl)", ":dir(ltr)", ":dir(ltr)::before"],
+            ":lang()": [":lang(fr-be)", ":lang(fr-be)::before"],
+            ":enabled": [":enabled", ":enabled::before"],
+            ":disabled": [":disabled", ":disabled::before"],
+            ":checked": [":checked", ":checked::before"],
+            ":indeterminate": [":indeterminate", ":indeterminate::before"],
+            ":root": [":root", ":root::before"],
             ":nth-child": [
                 ":nth-child(even)", ":nth-child(odd)",
                 ":nth-child(n)", ":nth-child(-n)", ":nth-child(0n)",
@@ -220,9 +220,9 @@ window.Specs = {
             ":first-of-type": ":first-of-type",
             ":last-of-type": ":last-of-type",
             ":only-of-type": ":only-of-type",
-            ":empty": ":empty",
+            ":empty": [":empty", ":empty::before"],
             ":not()": [":not(*)", "*:not(FOO)", ":not(element)", "html|*:not(:link):not(:visited)", ":not(.class):not(#id):not([attr]):not(:link)", "h2:not(:first-of-type):not(:last-of-type)"],
-            ":blank": ":blank" //:-moz-whitespace-only
+            ":blank": [":blank", ":blank::before"] //:-moz-whitespace-only
         }
     },
 
@@ -479,6 +479,16 @@ window.Specs = {
             "perspective": ["none", "600px"],
             "perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%"],
             "backface-visibility": ["visible", "hidden"],
+            "transform-box": ["border-box", "fill-box", "view-box"]
+        }
+    },
+
+    "css3-transforms-2": {
+        "title": "Transforms 2",
+        "properties": {
+            "translate": ["0", "10px", "-30px -90px", "6% 8em"],
+            "rotate": ["0", "18deg", "18deg 1 3 2"],
+            "scale": ["0", "1.8", "2 3", "2 3 1"],
         }
     },
 
