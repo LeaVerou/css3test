@@ -950,7 +950,18 @@ window.Specs = {
 
                 "disclosure-open",
                 "disclosure-closed"
-            ]
+            ],
+
+            "system": ["cyclic", "numeric", "alphabetic", "symbolic", "additive", "fixed", "fixed 3", "extends decimal"],
+            "negative": [" '-' ", " '(' ')' "],
+            "prefix": ["»", "Page"],
+            "suffix": [" '-' ", " '(' ')' "],
+            "range": ["auto", "2 5", "infinite 10", "6 infinite", "infinite infinite", "2 5, 8 10", "infinite 6, 10 infinite"],
+            "pad": ["3 '0'", "2 ''"],
+            "fallback": ["decimal", "upper-alpha"],
+            "symbols": ["A B C D E", "'\\24B6' '\\24B7' '\\24B8' D E", "'0' '1' '2' '4' '5' '6' '7' '8' '9'", "url('first.svg') url('second.svg') url('third.svg')", "indic-numbers", "A '1' '\\24B7' url('firefox.svg')"],
+            "additive-symbols": ["3 '0'", "3 '0', 2 '\\2E\\20'", "3 '0', 2 url(symbol.png)"],
+            "speak-as": ["auto", "bullets", "numbers", "words", "spell-out", "numbers"]
         }
     },
 
