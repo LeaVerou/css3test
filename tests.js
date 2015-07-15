@@ -449,7 +449,18 @@ window.Specs = {
                 "foo 200ms ease .8s infinite alternate both",
                 "foo 200ms ease .8s infinite alternate both paused",
                 "0"
-            ]
+            ],
+            /*
+              Name: animation-trigger
+              Value: auto | scroll(<snap point> [, <snap point>]+)
+              Initial: auto
+              Inherited: no
+              Animatable: no
+
+              See also: https://lists.w3.org/Archives/Public/www-style/2014Sep/0135.html
+              Webkit Trac: http://trac.webkit.org/changeset/181655
+            */
+            "animation-trigger": ["auto", "container-scroll(0)", "container-scroll(23px)", "container-scroll(9.5em)", "container-scroll(23px, 56px)"]
         },
         "@rules": {
             "@keyframes": "@keyframes foo"
@@ -1196,10 +1207,22 @@ window.Specs = {
         }
     },
 
+    //http://dev.w3.org/csswg/css-inline
     "css-size-adjust": {
         "title": "CSS Mobile Text Size Adjustment",
         "properties": {
             "text-size-adjust": ["auto", "none", "32.56%", "189%"]
+        }
+    },
+
+    "css-inline": {
+        "title": "CSS Inline Layout Module Level 3",
+        "properties": {
+            "dominant-baseline": ["auto",  "text-bottom", "alphabetic", "central", "mathematical", "hanging", "text-top"],
+            "alignment-baseline": ["baseline", "text-bottom", "alphabetic", "middle", "central", "mathematical", "text-top", "bottom", "center", "top"],
+            "baseline-shift": [ "0", "28px", "-28px", "3.2em", "52%", "sub", "super"],
+            "initial-letter": ["normal", "0", "3", "3 1", "1 2"],
+            "initial-letter-align": ["auto", "alphabetic", "hanging", "ideographic"]
         }
     }
 };
