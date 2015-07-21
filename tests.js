@@ -993,7 +993,7 @@ window.Specs = {
     "css-shapes": {
         "title": "Shapes",
         "properties": {
-            "shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "inset(10% round 10% 40% / 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
+            "shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "inset(10% round 10% 40% / 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "url(image.png)"],
             "shape-image-threshold": ["0", "1", "0.0", "0.1"],
             "shape-margin": ["0", "10px", "50%"]
         }
