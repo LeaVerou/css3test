@@ -192,7 +192,8 @@ window.Specs = {
                 ":nth-child(n)", ":nth-child(-n)", ":nth-child(0n)",
                 ":nth-child(1)", ":nth-child(-1)", ":nth-child(0)",
                 ":nth-child(n+1)", ":nth-child(3n+1)", ":nth-child(3n + 1)",
-                ":nth-child(-n+1)", ":nth-child(-n-1)", ":nth-child(3n-1)"
+                ":nth-child(-n+1)", ":nth-child(-n-1)", ":nth-child(3n-1)",
+                ":nth-child(n+6):nth-child(-n+4)", ":nth-child(-n+5):nth-child(n+2)"
             ],
             ":nth-last-child": [
                 ":nth-last-child(even)", ":nth-last-child(odd)",
@@ -764,10 +765,10 @@ window.Specs = {
     "css3-regions": {
         "title": "Regions",
         "properties": {
-            "break-after": ["region"],
-            "break-before": ["region"],
-            "flow-from": ["none", "named-flow"],
-            "flow-into": ["none", "named-flow"],
+            "break-after": ["region", "avoid-region"],
+            "break-before": ["region", "avoid-region"],
+            "flow-into": ["none", "named", "element", "content"],
+            "flow-from": ["none", "named"],
             "region-fragment": ["auto", "break"]
         }
     },
@@ -992,7 +993,7 @@ window.Specs = {
     "css-shapes": {
         "title": "Shapes",
         "properties": {
-            "shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
+            "shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "inset(10% round 10% 40% / 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
             "shape-image-threshold": ["0", "1", "0.0", "0.1"],
             "shape-margin": ["0", "10px", "50%"]
         }
@@ -1003,11 +1004,11 @@ window.Specs = {
         "title": "Masking",
         "group": "fxtf",
         "properties": {
-            "clip-path": ["url('#clip')", "rectangle", "inset-rectangle", "circle", "ellipse", "border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "none"],
+            "clip-path": ["url('#clip')", "inset(16% 35px 2em 3.5vw)", "inset(calc(100% - 210px) 19px)", "inset(10% round 10% 40% / 10% 40%)", "circle()", "circle(38.6% at 56% 51%)", "circle(closest-side)", "circle(farthest-side)", "ellipse()", "ellipse(26% 45% at 58% 52%)", "ellipse(closest-side)", "ellipse(farthest-side)", "polygon(50% 0%, 0% 100%, 100% 100%)", "polygon(5em 13px, 76% 280px, 0 230px)", "polygon(nonzero, 5em 13px, 76% 280px, 0 230px)", "polygon(evenodd, 5em 13px, 76% 280px, 0 230px)", "border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "circle() border-box", "none"],
             "clip-rule": ["nonzero", "evenodd"],
-            "mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
-            "mask-mode": ["auto", "alpha", "luminance"],
             "mask-type": ["alpha", "luminance"],
+            "mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
+            "mask-mode": ["alpha", "luminance", "auto"],
             "mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
             "mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
             "mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "no-clip"],
@@ -1021,8 +1022,7 @@ window.Specs = {
             "mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
             "mask-border-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
             "mask-border-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
-            "mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
-            "mask-source-type": ["luminance", "alpha"]
+            "mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"]
         }
     },
 
