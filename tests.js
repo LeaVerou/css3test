@@ -1224,5 +1224,17 @@ window.Specs = {
             "initial-letter": ["normal", "0", "3", "3 1", "1 2"],
             "initial-letter-align": ["auto", "alphabetic", "hanging", "ideographic"]
         }
+    },
+
+    "css-line-grid": {
+        "title": "CSS Line Grid Module Level 1",
+        "properties": {
+            "line-grid": ["match-parent", "create", "custom"],
+            "line-snap": ["none", "baseline", "contain"],
+            "box-snap": ["none", "block-start", "block-end", "center", "baseline", "last-baseline"],
+            //非规范属性 http://trac.webkit.org/changeset/108133
+            "line-align": ["none", "edges"]
+
+        }
     }
 };
