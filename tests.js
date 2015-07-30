@@ -1236,5 +1236,17 @@ window.Specs = {
             "line-align": ["none", "edges"]
 
         }
+    },
+
+    //https://fullscreen.spec.whatwg.org/#::backdrop-pseudo-element
+    //Demo: http://demo.agektmr.com/dialog/
+    "fullscreen": {
+        "title": "Fullscreen API",
+        "selectors": {
+            "::backdrop": ["::backdrop"],
+            ":fullscreen": [":fullscreen", ":fullscreen::backdrop"],
+            // Old
+            ":full-screen": [":full-screen", ":full-screen::backdrop"]
+        }
     }
 };
