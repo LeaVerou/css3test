@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS.supports() test</title>
+</head>
+<style>
+  .foo {
+    display: -webkit-box;
+    display: -moz-box;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+/*    -webkit-flex-direction: column;
+    -moz-flex-direction: column;*/
+  }
+  .foo {
+    border: 1px solid #000;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .foo .item {
+    font-size: 50px;
+    display: block;
+    background-color: pink;
+  }
+  .foo strong {
+    display: block;
+  }
+
+  .inner > * {
+    display: inline-block !important;
+    vertical-align: middle;
+  }
+  .inner:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+  }
+</style>
+<body>
+  <div class="foo">
+    <div class="inner">
+      <div class="item">aaaaaa</div>
+      <strong class="">测试元素</strong>
+    </div>
+  </div>
+  <script>
+  var result = supports('range: auto');
+  alert(result)
+
+  function supports (str) {
+    //Opera 12.1 https://dev.opera.com/articles/native-css-feature-detection/
+    //|| (window.CSS && window.CSS.supports)
+    // if (window.supportsCSS){
+    //   return  window.supportsCSS('('+ str + ')')
+    // }else {
+      console.log('('+ str + ')')
+      return  CSS.supports(str)
+    // }
+  }
+  </script>
+</body>
+
+</html>

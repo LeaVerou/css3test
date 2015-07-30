@@ -999,7 +999,7 @@ window.Specs = {
         }
     },
 
-    "css-shapes": {
+    "css-shapes-2": {
         "title": "Shapes 2",
         "properties": {
             "shape-inside": ["auto", "outside-shape", "inset(10% round 10% 40% 10% 40%)", "inset(10% round 10% 40% / 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "ellipse(at top 50% left 20%) shape-box", "circle(at right 5% top) shape-box", "polygon(100% 0, 100% 100%, 0 100%) shape-box", "url(image.png)"],
