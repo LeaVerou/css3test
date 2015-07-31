@@ -515,7 +515,8 @@ window.Specs = {
             "hyphens": ["auto", "manual", "none"],
             "overflow-wrap": ["normal", "break-word"],
             "word-wrap": ["normal", "break-word"],
-            "text-align": ["start", "end", "justify", "match-parent", "justify-all"],
+            //true moz only
+            "text-align": ["start", "end", "justify", "match-parent", "justify-all", "true"],
             "text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
             "text-align-all": ["start", "end", "left", "right", "center", "justify", "match-parent"],
             "text-justify": ["auto", "none", "inter-word", "inter-ideograph", "inter-character", "inter-cluster", "distribute", "kashida"],
@@ -1255,6 +1256,23 @@ window.Specs = {
             ":fullscreen": [":fullscreen", ":fullscreen::backdrop"],
             // Old
             ":full-screen": [":full-screen", ":full-screen::backdrop"]
+        }
+    },
+
+    //
+    "css-overflow": {
+        "title": "Overflow",
+        "properties": {
+            "overflow-x": ["visible", "hidden", "clip", "scroll", "auto", "-moz-hidden-unscrollable"],
+            "overflow-y": ["visible", "hidden", "clip", "scroll", "auto", "-moz-hidden-unscrollable"],
+            "overflow-x": ["visible", "hidden", "clip", "scroll", "auto", "-moz-hidden-unscrollable"],
+            "overflow-x": ["visible", "hidden", "clip", "scroll", "auto", "-moz-hidden-unscrollable"],
+            //moz only
+            "overflow-clip-box": ["content-box", "padding-box"],
+            "max-lines": ["none", "3"]
+        },
+        "selectors": {
+            "::nth-fragment()": ["::nth-fragment(2)", "::nth-fragment(2n)", "::nth-fragment(-n+3)", "::nth-fragment(2) :link"],
         }
     }
 };
