@@ -5,57 +5,10 @@
   <meta charset="UTF-8">
   <title>CSS.supports() test</title>
 </head>
-<style>
-  .foo {
-    display: -webkit-box;
-    display: -moz-box;
 
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-/*    -webkit-flex-direction: column;
-    -moz-flex-direction: column;*/
-  }
-  .foo {
-    border: 1px solid #000;
-    width: 300px;
-    height: 100px;
-    margin: auto;
-  }
-
-  .foo .item {
-    font-size: 50px;
-    display: block;
-    background-color: pink;
-  }
-  .foo strong {
-    display: block;
-  }
-
-  .inner > * {
-    display: inline-block !important;
-    vertical-align: middle;
-  }
-  .inner:after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    height: 100%;
-  }
-</style>
 <body>
-  <div class="foo">
-    <div class="inner">
-      <div class="item">aaaaaa</div>
-      <strong class="">测试元素</strong>
-    </div>
-  </div>
   <script>
-  var result = supports('range: auto');
+  var result = supports('-webkit-column-break-inside: left');
   alert(result)
 
   function supports (str) {

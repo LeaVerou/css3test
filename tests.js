@@ -686,7 +686,13 @@ window.Specs = {
             "column-fill": ["auto", "balance"],
             "break-before": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
             "break-after": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
-            "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"]
+            "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"],
+
+            //Only WebKit/Blink support width -webkit-
+            "column-break-before": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
+            "column-break-after": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
+            "column-break-inside": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"]
+
         }
     },
 
