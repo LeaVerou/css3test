@@ -1280,5 +1280,17 @@ window.Specs = {
         "selectors": {
             "::nth-fragment()": ["::nth-fragment(2)", "::nth-fragment(2n)", "::nth-fragment(-n+3)", "::nth-fragment(2) :link"],
         }
+    },
+
+    //Blink: https://code.google.com/p/chromium/issues/detail?id=457718
+    "css-lists-3": {
+        "title": "CSS Lists and Counters",
+        "properties": {
+            "position": ["marker"],
+            "marker-side": ["list-item", "list-container"]
+        },
+        "selectors": {
+            "::marker": ["::marker", "li::marker", "p.note::marker"]
+        }
     }
 };
