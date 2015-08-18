@@ -47,8 +47,7 @@ window.Specs = {
             "corner-shape": ["round", "bevel", "scoop", "notch", "round bevel", "round bevel scoop notch"],
             "corners": ["bevel 50%", "bevel 0.25em 0.25em 0 0 / 50% 50% 0 0"],
             "border-limit": ["all", "sides", "corners", "sides 50%", "left 4em", "corners 10px", "corners", "corners"],
-            "border-clip": ["normal", "10px", "10px 30% 50px", "0 5px 2em 25px", "40px 20px 0 1fr repeat(20px 20px) 0 1fr 40px"],
-            "background-position": ["start 20px", "end 20px"]
+            "border-clip": ["normal", "10px", "10px 30% 50px", "0 5px 2em 25px", "40px 20px 0 1fr repeat(20px 20px) 0 1fr 40px"]
         }
     },
 
