@@ -40,7 +40,10 @@ window.Specs = {
         "title": "Backgrounds and Borders 4",
         "properties": {
             "background-repeat": ["extend"],
-            "background-position": ["start 20px", "end 20px"],
+            "background-position-x": ["x-start", "x-end", "x-start 21%", "x-end 18px"],
+            "background-position-y": ["y-start", "y-end", "y-start 21%", "y-end 18px"],
+            "background-position-inline": ["start 16px", "end 16px"],
+            "background-position-block": ["start 16px", "end 16px"],
             "corner-shape": ["round", "bevel", "scoop", "notch", "round bevel", "round bevel scoop notch"],
             "corners": ["bevel 50%", "bevel 0.25em 0.25em 0 0 / 50% 50% 0 0"],
             "border-limit": ["all", "sides", "corners", "sides 50%", "left 4em", "corners 10px", "corners", "corners"],
@@ -677,7 +680,7 @@ window.Specs = {
             "column-width": ["10em", "auto"],
             "column-count": ["2", "auto"],
             "columns": ["100px", "3", "10em 2", "auto 2", "10em auto", "auto auto", "2 10em", "auto 10em", "2 auto"],
-            "column-gap": ["1em", "normal"],
+            "column-gap": ["1em", "normal", "calc(239px - 3em)"],
             "column-rule-color": ["red"],
             "column-rule-style": ["none", "solid", "dotted"],
             "column-rule-width": "1px",
@@ -822,7 +825,9 @@ window.Specs = {
             "grid-column-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
             "grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
             "grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
-            "grid-area": ["auto", "1 / 1", "1 / span 1", "span / 10 / -1", "articles"]
+            "grid-area": ["auto", "1 / 1", "1 / span 1", "span / 10 / -1", "articles"],
+            "row-gap": ["normal", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"],
+            "grid-gap": ["normal", "16px 3.6em", "31rem 28vw", "16vmax calc(239px - 3em)", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"]
         }
     },
 
