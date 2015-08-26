@@ -1027,13 +1027,15 @@ window.Specs = {
             "clip-rule": ["nonzero", "evenodd"],
             "mask-type": ["alpha", "luminance"],
             "mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
-            "mask-mode": ["alpha", "luminance", "auto"],
             "mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
             "mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
+            "mask-position-x": ["center", "left", "10px"],
+            "mask-position-y": ["center", "bottom", "10px"],
             "mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "no-clip"],
             "mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box"],
             "mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
             "mask-composite": ["add", "subtract", "intersect", "exclude"],
+            "mask-mode": ["alpha", "luminance", "auto"],
             "mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
             "mask-border-source": ["none", "url(image.png)"],
             "mask-border-mode": ["luminance ", "alpha"],
@@ -1041,7 +1043,22 @@ window.Specs = {
             "mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
             "mask-border-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
             "mask-border-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
-            "mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"]
+            "mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
+
+            /*
+             * WebKit Support old specs (-webkit-)
+               http://www.w3.org/TR/2012/WD-css-masking-20121115/
+             * Only support <number>(like 1.3) not <integer>
+             * See also
+              https://www.webkit.org/blog/181/css-masks/
+              http://www.html5rocks.com/en/tutorials/masking/adobe/
+            */
+            "mask-box-image-source": ["none", "url(image.png)"],
+            "mask-box-image-slice": ["0 fill", "50% fill", "1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
+            "mask-box-image-width": ["auto", "10px", "50%", "1", "auto 1", "auto 1 50%", "auto 1 50% 1"],
+            "mask-box-image-outset": ["0", "1", "0 1", "0 1 2", "0 1 2 3"],
+            "mask-box-image-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
+            "mask-box-image": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"]
         }
     },
 
@@ -1059,6 +1076,30 @@ window.Specs = {
     "filter-effects": {
         "title": "Filter Effects Module Level 1",
         "group": "fxtf",
+        "values": {
+            "properties": [
+                "background",
+                "background-image",
+                "list-style",
+                "list-style-image",
+                "border-image",
+                "border-image-source",
+                "content",
+                "mask",
+                "mask-image",
+                "mask-box-image",
+                "mask-border-source"
+            ],
+            "filter()": [
+                "filter(url('image.jpg'), blur(2px))",
+                "filter('string', invert(80%))",
+                "filter(url('image.jpg'), url('blur.svg'))",
+                 "filter(url('image.jpg'), url('blur.svg') blur(2px))",
+                "filter(url('image.svg'), blur(2px) invert(80%))",
+                "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px))",
+                "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px) invert(80%))"
+            ]
+        },
         "properties": {
             "filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
         }
