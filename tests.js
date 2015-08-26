@@ -67,7 +67,7 @@ window.Specs = {
                 "mask-box-image",
                 "mask-border-source"
             ],
-            "linear-gradient": [
+            "linear-gradient()": [
                 "linear-gradient(white, black)",
                 "linear-gradient(to right, white, black)",
                 "linear-gradient(45deg, white, black)",
@@ -84,7 +84,7 @@ window.Specs = {
                 "linear-gradient(red -50px, white calc(-25px + 50%), blue 100%)",
                 "linear-gradient(90deg, red, transparent, blue)"
             ],
-            "radial-gradient": [
+            "radial-gradient()": [
                 "radial-gradient(white, black)",
                 "radial-gradient(circle, white, black)",
                 "radial-gradient(ellipse, white, black)",
@@ -100,8 +100,8 @@ window.Specs = {
                         "radial-gradient(5em circle at top left, yellow, blue)",
                         "radial-gradient(circle farthest-side at top left, white, black)"*/
             ],
-            "repeating-linear-gradient": "repeating-linear-gradient(white, black)",
-            "repeating-radial-gradient": "repeating-radial-gradient(white, black)",
+            "repeating-linear-gradient()": "repeating-linear-gradient(white, black)",
+            "repeating-radial-gradient()": "repeating-radial-gradient(white, black)",
             "image-set()": [
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x);",
                 "image-set('foo.png' 1x, 'foo-2x.png' 2x #ccc);",
@@ -149,6 +149,7 @@ window.Specs = {
                 "mask-box-image",
                 "mask-border-source"
             ],
+
             "image()": [
                 "image('sprites.png#xywh=10,30,60,20')",
                 "image('wavy.svg', 'wavy.png' , 'wavy.gif')",
@@ -159,9 +160,8 @@ window.Specs = {
             "element()": [
                 "element(#foo)"
             ],
-        },
-        "properties": {
-            "conic-gradient": [
+
+            "conic-gradient()": [
                 "conic-gradient(white, black)",
                 "conic-gradient(circle, white, black)",
                 "conic-gradient(ellipse, white, black)",
@@ -172,7 +172,7 @@ window.Specs = {
                 "conic-gradient(50%, white, black)",
                 "conic-gradient(60% 60%, white, black)"
             ],
-            "repeating-conic-gradient": "repeating-conic-gradient(white, black)"
+            "repeating-conic-gradient()": "repeating-conic-gradient(white, black)"
         }
     },
 
@@ -643,9 +643,9 @@ window.Specs = {
                 "text-emphasis-color",
                 "column-rule-color"
             ],
-            "rgba": "rgba(0,0,0,.5)",
-            "hsl": "hsl(0,0%,0%)",
-            "hsla": "hsla(0,0%,0%,.5)",
+            "rgba()": "rgba(0,0,0,.5)",
+            "hsl()": "hsl(0,0%,0%)",
+            "hsla()": "hsla(0,0%,0%,.5)",
             "transparent": "transparent",
             "currentColor": "currentColor"
         },
@@ -666,9 +666,9 @@ window.Specs = {
                 "column-rule-color"
             ],
             "#rrggbbaa": ["#0033ffcc", "#03fc"],
-            "rgba": "rgba(0, 0, 100%, 80%)",
-            "hsl": ["hsl(0deg, 80%, 50%)", "hsl(120deg, 20%, 56%)", "hsl(orange greenish, 20%, 56%)", "hsl(orangish(20%) red, 20%, 56%)"],
-            "hsla": "hsla(0, 0%, 0%, 80%)",
+            "rgba()": "rgba(0, 0, 100%, 80%)",
+            "hsl()": ["hsl(0deg, 80%, 50%)", "hsl(120deg, 20%, 56%)", "hsl(orange greenish, 20%, 56%)", "hsl(orangish(20%) red, 20%, 56%)"],
+            "hsla()": "hsla(0, 0%, 0%, 80%)",
             "gray()": ["gray(0)", "gray(16)", "gray(255, 50%)", "gray(255, .2)"],
             "hwb()": ["hwb(90, 0%, 0%, 0.5)", "hwb(190, 50%, 0%)", "hwb(190, 50%, 10%, .2)", "hwb(120deg, 44%, 50%)"],
             "color()": ["color(yellow blend(blue 50%))", "color(red)", "color(red tint(50%))", "color(hsla(125, 50%, 50%, .4) hue(200))", "color(yellow blend(blue 50% hsl))", ],
