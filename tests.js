@@ -637,11 +637,18 @@ window.Specs = {
         "values": {
             "properties": [
                 "color",
+                "background",
                 "background-color",
+                "border",
                 "border-color",
+                "text-decoration",
                 "text-decoration-color",
+                "text-emphasis",
                 "text-emphasis-color",
-                "column-rule-color"
+                "column-rule",
+                "column-rule-color",
+                "outline",
+                "outline-color"
             ],
             "rgba()": "rgba(0,0,0,.5)",
             "hsl()": "hsl(0,0%,0%)",
