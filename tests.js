@@ -60,8 +60,12 @@ window.Specs = {
                 "list-style-image",
                 "border-image",
                 "border-image-source",
+                "content",
                 "cursor",
-                "content"
+                "mask",
+                "mask-image",
+                "mask-box-image",
+                "mask-border-source"
             ],
             "linear-gradient": [
                 "linear-gradient(white, black)",
@@ -139,7 +143,11 @@ window.Specs = {
                 "border-image",
                 "border-image-source",
                 "cursor",
-                "content"
+                "content",
+                "mask",
+                "mask-image",
+                "mask-box-image",
+                "mask-border-source"
             ],
             "image()": [
                 "image('sprites.png#xywh=10,30,60,20')",
@@ -1036,7 +1044,7 @@ window.Specs = {
             "mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
             "mask-composite": ["add", "subtract", "intersect", "exclude"],
             "mask-mode": ["alpha", "luminance", "auto"],
-            "mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
+            "mask": ["top", "space", "url(image.png)", "url(image.png) luminance", "url(image.png) luminance top space"],
             "mask-border-source": ["none", "url(image.png)"],
             "mask-border-mode": ["luminance ", "alpha"],
             "mask-border-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
@@ -1091,11 +1099,11 @@ window.Specs = {
                 "mask-border-source"
             ],
             "filter()": [
-                "filter(url('image.jpg'), blur(2px))",
+                "filter(url(image.jpg), blur(2px))",
                 "filter('string', invert(80%))",
-                "filter(url('image.jpg'), url('blur.svg'))",
-                 "filter(url('image.jpg'), url('blur.svg') blur(2px))",
-                "filter(url('image.svg'), blur(2px) invert(80%))",
+                "filter(url(image.jpg), url('blur.svg'))",
+                "filter(url(image.jpg), url('blur.svg') blur(2px))",
+                "filter(url(image.svg), blur(2px) invert(80%))",
                 "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px))",
                 "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px) invert(80%))"
             ]
