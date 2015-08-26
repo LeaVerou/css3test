@@ -1119,7 +1119,12 @@ window.Specs = {
                 "filter(url(image.jpg), url('blur.svg') blur(2px))",
                 "filter(url(image.svg), blur(2px) invert(80%))",
                 "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px))",
-                "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px) invert(80%))"
+                "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px) invert(80%))",
+                "filter(url(image.svg), contrast(0.75) blur(3px) hue-rotate(45deg))",
+                //cross-fade must be add -webkit-
+                "filter(cross-fade(url(image.svg), url(image.svg), 50%), sepia(1))",
+                "filter(image-set(url(foo.png) 1x), blur(2px))",
+                "filter(filter(url/image.svg), blur(2px)), sepia(1))"
             ]
         },
         "properties": {
