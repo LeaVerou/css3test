@@ -114,13 +114,23 @@ window.Specs = {
                 "image-set(url(foo.png) 600dpi)"
             ],
 
+            // 新语法：cross-fade() = cross-fade( [ <percentage>? && <image> ] [, <image> | <color> ]? )
+            "cross-fade()": [
+                "cross-fade(20% url(foo.png), url(bar.png))",
+                "cross-fade(100% url(foo.png), url(bar.png))",
+                "cross-fade(0.2 url(foo.png), url(bar.png))",
+                "cross-fade(-0.2 url(foo.png), url(bar.png))",
+                "cross-fade(20% url(foo.png), #000)",
+                "cross-fade(100% url(foo.png), rgba(89, 22, 13, 0.6))"
+            ],
+
             //http://trac.webkit.org/changeset/100535
             // Demo: http://peter.sh/files/examples/cross-fading.html
-            // 新语法：cross-fade() = cross-fade( [ <percentage>? && <image> ] [, <image> | <color> ]? )
             "-webkit-cross-fade()": [
                 "cross-fade(url(foo.png), url(bar.png), 20%)",
                 "cross-fade(url(foo.png), url(bar.png), 100%)",
-                "cross-fade(url(foo.png), url(bar.png), 0.2)"
+                "cross-fade(url(foo.png), url(bar.png), 0.2)",
+                "cross-fade(url(foo.png), url(bar.png), -0.2)"
             ]
         },
         "properties": {
@@ -133,7 +143,7 @@ window.Specs = {
         }
     },
 
-    "css-images-4": {
+    "css4-images": {
         "title": "Image Values and Replaced Content 4",
         "values": {
             "properties": [
@@ -542,10 +552,13 @@ window.Specs = {
         "properties": {
            "text-space-collapse": ["collapse", "discard", "preserve", "preserve-breaks"],
            "text-space-trim": ["none", "trim-inner", "consume-before", "consume-after", "consume-before consume-after", "none consume-before", "trim-inner consume-after"],
-           "text-wrap": ["normal", "nowrap", "avoid", "balance"],
+           "text-wrap": ["normal", "nowrap", "balance"],// remove avoid
+           "wrap-before": ["auto", "avoid", "avoid-line", "avoid-flex", "line", "flex"],
+           "wrap-after": ["auto", "avoid", "avoid-line", "avoid-flex", "line", "flex"],
+           "wrap-inside": ["auto", "avoid"],
            "hyphenate-character": ["auto", "\"\\2010\"", "'\\2010'"],
            "hyphenate-limit-zone": ["20%", "5em", ".86em", "30px"],
-           "hyphenate-limit-chars": ["5", "5 2", "5 2 2"],
+           "hyphenate-limit-chars": ["auto", "auto 3", "5", "5 2", "5 2 2"],
            "hyphenate-limit-lines": ["no-limit", "0", "13"],
            "hyphenate-limit-last": ["none", "always", "column", "page", "spread"],
            "text-spacing": ["normal", "none", "trim-start", "space-start", "trim-end", "space-end", "allow-end", "trim-adjacent", "space-adjacent", "no-compress", "ideograph-alpha", "ideograph-numeric", "punctuation", "space-start allow-end trim-adjacent"]
@@ -1112,13 +1125,19 @@ window.Specs = {
                 "mask-box-image",
                 "mask-border-source"
             ],
+            // More test case:
+            // http://trac.webkit.org/browser/trunk/LayoutTests/fast/filter-image/parse-filter-image.html
             "filter()": [
+                "filter('image.jpg', invert(80%))",
+                "filter(none, url(image.jpg))",
+                "filter(none, url(foo.jpg) url(bar.jpg))",
+                "filter(none, sepia(0.5))",
+                "filter(none, sepia(0.5) sepia(0.25))",
                 "filter(url(image.jpg), blur(2px))",
-                "filter('string', invert(80%))",
                 "filter(url(image.jpg), url('blur.svg'))",
                 "filter(url(image.jpg), url('blur.svg') blur(2px))",
                 "filter(url(image.svg), blur(2px) invert(80%))",
-                "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px))",
+                "filter(radial-gradient(circle, #9ef, #0000af 100%), hue-rotate(90deg))",
                 "filter(radial-gradient(circle, #9ef, #0000af 100%), blur(2px) invert(80%))",
                 "filter(url(image.svg), contrast(0.75) blur(3px) hue-rotate(45deg))",
                 //cross-fade must be add -webkit-
