@@ -501,7 +501,7 @@ window.Specs = {
 			"display": ["grid", "inline-grid"],
 			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
 			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
-			"grid-template-areas": ["none", "articles", "nav articles"],
+			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
 			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / [header-top] 'a	 a	 a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom]"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
 			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
