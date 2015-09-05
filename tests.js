@@ -514,6 +514,9 @@ window.Specs = {
 			"grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"],
+			"grid-column-gap": ["normal", "1em"],
+			"grid-row-gap": ["normal", "1em"],
+			"grid-gap": ["normal", "normal 1em", "1em", "1em 1em"]
 		}
 	},
 
