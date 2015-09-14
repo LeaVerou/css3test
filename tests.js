@@ -501,22 +501,25 @@ window.Specs = {
 		"title": "Grid Layout",
 		"properties": {
 			"display": ["grid", "inline-grid"],
-			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px, 1fr, 100px, 1fr, 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (col-start) 250px (col-end)"],
-			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px, 1fr, 100px, 1fr, 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (row-start) 250px (row-end)"],
-			"grid-template-areas": ["none", "articles", "nav articles"],
-			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / (row-start) 'a	 a	 a' (row-end)"],
+			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
+			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
+			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
+			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / [header-top] 'a a a' [header-bottom] [main-top] 'b b b' 1fr [main-bottom]"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
 			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
-			"grid-auto-flow": ["none", "rows", "colums"],
-			"grid-auto-position": ["1 / 1"],
-			"grid": ["columns 1fr / auto"],
-			"grid-row-start": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
-			"grid-column-start": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
-			"grid-row-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
-			"grid-column-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
+			"grid-auto-flow": ["row", "column", "row dense", "column dense"],
+			"grid": ["column 1fr / auto"],
+			"grid-row-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
+			"grid-column-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
+			"grid-row-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
+			"grid-column-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
 			"grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"]
+			/* These are on their way into the draft spec, currently only in editors draft */
+			// "grid-column-gap": ["normal", "1em"],
+			// "grid-row-gap": ["normal", "1em"],
+			// "grid-gap": ["normal", "normal 1em", "1em", "1em 1em"]
 		}
 	},
 
