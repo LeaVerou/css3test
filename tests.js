@@ -670,8 +670,6 @@ window.Specs = {
 		"title": "Scroll Snap Points",
 		"properties": {
 			"scroll-snap-type": ["none", "mandatory", "proximity"],
-			"scroll-snap-type-x": ["none", "mandatory", "proximity"],
-			"scroll-snap-type-y": ["none", "mandatory", "proximity"],
 			"scroll-snap-points-x": ["none", "repeat(100%)", "repeat(120px)", "repeat(calc(3*25px))"],
 			"scroll-snap-points-y": ["none", "repeat(100%)", "repeat(120px)", "repeat(calc(3*25px))"],
 			"scroll-snap-destination": ["0px 0px", "25% 25%", "6px 5px", "20% 3em", "0 0", "0in 1in", "top", "right", "top left", "top right", "center", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px", "5px calc(3*25px)", "calc(20%) calc(3*25px)", "calc(25px*3)", "calc(3*25px + 50%)"],
