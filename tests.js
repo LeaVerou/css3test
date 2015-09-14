@@ -491,6 +491,8 @@ window.Specs = {
 			"flex-shrink": ["1","10"],
 			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
 			"justify-content": ["flex-start", "flex-end", "space-between", "space-around"],
+			"min-height": ["auto"],
+			"min-width": ["auto"],
 			"order": ["0", "1"]
 		}
 	},
