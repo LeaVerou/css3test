@@ -544,7 +544,7 @@ window.Specs = {
                 "rotate3d(1, 1, 1, 45deg)", "rotateX(-45deg)", "rotateY(-45deg)", "rotateZ(-45deg)",
                 "matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "matrix3d(0,0,0,0,0,0,0,0,0,0,1,0,10,10,0,1)",
                 "translate3d(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
-                "perspective(600px)"
+                "none", "perspective(600px)"
             ],
             "transform-origin": ["10px", "top", "top left", "50% 100%", "left 0%", "left 50% 0"],
             "transform-style": ["flat", "preserve-3d"],
@@ -559,7 +559,7 @@ window.Specs = {
         "title": "Transforms 2",
         "properties": {
             "translate": ["0", "10px", "-30px -90px", "6% 8em"],
-            "rotate": ["0", "18deg", "18deg 1 3 2"],
+            "rotate": ["0deg", "18deg", "18deg 1 3 2"],
             "scale": ["0", "1.8", "2 3", "2 3 1"],
         }
     },
