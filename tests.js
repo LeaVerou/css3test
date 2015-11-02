@@ -1421,7 +1421,22 @@ window.Specs = {
             "marker-side": ["list-item", "list-container"]
         },
         "selectors": {
-            "::marker": ["::marker", "li::marker", "p.note::marker"]
+            "::marker": ["li::marker", "p.note::marker"]
+        }
+    },
+
+    "css-pseudo": {
+        "title": "CSS Pseudo-Elements Module Level 4",
+        "selectors": {
+            "::first-line": [".foo::first-line"],
+            "::first-letter": [".foo::first-letter"],
+            "::before": [".foo::before"],
+            "::after": [".foo::after"],
+            "::selection": [".foo::selection"],
+            "::spelling-error": [".foo::spelling-error"],
+            "::grammar-error": [".foo::grammar-error"],
+            "::marker": ["li::marker"],
+            "::placeholder": ["input::placeholder"]
         }
     }
 };
