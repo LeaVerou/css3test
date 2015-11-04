@@ -1447,6 +1447,7 @@ window.Specs = {
         },
         "values": {
             "properties": [
+                "all",
                 "color",
                 "margin",
                 "padding",
