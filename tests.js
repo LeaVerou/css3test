@@ -1438,5 +1438,32 @@ window.Specs = {
             "::marker": ["li::marker"],
             "::placeholder": ["input::placeholder"]
         }
+    },
+
+    "css-variables": {
+        "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+        "properties": {
+            "--foo": ["16px", "26%", "center", "'string'"]
+        },
+        "values": {
+            "properties": [
+                "color",
+                "margin",
+                "padding",
+                "background",
+                "border-width",
+                "border-color",
+                "border-style",
+                "content"
+            ],
+            "var()": [
+                "var(--foo)",
+                "var(--main-color, blue)",
+                "calc(var(--gap) * 1px)",
+                "linear-gradient(to top, var(--main-color), white)",
+                "'var(--foo)'",
+                "\"var(--foo)\""
+            ]
+        },
     }
 };
