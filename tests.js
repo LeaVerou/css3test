@@ -1089,7 +1089,12 @@ window.Specs = {
         "title": "Shapes 2",
         "properties": {
             "shape-inside": ["auto", "outside-shape", "inset(10% round 10% 40% 10% 40%)", "inset(10% round 10% 40% / 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "ellipse(at top 50% left 20%) shape-box", "circle(at right 5% top) shape-box", "polygon(100% 0, 100% 100%, 0 100%) shape-box", "url(image.png)"],
-            "shape-padding": ["0", "10px"]
+            "shape-padding": ["0", "10px"],
+            "clip-path": [
+            "path(\"M 60 40 l 20 0 l 0 60 l 20 0 l 0 -20 l -40 0 l 0 -20 l 80 0 l 0 60 l -60 0 l 0 -80 Z\")",
+            "path(nonzero, 'M 100 40 l 20 0 l 0 60 l 20 0 l 0 -20 l -60 0 l 0 -20 l 80 0 l 0 60 l -60 0 l 0 -80 Z')",
+            "path(evenodd, 'M 100 40 l 20 0 l 0 60 l 20 0 l 0 -20 l -60 0 l 0 -20 l 80 0 l 0 60 l -60 0 l 0 -80 Z')"
+            ]
         }
     },
 
