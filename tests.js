@@ -676,12 +676,18 @@ window.Specs = {
         "properties": {
             "direction": ["ltr", "rtl"],
             "unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"],
-            "writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
+            "writing-mode": [
+                "horizontal-tb", "vertical-rl", "vertical-lr",
+                 "sideways-rl", "sideways-lr", // CR 可能会被删除
+                // Supporting SVG1.1 writing-mode values in CSS syntax
+                "lr", "lr-tb", "rl", "rl-tb", // horizontal-tb
+                "tb", "tb-rl" // vertical-rl
+                ],
             "text-orientation": ["mixed", "upright", "sideways-right", "sideways-left", "sideways", "use-glyph-orientation"],
             // Firefox support other values https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side#Browser_compatibility
+            "text-combine-upright": ["none", "all", "digits 2"], //https://bugzilla.mozilla.org/show_bug.cgi?id=1097499
             "caption-side": ["block-start", "block-end", "inline-start", "inline-end"],
-            "text-combine-horizontal": ["none", "all", "digits 2"],
-            "text-combine-upright": ["none", "all", "digits 2"] //https://bugzilla.mozilla.org/show_bug.cgi?id=1097499
+            "text-combine-horizontal": ["none", "all", "digits 2"]
         }
     },
 
@@ -760,7 +766,7 @@ window.Specs = {
             "column-rule-width": "1px",
             "column-rule": ["transparent", "1px solid black"],
             "column-span": ["none", "all"],
-            "column-fill": ["auto", "balance"],
+            "column-fill": ["auto", "balance", "balance-all"],
             "break-before": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
             "break-after": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
             "break-inside": ["auto", "avoid", "avoid-page", "avoid-column"],
@@ -868,11 +874,14 @@ window.Specs = {
             "flex-direction": ["row", "row-reverse", "column", "column-reverse"],
             "flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
             "flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-            "flex": ["none", "auto", "0", "5 7 10%", "0 0 calc(100%/3)"],
-            "flex-grow": ["0", "5"],
-            "flex-shrink": ["1", "10"],
+            "flex": ["none", "auto", "0", "5 7 10%", "0.32 7 10%", "0 0.58 auto", "0 0 calc(56px*2)", "calc(1/3) 1 auto", "0 calc(1/3) auto"],
+            // https://lists.w3.org/Archives/Public/www-style/2013Oct/0246.html
+            // Firefox https://bugzilla.mozilla.org/show_bug.cgi?id=985304
+            // Chrome https://code.google.com/p/chromium/issues/detail?id=480752
+            "flex-grow": ["0", "5", "0.63", "calc(9/3)", "calc(6/4)"],
+            "flex-shrink": ["1", "10", "0.63", "calc(9/3)", "calc(6/4)"],
             "flex-basis": ["auto", "1px", "calc(100%/3)", "content", "fill", "fill-available", "-moz-available", "min-content", "max-content", "fit-content"],
-            "order": ["0", "1"]
+            "order": ["0", "1", "-3", "calc(9/3)", "calc(2 - 8)"]
         }
     },
 
@@ -880,28 +889,110 @@ window.Specs = {
         "title": "Grid Layout",
         "properties": {
             "display": ["grid", "inline-grid"],
-            "grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr 100px 1fr 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (col-start) 250px (col-end)"],
-            "grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr 100px 1fr 100px", "100px 1fr max-content minmax(min-content, 1fr)", "10px (row-start) 250px (row-end)"],
-            "grid-template-areas": ["none", "'articles'", "'nav articles'", "'. a' 'b a' '. a'"],
-            "grid-template": ["none", "subgrid", "auto 1fr auto / auto 1fr", "auto 1fr auto / (row-start) 'a   a   a' (row-end)"],
+            "grid-template-columns": [
+                "0",
+                "none",
+                "auto",
+                "100px",
+                "1fr",
+                "0.82fr",
+                "100px 1fr auto",
+                "repeat(2, 100px 1fr)",
+                "100px 1fr 100px 1fr 100px",
+                "minmax(36px, 1fr)",
+                "minmax(0, 100%)",
+                "minmax(39%, 23.36rem)",
+                // WebKit support -webkit-min-content/-webkit-max-content
+                "min-content",
+                "max-content",
+                "100px 1fr max-content minmax(min-content, 1fr)",
+                "10px [col-start] 250px [col-end]",
+                "[first nav] 150px [main] 1fr [last]",
+                "repeat(4, 10px [col-start] 250px [col-end]) 10px",
+                "[a] auto [b] minmax(min-content, 1fr) [b c d] repeat(2, [e] 40px) repeat(5, auto)",
+                "repeat(2, 1fr auto minmax(30%, 1fr))",
+                "10px repeat(2, 1fr auto minmax(30%, 1fr))",
+                "calc(4em - 5px)",
+                "minmax(calc(4em - 5px), 1fr)",
+                "calc(4em - 5px) 1fr minmax(calc(4em - 5px), 1fr)",
+                "repeat(2, calc(4em - 5px) 1fr)",
+                // Add https://lists.w3.org/Archives/Public/www-style/2015Aug/0342.html
+                // demo: http://gridbyexample.com/examples/code/example20.html
+                "repeat(auto-fill, 100px)",
+                "repeat(auto-fit, 100px)",
+                "repeat(auto-fit, minmax(26px, 100%))",
+                "subgrid",
+                "subgrid [first] [second] [third] [fourth] [fifth]"
+                ],
+            "grid-template-rows": [
+                "0",
+                "none",
+                "auto",
+                "100px",
+                "1fr",
+                "0.82fr",
+                "100px 1fr auto",
+                "repeat(2, 100px 1fr)",
+                "100px 1fr 100px 1fr 100px",
+                "minmax(36px, 1fr)",
+                "minmax(0, 100%)",
+                "minmax(39%, 23.36rem)",
+                // WebKit support -webkit-min-content/-webkit-max-content
+                "min-content",
+                "max-content",
+                "100px 1fr max-content minmax(min-content, 1fr)",
+                "10px [col-start] 250px [col-end]",
+                "[first nav] 150px [main] 1fr [last]",
+                "repeat(4, 10px [col-start] 250px [col-end]) 10px",
+                "[a] auto [b] minmax(min-content, 1fr) [b c d] repeat(2, [e] 40px) repeat(5, auto)",
+                "repeat(2, 1fr auto minmax(30%, 1fr))",
+                "10px repeat(2, 1fr auto minmax(30%, 1fr))",
+                "calc(4em - 5px)",
+                "minmax(calc(4em - 5px), 1fr)",
+                "calc(4em - 5px) 1fr minmax(calc(4em - 5px), 1fr)",
+                "repeat(2, calc(4em - 5px) 1fr)",
+                // Add https://lists.w3.org/Archives/Public/www-style/2015Aug/0342.html
+                // demo: http://gridbyexample.com/examples/code/example20.html
+                "repeat(auto-fill, 100px)",
+                "repeat(auto-fit, 100px)",
+                "repeat(auto-fit, minmax(26px, 100%))",
+                "subgrid",
+                "subgrid [first] [second] [third] [fourth] [fifth]"
+                ],
+
+            "grid-template-areas": ["none", "'articles'", "'nav articles'", "'. a' 'b a' '. a'", "'head head' 'nav main' 'foot ....'"],
+            "grid-template": [
+                "none",
+                "auto / auto",
+                "0 / 0",
+                "1fr / 1fr",
+                "100px / 50px",
+                "auto 1fr auto / auto 1fr",
+                "auto 1fr auto / [header-top] 'a a a' [header-bottom] [main-top] 'b b b' 1fr [main-bottom]",
+                "auto 1fr auto / [header-top] 'a a a' 1fr [header-bottom] [main-top] 'b b b' 1fr [main-bottom]",
+                "subgrid"
+            ],
+
             "grid-auto-columns": ["auto", "1fr", "100px", "min-content", "max-content", "minmax(min-content, 1fr)"],
             "grid-auto-rows": ["auto", "1fr", "100px", "min-content", "max-content", "minmax(min-content, 1fr)"],
-            "grid-auto-flow": ["row", "column", "dense", "stack", "dense stack", "row dense", "dense row", "dense column", "stack column", "stack row"],
+            "grid-auto-flow": ["row", "column", "dense", "row dense", "dense row", "dense column"], // Remove grid-auto-flow stack value
             /*
-                     Removed
-                     http://www.w3.org/blog/CSS/2014/02/22/minutes-seattle-f2f-part-ii/
-                     "grid-auto-position": ["1 / 1"],
-                     */
-            "grid": ["auto", "columns 1fr / auto", "subgrid", "row", "column", "rows 1fr"],
-            "grid-row-start": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
-            "grid-column-start": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
-            "grid-row-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
-            "grid-column-end": ["auto", "4", "'C'", "'C' 2", "span 'C'", 'span 1'],
+             Removed
+             http://www.w3.org/blog/CSS/2014/02/22/minutes-seattle-f2f-part-ii/
+             "grid-auto-position": ["1 / 1"],
+             */
+            "grid": ["none", "auto / auto", "0 / 0", "column 1fr / auto", "column 2fr / 30px", "35px / auto", "row", "column", "10rem 10rem 10rem 10rem / 1fr 1fr 1fr 1fr", "subgrid"],
+            "grid-row-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
+            "grid-column-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
+            "grid-row-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
+            "grid-column-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
             "grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
             "grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
             "grid-area": ["auto", "1 / 1", "1 / span 1", "span / 10 / -1", "articles"],
-            "row-gap": ["normal", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"],
-            "grid-gap": ["normal", "16px 3.6em", "31rem 28vw", "16vmax calc(239px - 3em)", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"]
+            "grid-row-gap": ["0", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"], //Rename row-gap to grid-row-gap
+            "grid-column-gap": ["0", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"],
+            // normal 可能会被删除 https://lists.w3.org/Archives/Public/www-style/2015Nov/0072.html
+            "grid-gap": ["normal", "0", "16px 3.6em", "31rem 28vw", "16vmax calc(239px - 3em)", "16px", "3.6em", "31rem", "28vw", "16vmax","calc(239px - 3em)"]
         }
     },
 
@@ -1319,6 +1410,26 @@ window.Specs = {
             "scroll-snap-coordinate": ["none", "left", "bottom", "20px -90px", "center bottom", "200px calc(10% + 20px)", "calc(10% + 20px) 150%, 200px calc(10% + 20px)", "top right 10px", "bottom 10px right 20px", "50px 100px, 150px 100px, left 200px top 100px", "50% 100%, left top 100%, 200% 100%"]
         }
     },
+
+    "css-snappoints-new": {
+        "title": "CSS Scroll Snap Points Module New",
+        "properties": {
+            "scroll-snap-type": ["none", "mandatory", "proximity x", "proximity y", "proximity block", "proximity inline", "proximity both", "proximity point"],
+            "scroll-snap-padding": ["0", "13px", "3.68em", "12.321rem", "26vw", "92%", "calc(16% + 63px)", "3em 103px", "3em 0 28%", "3em 0 0 0"],
+            "scroll-snap-area": ["0", "13px", "3.68em", "12.321rem", "26vw", "calc(29px + 63px)", "18px 103px", "18px 0 0", "18px 0 0 0"],
+            "scroll-snap-align": ["none", "edges", "start", "end", "center"],
+            "scroll-snap-stop": ["normal", "always"]
+        }
+    },
+
+    "css-round-display": {
+        "title": "CSS Round Display Level 1",
+        "properties": {
+            "position": ["polar"],
+            "polar-angle": ["0", "16deg", "-169deg", "1trun", "102grad"],
+        }
+    },
+
 
     // 参考 css-shapes 语法
     //https://code.google.com/p/chromium/issues/detail?id=416731
