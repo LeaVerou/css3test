@@ -614,10 +614,10 @@ window.Specs = {
             "text-decoration": "underline dotted green",
             "text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "box-decoration", "objects edges"],
             "text-underline-position": ["auto", "under", "left", "right", "under left", "under right"],
-            "text-emphasis-style": ["none", "filled", "open", "dot", "circle", "double-circle", "triangle", "sesame", "open dot", "'foo'"],
-            "text-emphasis-color": "green",
-            "text-emphasis": "open dot green",
-            "text-emphasis-position": ["over left", "over right", "under left", "under right"],
+            "text-emphasis-style": ["none", "filled", "open", "dot", "circle", "double-circle", "triangle", "sesame", "filled dot", "open dot", "'foo'"],
+            "text-emphasis-color": ["green", "rgba(102, 51, 153, 0.55)", "currentColor", "transparent"],
+            "text-emphasis": ["none", "filled", "open", "dot", "circle", "filled dot", "open circle", "'foo'", "'汉字'", "'\\25B2'", "'foo' green", "filled dot #999", "open dot #999", "#999 filled dot", "#999 dot filled"],
+            "text-emphasis-position": ["over right", "over left", "under right", "under left"],
             "text-shadow": ["none", "1px 1px", "0 0 black", "1px 2px 3px black"]
         }
     },
@@ -677,6 +677,8 @@ window.Specs = {
             "direction": ["ltr", "rtl"],
             "unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"],
             "writing-mode": [
+                // 垂直模式下 text-shadow 位置不正确：
+                // https://bugs.webkit.org/show_bug.cgi?id=112655
                 "horizontal-tb", "vertical-rl", "vertical-lr",
                  "sideways-rl", "sideways-lr", // CR 可能会被删除
                 // Supporting SVG1.1 writing-mode values in CSS syntax
@@ -907,6 +909,9 @@ window.Specs = {
                 "max-content",
                 "100px 1fr max-content minmax(min-content, 1fr)",
                 "10px [col-start] 250px [col-end]",
+                // 语法由之前的() 改为了 []，因为更容易阅读
+                // mozilla41
+                // https://bugzilla.mozilla.org/show_bug.cgi?id=1164953
                 "[first nav] 150px [main] 1fr [last]",
                 "repeat(4, 10px [col-start] 250px [col-end]) 10px",
                 "[a] auto [b] minmax(min-content, 1fr) [b c d] repeat(2, [e] 40px) repeat(5, auto)",
@@ -1582,5 +1587,23 @@ window.Specs = {
                 "\"var(--foo)\""
             ]
         },
-    }
+    },
+
+    // https://drafts.csswg.org/css-containment/
+    "css-containment": {
+        "title": "CSS Containment Module Level 3",
+        "properties": {
+            // Only support paint
+            // https://bugzilla.mozilla.org/show_bug.cgi?id=1170781
+            "contain": ["none", "strict", "layout", "style", "paint"],
+        },
+    },
+
+    // http://tabatkins.github.io/specs/css-font-display/
+    "css-font-display": {
+        "title": "CSS Font Rendering Controls Module Level 1",
+        "properties": {
+            "font-display": ["auto", "block", "swap", "fallback", "optional"]
+        }
+    },
 };
