@@ -611,13 +611,20 @@ window.Specs = {
             "text-decoration-line": ["none", "underline", "overline", "line-through", "underline overline"],
             "text-decoration-color": "white",
             "text-decoration-style": ["solid", "double", "dotted", "dashed", "wavy"],
-            "text-decoration": "underline dotted green",
+            "text-decoration": [
+              // Old value
+              "underline",
+              "underline dotted green"
+            ],
             "text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "box-decoration", "objects edges"],
             "text-underline-position": ["auto", "under", "left", "right", "under left", "under right"],
             "text-emphasis-style": ["none", "filled", "open", "dot", "circle", "double-circle", "triangle", "sesame", "filled dot", "open dot", "'foo'"],
             "text-emphasis-color": ["green", "rgba(102, 51, 153, 0.55)", "currentColor", "transparent"],
             "text-emphasis": ["none", "filled", "open", "dot", "circle", "filled dot", "open circle", "'foo'", "'汉字'", "'\\25B2'", "'foo' green", "filled dot #999", "open dot #999", "#999 filled dot", "#999 dot filled"],
-            "text-emphasis-position": ["over right", "over left", "under right", "under left"],
+            "text-emphasis-position": [
+              // Old value
+              "over", "under",
+              "over right", "over left", "under right", "under left"],
             "text-shadow": ["none", "1px 1px", "0 0 black", "1px 2px 3px black"]
         }
     },
@@ -625,6 +632,13 @@ window.Specs = {
     "css3-fonts": {
         "title": "Fonts",
         "properties": {
+            // font-size 和 font-family 是必须写的。
+            "font": ["0/0 foo", "0 foo", "2em sans-serif", "2em 'Open Sans', sans-serif", "italic 2em 'Open Sans', sans-serif", "italic small-caps bolder 16px/3 cursive",
+                // CSS3 Add
+                // https://bugzilla.mozilla.org/show_bug.cgi?id=1057680
+                "italic small-caps bolder condensed 16px/3 cursive",
+                "caption", "icon", "menu", "message-box", "small-caption", "status-bar"
+            ],
             "font-stretch": ["normal", "ultra-condensed", "extra-condensed", "condensed", "semi-condensed", "semi-expanded", "expanded", "extra-expanded", "ultra-expanded"],
             "font-size-adjust": ["none", ".5"],
             "font-synthesis": ["none", "weight", "style", "weight style", "style weight"],
@@ -663,7 +677,7 @@ window.Specs = {
             "font-variant": ["none", "sub lining-nums contextual ruby"],
             "font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
             "font-language-override": ["normal", "'SRB'"],
-            "unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
+            "unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??", "U+0025-00FF, U+4??"]
         },
         "@rules": {
             "@font-face": "@font-face",
