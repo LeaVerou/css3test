@@ -536,7 +536,16 @@ window.Specs = {
 	},
 
 	"css3-cascade": {
-		"title": "Resetting All Properties",
+		"title": "Cascading and Inheritance",
+		"values": {
+			"properties": [
+				"color",
+				"font-weight",
+				"background-image",
+				"width"
+			],
+			"unset": "unset"
+		},
 		"properties": {
 			"all": ["initial", "inherit", "unset"]
 		}
