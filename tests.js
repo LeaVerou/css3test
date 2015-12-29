@@ -195,7 +195,8 @@ window.Specs = {
 			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
 			"cursor": [
 				"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
-				"ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in", "zoom-out"
+				"grab", "grabbing", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in",
+				"zoom-out"
 			],
 			"caret-color": ["auto", "green"],
 			"nav-up": ["auto", "#foo", "#foo current", "#foo root"],
@@ -515,11 +516,10 @@ window.Specs = {
 			"grid-column-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
 			"grid-column": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
 			"grid-row": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"],
-			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"]
-			/* These are on their way into the draft spec, currently only in editors draft */
-			// "grid-column-gap": ["normal", "1em"],
-			// "grid-row-gap": ["normal", "1em"],
-			// "grid-gap": ["normal", "normal 1em", "1em", "1em 1em"]
+			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"],
+			"grid-column-gap": ["0", "1em"],
+			"grid-row-gap": ["0", "1em"],
+			"grid-gap": ["normal", "0 1em", "1em", "1em 1em"]
 		}
 	},
 
@@ -536,7 +536,16 @@ window.Specs = {
 	},
 
 	"css3-cascade": {
-		"title": "Resetting All Properties",
+		"title": "Cascading and Inheritance",
+		"values": {
+			"properties": [
+				"color",
+				"font-weight",
+				"background-image",
+				"width"
+			],
+			"unset": "unset"
+		},
 		"properties": {
 			"all": ["initial", "inherit", "unset"]
 		}
@@ -728,6 +737,67 @@ window.Specs = {
 			"background-image-transform": ["logical", "physical", "rotate"],
 			"background-repeat": ["logical repeat-x no-repeat"],
 			"border-image-transform": ["logical", "physical", "rotate"]
+		}
+	},
+	
+	"css-lists": {
+		"title": "Lists and Counters",
+		"properties": {
+			"list-style" : [
+				"outside", "disc", "disc outside", "outside disc", "disc none", "none disc", "none disc outside", "none outside disc", "disc none outside", "disc outside none", "outside none disc", "outside disc none", "inside none", "none inside", "none none inside", "square", "none", "none none", "outside none none", "none outside none", "none none outside", "none outside", "outside none", "outside outside", "outside inside", 
+				"\\32 style", "\\32 style inside", '"-"', "'-'", "inside '-'", "'-' outside", "none '-'", "inside none '-'",
+				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"symbols(cyclic \"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"inside symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\") outside",
+				"none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"inside none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"inside none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				// render problem (too long)
+				/*'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
+				'none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
+				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none',
+				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside',
+				'outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
+				'outside none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
+				'outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none',
+				'none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside',
+				'none outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
+				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside none',
+				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none outside'*/
+			],
+			"list-style-type": [ 
+				"disc", "none", "circle", "square", 
+				"disclosure-closed", "disclosure-open",
+				"decimal", "decimal-leading-zero",
+				"lower-roman", "upper-roman", "lower-greek",
+				"lower-alpha", "lower-latin", "upper-alpha", "upper-latin",
+				"hebrew", "armenian", "georgian",
+				"cjk-decimal", "cjk-ideographic",
+				"hiragana", "katakana", "hiragana-iroha", "katakana-iroha",
+				"japanese-informal", "japanese-formal", "korean-hangul-formal",
+				"korean-hanja-informal", "korean-hanja-formal",
+				"simp-chinese-informal", "simp-chinese-formal",
+				"trad-chinese-informal", "trad-chinese-formal",
+				"cjk-heavenly-stem", "cjk-earthly-branch",
+				"trad-chinese-informal", "trad-chinese-formal",
+				"simp-chinese-informal", "simp-chinese-formal",
+				"japanese-informal", "japanese-formal",
+				"arabic-indic", "persian", "urdu",
+				"devanagari", "gurmukhi", "gujarati",
+				"oriya", "kannada", "malayalam", "bengali",
+				"tamil", "telugu", "thai", "lao",
+				"myanmar", "khmer",
+				"hangul", "hangul-consonant",
+				"ethiopic-halehame", "ethiopic-numeric",
+				"ethiopic-halehame-am",
+				"ethiopic-halehame-ti-er", "ethiopic-halehame-ti-et",
+				"other-style", "inside", "outside", "\\32 style",
+				'"-"', "'-'",
+				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+				"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
+			]
 		}
 	}
 };
