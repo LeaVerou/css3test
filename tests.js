@@ -799,5 +799,24 @@ window.Specs = {
 				"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
 			]
 		}
+	},
+
+	"css-overflow-3": {
+		"title": "Overflow",
+		"properties": {
+			"max-lines": ["none", "1"],
+			"overflow": ["paged-x", "paged-y", "paged-x-controls", "paged-y-controls", "fragments"],
+			"overflow-x": ["paged-x", "paged-y", "paged-x-controls", "paged-y-controls", "fragments"],
+			"overflow-y": ["paged-x", "paged-y", "paged-x-controls", "paged-y-controls", "fragments"]
+		},
+		"selectors": {
+			"::nth-fragment()": [
+				":nth-fragment(even)", ":nth-fragment(odd)",
+				":nth-fragment(n)", ":nth-fragment(-n)", ":nth-fragment(0n)",
+				":nth-fragment(1)", ":nth-fragment(-1)", ":nth-fragment(0)",
+				":nth-fragment(n+1)",":nth-fragment(3n+1)", ":nth-fragment(3n + 1)",
+				":nth-fragment(-n+1)", ":nth-fragment(3n-1)"
+			]
+		}
 	}
 };
