@@ -236,15 +236,14 @@ function passclass(info) {
 		success = 1 - info.failed / info.total;
 	}
 	
-	if (success === 1) { return 'pass' }
-	if (success === 0) { return 'epic-fail' }
-	
 	var classes = [
+	  'epic-fail',
 		'fail',
 		'very-buggy',
 		'buggy',
 		'slightly-buggy',
 		'almost-pass',
+		'pass'
 	];
 	
 	var index = Math.round(success * (classes.length - 1));
