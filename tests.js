@@ -547,7 +547,7 @@ window.Specs = {
 			"unset": "unset"
 		},
 		"properties": {
-			"all": ["initial", "inherit", "unset", "revert"]
+			"all": ["initial", "inherit", "unset"]
 		}
 	},
 	"css-cascade-4": {
