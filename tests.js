@@ -535,8 +535,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-cascade": {
-		"title": "Cascading and Inheritance",
+	"css-cascade-3": {
+		"title": "Cascading and Inheritance Level 3",
 		"values": {
 			"properties": [
 				"color",
@@ -547,10 +547,15 @@ window.Specs = {
 			"unset": "unset"
 		},
 		"properties": {
-			"all": ["initial", "inherit", "unset"]
+			"all": ["initial", "inherit", "unset", "revert"]
 		}
 	},
-
+	"css-cascade-4": {
+		"title": "Cascading and Inheritance Level 4",
+		"properties": {
+			"all": ["revert"]
+		}
+	},
 	"css3-conditional": {
 		"title": "Conditional Rules",
 		"@rules": {
