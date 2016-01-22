@@ -392,7 +392,7 @@ window.Specs = {
 	},
 
 	"css3-color": {
-		"title": "Color",
+		"title": "Color 3",
 		"values": {
 			"properties": [
 				"color",
@@ -409,6 +409,29 @@ window.Specs = {
 		},
 		"properties": {
 			"opacity": ["-5", "0", ".5", "1", "2"]
+		}
+	},
+	
+	"css-color": {
+		"title": "Color 4",
+		"values": {
+			"properties": [
+				"color",
+				"background-color",
+				"border-color",
+				"text-decoration-color",
+				"column-rule-color"
+			],
+			"hexa" : ["#0000ffcc", "#00fc"],
+			"hsl": ["hsl(orangish red,0%,0%)", "hsl(red orange,0%,0%)", "hsl(greenish(50%) blue,0%,0%)"],
+			"hsla": ["hsla(orangish red,0%,0%,.5)", "hsla(red orange,0%,0%,.5)", "hsla(greenish(50%) blue,0%,0%,.5)"],
+			"hwb": ["hwb(0,0%,0%)", "hwb(0,0%,0%,.5)", "hwb(orangish red,0%,0%,.5)", "hwb(red orange,0%,0%,.5)", "hwb(greenish(50%) blue,0%,0%,.5)"],
+			"gray": ["gray(0%)", "gray(0)", "gray(0%,.5)", "gray(0,.5)"],
+			"device-cmyk": "device-cmyk(0, 81%, 81%, 30%)"
+		},
+		"properties": {
+			"color-correction": ["auto", "#000"],
+			"color-adjust" : ["economy", "exact "]			
 		}
 	},
 
