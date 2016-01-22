@@ -284,8 +284,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-text": {
-		"title": "Text",
+	"css-text-3": {
+		"title": "Text Level 3",
 		"properties": {
 			"text-transform": ["full-width"],
 			"tab-size": ["4", "1em"],
@@ -300,6 +300,17 @@ window.Specs = {
 			"word-spacing": ["50%"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
+		}
+	},
+    
+    	"css-text-4": {
+		"title": "Text Level 4",
+		"properties": {
+			"hyphenate-character": ["auto", "'\2010'"],
+			"hyphenate-limit-zone": ["1%", "1em"],
+			"hyphenate-limit-chars": ["auto", "5", "auto 3", "5 4 3"],
+			"hyphenate-limit-lines": ["no-limit", "2"],
+			"hyphenate-limit-last": ["none", "always", "column", "page", "spread"]
 		}
 	},
 
@@ -376,7 +387,6 @@ window.Specs = {
 			"unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
 			"text-orientation": ["mixed", "upright", "sideways"],
-			"glyph-orientation-vertical": ["auto", "0deg", "90deg", "0", "90"],
 			"text-combine-upright": ["none", "all", "digits 2"]
 		}
 	},
@@ -552,8 +562,14 @@ window.Specs = {
 	},
 	"css-cascade-4": {
 		"title": "Cascading and Inheritance Level 4",
-		"properties": {
-			"all": ["revert"]
+		"values": {
+			"properties": [
+				"color",
+				"font-weight",
+				"background-image",
+				"all"
+			],
+			"revert": "revert"
 		}
 	},
 	"css3-conditional": {
@@ -748,37 +764,9 @@ window.Specs = {
 	"css-lists": {
 		"title": "Lists and Counters",
 		"properties": {
-			"list-style" : [
-				"outside", "disc", "disc outside", "outside disc", "disc none", "none disc", "none disc outside", "none outside disc", "disc none outside", "disc outside none", "outside none disc", "outside disc none", "inside none", "none inside", "none none inside", "square", "none", "none none", "outside none none", "none outside none", "none none outside", "none outside", "outside none", "outside outside", "outside inside", 
-				"\\32 style", "\\32 style inside", '"-"', "'-'", "inside '-'", "'-' outside", "none '-'", "inside none '-'",
-				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				"symbols(cyclic \"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				"inside symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\") outside",
-				"none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				"none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				"inside none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				"inside none symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-				// render problem (too long)
-				/*'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
-				'none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
-				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none',
-				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside',
-				'outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
-				'outside none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
-				'outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none',
-				'none url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside',
-				'none outside url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==")',
-				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") outside none',
-				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none outside'*/
-			],
 			"list-style-type": [ 
-				"disc", "none", "circle", "square", 
 				"disclosure-closed", "disclosure-open",
-				"decimal", "decimal-leading-zero",
-				"lower-roman", "upper-roman", "lower-greek",
-				"lower-alpha", "lower-latin", "upper-alpha", "upper-latin",
-				"hebrew", "armenian", "georgian",
+				"hebrew",
 				"cjk-decimal", "cjk-ideographic",
 				"hiragana", "katakana", "hiragana-iroha", "katakana-iroha",
 				"japanese-informal", "japanese-formal", "korean-hangul-formal",
