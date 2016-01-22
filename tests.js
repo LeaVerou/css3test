@@ -284,8 +284,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-text": {
-		"title": "Text",
+	"css-text-3": {
+		"title": "Text Level 3",
 		"properties": {
 			"text-transform": ["full-width"],
 			"tab-size": ["4", "1em"],
@@ -300,6 +300,17 @@ window.Specs = {
 			"word-spacing": ["50%"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
+		}
+	},
+    
+    	"css-text-4": {
+		"title": "Text Level 4",
+		"properties": {
+			"hyphenate-character": ["auto", "'\2010'"],
+			"hyphenate-limit-zone": ["1%", "1em"],
+			"hyphenate-limit-chars": ["auto", "5", "auto 3", "5 4 3"],
+			"hyphenate-limit-lines": ["no-limit", "2"],
+			"hyphenate-limit-last": ["none", "always", "column", "page", "spread"]
 		}
 	},
 
