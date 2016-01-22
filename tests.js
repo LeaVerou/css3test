@@ -552,8 +552,14 @@ window.Specs = {
 	},
 	"css-cascade-4": {
 		"title": "Cascading and Inheritance Level 4",
-		"properties": {
-			"all": ["revert"]
+		"values": {
+			"properties": [
+				"color",
+				"font-weight",
+				"background-image",
+				"all"
+			],
+			"revert": "revert"
 		}
 	},
 	"css3-conditional": {
