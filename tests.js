@@ -376,7 +376,6 @@ window.Specs = {
 			"unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"],
 			"writing-mode": ["horizontal-tb", "vertical-rl", "vertical-lr"],
 			"text-orientation": ["mixed", "upright", "sideways"],
-			"glyph-orientation-vertical": ["auto", "0deg", "90deg", "0", "90"],
 			"text-combine-upright": ["none", "all", "digits 2"]
 		}
 	},
