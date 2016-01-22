@@ -773,12 +773,8 @@ window.Specs = {
 				'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAKElEQVR42u3NQQ0AAAgEoNP+nTWFDzcoQE1udQQCgUAgEAgEAsGTYAGjxAE/G/Q2tQAAAABJRU5ErkJggg==") none outside'*/
 			],
 			"list-style-type": [ 
-				"disc", "none", "circle", "square", 
 				"disclosure-closed", "disclosure-open",
-				"decimal", "decimal-leading-zero",
-				"lower-roman", "upper-roman", "lower-greek",
-				"lower-alpha", "lower-latin", "upper-alpha", "upper-latin",
-				"hebrew", "armenian", "georgian",
+				"hebrew",
 				"cjk-decimal", "cjk-ideographic",
 				"hiragana", "katakana", "hiragana-iroha", "katakana-iroha",
 				"japanese-informal", "japanese-formal", "korean-hangul-formal",
