@@ -391,8 +391,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-color": {
-		"title": "Color",
+	"css-color-3": {
+		"title": "Color Level 3",
 		"values": {
 			"properties": [
 				"color",
@@ -409,6 +409,21 @@ window.Specs = {
 		},
 		"properties": {
 			"opacity": ["-5", "0", ".5", "1", "2"]
+		}
+	},
+    
+	"css-color-4": {
+		"title": "Color Level 4",
+		"values": {
+			"properties": [
+				"color",
+				"background-color",
+				"border-color",
+				"text-decoration-color",
+				"column-rule-color"
+			],
+			"rebeccapurple": "rebeccapurple",
+			"#RGBA": ["#000F", "#000000FF"]
 		}
 	},
 
@@ -798,9 +813,8 @@ window.Specs = {
 		"title": "Overflow",
 		"properties": {
 			"max-lines": ["none", "1"],
-			"overflow": ["paged-x", "paged-y", "paged-x-controls", "paged-y-controls", "fragments"],
-			"overflow-x": ["paged-x", "paged-y", "paged-x-controls", "paged-y-controls", "fragments"],
-			"overflow-y": ["paged-x", "paged-y", "paged-x-controls", "paged-y-controls", "fragments"]
+			"overflow-x": ["visible", "hidden", "clip", "scroll", "auto"],
+			"overflow-y": ["visible", "hidden", "clip", "scroll", "auto"]
 		},
 		"selectors": {
 			"::nth-fragment()": [
