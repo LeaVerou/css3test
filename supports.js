@@ -92,6 +92,13 @@ var _ = window.Supports = {
 		return false;
 	},
 	
+	descriptorvalue: function(descriptor, value) {
+		/* doesn't handle prefixes for descriptor or value */
+		style.textContent = "@font-face {" + descriptor + ":" + value + "}";
+		return style.sheet.cssRules.length == 1 &&
+		       style.sheet.cssRules[0].style.length == 1;
+	},
+	
 	selector: function(selector) {
 		if(!_.selector.cached) {
 			_.selector.cached = {};
