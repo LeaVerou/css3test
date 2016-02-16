@@ -211,6 +211,10 @@ Test.groups = {
 		return Supports.value(property, value);
 	},
 	
+	'descriptors': function(value, descriptor) {
+		return Supports.descriptorvalue(descriptor, value);
+	},
+	
 	'selectors': function(test) {
 		return Supports.selector(test);
 	},

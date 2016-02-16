@@ -371,7 +371,9 @@ window.Specs = {
 			],
 			"font-variant": ["none", "sub lining-nums contextual ruby"],
 			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
-			"font-language-override": ["normal", "'SRB'"],
+			"font-language-override": ["normal", "'SRB'"]
+		},
+		"descriptors": {
 			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
 		},
 		"@rules": {
