@@ -42,8 +42,6 @@ dummy.setAttribute('data-px', '1px');
 document.documentElement.appendChild(dummy);
 
 var _ = window.Supports = {
-	prefixes: ['', '-moz-', '-webkit-', '-o-', '-ms-', 'ms-', '-khtml-'],
-	
 	property: function(property) {
 		if(property.charAt(0) === '-') {
 			return camelCase(property) in inline? property : false;
@@ -56,14 +54,10 @@ var _ = window.Supports = {
 			return _.property.cached[property];
 		}
 		
-		for(var i=0; i<_.prefixes.length; i++) {
-			var prefixed = _.prefixes[i] + property;
-
-			if(camelCase(prefixed) in inline) {
-				return _.property.cached[property] = prefixed;
-			}
+		if(camelCase(property) in inline) {
+			return _.property.cached[property] = property;
 		}
-				
+		
 		return _.property.cached[property] = false;
 	},
 	
@@ -77,23 +71,18 @@ var _ = window.Supports = {
 		inline.cssText = '';
 		inline[property] = '';
 		
-		for(var i=0; i<_.prefixes.length; i++) {
-			var prefixed = _.prefixes[i] + value;
-			
-			try {
-				inline[property] = prefixed;
-			} catch(e) {}
-			
-			if(inline.length > 0) {
-				return prefixed;
-			}
+		try {
+			inline[property] = value;
+		} catch(e) {}
+		
+		if(inline.length > 0) {
+			return value;
 		}
 		
 		return false;
 	},
 	
 	descriptorvalue: function(descriptor, value) {
-		/* doesn't handle prefixes for descriptor or value */
 		style.textContent = "@font-face {" + descriptor + ":" + value + "}";
 		return style.sheet.cssRules.length == 1 &&
 		       style.sheet.cssRules[0].style.length == 1;
@@ -107,15 +96,11 @@ var _ = window.Supports = {
 			return _.selector.cached[selector];
 		}
 		
-		for(var i=0; i<_.prefixes.length; i++) {
-			var prefixed = selector.replace(/^(:+)/, '$1' + _.prefixes[i]);
-
-			try {
-				document.querySelector(prefixed);
-				return  _.selector.cached[selector] = prefixed;
-			}
-			catch (e) {}
+		try {
+			document.querySelector(selector);
+			return  _.selector.cached[selector] = selector;
 		}
+		catch (e) {}
 		
 		return  _.selector.cached[selector] = false;
 	},
@@ -128,17 +113,11 @@ var _ = window.Supports = {
 			return _.atrule.cached[atrule];
 		}
 		
-		for(var i=0; i<_.prefixes.length; i++) {
-			var prefixed = atrule.replace(/^@/, '@' + _.prefixes[i]);
-
-			style.textContent = prefixed + '{}';  // Safari 4 has issues with style.innerHTML
-			
-			if(style.sheet.cssRules.length > 0) {
-				return _.atrule.cached[atrule] = prefixed;
-			}
+		style.textContent = atrule + '{}';  // Safari 4 has issues with style.innerHTML
+		
+		if(style.sheet.cssRules.length > 0) {
+			return _.atrule.cached[atrule] = atrule;
 		}
-		
-		
 		
 		return _.atrule.cached[atrule] = false;
 	},
