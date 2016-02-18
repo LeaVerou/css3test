@@ -425,7 +425,16 @@ window.Specs = {
 				"column-rule-color"
 			],
 			"rebeccapurple": "rebeccapurple",
-			"#RGBA": ["#000F", "#000000FF"]
+			"hexa": ["#000F", "#000000FF"],
+			"hsl": ["hsl(orangish red,0%,0%)", "hsl(red orange,0%,0%)", "hsl(greenish(50%) blue,0%,0%)"],
+			"hsla": ["hsla(orangish red,0%,0%,.5)", "hsla(red orange,0%,0%,.5)", "hsla(greenish(50%) blue,0%,0%,.5)"],
+			"hwb": ["hwb(0,0%,0%)", "hwb(0,0%,0%,.5)", "hwb(orangish red,0%,0%,.5)", "hwb(red orange,0%,0%,.5)", "hwb(greenish(50%) blue,0%,0%,.5)"],
+			"gray": ["gray(0%)", "gray(0)", "gray(0%,.5)", "gray(0,.5)"],
+			"device-cmyk": "device-cmyk(0, 81%, 81%, 30%)"
+		},
+		"properties": {
+			"color-correction": ["auto", "#000"],
+			"color-adjust" : ["economy", "exact "]			
 		}
 	},
 
