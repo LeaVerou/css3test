@@ -85,7 +85,7 @@ window.Specs = {
 	},
 
 	"css3-selectors": {
-		"title": "Selectors",
+		"title": "Selectors 3",
 		"selectors": {
 			"Sibling combinator": "foo ~ bar",
 			"::before": "::before",
@@ -137,6 +137,34 @@ window.Specs = {
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
 			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
+		}
+	},
+	
+	"selectors-4": {
+		"title": "Selectors 4",
+		"selectors": {
+			":not(s1, s2)": [":not(.class, #id, [attr], :link)"],
+			":matches(s1, s2)": [":matches(:hover, :focus)"],
+			":has(s1, s2)": ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
+			"Case-sensitivity": ["[att=val i]", "[att=\"val\" i]"],
+			":dir": ":dir(ltr)",
+			":lang": ":lang(zh, \"*-hant\")",
+			":any-link": ":any-link",
+			":current": ":current",
+			":current(s)": ":current(.class)",
+			":past": ":past",
+			":future": ":future",
+			":drop": ":drop",
+			":drop(active)": ":drop(active)",
+			":drop(valid)": ":drop(valid)",
+			":drop(invalid)": ":drop(invalid)",
+			":user-error": ":user-error",
+			":blank": ":blank",
+			"Descendant combinator": "foo >> bar",
+			"Cell in a grid/table": "foo || bar",
+			":nth-column(n)": [":nth-column(n)", ":nth-column(2n + 1)"],
+			":nth-last-column(n)": [":nth-last-column(n)", ":nth-last-column(2n + 1)"],
+			
 		}
 	},
 
