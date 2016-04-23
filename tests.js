@@ -85,7 +85,7 @@ window.Specs = {
 	},
 
 	"css3-selectors": {
-		"title": "Selectors",
+		"title": "Selectors Level 3",
 		"selectors": {
 			"Sibling combinator": "foo ~ bar",
 			"::before": "::before",
@@ -137,6 +137,13 @@ window.Specs = {
 			":only-of-type": ":only-of-type",
 			":empty": ":empty",
 			":not()": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"],
+		}
+	},
+
+	"css4-selectors": {
+		"title": "Selectors Level 4",
+		"selectors": {
+			"Descendant combinator": "foo >> bar"
 		}
 	},
 
@@ -302,8 +309,8 @@ window.Specs = {
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
 		}
 	},
-    
-    	"css-text-4": {
+
+	"css-text-4": {
 		"title": "Text Level 4",
 		"properties": {
 			"hyphenate-character": ["auto", "'\2010'"],
@@ -413,7 +420,7 @@ window.Specs = {
 			"opacity": ["-5", "0", ".5", "1", "2"]
 		}
 	},
-    
+
 	"css-color-4": {
 		"title": "Color Level 4",
 		"values": {
