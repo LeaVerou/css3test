@@ -1,6 +1,6 @@
 window.Specs = {
 	"css3-background": {
-		"title": "Backgrounds and Borders",
+		"title": "Backgrounds and Borders Level 3",
 		"properties": {
 			"background-repeat": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2)),
 			"background-attachment": "local",
@@ -31,6 +31,14 @@ window.Specs = {
 				"1px 1px", "0 0 black", "1px 2px 3px black", "1px 2px 3px 4px black",
 				"inset 1px 1px", "1px 2px 3px 4px black inset"
 			]
+		}
+	},
+	
+	"css-backgrounds-4": {
+		"title": "Backgrounds and Borders Level 4",
+		"properties": {
+			"background-position-x": ["right", "center", "50%", "left, left", "left, right", "right, left", "left, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "left, left, left, left, left", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "right 20px", "left 20px", "right -50px", "left -50px", "right 20px"],
+			"background-position-y": ["bottom", "center", "50%", "top, top", "top, bottom", "bottom, top", "top, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "top, top, top, top, top", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "bottom 20px", "top 20px", "bottom -50px", "top -50px", "bottom 20px"]
 		}
 	},
 
