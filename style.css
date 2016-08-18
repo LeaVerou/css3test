@@ -315,39 +315,46 @@ footer {
 		text-align: center;
 	}
 
-/* Ad packs */
-.bsa_it_ad {
-	padding:10px !important;
-	font: inherit !important;
-	overflow: hidden;
+/* Carbon Ads */
+#carbonads {
+  display: block;
+  overflow: hidden;
+  padding: 1em;
+  border: solid 1px hsla(0, 0%, 80%, .8);
+  background-color: hsla(0, 0%, 98%, .6);
+  box-shadow: inset 0 1px hsla(0, 0%, 100%, .6);
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-	.bsa_it_i {
-		display:block;
-		float:none;
-		margin: 0 10px 5px 0 !important;
-	}
-
-	.bsa_it_ad img {
-		padding:0;
-		border:none;
-	}
-
-	.bsa_it_ad .bsa_it_t {
-		padding:1px 0 0 0;
-	}
-
-	.bsa_it_d {
-		font-size: 70% !important;
-	}
-
-.bsa_it_p {
-	display: none !important;
+#carbonads a {
+  font-weight: 400;
 }
 
-#bsap_aplink {
-	display:block;
-	font-size:10px;
-	margin:12px 15px 0;
-	text-align:right;
-}
+  #carbonads span {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+
+  .carbon-img {
+    float: left;
+    margin-right: 1em;
+  }
+
+  .carbon-img img { display: block; }
+
+  .carbon-text {
+    display: block;
+    float: left;
+    max-width: calc(100% - 130px - 1em);
+    text-align: left;
+  }
+
+  .carbon-poweredby {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    font-size: 10px;
+  }
