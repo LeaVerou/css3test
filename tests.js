@@ -1,6 +1,9 @@
 window.Specs = {
-	"css3-background": {
-		"title": "Backgrounds and Borders Level 3",
+	"css-background-3": {
+		"title": "Backgrounds and Borders",
+		"tr" : "css3-background",
+		"dev" : "css-backgrounds-3",
+		"level" : 3,
 		"properties": {
 			"background-repeat": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2)),
 			"background-attachment": "local",
@@ -35,15 +38,20 @@ window.Specs = {
 	},
 
 	"css-backgrounds-4": {
-		"title": "Backgrounds and Borders Level 4",
+		"title": "Backgrounds and Borders",
+		"dev" : "css-backgrounds-4",
+		"level" : 4,
 		"properties": {
 			"background-position-x": ["right", "center", "50%", "left, left", "left, right", "right, left", "left, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "left, left, left, left, left", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "right 20px", "left 20px", "right -50px", "left -50px", "right 20px"],
 			"background-position-y": ["bottom", "center", "50%", "top, top", "top, bottom", "bottom, top", "top, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "top, top, top, top, top", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "bottom 20px", "top 20px", "bottom -50px", "top -50px", "bottom 20px"]
 		}
 	},
 
-	"css3-images": {
+	"css-images-3": {
 		"title": "Image Values and Replaced Content",
+		"tr" : "css3-images",
+		"dev" : "css-images-3",
+		"level" : 3,
 		"values": {
 			"properties": [
 				"background-image",
@@ -93,8 +101,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-selectors": {
-		"title": "Selectors Level 3",
+	"css-selectors-3": {
+		"title": "Selectors",
+		"tr" : "css3-selectors",
+		"dev" : "selectors-3",
+		"level" : 3,
 		"selectors": {
 			"Sibling combinator": "foo ~ bar",
 			"::before": "::before",
@@ -149,8 +160,10 @@ window.Specs = {
 		}
 	},
 
-	"css4-selectors": {
-		"title": "Selectors Level 4",
+	"css-selectors-4": {
+		"title": "Selectors",
+		"dev" : "selectors-4",
+		"level" : 4,
 		"selectors": {
 			"Descendant combinator": "foo >> bar"
 		}
@@ -159,8 +172,11 @@ window.Specs = {
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
-	"css3-mediaqueries": {
+	"css-mediaqueries-3": {
 		"title": "Media Queries",
+		"tr" : "css3-mediaqueries",
+		"dev" : "mediaqueries-3",
+		"level" : 3,
 		"Media queries": {
 			"negation": ["not print", "not all and (width:1px)"],
 			"width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
@@ -202,8 +218,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-ui": {
+	"css-ui-3": {
 		"title": "Basic User Interface",
+		"tr" : "css-ui-3",
+		"dev" : "css-ui-3",
+		"level" : 3,
 		"properties": {
 			"box-sizing": ["border-box", "content-box"],
 			"outline-offset": ["-5px", "0", "5px"],
@@ -234,8 +253,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-transitions": {
+	"css-transitions-1": {
 		"title": "Transitions",
+		"tr" : "css3-transitions",
+		"dev" : "css-transitions-1",
+		"level" : 1,
 		"properties": {
 			"transition-property": ["none", "all", "width", "width, height"],
 			"transition-duration": ["0s", "1s", "100ms"],
@@ -250,8 +272,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-animations": {
+	"css-animations-1": {
 		"title": "Animations",
+		"tr" : "css3-animations",
+		"dev" : "css-animations-1",
+		"level" : 1,
 		"properties": {
 			"animation-name": ["foo", "foo, bar"],
 			"animation-duration": ["0s", "1s", "100ms"],
@@ -273,8 +298,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-transforms": {
+	"css-transforms-1": {
 		"title": "Transforms",
+		"tr" : "css-transforms-1",
+		"dev" : "css-transforms-1",
+		"level" : 1,
 		"properties": {
 			"transform": [
 				"none",
@@ -301,7 +329,10 @@ window.Specs = {
 	},
 
 	"css-text-3": {
-		"title": "Text Level 3",
+		"title": "Text",
+		"tr" : "css-text-3",
+		"dev" : "css-text-3",
+		"level" : 3,
 		"properties": {
 			"text-transform": ["full-width"],
 			"tab-size": ["4", "1em"],
@@ -320,7 +351,10 @@ window.Specs = {
 	},
 
 	"css-text-4": {
-		"title": "Text Level 4",
+		"title": "Text",
+		"tr" : "css-text-4",
+		"dev" : "css-text-4",
+		"level" : 4,
 		"properties": {
 			"hyphenate-character": ["auto", "'\2010'"],
 			"hyphenate-limit-zone": ["1%", "1em"],
@@ -332,6 +366,9 @@ window.Specs = {
 
 	"css-text-decor-3": {
 		"title": "Text Decoration",
+		"tr" : "css-text-decor-3",
+		"dev" : "css-text-decor-3",
+		"level" : 3,
 		"properties": {
 			"text-decoration-line": ["none", "underline", "overline", "line-through", "underline overline"],
 			"text-decoration-color": "white",
@@ -347,8 +384,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-fonts": {
+	"css-fonts-3": {
 		"title": "Fonts",
+		"tr" : "css-fonts-3",
+		"dev" : "css-fonts-3",
+		"level" : 3,
 		"properties": {
 			"font-stretch": ["normal", "ultra-condensed", "extra-condensed", "condensed", "semi-condensed", "semi-expanded", "expanded", "extra-expanded", "ultra-expanded"],
 			"font-size-adjust": ["none", ".5"],
@@ -398,8 +438,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-writing-modes": {
+	"css-writing-modes-3": {
 		"title": "Writing Modes",
+		"tr" : "css-writing-modes-3",
+		"dev" : "css-writing-modes-3",
+		"level" : 3,
 		"properties": {
 			"direction": ["ltr", "rtl"],
 			"unicode-bidi": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"],
@@ -410,7 +453,10 @@ window.Specs = {
 	},
 
 	"css-color-3": {
-		"title": "Color Level 3",
+		"title": "Color",
+		"tr" : "css3-color",
+		"dev" : "css-color-3",
+		"level" : 3,
 		"values": {
 			"properties": [
 				"color",
@@ -431,7 +477,9 @@ window.Specs = {
 	},
 
 	"css-color-4": {
-		"title": "Color Level 4",
+		"title": "Color",
+		"dev" : "css-color-4",
+		"level" : 4,
 		"values": {
 			"properties": [
 				"color",
@@ -445,8 +493,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-multicol": {
+	"css-multicol-1": {
 		"title": "Multi-column Layout",
+		"tr" : "css3-multicol",
+		"dev" : "css-multicol-1",
+		"level" : 1,
 		"properties": {
 			"column-width": ["10em", "auto"],
 			"column-count": ["2", "auto"],
@@ -464,8 +515,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-values": {
+	"css-values-3": {
 		"title": "Values and Units",
+		"tr" : "css3-valuesl",
+		"dev" : "css-values-3",
+		"level" : 3,
 		"values": {
 			"properties": [
 				"width",
@@ -484,8 +538,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-regions": {
+	"css-regions-1": {
 		"title": "Regions",
+		"tr" : "css-regions-1",
+		"dev" : "ccss-regions-1",
+		"level" : 1,
 		"properties": {
 			"break-after": ["region"],
 			"break-before": ["region"],
@@ -495,8 +552,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-speech": {
+	"css-speech-1": {
 		"title": "Speech",
+		"tr" : "css3-speech",
+		"dev" : "css-speech-1",
+		"level" : 1,
 		"properties": {
 			"voice-volume": ["silent", "x-soft", "soft", "medium", "loud", "x-loud", "-6dB", "0", "6db"],
 			"voice-balance": ["left", "center", "right", "leftwards", "rightwards", "-100", "0", "100"],
@@ -520,8 +580,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-flexbox": {
+	"css-flexbox-1": {
 		"title": "Flexible Box Layout",
+		"tr" : "css-flexbox-1",
+		"dev" : "css-flexbox-1",
+		"level" : 1,
 		"properties": {
 			"align-content": ["flex-start", "flex-end", "space-between", "space-around"],
 			"align-items": ["flex-start", "flex-end"],
@@ -541,8 +604,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-grid-layout": {
+	"css-grid-1": {
 		"title": "Grid Layout",
+		"tr" : "css3-grid-layout",
+		"dev" : "css-grid-1",
+		"level" : 1,
 		"properties": {
 			"display": ["grid", "inline-grid"],
 			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
@@ -566,8 +632,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-align": {
+	"css-align-3": {
 		"title": "Box Alignment",
+		"tr" : "css-align-3",
+		"dev" : "css-align-3",
+		"level" : 3,
 		"properties": {
 			"align-self": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
 			"align-items": ["auto", "stretch", "baseline", "center", "start", "end", "self-start", "self-end", "left", "right", "true", "safe", "start true", "start safe"],
@@ -579,7 +648,10 @@ window.Specs = {
 	},
 
 	"css-cascade-3": {
-		"title": "Cascading and Inheritance Level 3",
+		"title": "Cascading and Inheritance",
+		"tr" : "css-cascade-3",
+		"dev" : "css-cascade-3",
+		"level" : 3,
 		"values": {
 			"properties": [
 				"color",
@@ -594,7 +666,10 @@ window.Specs = {
 		}
 	},
 	"css-cascade-4": {
-		"title": "Cascading and Inheritance Level 4",
+		"title": "Cascading and Inheritance",
+		"tr" : "css-cascade-4",
+		"dev" : "css-cascade-4",
+		"level" : 4,
 		"values": {
 			"properties": [
 				"color",
@@ -605,8 +680,11 @@ window.Specs = {
 			"revert": "revert"
 		}
 	},
-	"css3-conditional": {
+	"css-conditional-3": {
 		"title": "Conditional Rules",
+		"tr" : "css3-conditional",
+		"dev" : "css-conditional-3",
+		"level" : 3,
 		"@rules": {
 			"@support": [
 				"@supports (color: green)",
@@ -619,8 +697,12 @@ window.Specs = {
 		}
 	},
 
-	"css-masking": {
+	"css-masking-1": {
 		"title": "Masking",
+		"tr" : "css-masking",
+		"dev" : "css-masking-1",
+		"fxtf" : true,
+		"level" : 1,
 		"properties": {
 			"clip-path": ["url('#clip')", "inset(50%)", "circle()", "ellipse()", "polygon(0 10px, 30px 0)", "circle() border-box", "border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "none"],
 			"clip-rule": ["nonzero", "evenodd"],
@@ -643,8 +725,12 @@ window.Specs = {
 		}
 	},
 
-	"compositing": {
+	"compositing-1": {
 		"title": "Compositing and Blending",
+		"tr" : "compositing",
+		"dev" : "compositing-1",
+		"fxtf" : true,
+		"level" : 1,
 		"properties": {
 			"mix-blend-mode": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"],
 			"isolation": ["auto", "isolate"],
@@ -652,8 +738,11 @@ window.Specs = {
 		}
 	},
 
-	"css-shapes": {
+	"css-shapes-1": {
 		"title": "Shapes",
+		"tr" : "css-shapes",
+		"dev" : "css-shapes",
+		"level" : 1,
 		"properties": {
 			"shape-outside": ["none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box", "inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box", "circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)", "url(image.png)"],
 			"shape-image-threshold": ["0", "1", "0.0", "0.1"],
@@ -661,16 +750,23 @@ window.Specs = {
 		}
 	},
 
-	"css3-exclusions": {
+	"css-exclusions-1": {
 		"title": "Exclusions",
+		"tr" : "css3-exclusions",
+		"dev" : "css-exclusions-1",
+		"level" : 1,
 		"properties": {
 			"wrap-flow": ["auto", "both", "start", "end", "minimum", "maximum", "clear"],
 			"wrap-through": ["wrap", "none"]
 		}
 	},
 
-	"filter-effects": {
+	"filter-1": {
 		"title": "Filter Effects",
+		"tr" : "filter-effects",
+		"dev" : "filters",
+		"fxtf" : true,
+		"level" : 1,
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
 		}
@@ -678,21 +774,26 @@ window.Specs = {
 
 	"pointerevents": {
 		"title": "Pointer Events",
+		"tr" : "pointerevents",
 		"properties": {
 			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 		}
 	},
 
 	"fullscreen": {
-		"title": "Fullscreen API",
+		"title": "Fullscreen",
+		"tr" : "fullscreen",
 		"selectors": {
 			"::backdrop": "::backdrop",
 			":fullscreen": ":fullscreen"
 		}
 	},
 
-	"css3-break": {
+	"css-break-3": {
 		"title": "Fragmentation",
+		"tr" : "css-break-3",
+		"dev" : "css-break-3",
+		"level" : 3,
 		"properties": {
 			"break-after": ["any", "recto", "verso"],
 			"break-before": ["any", "recto", "verso"],
@@ -703,15 +804,21 @@ window.Specs = {
 		}
 	},
 
-	"css3-positioning": {
+	"css-position-3": {
 		"title": "Positioning",
+		"tr" : "css-position-3",
+		"dev" : "css-position-3",
+		"level" : 3,
 		"properties": {
 			"position": ["sticky"]
 		}
 	},
 
-	"css-will-change": {
+	"css-will-change-1": {
 		"title": "Will Change",
+		"tr" : "css-will-change",
+		"dev" : "css-will-change",
+		"level" : 1,
 		"properties": {
 			"will-change": ["scroll-position", "contents", "transform", "top, left"]
 		}
@@ -719,6 +826,8 @@ window.Specs = {
 
 	"cssom-view": {
 		"title": "CSSOM View Module",
+		"tr" : "cssom-view-1",
+		"dev" : "cssom-view",
 		"properties": {
 			"scroll-behavior": ["auto", "smooth "]
 		}
@@ -726,6 +835,9 @@ window.Specs = {
 
 	"css-ruby-1": {
 		"title": "Ruby",
+		"tr" : "css-ruby-1",
+		"dev" : "css-ruby-1",
+		"level" : 1,
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
 			"ruby-position" : ["over", "under", "inter-character"],
@@ -736,6 +848,9 @@ window.Specs = {
 
 	"css-snappoints": {
 		"title": "Scroll Snap Points",
+		"tr" : "css-snappoints",
+		"dev" : "css-scroll-snap",
+		"level" : 1,
 		"properties": {
 			"scroll-snap-type": ["none", "mandatory", "proximity"],
 			"scroll-snap-padding": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
@@ -746,6 +861,8 @@ window.Specs = {
 
 	"css-logical-properties": {
 		"title": "Logical Properties",
+		"dev" : "css-logical-props",
+		"level" : 1,
 		"properties": {
 			"caption-side": ["block-start", "block-end", "inline-start", "inline-end"],
 			"float": ["inline-start", "inline-end"],
@@ -793,8 +910,11 @@ window.Specs = {
 		}
 	},
 
-	"css-lists": {
+	"css-lists-3": {
 		"title": "Lists and Counters",
+		"tr" : "css-lists",
+		"dev" : "css-lists",
+		"level" : 3,
 		"properties": {
 			"list-style-type": [
 				"disclosure-closed", "disclosure-open",
@@ -828,6 +948,9 @@ window.Specs = {
 
 	"css-overflow-3": {
 		"title": "Overflow",
+		"tr" : "css-overflow-3",
+		"dev" : "css-overflow-3",
+		"level" : 3,
 		"properties": {
 			"max-lines": ["none", "1"],
 			"overflow-x": ["visible", "hidden", "clip", "scroll", "auto"],

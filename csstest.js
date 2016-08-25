@@ -35,33 +35,52 @@ var Test = function (tests, spec, title) {
 	this.tests = tests;
 	this.id = spec;
 	this.title = title;
+	this.level = tests.level ? tests.level : '';
 	
 	this.score = new Score(mainScore);
 	
-	var 
-	h1 = $u.element.create({
+	var contents = [this.title];
+	
+	if (tests.level) {
+		contents.push($u.element.create({
+			tag: 'span',
+			properties: {
+				textContent: tests.level,
+				className: 'level',
+				title: 'Level'
+			}
+		}));
+	}
+	
+	if (tests.tr) {
+		contents.push($u.element.create({
+			tag: 'a',
+			properties: {
+				href: 'http://w3.org/TR/' + tests.tr,
+				target: '_blank',
+				textContent: 'TR',
+				className: 'spec-link'
+			}
+		}));
+	}
+	
+	if (tests.dev) {
+		contents.push($u.element.create({
+			tag: 'a',
+			properties: {
+				// "CSS Working Group Editor Drafts" or "FX Task Force Editor Drafts"
+				href: (!tests.fxtf ? 'http://dev.w3.org/csswg/' : 'https://drafts.fxtf.org/') + tests.dev,
+				target: '_blank',
+				textContent: 'DEV',
+				className: 'spec-link'
+			}
+		}));
+	}
+	
+	
+	var h1 = $u.element.create({
 		tag: 'h1',
-		contents: [
-			this.title,
-			$u.element.create({
-				tag: 'a',
-				properties: {
-					href: 'http://w3.org/TR/' + this.id,
-					target: '_blank',
-					textContent: 'TR',
-					className: 'spec-link'
-				}
-			}),
-			$u.element.create({
-				tag: 'a',
-				properties: {
-					href: 'http://dev.w3.org/csswg/' + this.id,
-					target: '_blank',
-					textContent: 'DEV',
-					className: 'spec-link'
-				}
-			})
-		]
+		contents: contents
 	}), valuesSection;
 	
 	// Wrapper section
@@ -99,7 +118,10 @@ var Test = function (tests, spec, title) {
 		tag: 'li',
 		properties: {
 			className: passclass({ passed: this.score.passed, total: this.score.total }),
-			title: this.score + ' passed'
+			title: 'level '+ this.level + ' - ' + this.score + ' passed',
+		},
+		attributes: {
+			'data-level': this.level
 		},
 		contents: [
 			$u.element.create({
