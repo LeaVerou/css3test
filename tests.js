@@ -632,7 +632,7 @@ window.Specs = {
 			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box"],
 			"mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
 			"mask-composite": ["add", "subtract", "intersect", "exclude"],
-			"mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
+			"mask": ["top", "space", "url(image.png)", "url(image.png) luminance", "url(image.png) luminance top space"],
 			"mask-border-source": ["none", "url(image.png)"],
 			"mask-border-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
 			"mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
