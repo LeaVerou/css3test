@@ -625,7 +625,7 @@ window.Specs = {
 			"clip-path": ["url('#clip')", "inset(50%)", "circle()", "ellipse()", "polygon(0 10px, 30px 0)", "circle() border-box", "border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "none"],
 			"clip-rule": ["nonzero", "evenodd"],
 			"mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
-			"mask-mode": ["alpha", "luminance", "auto"],
+			"mask-mode": ["alpha", "luminance", "match-source"],
 			"mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
 			"mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
 			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "no-clip"],
