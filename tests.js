@@ -823,6 +823,9 @@ window.Specs = {
 				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
 			]
+		},
+		"@rules": {
+			"@counter-style": "@counter-style foo"
 		}
 	},
 
