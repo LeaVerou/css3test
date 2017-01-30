@@ -845,5 +845,12 @@ window.Specs = {
 				":nth-fragment(-n+1)", ":nth-fragment(3n-1)"
 			]
 		}
+	},
+
+	"css-containment": {
+		"title": "Containment",
+		"properties": {
+			"contain": ["none", "strict", "content", "size", "layout", "style", "paint"]
+		}
 	}
 };
