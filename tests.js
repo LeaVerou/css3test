@@ -149,10 +149,17 @@ window.Specs = {
 		}
 	},
 
-	"css4-selectors": {
+	"selectors": {
 		"title": "Selectors Level 4",
 		"selectors": {
-			"Descendant combinator": "foo >> bar"
+			"Descendant combinator": "foo >> bar",
+			":only-child" : ":only-child",
+			":focus-ring" : ":focus-ring",
+			":focus-within" : ":focus-within",
+			":matches": [ ":matches(em, #foo)"],
+			":not" : [":not(em, #foo)"],
+			":has" : ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
+			":nth-child of" : [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"],
 		}
 	},
 
@@ -541,18 +548,18 @@ window.Specs = {
 		}
 	},
 
-	"css3-grid-layout": {
+	"css-grid-1": {
 		"title": "Grid Layout",
 		"properties": {
-			"display": ["grid", "inline-grid"],
+			"display": ["grid", "inline-grid", "subgrid"],
 			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
 			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
 			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
-			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / [header-top] 'a a a' [header-bottom] [main-top] 'b b b' 1fr [main-bottom]"],
+			"grid-template": ["none", "auto 1fr auto / auto 1fr", "[header-top] 'a   a   a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom] / auto 1fr auto"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
 			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
 			"grid-auto-flow": ["row", "column", "row dense", "column dense"],
-			"grid": ["column 1fr / auto"],
+			"grid": ["auto-flow 1fr / 100px", "none / auto-flow 1fr", "auto-flow / auto 1fr", "repeat(auto-fill, 5em) / auto-flow 1fr", " auto-flow 1fr / repeat(auto-fill, 5em)", "'H    H ' 'A    B ' 'F    F ' 30px / auto 1fr"],
 			"grid-row-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
 			"grid-column-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
 			"grid-row-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
@@ -562,7 +569,7 @@ window.Specs = {
 			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"],
 			"grid-column-gap": ["0", "1em"],
 			"grid-row-gap": ["0", "1em"],
-			"grid-gap": ["normal", "0 1em", "1em", "1em 1em"]
+			"grid-gap": ["0 0", "0 1em", "1em", "1em 1em"]
 		}
 	},
 
@@ -603,6 +610,9 @@ window.Specs = {
 				"all"
 			],
 			"revert": "revert"
+		},
+		"properties": {
+			"all": "revert"
 		}
 	},
 	"css3-conditional": {
@@ -673,6 +683,10 @@ window.Specs = {
 		"title": "Filter Effects",
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
+			"flood-color" : ["black", "#FFF"],
+			"flood-opacity" : ["1", "0", "0.2", "20%"],
+			"color-interpolation-filters" : ["auto", "sRGB", "linearRGB"],
+			"lighting-color" : ["white", "#000"]
 		}
 	},
 
@@ -728,19 +742,41 @@ window.Specs = {
 		"title": "Ruby",
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
-			"ruby-position" : ["over", "under", "inter-character"],
+			"ruby-position" : ["over", "under", "inter-character", "right", "left"],
 			"ruby-merge" : ["separate", "collapse", "auto"],
-			"ruby-align" : ["start", "center", "space-between",	"space-around"]
+			"ruby-align" : ["start", "center", "space-between", "space-around"]
 		}
 	},
 
 	"css-snappoints": {
 		"title": "Scroll Snap Points",
 		"properties": {
-			"scroll-snap-type": ["none", "mandatory", "proximity"],
-			"scroll-snap-padding": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
-			"scroll-snap-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "20px 3em 1in 5rem", "calc(2px)", "calc(3*25px) 50px"],
-			"scroll-snap-align": ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"]
+			"scroll-snap-type" : ["none", "x mandatory", "y mandatory", "block mandatory", "inline mandatory", "both mandatory",  "x proximity", "y proximity", "block proximity", "inline proximity", "both proximity"],
+			"scroll-padding" : ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-snap-margin" : ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-snap-align" : ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"],
+			"scroll-snap-stop" : ["normal", "always"],
+			"scroll-padding-top" : ["10px", "50%"],
+			"scroll-padding-right" : ["10px", "50%"],
+			"scroll-padding-bottom" : ["10px", "50%"],
+			"scroll-padding-left" : ["10px", "50%"],
+			"scroll-padding-inline-start" : ["10px", "50%"],
+			"scroll-padding-block-start" : ["10px", "50%"],
+			"scroll-padding-inline-end" : ["10px", "50%"],
+			"scroll-padding-block-end" : ["10px", "50%"],
+			"scroll-padding-block" : ["10px", "50%", "10px 50%", "50% 50%"],
+			"scroll-padding-inline" : ["10px", "50%", "10px 50%", "50% 50%"],
+			"scroll-snap-margin-top" : ["10px"],
+			"scroll-snap-margin-right" : ["10px"],
+			"scroll-snap-margin-bottom" : ["10px"],
+			"scroll-snap-margin-left" : ["10px"],
+			"scroll-snap-margin-block-start" : ["10px"],
+			"scroll-snap-margin-inline-start" : ["10px"],
+			"scroll-snap-margin-block-end" : ["10px"],
+			"scroll-snap-margin-inline-end" : ["10px"],
+			"scroll-snap-margin-block" : ["10px", "10px 10px"],
+			"scroll-snap-margin-inline" : ["10px", "10px 10px"]
+			
 		}
 	},
 
