@@ -153,7 +153,6 @@ window.Specs = {
 		"title": "Selectors Level 4",
 		"selectors": {
 			"Descendant combinator": "foo >> bar",
-			":only-child" : ":only-child",
 			":focus-ring" : ":focus-ring",
 			":focus-within" : ":focus-within",
 			":matches": [ ":matches(em, #foo)"],
