@@ -149,7 +149,7 @@ window.Specs = {
 		}
 	},
 
-	"selectors4": {
+	"selectors": {
 		"title": "Selectors Level 4",
 		"selectors": {
 			"Descendant combinator": "foo >> bar",
