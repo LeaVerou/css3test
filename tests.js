@@ -894,5 +894,18 @@ window.Specs = {
 		"properties": {
 			"contain": ["none", "strict", "content", "size", "layout", "style", "paint"]
 		}
+	},
+	
+	"css-sizing-3" : {
+		"title": "Intrinsic & Extrinsic Sizing",
+		"properties": {
+			"width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"min-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"max-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"min-height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"max-height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"column-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+		}
 	}
 };
