@@ -211,6 +211,7 @@ window.Specs = {
 	"css3-ui": {
 		"title": "Basic User Interface",
 		"properties": {
+			"appearance": ["auto", "none"],
 			"box-sizing": ["border-box", "content-box"],
 			"outline-offset": ["-5px", "0", "5px"],
 			"resize": ["none", "both", "horizontal", "vertical"],
