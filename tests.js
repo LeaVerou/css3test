@@ -689,7 +689,7 @@ window.Specs = {
 			"lighting-color" : ["white", "#000"]
 		}
 	},
-	
+
 	"filters-2": {
 		"title": "Filter Effects Level 2",
 		"properties": {
@@ -783,7 +783,7 @@ window.Specs = {
 			"scroll-snap-margin-inline-end" : ["10px"],
 			"scroll-snap-margin-block" : ["10px", "10px 10px"],
 			"scroll-snap-margin-inline" : ["10px", "10px 10px"]
-			
+
 		}
 	},
 
@@ -896,7 +896,7 @@ window.Specs = {
 			"contain": ["none", "strict", "content", "size", "layout", "style", "paint"]
 		}
 	},
-	
+
 	"css-sizing-3" : {
 		"title": "Intrinsic & Extrinsic Sizing",
 		"properties": {
