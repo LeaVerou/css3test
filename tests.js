@@ -43,7 +43,7 @@ window.Specs = {
 	},
 
 	"css3-images": {
-		"title": "Image Values and Replaced Content",
+		"title": "Image Values Level 3",
 		"values": {
 			"properties": [
 				"background-image",
@@ -78,18 +78,47 @@ window.Specs = {
 			],
 			"repeating-linear-gradient": "repeating-linear-gradient(white, black)",
 			"repeating-radial-gradient": "repeating-radial-gradient(white, black)",
-			"image()": [
-				"image('sprites.png#xywh=10,30,60,20')",
-				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
-				"image('dark.png', black)", "image(green)"
-			],
+			"cross-fade()": [
+				"cross-fade(url(a.png), url(b.png))",
+				"cross-fade(url(a.png) 50%, url(b.png))",
+				"cross-fade(url(a.png) 50%, white)"
+			]
 		},
 		"properties": {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
 			"object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
 			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"],
-			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"],
+			"image-orientation": ["from-image", "0deg", "90deg", "45deg", "45deg flip", "1turn", "100grad", "2rad"],
 			"image-rendering": ["auto", "crisp-edges", "pixelated"],
+		}
+	},
+
+	"css-images-4": {
+		"title": "Image Values Level 4",
+		"values": {
+			"properties": [
+				"background-image",
+				"list-style-image",
+				"border-image",
+				"cursor",
+				"content"
+			],
+			"conic-gradient": [
+				"conic-gradient(white, black)",
+				"conic-gradient(from 5deg, white, black)",
+				"conic-gradient(at top left, white, black)",
+				"conic-gradient(white 50%, black)",
+				"conic-gradient(white 5deg, black)",
+				"conic-gradient(white, #f06, black)",
+				"conic-gradient(currentColor, black)"
+			],
+			"repeating-conic-gradient": "repeating-conic-gradient(white, black)",
+			"image()": [
+				"image('sprites.png#xywh=10,30,60,20')",
+				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
+				"image('dark.png', black)", "image(green)"
+			],
+			"element()": "element(#foo)"
 		}
 	},
 
