@@ -456,6 +456,7 @@ window.Specs = {
 				"column-rule-color"
 			],
 			"rgba": "rgba(0,0,0,.5)",
+			"#RGB": ["#F06", "#FF0066"],
 			"hsl": "hsl(0,0%,0%)",
 			"hsla": "hsla(0,0%,0%,.5)",
 			"transparent": "transparent",
@@ -476,8 +477,17 @@ window.Specs = {
 				"text-decoration-color",
 				"column-rule-color"
 			],
+			"Comma-less colors": ["rgb(0% 20% 70%)", "rgb(0 64 185)", "hsl(0 0% 0%)"],
+			"/ alpha": ["rgba(0% 20% 70% / 50%)", "rgba(0% 20% 70% / .5)", "rgba(0 64 185 / 50%)", "rgba(0 64 185 / .5)", "hsla(0 0% 0% /.5)"],
+			"optional alpha": ["rgb(0% 20% 70% / 50%)", "rgb(0% 20% 70% / .5)", "rgb(0 64 185 / 50%)", "rgb(0 64 185 / .5)", "hsl(0 0% 0% / .5)"],
+			"Hex with alpha": ["#000F", "#000000FF"],
 			"rebeccapurple": "rebeccapurple",
-			"#RGBA": ["#000F", "#000000FF"]
+			"hwb()": ["hwb(0 0% 0%)","hwb(0 0% 0% / .5)"],
+			"lab()": ["lab(0 0 0)","lab(0 0 0 /.5)"],
+			"lch()": ["lch(0 0 0)","lch(0 0 0 / .5)"],
+			"gray()": ["gray(50)","gray(50 / .5)"],
+			"color()": ["color(.2 .4 .6)", "color(image-p3 .2. 4 .6)", "color(foo .2 .4 .6)", "color(.2 .4 .6 / .5)", "color(image-p3 .2 .4 .6  / .5)", "color(foo .2 .4 .6 / .5)"],
+			"device-cmyk()": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 		}
 	},
 
