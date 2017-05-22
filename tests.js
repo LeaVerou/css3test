@@ -240,13 +240,12 @@ window.Specs = {
 	},
 
 	"css3-ui": {
-		"title": "Basic User Interface",
+		"title": "Basic User Interface Level 3",
 		"properties": {
-			"appearance": ["auto", "none"],
 			"box-sizing": ["border-box", "content-box"],
 			"outline-offset": ["-5px", "0", "5px"],
 			"resize": ["none", "both", "horizontal", "vertical"],
-			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
+			"text-overflow": ["clip", "ellipsis"],
 			"cursor": [
 				"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
 				"grab", "grabbing", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in",
@@ -269,6 +268,14 @@ window.Specs = {
 			":optional": ":optional",
 			":read-only": ":read-only",
 			":read-write": ":read-write"
+		}
+	},
+
+	"css-ui-4": {
+	"title": "Basic User Interface Level 4",
+		"properties": {
+			"appearance": ["auto", "none"],
+			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
 		}
 	},
 
