@@ -1,6 +1,6 @@
 window.Specs = {
 	"css3-background": {
-		"title": "Backgrounds and Borders",
+		"title": "Backgrounds and Borders Level 3",
 		"properties": {
 			"background-repeat": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2)),
 			"background-attachment": "local",
@@ -34,8 +34,16 @@ window.Specs = {
 		}
 	},
 
+	"css-backgrounds-4": {
+		"title": "Backgrounds and Borders Level 4",
+		"properties": {
+			"background-position-x": ["right", "center", "50%", "left, left", "left, right", "right, left", "left, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "left, left, left, left, left", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "right 20px", "left 20px", "right -50px", "left -50px", "right 20px"],
+			"background-position-y": ["bottom", "center", "50%", "top, top", "top, bottom", "bottom, top", "top, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "top, top, top, top, top", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "bottom 20px", "top 20px", "bottom -50px", "top -50px", "bottom 20px"]
+		}
+	},
+
 	"css3-images": {
-		"title": "Image Values and Replaced Content",
+		"title": "Image Values Level 3",
 		"values": {
 			"properties": [
 				"background-image",
@@ -70,22 +78,52 @@ window.Specs = {
 			],
 			"repeating-linear-gradient": "repeating-linear-gradient(white, black)",
 			"repeating-radial-gradient": "repeating-radial-gradient(white, black)",
-			"image()": [
-				"image('sprites.png#xywh=10,30,60,20')",
-				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
-				"image('dark.png', black)", "image(green)"
-			],
+			"cross-fade()": [
+				"cross-fade(url(a.png), url(b.png))",
+				"cross-fade(url(a.png) 50%, url(b.png))",
+				"cross-fade(url(a.png) 50%, white)"
+			]
 		},
 		"properties": {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
 			"object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
 			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"],
-			"image-orientation": ["0deg", "90deg", "45deg", "1turn", "100grad", "2rad"]
+			"image-orientation": ["from-image", "0deg", "90deg", "45deg", "45deg flip", "1turn", "100grad", "2rad"],
+			"image-rendering": ["auto", "crisp-edges", "pixelated"],
+		}
+	},
+
+	"css-images-4": {
+		"title": "Image Values Level 4",
+		"values": {
+			"properties": [
+				"background-image",
+				"list-style-image",
+				"border-image",
+				"cursor",
+				"content"
+			],
+			"conic-gradient": [
+				"conic-gradient(white, black)",
+				"conic-gradient(from 5deg, white, black)",
+				"conic-gradient(at top left, white, black)",
+				"conic-gradient(white 50%, black)",
+				"conic-gradient(white 5deg, black)",
+				"conic-gradient(white, #f06, black)",
+				"conic-gradient(currentColor, black)"
+			],
+			"repeating-conic-gradient": "repeating-conic-gradient(white, black)",
+			"image()": [
+				"image('sprites.png#xywh=10,30,60,20')",
+				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
+				"image('dark.png', black)", "image(green)"
+			],
+			"element()": "element(#foo)"
 		}
 	},
 
 	"css3-selectors": {
-		"title": "Selectors",
+		"title": "Selectors Level 3",
 		"selectors": {
 			"Sibling combinator": "foo ~ bar",
 			"::before": "::before",
@@ -140,6 +178,19 @@ window.Specs = {
 		}
 	},
 
+	"selectors": {
+		"title": "Selectors Level 4",
+		"selectors": {
+			"Descendant combinator": "foo >> bar",
+			":focus-ring" : ":focus-ring",
+			":focus-within" : ":focus-within",
+			":matches": [ ":matches(em, #foo)"],
+			":not" : [":not(em, #foo)"],
+			":has" : ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
+			":nth-child of" : [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"],
+		}
+	},
+
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
@@ -189,6 +240,7 @@ window.Specs = {
 	"css3-ui": {
 		"title": "Basic User Interface",
 		"properties": {
+			"appearance": ["auto", "none"],
 			"box-sizing": ["border-box", "content-box"],
 			"outline-offset": ["-5px", "0", "5px"],
 			"resize": ["none", "both", "horizontal", "vertical"],
@@ -302,8 +354,8 @@ window.Specs = {
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
 		}
 	},
-    
-    	"css-text-4": {
+
+	"css-text-4": {
 		"title": "Text Level 4",
 		"properties": {
 			"hyphenate-character": ["auto", "'\2010'"],
@@ -404,6 +456,7 @@ window.Specs = {
 				"column-rule-color"
 			],
 			"rgba": "rgba(0,0,0,.5)",
+			"#RGB": ["#F06", "#FF0066"],
 			"hsl": "hsl(0,0%,0%)",
 			"hsla": "hsla(0,0%,0%,.5)",
 			"transparent": "transparent",
@@ -413,7 +466,7 @@ window.Specs = {
 			"opacity": ["-5", "0", ".5", "1", "2"]
 		}
 	},
-    
+
 	"css-color-4": {
 		"title": "Color Level 4",
 		"values": {
@@ -424,8 +477,17 @@ window.Specs = {
 				"text-decoration-color",
 				"column-rule-color"
 			],
+			"Comma-less colors": ["rgb(0% 20% 70%)", "rgb(0 64 185)", "hsl(0 0% 0%)"],
+			"/ alpha": ["rgba(0% 20% 70% / 50%)", "rgba(0% 20% 70% / .5)", "rgba(0 64 185 / 50%)", "rgba(0 64 185 / .5)", "hsla(0 0% 0% /.5)"],
+			"optional alpha": ["rgb(0% 20% 70% / 50%)", "rgb(0% 20% 70% / .5)", "rgb(0 64 185 / 50%)", "rgb(0 64 185 / .5)", "hsl(0 0% 0% / .5)"],
+			"Hex with alpha": ["#000F", "#000000FF"],
 			"rebeccapurple": "rebeccapurple",
-			"#RGBA": ["#000F", "#000000FF"]
+			"hwb()": ["hwb(0 0% 0%)","hwb(0 0% 0% / .5)"],
+			"lab()": ["lab(0 0 0)","lab(0 0 0 /.5)"],
+			"lch()": ["lch(0 0 0)","lch(0 0 0 / .5)"],
+			"gray()": ["gray(50)","gray(50 / .5)"],
+			"color()": ["color(.2 .4 .6)", "color(image-p3 .2. 4 .6)", "color(foo .2 .4 .6)", "color(.2 .4 .6 / .5)", "color(image-p3 .2 .4 .6  / .5)", "color(foo .2 .4 .6 / .5)"],
+			"device-cmyk()": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 		}
 	},
 
@@ -463,7 +525,7 @@ window.Specs = {
 			"vmax": "5vmax",
 			"q": "5q",
 			"attr()": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"],
-			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)"],
+			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)", "calc(calc(100%))"],
 			"toggle()": "toggle(1px, 2px)"
 		}
 	},
@@ -525,18 +587,18 @@ window.Specs = {
 		}
 	},
 
-	"css3-grid-layout": {
+	"css-grid-1": {
 		"title": "Grid Layout",
 		"properties": {
-			"display": ["grid", "inline-grid"],
+			"display": ["grid", "inline-grid", "subgrid"],
 			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
 			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
 			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
-			"grid-template": ["none", "auto 1fr auto / auto 1fr", "auto 1fr auto / [header-top] 'a a a' [header-bottom] [main-top] 'b b b' 1fr [main-bottom]"],
+			"grid-template": ["none", "auto 1fr auto / auto 1fr", "[header-top] 'a   a   a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom] / auto 1fr auto"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
 			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
 			"grid-auto-flow": ["row", "column", "row dense", "column dense"],
-			"grid": ["column 1fr / auto"],
+			"grid": ["auto-flow 1fr / 100px", "none / auto-flow 1fr", "auto-flow / auto 1fr", "repeat(auto-fill, 5em) / auto-flow 1fr", " auto-flow 1fr / repeat(auto-fill, 5em)", "'H    H ' 'A    B ' 'F    F ' 30px / auto 1fr"],
 			"grid-row-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
 			"grid-column-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
 			"grid-row-end": ["auto", "4", "C", "C 2", "span C", "span 1"],
@@ -546,7 +608,7 @@ window.Specs = {
 			"grid-area": ["1 / 1", "1 / span 1", "span / 10 / -1"],
 			"grid-column-gap": ["0", "1em"],
 			"grid-row-gap": ["0", "1em"],
-			"grid-gap": ["normal", "0 1em", "1em", "1em 1em"]
+			"grid-gap": ["0 0", "0 1em", "1em", "1em 1em"]
 		}
 	},
 
@@ -587,6 +649,9 @@ window.Specs = {
 				"all"
 			],
 			"revert": "revert"
+		},
+		"properties": {
+			"all": "revert"
 		}
 	},
 	"css3-conditional": {
@@ -609,14 +674,14 @@ window.Specs = {
 			"clip-path": ["url('#clip')", "inset(50%)", "circle()", "ellipse()", "polygon(0 10px, 30px 0)", "circle() border-box", "border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "none"],
 			"clip-rule": ["nonzero", "evenodd"],
 			"mask-image": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"],
-			"mask-mode": ["alpha", "luminance", "auto"],
+			"mask-mode": ["alpha", "luminance", "match-source"],
 			"mask-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
 			"mask-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
-			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box", "no-clip"],
-			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill", "stroke", "view-box"],
+			"mask-clip": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "no-clip"],
+			"mask-origin": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box"],
 			"mask-size": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
 			"mask-composite": ["add", "subtract", "intersect", "exclude"],
-			"mask": ["top", "space", "url(image.png')", "url(image.png') luminance", "url(image.png') luminance top space"],
+			"mask": ["top", "space", "url(image.png)", "url(image.png) luminance", "url(image.png) luminance top space"],
 			"mask-border-source": ["none", "url(image.png)"],
 			"mask-border-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
 			"mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
@@ -644,7 +709,7 @@ window.Specs = {
 			"shape-margin": ["0", "10px", "50%"]
 		}
 	},
-	
+
 	"css3-exclusions": {
 		"title": "Exclusions",
 		"properties": {
@@ -654,9 +719,20 @@ window.Specs = {
 	},
 
 	"filter-effects": {
-		"title": "Filter Effects",
+		"title": "Filter Effects Level 1",
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
+			"flood-color" : ["black", "#FFF"],
+			"flood-opacity" : ["1", "0", "0.2", "20%"],
+			"color-interpolation-filters" : ["auto", "sRGB", "linearRGB"],
+			"lighting-color" : ["white", "#000"]
+		}
+	},
+
+	"filters-2": {
+		"title": "Filter Effects Level 2",
+		"properties": {
+			"backdrop-filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
 		}
 	},
 
@@ -666,13 +742,13 @@ window.Specs = {
 			"touch-action": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 		}
 	},
-	
+
 	"fullscreen": {
 		"title": "Fullscreen API",
 		"selectors": {
 			"::backdrop": "::backdrop",
 			":fullscreen": ":fullscreen"
-		}	
+		}
 	},
 
 	"css3-break": {
@@ -712,19 +788,41 @@ window.Specs = {
 		"title": "Ruby",
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
-			"ruby-position" : ["over", "under", "inter-character"],
+			"ruby-position" : ["over", "under", "inter-character", "right", "left"],
 			"ruby-merge" : ["separate", "collapse", "auto"],
-			"ruby-align" : ["start", "center", "space-between",	"space-around"]			
+			"ruby-align" : ["start", "center", "space-between", "space-around"]
 		}
 	},
-	
+
 	"css-snappoints": {
 		"title": "Scroll Snap Points",
 		"properties": {
-			"scroll-snap-type": ["none", "mandatory", "proximity"],
-			"scroll-snap-padding": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
-			"scroll-snap-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "20px 3em 1in 5rem", "calc(2px)", "calc(3*25px) 50px"],
-			"scroll-snap-align": ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"]
+			"scroll-snap-type" : ["none", "x mandatory", "y mandatory", "block mandatory", "inline mandatory", "both mandatory",  "x proximity", "y proximity", "block proximity", "inline proximity", "both proximity"],
+			"scroll-padding" : ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-snap-margin" : ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-snap-align" : ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"],
+			"scroll-snap-stop" : ["normal", "always"],
+			"scroll-padding-top" : ["10px", "50%"],
+			"scroll-padding-right" : ["10px", "50%"],
+			"scroll-padding-bottom" : ["10px", "50%"],
+			"scroll-padding-left" : ["10px", "50%"],
+			"scroll-padding-inline-start" : ["10px", "50%"],
+			"scroll-padding-block-start" : ["10px", "50%"],
+			"scroll-padding-inline-end" : ["10px", "50%"],
+			"scroll-padding-block-end" : ["10px", "50%"],
+			"scroll-padding-block" : ["10px", "50%", "10px 50%", "50% 50%"],
+			"scroll-padding-inline" : ["10px", "50%", "10px 50%", "50% 50%"],
+			"scroll-snap-margin-top" : ["10px"],
+			"scroll-snap-margin-right" : ["10px"],
+			"scroll-snap-margin-bottom" : ["10px"],
+			"scroll-snap-margin-left" : ["10px"],
+			"scroll-snap-margin-block-start" : ["10px"],
+			"scroll-snap-margin-inline-start" : ["10px"],
+			"scroll-snap-margin-block-end" : ["10px"],
+			"scroll-snap-margin-inline-end" : ["10px"],
+			"scroll-snap-margin-block" : ["10px", "10px 10px"],
+			"scroll-snap-margin-inline" : ["10px", "10px 10px"]
+
 		}
 	},
 
@@ -776,11 +874,11 @@ window.Specs = {
 			"border-image-transform": ["logical", "physical", "rotate"]
 		}
 	},
-	
+
 	"css-lists": {
 		"title": "Lists and Counters",
 		"properties": {
-			"list-style-type": [ 
+			"list-style-type": [
 				"disclosure-closed", "disclosure-open",
 				"hebrew",
 				"cjk-decimal", "cjk-ideographic",
@@ -807,6 +905,9 @@ window.Specs = {
 				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
 			]
+		},
+		"@rules": {
+			"@counter-style": "@counter-style foo"
 		}
 	},
 
@@ -825,6 +926,26 @@ window.Specs = {
 				":nth-fragment(n+1)",":nth-fragment(3n+1)", ":nth-fragment(3n + 1)",
 				":nth-fragment(-n+1)", ":nth-fragment(3n-1)"
 			]
+		}
+	},
+
+	"css-containment": {
+		"title": "Containment",
+		"properties": {
+			"contain": ["none", "strict", "content", "size", "layout", "style", "paint"]
+		}
+	},
+
+	"css-sizing-3" : {
+		"title": "Intrinsic & Extrinsic Sizing",
+		"properties": {
+			"width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"min-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"max-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"min-height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"max-height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
+			"column-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 		}
 	}
 };

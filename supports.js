@@ -124,7 +124,7 @@ var _ = window.Supports = {
 		if(!_.atrule.cached) {
 			_.atrule.cached = {};
 		}
-		else if(_.selector.cached[atrule]) {
+		else if(_.atrule.cached[atrule]) {
 			return _.atrule.cached[atrule];
 		}
 		
