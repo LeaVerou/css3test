@@ -276,6 +276,7 @@ window.Specs = {
 		"properties": {
 			"appearance": ["auto", "none"],
 			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
+			"user-select": ["auto", "text", "none", "contain", "all"]
 		}
 	},
 
