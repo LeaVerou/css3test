@@ -183,6 +183,16 @@ window.Specs = {
 	"selectors": {
 		"title": "Selectors Level 4",
 		"selectors": {
+			":indeterminate": ":indeterminate",
+			":default": ":default",
+			":valid": ":valid",
+			":invalid": ":invalid",
+			":in-range": ":in-range",
+			":out-of-range": ":out-of-range",
+			":required": ":required",
+			":optional": ":optional",
+			":read-only": ":read-only",
+			":read-write": ":read-write",
 			"Descendant combinator": "foo >> bar",
 			":focus-ring" : ":focus-ring",
 			":focus-within" : ":focus-within",
@@ -256,18 +266,6 @@ window.Specs = {
 			"nav-right": ["auto", "#foo", "#foo current", "#foo root"],
 			"nav-down": ["auto", "#foo", "#foo current", "#foo root"],
 			"nav-left": ["auto", "#foo", "#foo current", "#foo root"]
-		},
-		"selectors": {
-			":indeterminate": ":indeterminate",
-			":default": ":default",
-			":valid": ":valid",
-			":invalid": ":invalid",
-			":in-range": ":in-range",
-			":out-of-range": ":out-of-range",
-			":required": ":required",
-			":optional": ":optional",
-			":read-only": ":read-only",
-			":read-write": ":read-write"
 		}
 	},
 
