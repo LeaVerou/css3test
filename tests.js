@@ -87,7 +87,6 @@ window.Specs = {
 		"properties": {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
 			"object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
-			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"],
 			"image-orientation": ["from-image", "0deg", "90deg", "45deg", "45deg flip", "1turn", "100grad", "2rad"],
 			"image-rendering": ["auto", "crisp-edges", "pixelated"],
 		}
@@ -119,6 +118,9 @@ window.Specs = {
 				"image('dark.png', black)", "image(green)"
 			],
 			"element()": "element(#foo)"
+		},
+		"properties": {
+			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"]
 		}
 	},
 
@@ -181,6 +183,16 @@ window.Specs = {
 	"selectors": {
 		"title": "Selectors Level 4",
 		"selectors": {
+			":indeterminate": ":indeterminate",
+			":default": ":default",
+			":valid": ":valid",
+			":invalid": ":invalid",
+			":in-range": ":in-range",
+			":out-of-range": ":out-of-range",
+			":required": ":required",
+			":optional": ":optional",
+			":read-only": ":read-only",
+			":read-write": ":read-write",
 			"Descendant combinator": "foo >> bar",
 			":focus-ring" : ":focus-ring",
 			":focus-within" : ":focus-within",
@@ -238,13 +250,12 @@ window.Specs = {
 	},
 
 	"css3-ui": {
-		"title": "Basic User Interface",
+		"title": "Basic User Interface Level 3",
 		"properties": {
-			"appearance": ["auto", "none"],
 			"box-sizing": ["border-box", "content-box"],
 			"outline-offset": ["-5px", "0", "5px"],
 			"resize": ["none", "both", "horizontal", "vertical"],
-			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
+			"text-overflow": ["clip", "ellipsis"],
 			"cursor": [
 				"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
 				"grab", "grabbing", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in",
@@ -255,18 +266,15 @@ window.Specs = {
 			"nav-right": ["auto", "#foo", "#foo current", "#foo root"],
 			"nav-down": ["auto", "#foo", "#foo current", "#foo root"],
 			"nav-left": ["auto", "#foo", "#foo current", "#foo root"]
-		},
-		"selectors": {
-			":indeterminate": ":indeterminate",
-			":default": ":default",
-			":valid": ":valid",
-			":invalid": ":invalid",
-			":in-range": ":in-range",
-			":out-of-range": ":out-of-range",
-			":required": ":required",
-			":optional": ":optional",
-			":read-only": ":read-only",
-			":read-write": ":read-write"
+		}
+	},
+
+	"css-ui-4": {
+	"title": "Basic User Interface Level 4",
+		"properties": {
+			"appearance": ["auto", "none"],
+			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
+			"user-select": ["auto", "text", "none", "contain", "all"]
 		}
 	},
 
