@@ -720,11 +720,16 @@ window.Specs = {
 	"css-display": {
 		"title": "Display",
 		"properties": {
-			"display-inside": ["auto", "block", "table", "flex", "grid"],
-			"display-outside": ["block-level", "inline-level", "none", "table-row-group", "table-header-group", "table-footer-group", "table-row", "table-cell", "table-column-group", "table-column", "table-caption"],
-			"display-extras": ["none", "list-item"],
-			"display": ["auto", "block-level", "inline-level"],
-			"display-box": ["normal", "none", "contents"]
+			"display": [
+				"run-in", "flow", "flow-root",
+				"block flow", "inline flow", "run-in flow",
+				"block flow-root", "inline flow-root", "run-in flow-root",
+				"block table", "inline table", "run-in table",
+				"block flex", "inline flex", "run-in flex",
+				"block grid", "inline grid", "run-in grid",
+				"block ruby", "inline ruby", "run-in ruby",
+				"inline list-item", "list-item inline flow", "list-item block flow"
+			]
 		}
 	},
 
