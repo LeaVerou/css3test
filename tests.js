@@ -273,7 +273,9 @@ window.Specs = {
 	"title": "Basic User Interface Level 4",
 		"properties": {
 			"appearance": ["auto", "none"],
-			"text-overflow": ["clip", "ellipsis", "'foo'"].times(1, 2),
+			"caret": ["auto", "green", "bar", "green bar"],
+			"caret-shape": ["auto", "bar", "block", "underscore"],
+			"text-overflow": ["clip", "ellipsis", "fade", "fade(10px)","fade(10%)", "'foo'"].times(1, 2),
 			"user-select": ["auto", "text", "none", "contain", "all"]
 		}
 	},
