@@ -210,33 +210,36 @@ window.Specs = {
 		"title": "Media Queries",
 		"Media queries": {
 			"negation": ["not print", "not all and (width:1px)"],
-			"width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
-			"height": ["(height)", "(min-height:1px)", "(max-height:1000000px)"],
-			"device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"],
-			"device-height": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"],
+			"width": ["(width)", "(min-width:1px)", "(min-width:calc(1px))", "(max-width:1000000px)"],
+			"height": ["(height)", "(min-height:1px)", "(min-height:calc(1px))", "(max-height:1000000px)"],
+			"device-width": ["(device-width)", "(min-device-width:1px)", "(max-device-width:calc(1px))", "(max-device-width:1000000px)"],
+			"device-height": ["(device-height)", "(min-device-height:1px)", "(max-device-height:calc(1px))", "(max-device-height:1000000px)"],
 			"orientation": "(orientation:portrait), (orientation:landscape)",
 			"aspect-ratio": [
 				"(aspect-ratio)",
 				"(min-aspect-ratio:1/1000000)",
 				"(min-aspect-ratio:1 / 1000000)",
 				"(max-aspect-ratio:1000000/1)",
+				"(max-aspect-ratio:calc(1000000)/calc(1))"
 			],
 			"device-aspect-ratio": [
 				"(device-aspect-ratio)",
 				"(min-device-aspect-ratio:1/1000000)",
 				"(min-device-aspect-ratio:1 / 1000000)",
 				"(max-device-aspect-ratio:1000000/1)",
+				"(max-device-aspect-ratio:calc(1000000)/calc(1))"
 			],
 			"color": [
-				"(color)", "(min-color: 0)", "(max-color: 100)"
+				"(color)", "(min-color: 0)", "(max-color: 100)", "(max-color: calc(100))"
 			],
 			"color-index": [
 				"all, (color-index)",
 				"(min-color-index: 0)",
-				"(max-color-index: 10000000)"
+				"(max-color-index: 10000000)",
+				"(max-color-index: calc(10000000))"
 			],
 			"monochrome": [
-				"all, (monochrome)", "(min-monochrome: 0)", "(max-monochrome: 10000)"
+				"all, (monochrome)", "(min-monochrome: 0)", "(max-monochrome: 10000)", "(max-monochrome: calc(10000))"
 			],
 			"resolution": [
 				"(resolution)",
@@ -245,7 +248,7 @@ window.Specs = {
 				"(max-resolution: 1000000dpcm)"
 			],
 			"scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
-			"grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
+			"grid": ["all, (grid)", "(grid: 0), (grid: 1)", "(grid: calc(1))"]
 		}
 	},
 
