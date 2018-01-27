@@ -979,5 +979,14 @@ window.Specs = {
 			"max-height": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
 			"column-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 		}
+	},
+	
+	"overscroll-behavior" : {
+		"title": "Overscroll Behavior",
+		"properties": {
+			"overscroll-behavior" :	[ "contain", "none", "auto" ].times(1, 2),
+			"overscroll-behavior-x" : [ "contain", "none", "auto" ],
+			"overscroll-behavior-y" : [ "contain", "none", "auto" ]
+		}
 	}
 };
