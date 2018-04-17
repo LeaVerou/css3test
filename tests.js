@@ -193,7 +193,6 @@ window.Specs = {
 			":optional": ":optional",
 			":read-only": ":read-only",
 			":read-write": ":read-write",
-			"Descendant combinator": "foo >> bar",
 			":focus-ring" : ":focus-ring",
 			":focus-within" : ":focus-within",
 			":matches": [ ":matches(em, #foo)"],
