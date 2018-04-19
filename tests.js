@@ -193,7 +193,7 @@ window.Specs = {
 			":optional": ":optional",
 			":read-only": ":read-only",
 			":read-write": ":read-write",
-			":focus-ring" : ":focus-ring",
+			":focus-visible" : ":focus-visible",
 			":focus-within" : ":focus-within",
 			":matches": [ ":matches(em, #foo)"],
 			":not" : [":not(em, #foo)"],
