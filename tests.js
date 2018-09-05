@@ -498,6 +498,9 @@ window.Specs = {
 			"gray()": ["gray(50)","gray(50 / .5)"],
 			"color()": ["color(.2 .4 .6)", "color(image-p3 .2. 4 .6)", "color(foo .2 .4 .6)", "color(.2 .4 .6 / .5)", "color(image-p3 .2 .4 .6  / .5)", "color(foo .2 .4 .6 / .5)"],
 			"device-cmyk()": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
+		},
+		"properties": {
+			"color-adjust": ["economy", "exact"]
 		}
 	},
 
