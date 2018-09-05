@@ -606,9 +606,9 @@ window.Specs = {
 	},
 
 	"css-grid-1": {
-		"title": "Grid Layout",
+		"title": "Grid Layout Level 1",
 		"properties": {
-			"display": ["grid", "inline-grid", "subgrid"],
+			"display": ["grid", "inline-grid"],
 			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
 			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
 			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
@@ -627,6 +627,13 @@ window.Specs = {
 			"grid-column-gap": ["0", "1em"],
 			"grid-row-gap": ["0", "1em"],
 			"grid-gap": ["0 0", "0 1em", "1em", "1em 1em"]
+		}
+	},
+
+	"css-grid-2": {
+		"title": "Grid Layout Level 2",
+		"properties": {
+			"display": ["subgrid"]
 		}
 	},
 
