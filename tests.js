@@ -376,19 +376,32 @@ window.Specs = {
 	},
 
 	"css-text-decor-3": {
-		"title": "Text Decoration",
+		"title": "Text Decoration Level 3",
 		"properties": {
+			"text-decoration": "underline dotted green",
 			"text-decoration-line": ["none", "underline", "overline", "line-through", "underline overline"],
 			"text-decoration-color": "white",
 			"text-decoration-style": ["solid", "double", "dotted", "dashed", "wavy"],
-			"text-decoration": "underline dotted green",
-			"text-decoration-skip": ["none", "objects", "spaces", "ink", "edges", "box-decoration", "objects edges"],
 			"text-underline-position": ["auto", "under", "left", "right", "under left", "under right"],
 			"text-emphasis-style": ["none", "filled", "open", "dot", "circle", "double-circle", "triangle", "sesame", "open dot", "'foo'"],
 			"text-emphasis-color": "green",
 			"text-emphasis": "open dot green",
 			"text-emphasis-position": ["over left", "over right", "under left", "under right"],
 			"text-shadow": ["none", "1px 1px", "0 0 black", "1px 2px 3px black"]
+		}
+	},
+
+	"css-text-decor-4": {
+		"title": "Text Decoration Level 4",
+		"properties": {
+			"text-decoration-skip": [ 
+				"none", "objects", "objects spaces", "objects leading-spaces", "objects trailing-spaces",	"objects leading-spaces trailing-spaces",
+				"objects leading-spaces trailing-spaces edges", "objects leading-spaces trailing-spaces edges box-decoration", "objects edges",
+				"objects box-decoration", "spaces", "spaces edges", "spaces edges box-decoration", "spaces box-decoration", "leading-spaces",
+				"leading-spaces trailing-spaces edges", "leading-spaces trailing-spaces edges box-decoration", "edges", "edges box-decoration", 
+				"box-decoration"
+			],
+			"text-decoration-skip-ink" : ["none", "auto"]
 		}
 	},
 
