@@ -88,7 +88,7 @@ window.Specs = {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
 			"object-position": ["50% 50%", "center", "top right", "bottom 10px right 20px"],
 			"image-orientation": ["from-image", "0deg", "90deg", "45deg", "45deg flip", "1turn", "100grad", "2rad"],
-			"image-rendering": ["auto", "crisp-edges", "pixelated"],
+			"image-rendering": ["auto", "smooth", "high-quality", "crisp-edges", "pixelated"],
 		}
 	},
 
