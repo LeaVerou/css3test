@@ -622,8 +622,8 @@ window.Specs = {
 		"title": "Grid Layout Level 1",
 		"properties": {
 			"display": ["grid", "inline-grid"],
-			"grid-template-columns": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
-			"grid-template-rows": ["none", "subgrid", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
+			"grid-template-columns": ["none", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
+			"grid-template-rows": ["none", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
 			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
 			"grid-template": ["none", "auto 1fr auto / auto 1fr", "[header-top] 'a   a   a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom] / auto 1fr auto"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
@@ -646,7 +646,9 @@ window.Specs = {
 	"css-grid-2": {
 		"title": "Grid Layout Level 2",
 		"properties": {
-			"display": ["subgrid"]
+			"display": ["subgrid"],
+			"grid-template-columns": ["subgrid"],
+			"grid-template-rows": ["subgrid"]
 		}
 	},
 
