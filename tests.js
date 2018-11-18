@@ -146,28 +146,28 @@ window.Specs = {
 				":nth-child(even)", ":nth-child(odd)",
 				":nth-child(n)", ":nth-child(-n)", ":nth-child(0n)",
 				":nth-child(1)", ":nth-child(-1)", ":nth-child(0)",
-				":nth-child(n+1)",":nth-child(3n+1)", ":nth-child(3n + 1)",
+				":nth-child(n+1)", ":nth-child(3n+1)", ":nth-child(3n + 1)",
 				":nth-child(-n+1)", ":nth-child(-n-1)", ":nth-child(3n-1)"
 			],
 			":nth-last-child": [
 				":nth-last-child(even)", ":nth-last-child(odd)",
 				":nth-last-child(n)", ":nth-last-child(-n)", ":nth-last-child(0n)",
 				":nth-last-child(1)", ":nth-last-child(-1)", ":nth-last-child(0)",
-				":nth-last-child(n+1)",":nth-last-child(3n+1)", ":nth-last-child(3n + 1)",
+				":nth-last-child(n+1)", ":nth-last-child(3n+1)", ":nth-last-child(3n + 1)",
 				":nth-last-child(-n+1)", ":nth-last-child(-n-1)", ":nth-last-child(3n-1)"
 			],
 			":nth-of-type": [
 				":nth-of-type(even)", ":nth-of-type(odd)",
 				":nth-of-type(n)", ":nth-of-type(-n)", ":nth-of-type(0n)",
 				":nth-of-type(1)", ":nth-of-type(-1)", ":nth-of-type(0)",
-				":nth-of-type(n+1)",":nth-of-type(3n+1)", ":nth-of-type(3n + 1)",
+				":nth-of-type(n+1)", ":nth-of-type(3n+1)", ":nth-of-type(3n + 1)",
 				":nth-of-type(-n+1)", ":nth-of-type(-n-1)", ":nth-of-type(3n-1)"
 			],
 			":nth-last-of-type": [
 				":nth-last-of-type(even)", ":nth-last-of-type(odd)",
 				":nth-last-of-type(n)", ":nth-last-of-type(-n)", ":nth-last-of-type(0n)",
 				":nth-last-of-type(1)", ":nth-last-of-type(-1)", ":nth-last-of-type(0)",
-				":nth-last-of-type(n+1)",":nth-last-of-type(3n+1)", ":nth-last-of-type(3n + 1)",
+				":nth-last-of-type(n+1)", ":nth-last-of-type(3n+1)", ":nth-last-of-type(3n + 1)",
 				":nth-last-of-type(-n+1)", ":nth-last-of-type(-n-1)", ":nth-last-of-type(3n-1)"
 			],
 			":last-child": ":last-child",
@@ -193,12 +193,12 @@ window.Specs = {
 			":optional": ":optional",
 			":read-only": ":read-only",
 			":read-write": ":read-write",
-			":focus-visible" : ":focus-visible",
-			":focus-within" : ":focus-within",
-			":matches": [ ":matches(em, #foo)"],
-			":not" : [":not(em, #foo)"],
-			":has" : ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
-			":nth-child of" : [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"],
+			":focus-visible": ":focus-visible",
+			":focus-within": ":focus-within",
+			":matches": [":matches(em, #foo)"],
+			":not": [":not(em, #foo)"],
+			":has": ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
+			":nth-child of": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"],
 		}
 	},
 
@@ -269,12 +269,12 @@ window.Specs = {
 	},
 
 	"css-ui-4": {
-	"title": "Basic User Interface Level 4",
+		"title": "Basic User Interface Level 4",
 		"properties": {
 			"appearance": ["auto", "none"],
 			"caret": ["auto", "green", "bar", "green bar"],
 			"caret-shape": ["auto", "bar", "block", "underscore"],
-			"text-overflow": ["clip", "ellipsis", "fade", "fade(10px)","fade(10%)", "'foo'"].times(1, 2),
+			"text-overflow": ["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2),
 			"user-select": ["auto", "text", "none", "contain", "all"]
 		}
 	},
@@ -394,14 +394,14 @@ window.Specs = {
 	"css-text-decor-4": {
 		"title": "Text Decoration Level 4",
 		"properties": {
-			"text-decoration-skip": [ 
-				"none", "objects", "objects spaces", "objects leading-spaces", "objects trailing-spaces",	"objects leading-spaces trailing-spaces",
+			"text-decoration-skip": [
+				"none", "objects", "objects spaces", "objects leading-spaces", "objects trailing-spaces", "objects leading-spaces trailing-spaces",
 				"objects leading-spaces trailing-spaces edges", "objects leading-spaces trailing-spaces edges box-decoration", "objects edges",
 				"objects box-decoration", "spaces", "spaces edges", "spaces edges box-decoration", "spaces box-decoration", "leading-spaces",
-				"leading-spaces trailing-spaces edges", "leading-spaces trailing-spaces edges box-decoration", "edges", "edges box-decoration", 
+				"leading-spaces trailing-spaces edges", "leading-spaces trailing-spaces edges box-decoration", "edges", "edges box-decoration",
 				"box-decoration"
 			],
-			"text-decoration-skip-ink" : ["none", "auto"]
+			"text-decoration-skip-ink": ["none", "auto"]
 		}
 	},
 
@@ -505,10 +505,10 @@ window.Specs = {
 			"optional alpha": ["rgb(0% 20% 70% / 50%)", "rgb(0% 20% 70% / .5)", "rgb(0 64 185 / 50%)", "rgb(0 64 185 / .5)", "hsl(0 0% 0% / .5)"],
 			"Hex with alpha": ["#000F", "#000000FF"],
 			"rebeccapurple": "rebeccapurple",
-			"hwb()": ["hwb(0 0% 0%)","hwb(0 0% 0% / .5)"],
-			"lab()": ["lab(0 0 0)","lab(0 0 0 /.5)"],
-			"lch()": ["lch(0 0 0)","lch(0 0 0 / .5)"],
-			"gray()": ["gray(50)","gray(50 / .5)"],
+			"hwb()": ["hwb(0 0% 0%)", "hwb(0 0% 0% / .5)"],
+			"lab()": ["lab(0 0 0)", "lab(0 0 0 /.5)"],
+			"lch()": ["lch(0 0 0)", "lch(0 0 0 / .5)"],
+			"gray()": ["gray(50)", "gray(50 / .5)"],
 			"color()": ["color(.2 .4 .6)", "color(image-p3 .2. 4 .6)", "color(foo .2 .4 .6)", "color(.2 .4 .6 / .5)", "color(image-p3 .2 .4 .6  / .5)", "color(foo .2 .4 .6 / .5)"],
 			"device-cmyk()": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 		},
@@ -606,10 +606,10 @@ window.Specs = {
 			"display": ["flex", "inline-flex"],
 			"flex": ["none", "5 7 10%"],
 			"flex-basis": ["auto", "content", "1px"],
-			"flex-direction": ["row","row-reverse","column","column-reverse"],
+			"flex-direction": ["row", "row-reverse", "column", "column-reverse"],
 			"flex-flow": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"],
-			"flex-grow": ["0","5"],
-			"flex-shrink": ["1","10"],
+			"flex-grow": ["0", "5"],
+			"flex-shrink": ["1", "10"],
 			"flex-wrap": ["nowrap", "wrap", "wrap-reverse"],
 			"justify-content": ["flex-start", "flex-end", "space-between", "space-around"],
 			"min-height": ["auto"],
@@ -660,13 +660,13 @@ window.Specs = {
 			"align-content": ["normal", "baseline", "first baseline", "last baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start"],
 			"justify-self": ["auto", "normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "left", "right", "safe right"],
 			"justify-items": ["normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "left", "right", "safe right", "legacy", "legacy left", "legacy right", "legacy center"],
-			"justify-content": ["normal", "space-between", "space-around", "space-evenly", "stretch",  "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start", "left", "right", "safe right"],
-			"place-content" : ["normal", "baseline", "first baseline", "last baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start", "normal normal", "baseline normal", "first baseline normal", "space-between normal", "center normal", "unsafe start normal","normal stretch", "baseline stretch", "first baseline stretch", "space-between stretch", "center stretch", "unsafe start stretch", "normal safe right", "baseline safe right", "first baseline safe right", "space-between safe right", "center safe right", "unsafe start safe right"],
-			"place-items" : ["normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "normal normal", "stretch normal", "baseline normal", "first baseline normal", "self-start normal", "unsafe start normal", "normal stretch", "stretch stretch", "baseline stretch", "first baseline stretch", "self-start stretch", "unsafe start stretch", "normal last baseline", "stretch last baseline", "baseline last baseline", "first baseline last baseline", "self-start last baseline", "unsafe start last baseline", "normal legacy left", "stretch legacy left", "baseline legacy left", "first baseline legacy left", "self-start legacy left", "unsafe start legacy left"],
+			"justify-content": ["normal", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start", "left", "right", "safe right"],
+			"place-content": ["normal", "baseline", "first baseline", "last baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start", "normal normal", "baseline normal", "first baseline normal", "space-between normal", "center normal", "unsafe start normal", "normal stretch", "baseline stretch", "first baseline stretch", "space-between stretch", "center stretch", "unsafe start stretch", "normal safe right", "baseline safe right", "first baseline safe right", "space-between safe right", "center safe right", "unsafe start safe right"],
+			"place-items": ["normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "normal normal", "stretch normal", "baseline normal", "first baseline normal", "self-start normal", "unsafe start normal", "normal stretch", "stretch stretch", "baseline stretch", "first baseline stretch", "self-start stretch", "unsafe start stretch", "normal last baseline", "stretch last baseline", "baseline last baseline", "first baseline last baseline", "self-start last baseline", "unsafe start last baseline", "normal legacy left", "stretch legacy left", "baseline legacy left", "first baseline legacy left", "self-start legacy left", "unsafe start legacy left"],
 			"gap": ["0 0", "0 1em", "1em", "1em 1em"],
 			"column-gap": ["0", "1em"],
 			"row-gap": ["0", "1em"],
-			
+
 		}
 	},
 
@@ -732,7 +732,7 @@ window.Specs = {
 			"mask-border-slice": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"],
 			"mask-border-width": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"],
 			"mask-border-outset": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"],
-			"mask-border-repeat": ["stretch", "repeat", "round", "space"].times(1,2),
+			"mask-border-repeat": ["stretch", "repeat", "round", "space"].times(1, 2),
 			"mask-border": ["url(image.png)", "url(image.png) 10px", "url(image.png) space", "url(image.png) 1 fill", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px", "url(image.png) 1 fill 10px 2"],
 			"mask-type": ["luminance", "alpha"]
 		}
@@ -784,10 +784,10 @@ window.Specs = {
 		"title": "Filter Effects Level 1",
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
-			"flood-color" : ["black", "#FFF"],
-			"flood-opacity" : ["1", "0", "0.2", "20%"],
-			"color-interpolation-filters" : ["auto", "sRGB", "linearRGB"],
-			"lighting-color" : ["white", "#000"]
+			"flood-color": ["black", "#FFF"],
+			"flood-opacity": ["1", "0", "0.2", "20%"],
+			"color-interpolation-filters": ["auto", "sRGB", "linearRGB"],
+			"lighting-color": ["white", "#000"]
 		}
 	},
 
@@ -850,40 +850,40 @@ window.Specs = {
 		"title": "Ruby",
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
-			"ruby-position" : ["over", "under", "inter-character", "right", "left"],
-			"ruby-merge" : ["separate", "collapse", "auto"],
-			"ruby-align" : ["start", "center", "space-between", "space-around"]
+			"ruby-position": ["over", "under", "inter-character", "right", "left"],
+			"ruby-merge": ["separate", "collapse", "auto"],
+			"ruby-align": ["start", "center", "space-between", "space-around"]
 		}
 	},
 
 	"css-snappoints": {
 		"title": "Scroll Snap Points",
 		"properties": {
-			"scroll-margin" : ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
-			"scroll-margin-block" : ["10px", "10px 10px"],
-			"scroll-margin-block-end" : ["10px"],
-			"scroll-margin-block-start" : ["10px"],
-			"scroll-margin-bottom" : ["10px"],
-			"scroll-margin-inline" : ["10px", "10px 10px"],
-			"scroll-margin-inline-start" : ["10px"],
-			"scroll-margin-inline-end" : ["10px"],
-			"scroll-margin-left" : ["10px"],
-			"scroll-margin-right" : ["10px"],
-			"scroll-margin-top" : ["10px"],
-			"scroll-padding" : ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
-			"scroll-padding-block" : ["10px", "50%", "10px 50%", "50% 50%"],
-			"scroll-padding-block-end" : ["10px", "50%"],
-			"scroll-padding-block-start" : ["10px", "50%"],
-			"scroll-padding-bottom" : ["10px", "50%"],
-			"scroll-padding-inline" : ["10px", "50%", "10px 50%", "50% 50%"],
-			"scroll-padding-inline-end" : ["10px", "50%"],
-			"scroll-padding-inline-start" : ["10px", "50%"],
-			"scroll-padding-left" : ["10px", "50%"],
-			"scroll-padding-right" : ["10px", "50%"],
-			"scroll-padding-top" : ["10px", "50%"],
-			"scroll-snap-align" : ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"],
-			"scroll-snap-stop" : ["normal", "always"],
-			"scroll-snap-type" : ["none", "always"]
+			"scroll-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-margin-block": ["10px", "10px 10px"],
+			"scroll-margin-block-end": ["10px"],
+			"scroll-margin-block-start": ["10px"],
+			"scroll-margin-bottom": ["10px"],
+			"scroll-margin-inline": ["10px", "10px 10px"],
+			"scroll-margin-inline-start": ["10px"],
+			"scroll-margin-inline-end": ["10px"],
+			"scroll-margin-left": ["10px"],
+			"scroll-margin-right": ["10px"],
+			"scroll-margin-top": ["10px"],
+			"scroll-padding": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-padding-block": ["10px", "50%", "10px 50%", "50% 50%"],
+			"scroll-padding-block-end": ["10px", "50%"],
+			"scroll-padding-block-start": ["10px", "50%"],
+			"scroll-padding-bottom": ["10px", "50%"],
+			"scroll-padding-inline": ["10px", "50%", "10px 50%", "50% 50%"],
+			"scroll-padding-inline-end": ["10px", "50%"],
+			"scroll-padding-inline-start": ["10px", "50%"],
+			"scroll-padding-left": ["10px", "50%"],
+			"scroll-padding-right": ["10px", "50%"],
+			"scroll-padding-top": ["10px", "50%"],
+			"scroll-snap-align": ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"],
+			"scroll-snap-stop": ["normal", "always"],
+			"scroll-snap-type": ["none", "always"]
 		}
 	},
 
@@ -920,13 +920,13 @@ window.Specs = {
 			"padding-inline": ["10px", "10px 10px"],
 			"padding-inline-start": ["10px"],
 			"padding-inline-end": ["10px"],
-			"border-block" : ["1px", "2px dotted", "medium dashed green"],
-			"border-block-start" : ["1px", "2px dotted", "medium dashed green"],
+			"border-block": ["1px", "2px dotted", "medium dashed green"],
+			"border-block-start": ["1px", "2px dotted", "medium dashed green"],
 			"border-block-start-width": ["thin"],
 			"border-block-start-width": ["thin"],
 			"border-block-start-style": ["dotted"],
 			"border-block-start-color": ["navy"],
-			"border-block-end" : ["1px", "2px dotted", "medium dashed green"],
+			"border-block-end": ["1px", "2px dotted", "medium dashed green"],
 			"border-block-end-width": ["thin"],
 			"border-block-end-style": ["dotted"],
 			"border-block-end-color": ["navy"],
@@ -934,11 +934,11 @@ window.Specs = {
 			"border-block-style": ["dotted dashed"],
 			"border-block-color": ["navy blue"],
 			"border-inline": ["1px", "2px dotted", "medium dashed green"],
-			"border-inline-start" : ["1px", "2px dotted", "medium dashed green"],
+			"border-inline-start": ["1px", "2px dotted", "medium dashed green"],
 			"border-inline-start-width": ["thin"],
 			"border-inline-start-style": ["dotted"],
 			"border-inline-start-color": ["navy"],
-			"border-inline-end" : ["1px", "2px dotted", "medium dashed green"],
+			"border-inline-end": ["1px", "2px dotted", "medium dashed green"],
 			"border-inline-end-width": ["thin"],
 			"border-inline-end-style": ["dotted"],
 			"border-inline-end-color": ["navy"],
@@ -1004,7 +1004,7 @@ window.Specs = {
 				":nth-fragment(even)", ":nth-fragment(odd)",
 				":nth-fragment(n)", ":nth-fragment(-n)", ":nth-fragment(0n)",
 				":nth-fragment(1)", ":nth-fragment(-1)", ":nth-fragment(0)",
-				":nth-fragment(n+1)",":nth-fragment(3n+1)", ":nth-fragment(3n + 1)",
+				":nth-fragment(n+1)", ":nth-fragment(3n+1)", ":nth-fragment(3n + 1)",
 				":nth-fragment(-n+1)", ":nth-fragment(3n-1)"
 			]
 		}
@@ -1017,7 +1017,7 @@ window.Specs = {
 		}
 	},
 
-	"css-sizing-3" : {
+	"css-sizing-3": {
 		"title": "Intrinsic & Extrinsic Sizing",
 		"properties": {
 			"width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"],
@@ -1029,13 +1029,13 @@ window.Specs = {
 			"column-width": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 		}
 	},
-	
-	"overscroll-behavior" : {
+
+	"overscroll-behavior": {
 		"title": "Overscroll Behavior",
 		"properties": {
-			"overscroll-behavior" :	[ "contain", "none", "auto" ].times(1, 2),
-			"overscroll-behavior-x" : [ "contain", "none", "auto" ],
-			"overscroll-behavior-y" : [ "contain", "none", "auto" ]
+			"overscroll-behavior": ["contain", "none", "auto"].times(1, 2),
+			"overscroll-behavior-x": ["contain", "none", "auto"],
+			"overscroll-behavior-y": ["contain", "none", "auto"]
 		}
 	}
 };
