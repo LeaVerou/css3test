@@ -1037,5 +1037,13 @@ window.Specs = {
 			"overscroll-behavior-x": ["contain", "none", "auto"],
 			"overscroll-behavior-y": ["contain", "none", "auto"]
 		}
+	},
+
+	"css-scrollbars-1": {
+		"title": "Scrollbars Level 1",
+		"properties": {
+			"scrollbar-color": ["auto", "dark", "light", "red blue"],
+			"scrollbar-width": ["auto", "thin", "none", "12px"]
+		}
 	}
 };
