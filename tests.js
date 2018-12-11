@@ -59,7 +59,8 @@ window.Specs = {
 				"linear-gradient(white 50%, black)",
 				"linear-gradient(white 5px, black)",
 				"linear-gradient(white, #f06, black)",
-				"linear-gradient(currentColor, black)"
+				"linear-gradient(currentColor, black)",
+				"linear-gradient(red -50px, white calc(-25px + 50%), blue 100%)"
 			],
 			"radial-gradient": [
 				"radial-gradient(white, black)",
@@ -102,6 +103,12 @@ window.Specs = {
 				"cursor",
 				"content"
 			],
+			"linear-gradient": [
+				"linear-gradient(45deg, #f06 25%, yellow 25% 50%, #f06 50% 75%, yellow 75%)"
+			],
+			"radial-gradient": [
+				"radial-gradient(center, red 0% 25%, blue 25% 75%, red 75% 100%)"
+			],
 			"conic-gradient": [
 				"conic-gradient(white, black)",
 				"conic-gradient(from 5deg, white, black)",
@@ -109,9 +116,13 @@ window.Specs = {
 				"conic-gradient(white 50%, black)",
 				"conic-gradient(white 5deg, black)",
 				"conic-gradient(white, #f06, black)",
-				"conic-gradient(currentColor, black)"
+				"conic-gradient(currentColor, black)",
+				"conic-gradient(black 25%, white 0deg 50%, black 0deg 75%, white 0deg);"
 			],
-			"repeating-conic-gradient": "repeating-conic-gradient(white, black)",
+			"repeating-conic-gradient": [
+				"repeating-conic-gradient(white, black)",
+				"repeating-conic-gradient(hsla(0,0%,100%,.2) 0deg 15deg, hsla(0,0%,100%,0) 0deg 30deg) #0ac"
+			],
 			"image()": [
 				"image('sprites.png#xywh=10,30,60,20')",
 				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
