@@ -117,7 +117,7 @@ window.Specs = {
 				"conic-gradient(white 5deg, black)",
 				"conic-gradient(white, #f06, black)",
 				"conic-gradient(currentColor, black)",
-				"conic-gradient(black 25%, white 0deg 50%, black 0deg 75%, white 0deg);"
+				"conic-gradient(black 25%, white 0deg 50%, black 0deg 75%, white 0deg)"
 			],
 			"repeating-conic-gradient": [
 				"repeating-conic-gradient(white, black)",
