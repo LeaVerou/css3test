@@ -401,7 +401,7 @@ window.Specs = {
 	"css-text-3": {
 		"title": "Text Level 3",
 		"properties": {
-			"text-transform": ["full-width"],
+			"text-transform": ["full-width", "full-size-kana"],
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict"],
 			"word-break": ["normal", "keep-all", "break-all"],
