@@ -284,7 +284,7 @@ window.Specs = {
 		"title": "Media Queries Level 5",
 		"Media queries": {
 			"prefers-reduced-motion": ["(prefers-reduced-motion: no-preference)", "not (prefers-reduced-motion: reduce)"],
-			"prefers-reduced-transparency": ["(prefers-reduced-transparency: no-preference)", "not (prefers-reduced-motion: reduce)"],
+			"prefers-reduced-transparency": ["(prefers-reduced-transparency: no-preference)", "not (prefers-reduced-transparency: reduce)"],
 			"prefers-contrast": ["(prefers-contrast: no-preference)", "not (prefers-contrast: high)", "not (prefers-contrast: low)"],
 			"prefers-color-scheme": ["(prefers-color-scheme: no-preference)", "not (prefers-color-scheme: light)", "not (prefers-color-scheme: dark)"],
 			"scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
