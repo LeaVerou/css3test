@@ -268,29 +268,29 @@ window.Specs = {
 	"mediaqueries-4": {
 		"title": "Media Queries Level 4",
 		"Media queries": {
-			"resolution": ["(resolution: infinite)"],
-			"hover": ["(hover)", "(hover: none)", "(hover: hover)"],
-			"any-hover": ["(any-hover)", "(any-hover: none)", "(any-hover: hover)"],
-			"pointer": ["(pointer)", "(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
-			"any-pointer": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
+			"resolution": ["not (resolution: infinite)"],
+			"hover": ["(hover)", "not (hover: none)", "(hover: hover)"],
+			"any-hover": ["(any-hover)", "not (any-hover: none)", "(any-hover: hover)"],
+			"pointer": ["(pointer)", "not (pointer: none)", "not (pointer: coarse)", "(pointer: fine)"],
+			"any-pointer": ["(any-pointer)", "not (any-pointer: none)", "not (any-pointer: coarse)", "(any-pointer: fine)"],
 			"update": ["(update)", "(update: none)", "(update: slow)", "(update: fast)"],
 			"overflow-block": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"],
 			"overflow-inline": ["(overflow-inline: none)", "(overflow-inline: scroll)"],
-			"color-gamut": ["(color-gamut: srgb)", "(color-gamut: p3)", "(color-gamut: rec2020)"]
+			"color-gamut": ["(color-gamut)", "(color-gamut: srgb)", "not (color-gamut: p3)", "not (color-gamut: rec2020)"]
 		}
 	},
 
 	"mediaqueries-5": {
 		"title": "Media Queries Level 5",
 		"Media queries": {
-			"prefers-reduced-motion": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"],
-			"prefers-reduced-transparency": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-motion: reduce)"],
-			"prefers-contrast": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)"],
-			"prefers-color-scheme": ["(prefers-color-scheme: no-preference)", "(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"],
+			"prefers-reduced-motion": ["(prefers-reduced-motion: no-preference)", "not (prefers-reduced-motion: reduce)"],
+			"prefers-reduced-transparency": ["(prefers-reduced-transparency: no-preference)", "not (prefers-reduced-motion: reduce)"],
+			"prefers-contrast": ["(prefers-contrast: no-preference)", "not (prefers-contrast: high)", "not (prefers-contrast: low)"],
+			"prefers-color-scheme": ["(prefers-color-scheme: no-preference)", "not (prefers-color-scheme: light)", "not (prefers-color-scheme: dark)"],
 			"scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
 			"light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
-			"environment-blending": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"],
-			"inverted-colors": ["(inverted-colors: none)", "(light-level: inverted)"],
+			"environment-blending": ["(environment-blending: opaque)", "not (environment-blending: additive)", "not (environment-blending: subtractive)"],
+			"inverted-colors": ["(inverted-colors: none)", "not (light-level: inverted)"],
 		}
 	},
 
