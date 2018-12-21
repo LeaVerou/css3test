@@ -223,7 +223,7 @@ window.Specs = {
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
 	"css3-mediaqueries": {
-		"title": "Media Queries",
+		"title": "Media Queries Level 3",
 		"Media queries": {
 			"negation": ["not print", "not all and (width:1px)"],
 			"width": ["(width)", "(min-width:1px)", "(max-width:1000000px)"],
@@ -262,6 +262,35 @@ window.Specs = {
 			],
 			"scan": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"],
 			"grid": ["all, (grid)", "(grid: 0), (grid: 1)"]
+		}
+	},
+
+	"mediaqueries-4": {
+		"title": "Media Queries Level 4",
+		"Media queries": {
+			"resolution": ["(resolution: infinite)"],
+			"hover": ["(hover)", "(hover: none)", "(hover: hover)"],
+			"any-hover": ["(any-hover)", "(any-hover: none)", "(any-hover: hover)"],
+			"pointer": ["(pointer)", "(pointer: none)", "(pointer: coarse)", "(pointer: fine)"],
+			"any-pointer": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"],
+			"update": ["(update)", "(update: none)", "(update: slow)", "(update: fast)"],
+			"overflow-block": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"],
+			"overflow-inline": ["(overflow-inline: none)", "(overflow-inline: scroll)"],
+			"color-gamut": ["(color-gamut: srgb)", "(color-gamut: p3)", "(color-gamut: rec2020)"]
+		}
+	},
+
+	"mediaqueries-5": {
+		"title": "Media Queries Level 5",
+		"Media queries": {
+			"prefers-reduced-motion": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"],
+			"prefers-reduced-transparency": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-motion: reduce)"],
+			"prefers-contrast": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)"],
+			"prefers-color-scheme": ["(prefers-color-scheme: no-preference)", "(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"],
+			"scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
+			"light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
+			"environment-blending": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"],
+			"inverted-colors": ["(inverted-colors: none)", "(light-level: inverted)"],
 		}
 	},
 
