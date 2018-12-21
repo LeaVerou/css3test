@@ -121,7 +121,7 @@ window.Specs = {
 			],
 			"repeating-conic-gradient": [
 				"repeating-conic-gradient(white, black)",
-				"repeating-conic-gradient(hsla(0,0%,100%,.2) 0deg 15deg, hsla(0,0%,100%,0) 0deg 30deg) #0ac"
+				"repeating-conic-gradient(hsla(0, 0%, 100%, .2) 0deg 15deg, hsla(0, 0%, 100%, 0) 0deg 30deg)"
 			],
 			"image()": [
 				"image('sprites.png#xywh=10,30,60,20')",
