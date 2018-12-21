@@ -341,6 +341,13 @@ window.Specs = {
 		}
 	},
 
+	"css-easing-1": {
+		"title": "Easing Functions",
+		"properties": {
+			"transition-timing-function": ["steps(2, jump-start)", "steps(2, jump-end)", "steps(1, jump-both)", "steps(2, jump-none)"]
+		}
+	},
+
 	"css3-animations": {
 		"title": "Animations",
 		"properties": {
