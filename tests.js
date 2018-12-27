@@ -614,6 +614,21 @@ window.Specs = {
 		}
 	},
 
+	"css-env-1": {
+		"title": "Environment Variables Level 1",
+		"values": {
+			"properties": [
+				"width",
+				"padding"
+			],
+			"env()": [
+				"env(safe-area-inset-top)", "env(safe-area-inset-top, 12px)",
+				"env(safe-area-inset-right)", "env(safe-area-inset-right, 12px)",
+				"env(safe-area-inset-bottom)", "env(safe-area-inset-bottom, 12px)",
+				"env(safe-area-inset-left)", "env(safe-area-inset-left, 12px)"]
+		}
+	},
+
 	"css3-regions": {
 		"title": "Regions",
 		"properties": {
