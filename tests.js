@@ -699,7 +699,6 @@ window.Specs = {
 	"css-grid-2": {
 		"title": "Grid Layout Level 2",
 		"properties": {
-			"display": ["subgrid"],
 			"grid-template-columns": ["subgrid"],
 			"grid-template-rows": ["subgrid"]
 		}
