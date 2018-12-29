@@ -745,31 +745,6 @@ window.Specs = {
 		}
 	},
 
-	"css3-speech": {
-		"title": "Speech",
-		"properties": {
-			"voice-volume": ["silent", "x-soft", "soft", "medium", "loud", "x-loud", "-6dB", "0", "6db"],
-			"voice-balance": ["left", "center", "right", "leftwards", "rightwards", "-100", "0", "100"],
-			"speak": ["auto"],
-			"speak-as": ["normal", "spell-out", "digits", "literal-punctuation", "no-punctuation"],
-			"pause-before": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
-			"pause-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
-			"pause": ["none", "x-weak", "weak", "medium", "strong", "x-strong"],
-			"rest-before": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
-			"rest-after": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
-			"rest": ["none", "x-weak", "weak", "medium", "strong", "x-strong", "+3s", "250ms"],
-			"cue-before": ["-6dB", "0", "6db"],
-			"cue-after": ["-6dB", "0", "6db"],
-			"cue": ["-6dB", "0", "6db"],
-			"voice-family": ["preserve"],
-			"voice-rate": ["normal", "x-slow", "slow", "medium", "fast", "x-fast", "0", "100%"],
-			"voice-pitch": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", ".2kHz", "-3.5st", "3.5st"],
-			"voice-range": ["absolute", "x-low", "low", "medium", "high", "x-high", "0", "100%", "-100%", "250Hz", "+250Hz", "-20Hz", ".2kHz", "-3.5st", "3.5st"],
-			"voice-stress": ["normal", "strong", "moderate", "none", "reduced "],
-			"voice-duration": ["auto", "+3s", "250ms"]
-		}
-	},
-
 	"css3-flexbox": {
 		"title": "Flexible Box Layout",
 		"links": {
