@@ -35,6 +35,9 @@ var devLinkFormat = function (params) {
 		case "fxtf":
 			// FX Task Force Editor Drafts
 			return 'https://drafts.fxtf.org/' + params.dev;
+		case "houdini":
+			// CSS-TAG Houdini Editor Drafts
+			return 'https://drafts.css-houdini.org/' + params.dev;
 		case "github":
 			return 'https://w3c.github.io/' + params.dev;
 		case "whatwg":

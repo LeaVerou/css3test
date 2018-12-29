@@ -1313,5 +1313,26 @@ window.Specs = {
 			"scrollbar-color": ["auto", "dark", "light", "red blue"],
 			"scrollbar-width": ["auto", "thin", "none", "12px"]
 		}
+	},
+
+	"css-paint-api-1": {
+		"title": "Painting API Level 1",
+		"links": {
+			"tr": "css-paint-api-1",
+			"dev": "css-paint-api-1",
+			"devtype": "houdini"
+		},
+		"values": {
+			"properties": [
+				"background-image",
+				"list-style-image",
+				"border-image",
+				"cursor",
+				"content"
+			],
+			"paint()": [
+				"paint(company-logo)", "paint(chat-bubble, blue)", "paint(failing-argument-syntax, 1px, 2px)", "paint(arc, purple, 0.4turn, 0.8turn, 40px, 15px)"
+			]
+		}
 	}
 };
