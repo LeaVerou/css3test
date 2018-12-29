@@ -1334,5 +1334,17 @@ window.Specs = {
 				"paint(company-logo)", "paint(chat-bubble, blue)", "paint(failing-argument-syntax, 1px, 2px)", "paint(arc, purple, 0.4turn, 0.8turn, 40px, 15px)"
 			]
 		}
+	},
+
+	"css-layout-api-1": {
+		"title": "Layout API Level 1",
+		"links": {
+			"tr": "css-layout-api-1",
+			"dev": "css-layout-api-1",
+			"devtype": "houdini"
+		},
+		"properties": {
+			"display": "layout(foo)"
+		}
 	}
 };
