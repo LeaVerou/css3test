@@ -3,6 +3,10 @@ var Score = function (parent) {
 	this.parent = parent || null;
 };
 
+var ele = function (name) {
+	return document.getElementById(name);
+}
+
 Score.prototype = {
 	update: function (data) {
 		if (!data.total) { return; }
@@ -113,7 +117,7 @@ var Test = function (tests, spec, title) {
 		inside: h1
 	});
 
-	all.appendChild(this.section);
+	ele('all').appendChild(this.section);
 
 	// Add to list of tested specs
 	$.create({
@@ -127,7 +131,7 @@ var Test = function (tests, spec, title) {
 				contents: title
 			}
 		],
-		inside: specsTested
+		inside: ele('specsTested')
 	});
 }
 
@@ -346,10 +350,10 @@ onload = function () {
 			timeBefore = +new Date;
 
 			// Output current score
-			score.textContent = mainScore + '';
-			passedTests.textContent = ~~mainScore.passedTests;
-			totalTests.textContent = mainScore.totalTests;
-			total.textContent = mainScore.total;
+			ele('score').textContent = mainScore + '';
+			ele('passedTests').textContent = ~~mainScore.passedTests;
+			ele('totalTests').textContent = mainScore.totalTests;
+			ele('total').textContent = mainScore.total;
 
 			// Schedule next test
 			setTimeout(arguments.callee, 50)
@@ -358,7 +362,7 @@ onload = function () {
 			// Done!
 
 			// Display time taken
-			timeTaken.textContent = +new Date - timeBefore + 'ms';
+			ele('timeTaken').textContent = +new Date - timeBefore + 'ms';
 
 			// Send to Browserscope
 			var testKey = 'agt1YS1wcm9maWxlcnINCxIEVGVzdBidzawNDA';
