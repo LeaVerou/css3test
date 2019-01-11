@@ -1346,5 +1346,16 @@ window.Specs = {
 		"properties": {
 			"display": "layout(foo)"
 		}
+	},
+
+	"css-shadow-parts": {
+		"title": "Shadow Parts",
+		"links": {
+			"tr": "css-shadow-parts-1",
+			"dev": "css-shadow-parts"
+		},
+		"selectors": {
+			"::part": ["::part(label)"]
+		}
 	}
 };
