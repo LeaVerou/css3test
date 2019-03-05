@@ -305,8 +305,8 @@ window.Specs = {
 			"pointer": ["(pointer)", "not (pointer: none)", "not (pointer: coarse)", "(pointer: fine)"],
 			"any-pointer": ["(any-pointer)", "not (any-pointer: none)", "not (any-pointer: coarse)", "(any-pointer: fine)"],
 			"update": ["(update)", "(update: none)", "(update: slow)", "(update: fast)"],
-			"overflow-block": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"],
-			"overflow-inline": ["(overflow-inline: none)", "(overflow-inline: scroll)"],
+			"overflow-block": ["not (overflow-block: none)", "(overflow-block: scroll)", "not (overflow-block: optional-paged)", "not (overflow-block: paged)"],
+			"overflow-inline": ["not (overflow-inline: none)", "(overflow-inline: scroll)"],
 			"color-gamut": ["(color-gamut)", "(color-gamut: srgb)", "not (color-gamut: p3)", "not (color-gamut: rec2020)"]
 		}
 	},
@@ -320,7 +320,7 @@ window.Specs = {
 			"prefers-reduced-motion": ["(prefers-reduced-motion: no-preference)", "not (prefers-reduced-motion: reduce)"],
 			"prefers-reduced-transparency": ["(prefers-reduced-transparency: no-preference)", "not (prefers-reduced-transparency: reduce)"],
 			"prefers-contrast": ["(prefers-contrast: no-preference)", "not (prefers-contrast: high)", "not (prefers-contrast: low)"],
-			"prefers-color-scheme": ["(prefers-color-scheme: no-preference)", "not (prefers-color-scheme: light)", "not (prefers-color-scheme: dark)"],
+			"prefers-color-scheme": ["not (prefers-color-scheme: no-preference)", "(prefers-color-scheme: light)", "not (prefers-color-scheme: dark)"],
 			"scripting": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"],
 			"light-level": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"],
 			"environment-blending": ["(environment-blending: opaque)", "not (environment-blending: additive)", "not (environment-blending: subtractive)"],
