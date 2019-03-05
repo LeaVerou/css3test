@@ -683,8 +683,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-values": {
-		"title": "Values and Units",
+	"css-values-3": {
+		"title": "Values and Units Level 3",
 		"links": {
 			"tr": "css-values-3",
 			"dev": "css-values-3"
@@ -703,12 +703,29 @@ window.Specs = {
 			"q": "5q",
 			"attr()": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"],
 			"calc()": ["calc(1px + 2px)", "calc(5px*2)", "calc(5px/2)", "calc(100%/3 - 2*1em - 2*1px)", "calc(attr(data-px)*2)", "calc(5px - 10px)", "calc(1vw - 1px)", "calc(calc(100%))"],
-			"toggle()": "toggle(1px, 2px)"
 		},
 		"properties": {
 			"transform": [
 				"rotate(calc(15deg + 30deg))"
 			]
+		}
+	},
+
+	"css-values-4": {
+		"title": "Values and Units Level 4",
+		"links": {
+			"tr": "css-values-4",
+			"dev": "css-values-4"
+		},
+		"values": {
+			"properties": [
+				"width",
+				"padding"
+			],
+			"toggle()": ["toggle(1px, 2px)"],
+			"min()": ["max(10 * (1vw + 1vh) / 2, 12px)"],
+			"max()": ["max(10 * (1vw + 1vh) / 2, 12px)"],
+			"clamp()": ["clamp(12px, 10 * (1vw + 1vh) / 2, 100px)"]
 		}
 	},
 
