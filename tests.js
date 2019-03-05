@@ -463,16 +463,17 @@ window.Specs = {
 			"dev": "css-text-3"
 		},
 		"properties": {
-			"text-transform": ["full-width", "full-size-kana"],
+			"text-transform": ["full-width", "full-size-kana", "capitalize full-width", "capitalize full-width full-size-kana"],
 			"tab-size": ["4", "1em"],
-			"line-break": ["auto", "loose", "normal", "strict"],
+			"line-break": ["auto", "loose", "normal", "strict", "anywhere"],
 			"word-break": ["normal", "keep-all", "break-all"],
 			"hyphens": ["auto", "manual", "none"],
 			"overflow-wrap": ["normal", "break-word"],
 			"word-wrap": ["normal", "break-word"],
-			"text-align": ["start", "end", "match-parent", "start end"],
-			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify"],
-			"text-justify": ["auto", "none", "inter-word", "distribute"],
+			"text-align": ["start", "end", "match-parent", "justify-all"],
+			"text-align-all": ["start", "end", "left", "right", "center", "justify", "match-parent"],
+			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify", "match-parent"],
+			"text-justify": ["auto", "none", "inter-word", "inter-character"],
 			"word-spacing": ["50%"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
 			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
