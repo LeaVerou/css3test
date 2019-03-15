@@ -1146,6 +1146,16 @@ window.Specs = {
 		}
 	},
 
+	"css-scroll-anchoring": {
+		"title": "Scroll Anchoring",
+		"links": {
+			"dev": "css-scroll-anchoring"
+		},
+		"properties": {
+			"overflow-anchor": ["none", "auto"]
+		}
+	},
+
 	"css-logical-1": {
 		"title": "Logical Properties",
 		"links": {
