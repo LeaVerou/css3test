@@ -149,12 +149,20 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 
 		mq: function (mq) {
 			if (window.matchMedia) {
-				return matchMedia(mq).media !== 'invalid';
+				return matchMedia(mq).media !== 'invalid'
+					? true
+					: matchMedia('not ' + mq).media !== 'invalid';
 			}
 			else {
 				style.textContent = '@media ' + mq + '{ foo {} }';
 
-				return style.sheet.cssRules.length > 0 ? mq : false;
+				if (style.sheet.cssRules.length > 0) {
+					return true
+				} else {
+					style.textContent = '@media not ' + mq + '{ foo {} }';
+
+					return style.sheet.cssRules.length > 0 ? mq : false;
+				};
 			}
 		}
 	};

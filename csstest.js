@@ -240,8 +240,13 @@ Test.groups = {
 
 	'Media queries': function (test) {
 		var matches = matchMedia(test);
-
-		return matches.media !== 'invalid' && matches.matches;
+		if (matches.media !== 'invalid' && matches.matches) {
+			return true;
+		}
+		else {
+			var matches = matchMedia('not ' + test);
+			return matches.media !== 'invalid' && matches.matches
+		}
 	}
 };
 
