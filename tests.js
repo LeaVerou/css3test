@@ -270,6 +270,20 @@ window.Specs = {
 		}
 	},
 
+	"css-scoping": {
+		"title": "Scoping Level 1",
+		"links": {
+			"tr": "css-scoping",
+			"dev": "css-scoping"
+		},
+		"selectors": {
+			":host": ":host",
+			":host()": [":host(*)", ":host(.foo)"],
+			":host-context()": [":host-context(*)", ":host-context(.foo)"],
+			"::slotted()": ["::slotted(*)", "::slotted(.foo)"]
+		}
+	},
+
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
