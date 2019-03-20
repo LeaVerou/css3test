@@ -270,6 +270,22 @@ window.Specs = {
 		}
 	},
 
+	"css-pseudo": {
+		"title": "Pseudo-Elements Level 4",
+		"links": {
+			"tr": "css-pseudo",
+			"dev": "css-pseudo-4"
+		},
+		"selectors": {
+			"::selection": ["::selection"],
+			"::inactive-selection": ["::inactive-selection"],
+			"::spelling-error": ["::spelling-error"],
+			"::grammar-error": ["::grammar-error"],
+			"::marker": ["::markerr"],
+			"::placeholder": ["::placeholder"]
+		}
+	},
+
 	"css-scoping": {
 		"title": "Scoping Level 1",
 		"links": {
