@@ -588,13 +588,16 @@ window.Specs = {
 	},
 
 	"css3-fonts": {
-		"title": "Fonts",
+		"title": "Fonts Level 3",
 		"links": {
 			"tr": "css-fonts-3",
 			"dev": "css-fonts"
 		},
 		"properties": {
-			"font-stretch": ["normal", "ultra-condensed", "extra-condensed", "condensed", "semi-condensed", "semi-expanded", "expanded", "extra-expanded", "ultra-expanded"],
+			"font-stretch": [
+				"normal", "ultra-condensed", "extra-condensed", "condensed", "semi-condensed", "semi-expanded",
+				"expanded", "extra-expanded", "ultra-expanded"
+			],
 			"font-size-adjust": ["none", ".5"],
 			"font-synthesis": ["none", "weight", "style", "weight style", "style weight"],
 			"font-kerning": ["auto", "normal", "none"],
@@ -607,7 +610,9 @@ window.Specs = {
 				"contextual", "no-contextual",
 				"common-ligatures discretionary-ligatures historical-ligatures contextual"
 			],
-			"font-variant-caps": ["normal", "small-caps", "all-small-caps", "petite-caps", "all-petite-caps", "titling-caps", "unicase"],
+			"font-variant-caps": [
+				"normal", "small-caps", "all-small-caps", "petite-caps", "all-petite-caps", "titling-caps", "unicase"
+			],
 			"font-variant-numeric": [
 				"normal",
 				"lining-nums", "oldstyle-nums",
@@ -629,16 +634,39 @@ window.Specs = {
 				"full-width", "proportional-width",
 				"ruby", "simplified full-width ruby"
 			],
-			"font-variant": ["none", "sub lining-nums contextual ruby"],
+
 			"font-feature-settings": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"],
-			"font-language-override": ["normal", "'SRB'"]
 		},
 		"descriptors": {
 			"unicode-range": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
 		},
 		"@rules": {
-			"@font-face": "@font-face",
-			"@font-feature-values": "@font-feature-values Jupiter Sans"
+			"@font-face": "@font-face"
+		}
+	},
+
+	"css4-fonts": {
+		"title": "Fonts Level 4",
+		"links": {
+			"tr": "css-fonts-4",
+			"dev": "css-fonts-4"
+		},
+		"properties": {
+			"font-variant": [
+				"none", "normal", "all-petite-caps", "historical-forms", "super", "sub lining-nums contextual ruby",
+			],
+			"font-feature-settings": ["normal", "'swsh' 2"],
+			"font-language-override": ["normal", "'SRB'"],
+			"font-weight": ["1", "90", "750", "1000"],
+			"font-min-size": ["12pt", "small", "smaller", "80%", "0"],
+			"font-max-size": ["100pt", "xx-large", "larger", "120%", "infinity"],
+			"font-style": ["oblique 15deg", "oblique -15deg", "oblique 0deg"],
+			"font-optical-sizing": ["none", "auto"],
+			"font-palette": ["normal", "light", "dark"]
+		},
+		"@rules": {
+			"@font-feature-values": "@font-feature-values Jupiter Sans",
+			"@font-palette-values": "@font-palette-values Augusta"
 		}
 	},
 
