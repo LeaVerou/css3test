@@ -510,15 +510,18 @@ window.Specs = {
 			"line-break": ["auto", "loose", "normal", "strict", "anywhere"],
 			"word-break": ["normal", "keep-all", "break-all"],
 			"hyphens": ["auto", "manual", "none"],
-			"overflow-wrap": ["normal", "break-word"],
-			"word-wrap": ["normal", "break-word"],
-			"text-align": ["start", "end", "match-parent", "justify-all"],
+			"overflow-wrap": ["normal", "break-word", "anywhere"],
+			"word-wrap": ["normal", "break-word", "anywhere"],
+			"text-align": ["start", "end", "left", "right", "center", "justify", "match-parent", "justify-all"],
 			"text-align-all": ["start", "end", "left", "right", "center", "justify", "match-parent"],
 			"text-align-last": ["auto", "start", "end", "left", "right", "center", "justify", "match-parent"],
 			"text-justify": ["auto", "none", "inter-word", "inter-character"],
 			"word-spacing": ["50%"],
 			"text-indent": ["1em hanging", "1em each-line", "1em hanging each-line"],
-			"hanging-punctuation": ["none", "first", "last", "force-end", "allow-end", "first last"]
+			"hanging-punctuation": [
+				"none", "first", "last", "force-end", "allow-end", "first last", "first force-end",
+				"first force-end last", "first allow-end last"
+			]
 		}
 	},
 
@@ -529,6 +532,15 @@ window.Specs = {
 			"dev": "css-text-4"
 		},
 		"properties": {
+			"text-space-collapse": ["collapse", "discard", "preserve", "preserve-breaks", "preserve-spaces"],
+			"text-space-trim": [
+				"none", "trim-inner", " discard-before", "discard-after",
+				"trim-inner discard-before", "trim-inner discard-before discard-after"
+			],
+			"text-wrap": ["wrap", "nowrap", "balance "],
+			"wrap-before": ["auto", "avoid", "avoid-line", "avoid-flex", "line", "flex"],
+			"wrap-after": ["auto", "avoid", "avoid-line", "avoid-flex", "line", "flex"],
+			"wrap-inside": ["auto", "avoid"],
 			"hyphenate-character": ["auto", "'\2010'"],
 			"hyphenate-limit-zone": ["1%", "1em"],
 			"hyphenate-limit-chars": ["auto", "5", "auto 3", "5 4 3"],
