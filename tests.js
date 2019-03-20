@@ -587,6 +587,19 @@ window.Specs = {
 		}
 	},
 
+	"css-line-grid-1": {
+		"title": "Line Grid Level 1",
+		"links": {
+			"tr": "css-line-grid-1",
+			"dev": "css-line-grid-1"
+		},
+		"properties": {
+			"box-snap": ["none", "block-start", "block-end", "center", "baseline", "last-baseline"],
+			"line-grid": ["match-parent", "create"],
+			"line-snap": ["none", "baseline", "contain"]
+		}
+	},
+
 	"css3-fonts": {
 		"title": "Fonts Level 3",
 		"links": {
