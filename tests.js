@@ -1516,5 +1516,20 @@ window.Specs = {
 		"selectors": {
 			"::part": ["::part(label)"]
 		}
+	},
+
+	"css-variables": {
+		"title": "Custom Properties for Cascading Variables",
+		"links": {
+			"tr": "css-variables",
+			"dev": "css-variables-1"
+		},
+		"instruction": {
+			"--*": ["--foo: 2px"],
+			"var(--*)": [
+				"width: var(--foo)", "width: var(--FOO)", "width: var(--foo, 4px)",
+				"color: rgba(255, 255, 255, var(--foo, .2) )"
+			]
+		}
 	}
 };

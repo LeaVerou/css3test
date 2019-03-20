@@ -164,7 +164,22 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 					return style.sheet.cssRules.length > 0 ? mq : false;
 				};
 			}
-		}
+		},
+
+		variable: function (name, value) {
+			var el = document.createElement('span');
+			inline.setProperty(name, value);
+			inline.setProperty('width', 'var(' + name + ')');
+			var styles = getComputedStyle(dummy);
+			return styles.width === value;
+		},
+
+		instruction: function (intruction) {
+			var val = intruction.match(/\s*([^:]+)\s*:\s*(.+)\s*/);
+			return !val[1].match(/--.*/)
+				? Supports.value(val[1], val[2])
+				: Supports.variable(val[1], val[2])
+		},
 	};
 
 	/**
