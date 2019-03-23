@@ -167,14 +167,13 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 		},
 
 		variable: function (name, value) {
-			var el = document.createElement('span');
 			inline.setProperty(name, value);
-			inline.setProperty('width', 'var(' + name + ')');
-			var styles = getComputedStyle(dummy);
-			return styles.width === value;
+			inline.setProperty('margin-right', 'var(' + name + ')');
+			var styles = window.getComputedStyle(dummy);
+			return styles.marginRight === value;
 		},
 
-		instruction: function (intruction) {
+		declaration: function (intruction) {
 			var val = intruction.match(/\s*([^:]+)\s*:\s*(.+)\s*/);
 			return !val[1].match(/--.*/)
 				? Supports.value(val[1], val[2])

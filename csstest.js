@@ -238,8 +238,8 @@ Test.groups = {
 		return Supports.selector(test);
 	},
 
-	'instruction': function (test) {
-		return Supports.instruction(test);
+	'declaration': function (test) {
+		return Supports.declaration(test);
 	},
 
 	'@rules': function (test) {

@@ -1524,7 +1524,7 @@ window.Specs = {
 			"tr": "css-variables",
 			"dev": "css-variables-1"
 		},
-		"instruction": {
+		"declaration": {
 			"--*": ["--foo: 2px"],
 			"var(--*)": [
 				"width: var(--foo)", "width: var(--FOO)", "width: var(--foo, 4px)",
