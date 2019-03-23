@@ -484,7 +484,7 @@ window.Specs = {
 	},
 
 	"css3-transforms": {
-		"title": "Transforms",
+		"title": "Transforms Level 1",
 		"links": {
 			"tr": "css-transforms-1",
 			"dev": "css-transforms"
@@ -511,6 +511,19 @@ window.Specs = {
 			"perspective": ["none", "600px"],
 			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%"],
 			"backface-visibility": ["visible", "hidden"],
+		}
+	},
+
+	"css-transforms-2": {
+		"title": "Transforms Level 2",
+		"links": {
+			"dev": "css-transforms-2"
+		},
+		"properties": {
+			"translate": ["none", "50%", "50% 50%", "50% 50% 10px"],
+			"scale": ["none"].concat(["2"].times(1, 3)),
+			"rotate": ["none"].concat(["", "x", "y", "z", "-1 0 2"].and(["45deg"])).concat(["45deg"].and(["x", "y", "z", "-1 0 2"])),
+			"transform-style": ["auto", "flat", "preserve-3d"],
 		}
 	},
 
