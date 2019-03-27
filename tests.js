@@ -280,7 +280,7 @@ window.Specs = {
 			"::inactive-selection": ["::inactive-selection"],
 			"::spelling-error": ["::spelling-error"],
 			"::grammar-error": ["::grammar-error"],
-			"::marker": ["::markerr"],
+			"::marker": ["::marker"],
 			"::placeholder": ["::placeholder"]
 		}
 	},
