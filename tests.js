@@ -242,7 +242,7 @@ window.Specs = {
 			":lang()": [":lang(zh, \"*-hant\")"],
 			":matches()": [":matches(em, #foo)"],
 			":not()": [":not(em, #foo)"],
-			":where()": [":not(em, #foo)", ":where(:not(:hover))"],
+			":where()": [":where(em, #foo)", ":where(:not(:hover))"],
 			":is()": [":is(em, #foo)", ":is(:not(:hover))"],
 			":has()": ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
 			":nth-child of": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"],
