@@ -240,7 +240,6 @@ window.Specs = {
 			":local-link": ":local-link",
 			":target-within": ":target-within",
 			":lang()": [":lang(zh, \"*-hant\")"],
-			":matches()": [":matches(em, #foo)"],
 			":not()": [":not(em, #foo)"],
 			":where()": [":not(em, #foo)", ":where(:not(:hover))"],
 			":is()": [":is(em, #foo)", ":is(:not(:hover))"],
