@@ -1249,7 +1249,7 @@ window.Specs = {
 			"dev": "css-scroll-snap-1"
 		},
 		"properties": {
-			"scroll-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "20px 3em 1in 5rem", "calc(2px)", "calc(3 * 25px)", "calc(3 * 25px) 5px 10em calc(1vw - 5px)"],
 			"scroll-margin-block": ["10px", "10px 10px"],
 			"scroll-margin-block-end": ["10px"],
 			"scroll-margin-block-start": ["10px"],
@@ -1260,7 +1260,7 @@ window.Specs = {
 			"scroll-margin-left": ["10px"],
 			"scroll-margin-right": ["10px"],
 			"scroll-margin-top": ["10px"],
-			"scroll-padding": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-padding": ["auto", "0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10px auto 30px auto", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3 * 25px)", "calc(3 * 25px) 5px 10% calc(10% - 5px)"],
 			"scroll-padding-block": ["10px", "50%", "10px 50%", "50% 50%"],
 			"scroll-padding-block-end": ["10px", "50%"],
 			"scroll-padding-block-start": ["10px", "50%"],
@@ -1273,7 +1273,10 @@ window.Specs = {
 			"scroll-padding-top": ["10px", "50%"],
 			"scroll-snap-align": ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"],
 			"scroll-snap-stop": ["normal", "always"],
-			"scroll-snap-type": ["none", "always"]
+			"scroll-snap-type": [
+				"none", "x mandatory", "y mandatory", "block mandatory", "inline mandatory", "both mandatory",
+				"x proximity", "y proximity", "block proximity", "inline proximity", "both proximity"
+			]
 		}
 	},
 
