@@ -1404,15 +1404,27 @@ window.Specs = {
 	},
 
 	"css-overflow-3": {
-		"title": "Overflow",
+		"title": "Overflow Level 3",
 		"links": {
 			"tr": "css-overflow-3",
 			"dev": "css-overflow-3"
 		},
 		"properties": {
+			"line-clamp": ["none", "1", "5 \"… (continued on next page)\""],
 			"max-lines": ["none", "1"],
 			"overflow-x": ["visible", "hidden", "clip", "scroll", "auto"],
-			"overflow-y": ["visible", "hidden", "clip", "scroll", "auto"]
+			"overflow-y": ["visible", "hidden", "clip", "scroll", "auto"],
+			"overflow-inline": ["visible", "hidden", "clip", "scroll", "auto"],
+			"overflow-block": ["visible", "hidden", "clip", "scroll", "auto"],
+			"continue": ["auto", "discard"],
+		},
+	},
+
+	"css-overflow-4": {
+		"title": "Overflow Level 4",
+		"links": {
+			"tr": "css-overflow-4",
+			"dev": "css-overflow-4"
 		},
 		"selectors": {
 			"::nth-fragment()": [
