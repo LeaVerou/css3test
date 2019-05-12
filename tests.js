@@ -513,6 +513,55 @@ window.Specs = {
 		}
 	},
 
+	"css-motion-1": {
+		"title": "Motion Path Module Level 1",
+		"links": {
+			"tr": "motion-1",
+			"dev": "motion-1",
+			"devtype": "fxtf"
+		},
+		"properties": {
+			"offset": [
+				"auto",
+				"center",
+				"200px 100px ray(45deg closest-side)",
+				"200px 100px ray(45deg closest-side) 10%",
+				"200px 100px ray(45deg closest-side) 10% reverse",
+				"200px 100px ray(45deg closest-side) 10% reverse 45deg",
+				"200px 100px ray(45deg closest-side) 10% 45deg reverse",
+				"200px 100px ray(45deg closest-side) 45deg 10%",
+				"200px 100px ray(45deg closest-side) 45deg reverse 10%",
+				"200px 100px ray(45deg closest-side) reverse 10%",
+				"auto / center",
+				"center / 200px 100px",
+				"200px 100px ray(45deg closest-side) / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% reverse / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% reverse 45deg / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% 45deg reverse / 200px 100px",
+				"200px 100px ray(45deg closest-side) 45deg 10% / 200px 100px",
+				"200px 100px ray(45deg closest-side) 45deg reverse 10% / 200px 100px",
+				"200px 100px ray(45deg closest-side) reverse 10% / 200px 100px",
+			],
+			"offset-path": [
+				"none",
+				"ray(45deg closest-side)", "ray(45deg farthest-side)", "ray(45deg closest-corner)",
+				"ray(45deg farthest-corner)", "ray(45deg sides)", "ray(0.25turn sides contain)",
+				"ray(100grad closest-side contain)", "ray(calc(180deg - 0.25turn) closest-side)",
+				"inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)",
+				"margin-box", "border-box", "padding-box", "content-box", "fill-box", "stroke-box", "view-box",
+				"circle(60%) margin-box",
+				"polygon(100% 0, 100% 100%, 0 100%)",
+				"path('M 20 20 H 80 V 30')",
+				"url(image.png)", "url(#id)",
+			],
+			"offset-distance": "10%",
+			"offset-position": ["auto", "200px", "200px 100px", "center"],
+			"offset-anchor": ["auto", "200px", "200px 100px", "center"],
+			"offset-rotate": ["auto", "0", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"]
+		}
+	},
+
 	"css-text-3": {
 		"title": "Text Level 3",
 		"links": {
