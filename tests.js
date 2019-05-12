@@ -1459,7 +1459,7 @@ window.Specs = {
 			"dev": "css-overflow-3"
 		},
 		"properties": {
-			"line-clamp": ["none", "1", "5 \"… (continued on next page)\""],
+			"line-clamp": ["none", "1", "5 clip", "5 ellipsis", "5 \"… (continued on next page)\""],
 			"max-lines": ["none", "1"],
 			"overflow-x": ["visible", "hidden", "clip", "scroll", "auto"],
 			"overflow-y": ["visible", "hidden", "clip", "scroll", "auto"],
