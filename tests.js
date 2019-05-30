@@ -1245,13 +1245,17 @@ window.Specs = {
 	},
 
 	"css3-positioning": {
-		"title": "Positioning",
+		"title": "Positioned Layout",
 		"links": {
 			"tr": "css-position-3",
 			"dev": "css-position"
 		},
 		"properties": {
-			"position": ["sticky"]
+			"position": ["sticky"],
+			"inset-before": ["auto", "10px", "50%"],
+			"inset-after": ["auto", "10px", "50%"],
+			"inset-start": ["auto", "10px", "50%"],
+			"inset-end": ["auto", "10px", "50%"]
 		}
 	},
 
