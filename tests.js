@@ -1417,7 +1417,7 @@ window.Specs = {
 	},
 
 	"css-lists": {
-		"title": "Lists and Counters",
+		"title": "Lists Level 3",
 		"links": {
 			"tr": "css-lists-3",
 			"dev": "css-lists-3"
@@ -1449,6 +1449,19 @@ window.Specs = {
 				'"-"', "'-'",
 				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
+			],
+			"marker-side": ["match-self", "match-parent"],
+			"counter-reset": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"],
+			"counter-set": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"],
+			"counter-increment": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"],
+			"content": [
+				"counter(chno, upper-latin) '. '",
+				"counter(section, upper-roman) ' - '",
+				"' [' counter(bq, decimal) ']'",
+				"counter(notecntr, disc) ' '",
+				"counter(p, none)",
+				"counter(h1, upper-alpha) '.' counter(h2, decimal) ' '",
+				"'(' counters(list-item, '.') ') '"
 			]
 		},
 		"@rules": {
