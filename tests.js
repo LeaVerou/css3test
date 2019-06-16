@@ -577,6 +577,7 @@ window.Specs = {
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict", "anywhere"],
 			"word-break": ["normal", "keep-all", "break-all"],
+			"white-space": ["break-spaces"],
 			"hyphens": ["auto", "manual", "none"],
 			"overflow-wrap": ["normal", "break-word", "anywhere"],
 			"word-wrap": ["normal", "break-word", "anywhere"],
