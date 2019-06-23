@@ -2,7 +2,7 @@ window.Specs = {
 	"css3-background": {
 		"title": "Backgrounds and Borders Level 3",
 		"links": {
-			"tr": "css3-background-3",
+			"tr": "css-backgrounds-3",
 			"dev": "css-backgrounds"
 		},
 		"properties": {
