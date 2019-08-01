@@ -820,7 +820,8 @@ window.Specs = {
 			"device-cmyk()": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 		},
 		"properties": {
-			"color-adjust": ["economy", "exact"]
+			"color-adjust": ["economy", "exact"],
+			"opacity": ["45%"]
 		}
 	},
 
@@ -1191,7 +1192,7 @@ window.Specs = {
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
 			"flood-color": ["black", "#FFF"],
-			"flood-opacity": ["1", "0", "0.2"],
+			"flood-opacity": ["1", "0", "0.2", "45%"],
 			"color-interpolation-filters": ["auto", "sRGB", "linearRGB"],
 			"lighting-color": ["white", "#000"]
 		}
