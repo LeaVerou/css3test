@@ -1295,7 +1295,7 @@ window.Specs = {
 		},
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
-			"ruby-position": ["over", "under", "inter-character", "right", "left"],
+			"ruby-position": ["over", "under", "inter-character"],
 			"ruby-merge": ["separate", "collapse", "auto"],
 			"ruby-align": ["start", "center", "space-between", "space-around"]
 		}
