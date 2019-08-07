@@ -562,7 +562,7 @@ window.Specs = {
 			"offset-distance": "10%",
 			"offset-position": ["auto", "200px", "200px 100px", "center"],
 			"offset-anchor": ["auto", "200px", "200px 100px", "center"],
-			"offset-rotate": ["auto", "0", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"]
+			"offset-rotate": ["auto", "0deg", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"]
 		}
 	},
 
