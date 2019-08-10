@@ -955,12 +955,28 @@ window.Specs = {
 		},
 		"properties": {
 			"display": ["grid", "inline-grid"],
-			"grid-template-columns": ["none", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
-			"grid-template-rows": ["none", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
+			"grid-template-columns": [
+				"none", "auto", "100px", "1fr", "100px 1fr auto",
+				"repeat(2, 100px 1fr)",
+				"repeat(4, 10px [col-start] 250px [col-end]) 10px",
+				"100px 1fr max-content minmax(min-content, 1fr)",
+				"repeat(auto-fill, minmax(25ch, 1fr))",
+				"10px [col-start] 250px [col-end]",
+				"[first nav-start] 150px [main-start] 1fr [last]",
+				"10px [col-start] 250px [col-end] 10px [col-start] 250px [col-end] 10px",
+				"[a] auto [b] minmax(min-content, 1fr) [b c d] repeat(2, [e] 40px) repeat(5, auto)"
+			],
+			"grid-template-rows": [
+				"none", "auto", "100px", "1fr", "100px 1fr auto",
+				"repeat(2, 100px 1fr)",
+				"100px 1fr max-content minmax(min-content, 1fr)",
+				"10px [row-start] 250px [row-end]",
+				"[first header-start] 50px [main-start] 1fr [footer-start] 50px [last]"
+			],
 			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
 			"grid-template": ["none", "auto 1fr auto / auto 1fr", "[header-top] 'a   a   a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom] / auto 1fr auto"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
-			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
+			"grid-auto-rows": ["auto", "1fr", "100px", "100px 30%", "100px 30% 1em", "min-content", "minmax(min-content, 1fr)"],
 			"grid-auto-flow": ["row", "column", "row dense", "column dense"],
 			"grid": ["auto-flow 1fr / 100px", "none / auto-flow 1fr", "auto-flow / auto 1fr", "repeat(auto-fill, 5em) / auto-flow 1fr", " auto-flow 1fr / repeat(auto-fill, 5em)", "'H    H ' 'A    B ' 'F    F ' 30px / auto 1fr"],
 			"grid-row-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
