@@ -840,9 +840,6 @@ window.Specs = {
 			"column-rule-style": ["none", "solid", "dotted"],
 			"column-rule-width": "1px",
 			"column-rule": ["transparent", "1px solid black"],
-			"break-before": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
-			"break-after": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
-			"break-inside": ["auto", "avoid", "avoid-page", "avoid-column"],
 			"column-span": ["none", "all"],
 			"column-fill": ["auto", "balance"]
 		}
@@ -919,8 +916,6 @@ window.Specs = {
 			"dev": "css-regions"
 		},
 		"properties": {
-			"break-after": ["region"],
-			"break-before": ["region"],
 			"flow-from": ["none", "named-flow"],
 			"flow-into": ["none", "named-flow"],
 			"region-fragment": ["auto", "break"]
@@ -1241,9 +1236,9 @@ window.Specs = {
 			"dev": "css-break"
 		},
 		"properties": {
-			"break-after": ["any", "recto", "verso"],
-			"break-before": ["any", "recto", "verso"],
-			"break-inside": ["avoid-region"],
+			"break-before": ["auto", "avoid", "avoid-page", "page", "left", "right", "recto", "verso", "avoid-column", "column", "avoid-region", "region "],
+			"break-after": ["auto", "avoid", "avoid-page", "page", "left", "right", "recto", "verso", "avoid-column", "column", "avoid-region", "region "],
+			"break-inside": ["auto", "avoid", "avoid-page", "avoid-column", "avoid-region "],
 			"box-decoration-break": ["slice", "clone"],
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
