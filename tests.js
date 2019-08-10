@@ -841,7 +841,7 @@ window.Specs = {
 			"column-rule-width": "1px",
 			"column-rule": ["transparent", "1px solid black"],
 			"column-span": ["none", "all"],
-			"column-fill": ["auto", "balance"]
+			"column-fill": ["auto", "balance", "balance-all"]
 		}
 	},
 
