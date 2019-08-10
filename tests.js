@@ -2,7 +2,7 @@ window.Specs = {
 	"css3-background": {
 		"title": "Backgrounds and Borders Level 3",
 		"links": {
-			"tr": "css3-background-3",
+			"tr": "css-backgrounds-3",
 			"dev": "css-backgrounds"
 		},
 		"properties": {
@@ -19,7 +19,11 @@ window.Specs = {
 				"border-box padding-box",
 				"url(foo.png) bottom right / cover padding-box content-box"
 			],
-			"border-radius": ["10px", "50%", "10px / 20px", "2px 4px 8px 16px"],
+			"border-top-left-radius": ["0", "50%", "250px 100px"],
+			"border-top-right-radius": ["0", "50%", "250px 100px"],
+			"border-bottom-right-radius": ["0", "50%", "250px 100px"],
+			"border-bottom-left-radius": ["0", "50%", "250px 100px"],
+			"border-radius": ["10px", "50%", "10px / 20px", "2px 4px 8px 16px", "2px 4px 8px 16px / 2px 4px 8px 16px"],
 			"border-image-source": ["none", "url(foo.png)"],
 			"border-image-slice": ["10", "30%"].times(1, 4).concat(["fill 30%", "fill 10", "fill 2 4 8% 16%", "30% fill", "10 fill", "2 4 8% 16% fill"]),
 			"border-image-width": ["10px", "5%", "28", "auto", "10px 10px", "5% 10px", "28 10px", "auto 10px", "10px 5%", "5% 5%", "28 5%", "auto 5%", "10px 28", "5% 28", "28 28", "auto 28", "10px auto", "5% auto", "28 auto", "auto auto", "10px 10% 10", "5% 10px 20 auto"],
@@ -63,7 +67,7 @@ window.Specs = {
 				"cursor",
 				"content"
 			],
-			"linear-gradient": [
+			"linear-gradient()": [
 				"linear-gradient(white, black)",
 				"linear-gradient(to right, white, black)",
 				"linear-gradient(45deg, white, black)",
@@ -73,7 +77,7 @@ window.Specs = {
 				"linear-gradient(currentColor, black)",
 				"linear-gradient(red -50px, white calc(-25px + 50%), blue 100%)"
 			],
-			"radial-gradient": [
+			"radial-gradient()": [
 				"radial-gradient(white, black)",
 				"radial-gradient(circle, white, black)",
 				"radial-gradient(ellipse, white, black)",
@@ -88,13 +92,8 @@ window.Specs = {
 				"radial-gradient(5em circle at top left, yellow, blue)",
 				"radial-gradient(circle farthest-side at top left, white, black)"*/
 			],
-			"repeating-linear-gradient": "repeating-linear-gradient(white, black)",
-			"repeating-radial-gradient": "repeating-radial-gradient(white, black)",
-			"cross-fade()": [
-				"cross-fade(url(a.png), url(b.png))",
-				"cross-fade(url(a.png) 50%, url(b.png))",
-				"cross-fade(url(a.png) 50%, white)"
-			]
+			"repeating-linear-gradient()": "repeating-linear-gradient(white, black)",
+			"repeating-radial-gradient()": "repeating-radial-gradient(white, black)",
 		},
 		"properties": {
 			"object-fit": ["fill", "contain", "cover", "none", "scale-down"],
@@ -118,13 +117,13 @@ window.Specs = {
 				"cursor",
 				"content"
 			],
-			"linear-gradient": [
+			"linear-gradient()": [
 				"linear-gradient(45deg, #f06 25%, yellow 25% 50%, #f06 50% 75%, yellow 75%)"
 			],
-			"radial-gradient": [
+			"radial-gradient()": [
 				"radial-gradient(center, red 0% 25%, blue 25% 75%, red 75% 100%)"
 			],
-			"conic-gradient": [
+			"conic-gradient()": [
 				"conic-gradient(white, black)",
 				"conic-gradient(from 5deg, white, black)",
 				"conic-gradient(at top left, white, black)",
@@ -134,19 +133,31 @@ window.Specs = {
 				"conic-gradient(currentColor, black)",
 				"conic-gradient(black 25%, white 0deg 50%, black 0deg 75%, white 0deg)"
 			],
-			"repeating-conic-gradient": [
+			"repeating-conic-gradient()": [
 				"repeating-conic-gradient(white, black)",
 				"repeating-conic-gradient(hsla(0, 0%, 100%, .2) 0deg 15deg, hsla(0, 0%, 100%, 0) 0deg 30deg)"
 			],
 			"image()": [
 				"image('sprites.png#xywh=10,30,60,20')",
 				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
-				"image('dark.png', black)", "image(green)"
+				"image('dark.png', black)",
+				"image(green)"
 			],
-			"element()": "element(#foo)"
+			"image-set()": [
+				"image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi)"
+			],
+			"element()": "element(#foo)",
+			"cross-fade()": [
+				"cross-fade(url(a.png), url(b.png))",
+				"cross-fade(url(a.png) 50%, url(b.png))",
+				"cross-fade(url(a.png) 50%, white)"
+			]
 		},
 		"properties": {
-			"image-resolution": ["from-image", "from-image snap", "snap from-image", "1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"]
+			"image-resolution": [
+				"from-image", "from-image snap", "snap from-image",
+				"1dppx", "1dpcm", "300dpi", "from-image 300dpi", "300dpi from-image", "300dpi from-image snap"
+			]
 		}
 	},
 
@@ -240,9 +251,8 @@ window.Specs = {
 			":local-link": ":local-link",
 			":target-within": ":target-within",
 			":lang()": [":lang(zh, \"*-hant\")"],
-			":matches()": [":matches(em, #foo)"],
 			":not()": [":not(em, #foo)"],
-			":where()": [":not(em, #foo)", ":where(:not(:hover))"],
+			":where()": [":where(em, #foo)", ":where(:not(:hover))"],
 			":is()": [":is(em, #foo)", ":is(:not(:hover))"],
 			":has()": ["a:has(> img)", "dt:has(+ dt)", "section:not(:has(h1, h2, h3, h4, h5, h6))", "section:has(:not(h1, h2, h3, h4, h5, h6))"],
 			":nth-child of": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"],
@@ -281,7 +291,7 @@ window.Specs = {
 			"::inactive-selection": ["::inactive-selection"],
 			"::spelling-error": ["::spelling-error"],
 			"::grammar-error": ["::grammar-error"],
-			"::marker": ["::markerr"],
+			"::marker": ["::marker"],
 			"::placeholder": ["::placeholder"]
 		}
 	},
@@ -483,7 +493,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-transforms": {
+	"css-transforms-1": {
 		"title": "Transforms Level 1",
 		"links": {
 			"tr": "css-transforms-1",
@@ -523,7 +533,57 @@ window.Specs = {
 			"translate": ["none", "50%", "50% 50%", "50% 50% 10px"],
 			"scale": ["none"].concat(["2"].times(1, 3)),
 			"rotate": ["none"].concat(["", "x", "y", "z", "-1 0 2"].and(["45deg"])).concat(["45deg"].and(["x", "y", "z", "-1 0 2"])),
-			"transform-style": ["auto", "flat", "preserve-3d"],
+			"transform-style": ["auto"],
+		}
+	},
+
+	"css-motion-1": {
+		"title": "Motion Path Module Level 1",
+		"links": {
+			"tr": "motion-1",
+			"dev": "motion-1",
+			"devtype": "fxtf"
+		},
+		"properties": {
+			"offset": [
+				"auto",
+				"center",
+				"200px 100px ray(45deg closest-side)",
+				"200px 100px ray(45deg closest-side) 10%",
+				"200px 100px ray(45deg closest-side) 10% reverse",
+				"200px 100px ray(45deg closest-side) 10% reverse 45deg",
+				"200px 100px ray(45deg closest-side) 10% 45deg reverse",
+				"200px 100px ray(45deg closest-side) 45deg 10%",
+				"200px 100px ray(45deg closest-side) 45deg reverse 10%",
+				"200px 100px ray(45deg closest-side) reverse 10%",
+				"auto / center",
+				"center / 200px 100px",
+				"200px 100px ray(45deg closest-side) / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% reverse / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% reverse 45deg / 200px 100px",
+				"200px 100px ray(45deg closest-side) 10% 45deg reverse / 200px 100px",
+				"200px 100px ray(45deg closest-side) 45deg 10% / 200px 100px",
+				"200px 100px ray(45deg closest-side) 45deg reverse 10% / 200px 100px",
+				"200px 100px ray(45deg closest-side) reverse 10% / 200px 100px",
+			],
+			"offset-path": [
+				"none",
+				"ray(45deg closest-side)", "ray(45deg farthest-side)", "ray(45deg closest-corner)",
+				"ray(45deg farthest-corner)", "ray(45deg sides)", "ray(0.25turn sides contain)",
+				"ray(100grad closest-side contain)", "ray(calc(180deg - 0.25turn) closest-side)",
+				"inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)",
+				"margin-box", "border-box", "padding-box", "content-box", "fill-box", "stroke-box", "view-box",
+				"circle(60%) margin-box",
+				"polygon(100% 0, 100% 100%, 0 100%)",
+				"path('M 20 20 H 80 V 30')",
+				"url(image.png)", "url(#id)",
+			],
+			"offset-distance": "10%",
+			"offset-position": ["auto", "200px", "200px 100px", "center"],
+			"offset-anchor": ["auto", "200px", "200px 100px", "center"],
+			"offset-rotate": ["auto", "0deg", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"]
+
 		}
 	},
 
@@ -538,6 +598,7 @@ window.Specs = {
 			"tab-size": ["4", "1em"],
 			"line-break": ["auto", "loose", "normal", "strict", "anywhere"],
 			"word-break": ["normal", "keep-all", "break-all"],
+			"white-space": ["break-spaces"],
 			"hyphens": ["auto", "manual", "none"],
 			"overflow-wrap": ["normal", "break-word", "anywhere"],
 			"word-wrap": ["normal", "break-word", "anywhere"],
@@ -780,7 +841,8 @@ window.Specs = {
 			"device-cmyk()": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 		},
 		"properties": {
-			"color-adjust": ["economy", "exact"]
+			"color-adjust": ["economy", "exact"],
+			"opacity": ["45%"]
 		}
 	},
 
@@ -799,11 +861,8 @@ window.Specs = {
 			"column-rule-style": ["none", "solid", "dotted"],
 			"column-rule-width": "1px",
 			"column-rule": ["transparent", "1px solid black"],
-			"break-before": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
-			"break-after": ["auto", "always", "avoid", "left", "right", "page", "column", "avoid-page", "avoid-column"],
-			"break-inside": ["auto", "avoid", "avoid-page", "avoid-column"],
 			"column-span": ["none", "all"],
-			"column-fill": ["auto", "balance"]
+			"column-fill": ["auto", "balance", "balance-all"]
 		}
 	},
 
@@ -878,8 +937,6 @@ window.Specs = {
 			"dev": "css-regions"
 		},
 		"properties": {
-			"break-after": ["region"],
-			"break-before": ["region"],
 			"flow-from": ["none", "named-flow"],
 			"flow-into": ["none", "named-flow"],
 			"region-fragment": ["auto", "break"]
@@ -919,12 +976,28 @@ window.Specs = {
 		},
 		"properties": {
 			"display": ["grid", "inline-grid"],
-			"grid-template-columns": ["none", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [col-start] 250px [col-end]"],
-			"grid-template-rows": ["none", "auto", "100px", "1fr", "100px 1fr auto", "repeat(2, 100px 1fr)", "100px 1fr max-content minmax(min-content, 1fr)", "10px [row-start] 250px [row-end]"],
+			"grid-template-columns": [
+				"none", "auto", "100px", "1fr", "100px 1fr auto",
+				"repeat(2, 100px 1fr)",
+				"repeat(4, 10px [col-start] 250px [col-end]) 10px",
+				"100px 1fr max-content minmax(min-content, 1fr)",
+				"repeat(auto-fill, minmax(25ch, 1fr))",
+				"10px [col-start] 250px [col-end]",
+				"[first nav-start] 150px [main-start] 1fr [last]",
+				"10px [col-start] 250px [col-end] 10px [col-start] 250px [col-end] 10px",
+				"[a] auto [b] minmax(min-content, 1fr) [b c d] repeat(2, [e] 40px) repeat(5, auto)"
+			],
+			"grid-template-rows": [
+				"none", "auto", "100px", "1fr", "100px 1fr auto",
+				"repeat(2, 100px 1fr)",
+				"100px 1fr max-content minmax(min-content, 1fr)",
+				"10px [row-start] 250px [row-end]",
+				"[first header-start] 50px [main-start] 1fr [footer-start] 50px [last]"
+			],
 			"grid-template-areas": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"],
 			"grid-template": ["none", "auto 1fr auto / auto 1fr", "[header-top] 'a   a   a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom] / auto 1fr auto"],
 			"grid-auto-columns": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"],
-			"grid-auto-rows": ["auto", "1fr", "100px", "min-content", "minmax(min-content, 1fr)"],
+			"grid-auto-rows": ["auto", "1fr", "100px", "100px 30%", "100px 30% 1em", "min-content", "minmax(min-content, 1fr)"],
 			"grid-auto-flow": ["row", "column", "row dense", "column dense"],
 			"grid": ["auto-flow 1fr / 100px", "none / auto-flow 1fr", "auto-flow / auto 1fr", "repeat(auto-fill, 5em) / auto-flow 1fr", " auto-flow 1fr / repeat(auto-fill, 5em)", "'H    H ' 'A    B ' 'F    F ' 30px / auto 1fr"],
 			"grid-row-start": ["auto", "4", "C", "C 2", "span C", "span 1"],
@@ -1151,7 +1224,7 @@ window.Specs = {
 		"properties": {
 			"filter": ["none", "url(#id)", "url(image.svg#id)", "blur(5px)", "brightness(0.5)", "contrast(150%)", "drop-shadow(15px 15px 15px black)", "grayscale(50%)", "hue-rotate(50deg)", "invert(50%)", "opacity(50%)", "sepia(50%)", "saturate(150%)", "grayscale(100%) sepia(100%)"],
 			"flood-color": ["black", "#FFF"],
-			"flood-opacity": ["1", "0", "0.2"],
+			"flood-opacity": ["1", "0", "0.2", "45%"],
 			"color-interpolation-filters": ["auto", "sRGB", "linearRGB"],
 			"lighting-color": ["white", "#000"]
 		}
@@ -1200,9 +1273,9 @@ window.Specs = {
 			"dev": "css-break"
 		},
 		"properties": {
-			"break-after": ["any", "recto", "verso"],
-			"break-before": ["any", "recto", "verso"],
-			"break-inside": ["avoid-region"],
+			"break-before": ["auto", "avoid", "avoid-page", "page", "left", "right", "recto", "verso", "avoid-column", "column", "avoid-region", "region "],
+			"break-after": ["auto", "avoid", "avoid-page", "page", "left", "right", "recto", "verso", "avoid-column", "column", "avoid-region", "region "],
+			"break-inside": ["auto", "avoid", "avoid-page", "avoid-column", "avoid-region "],
 			"box-decoration-break": ["slice", "clone"],
 			"orphans": ["1", "2"],
 			"widows": ["1", "2"]
@@ -1210,13 +1283,17 @@ window.Specs = {
 	},
 
 	"css3-positioning": {
-		"title": "Positioning",
+		"title": "Positioned Layout",
 		"links": {
 			"tr": "css-position-3",
 			"dev": "css-position"
 		},
 		"properties": {
-			"position": ["sticky"]
+			"position": ["sticky"],
+			"inset-before": ["auto", "10px", "50%"],
+			"inset-after": ["auto", "10px", "50%"],
+			"inset-start": ["auto", "10px", "50%"],
+			"inset-end": ["auto", "10px", "50%"]
 		}
 	},
 
@@ -1250,7 +1327,7 @@ window.Specs = {
 		},
 		"properties": {
 			"display": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"],
-			"ruby-position": ["over", "under", "inter-character", "right", "left"],
+			"ruby-position": ["over", "under", "inter-character"],
 			"ruby-merge": ["separate", "collapse", "auto"],
 			"ruby-align": ["start", "center", "space-between", "space-around"]
 		}
@@ -1263,7 +1340,7 @@ window.Specs = {
 			"dev": "css-scroll-snap-1"
 		},
 		"properties": {
-			"scroll-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-margin": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "20px 3em 1in 5rem", "calc(2px)", "calc(3 * 25px)", "calc(3 * 25px) 5px 10em calc(1vw - 5px)"],
 			"scroll-margin-block": ["10px", "10px 10px"],
 			"scroll-margin-block-end": ["10px"],
 			"scroll-margin-block-start": ["10px"],
@@ -1274,7 +1351,7 @@ window.Specs = {
 			"scroll-margin-left": ["10px"],
 			"scroll-margin-right": ["10px"],
 			"scroll-margin-top": ["10px"],
-			"scroll-padding": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3*25px)", "calc(3*25px) 5px 10% calc(10%-5px)"],
+			"scroll-padding": ["auto", "0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10px auto 30px auto", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3 * 25px)", "calc(3 * 25px) 5px 10% calc(10% - 5px)"],
 			"scroll-padding-block": ["10px", "50%", "10px 50%", "50% 50%"],
 			"scroll-padding-block-end": ["10px", "50%"],
 			"scroll-padding-block-start": ["10px", "50%"],
@@ -1287,7 +1364,10 @@ window.Specs = {
 			"scroll-padding-top": ["10px", "50%"],
 			"scroll-snap-align": ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"],
 			"scroll-snap-stop": ["normal", "always"],
-			"scroll-snap-type": ["none", "always"]
+			"scroll-snap-type": [
+				"none", "x mandatory", "y mandatory", "block mandatory", "inline mandatory", "both mandatory",
+				"x proximity", "y proximity", "block proximity", "inline proximity", "both proximity"
+			]
 		}
 	},
 
@@ -1363,6 +1443,10 @@ window.Specs = {
 			"border-inline-width": ["thin 2px"],
 			"border-inline-style": ["dotted dashed"],
 			"border-inline-color": ["navy blue"],
+			"border-start-start-radius": ["0", "50%", "250px 100px"],
+			"border-start-end-radius": ["0", "50%", "250px 100px"],
+			"border-end-start-radius": ["0", "50%", "250px 100px"],
+			"border-end-end-radius": ["0", "50%", "250px 100px"],
 			"margin": ["logical 5px 10px 15px 20px"],
 			"padding": ["logical 5px 10px 15px 20px"],
 			"border-color": ["logical red green blue yellow"],
@@ -1375,7 +1459,7 @@ window.Specs = {
 	},
 
 	"css-lists": {
-		"title": "Lists and Counters",
+		"title": "Lists Level 3",
 		"links": {
 			"tr": "css-lists-3",
 			"dev": "css-lists-3"
@@ -1407,6 +1491,19 @@ window.Specs = {
 				'"-"', "'-'",
 				"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 				"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
+			],
+			"marker-side": ["match-self", "match-parent"],
+			"counter-reset": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"],
+			"counter-set": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"],
+			"counter-increment": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"],
+			"content": [
+				"counter(chno, upper-latin) '. '",
+				"counter(section, upper-roman) ' - '",
+				"' [' counter(bq, decimal) ']'",
+				"counter(notecntr, disc) ' '",
+				"counter(p, none)",
+				"counter(h1, upper-alpha) '.' counter(h2, decimal) ' '",
+				"'(' counters(list-item, '.') ') '"
 			]
 		},
 		"@rules": {
@@ -1415,15 +1512,27 @@ window.Specs = {
 	},
 
 	"css-overflow-3": {
-		"title": "Overflow",
+		"title": "Overflow Level 3",
 		"links": {
 			"tr": "css-overflow-3",
 			"dev": "css-overflow-3"
 		},
 		"properties": {
+			"line-clamp": ["none", "1", "5 clip", "5 ellipsis", "5 \"… (continued on next page)\""],
 			"max-lines": ["none", "1"],
 			"overflow-x": ["visible", "hidden", "clip", "scroll", "auto"],
-			"overflow-y": ["visible", "hidden", "clip", "scroll", "auto"]
+			"overflow-y": ["visible", "hidden", "clip", "scroll", "auto"],
+			"overflow-inline": ["visible", "hidden", "clip", "scroll", "auto"],
+			"overflow-block": ["visible", "hidden", "clip", "scroll", "auto"],
+			"continue": ["auto", "discard"],
+		},
+	},
+
+	"css-overflow-4": {
+		"title": "Overflow Level 4",
+		"links": {
+			"tr": "css-overflow-4",
+			"dev": "css-overflow-4"
 		},
 		"selectors": {
 			"::nth-fragment()": [
@@ -1537,12 +1646,88 @@ window.Specs = {
 			"tr": "css-variables",
 			"dev": "css-variables-1"
 		},
-		"instruction": {
+		"declaration": {
 			"--*": ["--foo: 2px"],
 			"var(--*)": [
 				"width: var(--foo)", "width: var(--FOO)", "width: var(--foo, 4px)",
 				"color: rgba(255, 255, 255, var(--foo, .2) )"
 			]
+		}
+	},
+
+	"fill-stroke": {
+		"title": "Fill and Stroke Level 3",
+		"links": {
+			"tr": "fill-stroke-3",
+			"dev": "fill-stroke",
+			"devtype": "fxtf"
+		},
+		"properties": {
+			"fill": [
+				"url(foo.png), url(bar.svg)",
+				"top left / 50% 60%",
+				"border-box",
+				"border-box padding-box",
+				"url(foo.png) bottom right / cover padding-box content-box"
+			],
+			"fill-rule": ["nonzero", "evenodd"],
+			"fill-break": ["bounding-box", "slice", "clone"],
+			"fill-color": "green",
+			"fill-image": [
+				"url(foo.png)",
+				"image('sprites.png#xywh=10,30,60,20')",
+				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
+				"image('dark.png', black)",
+				"image(green)",
+				"linear-gradient(to bottom, yellow 0%, blue 100%)",
+				"child",
+				"child(2)"
+			],
+			"fill-origin": ["match-parent", "fill-box", "stroke-box", "content-box", "padding-box", "border-box"],
+			"fill-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
+			"fill-size": ["auto", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
+			"fill-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
+			"fill-opacity": ["0.5", "45%"],
+			"stroke": [
+				"url(foo.png), url(bar.svg)",
+				"top left / 50% 60%",
+				"border-box",
+				"border-box padding-box",
+				"url(foo.png) bottom right / cover padding-box content-box"
+			],
+			"stroke-width": ["0", "1px", "25%"],
+			"stroke-align": ["center", "inset", "outset "],
+			"stroke-linecap": ["butt", "round", "square "],
+			"stroke-linejoin": [
+				"crop", "arcs", "miter", "bevel", "round", "fallback",
+				"crop bevel", "arcs round", "miter fallback"
+			],
+			"stroke-miterlimit": "4",
+			"stroke-break": ["bounding-box", "slice", "clone "],
+			"stroke-dasharray": ["none", "0", "4px", "4px 12%", "4px 12% 3em", "4px 12% 3em 5px", "4px 12% 3em 5px 10%"],
+			"stroke-dashoffset": ["0", "4px", "12%"],
+			"stroke-dash-corner": ["none", "15px"],
+			"stroke-dash-justify": [
+				"none", "stretch", "compress", "dashes", "gaps",
+				"stretch dashes", "compress gaps dashes",
+				"stretch gaps", "compress dashes gaps"
+			],
+			"stroke-color": "green",
+			"stroke-image": [
+				"url(foo.png)",
+				"image('sprites.png#xywh=10,30,60,20')",
+				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
+				"image('dark.png', black)",
+				"image(green)",
+				"linear-gradient(to bottom, yellow 0%, blue 100%)",
+				"child",
+				"child(2)"
+			],
+			"stroke-origin": ["match-parent", "fill-box", "stroke-box", "content-box", "padding-box", "border-box"],
+			"stroke-position": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"],
+			"stroke-size": ["auto", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"],
+			"stroke-repeat": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2)),
+			"stroke-opacity": ["0.5", "45%"],
 		}
 	}
 };
