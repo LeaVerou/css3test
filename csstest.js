@@ -49,7 +49,7 @@ var devLinkFormat = function (params) {
 			return 'https://' + params.dev + '.spec.whatwg.org/';
 		default:
 			// CSS Working Group Editor Drafts
-			return 'http://dev.w3.org/csswg/' + params.dev;
+			return 'https://drafts.csswg.org/' + params.dev;
 	}
 };
 
@@ -67,7 +67,7 @@ var Test = function (tests, spec, title) {
 			contents.push($.create({
 				tag: 'a',
 				properties: {
-					href: 'http://w3.org/TR/' + tests.links.tr,
+					href: 'https://www.w3.org/TR/' + tests.links.tr,
 					target: '_blank',
 					textContent: 'TR',
 					className: 'spec-link'
