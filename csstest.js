@@ -154,15 +154,45 @@ Test.prototype = {
 				inside: this.section
 			});
 
-			var dl = document.createElement('dl'),
-				dt = $.create({
-					tag: 'dt',
-					textContent: feature,
-					tabIndex: '0',
-					inside: dl
-				});
+			var dl = document.createElement('dl');
+			var dtContents = [
+				document.createTextNode(feature)
+			];
 
-			var passed = 0, tests = theseTests[feature];
+			if (theseTests[feature].links) {
+				if (theseTests[feature].links.tr) {
+					dtContents.push($.create({
+						tag: 'a',
+						properties: {
+							href: 'https://www.w3.org/TR/' + this.tests.links.tr + theseTests[feature].links.tr,
+							target: '_blank',
+							textContent: 'TR',
+							className: 'spec-link'
+						}
+					}));
+				}
+
+				if (theseTests[feature].links.dev) {
+					dtContents.push($.create({
+						tag: 'a',
+						properties: {
+							href: devLinkFormat(this.tests.links) + theseTests[feature].links.dev,
+							target: '_blank',
+							textContent: 'DEV',
+							className: 'spec-link'
+						}
+					}));
+				}
+			}
+
+			var dt = $.create({
+				tag: 'dt',
+				tabIndex: '0',
+				contents: dtContents,
+				inside: dl
+			});
+		
+			var passed = 0, tests = theseTests[feature].tests || theseTests[feature];
 
 			tests = tests instanceof Array ? tests : [tests];
 
