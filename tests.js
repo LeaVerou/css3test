@@ -1596,6 +1596,21 @@ window.Specs = {
 		}
 	},
 
+	"webvtt": {
+		"title": "WebVTT",
+		"links": {
+			"tr": "webvtt1",
+			"dev": "webvtt",
+			"devtype": "github"
+		},
+		"selectors": {
+			"::cue": ["::cue"],
+			"::cue()": ["::cue(span)"],
+			"::cue-region": ["::cue-region"],
+			"::cue-region()": ['::cue-region(span)']
+		}
+	},
+
 	"css-paint-api-1": {
 		"title": "Painting API Level 1",
 		"links": {
