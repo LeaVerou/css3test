@@ -4499,10 +4499,7 @@ window.Specs = {
 					"dev": "#logical-shorthand-keyword"
 				},
 				"tests": ["logical 5px 10px 15px 20px"]
-			},
-			"background-image-transform": ["logical", "physical", "rotate"],
-			"background-repeat": ["logical repeat-x no-repeat"],
-			"border-image-transform": ["logical", "physical", "rotate"]
+			}
 		}
 	},
 
