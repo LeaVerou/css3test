@@ -1293,11 +1293,7 @@ window.Specs = {
 					"dev": "#caret-color"
 				},
 				"tests": ["auto", "green"]
-			},
-			"nav-up": ["auto", "#foo", "#foo current", "#foo root"],
-			"nav-right": ["auto", "#foo", "#foo current", "#foo root"],
-			"nav-down": ["auto", "#foo", "#foo current", "#foo root"],
-			"nav-left": ["auto", "#foo", "#foo current", "#foo root"]
+			}
 		}
 	},
 
@@ -1336,6 +1332,34 @@ window.Specs = {
 					"dev": "#content-selection"
 				},
 				"tests": ["auto", "text", "none", "contain", "all"]
+			},
+			"nav-up": {
+				"links": {
+					"tr": "#nav-dir",
+					"dev": "#nav-dir"
+				},
+				"tests": ["auto", "#foo", "#foo current", "#foo root"]
+			},
+			"nav-right": {
+				"links": {
+					"tr": "#nav-dir",
+					"dev": "#nav-dir"
+				},
+				"tests": ["auto", "#foo", "#foo current", "#foo root"]
+			},
+			"nav-down": {
+				"links": {
+					"tr": "#nav-dir",
+					"dev": "#nav-dir"
+				},
+				"tests": ["auto", "#foo", "#foo current", "#foo root"]
+			},
+			"nav-left": {
+				"links": {
+					"tr": "#nav-dir",
+					"dev": "#nav-dir"
+				},
+				"tests": ["auto", "#foo", "#foo current", "#foo root"]
 			}
 		}
 	},
@@ -1535,11 +1559,7 @@ window.Specs = {
 					"dev": "#transform-box"
 				},
 				"tests": ["border-box", "fill-box", "view-box"]
-			},
-			"transform-style": ["flat", "preserve-3d"],
-			"perspective": ["none", "600px"],
-			"perspective-origin": ["10px", "top", "top left", "50% 100%", "left 0%"],
-			"backface-visibility": ["visible", "hidden"],
+			}
 		}
 	},
 
@@ -1571,7 +1591,25 @@ window.Specs = {
 				"links": {
 					"dev": "#transform-style-property"
 				},
-				"tests": ["auto"]
+				"tests": ["auto", "flat", "preserve-3d"]
+			},
+			"perspective": {
+				"links": {
+					"dev": "#perspective-property"
+				},
+				"tests": ["none", "600px"]
+			},
+			"perspective-origin": {
+				"links": {
+					"dev": "#perspective-origin-property"
+				},
+				"tests": ["10px", "top", "top left", "50% 100%", "left 0%"]
+			},
+			"backface-visibility": {
+				"links": {
+					"dev": "#backface-visibility-property"
+				},
+				"tests": ["visible", "hidden"]
 			}
 		}
 	},
@@ -2489,7 +2527,6 @@ window.Specs = {
 				},
 				"tests": ["100px", "3", "10em 2", "auto 2", "10em auto", "auto auto", "2 10em", "auto 10em", "2 auto"]
 			},
-			"column-gap": ["1em", "normal"],
 			"column-rule-color": {
 				"links": {
 					"tr": "#crc",
@@ -3104,7 +3141,7 @@ window.Specs = {
 					"tr": "#column-row-gap",
 					"dev": "#column-row-gap"
 				},
-				"tests": ["0", "1em"]
+				"tests": ["0", "1em", "normal"]
 			},
 			"row-gap": {
 				"links": {
@@ -3621,13 +3658,22 @@ window.Specs = {
 	"fullscreen": {
 		"title": "Fullscreen API",
 		"links": {
-			"tr": "fullscreen",
-			"dev": "pointerevents",
+			"dev": "fullscreen",
 			"devtype": "whatwg"
 		},
 		"selectors": {
-			"::backdrop": "::backdrop",
-			":fullscreen": ":fullscreen"
+			"::backdrop": {
+				"links": {
+					"dev": "#::backdrop-pseudo-element"
+				},
+				"tests": "::backdrop"
+			},
+			":fullscreen": {
+				"links": {
+					"dev": "#:fullscreen-pseudo-class"
+				},
+				"tests": ":fullscreen"
+			}
 		}
 	},
 
@@ -3992,7 +4038,6 @@ window.Specs = {
 		"properties": {
 			"overflow-anchor": {
 				"links": {
-					"tr": "#exclusion-api",
 					"dev": "#exclusion-api"
 				},
 				"tests": ["none", "auto"]
@@ -4544,9 +4589,23 @@ window.Specs = {
 					"'(' counters(list-item, '.') ') '"
 				]
 			}
+		}
+	},
+
+	"css-counter-styles": {
+		"title": "Counter Styles Level 3",
+		"links": {
+			"tr": "css-counter-styles-3",
+			"dev": "css-counter-styles-3"
 		},
 		"@rules": {
-			"@counter-style": "@counter-style foo"
+			"@counter-style": {
+				"links": {
+					"tr": "#the-counter-style-rule",
+					"dev": "#the-counter-style-rule"
+				},
+				"tests": "@counter-style foo"
+			}
 		}
 	},
 
@@ -4765,10 +4824,34 @@ window.Specs = {
 			"devtype": "github"
 		},
 		"selectors": {
-			"::cue": ["::cue"],
-			"::cue()": ["::cue(span)"],
-			"::cue-region": ["::cue-region"],
-			"::cue-region()": ['::cue-region(span)']
+			"::cue": {
+				"links": {
+					"tr": "#the-cue-pseudo-element",
+					"dev": "#the-cue-pseudo-element"
+				},
+				"tests": ["::cue"]
+			},
+			"::cue()": {
+				"links": {
+					"tr": "#the-cue-pseudo-element",
+					"dev": "#the-cue-pseudo-element"
+				},
+				"tests": ["::cue(span)"]
+			},
+			"::cue-region": {
+				"links": {
+					"tr": "#the-cue-region-pseudo-element",
+					"dev": "#the-cue-region-pseudo-element"
+				},
+				"tests": ["::cue-region"]
+			},
+			"::cue-region()": {
+				"links": {
+					"tr": "#the-cue-region-pseudo-element",
+					"dev": "#the-cue-region-pseudo-element"
+				},
+				"tests": ['::cue-region(span)']
+			}
 		}
 	},
 
