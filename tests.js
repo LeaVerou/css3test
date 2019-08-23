@@ -2483,18 +2483,29 @@ window.Specs = {
 			}
 		},
 		"properties": {
-			"color-adjust": {
-				"links": {
-					"tr": "#color-adjust"
-				},
-				"tests": ["economy", "exact"]
-			},
 			"opacity": {
 				"links": {
 					"tr": "#transparency",
 					"dev": "#transparency"
 				},
 				"tests": ["45%"]
+			}
+		}
+	},
+
+	"css-color-adjust-1": {
+		"title": "Color Adjustment Level 1",
+		"links": {
+			"tr": "css-color-adjust-1",
+			"dev": "css-color-adjust-1"
+		},
+		"properties": {
+			"color-adjust": {
+				"links": {
+					"tr": "#perf",
+					"dev": "#perf"
+				},
+				"tests": ["economy", "exact"]
 			}
 		}
 	},
