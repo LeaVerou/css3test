@@ -256,10 +256,6 @@ Test.groups = {
 		return Supports.value(property, value);
 	},
 
-	'properties': function (value, property) {
-		return Supports.value(property, value);
-	},
-
 	'descriptors': function (value, descriptor) {
 		return Supports.descriptorvalue(descriptor, value);
 	},
