@@ -2957,14 +2957,20 @@ window.Specs = {
 					"tr": "#auto-tracks",
 					"dev": "#auto-tracks"
 				},
-				"tests": ["auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)"]
+				"tests": [
+					"auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)", "min-content max-content auto",
+					"100px 150px 390px", "100px minmax(100px, auto) 10% 0.5fr fit-content(400px)"
+				]
 			},
 			"grid-auto-rows": {
 				"links": {
 					"tr": "#auto-tracks",
 					"dev": "#auto-tracks"
 				},
-				"tests": ["auto", "1fr", "100px", "100px 30%", "100px 30% 1em", "min-content", "minmax(min-content, 1fr)"]
+				"tests": [
+					"auto", "1fr", "100px", "100px 30%", "100px 30% 1em", "min-content", "minmax(min-content, 1fr)",
+					"min-content max-content auto", "100px minmax(100px, auto) 10% 0.5fr fit-content(400px)"
+				]
 			},
 			"grid-auto-flow": {
 				"links": {
