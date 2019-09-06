@@ -491,12 +491,12 @@ window.Specs = {
 				},
 				"tests": ":indeterminate"
 			},
-			":root":  {
+			":root": {
 				"links": {
 					"tr": "#root-pseudo",
 					"dev": "#root-pseudo"
 				},
-				"tests":":root"
+				"tests": ":root"
 			},
 			":nth-child": {
 				"links": {
@@ -2186,6 +2186,13 @@ window.Specs = {
 			"dev": "css-fonts-4"
 		},
 		"properties": {
+			"font-size": {
+				"links": {
+					"tr": "#font-size-prop",
+					"dev": "#font-size-prop"
+				},
+				"tests": ["xxx-large"]
+			},
 			"font-variant": {
 				"links": {
 					"tr": "#font-variant-prop",
