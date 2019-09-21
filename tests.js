@@ -1995,6 +1995,9 @@ window.Specs = {
 			"dev": "css-text-decor-4"
 		},
 		"properties": {
+			"text-decoration": {
+				"tests": ["underline solid blue 1px"]
+			},
 			"text-decoration-skip": {
 				"links": {
 					"tr": "#text-decoration-skip-property",
@@ -2014,6 +2017,20 @@ window.Specs = {
 					"dev": "#text-decoration-skip-ink-property"
 				},
 				"tests": ["none", "auto"]
+			},
+			"text-underline-offset": {
+				"links": {
+					"tr": "#underline-offset",
+					"dev": "#underline-offset"
+				},
+				"tests": ["auto", "from-font", "3px"]
+			},
+			"text-decoration-thickness": {
+				"links": {
+					"tr": "#underline-offset",
+					"dev": "#text-decoration-width-property"
+				},
+				"tests": ["auto", "from-font", "3px"]
 			}
 		}
 	},
