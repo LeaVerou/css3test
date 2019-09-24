@@ -2035,6 +2035,23 @@ window.Specs = {
 		}
 	},
 
+	"css-content-3": {
+		"title": "Generated Content Level 3",
+		"links": {
+			"tr": "css-content-3",
+			"dev": "css-content-3"
+		},
+		"properties": {
+			"quotes": {
+				"links": {
+					"tr": "#quotes",
+					"dev": "#quotes"
+				},
+				"tests": ["auto"]
+			}
+		}
+	},
+
 	"css-line-grid-1": {
 		"title": "Line Grid Level 1",
 		"links": {
