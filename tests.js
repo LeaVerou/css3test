@@ -1180,6 +1180,28 @@ window.Specs = {
 					"dev": "#color-gamut"
 				},
 				"tests": ["(color-gamut)", "(color-gamut: srgb)", "(color-gamut: p3)", "(color-gamut: rec2020)"]
+			},
+			"aspect-ratio": {
+				"links": {
+					"tr": "#aspect-ratio",
+					"dev": "#aspect-ratio"
+				},
+				"tests": [
+					"(aspect-ratio: 1280.1/720.01)",
+					"(max-aspect-ratio: 1280.1/720.01)",
+					"(min-aspect-ratio: 0.2)",
+				]
+			},
+			"device-aspect-ratio": {
+				"links": {
+					"tr": "#device-aspect-ratio",
+					"dev": "#device-aspect-ratio"
+				},
+				"tests": [
+					"(device-aspect-ratio:1280.1/720.01)",
+					"(max-device-aspect-ratio:1280.1/720.01)",
+					"(min-device-aspect-ratio:0.2)",
+				]
 			}
 		}
 	},
