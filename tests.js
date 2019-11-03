@@ -3141,7 +3141,7 @@ window.Specs = {
 					"subgrid repeat(1, [sub-a])",
 					"subgrid repeat(2, [sub-a] [sub-b]) [sub-c]",
 					"subgrid repeat(auto-fill, [sub-a] [sub-b])",
-					"subgrid [sub-a]repeat( auto-fill, [sub-b] [sub-c] [sub-d]) [sub-e] repeat(1, [sub-g])"
+					"subgrid [sub-a] repeat(auto-fill, [sub-b] [sub-c] [sub-d]) [sub-e] repeat(1, [sub-g])"
 				]
 			},
 			"grid-template-rows": {
@@ -3156,7 +3156,7 @@ window.Specs = {
 					"subgrid repeat(1, [sub-a])",
 					"subgrid repeat(2, [sub-a] [sub-b]) [sub-c]",
 					"subgrid repeat(auto-fill, [sub-a] [sub-b])",
-					"subgrid [sub-a]repeat( auto-fill, [sub-b] [sub-c] [sub-d]) [sub-e] repeat(1, [sub-g])"
+					"subgrid [sub-a] repeat(auto-fill, [sub-b] [sub-c] [sub-d]) [sub-e] repeat(1, [sub-g])"
 				]
 			}
 		}
