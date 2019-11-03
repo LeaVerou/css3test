@@ -4925,6 +4925,18 @@ window.Specs = {
 					"dev": "#overscroll-behavior-longhands-physical"
 				},
 				"tests": ["contain", "none", "auto"]
+			},
+			"overscroll-behavior-inline": {
+				"links": {
+					"dev": "#overscroll-behavior-longhands-logical"
+				},
+				"tests": ["contain", "none", "auto"]
+			},
+			"overscroll-behavior-block": {
+				"links": {
+					"dev": "#overscroll-behavior-longhands-logical"
+				},
+				"tests": ["contain", "none", "auto"]
 			}
 		}
 	},
