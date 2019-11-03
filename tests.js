@@ -2104,6 +2104,16 @@ window.Specs = {
 					"dev": "#quotes"
 				},
 				"tests": ["auto"]
+			},
+			"content": {
+				"links": {
+					"tr": "#alt",
+					"dev": "#alt"
+				},
+				"tests": [
+					"url(./img/star.png) / \"New!\"",
+					"\"\\25BA\" / \"\""
+				]
 			}
 		}
 	},
