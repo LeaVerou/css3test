@@ -4844,7 +4844,7 @@ window.Specs = {
 	},
 
 	"css-sizing-3": {
-		"title": "Intrinsic & Extrinsic Sizing",
+		"title": "Intrinsic & Extrinsic Sizing Level 3",
 		"links": {
 			"tr": "css-sizing-3",
 			"dev": "css-sizing-3"
@@ -4898,6 +4898,39 @@ window.Specs = {
 					"dev": "#column-sizing"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+			}
+		}
+	},
+
+	"css-sizing-4": {
+		"title": "Box Sizing Level 4",
+		"links": {
+			"dev": "css-sizing-4"
+		},
+		"properties": {
+			"intrinsic-block-size": {
+				"links": {
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["legacy", "auto", "10px"]
+			},
+			"intrinsic-inline-size": {
+				"links": {
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["legacy", "auto", "10px"]
+			},
+			"intrinsic-height": {
+				"links": {
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["legacy", "auto", "10px"]
+			},
+			"intrinsic-width": {
+				"links": {
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["legacy", "auto", "10px"]
 			}
 		}
 	},
