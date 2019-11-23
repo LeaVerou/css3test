@@ -2504,7 +2504,7 @@ window.Specs = {
 				"text-decoration-color",
 				"column-rule-color"
 			],
-			"Comma-less colors": {
+			"comma-less colors": {
 				"links": {
 					"tr": "#funcdef-rgb",
 					"dev": "#funcdef-rgb"
@@ -2538,6 +2538,16 @@ window.Specs = {
 					"dev": "#named-colors"
 				},
 				"tests": "rebeccapurple"
+			},
+			"system colors": {
+				"links": {
+					"tr": "#css-system-colors",
+					"dev": "#css-system-colors"
+				},
+				"tests": [
+					"Canvas", "CanvasText", "LinkText", "VisitedText", "ActiveText", "ButtonFace", "Field", "FieldText",
+					"Highlight", "HighlightText", "GrayText"
+				]
 			},
 			"hwb()": {
 				"links": {
