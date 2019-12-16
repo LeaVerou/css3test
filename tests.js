@@ -1613,7 +1613,7 @@ window.Specs = {
 				"links": {
 					"dev": "#transform-style-property"
 				},
-				"tests": ["auto", "flat", "preserve-3d"]
+				"tests": ["flat", "preserve-3d"]
 			},
 			"perspective": {
 				"links": {
