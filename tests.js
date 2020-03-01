@@ -2079,14 +2079,14 @@ window.Specs = {
 					"tr": "#underline-offset",
 					"dev": "#underline-offset"
 				},
-				"tests": ["auto", "from-font", "3px"]
+				"tests": ["auto", "from-font", "3px", "10%"]
 			},
 			"text-decoration-thickness": {
 				"links": {
 					"tr": "#underline-offset",
 					"dev": "#text-decoration-width-property"
 				},
-				"tests": ["auto", "from-font", "3px"]
+				"tests": ["auto", "from-font", "3px", "10%"]
 			}
 		}
 	},
