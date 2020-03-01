@@ -1277,6 +1277,13 @@ window.Specs = {
 				},
 				"tests": ["border-box", "content-box"]
 			},
+			"outline-style": {
+				"links": {
+					"tr": "#outline-style",
+					"dev": "#outline-style"
+				},
+				"tests": ["auto"]
+			},
 			"outline-offset": {
 				"links": {
 					"tr": "#outline-offset",
