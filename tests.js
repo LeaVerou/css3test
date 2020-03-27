@@ -5385,5 +5385,83 @@ window.Specs = {
 				"tests": ["0.5", "45%"]
 			}
 		}
+	},
+
+	"svg-geometry": {
+		"title": "SVG Geometry",
+		"links": {
+			"tr": "svg2/geometry.html",
+			"dev": "svg2-draft/geometry.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"cx": {
+				"links": {
+					"tr": "#CX",
+					"dev": "#CX"
+				},
+				"tests": ["0", "1px", "-5px", "25%"]
+			},
+			"cy": {
+				"links": {
+					"tr": "#CY",
+					"dev": "#CY"
+				},
+				"tests": ["0", "1px", "-5px", "25%"]
+			},
+			"r": {
+				"links": {
+					"tr": "#R",
+					"dev": "#R"
+				},
+				"tests": ["0", "1px", "25%"]
+			},
+			"rx": {
+				"links": {
+					"tr": "#RX",
+					"dev": "#RX"
+				},
+				"tests": ["auto", "0", "1px", "25%"]
+			},
+			"ry": {
+				"links": {
+					"tr": "#RY",
+					"dev": "#RY"
+				},
+				"tests": ["auto", "0", "1px", "25%"]
+			},
+			"x": {
+				"links": {
+					"tr": "#X",
+					"dev": "#X"
+				},
+				"tests": ["0", "1px", "-5px", "25%"]
+			},
+			"y": {
+				"links": {
+					"tr": "#Y",
+					"dev": "#Y"
+				},
+				"tests": ["0", "1px", "-5px", "25%"]
+			}
+		}
+	},
+
+	"svg-paths": {
+		"title": "SVG Paths",
+		"links": {
+			"tr": "svg2/paths.html",
+			"dev": "svg2-draft/paths.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"d": {
+				"links": {
+					"tr": "#TheDProperty",
+					"dev": "#TheDProperty"
+				},
+				"tests": ["none", "'M 20 20 H 80 V 30'"]
+			}
+		}
 	}
 };
