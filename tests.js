@@ -3417,6 +3417,7 @@ window.Specs = {
 					"circle()",
 					"ellipse()",
 					"polygon(0 10px, 30px 0)",
+					"path('M 20 20 H 80 V 30')",
 					"circle() border-box",
 					"border-box",
 					"padding-box",
@@ -3630,10 +3631,11 @@ window.Specs = {
 				},
 				"tests": [
 					"none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)",
-					"polygon(100% 0, 100% 100%, 0 100%)", "margin-box", "border-box", "padding-box", "content-box",
+					"polygon(100% 0, 100% 100%, 0 100%)", "path('M 20 20 H 80 V 30')",
+					"margin-box", "border-box", "padding-box", "content-box",
 					"inset(10% round 10% 40% 10% 40%) margin-box", "ellipse(at top 50% left 20%) margin-box",
-					"circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "attr(src url)",
-					"url(image.png)"
+					"circle(at right 5% top) margin-box", "polygon(100% 0, 100% 100%, 0 100%) margin-box", "path('M 20 20 H 80 V 30') margin-box",
+					"attr(src url)", "url(image.png)"
 				]
 			},
 			"shape-image-threshold": {
@@ -3665,7 +3667,7 @@ window.Specs = {
 				},
 				"tests": [
 					"auto", "outside-shape", "shape-box", "display", "inset(10% round 10% 40% 10% 40%)",
-					"ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)",
+					"ellipse(at top 50% left 20%)", "circle(at right 5% top)", "polygon(100% 0, 100% 100%, 0 100%)", "path('M 20 20 H 80 V 30')",
 					"url(image.png)"
 				]
 			},
