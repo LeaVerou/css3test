@@ -44,6 +44,9 @@ var devLinkFormat = function (params) {
 			return 'https://drafts.css-houdini.org/' + params.dev;
 		case "github":
 			return 'https://w3c.github.io/' + params.dev;
+		case "svgwg":
+			// SVG Working Group Editor Drafts
+			return 'https://svgwg.org/' + params.dev;
 		case "whatwg":
 			// WHATWG
 			return 'https://' + params.dev + '.spec.whatwg.org/';
@@ -191,7 +194,7 @@ Test.prototype = {
 				contents: dtContents,
 				inside: dl
 			});
-		
+
 			var passed = 0, tests = theseTests[feature].tests || theseTests[feature];
 
 			tests = tests instanceof Array ? tests : [tests];
