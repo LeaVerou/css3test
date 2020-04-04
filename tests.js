@@ -2584,11 +2584,22 @@ window.Specs = {
 				},
 				"tests": [
 					"color(.2 .4 .6)",
-					"color(image-p3 .2. 4 .6)",
+					"color(display-p3 .2. 4 .6)",
 					"color(foo .2 .4 .6)",
 					"color(.2 .4 .6 / .5)",
-					"color(image-p3 .2 .4 .6  / .5)",
-					"color(foo .2 .4 .6 / .5)"
+					"color(display-p3 .2 .4 .6  / .5)",
+					"color(--foo .2 .4 .6 / .5)",
+					"color(.2 .4 .6, #123456)",
+					"color(display-p3 .2. 4 .6, #654321)",
+					"color(20% 40% 60%)",
+					"color(display-p3 20% 40% 60%)",
+					"color(foo 20% 40% 60%)",
+					"color(20% 40% 60% / .5)",
+					"color(image-p3 20% 40% 60%  / .5)",
+					"color(--foo 20% 40% 60% / .5)",
+					"color(20% 40% 60%, #123456)",
+					"color(display-p3 20% 40% 60%, #654321)",
+					"color(--mycmyk 0% 20% 30% 5%)"
 				]
 			},
 			"device-cmyk()": {
