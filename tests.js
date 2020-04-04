@@ -2577,13 +2577,6 @@ window.Specs = {
 				},
 				"tests": ["lch(0 0 0)", "lch(0 0 0 / .5)"]
 			},
-			"gray()": {
-				"links": {
-					"tr": "#grays",
-					"dev": "#grays"
-				},
-				"tests": ["gray(50)", "gray(50 / .5)"]
-			},
 			"color()": {
 				"links": {
 					"tr": "#color-function",
