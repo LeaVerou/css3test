@@ -2568,14 +2568,14 @@ window.Specs = {
 					"tr": "#specifying-lab-lch",
 					"dev": "#specifying-lab-lch"
 				},
-				"tests": ["lab(0 0 0)", "lab(0 0 0 /.5)"]
+				"tests": ["lab(0% 0 0)", "lab(0% 0 0 /.5)"]
 			},
 			"lch()": {
 				"links": {
 					"tr": "#specifying-lab-lch",
 					"dev": "#specifying-lab-lch"
 				},
-				"tests": ["lch(0 0 0)", "lch(0 0 0 / .5)"]
+				"tests": ["lch(0% 0 0)", "lch(0% 0 0 / .5)"]
 			},
 			"color()": {
 				"links": {
