@@ -2337,20 +2337,6 @@ window.Specs = {
 				},
 				"tests": ["1", "90", "750", "1000"]
 			},
-			"font-min-size": {
-				"links": {
-					"tr": "#font-min-max-size-prop",
-					"dev": "#font-min-max-size-prop"
-				},
-				"tests": ["12pt", "small", "smaller", "80%", "0"]
-			},
-			"font-max-size": {
-				"links": {
-					"tr": "#font-min-max-size-prop",
-					"dev": "#font-min-max-size-prop"
-				},
-				"tests": ["100pt", "xx-large", "larger", "120%", "infinity"]
-			},
 			"font-style": {
 				"links": {
 					"tr": "#font-style-prop",
