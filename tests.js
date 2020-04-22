@@ -2304,18 +2304,15 @@ window.Specs = {
 					"none", "normal", "all-petite-caps", "historical-forms", "super", "sub lining-nums contextual ruby"
 				]
 			},
-			"font-variant-alternates": [
-				"normal",
-				"historical-forms",
-				// TODO add tests for functions
+			"font-variant-alternates": {
 				"links": {
-					"tr": "#font-variant-alternates-prop"
+					"tr": "#font-variant-alternates-prop",
 					"dev": "#font-variant-alternates-prop"
 				},
 				"tests": [
-					"none", "normal", "historical-forms","styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
+					"normal", "historical-forms","styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
 				]
-			],
+			},
 			"font-feature-settings": {
 				"links": {
 					"tr": "#font-feature-settings-prop",
