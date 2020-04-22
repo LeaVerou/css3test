@@ -2240,11 +2240,6 @@ window.Specs = {
 					"slashed-zero ordinal tabular-nums stacked-fractions oldstyle-nums"
 				]
 			},
-			"font-variant-alternates": [
-				"normal",
-				"historical-forms"
-				// TODO add tests for functions
-			],
 			"font-variant-east-asian": {
 				"links": {
 					"tr": "#font-variant-east-asian-prop",
@@ -2309,6 +2304,15 @@ window.Specs = {
 					"none", "normal", "all-petite-caps", "historical-forms", "super", "sub lining-nums contextual ruby"
 				]
 			},
+			"font-variant-alternates": {
+				"links": {
+					"tr": "#font-variant-alternates-prop",
+					"dev": "#font-variant-alternates-prop"
+				},
+				"tests": [
+					"normal", "historical-forms","styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
+				]
+			},
 			"font-feature-settings": {
 				"links": {
 					"tr": "#font-feature-settings-prop",
@@ -2329,20 +2333,6 @@ window.Specs = {
 					"dev": "#font-weight-prop"
 				},
 				"tests": ["1", "90", "750", "1000"]
-			},
-			"font-min-size": {
-				"links": {
-					"tr": "#font-min-max-size-prop",
-					"dev": "#font-min-max-size-prop"
-				},
-				"tests": ["12pt", "small", "smaller", "80%", "0"]
-			},
-			"font-max-size": {
-				"links": {
-					"tr": "#font-min-max-size-prop",
-					"dev": "#font-min-max-size-prop"
-				},
-				"tests": ["100pt", "xx-large", "larger", "120%", "infinity"]
 			},
 			"font-style": {
 				"links": {
