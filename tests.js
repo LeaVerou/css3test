@@ -2624,6 +2624,23 @@ window.Specs = {
 					"dev": "#perf"
 				},
 				"tests": ["economy", "exact"]
+			},
+			"forced-color-adjust": {
+				"links": {
+					"tr": "#forced",
+					"dev": "#forced"
+				},
+				"tests": ["auto", "none"]
+			},
+			"color-scheme": {
+				"links": {
+					"tr": "#color-scheme-prop",
+					"dev": "#color-scheme-prop"
+				},
+				"tests": [
+					"normal", "light", "dark", "light dark", "dark light", "only light", "light only",
+					"light light", "dark dark", "light purple", "purple dark interesting", "none", "light none"
+				]
 			}
 		}
 	},
