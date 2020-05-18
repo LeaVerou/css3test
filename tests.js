@@ -3385,8 +3385,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-conditional": {
-		"title": "Conditional Rules",
+	"css-conditional-3": {
+		"title": "Conditional Rules Level 3",
 		"links": {
 			"tr": "css3-conditional",
 			"dev": "css-conditional-3"
@@ -3404,6 +3404,27 @@ window.Specs = {
 					"@supports (color: green) and (color: red)",
 					"@supports (color: green) and (not (foo: bar))",
 					"@supports (color: green) or (not (foo: bar))"
+				]
+			}
+		}
+	},
+
+	"css-conditional-4": {
+		"title": "Conditional Rules Level 4",
+		"links": {
+			"tr": "css-conditional-4",
+			"dev": "css-conditional-4"
+		},
+		"@rules": {
+			"@support selector()": {
+				"links": {
+					"tr": "#at-supports-ext",
+					"dev": "#at-supports-ext"
+				},
+				"tests": [
+					"@supports selector(::before)",
+					"@supports not selector(::-webkit-unknown-pseudo)",
+					"@supports selector(div, div)"
 				]
 			}
 		}
