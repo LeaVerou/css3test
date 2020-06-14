@@ -135,7 +135,7 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 			for (var i = 0; i < _.prefixes.length; i++) {
 				var prefixed = atrule.replace(/^@/, '@' + _.prefixes[i]);
 
-				style.textContent = prefixed + '{}';  // Safari 4 has issues with style.innerHTML
+				style.textContent = prefixed;  // Safari 4 has issues with style.innerHTML
 
 				if (style.sheet.cssRules.length > 0) {
 					return _.atrule.cached[atrule] = prefixed;

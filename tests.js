@@ -1542,7 +1542,7 @@ window.Specs = {
 					"tr": "#keyframes",
 					"dev": "#keyframes"
 				},
-				"tests": "@keyframes foo"
+				"tests": "@keyframes foo {\n  from: {\n    color: blue;\n  }\n  to: {\n    color: red;\n  }\n}"
 			}
 		}
 	},
@@ -2276,7 +2276,7 @@ window.Specs = {
 					"tr": "#font-face-rule",
 					"dev": "#font-face-rule"
 				},
-				"tests": "@font-face"
+				"tests": "@font-face {\n  font-family: foo;\n  src: local('Arial');\n}"
 			}
 		}
 	},
@@ -2362,14 +2362,14 @@ window.Specs = {
 					"tr": "#font-feature-values",
 					"dev": "#font-feature-values"
 				},
-				"tests": "@font-feature-values Jupiter Sans"
+				"tests": "@font-feature-values Jupiter Sans {\n  @styleset {\n    some-style: 1;\n  }\n}"
 			},
 			"@font-palette-values": {
 				"links": {
 					"tr": "#font-palette-values",
 					"dev": "#font-palette-values"
 				},
-				"tests": "@font-palette-values Augusta"
+				"tests": "@font-palette-values Augusta {\n  font-family: Handover Sans;\n  base-palette: 3;\n}"
 			}
 		}
 	},
@@ -3398,12 +3398,12 @@ window.Specs = {
 					"dev": "#at-supports"
 				},
 				"tests": [
-					"@supports (color: green)",
-					"@supports not (foo: bar)",
-					"@supports (color: green) or (color: red)",
-					"@supports (color: green) and (color: red)",
-					"@supports (color: green) and (not (foo: bar))",
-					"@supports (color: green) or (not (foo: bar))"
+					"@supports (color: green) {}",
+					"@supports not (foo: bar) {}",
+					"@supports (color: green) or (color: red) {}",
+					"@supports (color: green) and (color: red) {}",
+					"@supports (color: green) and (not (foo: bar)) {}",
+					"@supports (color: green) or (not (foo: bar)) {}"
 				]
 			}
 		}
@@ -3422,9 +3422,9 @@ window.Specs = {
 					"dev": "#at-supports-ext"
 				},
 				"tests": [
-					"@supports selector(::before)",
-					"@supports not selector(::-webkit-unknown-pseudo)",
-					"@supports selector(div, div)"
+					"@supports selector(::before) {}",
+					"@supports not selector(::-webkit-unknown-pseudo) {}",
+					"@supports selector(div, div) {}"
 				]
 			}
 		}
@@ -4792,7 +4792,7 @@ window.Specs = {
 					"tr": "#the-counter-style-rule",
 					"dev": "#the-counter-style-rule"
 				},
-				"tests": "@counter-style foo"
+				"tests": "@counter-style foo {\n  system: numeric;\n  symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';\n}"
 			}
 		}
 	},
