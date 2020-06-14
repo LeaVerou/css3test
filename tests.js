@@ -4959,6 +4959,12 @@ window.Specs = {
 			"dev": "css-sizing-4"
 		},
 		"properties": {
+			"aspect-ratio": {
+				"links": {
+					"dev": "#aspect-ratio"
+				},
+				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
+			},
 			"intrinsic-block-size": {
 				"links": {
 					"dev": "#intrinsic-size-override"
