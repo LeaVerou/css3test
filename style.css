@@ -38,8 +38,7 @@ h1, h2 {
 		.spec-link {
 			display: inline-block;
 			padding: .3em .4em;
-			margin: 0 0 0 .3em;
-			line-height: 1;
+			margin: -.5em 0 -.5em .3em;
 			font-family: sans-serif;
 			font-size: 0.9rem;
 			background: hsl(200, 10%, 20%);
@@ -138,11 +137,10 @@ dl {
 	}
 
 dt, dd[class] {
-	padding: 0 .5em;
+	padding: .5em;
 	background: gray;
 	color: white;
 	border-radius: .3em;
-	line-height: 2;
 	text-shadow: 0 -.05em .1em rgba(0,0,0,.5);
 	position: relative;
 }
@@ -218,6 +216,7 @@ dl > dd {
 
 dl.open > dd {
 	display: block;
+	white-space: pre;
 }
 
 /* Emoticons */
