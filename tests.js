@@ -3392,7 +3392,7 @@ window.Specs = {
 			"dev": "css-conditional-3"
 		},
 		"@rules": {
-			"@support": {
+			"@supports": {
 				"links": {
 					"tr": "#at-supports",
 					"dev": "#at-supports"
@@ -3416,7 +3416,7 @@ window.Specs = {
 			"dev": "css-conditional-4"
 		},
 		"@rules": {
-			"@support selector()": {
+			"@supports selector()": {
 				"links": {
 					"tr": "#at-supports-ext",
 					"dev": "#at-supports-ext"
