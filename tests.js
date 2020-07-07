@@ -1234,7 +1234,7 @@ window.Specs = {
 				"links": {
 					"dev": "#prefers-color-scheme"
 				},
-				"tests": ["(prefers-color-scheme: no-preference)", "(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
+				"tests": ["(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
 			},
 			"scripting": {
 				"links": {
