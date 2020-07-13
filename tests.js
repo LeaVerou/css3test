@@ -5427,8 +5427,8 @@ window.Specs = {
 		}
 	},
 
-	"svg-geometry": {
-		"title": "SVG Geometry",
+	"svg2-geometry": {
+		"title": "SVG 2 Geometry Properties",
 		"links": {
 			"tr": "svg2/geometry.html",
 			"dev": "svg2-draft/geometry.html",
@@ -5487,8 +5487,35 @@ window.Specs = {
 		}
 	},
 
-	"svg-paths": {
-		"title": "SVG Paths",
+	"svg2-coords": {
+		"title": "SVG 2 Coordinate Systems, Transformations and Units",
+		"links": {
+			"tr": "svg2/coords.html",
+			"dev": "svg2-draft/coords.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"vector-effect": {
+				"links": {
+					"tr": "#VectorEffects",
+					"dev": "#VectorEffects"
+				},
+				"tests": [
+					"none",
+					"non-scaling-stroke",
+					"non-scaling-size",
+					"non-rotation",
+					"fixed-position",
+					"non-scaling-stroke non-scaling-stroke",
+					"non-scaling-stroke viewport",
+					"non-scaling-stroke screen",
+				]
+			}
+		}
+	},
+
+	"svg2-paths": {
+		"title": "SVG 2 Paths",
 		"links": {
 			"tr": "svg2/paths.html",
 			"dev": "svg2-draft/paths.html",
