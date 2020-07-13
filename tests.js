@@ -5594,6 +5594,79 @@ window.Specs = {
 		}
 	},
 
+	"svg2-painting": {
+		"title": "SVG 2 Painting: Filling, Stroking and Marker Symbols",
+		"links": {
+			"tr": "svg2/painting.html",
+			"dev": "svg2-draft/painting.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"color-interpolation": {
+				"links": {
+					"tr": "#ColorInterpolation",
+					"dev": "#ColorInterpolation"
+				},
+				"tests": ["auto", "sRGB", "linearRGB"]
+			},
+			"color-rendering": {
+				"links": {
+					"tr": "#ColorRendering"
+				},
+				"tests": ["auto", "optimizeSpeed", "optimizeQuality"]
+			},
+			"marker": {
+				"links": {
+					"tr": "#MarkerShorthand",
+					"dev": "#MarkerShorthand"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"marker-end": {
+				"links": {
+					"tr": "#VertexMarkerProperties",
+					"dev": "#VertexMarkerProperties"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"marker-mid": {
+				"links": {
+					"tr": "#VertexMarkerProperties",
+					"dev": "#VertexMarkerProperties"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"marker-start": {
+				"links": {
+					"tr": "#VertexMarkerProperties",
+					"dev": "#VertexMarkerProperties"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"paint-order": {
+				"links": {
+					"tr": "#PaintOrder",
+					"dev": "#PaintOrder"
+				},
+				"tests": ["normal", "fill", "stroke", "markers", "fill stroke markers"]
+			},
+			"shape-rendering": {
+				"links": {
+					"tr": "#ShapeRendering",
+					"dev": "#ShapeRendering"
+				},
+				"tests": ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision"]
+			},
+			"text-rendering": {
+				"links": {
+					"tr": "#TextRendering",
+					"dev": "#TextRendering"
+				},
+				"tests": ["auto", "optimizeSpeed", "optimizeLegibility", "geometricPrecision"]
+			}
+		}
+	},
+
 	"css-rhythmic": {
 		"title": "Rhythmic Sizing",
 		"links": {
