@@ -5667,6 +5667,29 @@ window.Specs = {
 		}
 	},
 
+	"svg2-pservers": {
+		"title": "SVG 2 Paint Servers: Gradients and Patterns",
+		"links": {
+			"tr": "svg2/pservers.html",
+			"dev": "svg2-draft/pservers.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"stop-color": {
+				"links": {
+					"dev": "#StopColorProperty"
+				},
+				"tests": ["green"]
+			},
+			"stop-opacity": {
+				"links": {
+					"dev": "#StopOpacityProperty"
+				},
+				"tests": [".5", "45%"]
+			}
+		}
+	},
+
 	"css-rhythmic": {
 		"title": "Rhythmic Sizing",
 		"links": {
