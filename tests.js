@@ -5427,8 +5427,8 @@ window.Specs = {
 		}
 	},
 
-	"svg-geometry": {
-		"title": "SVG Geometry",
+	"svg2-geometry": {
+		"title": "SVG 2 Geometry Properties",
 		"links": {
 			"tr": "svg2/geometry.html",
 			"dev": "svg2-draft/geometry.html",
@@ -5487,8 +5487,35 @@ window.Specs = {
 		}
 	},
 
-	"svg-paths": {
-		"title": "SVG Paths",
+	"svg2-coords": {
+		"title": "SVG 2 Coordinate Systems, Transformations and Units",
+		"links": {
+			"tr": "svg2/coords.html",
+			"dev": "svg2-draft/coords.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"vector-effect": {
+				"links": {
+					"tr": "#VectorEffects",
+					"dev": "#VectorEffects"
+				},
+				"tests": [
+					"none",
+					"non-scaling-stroke",
+					"non-scaling-size",
+					"non-rotation",
+					"fixed-position",
+					"non-scaling-stroke non-scaling-stroke",
+					"non-scaling-stroke viewport",
+					"non-scaling-stroke screen",
+				]
+			}
+		}
+	},
+
+	"svg2-paths": {
+		"title": "SVG 2 Paths",
 		"links": {
 			"tr": "svg2/paths.html",
 			"dev": "svg2-draft/paths.html",
@@ -5501,6 +5528,182 @@ window.Specs = {
 					"dev": "#TheDProperty"
 				},
 				"tests": ["none", "'M 20 20 H 80 V 30'"]
+			}
+		}
+	},
+
+	"svg2-text": {
+		"title": "SVG 2 Text",
+		"links": {
+			"tr": "svg2/text.html",
+			"dev": "svg2-draft/text.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"shape-subtract": {
+				"links": {
+					"tr": "#TextShapeSubtract",
+					"dev": "#TextShapeSubtract"
+				},
+				"tests": [
+					"none",
+					"url('#shape')",
+					"inset(50%)",
+					"circle()",
+					"ellipse()",
+					"polygon(0 10px, 30px 0)",
+					"path('M 20 20 H 80 V 30')",
+					"url('#clip') circle()"
+				]
+			},
+			"text-anchor": {
+				"links": {
+					"tr": "#TextAnchoringProperties",
+					"dev": "#TextAnchoringProperties"
+				},
+				"tests": ["start", "middle", "end"]
+			},
+			"text-decoration-fill": {
+				"links": {
+					"tr": "#TextDecorationFillStroke"
+				},
+				"tests": [
+					"none",
+					"green",
+					"url(#pattern)",
+					"url(#pattern) none",
+					"url(#pattern) green",
+					"context-fill",
+					"context-stroke"
+				]
+			},
+			"text-decoration-stroke": {
+				"links": {
+					"tr": "#TextDecorationFillStroke"
+				},
+				"tests": [
+					"none",
+					"green",
+					"url(#pattern)",
+					"url(#pattern) none",
+					"url(#pattern) green",
+					"context-fill",
+					"context-stroke"
+				]
+			}
+		}
+	},
+
+	"svg2-painting": {
+		"title": "SVG 2 Painting: Filling, Stroking and Marker Symbols",
+		"links": {
+			"tr": "svg2/painting.html",
+			"dev": "svg2-draft/painting.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"color-interpolation": {
+				"links": {
+					"tr": "#ColorInterpolation",
+					"dev": "#ColorInterpolation"
+				},
+				"tests": ["auto", "sRGB", "linearRGB"]
+			},
+			"color-rendering": {
+				"links": {
+					"tr": "#ColorRendering"
+				},
+				"tests": ["auto", "optimizeSpeed", "optimizeQuality"]
+			},
+			"marker": {
+				"links": {
+					"tr": "#MarkerShorthand",
+					"dev": "#MarkerShorthand"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"marker-end": {
+				"links": {
+					"tr": "#VertexMarkerProperties",
+					"dev": "#VertexMarkerProperties"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"marker-mid": {
+				"links": {
+					"tr": "#VertexMarkerProperties",
+					"dev": "#VertexMarkerProperties"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"marker-start": {
+				"links": {
+					"tr": "#VertexMarkerProperties",
+					"dev": "#VertexMarkerProperties"
+				},
+				"tests": ["none", "url(#marker)"]
+			},
+			"paint-order": {
+				"links": {
+					"tr": "#PaintOrder",
+					"dev": "#PaintOrder"
+				},
+				"tests": ["normal", "fill", "stroke", "markers", "fill stroke markers"]
+			},
+			"shape-rendering": {
+				"links": {
+					"tr": "#ShapeRendering",
+					"dev": "#ShapeRendering"
+				},
+				"tests": ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision"]
+			},
+			"text-rendering": {
+				"links": {
+					"tr": "#TextRendering",
+					"dev": "#TextRendering"
+				},
+				"tests": ["auto", "optimizeSpeed", "optimizeLegibility", "geometricPrecision"]
+			}
+		}
+	},
+
+	"svg2-pservers": {
+		"title": "SVG 2 Paint Servers: Gradients and Patterns",
+		"links": {
+			"tr": "svg2/pservers.html",
+			"dev": "svg2-draft/pservers.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"stop-color": {
+				"links": {
+					"dev": "#StopColorProperty"
+				},
+				"tests": ["green"]
+			},
+			"stop-opacity": {
+				"links": {
+					"dev": "#StopOpacityProperty"
+				},
+				"tests": [".5", "45%"]
+			}
+		}
+	},
+
+	"svg2-interact": {
+		"title": "SVG 2 Scripting and Interactivity",
+		"links": {
+			"tr": "svg2/interact.html",
+			"dev": "svg2-draft/interact.html",
+			"devtype": "svgwg"
+		},
+		"properties": {
+			"pointer-events": {
+				"links": {
+					"tr": "#PointerEventsProp",
+					"dev": "#PointerEventsProp"
+				},
+				"tests": ["auto", "bounding-box", "visiblePainted", "visibleFill", "visibleStroke", "visible", "painted", "fill", "stroke", "all", "none"]
 			}
 		}
 	},
