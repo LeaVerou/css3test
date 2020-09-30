@@ -665,6 +665,13 @@ window.Specs = {
 				},
 				"tests": ":out-of-range"
 			},
+			":user-invalid": {
+				"links": {
+					"tr": "#user-invalid-pseudo",
+					"dev": "#user-invalid-pseudo"
+				},
+				"tests": ":user-invalid"
+			},
 			":required": {
 				"links": {
 					"tr": "#opt-pseudos",
@@ -802,6 +809,13 @@ window.Specs = {
 					"section:not(:has(h1, h2, h3, h4, h5, h6))",
 					"section:has(:not(h1, h2, h3, h4, h5, h6))"
 				]
+			},
+			":defined": {
+				"links": {
+					"tr": "#the-defined-pseudo",
+					"dev": "the-defined-pseudo"
+				},
+				"tests": [":defined"]
 			},
 			":nth-child of": {
 				"links": {
