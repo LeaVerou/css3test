@@ -3321,6 +3321,23 @@ window.Specs = {
 		}
 	},
 
+	"css-box-4": {
+		"title": "Box Model Level 4",
+		"links": {
+			"tr": "css-box-4",
+			"dev": "css-box-4"
+		},
+		"properties": {
+			"align-self": {
+				"links": {
+					"tr": "#margin-trim",
+					"dev": "#margin-trim"
+				},
+				"tests": ["none", "in-flow", "all"]
+			}
+		}
+	},
+
 	"css-cascade-3": {
 		"title": "Cascading and Inheritance Level 3",
 		"links": {
