@@ -1354,7 +1354,7 @@ window.Specs = {
 				},
 				"tests": ["auto", "bar", "block", "underscore"]
 			},
-			"text-overflow":["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2),
+			"text-overflow": ["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2),
 			"user-select": {
 				"links": {
 					"tr": "#content-selection",
@@ -2310,7 +2310,7 @@ window.Specs = {
 					"dev": "#font-variant-alternates-prop"
 				},
 				"tests": [
-					"normal", "historical-forms","styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
+					"normal", "historical-forms", "styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
 				]
 			},
 			"font-feature-settings": {
@@ -4879,17 +4879,49 @@ window.Specs = {
 		}
 	},
 
-	"css-containment": {
-		"title": "Containment",
+	"css-containment-1": {
+		"title": "Containment Level 1",
 		"links": {
-			"dev": "css-contain"
+			"tr": "css-contain-1",
+			"dev": "css-contain-1"
 		},
 		"properties": {
 			"contain": {
 				"links": {
+					"tr": "#contain-property",
 					"dev": "#contain-property"
 				},
-				"tests": ["none", "strict", "content", "size", "layout", "style", "paint"]
+				"tests": [
+					"none", "strict", "content", "size", "layout", "paint",
+					"size layout", "size paint", "size layout paint"
+				]
+			}
+		}
+	},
+
+	"css-containment-2": {
+		"title": "Containment Level 2",
+		"links": {
+			"tr": "css-contain-2",
+			"dev": "css-contain-2"
+		},
+		"properties": {
+			"contain": {
+				"links": {
+					"tr": "#contain-property",
+					"dev": "#contain-property"
+				},
+				"tests": [
+					"style",
+					"size style", "size layout style", "size layout style paint"
+				]
+			},
+			"content-visibility": {
+				"links": {
+					"tr": "#content-visibility",
+					"dev": "#content-visibility"
+				},
+				"tests": ["visible", "auto", "hidden"]
 			}
 		}
 	},
