@@ -2876,11 +2876,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-regions": {
+	"css-regions-1": {
 		"title": "Regions",
 		"links": {
 			"tr": "css-regions-1",
-			"dev": "css-regions"
+			"dev": "css-regions-1"
 		},
 		"properties": {
 			"flow-from": {
@@ -2895,7 +2895,7 @@ window.Specs = {
 					"tr": "#the-flow-into-property",
 					"dev": "#the-flow-into-property"
 				},
-				"tests": ["none", "named-flow"]
+				"tests": ["none", "named-flow", "named-flow element", "named-flow content"]
 			},
 			"region-fragment": {
 				"links": {
