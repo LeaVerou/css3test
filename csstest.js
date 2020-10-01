@@ -371,13 +371,20 @@ Array.prototype.times = function (min, max, separator) {
 
 onload = function () {
 	var timeBefore = +new Date,
-		duration = 0;
-
-	var specs = [];
+		duration = 0,
+		specs = [];
 
 	for (var spec in Specs) {
-		specs.push(spec);
+		specs.push({
+			id: spec,
+			title: Specs[spec].title
+		});
 	}
+
+	specs.sort(function (a, b) {
+		return a.title.localeCompare(b.title);
+	});
+
 
 	(function () {
 		if (specs.length) {
@@ -385,7 +392,7 @@ onload = function () {
 			var spec = specs.shift();
 
 			// Run tests
-			var test = new Test(Specs[spec], spec, Specs[spec].title);
+			var test = new Test(Specs[spec.id], spec, Specs[spec.id].title);
 
 			// Count test duration
 			duration += +new Date - timeBefore;
