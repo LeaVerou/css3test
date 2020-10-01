@@ -58,7 +58,7 @@ var devLinkFormat = function (params) {
 
 var Test = function (tests, spec, title) {
 	this.tests = tests;
-	this.id = spec;
+	this.id = spec.id;
 	this.title = title;
 
 	this.score = new Score(mainScore);
@@ -130,7 +130,7 @@ var Test = function (tests, spec, title) {
 		contents: [
 			{
 				tag: 'a',
-				href: '#' + spec,
+				href: '#' + spec.id,
 				contents: title
 			}
 		],
