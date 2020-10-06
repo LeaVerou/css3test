@@ -2388,8 +2388,8 @@ window.Specs = {
 		}
 	},
 
-	"css3-writing-modes": {
-		"title": "Writing Modes",
+	"css-writing-modes-3": {
+		"title": "Writing Modes Level 3",
 		"links": {
 			"tr": "css-writing-modes-3",
 			"dev": "css-writing-modes-3"
@@ -2429,6 +2429,30 @@ window.Specs = {
 					"dev": "#text-combine-upright"
 				},
 				"tests": ["none", "all"]
+			}
+		}
+	},
+
+	"css-writing-modes-4": {
+		"title": "Writing Modes Level 4",
+		"links": {
+			"tr": "css-writing-modes-4",
+			"dev": "css-writing-modes-4"
+		},
+		"properties": {
+			"writing-mode": {
+				"links": {
+					"tr": "#block-flow",
+					"dev": "#block-flow"
+				},
+				"tests": ["sideways-rl", "sideways-lr"]
+			},
+			"text-combine-upright": {
+				"links": {
+					"tr": "#text-combine-upright",
+					"dev": "#text-combine-upright"
+				},
+				"tests": ["digits 2"]
 			}
 		}
 	},
