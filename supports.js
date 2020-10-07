@@ -147,7 +147,7 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 					_.selector.cached[selector] = true;
 					return {
 						success: true,
-						prefix: _.prefixes[i]
+						propertyPrefix: _.prefixes[i]
 					};
 				}
 				catch (e) { }
