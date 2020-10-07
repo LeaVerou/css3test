@@ -219,6 +219,19 @@ dl.open > dd {
 	white-space: pre;
 }
 
+.prefix {
+	display: inline-block;
+	padding: .3em .4em;
+	margin: -.5em 0 -.5em .3em;
+	font-family: sans-serif;
+	font-size: 0.7rem;
+	background: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	border-radius: .3em;
+	vertical-align: middle;
+	text-shadow: 0 .1em .1em black;
+}
+
 /* Emoticons */
 
 dt:after,
