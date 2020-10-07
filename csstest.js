@@ -56,21 +56,21 @@ var devLinkFormat = function (params) {
 	}
 };
 
-var Test = function (tests, spec, title) {
-	this.tests = tests;
+var Test = function (spec) {
+	this.tests = spec.tests;
 	this.id = spec.id;
-	this.title = title;
+	this.title = spec.tests.title;
 
 	this.score = new Score(mainScore);
 
 	var contents = [this.title];
 
-	if (tests.links) {
-		if (tests.links.tr) {
+	if (spec.tests.links) {
+		if (spec.tests.links.tr) {
 			contents.push($.create({
 				tag: 'a',
 				properties: {
-					href: 'https://www.w3.org/TR/' + tests.links.tr,
+					href: 'https://www.w3.org/TR/' + spec.tests.links.tr,
 					target: '_blank',
 					textContent: 'TR',
 					className: 'spec-link'
@@ -78,11 +78,11 @@ var Test = function (tests, spec, title) {
 			}));
 		}
 
-		if (tests.links.dev) {
+		if (spec.tests.links.dev) {
 			contents.push($.create({
 				tag: 'a',
 				properties: {
-					href: devLinkFormat(tests.links),
+					href: devLinkFormat(spec.tests.links),
 					target: '_blank',
 					textContent: 'DEV',
 					className: 'spec-link'
@@ -94,7 +94,7 @@ var Test = function (tests, spec, title) {
 	var h1 = $.create({
 		tag: 'h1',
 		contents: contents
-	}), valuesSection;
+	});
 
 	// Wrapper section
 	this.section = $.create({
@@ -131,7 +131,7 @@ var Test = function (tests, spec, title) {
 			{
 				tag: 'a',
 				href: '#' + spec.id,
-				contents: title
+				contents: this.title
 			}
 		],
 		inside: ele('specsTested')
@@ -159,7 +159,8 @@ Test.prototype = {
 
 			var dl = document.createElement('dl');
 			var dtContents = [
-				document.createTextNode(feature)
+				document.createTextNode(feature),
+				null // for prefix
 			];
 
 			if (theseTests[feature].links) {
@@ -188,6 +189,44 @@ Test.prototype = {
 				}
 			}
 
+			var passed = 0,
+				tests = theseTests[feature].tests || theseTests[feature],
+				propertyPrefix = null,
+				testsResults = [];
+
+			tests = tests instanceof Array ? tests : [tests];
+
+			for (var i = 0, test; test = tests[i++];) {
+				var results = testCallback(test, feature, theseTests),
+					success, prefix, propertyPrefix, note;
+
+				if (typeof results === 'object') {
+					success = results.success;
+					propertyPrefix = propertyPrefix || results.propertyPrefix;
+					prefix = results.prefix;
+					note = results.note;
+				}
+
+				passed += +success;
+
+				testsResults.push({
+					tag: 'dd',
+					innerHTML: test
+						+ (prefix ? '<span class="prefix">' + prefix + '</span>' : '')
+						+ (note ? '<small>' + note + '</small>' : ''),
+					className: passclass({ passed: Math.round(success * 10000), total: 10000 }),
+					inside: dl
+				});
+			}
+
+			if (propertyPrefix) {
+				dtContents[1] = $.create({
+					tag: 'span',
+					className: 'prefix',
+					textContent: propertyPrefix
+				});
+			}
+
 			var dt = $.create({
 				tag: 'dt',
 				tabIndex: '0',
@@ -195,28 +234,8 @@ Test.prototype = {
 				inside: dl
 			});
 
-			var passed = 0, tests = theseTests[feature].tests || theseTests[feature];
-
-			tests = tests instanceof Array ? tests : [tests];
-
-			for (var i = 0, test; test = tests[i++];) {
-				var results = testCallback(test, feature, theseTests),
-					success, note;
-
-				if (typeof results === 'object') {
-					success = results.success;
-					note = results.note;
-				}
-				else { success = +!!results }
-
-				passed += +success;
-
-				$.create({
-					tag: 'dd',
-					innerHTML: test + (note ? '<small>' + note + '</small>' : ''),
-					className: passclass({ passed: Math.round(success * 10000), total: 10000 }),
-					inside: dl
-				});
+			for (var j = 0; j < testsResults.length; j++) {
+				$.create(testsResults[j]);
 			}
 
 			this.score.update({ passed: passed, total: tests.length });
@@ -251,6 +270,7 @@ Test.groups = {
 
 		return {
 			success: success,
+			prefix: false,
 			note: success > 0 && success < 1 ? 'Failed in: ' + failed.join(', ') : ''
 		}
 	},
@@ -278,11 +298,11 @@ Test.groups = {
 	'Media queries': function (test) {
 		var matches = matchMedia(test);
 		if (matches.media !== 'invalid' && matches.matches) {
-			return true;
+			return { success: true };
 		}
 		else {
 			var matches = matchMedia('not ' + test);
-			return matches.media !== 'invalid' && matches.matches
+			return { success: matches.media !== 'invalid' && matches.matches }
 		}
 	}
 };
@@ -377,12 +397,12 @@ onload = function () {
 	for (var spec in Specs) {
 		specs.push({
 			id: spec,
-			title: Specs[spec].title
+			tests: Specs[spec]
 		});
 	}
 
 	specs.sort(function (a, b) {
-		return a.title.localeCompare(b.title);
+		return a.tests.title.localeCompare(b.tests.title);
 	});
 
 
@@ -392,7 +412,7 @@ onload = function () {
 			var spec = specs.shift();
 
 			// Run tests
-			var test = new Test(Specs[spec.id], spec, Specs[spec.id].title);
+			var test = new Test(spec);
 
 			// Count test duration
 			duration += +new Date - timeBefore;
