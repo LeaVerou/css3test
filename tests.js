@@ -5147,8 +5147,7 @@ window.Specs = {
 		"properties": {
 			"aspect-ratio": {
 				"links": {
-					"dev": "#aspect-ratio",
-					"mdn": "aspect-ratio"
+					"dev": "#aspect-ratio"
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
 			},
