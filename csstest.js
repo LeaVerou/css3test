@@ -201,14 +201,22 @@ Test.prototype = {
 					}));
 				}
 
-				var mdnLink;
-				if (!links.mdn) {
-					mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/CSS/' + feature;
-				} else if (links.mdn.indexOf('SVG/') === -1) {
-					mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/CSS/' + links.mdn
-				} else {
-					mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/' + links.mdn.replace('SVG/', '');
+				var mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/';
+				switch (links.mdnGroup) {
+					case '@media':
+						mdnLink += 'CSS/@media/';
+						break;
+					case 'SVG':
+						mdnLink += 'SVG/Attribute/';
+						break;
+					default:
+						mdnLink += 'CSS/';
+						break;
 				}
+				mdnLink += !links.mdn
+					? feature.replace('()', '')
+					: links.mdn;
+
 				dtContents.push($.create({
 					tag: 'a',
 					properties: {

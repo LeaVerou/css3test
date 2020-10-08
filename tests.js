@@ -164,15 +164,13 @@ window.Specs = {
 		"properties": {
 			"background-position-x": {
 				"links": {
-					"dev": "#background-position-longhands",
-					"mdn": "background-position-x"
+					"dev": "#background-position-longhands"
 				},
 				"tests": ["right", "center", "50%", "left, left", "left, right", "right, left", "left, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "left, left, left, left, left", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "right 20px", "left 20px", "right -50px", "left -50px", "right 20px"]
 			},
 			"background-position-y": {
 				"links": {
-					"dev": "#background-position-longhands",
-					"mdn": "background-position-y"
+					"dev": "#background-position-longhands"
 				},
 				"tests": ["bottom", "center", "50%", "top, top", "top, bottom", "bottom, top", "top, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "top, top, top, top, top", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "bottom 20px", "top 20px", "bottom -50px", "top -50px", "bottom 20px"]
 			}
@@ -294,8 +292,7 @@ window.Specs = {
 			"linear-gradient()": {
 				"links": {
 					"tr": "#linear-gradients",
-					"dev": "#linear-gradients",
-					"mdn": "linear-gradient"
+					"dev": "#linear-gradients"
 				},
 				"tests": [
 					"linear-gradient(45deg, #f06 25%, yellow 25% 50%, #f06 50% 75%, yellow 75%)"
@@ -304,8 +301,7 @@ window.Specs = {
 			"radial-gradient()": {
 				"links": {
 					"tr": "#radial-gradients",
-					"dev": "#radial-gradients",
-					"mdn": "radial-gradient"
+					"dev": "#radial-gradients"
 				},
 				"tests": [
 					"radial-gradient(center, red 0% 25%, blue 25% 75%, red 75% 100%)"
@@ -314,8 +310,7 @@ window.Specs = {
 			"conic-gradient()": {
 				"links": {
 					"tr": "#conic-gradients",
-					"dev": "#conic-gradients",
-					"mdn": "conic-gradient"
+					"dev": "#conic-gradients"
 				},
 				"tests": [
 					"conic-gradient(white, black)",
@@ -331,8 +326,7 @@ window.Specs = {
 			"repeating-conic-gradient()": {
 				"links": {
 					"tr": "#repeating-gradients",
-					"dev": "#repeating-gradients",
-					"mdn": "repeating-conic-gradient"
+					"dev": "#repeating-gradients"
 				},
 				"tests": [
 					"repeating-conic-gradient(white, black)",
@@ -355,8 +349,7 @@ window.Specs = {
 			"image-set()": {
 				"links": {
 					"tr": "#image-set-notation",
-					"dev": "#image-set-notation",
-					"mdn": "image-set"
+					"dev": "#image-set-notation"
 				},
 				"tests": [
 					"image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi)"
@@ -365,16 +358,14 @@ window.Specs = {
 			"element()": {
 				"links": {
 					"tr": "#element-notation",
-					"dev": "#element-notation",
-					"mdn": "element"
+					"dev": "#element-notation"
 				},
 				"tests": "element(#foo)"
 			},
 			"cross-fade()": {
 				"links": {
 					"tr": "#cross-fade-function",
-					"dev": "#cross-fade-function",
-					"mdn": "cross-fade"
+					"dev": "#cross-fade-function"
 				},
 				"tests": [
 					"cross-fade(url(a.png), url(b.png))",
@@ -518,8 +509,7 @@ window.Specs = {
 			":nth-child()": {
 				"links": {
 					"tr": "#nth-child-pseudo",
-					"dev": "#nth-child-pseudo",
-					"mdn": ":nth-child"
+					"dev": "#nth-child-pseudo"
 				},
 				"tests": [
 					":nth-child(even)", ":nth-child(odd)",
@@ -532,8 +522,7 @@ window.Specs = {
 			":nth-last-child()": {
 				"links": {
 					"tr": "#nth-last-child-pseudo",
-					"dev": "#nth-last-child-pseudo",
-					"mdn": ":nth-last-child"
+					"dev": "#nth-last-child-pseudo"
 				},
 				"tests": [
 					":nth-last-child(even)", ":nth-last-child(odd)",
@@ -546,8 +535,7 @@ window.Specs = {
 			":nth-of-type()": {
 				"links": {
 					"tr": "#nth-of-type-pseudo",
-					"dev": "#nth-of-type-pseudo",
-					"mdn": ":nth-of-type"
+					"dev": "#nth-of-type-pseudo"
 				},
 				"tests": [
 					":nth-of-type(even)", ":nth-of-type(odd)",
@@ -560,8 +548,7 @@ window.Specs = {
 			":nth-last-of-type()": {
 				"links": {
 					"tr": "#nth-last-of-type-pseudo",
-					"dev": "#nth-last-of-type-pseudo",
-					"mdn": ":nth-last-of-type"
+					"dev": "#nth-last-of-type-pseudo"
 				},
 				"tests": [
 					":nth-last-of-type(even)", ":nth-last-of-type(odd)",
@@ -616,8 +603,7 @@ window.Specs = {
 			":not()": {
 				"links": {
 					"tr": "#negation",
-					"dev": "#negation",
-					"mdn": ":not"
+					"dev": "#negation"
 				},
 				"tests": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"]
 			}
@@ -795,40 +781,35 @@ window.Specs = {
 			":lang()": {
 				"links": {
 					"tr": "#the-lang-pseudo",
-					"dev": "#the-lang-pseudo",
-					"mdn": ":lang"
+					"dev": "#the-lang-pseudo"
 				},
 				"tests": [":lang(zh, \"*-hant\")"]
 			},
 			":not()": {
 				"links": {
 					"tr": "#negation",
-					"dev": "#negation",
-					"mdn": ":not"
+					"dev": "#negation"
 				},
 				"tests": [":not(em, #foo)"]
 			},
 			":where()": {
 				"links": {
 					"tr": "#zero-matches",
-					"dev": "#zero-matches",
-					"mdn": ":where"
+					"dev": "#zero-matches"
 				},
 				"tests": [":where(em, #foo)", ":where(:not(:hover))"]
 			},
 			":is()": {
 				"links": {
 					"tr": "#matches",
-					"dev": "#matches",
-					"mdn": ":is"
+					"dev": "#matches"
 				},
 				"tests": [":is(em, #foo)", ":is(:not(:hover))"]
 			},
 			":has()": {
 				"links": {
 					"tr": "#relational",
-					"dev": "#relational",
-					"mdn": ":has"
+					"dev": "#relational"
 				},
 				"tests": [
 					"a:has(> img)",
@@ -862,8 +843,7 @@ window.Specs = {
 			":nth-col()": {
 				"links": {
 					"tr": "#the-nth-col-pseudo",
-					"dev": "#the-nth-col-pseudo",
-					"mdn": ":nth-col"
+					"dev": "#the-nth-col-pseudo"
 				},
 				"tests": [
 					":nth-col(even)", ":nth-col(odd)",
@@ -876,8 +856,7 @@ window.Specs = {
 			":nth-last-col()": {
 				"links": {
 					"tr": "#the-nth-last-col-pseudo",
-					"dev": "#the-nth-last-col-pseudo",
-					"mdn": ":nth-last-col"
+					"dev": "#the-nth-last-col-pseudo"
 				},
 				"tests": [
 					":nth-last-col(even)", ":nth-last-col(odd)",
@@ -1007,7 +986,8 @@ window.Specs = {
 			":host()": {
 				"links": {
 					"tr": "#host-selector",
-					"dev": "#host-selector"
+					"dev": "#host-selector",
+					"mdn": ":host()"
 				},
 				"tests": [":host(*)", ":host(.foo)"]
 			},
@@ -1066,7 +1046,7 @@ window.Specs = {
 				"links": {
 					"tr": "#device-width",
 					"dev": "#device-width",
-					"mdn": "@media/device-height"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"]
 			},
@@ -1074,7 +1054,7 @@ window.Specs = {
 				"links": {
 					"tr": "#device-height",
 					"dev": "#device-height",
-					"mdn": "@media/device-height"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"]
 			},
@@ -1082,7 +1062,7 @@ window.Specs = {
 				"links": {
 					"tr": "#orientation",
 					"dev": "#orientation",
-					"mdn": "@media/orientation"
+					"mdnGroup": "@media"
 				},
 				"tests": "(orientation:portrait), (orientation:landscape)"
 			},
@@ -1090,7 +1070,7 @@ window.Specs = {
 				"links": {
 					"tr": "#aspect-ratio",
 					"dev": "#aspect-ratio",
-					"mdn": "@media/aspect-ratio"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"(aspect-ratio)",
@@ -1103,7 +1083,7 @@ window.Specs = {
 				"links": {
 					"tr": "#device-aspect-ratio",
 					"dev": "#device-aspect-ratio",
-					"mdn": "@media/device-aspect-ratio"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"(device-aspect-ratio)",
@@ -1116,7 +1096,7 @@ window.Specs = {
 				"links": {
 					"tr": "#color",
 					"dev": "#color",
-					"mdn": "@media/color"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"(color)", "(min-color: 0)", "(max-color: 100)"
@@ -1126,7 +1106,7 @@ window.Specs = {
 				"links": {
 					"tr": "#color-index",
 					"dev": "#color-index",
-					"mdn": "@media/color-index"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"all, (color-index)",
@@ -1138,7 +1118,7 @@ window.Specs = {
 				"links": {
 					"tr": "#monochrome",
 					"dev": "#monochrome",
-					"mdn": "@media/monochrome"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"all, (monochrome)", "(min-monochrome: 0)", "(max-monochrome: 10000)"
@@ -1148,7 +1128,7 @@ window.Specs = {
 				"links": {
 					"tr": "#resolution",
 					"dev": "#resolution",
-					"mdn": "@media/resolution"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"(resolution)",
@@ -1161,7 +1141,7 @@ window.Specs = {
 				"links": {
 					"tr": "#scan",
 					"dev": "#scan",
-					"mdn": "@media/scan"
+					"mdnGroup": "@media"
 				},
 				"tests": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"]
 			},
@@ -1169,7 +1149,7 @@ window.Specs = {
 				"links": {
 					"tr": "#grid",
 					"dev": "#grid",
-					"mdn": "@media/grid"
+					"mdnGroup": "@media"
 				},
 				"tests": ["all, (grid)", "(grid: 0), (grid: 1)"]
 			}
@@ -1187,7 +1167,7 @@ window.Specs = {
 				"links": {
 					"tr": "#resolution",
 					"dev": "#resolution",
-					"mdn": "@media/resolution"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(resolution: infinite)"]
 			},
@@ -1195,7 +1175,7 @@ window.Specs = {
 				"links": {
 					"tr": "#hover",
 					"dev": "#hover",
-					"mdn": "@media/hover"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(hover)", "(hover: none)", "(hover: hover)"]
 			},
@@ -1203,7 +1183,7 @@ window.Specs = {
 				"links": {
 					"tr": "#any-input",
 					"dev": "#any-input",
-					"mdn": "@media/any-hover"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(any-hover)", "(any-hover: none)", "(any-hover: hover)"]
 			},
@@ -1211,7 +1191,7 @@ window.Specs = {
 				"links": {
 					"tr": "#pointer",
 					"dev": "#pointer",
-					"mdn": "@media/pointer"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(pointer)", "(pointer: none)", "(pointer: coarse)", "(pointer: fine)"]
 			},
@@ -1219,14 +1199,15 @@ window.Specs = {
 				"links": {
 					"tr": "#any-input",
 					"dev": "#any-input",
-					"mdn": "@media/any-pointer"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"]
 			},
 			"update": {
 				"links": {
 					"tr": "#update",
-					"dev": "#update"
+					"dev": "#update",
+					"mdnGroup": "@media"
 				},
 				"tests": ["(update)", "(update: none)", "(update: slow)", "(update: fast)"]
 			},
@@ -1234,7 +1215,7 @@ window.Specs = {
 				"links": {
 					"tr": "#mf-overflow-block",
 					"dev": "#mf-overflow-block",
-					"mdn": "@media/overflow-block"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"]
 			},
@@ -1242,7 +1223,7 @@ window.Specs = {
 				"links": {
 					"tr": "#mf-overflow-inline",
 					"dev": "#mf-overflow-inline",
-					"mdn": "@media/overflow-inline"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(overflow-inline: none)", "(overflow-inline: scroll)"]
 			},
@@ -1250,7 +1231,7 @@ window.Specs = {
 				"links": {
 					"tr": "#color-gamut",
 					"dev": "#color-gamut",
-					"mdn": "@media/color-gamut"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(color-gamut)", "(color-gamut: srgb)", "(color-gamut: p3)", "(color-gamut: rec2020)"]
 			},
@@ -1258,7 +1239,7 @@ window.Specs = {
 				"links": {
 					"tr": "#aspect-ratio",
 					"dev": "#aspect-ratio",
-					"mdn": "@media/aspect-ratio"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"(aspect-ratio: 1280.1/720.01)",
@@ -1270,7 +1251,7 @@ window.Specs = {
 				"links": {
 					"tr": "#device-aspect-ratio",
 					"dev": "#device-aspect-ratio",
-					"mdn": "@media/device-aspect-ratio"
+					"mdnGroup": "@media"
 				},
 				"tests": [
 					"(device-aspect-ratio:1280.1/720.01)",
@@ -1290,54 +1271,56 @@ window.Specs = {
 			"prefers-reduced-motion": {
 				"links": {
 					"dev": "#prefers-reduced-motion",
-					"mdn": "@media/prefers-reduced-motion"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"]
 			},
 			"prefers-reduced-transparency": {
 				"links": {
 					"dev": "#prefers-reduced-transparency",
-					"mdn": "@media/prefers-reduced-transparency"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-transparency: reduce)"]
 			},
 			"prefers-contrast": {
 				"links": {
 					"dev": "#prefers-contrast",
-					"mdn": "@media/prefers-contrast"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
 					"dev": "#prefers-color-scheme",
-					"mdn": "@media/prefers-color-scheme"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
 			},
 			"scripting": {
 				"links": {
 					"dev": "#scripting",
-					"mdn": "@media/scripting"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
 			"light-level": {
 				"links": {
-					"dev": "#light-level"
+					"dev": "#light-level",
+					"mdnGroup": "@media"
 				},
 				"tests": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"]
 			},
 			"environment-blending": {
 				"links": {
-					"dev": "#environment-blending"
+					"dev": "#environment-blending",
+					"mdnGroup": "@media"
 				},
 				"tests": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"]
 			},
 			"inverted-colors": {
 				"links": {
 					"dev": "#inverted",
-					"mdn": "@media/inverted-colors"
+					"mdnGroup": "@media"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
 			}
@@ -2928,16 +2911,14 @@ window.Specs = {
 			"attr()": {
 				"links": {
 					"tr": "#attr-notation",
-					"dev": "#attr-notation",
-					"mdn": "attr"
+					"dev": "#attr-notation"
 				},
 				"tests": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"]
 			},
 			"calc()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#calc-notation",
-					"mdn": "calc"
+					"dev": "#calc-notation"
 				},
 				"tests": [
 					"calc(1px + 2px)",
@@ -2979,24 +2960,21 @@ window.Specs = {
 			"min()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#comp-func",
-					"mdn": "min"
+					"dev": "#comp-func"
 				},
 				"tests": ["max(10 * (1vw + 1vh) / 2, 12px)"]
 			},
 			"max()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#comp-func",
-					"mdn": "max"
+					"dev": "#comp-func"
 				},
 				"tests": ["max(10 * (1vw + 1vh) / 2, 12px)"]
 			},
 			"clamp()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#comp-func",
-					"mdn": "clamp"
+					"dev": "#comp-func"
 				},
 				"tests": ["clamp(12px, 10 * (1vw + 1vh) / 2, 100px)"]
 			}
@@ -3016,8 +2994,7 @@ window.Specs = {
 			"env()": {
 				"links": {
 					"tr": "#env-function",
-					"dev": "#env-function",
-					"mdn": "env"
+					"dev": "#env-function"
 				},
 				"tests": [
 					"env(safe-area-inset-top)", "env(safe-area-inset-top, 12px)",
@@ -5284,8 +5261,7 @@ window.Specs = {
 			"::cue()": {
 				"links": {
 					"tr": "#the-cue-pseudo-element",
-					"dev": "#the-cue-pseudo-element",
-					"mdn": "::cue"
+					"dev": "#the-cue-pseudo-element"
 				},
 				"tests": ["::cue(span)"]
 			},
@@ -5299,8 +5275,7 @@ window.Specs = {
 			"::cue-region()": {
 				"links": {
 					"tr": "#the-cue-region-pseudo-element",
-					"dev": "#the-cue-region-pseudo-element",
-					"mdn": "::cue-region"
+					"dev": "#the-cue-region-pseudo-element"
 				},
 				"tests": ['::cue-region(span)']
 			}
@@ -5325,8 +5300,7 @@ window.Specs = {
 			"paint()": {
 				"links": {
 					"tr": "#paint-notation",
-					"dev": "#paint-notation",
-					"mdn": "paint"
+					"dev": "#paint-notation"
 				},
 				"tests": [
 					"paint(company-logo)", "paint(chat-bubble, blue)", "paint(failing-argument-syntax, 1px, 2px)", "paint(arc, purple, 0.4turn, 0.8turn, 40px, 15px)"
@@ -5363,8 +5337,7 @@ window.Specs = {
 			"::part()": {
 				"links": {
 					"tr": "#part",
-					"dev": "#part",
-					"mdn": "::part"
+					"dev": "#part"
 				},
 				"tests": ["::part(label)"]
 			}
@@ -5655,7 +5628,7 @@ window.Specs = {
 				"links": {
 					"tr": "#CX",
 					"dev": "#CX",
-					"mdn": "SVG/cx"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
@@ -5663,7 +5636,7 @@ window.Specs = {
 				"links": {
 					"tr": "#CY",
 					"dev": "#CY",
-					"mdn": "SVG/cy"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
@@ -5671,7 +5644,7 @@ window.Specs = {
 				"links": {
 					"tr": "#R",
 					"dev": "#R",
-					"mdn": "SVG/r"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "25%"]
 			},
@@ -5679,7 +5652,7 @@ window.Specs = {
 				"links": {
 					"tr": "#RX",
 					"dev": "#RX",
-					"mdn": "SVG/rx"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "0", "1px", "25%"]
 			},
@@ -5687,7 +5660,7 @@ window.Specs = {
 				"links": {
 					"tr": "#RY",
 					"dev": "#RY",
-					"mdn": "SVG/ry"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "0", "1px", "25%"]
 			},
@@ -5695,7 +5668,7 @@ window.Specs = {
 				"links": {
 					"tr": "#X",
 					"dev": "#X",
-					"mdn": "SVG/x"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
@@ -5703,7 +5676,7 @@ window.Specs = {
 				"links": {
 					"tr": "#Y",
 					"dev": "#Y",
-					"mdn": "SVG/y"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			}
@@ -5722,7 +5695,7 @@ window.Specs = {
 				"links": {
 					"tr": "#VectorEffects",
 					"dev": "#VectorEffects",
-					"mdn": "SVG/vector-effect"
+					"mdnGroup": "SVG"
 				},
 				"tests": [
 					"none",
@@ -5750,7 +5723,7 @@ window.Specs = {
 				"links": {
 					"tr": "#TheDProperty",
 					"dev": "#TheDProperty",
-					"mdn": "SVG/d"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "'M 20 20 H 80 V 30'"]
 			}
@@ -5785,7 +5758,7 @@ window.Specs = {
 				"links": {
 					"tr": "#TextAnchoringProperties",
 					"dev": "#TextAnchoringProperties",
-					"mdn": "SVG/text-anchor"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["start", "middle", "end"]
 			},
@@ -5832,7 +5805,7 @@ window.Specs = {
 				"links": {
 					"tr": "#ColorInterpolation",
 					"dev": "#ColorInterpolation",
-					"mdn": "SVG/color-interpolation"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "sRGB", "linearRGB"]
 			},
@@ -5853,7 +5826,7 @@ window.Specs = {
 				"links": {
 					"tr": "#VertexMarkerProperties",
 					"dev": "#VertexMarkerProperties",
-					"mdn": "SVG/marker-end"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
@@ -5861,7 +5834,7 @@ window.Specs = {
 				"links": {
 					"tr": "#VertexMarkerProperties",
 					"dev": "#VertexMarkerProperties",
-					"mdn": "SVG/marker-mid"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
@@ -5869,7 +5842,7 @@ window.Specs = {
 				"links": {
 					"tr": "#VertexMarkerProperties",
 					"dev": "#VertexMarkerProperties",
-					"mdn": "SVG/marker-start"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
@@ -5884,7 +5857,7 @@ window.Specs = {
 				"links": {
 					"tr": "#ShapeRendering",
 					"dev": "#ShapeRendering",
-					"mdn": "SVG/shape-rendering"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision"]
 			},
@@ -5909,14 +5882,14 @@ window.Specs = {
 			"stop-color": {
 				"links": {
 					"dev": "#StopColorProperty",
-					"mdn": "SVG/stop-color"
+					"mdnGroup": "SVG"
 				},
 				"tests": ["green"]
 			},
 			"stop-opacity": {
 				"links": {
 					"dev": "#StopOpacityProperty",
-					"mdn": "SVG/stop-opacity"
+					"mdnGroup": "SVG"
 				},
 				"tests": [".5", "45%"]
 			}
