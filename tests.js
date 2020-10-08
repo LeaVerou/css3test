@@ -1287,7 +1287,7 @@ window.Specs = {
 					"dev": "#prefers-contrast",
 					"mdnGroup": "@media"
 				},
-				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)"]
+				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)", "(prefers-contrast: forced)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
@@ -1303,13 +1303,6 @@ window.Specs = {
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
-			"light-level": {
-				"links": {
-					"dev": "#light-level",
-					"mdnGroup": "@media"
-				},
-				"tests": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"]
-			},
 			"environment-blending": {
 				"links": {
 					"dev": "#environment-blending",
@@ -1317,12 +1310,44 @@ window.Specs = {
 				},
 				"tests": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"]
 			},
+			"forced-colors": {
+				"links": {
+					"tr": "#forced-colors",
+					"dev": "#prefers-contrast",
+					"mdnGroup": "@media"
+				},
+				"tests": ["(forced-colors: none)", "(forced-color: active)"]
+			},
+			"dynamic-range": {
+				"links": {
+					"tr": "#dynamic-range",
+					"dev": "#dynamic-range",
+					"mdnGroup": "@media"
+				},
+				"tests": ["(dynamic-range: standard)", "(dynamic-range: high)"]
+			},
 			"inverted-colors": {
 				"links": {
 					"dev": "#inverted",
 					"mdnGroup": "@media"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
+			},
+			"video-color-gamut": {
+				"links": {
+					"dev": "#video-color-gamut",
+					"tr": "#video-color-gamut",
+					"mdnGroup": "@media"
+				},
+				"tests": ["(video-color-gamut: srgb)", "(video-color-gamut: p3)", "(video-color-gamut: rec2020)"]
+			},
+			"video-dynamic-range": {
+				"links": {
+					"dev": "#video-dynamic-range",
+					"tr": "#video-dynamic-range",
+					"mdnGroup": "@media"
+				},
+				"tests": ["(video-dynamic-range: standard)", "(video-dynamic-range: high)"]
 			}
 		}
 	},
@@ -5092,49 +5117,49 @@ window.Specs = {
 					"tr": "#preferred-size-properties",
 					"dev": "#preferred-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"min-width": {
 				"links": {
 					"tr": "#min-size-properties",
 					"dev": "#min-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"max-width": {
 				"links": {
 					"tr": "#max-size-properties",
 					"dev": "#max-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"height": {
 				"links": {
 					"tr": "#preferred-size-properties",
 					"dev": "#preferred-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"min-height": {
 				"links": {
 					"tr": "#min-size-properties",
 					"dev": "#min-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"max-height": {
 				"links": {
 					"tr": "#max-size-properties",
 					"dev": "#max-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"column-width": {
 				"links": {
 					"tr": "#column-sizing",
 					"dev": "#column-sizing"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			}
 		}
 	},
@@ -5151,29 +5176,54 @@ window.Specs = {
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
 			},
-			"intrinsic-block-size": {
+			"contain-intrinsic-size": {
 				"links": {
+					"tr": "#intrinsic-size-override",
 					"dev": "#intrinsic-size-override"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["none", "10px", "10px 15px"]
 			},
-			"intrinsic-inline-size": {
+			"width": {
 				"links": {
-					"dev": "#intrinsic-size-override"
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["stretch", "fit-content", "contain"]
 			},
-			"intrinsic-height": {
+			"min-width": {
 				"links": {
-					"dev": "#intrinsic-size-override"
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["stretch", "fit-content", "contain"]
 			},
-			"intrinsic-width": {
+			"max-width": {
 				"links": {
-					"dev": "#intrinsic-size-override"
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"min-height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"max-height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
 			}
 		}
 	},
