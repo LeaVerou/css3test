@@ -5075,7 +5075,7 @@ window.Specs = {
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
 			},
 			"contain-intrinsic-size": {
-				"links:" {
+				"links": {
 					"tr": "#intrinsic-size-override",
 					"dev": "#intrinsic-size-override"
 				},
