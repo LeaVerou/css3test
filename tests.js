@@ -1223,6 +1223,7 @@ window.Specs = {
 	"mediaqueries-5": {
 		"title": "Media Queries Level 5",
 		"links": {
+			"tr": "mediaqueries-5",
 			"dev": "mediaqueries-5"
 		},
 		"Media queries": {
@@ -5065,6 +5066,7 @@ window.Specs = {
 	"css-sizing-4": {
 		"title": "Box Sizing Level 4",
 		"links": {
+			"tr": "css-sizing-4",
 			"dev": "css-sizing-4"
 		},
 		"properties": {
