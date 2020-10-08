@@ -256,12 +256,12 @@ Test.groups = {
 			failed = [];
 
 		for (var j = 0, property; property = properties[j++];) {
-			if (!Supports.property(property)) {
+			if (!Supports.property(property).success) {
 				properties.splice(--j, 1);
 				continue;
 			}
 
-			if (!Supports.value(property, test)) {
+			if (!Supports.value(property, test).success) {
 				failed.push(property);
 			}
 		}
@@ -270,7 +270,6 @@ Test.groups = {
 
 		return {
 			success: success,
-			prefix: false,
 			note: success > 0 && success < 1 ? 'Failed in: ' + failed.join(', ') : ''
 		}
 	},
