@@ -201,19 +201,23 @@ Test.prototype = {
 					}));
 				}
 
-				if (links.mdn) {
-					dtContents.push($.create({
-						tag: 'a',
-						properties: {
-							href: links.mdn.indexOf('SVG/') === -1
-								? 'https://developer.mozilla.org/en-US/docs/Web/CSS/' + links.mdn
-								: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/' + links.mdn.replace('SVG/', ''),
-							target: '_blank',
-							textContent: 'MDN',
-							className: 'spec-link mdn-link'
-						}
-					}));
+				var mdnLink;
+				if (!links.mdn) {
+					mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/CSS/' + feature;
+				} else if (links.mdn.indexOf('SVG/') === -1) {
+					mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/CSS/' + links.mdn
+				} else {
+					mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/' + links.mdn.replace('SVG/', '');
 				}
+				dtContents.push($.create({
+					tag: 'a',
+					properties: {
+						href: mdnLink,
+						target: '_blank',
+						textContent: 'MDN',
+						className: 'spec-link mdn-link'
+					}
+				}));
 			}
 
 			var passed = 0,
