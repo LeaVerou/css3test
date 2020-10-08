@@ -5015,49 +5015,49 @@ window.Specs = {
 					"tr": "#preferred-size-properties",
 					"dev": "#preferred-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"min-width": {
 				"links": {
 					"tr": "#min-size-properties",
 					"dev": "#min-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"max-width": {
 				"links": {
 					"tr": "#max-size-properties",
 					"dev": "#max-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"height": {
 				"links": {
 					"tr": "#preferred-size-properties",
 					"dev": "#preferred-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"min-height": {
 				"links": {
 					"tr": "#min-size-properties",
 					"dev": "#min-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"max-height": {
 				"links": {
 					"tr": "#max-size-properties",
 					"dev": "#max-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"column-width": {
 				"links": {
 					"tr": "#column-sizing",
 					"dev": "#column-sizing"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			}
 		}
 	},
@@ -5074,29 +5074,54 @@ window.Specs = {
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
 			},
-			"intrinsic-block-size": {
-				"links": {
+			"contain-intrinsic-size": {
+				"links:" {
+					"tr": "#intrinsic-size-override",
 					"dev": "#intrinsic-size-override"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["none", "10px", "10px 15px"]
 			},
-			"intrinsic-inline-size": {
+			"width": {
 				"links": {
-					"dev": "#intrinsic-size-override"
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["stretch", "fit-content", "contain"]
 			},
-			"intrinsic-height": {
+			"min-width": {
 				"links": {
-					"dev": "#intrinsic-size-override"
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["stretch", "fit-content", "contain"]
 			},
-			"intrinsic-width": {
+			"max-width": {
 				"links": {
-					"dev": "#intrinsic-size-override"
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
 				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"min-height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"max-height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
 			}
 		}
 	},
