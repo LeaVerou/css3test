@@ -2751,9 +2751,9 @@ window.Specs = {
 				"links": {
 					"tr": "#hsla-color",
 					"dev": "#hsla-color",
-					"mdn": "hsla"
+					"mdn": "color_value"
 				},
-				"tests": "color_value"
+				"tests": "hsl(0,0%,0%,.5)"
 			},
 			"transparent": {
 				"links": {
