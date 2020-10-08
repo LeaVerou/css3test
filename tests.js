@@ -1242,7 +1242,7 @@ window.Specs = {
 				"links": {
 					"dev": "#prefers-contrast"
 				},
-				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)"]
+				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)", "(prefers-contrast: forced)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
@@ -1256,23 +1256,45 @@ window.Specs = {
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
-			"light-level": {
-				"links": {
-					"dev": "#light-level"
-				},
-				"tests": ["(light-level: dim)", "(light-level: normal)", "(light-level: washed)"]
-			},
 			"environment-blending": {
 				"links": {
 					"dev": "#environment-blending"
 				},
 				"tests": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"]
 			},
+			"forced-colors": {
+				"links": {
+					"tr": "#forced-colors",
+					"dev": "#prefers-contrast"
+				},
+				"tests": ["(forced-colors: none)", "(forced-color: active)"]
+			},
+			"dynamic-range": {
+				"links": {
+					"tr": "#dynamic-range",
+					"dev": "#dynamic-range"
+				},
+				"tests": ["(dynamic-range: standard)", "(dynamic-range: high)"]
+			},
 			"inverted-colors": {
 				"links": {
 					"dev": "#inverted"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
+			},
+			"video-color-gamut": {
+				"links": {
+					"dev": "#video-color-gamut",
+					"tr": "#video-color-gamut"
+				},
+				"tests": ["(video-color-gamut: srgb)", "(video-color-gamut: p3)", "(video-color-gamut: rec2020)"]
+			},
+			"video-dynamic-range": {
+				"links": {
+					"dev": "#video-dynamic-range",
+					"tr": "#video-dynamic-range"
+				},
+				"tests": ["(video-dynamic-range: standard)", "(video-dynamic-range: high)"]
 			}
 		}
 	},
