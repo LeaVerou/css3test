@@ -56,6 +56,20 @@ var devLinkFormat = function (params) {
 	}
 };
 
+
+var devLinkLogo = function (params) {
+	switch (params.devtype) {
+		case "whatwg":
+			return params.devtype;
+		case "svgwg":
+		case "houdini":
+		case "fxtf":
+		case "github":
+		default:
+			return 'w3c';
+	}
+};
+
 var Test = function (spec) {
 	this.tests = spec.tests;
 	this.id = spec.id;
@@ -85,7 +99,7 @@ var Test = function (spec) {
 					href: devLinkFormat(spec.tests.links),
 					target: '_blank',
 					textContent: 'DEV',
-					className: 'spec-link w3c-link'
+					className: 'spec-link ' + devLinkLogo(spec.tests.links) + '-link'
 				}
 			}));
 		}
@@ -196,7 +210,7 @@ Test.prototype = {
 							href: devLinkFormat(this.tests.links) + links.dev,
 							target: '_blank',
 							textContent: 'DEV',
-							className: 'spec-link w3c-link'
+							className: 'spec-link ' + devLinkLogo(this.tests.links) + '-link'
 						}
 					}));
 				}
