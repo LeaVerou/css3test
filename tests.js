@@ -4993,49 +4993,49 @@ window.Specs = {
 					"tr": "#preferred-size-properties",
 					"dev": "#preferred-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"min-width": {
 				"links": {
 					"tr": "#min-size-properties",
 					"dev": "#min-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"max-width": {
 				"links": {
 					"tr": "#max-size-properties",
 					"dev": "#max-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"height": {
 				"links": {
 					"tr": "#preferred-size-properties",
 					"dev": "#preferred-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"min-height": {
 				"links": {
 					"tr": "#min-size-properties",
 					"dev": "#min-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"max-height": {
 				"links": {
 					"tr": "#max-size-properties",
 					"dev": "#max-size-properties"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			},
 			"column-width": {
 				"links": {
 					"tr": "#column-sizing",
 					"dev": "#column-sizing"
 				},
-				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
+				"tests": ["max-content", "min-content", "fit-content(10%)"]
 			}
 		}
 	},
@@ -5058,6 +5058,48 @@ window.Specs = {
 					"dev": "#intrinsic-size-override"
 				},
 				"tests": ["none", "10px", "10px 15px"]
+			},
+			"width": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"min-width": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"max-width": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"min-height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"max-height": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
 			}
 		}
 	},
