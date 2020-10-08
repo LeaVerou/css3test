@@ -1248,36 +1248,42 @@ window.Specs = {
 		"Media queries": {
 			"prefers-reduced-motion": {
 				"links": {
+					"tr": "#prefers-reduced-motion",
 					"dev": "#prefers-reduced-motion"
 				},
 				"tests": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"]
 			},
 			"prefers-reduced-transparency": {
 				"links": {
+					"tr": "#prefers-reduced-transparency",
 					"dev": "#prefers-reduced-transparency"
 				},
 				"tests": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-transparency: reduce)"]
 			},
 			"prefers-contrast": {
 				"links": {
+					"tr": "#prefers-contrast",
 					"dev": "#prefers-contrast"
 				},
 				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)", "(prefers-contrast: forced)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
+					"tr": "#prefers-color-scheme",
 					"dev": "#prefers-color-scheme"
 				},
 				"tests": ["(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
 			},
 			"scripting": {
 				"links": {
+					"tr": "#scripting",
 					"dev": "#scripting"
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
 			"environment-blending": {
 				"links": {
+					"tr": "#environment-blending",
 					"dev": "#environment-blending"
 				},
 				"tests": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"]
@@ -1298,6 +1304,7 @@ window.Specs = {
 			},
 			"inverted-colors": {
 				"links": {
+					"tr": "#inverted",
 					"dev": "#inverted"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
@@ -5139,6 +5146,7 @@ window.Specs = {
 		"properties": {
 			"aspect-ratio": {
 				"links": {
+					"tr": "#aspect-ratio",
 					"dev": "#aspect-ratio"
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
