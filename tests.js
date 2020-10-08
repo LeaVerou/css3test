@@ -4382,8 +4382,7 @@ window.Specs = {
 		"properties": {
 			"overflow-anchor": {
 				"links": {
-					"dev": "#exclusion-api",
-					"mdn": "overflow-anchor"
+					"dev": "#exclusion-api"
 				},
 				"tests": ["none", "auto"]
 			}
