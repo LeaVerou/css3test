@@ -73,7 +73,7 @@ var Test = function (spec) {
 					href: 'https://www.w3.org/TR/' + spec.tests.links.tr,
 					target: '_blank',
 					textContent: 'TR',
-					className: 'spec-link'
+					className: 'spec-link w3c-link'
 				}
 			}));
 		}
@@ -85,7 +85,7 @@ var Test = function (spec) {
 					href: devLinkFormat(spec.tests.links),
 					target: '_blank',
 					textContent: 'DEV',
-					className: 'spec-link'
+					className: 'spec-link w3c-link'
 				}
 			}));
 		}
@@ -97,7 +97,7 @@ var Test = function (spec) {
 					href: 'https://developer.mozilla.org/en-US/docs/' + spec.tests.links.mdn,
 					target: '_blank',
 					textContent: 'MDN',
-					className: 'spec-link'
+					className: 'spec-link mdn-link'
 				}
 			}));
 		}
@@ -184,7 +184,7 @@ Test.prototype = {
 							href: 'https://www.w3.org/TR/' + this.tests.links.tr + links.tr,
 							target: '_blank',
 							textContent: 'TR',
-							className: 'spec-link'
+							className: 'spec-link w3c-link'
 						}
 					}));
 				}
@@ -196,7 +196,7 @@ Test.prototype = {
 							href: devLinkFormat(this.tests.links) + links.dev,
 							target: '_blank',
 							textContent: 'DEV',
-							className: 'spec-link'
+							className: 'spec-link w3c-link'
 						}
 					}));
 				}
@@ -210,7 +210,7 @@ Test.prototype = {
 								: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/' + links.mdn.replace('SVG/', ''),
 							target: '_blank',
 							textContent: 'MDN',
-							className: 'spec-link'
+							className: 'spec-link mdn-link'
 						}
 					}));
 				}

@@ -52,6 +52,22 @@ h1, h2 {
 			background: #f06;
 		}
 
+		.w3c-link::before,
+		.mdn-link::before {
+			content:'';
+			display: inline-block;
+			height: 16px;
+			width: 16px;
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8j1z1tAAAAOHRSTlMA9eXYekrw6rZkJOHewKuhnXQbEgbu0cu6qIR/W1U7NDEfCwLtyJWPb05BGA0Iw7uvpIwrBNVsKu/y7/oAAAFHSURBVDjL3ZFXcsMwDAWxVLWam9ziuJfELb3c/2aByFjyGbw/bzCzQ4CA3AtjU1TRMlli65Nn/omd8MG2p/EJLVvPuLJ3whFmGpsdb7buYPxut2swPSesMzpVTjF9jYtnyyDkWf5p4601HiDQmNsHzx6jy1V4hLnI1wietPKJTvqcsx29iKkOGcKwFMnR4ZOI9u1HeRF5ZhuykNVAe28m4JeN0GWwkph9jl/1W8oCJV/VwhIe1xHzKa868fBLks4kg936KpRD9gFpOSf6/dZJK/qFW5zjieEbEzmntEOCevS4FgKw/rtG2hdHjFcL/RQGid0IRbM/IzUF5Bqr7U3jmKwRWuBX+UqYbA7FsnrVkDdCojtyG3mRzYjx2Z7Gl4ZddnEbeRA5wMjvYM9d8/Fuo/SO7q7KIJAbjgeXPydRZuPUmyzkfvgDdPETe8fVD1QAAAAASUVORK5CYII=') 0 0 / 16px 16px;
+			vertical-align: -3px;
+			margin-right: 3px;
+			opacity: .5;
+		}
+
+		.mdn-link::before {
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAY1BMVEX///8bGxv///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+hiOJbAAAAIHRSTlMFBfj89ezmpPHPvbKrhn1fPCfg3MqTeG1mQSLdwraMUHz2iCAAAAChSURBVDjL3ZFJDoMwDAAdEghQIAmUtZv//8oeUKPsUa/MdUaWLcMF2VaRsPuLIWLZrpzLkL9R1LCAv6NJ7/knWrDBnY8uU68M32GAotV+qOs6VOjgAGhDgbJ38INDe9XxefSCCkz6wvXlYnpRMF00m3g34wwuj5+HMJKenspIsNiPir+rhCgdzQSwT/r6GLyiFaT5DPAXJOdJzpO0Tgbk5AuoBR5AHF821AAAAABJRU5ErkJggg==') 0 0 / 16px 16px;
+		}
+		
 		dt > .spec-link {
 			display: none;
 			vertical-align: inherit;
@@ -60,6 +76,14 @@ h1, h2 {
 		dt:hover > .spec-link {
 			display: inline-block;
 		}
+
+		dt > .spec-link::before {
+			height: 18px;
+			width: 18px;
+			background-size: 18px 18px;
+			vertical-align: -4px;
+		}
+
 body > h1 {
 	position: fixed;
 	left: 0;
