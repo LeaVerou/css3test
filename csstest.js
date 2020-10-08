@@ -89,6 +89,18 @@ var Test = function (spec) {
 				}
 			}));
 		}
+
+		if (spec.tests.links.mdn) {
+			contents.push($.create({
+				tag: 'a',
+				properties: {
+					href: 'https://developer.mozilla.org/en-US/docs/' + spec.tests.links.mdn,
+					target: '_blank',
+					textContent: 'MDN',
+					className: 'spec-link'
+				}
+			}));
+		}
 	}
 
 	var h1 = $.create({
@@ -163,12 +175,13 @@ Test.prototype = {
 				null // for prefix
 			];
 
-			if (theseTests[feature].links) {
-				if (theseTests[feature].links.tr) {
+			var links = theseTests[feature].links;
+			if (links) {
+				if (links.tr) {
 					dtContents.push($.create({
 						tag: 'a',
 						properties: {
-							href: 'https://www.w3.org/TR/' + this.tests.links.tr + theseTests[feature].links.tr,
+							href: 'https://www.w3.org/TR/' + this.tests.links.tr + links.tr,
 							target: '_blank',
 							textContent: 'TR',
 							className: 'spec-link'
@@ -176,13 +189,27 @@ Test.prototype = {
 					}));
 				}
 
-				if (theseTests[feature].links.dev) {
+				if (links.dev) {
 					dtContents.push($.create({
 						tag: 'a',
 						properties: {
-							href: devLinkFormat(this.tests.links) + theseTests[feature].links.dev,
+							href: devLinkFormat(this.tests.links) + links.dev,
 							target: '_blank',
 							textContent: 'DEV',
+							className: 'spec-link'
+						}
+					}));
+				}
+
+				if (links.mdn) {
+					dtContents.push($.create({
+						tag: 'a',
+						properties: {
+							href: links.mdn.indexOf('SVG/') === -1
+								? 'https://developer.mozilla.org/en-US/docs/Web/CSS/' + links.mdn
+								: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/' + links.mdn.replace('SVG/', ''),
+							target: '_blank',
+							textContent: 'MDN',
 							className: 'spec-link'
 						}
 					}));

@@ -9,49 +9,56 @@ window.Specs = {
 			"background-repeat": {
 				"links": {
 					"tr": "#the-background-repeat",
-					"dev": "#background-repeat"
+					"dev": "#background-repeat",
+					"mdn": "background-repeat"
 				},
 				"tests": ["space", "round"].concat(["repeat", "space", "round", "no-repeat"].times(2))
 			},
 			"background-attachment": {
 				"links": {
 					"tr": "#the-background-attachment",
-					"dev": "#background-attachment"
+					"dev": "#background-attachment",
+					"mdn": "background-attachment"
 				},
 				"tests": "local"
 			},
 			"background-position": {
 				"links": {
 					"tr": "#the-background-position",
-					"dev": "#background-position"
+					"dev": "#background-position",
+					"mdn": "background-position"
 				},
 				"tests": ["bottom 10px right 20px", "bottom 10px right", "top right 10px"]
 			},
 			"background-clip": {
 				"links": {
 					"tr": "#the-background-clip",
-					"dev": "#background-clip"
+					"dev": "#background-clip",
+					"mdn": "background-clip"
 				},
 				"tests": ["border-box", "padding-box", "content-box"]
 			},
 			"background-origin": {
 				"links": {
 					"tr": "#the-background-origin",
-					"dev": "#background-origin"
+					"dev": "#background-origin",
+					"mdn": "background-origin"
 				},
 				"tests": ["border-box", "padding-box", "content-box"]
 			},
 			"background-size": {
 				"links": {
 					"tr": "#the-background-size",
-					"dev": "#background-size"
+					"dev": "#background-size",
+					"mdn": "background-size"
 				},
 				"tests": ["auto", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"]
 			},
 			"background": {
 				"links": {
 					"tr": "#the-background",
-					"dev": "#background"
+					"dev": "#background",
+					"mdn": "background"
 				},
 				"tests": [
 					"url(foo.png), url(bar.svg)",
@@ -64,77 +71,88 @@ window.Specs = {
 			"border-top-left-radius": {
 				"links": {
 					"tr": "#the-border-radius",
-					"dev": "#border-radius"
+					"dev": "#border-radius",
+					"mdn": "border-top-left-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-top-right-radius": {
 				"links": {
 					"tr": "#the-border-radius",
-					"dev": "#border-radius"
+					"dev": "#border-radius",
+					"mdn": "border-top-right-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-bottom-right-radius": {
 				"links": {
 					"tr": "#the-border-radius",
-					"dev": "#border-radius"
+					"dev": "#border-radius",
+					"mdn": "border-bottom-right-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-bottom-left-radius": {
 				"links": {
 					"tr": "#the-border-radius",
-					"dev": "#border-radius"
+					"dev": "#border-radius",
+					"mdn": "border-bottom-left-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-radius": {
 				"links": {
 					"tr": "#the-border-radius",
-					"dev": "#border-radius"
+					"dev": "#border-radius",
+					"mdn": "border-radius"
 				},
 				"tests": ["10px", "50%", "10px / 20px", "2px 4px 8px 16px", "2px 4px 8px 16px / 2px 4px 8px 16px"]
 			},
 			"border-image-source": {
 				"links": {
 					"tr": "#the-border-image-source",
-					"dev": "#border-image-source"
+					"dev": "#border-image-source",
+					"mdn": "border-image-source"
 				},
 				"tests": ["none", "url(foo.png)"]
 			},
 			"border-image-slice": {
 				"links": {
 					"tr": "#the-border-image-slice",
-					"dev": "#border-image-slice"
+					"dev": "#border-image-slice",
+					"mdn": "border-image-slice"
 				},
 				"tests": ["10", "30%"].times(1, 4).concat(["fill 30%", "fill 10", "fill 2 4 8% 16%", "30% fill", "10 fill", "2 4 8% 16% fill"])
 			},
 			"border-image-width": {
 				"links": {
 					"tr": "#the-border-image-width",
-					"dev": "#border-image-width"
+					"dev": "#border-image-width",
+					"mdn": "border-image-width"
 				},
 				"tests": ["10px", "5%", "28", "auto", "10px 10px", "5% 10px", "28 10px", "auto 10px", "10px 5%", "5% 5%", "28 5%", "auto 5%", "10px 28", "5% 28", "28 28", "auto 28", "10px auto", "5% auto", "28 auto", "auto auto", "10px 10% 10", "5% 10px 20 auto"]
 			},
 			"border-image-outset": {
 				"links": {
 					"tr": "#the-border-image-outset",
-					"dev": "#border-image-outset"
+					"dev": "#border-image-outset",
+					"mdn": "border-image-outset"
 				},
 				"tests": ["10px", "20", "10px 20", "10px 20px", "20 30", "2px 3px 4", "1 2px 3px 4"]
 			},
 			"border-image-repeat": {
 				"links": {
 					"tr": "#the-border-image-repeat",
-					"dev": "#border-image-repeat"
+					"dev": "#border-image-repeat",
+					"mdn": "border-image-repeat"
 				},
 				"tests": ["stretch", "repeat", "round", "space"].times(1, 2)
 			},
 			"border-image": {
 				"links": {
 					"tr": "#the-border-image",
-					"dev": "#border-image"
+					"dev": "#border-image",
+					"mdn": "border-image"
 				},
 				"tests": [
 					"url(foo.png) 10", "url(foo.png) 10%", "url(foo.png) 10% fill",
@@ -146,7 +164,8 @@ window.Specs = {
 			"box-shadow": {
 				"links": {
 					"tr": "#the-box-shadow",
-					"dev": "#box-shadow"
+					"dev": "#box-shadow",
+					"mdn": "box-shadow"
 				},
 				"tests": [
 					"1px 1px", "0 0 black", "1px 2px 3px black", "1px 2px 3px 4px black",
@@ -164,13 +183,15 @@ window.Specs = {
 		"properties": {
 			"background-position-x": {
 				"links": {
-					"dev": "#background-position-longhands"
+					"dev": "#background-position-longhands",
+					"mdn": "background-position-x"
 				},
 				"tests": ["right", "center", "50%", "left, left", "left, right", "right, left", "left, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "left, left, left, left, left", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "right 20px", "left 20px", "right -50px", "left -50px", "right 20px"]
 			},
 			"background-position-y": {
 				"links": {
-					"dev": "#background-position-longhands"
+					"dev": "#background-position-longhands",
+					"mdn": "background-position-y"
 				},
 				"tests": ["bottom", "center", "50%", "top, top", "top, bottom", "bottom, top", "top, 0%", "10%, 20%, 40%", "0px", "30px", "0%, 10%, 20%, 30%", "top, top, top, top, top", "calc(20px)", "calc(20px + 1em)", "calc(20px / 2)", "calc(20px + 50%)", "calc(50% - 10px)", "calc(-20px)", "calc(-50%)", "calc(-20%)", "bottom 20px", "top 20px", "bottom -50px", "top -50px", "bottom 20px"]
 			}
@@ -194,7 +215,8 @@ window.Specs = {
 			"linear-gradient()": {
 				"links": {
 					"tr": "#linear-gradients",
-					"dev": "#linear-gradients"
+					"dev": "#linear-gradients",
+					"mdn": "linear-gradient()"
 				},
 				"tests": [
 					"linear-gradient(white, black)",
@@ -210,7 +232,8 @@ window.Specs = {
 			"radial-gradient()": {
 				"links": {
 					"tr": "#radial-gradients",
-					"dev": "#radial-gradients"
+					"dev": "#radial-gradients",
+					"mdn": "radial-gradient()"
 				},
 				"tests": [
 					"radial-gradient(white, black)",
@@ -231,14 +254,16 @@ window.Specs = {
 			"repeating-linear-gradient()": {
 				"links": {
 					"tr": "#repeating-gradients",
-					"dev": "#repeating-gradients"
+					"dev": "#repeating-gradients",
+					"mdn": "repeating-linear-gradient()"
 				},
 				"tests": "repeating-linear-gradient(white, black)"
 			},
 			"repeating-radial-gradient()": {
 				"links": {
 					"tr": "#repeating-gradients",
-					"dev": "#repeating-gradients"
+					"dev": "#repeating-gradients",
+					"mdn": "repeating-radial-gradient()"
 				},
 				"tests": "repeating-radial-gradient(white, black)"
 			},
@@ -247,27 +272,32 @@ window.Specs = {
 			"object-fit": {
 				"links": {
 					"tr": "#object-fit",
-					"dev": "#the-object-fit"
+					"dev": "#the-object-fit",
+					"mdn": "object-fit"
 				},
 				"tests": ["fill", "contain", "cover", "none", "scale-down"]
 			},
 			"object-position": {
 				"links": {
 					"tr": "#object-position",
-					"dev": "#the-object-position"
+					"dev": "#the-object-position",
+					"mdn": "object-position"
 				},
 				"tests": ["50% 50%", "center", "top right", "bottom 10px right 20px"]
 			},
 			"image-orientation": {
 				"links": {
 					"tr": "#image-orientation",
-					"dev": "#the-image-orientation"
+					"dev": "#the-image-orientation",
+					"mdn": "image-orientation"
 				},
 				"tests": ["from-image", "0deg", "90deg", "45deg", "45deg flip", "1turn", "100grad", "2rad"]
 			},
 			"image-rendering": {
 				"links": {
-					"dev": "#the-image-rendering"
+					"tr": "#the-image-rendering",
+					"dev": "#the-image-rendering",
+					"mdn": "image-rendering"
 				},
 				"tests": ["auto", "smooth", "high-quality", "crisp-edges", "pixelated"]
 			},
@@ -291,7 +321,8 @@ window.Specs = {
 			"linear-gradient()": {
 				"links": {
 					"tr": "#linear-gradients",
-					"dev": "#linear-gradients"
+					"dev": "#linear-gradients",
+					"mdn": "linear-gradient"
 				},
 				"tests": [
 					"linear-gradient(45deg, #f06 25%, yellow 25% 50%, #f06 50% 75%, yellow 75%)"
@@ -300,7 +331,8 @@ window.Specs = {
 			"radial-gradient()": {
 				"links": {
 					"tr": "#radial-gradients",
-					"dev": "#radial-gradients"
+					"dev": "#radial-gradients",
+					"mdn": "radial-gradient"
 				},
 				"tests": [
 					"radial-gradient(center, red 0% 25%, blue 25% 75%, red 75% 100%)"
@@ -309,7 +341,8 @@ window.Specs = {
 			"conic-gradient()": {
 				"links": {
 					"tr": "#conic-gradients",
-					"dev": "#conic-gradients"
+					"dev": "#conic-gradients",
+					"mdn": "conic-gradient"
 				},
 				"tests": [
 					"conic-gradient(white, black)",
@@ -325,7 +358,8 @@ window.Specs = {
 			"repeating-conic-gradient()": {
 				"links": {
 					"tr": "#repeating-gradients",
-					"dev": "#repeating-gradients"
+					"dev": "#repeating-gradients",
+					"mdn": "repeating-conic-gradient"
 				},
 				"tests": [
 					"repeating-conic-gradient(white, black)",
@@ -335,7 +369,8 @@ window.Specs = {
 			"image()": {
 				"links": {
 					"tr": "#image-notation",
-					"dev": "#image-notation"
+					"dev": "#image-notation",
+					"mdn": "imagefunction"
 				},
 				"tests": [
 					"image('sprites.png#xywh=10,30,60,20')",
@@ -347,7 +382,8 @@ window.Specs = {
 			"image-set()": {
 				"links": {
 					"tr": "#image-set-notation",
-					"dev": "#image-set-notation"
+					"dev": "#image-set-notation",
+					"mdn": "image-set"
 				},
 				"tests": [
 					"image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi)"
@@ -356,14 +392,16 @@ window.Specs = {
 			"element()": {
 				"links": {
 					"tr": "#element-notation",
-					"dev": "#element-notation"
+					"dev": "#element-notation",
+					"mdn": "element"
 				},
 				"tests": "element(#foo)"
 			},
 			"cross-fade()": {
 				"links": {
 					"tr": "#cross-fade-function",
-					"dev": "#cross-fade-function"
+					"dev": "#cross-fade-function",
+					"mdn": "cross-fade"
 				},
 				"tests": [
 					"cross-fade(url(a.png), url(b.png))",
@@ -390,118 +428,135 @@ window.Specs = {
 		"title": "Selectors Level 3",
 		"links": {
 			"tr": "selectors-3",
-			"dev": "selectors-3"
+			"dev": "selectors-3",
+			"mdn": "Glossary/CSS_Selector"
 		},
 		"selectors": {
 			"Sibling combinator": {
 				"links": {
 					"tr": "#sibling-combinators",
-					"dev": "#sibling-combinators"
+					"dev": "#sibling-combinators",
+					"mdn": "General_sibling_combinator"
 				},
 				"tests": "foo ~ bar"
 			},
 			"::before": {
 				"links": {
 					"tr": "#gen-content",
-					"dev": "#gen-content"
+					"dev": "#gen-content",
+					"mdn": "::before"
 				},
 				"tests": "::before"
 			},
 			"::after": {
 				"links": {
 					"tr": "#gen-content",
-					"dev": "#gen-content"
+					"dev": "#gen-content",
+					"mdn": "::after"
 				},
 				"tests": "::after"
 			},
 			"::first-letter": {
 				"links": {
 					"tr": "#first-letter",
-					"dev": "#first-letter"
+					"dev": "#first-letter",
+					"mdn": "::first-letter"
 				},
 				"tests": "::first-letter"
 			},
 			"::first-line": {
 				"links": {
 					"tr": "#first-line",
-					"dev": "#first-line"
+					"dev": "#first-line",
+					"mdn": "::first-line"
 				},
 				"tests": "::first-line"
 			},
 			"[att^=val]": {
 				"links": {
 					"tr": "#attribute-substrings",
-					"dev": "#attribute-substrings"
+					"dev": "#attribute-substrings",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att^=val]", "[att^=\"val\"]"]
 			},
 			"[att*=val]": {
 				"links": {
 					"tr": "#attribute-substrings",
-					"dev": "#attribute-substrings"
+					"dev": "#attribute-substrings",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att*=val]", "[att*=\"val\"]"]
 			},
 			"[att$=val]": {
 				"links": {
 					"tr": "#attribute-substrings",
-					"dev": "#attribute-substrings"
+					"dev": "#attribute-substrings",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att$=val]", "[att$=\"val\"]"]
 			},
 			"Namespaces": {
 				"links": {
 					"tr": "#attrnmsp",
-					"dev": "#attrnmsp"
+					"dev": "#attrnmsp",
+					"mdn": "CSS_Namespaces"
 				},
 				"tests": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"]
 			},
 			":target": {
 				"links": {
 					"tr": "#target-pseudo",
-					"dev": "#target-pseudo"
+					"dev": "#target-pseudo",
+					"mdn": ":target"
 				},
 				"tests": ":target"
 			},
 			":enabled": {
 				"links": {
 					"tr": "#enableddisabled",
-					"dev": "#enableddisabled"
+					"dev": "#enableddisabled",
+					"mdn": ":enabled"
 				},
 				"tests": ":enabled"
 			},
 			":disabled": {
 				"links": {
 					"tr": "#enableddisabled",
-					"dev": "#enableddisabled"
+					"dev": "#enableddisabled",
+					"mdn": ":disabled"
 				},
 				"tests": ":disabled"
 			},
 			":checked": {
 				"links": {
 					"tr": "#checked",
-					"dev": "#checked"
+					"dev": "#checked",
+					"mdn": ":checked"
 				},
 				"tests": ":checked"
 			},
 			":indeterminate": {
 				"links": {
 					"tr": "#indeterminate",
-					"dev": "#indeterminate"
+					"dev": "#indeterminate",
+					"mdn": ":indeterminate"
 				},
 				"tests": ":indeterminate"
 			},
 			":root": {
 				"links": {
 					"tr": "#root-pseudo",
-					"dev": "#root-pseudo"
+					"dev": "#root-pseudo",
+					"mdn": ":root"
 				},
 				"tests": ":root"
 			},
-			":nth-child": {
+			":nth-child()": {
 				"links": {
 					"tr": "#nth-child-pseudo",
-					"dev": "#nth-child-pseudo"
+					"dev": "#nth-child-pseudo",
+					"mdn": ":nth-child"
 				},
 				"tests": [
 					":nth-child(even)", ":nth-child(odd)",
@@ -511,10 +566,11 @@ window.Specs = {
 					":nth-child(-n+1)", ":nth-child(-n-1)", ":nth-child(3n-1)"
 				]
 			},
-			":nth-last-child": {
+			":nth-last-child()": {
 				"links": {
 					"tr": "#nth-last-child-pseudo",
-					"dev": "#nth-last-child-pseudo"
+					"dev": "#nth-last-child-pseudo",
+					"mdn": ":nth-last-child"
 				},
 				"tests": [
 					":nth-last-child(even)", ":nth-last-child(odd)",
@@ -524,10 +580,11 @@ window.Specs = {
 					":nth-last-child(-n+1)", ":nth-last-child(-n-1)", ":nth-last-child(3n-1)"
 				]
 			},
-			":nth-of-type": {
+			":nth-of-type()": {
 				"links": {
 					"tr": "#nth-of-type-pseudo",
-					"dev": "#nth-of-type-pseudo"
+					"dev": "#nth-of-type-pseudo",
+					"mdn": ":nth-of-type"
 				},
 				"tests": [
 					":nth-of-type(even)", ":nth-of-type(odd)",
@@ -537,10 +594,11 @@ window.Specs = {
 					":nth-of-type(-n+1)", ":nth-of-type(-n-1)", ":nth-of-type(3n-1)"
 				]
 			},
-			":nth-last-of-type": {
+			":nth-last-of-type()": {
 				"links": {
 					"tr": "#nth-last-of-type-pseudo",
-					"dev": "#nth-last-of-type-pseudo"
+					"dev": "#nth-last-of-type-pseudo",
+					"mdn": ":nth-last-of-type"
 				},
 				"tests": [
 					":nth-last-of-type(even)", ":nth-last-of-type(odd)",
@@ -553,49 +611,56 @@ window.Specs = {
 			":last-child": {
 				"links": {
 					"tr": "#last-child-pseudo",
-					"dev": "#last-child-pseudo"
+					"dev": "#last-child-pseudo",
+					"mdn": ":last-child"
 				},
 				"tests": ":last-child"
 			},
 			":only-child": {
 				"links": {
 					"tr": "#only-child-pseudo",
-					"dev": "#only-child-pseudo"
+					"dev": "#only-child-pseudo",
+					"mdn": ":only-child"
 				},
 				"tests": ":only-child"
 			},
 			":first-of-type": {
 				"links": {
 					"tr": "#first-of-type-pseudo",
-					"dev": "#first-of-type-pseudo"
+					"dev": "#first-of-type-pseudo",
+					"mdn": ":first-of-type"
 				},
 				"tests": ":first-of-type"
 			},
 			":last-of-type": {
 				"links": {
 					"tr": "#last-of-type-pseudo",
-					"dev": "#last-of-type-pseudo"
+					"dev": "#last-of-type-pseudo",
+					"mdn": ":last-of-type"
 				},
 				"tests": ":last-of-type"
 			},
 			":only-of-type": {
 				"links": {
 					"tr": "#only-of-type-pseudo",
-					"dev": "#only-of-type-pseudo"
+					"dev": "#only-of-type-pseudo",
+					"mdn": ":only-of-type"
 				},
 				"tests": ":only-of-type"
 			},
 			":empty": {
 				"links": {
 					"tr": "#empty-pseudo",
-					"dev": "#empty-pseudo"
+					"dev": "#empty-pseudo",
+					"mdn": ":empty"
 				},
 				"tests": ":empty"
 			},
 			":not()": {
 				"links": {
 					"tr": "#negation",
-					"dev": "#negation"
+					"dev": "#negation",
+					"mdn": ":not"
 				},
 				"tests": [":not(*)", ":not(element)", ":not(.class):not(#id):not([attr]):not(:link)"]
 			}
@@ -612,56 +677,64 @@ window.Specs = {
 			":indeterminate": {
 				"links": {
 					"tr": "#indeterminate",
-					"dev": "#indeterminate"
+					"dev": "#indeterminate",
+					"mdn": ":indeterminate"
 				},
 				"tests": ":indeterminate"
 			},
 			":blank": {
 				"links": {
 					"tr": "#blank",
-					"dev": "#blank"
+					"dev": "#blank",
+					"mdn": ":blank"
 				},
 				"tests": ":blank"
 			},
 			":placeholder-shown": {
 				"links": {
 					"tr": "#placeholder",
-					"dev": "#placeholder"
+					"dev": "#placeholder",
+					"mdn": ":placeholder-shown"
 				},
 				"tests": ":placeholder-shown"
 			},
 			":default": {
 				"links": {
 					"tr": "#the-default-pseudo",
-					"dev": "#the-default-pseudo"
+					"dev": "#the-default-pseudo",
+					"mdn": ":default"
 				},
 				"tests": ":default"
 			},
 			":valid": {
 				"links": {
 					"tr": "#validity-pseudos",
-					"dev": "#validity-pseudos"
+					"dev": "#validity-pseudos",
+					"mdn": ":valid"
 				},
 				"tests": ":valid"
 			},
 			":invalid": {
 				"links": {
 					"tr": "#validity-pseudos",
-					"dev": "#validity-pseudos"
+					"dev": "#validity-pseudos",
+					"mdn": ":invalid"
 				},
 				"tests": ":invalid"
 			},
 			":in-range": {
 				"links": {
 					"tr": "#range-pseudos",
-					"dev": "#range-pseudos"
+					"dev": "#range-pseudos",
+					"mdn": ":in-range"
 				},
 				"tests": ":in-range"
 			},
 			":out-of-range": {
 				"links": {
 					"tr": "#range-pseudos",
-					"dev": "#range-pseudos"
+					"dev": "#range-pseudos",
+					"mdn": ":out-of-range"
 				},
 				"tests": ":out-of-range"
 			},
@@ -675,42 +748,48 @@ window.Specs = {
 			":required": {
 				"links": {
 					"tr": "#opt-pseudos",
-					"dev": "#opt-pseudos"
+					"dev": "#opt-pseudos",
+					"mdn": ":required"
 				},
 				"tests": ":required"
 			},
 			":optional": {
 				"links": {
 					"tr": "#opt-pseudos",
-					"dev": "#opt-pseudos"
+					"dev": "#opt-pseudos",
+					"mdn": ":optional"
 				},
 				"tests": ":optional"
 			},
 			":read-only": {
 				"links": {
 					"tr": "#rw-pseudos",
-					"dev": "#rw-pseudos"
+					"dev": "#rw-pseudos",
+					"mdn": ":read-only"
 				},
 				"tests": ":read-only"
 			},
 			":read-write": {
 				"links": {
 					"tr": "#rw-pseudos",
-					"dev": "#rw-pseudos"
+					"dev": "#rw-pseudos",
+					"mdn": ":read-write"
 				},
 				"tests": ":read-write"
 			},
 			":focus-visible": {
 				"links": {
 					"tr": "#the-focus-visible-pseudo",
-					"dev": "#the-focus-visible-pseudo"
+					"dev": "#the-focus-visible-pseudo",
+					"mdn": ":focus-visible"
 				},
 				"tests": ":focus-visible"
 			},
 			":focus-within": {
 				"links": {
 					"tr": "#the-focus-within-pseudo",
-					"dev": "#the-focus-within-pseudo"
+					"dev": "#the-focus-within-pseudo",
+					"mdn": ":focus-within"
 				},
 				"tests": ":focus-within"
 			},
@@ -745,14 +824,16 @@ window.Specs = {
 			":scope": {
 				"links": {
 					"tr": "#the-scope-pseudo",
-					"dev": "#the-scope-pseudo"
+					"dev": "#the-scope-pseudo",
+					"mdn": ":scope"
 				},
 				"tests": ":scope"
 			},
 			":any-link": {
 				"links": {
 					"tr": "#the-any-link-pseudo",
-					"dev": "#the-any-link-pseudo"
+					"dev": "#the-any-link-pseudo",
+					"mdn": ":any-link"
 				},
 				"tests": ":any-link"
 			},
@@ -773,35 +854,40 @@ window.Specs = {
 			":lang()": {
 				"links": {
 					"tr": "#the-lang-pseudo",
-					"dev": "#the-lang-pseudo"
+					"dev": "#the-lang-pseudo",
+					"mdn": ":lang"
 				},
 				"tests": [":lang(zh, \"*-hant\")"]
 			},
 			":not()": {
 				"links": {
 					"tr": "#negation",
-					"dev": "#negation"
+					"dev": "#negation",
+					"mdn": ":not"
 				},
 				"tests": [":not(em, #foo)"]
 			},
 			":where()": {
 				"links": {
 					"tr": "#zero-matches",
-					"dev": "#zero-matches"
+					"dev": "#zero-matches",
+					"mdn": ":where"
 				},
 				"tests": [":where(em, #foo)", ":where(:not(:hover))"]
 			},
 			":is()": {
 				"links": {
 					"tr": "#matches",
-					"dev": "#matches"
+					"dev": "#matches",
+					"mdn": ":is"
 				},
 				"tests": [":is(em, #foo)", ":is(:not(:hover))"]
 			},
 			":has()": {
 				"links": {
 					"tr": "#relational",
-					"dev": "#relational"
+					"dev": "#relational",
+					"mdn": ":has"
 				},
 				"tests": [
 					"a:has(> img)",
@@ -813,14 +899,16 @@ window.Specs = {
 			":defined": {
 				"links": {
 					"tr": "#the-defined-pseudo",
-					"dev": "the-defined-pseudo"
+					"dev": "the-defined-pseudo",
+					"mdn": ":defined"
 				},
 				"tests": [":defined"]
 			},
 			":nth-child of": {
 				"links": {
 					"tr": "#the-nth-child-pseudo",
-					"dev": "#the-nth-child-pseudo"
+					"dev": "#the-nth-child-pseudo",
+					"mdn": ":nth-child"
 				},
 				"tests": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"]
 			},
@@ -860,42 +948,48 @@ window.Specs = {
 			"[att^=val i]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att^=val i]", "[att^=\"val\" i]", "[att^=val I]", "[att^=\"val\" I]"]
 			},
 			"[att*=val i]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att*=val i]", "[att*=\"val\" i]", "[att*=val I]", "[att*=\"val\" I]"]
 			},
 			"[att$=val i]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att$=val i]", "[att$=\"val\" i]", "[att$=val I]", "[att$=\"val\" I]"]
 			},
 			"[att^=val s]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att^=val s]", "[att^=\"val\" s]", "[att^=val S]", "[att^=\"val\" S]"]
 			},
 			"[att*=val s]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att*=val s]", "[att*=\"val\" s]", "[att*=val S]", "[att*=\"val\" S]"]
 			},
 			"[att$=val s]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att$=val s]", "[att$=\"val\" s]", "[att$=val S]", "[att$=\"val\" S]"]
 			}
@@ -912,7 +1006,8 @@ window.Specs = {
 			"::selection": {
 				"links": {
 					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"dev": "#highlight-selectors",
+					"mdn": "::selection"
 				},
 				"tests": ["::selection"]
 			},
@@ -926,28 +1021,32 @@ window.Specs = {
 			"::spelling-error": {
 				"links": {
 					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"dev": "#highlight-selectors",
+					"mdn": "::spelling-error"
 				},
 				"tests": ["::spelling-error"]
 			},
 			"::grammar-error": {
 				"links": {
 					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"dev": "#highlight-selectors",
+					"mdn": "::grammar-error"
 				},
 				"tests": ["::grammar-error"]
 			},
 			"::marker": {
 				"links": {
 					"tr": "#marker-pseudo",
-					"dev": "#marker-pseudo"
+					"dev": "#marker-pseudo",
+					"mdn": "::marker"
 				},
 				"tests": ["::marker"]
 			},
 			"::placeholder": {
 				"links": {
 					"tr": "#placeholder-pseudo",
-					"dev": "#placeholder-pseudo"
+					"dev": "#placeholder-pseudo",
+					"mdn": "::placeholder"
 				},
 				"tests": ["::placeholder"]
 			}
@@ -964,27 +1063,31 @@ window.Specs = {
 			":host": {
 				"links": {
 					"tr": "#host-selector",
-					"dev": "#host-selector"
+					"dev": "#host-selector",
+					"mdn": ":host"
 				},
 				"tests": ":host"
 			},
 			":host()": {
 				"links": {
 					"tr": "#host-selector",
-					"dev": "#host-selector"
+					"dev": "#host-selector",
+					"mdn": ":host()"
 				},
 				"tests": [":host(*)", ":host(.foo)"]
 			},
 			":host-context()": {
 				"links": {
 					"tr": "#host-selector",
-					"dev": "#host-selector"
+					"dev": "#host-selector",
+					"mdn": ":host-context()"
 				},
 				"tests": [":host-context(*)", ":host-context(.foo)"]
 			},
 			"::slotted()": {
 				"links": {
-					"dev": "#slotted-pseudo"
+					"dev": "#slotted-pseudo",
+					"mdn": "::slotted"
 				},
 				"tests": ["::slotted(*)", "::slotted(.foo)"]
 			}
@@ -1004,49 +1107,56 @@ window.Specs = {
 			"negation": {
 				"links": {
 					"tr": "#media0",
-					"dev": "#media0"
+					"dev": "#media0",
+					"mdn": "Media_Queries/Using_media_queries"
 				},
 				"tests": ["not print", "not all and (width:1px)"]
 			},
 			"width": {
 				"links": {
 					"tr": "#width",
-					"dev": "#width"
+					"dev": "#width",
+					"mdn": "Media_Queries/Using_media_queries"
 				},
 				"tests": ["(width)", "(min-width:1px)", "(max-width:1000000px)"]
 			},
 			"height": {
 				"links": {
 					"tr": "#height",
-					"dev": "#height"
+					"dev": "#height",
+					"mdn": "Media_Queries/Using_media_queries"
 				},
 				"tests": ["(height)", "(min-height:1px)", "(max-height:1000000px)"]
 			},
 			"device-width": {
 				"links": {
 					"tr": "#device-width",
-					"dev": "#device-width"
+					"dev": "#device-width",
+					"mdn": "@media/device-height"
 				},
 				"tests": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"]
 			},
 			"device-height": {
 				"links": {
 					"tr": "#device-height",
-					"dev": "#device-height"
+					"dev": "#device-height",
+					"mdn": "@media/device-height"
 				},
 				"tests": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"]
 			},
 			"orientation": {
 				"links": {
 					"tr": "#orientation",
-					"dev": "#orientation"
+					"dev": "#orientation",
+					"mdn": "@media/orientation"
 				},
 				"tests": "(orientation:portrait), (orientation:landscape)"
 			},
 			"aspect-ratio": {
 				"links": {
 					"tr": "#aspect-ratio",
-					"dev": "#aspect-ratio"
+					"dev": "#aspect-ratio",
+					"mdn": "@media/aspect-ratio"
 				},
 				"tests": [
 					"(aspect-ratio)",
@@ -1058,7 +1168,8 @@ window.Specs = {
 			"device-aspect-ratio": {
 				"links": {
 					"tr": "#device-aspect-ratio",
-					"dev": "#device-aspect-ratio"
+					"dev": "#device-aspect-ratio",
+					"mdn": "@media/device-aspect-ratio"
 				},
 				"tests": [
 					"(device-aspect-ratio)",
@@ -1070,7 +1181,8 @@ window.Specs = {
 			"color": {
 				"links": {
 					"tr": "#color",
-					"dev": "#color"
+					"dev": "#color",
+					"mdn": "@media/color"
 				},
 				"tests": [
 					"(color)", "(min-color: 0)", "(max-color: 100)"
@@ -1079,7 +1191,8 @@ window.Specs = {
 			"color-index": {
 				"links": {
 					"tr": "#color-index",
-					"dev": "#color-index"
+					"dev": "#color-index",
+					"mdn": "@media/color-index"
 				},
 				"tests": [
 					"all, (color-index)",
@@ -1090,7 +1203,8 @@ window.Specs = {
 			"monochrome": {
 				"links": {
 					"tr": "#monochrome",
-					"dev": "#monochrome"
+					"dev": "#monochrome",
+					"mdn": "@media/monochrome"
 				},
 				"tests": [
 					"all, (monochrome)", "(min-monochrome: 0)", "(max-monochrome: 10000)"
@@ -1099,7 +1213,8 @@ window.Specs = {
 			"resolution": {
 				"links": {
 					"tr": "#resolution",
-					"dev": "#resolution"
+					"dev": "#resolution",
+					"mdn": "@media/resolution"
 				},
 				"tests": [
 					"(resolution)",
@@ -1111,14 +1226,16 @@ window.Specs = {
 			"scan": {
 				"links": {
 					"tr": "#scan",
-					"dev": "#scan"
+					"dev": "#scan",
+					"mdn": "@media/scan"
 				},
 				"tests": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"]
 			},
 			"grid": {
 				"links": {
 					"tr": "#grid",
-					"dev": "#grid"
+					"dev": "#grid",
+					"mdn": "@media/grid"
 				},
 				"tests": ["all, (grid)", "(grid: 0), (grid: 1)"]
 			}
@@ -1135,35 +1252,40 @@ window.Specs = {
 			"resolution": {
 				"links": {
 					"tr": "#resolution",
-					"dev": "#resolution"
+					"dev": "#resolution",
+					"mdn": "@media/resolution"
 				},
 				"tests": ["(resolution: infinite)"]
 			},
 			"hover": {
 				"links": {
 					"tr": "#hover",
-					"dev": "#hover"
+					"dev": "#hover",
+					"mdn": "@media/hover"
 				},
 				"tests": ["(hover)", "(hover: none)", "(hover: hover)"]
 			},
 			"any-hover": {
 				"links": {
 					"tr": "#any-input",
-					"dev": "#any-input"
+					"dev": "#any-input",
+					"mdn": "@media/any-hover"
 				},
 				"tests": ["(any-hover)", "(any-hover: none)", "(any-hover: hover)"]
 			},
 			"pointer": {
 				"links": {
 					"tr": "#pointer",
-					"dev": "#pointer"
+					"dev": "#pointer",
+					"mdn": "@media/pointer"
 				},
 				"tests": ["(pointer)", "(pointer: none)", "(pointer: coarse)", "(pointer: fine)"]
 			},
 			"any-pointer": {
 				"links": {
 					"tr": "#any-input",
-					"dev": "#any-input"
+					"dev": "#any-input",
+					"mdn": "@media/any-pointer"
 				},
 				"tests": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"]
 			},
@@ -1177,28 +1299,32 @@ window.Specs = {
 			"overflow-block": {
 				"links": {
 					"tr": "#mf-overflow-block",
-					"dev": "#mf-overflow-block"
+					"dev": "#mf-overflow-block",
+					"mdn": "@media/overflow-block"
 				},
 				"tests": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"]
 			},
 			"overflow-inline": {
 				"links": {
 					"tr": "#mf-overflow-inline",
-					"dev": "#mf-overflow-inline"
+					"dev": "#mf-overflow-inline",
+					"mdn": "@media/overflow-inline"
 				},
 				"tests": ["(overflow-inline: none)", "(overflow-inline: scroll)"]
 			},
 			"color-gamut": {
 				"links": {
 					"tr": "#color-gamut",
-					"dev": "#color-gamut"
+					"dev": "#color-gamut",
+					"mdn": "@media/color-gamut"
 				},
 				"tests": ["(color-gamut)", "(color-gamut: srgb)", "(color-gamut: p3)", "(color-gamut: rec2020)"]
 			},
 			"aspect-ratio": {
 				"links": {
 					"tr": "#aspect-ratio",
-					"dev": "#aspect-ratio"
+					"dev": "#aspect-ratio",
+					"mdn": "@media/aspect-ratio"
 				},
 				"tests": [
 					"(aspect-ratio: 1280.1/720.01)",
@@ -1209,7 +1335,8 @@ window.Specs = {
 			"device-aspect-ratio": {
 				"links": {
 					"tr": "#device-aspect-ratio",
-					"dev": "#device-aspect-ratio"
+					"dev": "#device-aspect-ratio",
+					"mdn": "@media/device-aspect-ratio"
 				},
 				"tests": [
 					"(device-aspect-ratio:1280.1/720.01)",
@@ -1228,31 +1355,36 @@ window.Specs = {
 		"Media queries": {
 			"prefers-reduced-motion": {
 				"links": {
-					"dev": "#prefers-reduced-motion"
+					"dev": "#prefers-reduced-motion",
+					"mdn": "@media/prefers-reduced-motion"
 				},
 				"tests": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"]
 			},
 			"prefers-reduced-transparency": {
 				"links": {
-					"dev": "#prefers-reduced-transparency"
+					"dev": "#prefers-reduced-transparency",
+					"mdn": "@media/prefers-reduced-transparency"
 				},
 				"tests": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-transparency: reduce)"]
 			},
 			"prefers-contrast": {
 				"links": {
-					"dev": "#prefers-contrast"
+					"dev": "#prefers-contrast",
+					"mdn": "@media/prefers-contrast"
 				},
 				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
-					"dev": "#prefers-color-scheme"
+					"dev": "#prefers-color-scheme",
+					"mdn": "@media/prefers-color-scheme"
 				},
 				"tests": ["(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
 			},
 			"scripting": {
 				"links": {
-					"dev": "#scripting"
+					"dev": "#scripting",
+					"mdn": "@media/scripting"
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
@@ -1270,7 +1402,8 @@ window.Specs = {
 			},
 			"inverted-colors": {
 				"links": {
-					"dev": "#inverted"
+					"dev": "#inverted",
+					"mdn": "@media/inverted-colors"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
 			}
@@ -1287,42 +1420,48 @@ window.Specs = {
 			"box-sizing": {
 				"links": {
 					"tr": "#box-sizing",
-					"dev": "#box-sizing"
+					"dev": "#box-sizing",
+					"mdn": "box-sizing"
 				},
 				"tests": ["border-box", "content-box"]
 			},
 			"outline-style": {
 				"links": {
 					"tr": "#outline-style",
-					"dev": "#outline-style"
+					"dev": "#outline-style",
+					"mdn": "outline-style"
 				},
 				"tests": ["auto"]
 			},
 			"outline-offset": {
 				"links": {
 					"tr": "#outline-offset",
-					"dev": "#outline-offset"
+					"dev": "#outline-offset",
+					"mdn": "outline-offset"
 				},
 				"tests": ["-5px", "0", "5px"]
 			},
 			"resize": {
 				"links": {
 					"tr": "#resize",
-					"dev": "#resize"
+					"dev": "#resize",
+					"mdn": "resize"
 				},
 				"tests": ["none", "both", "horizontal", "vertical"]
 			},
 			"text-overflow": {
 				"links": {
 					"tr": "#text-overflow",
-					"dev": "#text-overflow"
+					"dev": "#text-overflow",
+					"mdn": "text-overflow"
 				},
 				"tests": ["clip", "ellipsis"]
 			},
 			"cursor": {
 				"links": {
 					"tr": "#cursor",
-					"dev": "#cursor"
+					"dev": "#cursor",
+					"mdn": "cursor"
 				},
 				"tests": [
 					"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
@@ -1333,7 +1472,8 @@ window.Specs = {
 			"caret-color": {
 				"links": {
 					"tr": "#caret-color",
-					"dev": "#caret-color"
+					"dev": "#caret-color",
+					"mdn": "caret-color"
 				},
 				"tests": ["auto", "green"]
 			}
@@ -1350,7 +1490,8 @@ window.Specs = {
 			"appearance": {
 				"links": {
 					"tr": "#appearance-switching",
-					"dev": "#appearance-switching"
+					"dev": "#appearance-switching",
+					"mdn": "appearance"
 				},
 				"tests": ["auto", "none"]
 			},
@@ -1368,11 +1509,19 @@ window.Specs = {
 				},
 				"tests": ["auto", "bar", "block", "underscore"]
 			},
-			"text-overflow": ["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2),
+			"text-overflow": {
+				"links": {
+					"tr": "#text-overflow",
+					"dev": "#text-overflow",
+					"mdn": "text-overflow"
+				},
+				"tests": ["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2)
+			},
 			"user-select": {
 				"links": {
 					"tr": "#content-selection",
-					"dev": "#content-selection"
+					"dev": "#content-selection",
+					"mdn": "user-select"
 				},
 				"tests": ["auto", "text", "none", "contain", "all"]
 			},
@@ -1417,21 +1566,24 @@ window.Specs = {
 			"transition-property": {
 				"links": {
 					"tr": "#transition-property-property",
-					"dev": "#transition-property-property"
+					"dev": "#transition-property-property",
+					"mdn": "transition-property"
 				},
 				"tests": ["none", "all", "width", "width, height"]
 			},
 			"transition-duration": {
 				"links": {
 					"tr": "#transition-duration-property",
-					"dev": "#transition-duration-property"
+					"dev": "#transition-duration-property",
+					"mdn": "transition-duration"
 				},
 				"tests": ["0s", "1s", "100ms"]
 			},
 			"transition-timing-function": {
 				"links": {
 					"tr": "#transition-timing-function-property",
-					"dev": "#transition-timing-function-property"
+					"dev": "#transition-timing-function-property",
+					"mdn": "transition-timing-function"
 				},
 				"tests": [
 					"ease", "linear", "ease-in", "ease-out", "ease-in-out",
@@ -1443,14 +1595,16 @@ window.Specs = {
 			"transition-delay": {
 				"links": {
 					"tr": "#transition-delay-property",
-					"dev": "#transition-delay-property"
+					"dev": "#transition-delay-property",
+					"mdn": "transition-delay"
 				},
 				"tests": ["1s", "-1s"]
 			},
 			"transition": {
 				"links": {
 					"tr": "#transition-shorthand-property",
-					"dev": "#transition-shorthand-property"
+					"dev": "#transition-shorthand-property",
+					"mdn": "transition"
 				},
 				"tests": "1s 2s width linear"
 			}
@@ -1467,7 +1621,8 @@ window.Specs = {
 			"transition-timing-function": {
 				"links": {
 					"tr": "#easing-functions",
-					"dev": "#easing-functions"
+					"dev": "#easing-functions",
+					"mdn": "transition-timing-function"
 				},
 				"tests": ["steps(2, jump-start)", "steps(2, jump-end)", "steps(1, jump-both)", "steps(2, jump-none)"]
 			}
@@ -1484,21 +1639,24 @@ window.Specs = {
 			"animation-name": {
 				"links": {
 					"tr": "#animation-name",
-					"dev": "#animation-name"
+					"dev": "#animation-name",
+					"mdn": "animation-name"
 				},
 				"tests": ["foo", "foo, bar"]
 			},
 			"animation-duration": {
 				"links": {
 					"tr": "#animation-duration",
-					"dev": "#animation-duration"
+					"dev": "#animation-duration",
+					"mdn": "animation-duration"
 				},
 				"tests": ["0s", "1s", "100ms"]
 			},
 			"animation-timing-function": {
 				"links": {
 					"tr": "#animation-timing-function",
-					"dev": "#animation-timing-function"
+					"dev": "#animation-timing-function",
+					"mdn": "animation-timing-function"
 				},
 				"tests": [
 					"ease", "linear", "ease-in", "ease-out", "ease-in-out",
@@ -1510,42 +1668,48 @@ window.Specs = {
 			"animation-iteration-count": {
 				"links": {
 					"tr": "#animation-iteration-count",
-					"dev": "#animation-iteration-count"
+					"dev": "#animation-iteration-count",
+					"mdn": "animation-iteration-count"
 				},
 				"tests": ["infinite", "8", "4.35"]
 			},
 			"animation-direction": {
 				"links": {
 					"tr": "#animation-direction",
-					"dev": "#animation-direction"
+					"dev": "#animation-direction",
+					"mdn": "animation-direction"
 				},
 				"tests": ["normal", "alternate", "reverse", "alternate-reverse"]
 			},
 			"animation-play-state": {
 				"links": {
 					"tr": "#animation-play-state",
-					"dev": "#animation-play-state"
+					"dev": "#animation-play-state",
+					"mdn": "animation-play-state"
 				},
 				"tests": ["running", "paused"]
 			},
 			"animation-delay": {
 				"links": {
 					"tr": "#animation-delay",
-					"dev": "#animation-delay"
+					"dev": "#animation-delay",
+					"mdn": "animation-delay"
 				},
 				"tests": ["1s", "-1s"]
 			},
 			"animation-fill-mode": {
 				"links": {
 					"tr": "#animation-fill-mode",
-					"dev": "#animation-fill-mode"
+					"dev": "#animation-fill-mode",
+					"mdn": "animation-fill-mode"
 				},
 				"tests": ["none", "forwards", "backwards", "both"]
 			},
 			"animation": {
 				"links": {
 					"tr": "#animation",
-					"dev": "#animation"
+					"dev": "#animation",
+					"mdn": "animation"
 				},
 				"tests": "foo 1s 2s infinite linear alternate both"
 			}
@@ -1554,7 +1718,8 @@ window.Specs = {
 			"@keyframes": {
 				"links": {
 					"tr": "#keyframes",
-					"dev": "#keyframes"
+					"dev": "#keyframes",
+					"mdn": "@keyframes"
 				},
 				"tests": "@keyframes foo {\n  from: {\n    color: blue;\n  }\n  to: {\n    color: red;\n  }\n}"
 			}
@@ -1565,13 +1730,14 @@ window.Specs = {
 		"title": "Transforms Level 1",
 		"links": {
 			"tr": "css-transforms-1",
-			"dev": "css-transforms"
+			"dev": "css-transforms-1"
 		},
 		"properties": {
 			"transform": {
 				"links": {
 					"tr": "#transform-property",
-					"dev": "#transform-property"
+					"dev": "#transform-property",
+					"mdn": "transform"
 				},
 				"tests": [
 					"none",
@@ -1592,14 +1758,16 @@ window.Specs = {
 			"transform-origin": {
 				"links": {
 					"tr": "#transform-origin-property",
-					"dev": "#transform-origin-property"
+					"dev": "#transform-origin-property",
+					"mdn": "transform-origin"
 				},
 				"tests": ["10px", "top", "top left", "50% 100%", "left 0%", "left 50% 0"]
 			},
 			"transform-box": {
 				"links": {
 					"tr": "#transform-box",
-					"dev": "#transform-box"
+					"dev": "#transform-box",
+					"mdn": "transform-box"
 				},
 				"tests": ["border-box", "fill-box", "view-box"]
 			}
@@ -1609,48 +1777,63 @@ window.Specs = {
 	"css-transforms-2": {
 		"title": "Transforms Level 2",
 		"links": {
+			"tr": "css-transforms-2",
 			"dev": "css-transforms-2"
 		},
 		"properties": {
 			"translate": {
 				"links": {
-					"dev": "#individual-transforms"
+					"tr": "#individual-transforms",
+					"dev": "#individual-transforms",
+					"mdn": "translate"
 				},
 				"tests": ["none", "50%", "50% 50%", "50% 50% 10px"]
 			},
 			"scale": {
 				"links": {
-					"dev": "#individual-transforms"
+					"tr": "#individual-transforms",
+					"dev": "#individual-transforms",
+					"mdn": "scale"
 				},
 				"tests": ["none"].concat(["2"].times(1, 3))
 			},
 			"rotate": {
 				"links": {
-					"dev": "#individual-transforms"
+					"tr": "#individual-transforms",
+					"dev": "#individual-transforms",
+					"mdn": "rotate"
 				},
 				"tests": ["none"].concat(["", "x", "y", "z", "-1 0 2"].and(["45deg"])).concat(["45deg"].and(["x", "y", "z", "-1 0 2"]))
 			},
 			"transform-style": {
 				"links": {
-					"dev": "#transform-style-property"
+					"tr": "#transform-style-property",
+					"dev": "#transform-style-property",
+					"mdn": "transform-style"
 				},
 				"tests": ["flat", "preserve-3d"]
 			},
 			"perspective": {
 				"links": {
-					"dev": "#perspective-property"
+					"tr": "#perspective-property",
+					"dev": "#perspective-property",
+					"mdn": "perspective"
 				},
 				"tests": ["none", "600px"]
 			},
 			"perspective-origin": {
 				"links": {
-					"dev": "#perspective-origin-property"
+					"tr": "#perspective-origin-property",
+					"dev": "#perspective-origin-property",
+					"mdn": "perspective-origin"
 				},
 				"tests": ["10px", "top", "top left", "50% 100%", "left 0%"]
 			},
 			"backface-visibility": {
 				"links": {
-					"dev": "#backface-visibility-property"
+					"tr": "#backface-visibility-property",
+					"dev": "#backface-visibility-property",
+					"mdn": "backface-visibility"
 				},
 				"tests": ["visible", "hidden"]
 			}
@@ -1668,7 +1851,8 @@ window.Specs = {
 			"offset": {
 				"links": {
 					"tr": "#offset-shorthand",
-					"dev": "#offset-shorthand"
+					"dev": "#offset-shorthand",
+					"mdn": "offset"
 				},
 				"tests": [
 					"none",
@@ -1722,7 +1906,8 @@ window.Specs = {
 			"offset-path": {
 				"links": {
 					"tr": "#offset-path-property",
-					"dev": "#offset-path-property"
+					"dev": "#offset-path-property",
+					"mdn": "offset-path"
 				},
 				"tests": [
 					"none",
@@ -1748,28 +1933,32 @@ window.Specs = {
 			"offset-distance": {
 				"links": {
 					"tr": "#offset-distance-property",
-					"dev": "#offset-distance-property"
+					"dev": "#offset-distance-property",
+					"mdn": "offset-distance"
 				},
 				"tests": "10%"
 			},
 			"offset-position": {
 				"links": {
 					"tr": "#offset-position-property",
-					"dev": "#offset-position-property"
+					"dev": "#offset-position-property",
+					"mdn": "offset-position"
 				},
 				"tests": ["auto", "200px", "200px 100px", "center"]
 			},
 			"offset-anchor": {
 				"links": {
 					"tr": "#offset-anchor-property",
-					"dev": "#offset-anchor-property"
+					"dev": "#offset-anchor-property",
+					"mdn": "offset-anchor"
 				},
 				"tests": ["auto", "200px", "200px 100px", "center"]
 			},
 			"offset-rotate": {
 				"links": {
 					"tr": "#offset-rotate-property",
-					"dev": "#offset-rotate-property"
+					"dev": "#offset-rotate-property",
+					"mdn": "offset-rotate"
 				},
 				"tests": ["auto", "0deg", "reverse", "-45deg", "auto 180deg", "reverse 45deg", "2turn reverse"]
 			}
@@ -1787,63 +1976,72 @@ window.Specs = {
 			"text-transform": {
 				"links": {
 					"tr": "#text-transform",
-					"dev": "#text-transform-property"
+					"dev": "#text-transform-property",
+					"mdn": "text-transform"
 				},
 				"tests": ["full-width", "full-size-kana", "capitalize full-width", "capitalize full-width full-size-kana"]
 			},
 			"tab-size": {
 				"links": {
 					"tr": "#tab-size-property",
-					"dev": "#tab-size-property"
+					"dev": "#tab-size-property",
+					"mdn": "tab-size"
 				},
 				"tests": ["4", "1em"]
 			},
 			"line-break": {
 				"links": {
 					"tr": "#line-break-property",
-					"dev": "#line-break-property"
+					"dev": "#line-break-property",
+					"mdn": "line-break"
 				},
 				"tests": ["auto", "loose", "normal", "strict", "anywhere"]
 			},
 			"word-break": {
 				"links": {
 					"tr": "#word-break-property",
-					"dev": "#word-break-property"
+					"dev": "#word-break-property",
+					"mdn": "word-break"
 				},
 				"tests": ["normal", "keep-all", "break-all"]
 			},
 			"white-space": {
 				"links": {
 					"tr": "#white-space-property",
-					"dev": "#white-space-property"
+					"dev": "#white-space-property",
+					"mdn": "white-space"
 				},
 				"tests": ["break-spaces"]
 			},
 			"hyphens": {
 				"links": {
 					"tr": "#hyphenation",
-					"dev": "#hyphenation"
+					"dev": "#hyphenation",
+					"mdn": "hyphens"
 				},
 				"tests": ["auto", "manual", "none"]
 			},
 			"overflow-wrap": {
 				"links": {
 					"tr": "#overflow-wrap-property",
-					"dev": "#overflow-wrap-property"
+					"dev": "#overflow-wrap-property",
+					"mdn": "overflow-wrap"
 				},
 				"tests": ["normal", "break-word", "anywhere"]
 			},
 			"word-wrap": {
 				"links": {
 					"tr": "#overflow-wrap-property",
-					"dev": "#overflow-wrap-property"
+					"dev": "#overflow-wrap-property",
+					"mdn": "word-wrap"
 				},
 				"tests": ["normal", "break-word", "anywhere"]
 			},
 			"text-align": {
 				"links": {
 					"tr": "#text-align-property",
-					"dev": "#text-align-property"
+					"dev": "#text-align-property",
+					"mdn": "text-align"
 				},
 				"tests": ["start", "end", "left", "right", "center", "justify", "match-parent", "justify-all"]
 			},
@@ -1857,35 +2055,40 @@ window.Specs = {
 			"text-align-last": {
 				"links": {
 					"tr": "#text-align-last-property",
-					"dev": "#text-align-last-property"
+					"dev": "#text-align-last-property",
+					"mdn": "text-align-last"
 				},
 				"tests": ["auto", "start", "end", "left", "right", "center", "justify", "match-parent"]
 			},
 			"text-justify": {
 				"links": {
 					"tr": "#text-justify-property",
-					"dev": "#text-justify-property"
+					"dev": "#text-justify-property",
+					"mdn": "text-justify"
 				},
 				"tests": ["auto", "none", "inter-word", "inter-character"]
 			},
 			"word-spacing": {
 				"links": {
 					"tr": "#word-spacing-property",
-					"dev": "#word-spacing-property"
+					"dev": "#word-spacing-property",
+					"mdn": "word-spacing"
 				},
 				"tests": ["50%"]
 			},
 			"text-indent": {
 				"links": {
 					"tr": "#text-indent-property",
-					"dev": "#text-indent-property"
+					"dev": "#text-indent-property",
+					"mdn": "text-indent"
 				},
 				"tests": ["1em hanging", "1em each-line", "1em hanging each-line"]
 			},
 			"hanging-punctuation": {
 				"links": {
 					"tr": "#hanging-punctuation-property",
-					"dev": "#hanging-punctuation-property"
+					"dev": "#hanging-punctuation-property",
+					"mdn": "hanging-punctuation"
 				},
 				"tests": [
 					"none", "first", "last", "force-end", "allow-end", "first last", "first force-end",
@@ -1995,70 +2198,80 @@ window.Specs = {
 			"text-decoration": {
 				"links": {
 					"tr": "#text-decoration-property",
-					"dev": "#text-decoration-property"
+					"dev": "#text-decoration-property",
+					"mdn": "text-decoration"
 				},
 				"tests": "underline dotted green"
 			},
 			"text-decoration-line": {
 				"links": {
 					"tr": "#text-decoration-line-property",
-					"dev": "#text-decoration-line-property"
+					"dev": "#text-decoration-line-property",
+					"mdn": "text-decoration-line"
 				},
 				"tests": ["none", "underline", "overline", "line-through", "underline overline"]
 			},
 			"text-decoration-color": {
 				"links": {
 					"tr": "#text-decoration-color-property",
-					"dev": "#text-decoration-color-property"
+					"dev": "#text-decoration-color-property",
+					"mdn": "text-decoration-color"
 				},
 				"tests": "white"
 			},
 			"text-decoration-style": {
 				"links": {
 					"tr": "#text-decoration-style-property",
-					"dev": "#text-decoration-style-property"
+					"dev": "#text-decoration-style-property",
+					"mdn": "text-decoration-style"
 				},
 				"tests": ["solid", "double", "dotted", "dashed", "wavy"]
 			},
 			"text-underline-position": {
 				"links": {
 					"tr": "#text-underline-position-property",
-					"dev": "#text-underline-position-property"
+					"dev": "#text-underline-position-property",
+					"mdn": "text-underline-position"
 				},
 				"tests": ["auto", "under", "left", "right", "under left", "under right"]
 			},
 			"text-emphasis-style": {
 				"links": {
 					"tr": "#text-emphasis-style-property",
-					"dev": "#text-emphasis-style-property"
+					"dev": "#text-emphasis-style-property",
+					"mdn": "text-emphasis-style"
 				},
 				"tests": ["none", "filled", "open", "dot", "circle", "double-circle", "triangle", "sesame", "open dot", "'foo'"]
 			},
 			"text-emphasis-color": {
 				"links": {
 					"tr": "#text-emphasis-color-property",
-					"dev": "#text-emphasis-color-property"
+					"dev": "#text-emphasis-color-property",
+					"mdn": "text-emphasis-color"
 				},
 				"tests": "green"
 			},
 			"text-emphasis": {
 				"links": {
 					"tr": "#text-emphasis-property",
-					"dev": "#text-emphasis-property"
+					"dev": "#text-emphasis-property",
+					"mdn": "text-emphasis"
 				},
 				"tests": "open dot green"
 			},
 			"text-emphasis-position": {
 				"links": {
 					"tr": "#text-emphasis-position-property",
-					"dev": "#text-emphasis-position-property"
+					"dev": "#text-emphasis-position-property",
+					"mdn": "text-emphasis-position"
 				},
 				"tests": ["over left", "over right", "under left", "under right"]
 			},
 			"text-shadow": {
 				"links": {
 					"tr": "#text-shadow-property",
-					"dev": "#text-shadow-property"
+					"dev": "#text-shadow-property",
+					"mdn": "text-shadow"
 				},
 				"tests": ["none", "1px 1px", "0 0 black", "1px 2px 3px black"]
 			}
@@ -2073,12 +2286,18 @@ window.Specs = {
 		},
 		"properties": {
 			"text-decoration": {
+				"links": {
+					"tr": "#text-decoration-property",
+					"dev": "#text-decoration-property",
+					"mdn": "text-decoration"
+				},
 				"tests": ["underline solid blue 1px"]
 			},
 			"text-decoration-skip": {
 				"links": {
 					"tr": "#text-decoration-skip-property",
-					"dev": "#text-decoration-skip-property"
+					"dev": "#text-decoration-skip-property",
+					"mdn": "text-decoration-skip"
 				},
 				"tests": [
 					"none", "objects", "objects spaces", "objects leading-spaces", "objects trailing-spaces", "objects leading-spaces trailing-spaces",
@@ -2091,21 +2310,24 @@ window.Specs = {
 			"text-decoration-skip-ink": {
 				"links": {
 					"tr": "#text-decoration-skip-ink-property",
-					"dev": "#text-decoration-skip-ink-property"
+					"dev": "#text-decoration-skip-ink-property",
+					"mdn": "text-decoration-skip-ink"
 				},
 				"tests": ["none", "auto"]
 			},
 			"text-underline-offset": {
 				"links": {
 					"tr": "#underline-offset",
-					"dev": "#underline-offset"
+					"dev": "#underline-offset",
+					"mdn": "text-underline-offset"
 				},
 				"tests": ["auto", "from-font", "3px", "10%"]
 			},
 			"text-decoration-thickness": {
 				"links": {
 					"tr": "#underline-offset",
-					"dev": "#text-decoration-width-property"
+					"dev": "#text-decoration-width-property",
+					"mdn": "text-decoration-thickness"
 				},
 				"tests": ["auto", "from-font", "3px", "10%"]
 			}
@@ -2122,14 +2344,16 @@ window.Specs = {
 			"quotes": {
 				"links": {
 					"tr": "#quotes",
-					"dev": "#quotes"
+					"dev": "#quotes",
+					"mdn": "quotes"
 				},
 				"tests": ["auto"]
 			},
 			"content": {
 				"links": {
 					"tr": "#alt",
-					"dev": "#alt"
+					"dev": "#alt",
+					"mdn": "content"
 				},
 				"tests": [
 					"url(./img/star.png) / \"New!\"",
@@ -2180,7 +2404,8 @@ window.Specs = {
 			"font-stretch": {
 				"links": {
 					"tr": "#font-stretch-prop",
-					"dev": "#font-stretch-prop"
+					"dev": "#font-stretch-prop",
+					"mdn": "font-stretch"
 				},
 				"tests": [
 					"normal", "ultra-condensed", "extra-condensed", "condensed", "semi-condensed", "semi-expanded",
@@ -2190,35 +2415,40 @@ window.Specs = {
 			"font-size-adjust": {
 				"links": {
 					"tr": "#font-size-adjust-prop",
-					"dev": "#font-size-adjust-prop"
+					"dev": "#font-size-adjust-prop",
+					"mdn": "font-size-adjust"
 				},
 				"tests": ["none", ".5"]
 			},
 			"font-synthesis": {
 				"links": {
 					"tr": "#font-synthesis-prop",
-					"dev": "#font-synthesis-prop"
+					"dev": "#font-synthesis-prop",
+					"mdn": "font-synthesis"
 				},
 				"tests": ["none", "weight", "style", "weight style", "style weight"]
 			},
 			"font-kerning": {
 				"links": {
 					"tr": "#font-kerning-prop",
-					"dev": "#font-kerning-prop"
+					"dev": "#font-kerning-prop",
+					"mdn": "font-kerning"
 				},
 				"tests": ["auto", "normal", "none"]
 			},
 			"font-variant-position": {
 				"links": {
 					"tr": "#font-variant-position-prop",
-					"dev": "#font-variant-position-prop"
+					"dev": "#font-variant-position-prop",
+					"mdn": "font-variant-position"
 				},
 				"tests": ["normal", "sub", "super"]
 			},
 			"font-variant-ligatures": {
 				"links": {
 					"tr": "#font-variant-ligatures-prop",
-					"dev": "#font-variant-ligatures-prop"
+					"dev": "#font-variant-ligatures-prop",
+					"mdn": "font-variant-ligatures"
 				},
 				"tests": [
 					"normal", "none",
@@ -2232,7 +2462,8 @@ window.Specs = {
 			"font-variant-caps": {
 				"links": {
 					"tr": "#font-variant-caps-prop",
-					"dev": "#font-variant-caps-prop"
+					"dev": "#font-variant-caps-prop",
+					"mdn": "font-variant-caps"
 				},
 				"tests": [
 					"normal", "small-caps", "all-small-caps", "petite-caps", "all-petite-caps", "titling-caps", "unicase"
@@ -2241,7 +2472,8 @@ window.Specs = {
 			"font-variant-numeric": {
 				"links": {
 					"tr": "#font-variant-numeric-prop",
-					"dev": "#font-variant-numeric-prop"
+					"dev": "#font-variant-numeric-prop",
+					"mdn": "font-variant-numeric"
 				},
 				"tests": [
 					"normal",
@@ -2257,7 +2489,8 @@ window.Specs = {
 			"font-variant-east-asian": {
 				"links": {
 					"tr": "#font-variant-east-asian-prop",
-					"dev": "#font-variant-east-asian-prop"
+					"dev": "#font-variant-east-asian-prop",
+					"mdn": "font-variant-east-asian"
 				},
 				"tests": [
 					"normal",
@@ -2270,7 +2503,8 @@ window.Specs = {
 			"font-feature-settings": {
 				"links": {
 					"tr": "#font-feature-settings-prop",
-					"dev": "#font-feature-settings-prop"
+					"dev": "#font-feature-settings-prop",
+					"mdn": "font-feature-settings"
 				},
 				"tests": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"]
 			}
@@ -2279,7 +2513,8 @@ window.Specs = {
 			"unicode-range": {
 				"links": {
 					"tr": "#unicode-range-desc",
-					"dev": "#unicode-range-desc"
+					"dev": "#unicode-range-desc",
+					"mdn": "unicode-range"
 				},
 				"tests": ["U+416", "U+0-7F", "U+A5, U+4E00-9FFF", "U+30??"]
 			}
@@ -2288,7 +2523,8 @@ window.Specs = {
 			"@font-face": {
 				"links": {
 					"tr": "#font-face-rule",
-					"dev": "#font-face-rule"
+					"dev": "#font-face-rule",
+					"mdn": "@font-face"
 				},
 				"tests": "@font-face {\n  font-family: foo;\n  src: local('Arial');\n}"
 			}
@@ -2305,14 +2541,16 @@ window.Specs = {
 			"font-size": {
 				"links": {
 					"tr": "#font-size-prop",
-					"dev": "#font-size-prop"
+					"dev": "#font-size-prop",
+					"mdn": "font-size"
 				},
 				"tests": ["xxx-large"]
 			},
 			"font-variant": {
 				"links": {
 					"tr": "#font-variant-prop",
-					"dev": "#font-variant-prop"
+					"dev": "#font-variant-prop",
+					"mdn": "font-variant"
 				},
 				"tests": [
 					"none", "normal", "all-petite-caps", "historical-forms", "super", "sub lining-nums contextual ruby"
@@ -2321,7 +2559,8 @@ window.Specs = {
 			"font-variant-alternates": {
 				"links": {
 					"tr": "#font-variant-alternates-prop",
-					"dev": "#font-variant-alternates-prop"
+					"dev": "#font-variant-alternates-prop",
+					"mdn": "font-variant-alternates"
 				},
 				"tests": [
 					"normal", "historical-forms", "styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
@@ -2330,35 +2569,40 @@ window.Specs = {
 			"font-feature-settings": {
 				"links": {
 					"tr": "#font-feature-settings-prop",
-					"dev": "#font-feature-settings-prop"
+					"dev": "#font-feature-settings-prop",
+					"mdn": "font-feature-settings"
 				},
 				"tests": ["normal", "'swsh' 2"]
 			},
 			"font-language-override": {
 				"links": {
 					"tr": "#font-language-override",
-					"dev": "#font-language-override"
+					"dev": "#font-language-override",
+					"mdn": "font-language-override"
 				},
 				"tests": ["normal", "'SRB'"]
 			},
 			"font-weight": {
 				"links": {
 					"tr": "#font-weight-prop",
-					"dev": "#font-weight-prop"
+					"dev": "#font-weight-prop",
+					"mdn": "font-weight"
 				},
 				"tests": ["1", "90", "750", "1000"]
 			},
 			"font-style": {
 				"links": {
 					"tr": "#font-style-prop",
-					"dev": "#font-style-prop"
+					"dev": "#font-style-prop",
+					"mdn": "font-style"
 				},
 				"tests": ["oblique 15deg", "oblique -15deg", "oblique 0deg"]
 			},
 			"font-optical-sizing": {
 				"links": {
 					"tr": "#font-optical-sizing-def",
-					"dev": "#font-optical-sizing-def"
+					"dev": "#font-optical-sizing-def",
+					"mdn": "font-optical-sizing"
 				},
 				"tests": ["none", "auto"]
 			},
@@ -2374,7 +2618,8 @@ window.Specs = {
 			"@font-feature-values": {
 				"links": {
 					"tr": "#font-feature-values",
-					"dev": "#font-feature-values"
+					"dev": "#font-feature-values",
+					"mdn": "@font-feature-values"
 				},
 				"tests": "@font-feature-values Jupiter Sans {\n  @styleset {\n    some-style: 1;\n  }\n}"
 			},
@@ -2398,35 +2643,40 @@ window.Specs = {
 			"direction": {
 				"links": {
 					"tr": "#direction",
-					"dev": "#direction"
+					"dev": "#direction",
+					"mdn": "direction"
 				},
 				"tests": ["ltr", "rtl"]
 			},
 			"unicode-bidi": {
 				"links": {
 					"tr": "#unicode-bidi",
-					"dev": "#unicode-bidi"
+					"dev": "#unicode-bidi",
+					"mdn": "unicode-bidi"
 				},
 				"tests": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"]
 			},
 			"writing-mode": {
 				"links": {
 					"tr": "#block-flow",
-					"dev": "#block-flow"
+					"dev": "#block-flow",
+					"mdn": "writing-mode"
 				},
 				"tests": ["horizontal-tb", "vertical-rl", "vertical-lr"]
 			},
 			"text-orientation": {
 				"links": {
 					"tr": "#text-orientation",
-					"dev": "#text-orientation"
+					"dev": "#text-orientation",
+					"mdn": "text-orientation"
 				},
 				"tests": ["mixed", "upright", "sideways"]
 			},
 			"text-combine-upright": {
 				"links": {
 					"tr": "#text-combine-upright",
-					"dev": "#text-combine-upright"
+					"dev": "#text-combine-upright",
+					"mdn": "text-combine-upright"
 				},
 				"tests": ["none", "all"]
 			}
@@ -2443,14 +2693,16 @@ window.Specs = {
 			"writing-mode": {
 				"links": {
 					"tr": "#block-flow",
-					"dev": "#block-flow"
+					"dev": "#block-flow",
+					"mdn": "writing-mode"
 				},
 				"tests": ["sideways-rl", "sideways-lr"]
 			},
 			"text-combine-upright": {
 				"links": {
 					"tr": "#text-combine-upright",
-					"dev": "#text-combine-upright"
+					"dev": "#text-combine-upright",
+					"mdn": "text-combine-upright"
 				},
 				"tests": ["digits 2"]
 			}
@@ -2474,42 +2726,48 @@ window.Specs = {
 			"rgba": {
 				"links": {
 					"tr": "#rgba-color",
-					"dev": "#rgba-color"
+					"dev": "#rgba-color",
+					"mdn": "color_value"
 				},
 				"tests": "rgba(0,0,0,.5)"
 			},
 			"#RGB": {
 				"links": {
 					"tr": "#rgb-color",
-					"dev": "#rgb-color"
+					"dev": "#rgb-color",
+					"mdn": "color_value"
 				},
 				"tests": ["#F06", "#FF0066"]
 			},
 			"hsl": {
 				"links": {
 					"tr": "#hsl-color",
-					"dev": "#hsl-color"
+					"dev": "#hsl-color",
+					"mdn": "color_value"
 				},
 				"tests": "hsl(0,0%,0%)"
 			},
 			"hsla": {
 				"links": {
 					"tr": "#hsla-color",
-					"dev": "#hsla-color"
+					"dev": "#hsla-color",
+					"mdn": "hsla"
 				},
-				"tests": "hsla(0,0%,0%,.5)"
+				"tests": "color_value"
 			},
 			"transparent": {
 				"links": {
 					"tr": "#transparent",
-					"dev": "#transparent"
+					"dev": "#transparent",
+					"mdn": "color_value"
 				},
 				"tests": "transparent"
 			},
 			"currentColor": {
 				"links": {
 					"tr": "#currentcolor",
-					"dev": "#currentcolor"
+					"dev": "#currentcolor",
+					"mdn": "color_value"
 				},
 				"tests": "currentColor"
 			}
@@ -2518,7 +2776,8 @@ window.Specs = {
 			"opacity": {
 				"links": {
 					"tr": "#transparency",
-					"dev": "#transparency"
+					"dev": "#transparency",
+					"mdn": "opacity"
 				},
 				"tests": ["-5", "0", ".5", "1", "2"]
 			}
@@ -2542,42 +2801,48 @@ window.Specs = {
 			"comma-less colors": {
 				"links": {
 					"tr": "#funcdef-rgb",
-					"dev": "#funcdef-rgb"
+					"dev": "#funcdef-rgb",
+					"mdn": "color_value"
 				},
 				"tests": ["rgb(0% 20% 70%)", "rgb(0 64 185)", "hsl(0 0% 0%)"]
 			},
 			"/ alpha": {
 				"links": {
 					"tr": "#funcdef-rgb",
-					"dev": "#funcdef-rgb"
+					"dev": "#funcdef-rgb",
+					"mdn": "color_value"
 				},
 				"tests": ["rgba(0% 20% 70% / 50%)", "rgba(0% 20% 70% / .5)", "rgba(0 64 185 / 50%)", "rgba(0 64 185 / .5)", "hsla(0 0% 0% /.5)"]
 			},
 			"optional alpha": {
 				"links": {
 					"tr": "#funcdef-rgb",
-					"dev": "#funcdef-rgb"
+					"dev": "#funcdef-rgb",
+					"mdn": "color_value"
 				},
 				"tests": ["rgb(0% 20% 70% / 50%)", "rgb(0% 20% 70% / .5)", "rgb(0 64 185 / 50%)", "rgb(0 64 185 / .5)", "hsl(0 0% 0% / .5)"]
 			},
 			"Hex with alpha": {
 				"links": {
 					"tr": "#hex-notation",
-					"dev": "#hex-notation"
+					"dev": "#hex-notation",
+					"mdn": "color_value"
 				},
 				"tests": ["#000F", "#000000FF"]
 			},
 			"rebeccapurple": {
 				"links": {
 					"tr": "#named-colors",
-					"dev": "#named-colors"
+					"dev": "#named-colors",
+					"mdn": "color_value"
 				},
 				"tests": "rebeccapurple"
 			},
 			"system colors": {
 				"links": {
 					"tr": "#css-system-colors",
-					"dev": "#css-system-colors"
+					"dev": "#css-system-colors",
+					"mdn": "color_value"
 				},
 				"tests": [
 					"Canvas", "CanvasText", "LinkText", "VisitedText", "ActiveText", "ButtonFace", "Field", "FieldText",
@@ -2642,7 +2907,8 @@ window.Specs = {
 			"opacity": {
 				"links": {
 					"tr": "#transparency",
-					"dev": "#transparency"
+					"dev": "#transparency",
+					"mdn": "opacity"
 				},
 				"tests": ["45%"]
 			}
@@ -2659,7 +2925,8 @@ window.Specs = {
 			"color-adjust": {
 				"links": {
 					"tr": "#perf",
-					"dev": "#perf"
+					"dev": "#perf",
+					"mdn": "color-adjust"
 				},
 				"tests": ["economy", "exact"]
 			},
@@ -2693,63 +2960,72 @@ window.Specs = {
 			"column-width": {
 				"links": {
 					"tr": "#cw",
-					"dev": "#cw"
+					"dev": "#cw",
+					"mdn": "column-width"
 				},
 				"tests": ["10em", "auto"]
 			},
 			"column-count": {
 				"links": {
 					"tr": "#cc",
-					"dev": "#cc"
+					"dev": "#cc",
+					"mdn": "column-count"
 				},
 				"tests": ["2", "auto"]
 			},
 			"columns": {
 				"links": {
 					"tr": "#columns",
-					"dev": "#columns"
+					"dev": "#columns",
+					"mdn": "columns"
 				},
 				"tests": ["100px", "3", "10em 2", "auto 2", "10em auto", "auto auto", "2 10em", "auto 10em", "2 auto"]
 			},
 			"column-rule-color": {
 				"links": {
 					"tr": "#crc",
-					"dev": "#crc"
+					"dev": "#crc",
+					"mdn": "column-rule-color"
 				},
 				"tests": "red"
 			},
 			"column-rule-style": {
 				"links": {
 					"tr": "#crs",
-					"dev": "#crs"
+					"dev": "#crs",
+					"mdn": "column-rule-style"
 				},
 				"tests": ["none", "solid", "dotted"]
 			},
 			"column-rule-width": {
 				"links": {
 					"tr": "#crw",
-					"dev": "#crw"
+					"dev": "#crw",
+					"mdn": "column-rule-width"
 				},
 				"tests": "1px"
 			},
 			"column-rule": {
 				"links": {
 					"tr": "#column-rule",
-					"dev": "#cr"
+					"dev": "#cr",
+					"mdn": "column-rule"
 				},
 				"tests": ["transparent", "1px solid black"]
 			},
 			"column-span": {
 				"links": {
 					"tr": "#column-span",
-					"dev": "#column-span"
+					"dev": "#column-span",
+					"mdn": "column-span"
 				},
 				"tests": ["none", "all"]
 			},
 			"column-fill": {
 				"links": {
 					"tr": "#cf",
-					"dev": "#cf"
+					"dev": "#cf",
+					"mdn": "column-fill"
 				},
 				"tests": ["auto", "balance", "balance-all"]
 			}
@@ -2770,63 +3046,72 @@ window.Specs = {
 			"rem": {
 				"links": {
 					"tr": "#font-relative-lengths",
-					"dev": "#font-relative-lengths"
+					"dev": "#font-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5rem"
 			},
 			"ch": {
 				"links": {
 					"tr": "#font-relative-lengths",
-					"dev": "#font-relative-lengths"
+					"dev": "#font-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5ch"
 			},
 			"vw": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vw"
 			},
 			"vh": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vh"
 			},
 			"vmin": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vmin"
 			},
 			"vmax": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vmax"
 			},
 			"q": {
 				"links": {
 					"tr": "#absolute-lengths",
-					"dev": "#absolute-lengths"
+					"dev": "#absolute-lengths",
+					"mdn": "length"
 				},
 				"tests": "5q"
 			},
 			"attr()": {
 				"links": {
 					"tr": "#attr-notation",
-					"dev": "#attr-notation"
+					"dev": "#attr-notation",
+					"mdn": "attr"
 				},
 				"tests": ["attr(data-px)", "attr(data-px px)", "attr(data-px px, initial)"]
 			},
 			"calc()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#calc-notation"
+					"dev": "#calc-notation",
+					"mdn": "calc"
 				},
 				"tests": [
 					"calc(1px + 2px)",
@@ -2868,21 +3153,24 @@ window.Specs = {
 			"min()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#comp-func"
+					"dev": "#comp-func",
+					"mdn": "min"
 				},
 				"tests": ["max(10 * (1vw + 1vh) / 2, 12px)"]
 			},
 			"max()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#comp-func"
+					"dev": "#comp-func",
+					"mdn": "max"
 				},
 				"tests": ["max(10 * (1vw + 1vh) / 2, 12px)"]
 			},
 			"clamp()": {
 				"links": {
 					"tr": "#calc-notation",
-					"dev": "#comp-func"
+					"dev": "#comp-func",
+					"mdn": "clamp"
 				},
 				"tests": ["clamp(12px, 10 * (1vw + 1vh) / 2, 100px)"]
 			}
@@ -2902,7 +3190,8 @@ window.Specs = {
 			"env()": {
 				"links": {
 					"tr": "#env-function",
-					"dev": "#env-function"
+					"dev": "#env-function",
+					"mdn": "env"
 				},
 				"tests": [
 					"env(safe-area-inset-top)", "env(safe-area-inset-top, 12px)",
@@ -2949,111 +3238,127 @@ window.Specs = {
 		"title": "Flexible Box Layout",
 		"links": {
 			"tr": "css-flexbox-1",
-			"dev": "css-flexbox-1"
+			"dev": "css-flexbox-1",
+			"mdn": "Glossary/Flexbox"
 		},
 		"properties": {
 			"align-content": {
 				"links": {
 					"tr": "#align-content-property",
-					"dev": "#align-content-property"
+					"dev": "#align-content-property",
+					"mdn": "align-content"
 				},
 				"tests": ["flex-start", "flex-end", "space-between", "space-around"]
 			},
 			"align-items": {
 				"links": {
 					"tr": "#align-items-property",
-					"dev": "#align-items-property"
+					"dev": "#align-items-property",
+					"mdn": "align-items"
 				},
 				"tests": ["flex-start", "flex-end"]
 			},
 			"align-self": {
 				"links": {
 					"tr": "#align-items-property",
-					"dev": "#align-items-property"
+					"dev": "#align-items-property",
+					"mdn": "align-self"
 				},
 				"tests": ["flex-start", "flex-end"]
 			},
 			"display": {
 				"links": {
 					"tr": "#flex-containers",
-					"dev": "#flex-containers"
+					"dev": "#flex-containers",
+					"mdn": "display"
 				},
 				"tests": ["flex", "inline-flex"]
 			},
 			"flex": {
 				"links": {
 					"tr": "#flex-property",
-					"dev": "#flex-property"
+					"dev": "#flex-property",
+					"mdn": "flex"
 				},
 				"tests": ["none", "5 7 10%"]
 			},
 			"flex-basis": {
 				"links": {
 					"tr": "#flex-basis-property",
-					"dev": "#flex-basis-property"
+					"dev": "#flex-basis-property",
+					"mdn": "flex-basis"
 				},
 				"tests": ["auto", "content", "1px"]
 			},
 			"flex-direction": {
 				"links": {
 					"tr": "#flex-direction-property",
-					"dev": "#flex-direction-property"
+					"dev": "#flex-direction-property",
+					"mdn": "flex-direction"
 				},
 				"tests": ["row", "row-reverse", "column", "column-reverse"]
 			},
 			"flex-flow": {
 				"links": {
 					"tr": "#flex-flow-property",
-					"dev": "#flex-flow-property"
+					"dev": "#flex-flow-property",
+					"mdn": "flex-flow"
 				},
 				"tests": ["row", "row-reverse", "column", "column-reverse", "wrap", "wrap-reverse"]
 			},
 			"flex-grow": {
 				"links": {
 					"tr": "#flex-grow-property",
-					"dev": "#flex-grow-property"
+					"dev": "#flex-grow-property",
+					"mdn": "flex-grow"
 				},
 				"tests": ["0", "5"]
 			},
 			"flex-shrink": {
 				"links": {
 					"tr": "#flex-shrink-property",
-					"dev": "#flex-shrink-property"
+					"dev": "#flex-shrink-property",
+					"mdn": "flex-shrink"
 				},
 				"tests": ["1", "10"]
 			},
 			"flex-wrap": {
 				"links": {
 					"tr": "#flex-wrap-property",
-					"dev": "#flex-wrap-property"
+					"dev": "#flex-wrap-property",
+					"mdn": "flex-wrap"
 				},
 				"tests": ["nowrap", "wrap", "wrap-reverse"]
 			},
 			"justify-content": {
 				"links": {
 					"tr": "#justify-content-property",
-					"dev": "#justify-content-property"
+					"dev": "#justify-content-property",
+					"mdn": "justify-content"
 				},
 				"tests": ["flex-start", "flex-end", "space-between", "space-around"]
 			},
 			"min-height": {
 				"links": {
 					"tr": "#min-size-auto",
-					"dev": "#min-size-auto"
+					"dev": "#min-size-auto",
+					"mdn": "min-height"
 				},
 				"tests": ["auto"]
 			},
 			"min-width": {
 				"links": {
 					"tr": "#min-size-auto",
-					"dev": "#min-size-auto"
+					"dev": "#min-size-auto",
+					"mdn": "min-width"
 				},
 				"tests": ["auto"]
 			},
 			"order": {
 				"links": {
 					"tr": "#order-property",
-					"dev": "#order-property"
+					"dev": "#order-property",
+					"mdn": "order"
 				},
 				"tests": ["0", "1"]
 			}
@@ -3064,20 +3369,23 @@ window.Specs = {
 		"title": "Grid Layout Level 1",
 		"links": {
 			"tr": "css-grid-1",
-			"dev": "css-grid"
+			"dev": "css-grid",
+			"mdn": "Glossary/Grid"
 		},
 		"properties": {
 			"display": {
 				"links": {
 					"tr": "#grid-containers",
-					"dev": "#grid-containers"
+					"dev": "#grid-containers",
+					"mdn": "display"
 				},
 				"tests": ["grid", "inline-grid"]
 			},
 			"grid-template-columns": {
 				"links": {
 					"tr": "#track-sizing",
-					"dev": "#track-sizing"
+					"dev": "#track-sizing",
+					"mdn": "grid-template-columns"
 				},
 				"tests": [
 					"none", "auto", "100px", "1fr", "100px 1fr auto",
@@ -3094,7 +3402,8 @@ window.Specs = {
 			"grid-template-rows": {
 				"links": {
 					"tr": "#track-sizing",
-					"dev": "#track-sizing"
+					"dev": "#track-sizing",
+					"mdn": "grid-template-rows"
 				},
 				"tests": [
 					"none", "auto", "100px", "1fr", "100px 1fr auto",
@@ -3107,21 +3416,24 @@ window.Specs = {
 			"grid-template-areas": {
 				"links": {
 					"tr": "#grid-template-areas-property",
-					"dev": "#grid-template-areas-property"
+					"dev": "#grid-template-areas-property",
+					"mdn": "grid-template-areas"
 				},
 				"tests": ["none", "'articles'", "'head head'", "'head head' 'nav main' 'foot ....'"]
 			},
 			"grid-template": {
 				"links": {
 					"tr": "#explicit-grid-shorthand",
-					"dev": "#explicit-grid-shorthand"
+					"dev": "#explicit-grid-shorthand",
+					"mdn": "grid-template"
 				},
 				"tests": ["none", "auto 1fr auto / auto 1fr", "[header-top] 'a   a   a' [header-bottom] [main-top] 'b   b   b' 1fr [main-bottom] / auto 1fr auto"]
 			},
 			"grid-auto-columns": {
 				"links": {
 					"tr": "#auto-tracks",
-					"dev": "#auto-tracks"
+					"dev": "#auto-tracks",
+					"mdn": "grid-auto-columns"
 				},
 				"tests": [
 					"auto", "1fr", "100px", "max-content", "minmax(min-content, 1fr)", "min-content max-content auto",
@@ -3131,7 +3443,8 @@ window.Specs = {
 			"grid-auto-rows": {
 				"links": {
 					"tr": "#auto-tracks",
-					"dev": "#auto-tracks"
+					"dev": "#auto-tracks",
+					"mdn": "grid-auto-rows"
 				},
 				"tests": [
 					"auto", "1fr", "100px", "100px 30%", "100px 30% 1em", "min-content", "minmax(min-content, 1fr)",
@@ -3141,14 +3454,16 @@ window.Specs = {
 			"grid-auto-flow": {
 				"links": {
 					"tr": "#grid-auto-flow-property",
-					"dev": "#grid-auto-flow-property"
+					"dev": "#grid-auto-flow-property",
+					"mdn": "grid-auto-flow"
 				},
 				"tests": ["row", "column", "row dense", "column dense"]
 			},
 			"grid": {
 				"links": {
 					"tr": "#grid-shorthand",
-					"dev": "#grid-shorthand"
+					"dev": "#grid-shorthand",
+					"mdn": "grid"
 				},
 				"tests": [
 					"auto-flow 1fr / 100px",
@@ -3162,70 +3477,80 @@ window.Specs = {
 			"grid-row-start": {
 				"links": {
 					"tr": "#line-placement",
-					"dev": "#line-placement"
+					"dev": "#line-placement",
+					"mdn": "grid-row-start"
 				},
 				"tests": ["auto", "4", "C", "C 2", "span C", "span 1"]
 			},
 			"grid-column-start": {
 				"links": {
 					"tr": "#line-placement",
-					"dev": "#line-placement"
+					"dev": "#line-placement",
+					"mdn": "grid-column-start"
 				},
 				"tests": ["auto", "4", "C", "C 2", "span C", "span 1"]
 			},
 			"grid-row-end": {
 				"links": {
 					"tr": "#line-placement",
-					"dev": "#line-placement"
+					"dev": "#line-placement",
+					"mdn": "grid-row-end"
 				},
 				"tests": ["auto", "4", "C", "C 2", "span C", "span 1"]
 			},
 			"grid-column-end": {
 				"links": {
 					"tr": "#line-placement",
-					"dev": "#line-placement"
+					"dev": "#line-placement",
+					"mdn": "grid-column-end"
 				},
 				"tests": ["auto", "4", "C", "C 2", "span C", "span 1"]
 			},
 			"grid-column": {
 				"links": {
 					"tr": "#placement-shorthands",
-					"dev": "#placement-shorthands"
+					"dev": "#placement-shorthands",
+					"mdn": "grid-column"
 				},
 				"tests": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"]
 			},
 			"grid-row": {
 				"links": {
 					"tr": "#placement-shorthands",
-					"dev": "#placement-shorthands"
+					"dev": "#placement-shorthands",
+					"mdn": "grid-row"
 				},
 				"tests": ["auto", "1", "-1", "1 / 1", "1 / -1", "auto / auto", "2 / span 2"]
 			},
 			"grid-area": {
 				"links": {
 					"tr": "#placement-shorthands",
-					"dev": "#placement-shorthands"
+					"dev": "#placement-shorthands",
+					"mdn": "grid-area"
 				},
 				"tests": ["1 / 1", "1 / span 1", "span / 10 / -1"]
 			},
 			"grid-column-gap": {
 				"links": {
 					"tr": "#gutters",
-					"dev": "#gutters"
+					"dev": "#gutters",
+					"mdn": "grid-column-gap"
 				},
 				"tests": ["0", "1em"]
 			},
 			"grid-row-gap": {
 				"links": {
 					"tr": "#gutters",
-					"dev": "#gutters"
+					"dev": "#gutters",
+					"mdn": "grid-row-gap"
 				},
 				"tests": ["0", "1em"]
 			},
 			"grid-gap": {
 				"links": {
 					"tr": "#gutters",
-					"dev": "#gutters"
+					"dev": "#gutters",
+					"mdn": "grid-gap"
 				},
 				"tests": ["0 0", "0 1em", "1em", "1em 1em"]
 			}
@@ -3236,13 +3561,15 @@ window.Specs = {
 		"title": "Grid Layout Level 2",
 		"links": {
 			"tr": "css-grid-2",
-			"dev": "css-grid-2"
+			"dev": "css-grid-2",
+			"mdn": "Glossary/Grid"
 		},
 		"properties": {
 			"grid-template-columns": {
 				"links": {
 					"tr": "#subgrid-per-axis",
-					"dev": "#subgrid-per-axis"
+					"dev": "#subgrid-per-axis",
+					"mdn": "grid-template-columns"
 				},
 				"tests": [
 					"subgrid",
@@ -3257,7 +3584,8 @@ window.Specs = {
 			"grid-template-rows": {
 				"links": {
 					"tr": "#subgrid-per-axis",
-					"dev": "#subgrid-per-axis"
+					"dev": "#subgrid-per-axis",
+					"mdn": "grid-template-rows"
 				},
 				"tests": [
 					"subgrid",
@@ -3282,77 +3610,88 @@ window.Specs = {
 			"align-self": {
 				"links": {
 					"tr": "#align-self-property",
-					"dev": "#align-self-property"
+					"dev": "#align-self-property",
+					"mdn": "align-self"
 				},
 				"tests": ["auto", "normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start"]
 			},
 			"align-items": {
 				"links": {
 					"tr": "#align-items-property",
-					"dev": "#align-items-property"
+					"dev": "#align-items-property",
+					"mdn": "align-items"
 				},
 				"tests": ["normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start"]
 			},
 			"align-content": {
 				"links": {
 					"tr": "#align-justify-content",
-					"dev": "#align-justify-content"
+					"dev": "#align-justify-content",
+					"mdn": "align-content"
 				},
 				"tests": ["normal", "baseline", "first baseline", "last baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start"]
 			},
 			"justify-self": {
 				"links": {
 					"tr": "#justify-self-property",
-					"dev": "#justify-self-property"
+					"dev": "#justify-self-property",
+					"mdn": "justify-self"
 				},
 				"tests": ["auto", "normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "left", "right", "safe right"]
 			},
 			"justify-items": {
 				"links": {
 					"tr": "#justify-items-property",
-					"dev": "#justify-items-property"
+					"dev": "#justify-items-property",
+					"mdn": "justify-items"
 				},
 				"tests": ["normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "left", "right", "safe right", "legacy", "legacy left", "legacy right", "legacy center"]
 			},
 			"justify-content": {
 				"links": {
 					"tr": "#align-justify-content",
-					"dev": "#align-justify-content"
+					"dev": "#align-justify-content",
+					"mdn": "justify-content"
 				},
 				"tests": ["normal", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start", "left", "right", "safe right"]
 			},
 			"place-content": {
 				"links": {
 					"tr": "#place-content",
-					"dev": "#place-content"
+					"dev": "#place-content",
+					"mdn": "place-content"
 				},
 				"tests": ["normal", "baseline", "first baseline", "last baseline", "space-between", "space-around", "space-evenly", "stretch", "center", "start", "end", "flex-start", "flex-end", "unsafe start ", "safe start", "normal normal", "baseline normal", "first baseline normal", "space-between normal", "center normal", "unsafe start normal", "normal stretch", "baseline stretch", "first baseline stretch", "space-between stretch", "center stretch", "unsafe start stretch", "normal safe right", "baseline safe right", "first baseline safe right", "space-between safe right", "center safe right", "unsafe start safe right"]
 			},
 			"place-items": {
 				"links": {
 					"tr": "#place-items-property",
-					"dev": "#place-items-property"
+					"dev": "#place-items-property",
+					"mdn": "place-items"
 				},
 				"tests": ["normal", "stretch", "baseline", "first baseline", "last baseline", "center", "start", "end", "self-start", "self-end", "unsafe start ", "safe start", "normal normal", "stretch normal", "baseline normal", "first baseline normal", "self-start normal", "unsafe start normal", "normal stretch", "stretch stretch", "baseline stretch", "first baseline stretch", "self-start stretch", "unsafe start stretch", "normal last baseline", "stretch last baseline", "baseline last baseline", "first baseline last baseline", "self-start last baseline", "unsafe start last baseline", "normal legacy left", "stretch legacy left", "baseline legacy left", "first baseline legacy left", "self-start legacy left", "unsafe start legacy left"]
 			},
 			"gap": {
 				"links": {
 					"tr": "#gap-shorthand",
-					"dev": "#gap-shorthand"
+					"dev": "#gap-shorthand",
+					"mdn": "gap"
 				},
 				"tests": ["0 0", "0 1em", "1em", "1em 1em"]
 			},
 			"column-gap": {
 				"links": {
 					"tr": "#column-row-gap",
-					"dev": "#column-row-gap"
+					"dev": "#column-row-gap",
+					"mdn": "column-gap"
 				},
 				"tests": ["0", "1em", "normal"]
 			},
 			"row-gap": {
 				"links": {
 					"tr": "#column-row-gap",
-					"dev": "#column-row-gap"
+					"dev": "#column-row-gap",
+					"mdn": "row-gap"
 				},
 				"tests": ["0", "1em"]
 			}
@@ -3369,7 +3708,8 @@ window.Specs = {
 			"align-self": {
 				"links": {
 					"tr": "#margin-trim",
-					"dev": "#margin-trim"
+					"dev": "#margin-trim",
+					"mdn": "align-self"
 				},
 				"tests": ["none", "in-flow", "all"]
 			}
@@ -3392,7 +3732,8 @@ window.Specs = {
 			"unset": {
 				"links": {
 					"tr": "#inherit-initial",
-					"dev": "#inherit-initial"
+					"dev": "#inherit-initial",
+					"mdn": "unset"
 				},
 				"tests": "unset"
 			}
@@ -3401,7 +3742,8 @@ window.Specs = {
 			"all": {
 				"links": {
 					"tr": "#all-shorthand",
-					"dev": "#all-shorthand"
+					"dev": "#all-shorthand",
+					"mdn": "all"
 				},
 				"tests": ["initial", "inherit", "unset"]
 			}
@@ -3424,7 +3766,8 @@ window.Specs = {
 			"revert": {
 				"links": {
 					"tr": "#default",
-					"dev": "#default"
+					"dev": "#default",
+					"mdn": "revert"
 				},
 				"tests": "revert"
 			}
@@ -3433,7 +3776,8 @@ window.Specs = {
 			"all": {
 				"links": {
 					"tr": "#all-shorthand",
-					"dev": "#all-shorthand"
+					"dev": "#all-shorthand",
+					"mdn": "all"
 				},
 				"tests": "revert"
 			}
@@ -3450,7 +3794,8 @@ window.Specs = {
 			"@supports": {
 				"links": {
 					"tr": "#at-supports",
-					"dev": "#at-supports"
+					"dev": "#at-supports",
+					"mdn": "@supports"
 				},
 				"tests": [
 					"@supports (color: green) {}",
@@ -3474,7 +3819,8 @@ window.Specs = {
 			"@supports selector()": {
 				"links": {
 					"tr": "#at-supports-ext",
-					"dev": "#at-supports-ext"
+					"dev": "#at-supports-ext",
+					"mdn": "@supports selector()"
 				},
 				"tests": [
 					"@supports selector(::before) {}",
@@ -3496,7 +3842,8 @@ window.Specs = {
 			"clip-path": {
 				"links": {
 					"tr": "#the-clip-path",
-					"dev": "#the-clip-path"
+					"dev": "#the-clip-path",
+					"mdn": "clip-path"
 				},
 				"tests": [
 					"url('#clip')",
@@ -3519,112 +3866,128 @@ window.Specs = {
 			"clip-rule": {
 				"links": {
 					"tr": "#the-clip-rule",
-					"dev": "#the-clip-rule"
+					"dev": "#the-clip-rule",
+					"mdn": "clip-rule"
 				},
 				"tests": ["nonzero", "evenodd"]
 			},
 			"mask-image": {
 				"links": {
 					"tr": "#the-mask-image",
-					"dev": "#the-mask-image"
+					"dev": "#the-mask-image",
+					"mdn": "mask-image"
 				},
 				"tests": ["none", "linear-gradient(black 0%, transparent 100%)", "url(image.png)"]
 			},
 			"mask-mode": {
 				"links": {
 					"tr": "#the-mask-mode",
-					"dev": "#the-mask-mode"
+					"dev": "#the-mask-mode",
+					"mdn": "mask-mode"
 				},
 				"tests": ["alpha", "luminance", "match-source"]
 			},
 			"mask-repeat": {
 				"links": {
 					"tr": "#the-mask-repeat",
-					"dev": "#the-mask-repeat"
+					"dev": "#the-mask-repeat",
+					"mdn": "mask-repeat"
 				},
 				"tests": ["repeat-x", "repeat-y"].concat(["repeat", "space", "round", "no-repeat"].times(1, 2))
 			},
 			"mask-position": {
 				"links": {
 					"tr": "#the-mask-position",
-					"dev": "#the-mask-position"
+					"dev": "#the-mask-position",
+					"mdn": "mask-position"
 				},
 				"tests": ["center", "left 50%", "bottom 10px right 20px", "bottom 10px right", "top right 10px"]
 			},
 			"mask-clip": {
 				"links": {
 					"tr": "#the-mask-clip",
-					"dev": "#the-mask-clip"
+					"dev": "#the-mask-clip",
+					"mdn": "mask-clip"
 				},
 				"tests": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box", "no-clip"]
 			},
 			"mask-origin": {
 				"links": {
 					"tr": "#the-mask-origin",
-					"dev": "#the-mask-origin"
+					"dev": "#the-mask-origin",
+					"mdn": "mask-origin"
 				},
 				"tests": ["border-box", "padding-box", "content-box", "margin-box", "fill-box", "stroke-box", "view-box"]
 			},
 			"mask-size": {
 				"links": {
 					"tr": "#the-mask-size",
-					"dev": "#the-mask-size"
+					"dev": "#the-mask-size",
+					"mdn": "mask-size"
 				},
 				"tests": ["auto", "10px", "cover", "contain", "10px", "50%", "10px auto", "auto 10%", "50em 50%"]
 			},
 			"mask-composite": {
 				"links": {
 					"tr": "#the-mask-composite",
-					"dev": "#the-mask-composite"
+					"dev": "#the-mask-composite",
+					"mdn": "mask-composite"
 				},
 				"tests": ["add", "subtract", "intersect", "exclude"]
 			},
 			"mask": {
 				"links": {
 					"tr": "#the-mask",
-					"dev": "#the-mask"
+					"dev": "#the-mask",
+					"mdn": "mask"
 				},
 				"tests": ["top", "space", "url(image.png)", "url(image.png) luminance", "url(image.png) luminance top space"]
 			},
 			"mask-border-source": {
 				"links": {
 					"tr": "#the-mask-border-source",
-					"dev": "#the-mask-border-source"
+					"dev": "#the-mask-border-source",
+					"mdn": "mask-border-source"
 				},
 				"tests": ["none", "url(image.png)"]
 			},
 			"mask-border-slice": {
 				"links": {
 					"tr": "#the-mask-border-slice",
-					"dev": "#the-mask-border-slice"
+					"dev": "#the-mask-border-slice",
+					"mdn": "mask-border-slice"
 				},
 				"tests": ["0 fill", "50% fill", "1.1 fill", "0 1 fill", "0 1 2 fill", "0 1 2 3 fill"]
 			},
 			"mask-border-width": {
 				"links": {
 					"tr": "#the-mask-border-width",
-					"dev": "#the-mask-border-width"
+					"dev": "#the-mask-border-width",
+					"mdn": "mask-border-width"
 				},
 				"tests": ["auto", "10px", "50%", "1", "1.0", "auto 1", "auto 1 50%", "auto 1 50% 1.1"]
 			},
 			"mask-border-outset": {
 				"links": {
 					"tr": "#the-mask-border-outset",
-					"dev": "#the-mask-border-outset"
+					"dev": "#the-mask-border-outset",
+					"mdn": "mask-border-outset"
 				},
 				"tests": ["0", "1.1", "0 1", "0 1 2", "0 1 2 3"]
 			},
 			"mask-border-repeat": {
 				"links": {
 					"tr": "#the-mask-border-repeat",
-					"dev": "#the-mask-border-repeat"
+					"dev": "#the-mask-border-repeat",
+					"mdn": "mask-border-repeat"
 				},
 				"tests": ["stretch", "repeat", "round", "space"].times(1, 2)
 			},
 			"mask-border": {
 				"links": {
 					"tr": "#the-mask-border",
-					"dev": "#the-mask-border"
+					"dev": "#the-mask-border",
+					"mdn": "mask-border"
 				},
 				"tests": [
 					"url(image.png)",
@@ -3639,7 +4002,8 @@ window.Specs = {
 			"mask-type": {
 				"links": {
 					"tr": "#the-mask-type",
-					"dev": "#the-mask-type"
+					"dev": "#the-mask-type",
+					"mdn": "mask-type"
 				},
 				"tests": ["luminance", "alpha"]
 			}
@@ -3657,21 +4021,24 @@ window.Specs = {
 			"mix-blend-mode": {
 				"links": {
 					"tr": "#mix-blend-mode",
-					"dev": "#mix-blend-mode"
+					"dev": "#mix-blend-mode",
+					"mdn": "mix-blend-mode"
 				},
 				"tests": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity"]
 			},
 			"isolation": {
 				"links": {
 					"tr": "#isolation",
-					"dev": "#isolation"
+					"dev": "#isolation",
+					"mdn": "isolation"
 				},
 				"tests": ["auto", "isolate"]
 			},
 			"background-blend-mode": {
 				"links": {
 					"tr": "#background-blend-mode",
-					"dev": "#background-blend-mode"
+					"dev": "#background-blend-mode",
+					"mdn": "background-blend-mode"
 				},
 				"tests": ["normal", "multiply", "screen", "overlay", "darken", "lighten", "color-dodge", "color-burn", "hard-light", "soft-light", "difference", "exclusion", "hue", "saturation", "color", "luminosity", "normal, multiply"]
 			}
@@ -3688,7 +4055,8 @@ window.Specs = {
 			"display": {
 				"links": {
 					"tr": "#the-display-properties",
-					"dev": "#the-display-properties"
+					"dev": "#the-display-properties",
+					"mdn": "display"
 				},
 				"tests": [
 					"run-in", "flow", "flow-root",
@@ -3714,7 +4082,8 @@ window.Specs = {
 			"shape-outside": {
 				"links": {
 					"tr": "#shape-outside-property",
-					"dev": "#shape-outside-property"
+					"dev": "#shape-outside-property",
+					"mdn": "shape-outside"
 				},
 				"tests": [
 					"none", "inset(10% round 10% 40% 10% 40%)", "ellipse(at top 50% left 20%)", "circle(at right 5% top)",
@@ -3728,14 +4097,16 @@ window.Specs = {
 			"shape-image-threshold": {
 				"links": {
 					"tr": "#shape-image-threshold-property",
-					"dev": "#shape-image-threshold-property"
+					"dev": "#shape-image-threshold-property",
+					"mdn": "shape-image-threshold"
 				},
 				"tests": ["0", "1", "0.0", "0.1"]
 			},
 			"shape-margin": {
 				"links": {
 					"tr": "#shape-margin-property",
-					"dev": "#shape-margin-property"
+					"dev": "#shape-margin-property",
+					"mdn": "shape-margin"
 				},
 				"tests": ["0", "10px", "50%"]
 			}
@@ -3802,7 +4173,8 @@ window.Specs = {
 			"filter": {
 				"links": {
 					"tr": "#FilterProperty",
-					"dev": "#FilterProperty"
+					"dev": "#FilterProperty",
+					"mdn": "filter"
 				},
 				"tests": [
 					"none",
@@ -3824,28 +4196,32 @@ window.Specs = {
 			"flood-color": {
 				"links": {
 					"tr": "#FloodColorProperty",
-					"dev": "#FloodColorProperty"
+					"dev": "#FloodColorProperty",
+					"mdn": "flood-color"
 				},
 				"tests": ["black", "#FFF"]
 			},
 			"flood-opacity": {
 				"links": {
 					"tr": "#FloodOpacityProperty",
-					"dev": "#FloodOpacityProperty"
+					"dev": "#FloodOpacityProperty",
+					"mdn": "flood-opacity"
 				},
 				"tests": ["1", "0", "0.2", "45%"]
 			},
 			"color-interpolation-filters": {
 				"links": {
 					"tr": "#ColorInterpolationFiltersProperty",
-					"dev": "#ColorInterpolationFiltersProperty"
+					"dev": "#ColorInterpolationFiltersProperty",
+					"mdn": "color-interpolation-filters"
 				},
 				"tests": ["auto", "sRGB", "linearRGB"]
 			},
 			"lighting-color": {
 				"links": {
 					"tr": "#LightingColorProperty",
-					"dev": "#LightingColorProperty"
+					"dev": "#LightingColorProperty",
+					"mdn": "lighting-color"
 				},
 				"tests": ["white", "#000"]
 			}
@@ -3861,7 +4237,8 @@ window.Specs = {
 		"properties": {
 			"backdrop-filter": {
 				"links": {
-					"dev": "#BackdropFilterProperty"
+					"dev": "#BackdropFilterProperty",
+					"mdn": "backdrop-filter"
 				},
 				"tests": [
 					"none",
@@ -3894,7 +4271,8 @@ window.Specs = {
 			"touch-action": {
 				"links": {
 					"tr": "#the-touch-action-css-property",
-					"dev": "#the-touch-action-css-property"
+					"dev": "#the-touch-action-css-property",
+					"mdn": "touch-action"
 				},
 				"tests": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
 			}
@@ -3910,13 +4288,15 @@ window.Specs = {
 		"selectors": {
 			"::backdrop": {
 				"links": {
-					"dev": "#::backdrop-pseudo-element"
+					"dev": "#::backdrop-pseudo-element",
+					"mdn": "::backdrop"
 				},
 				"tests": "::backdrop"
 			},
 			":fullscreen": {
 				"links": {
-					"dev": "#:fullscreen-pseudo-class"
+					"dev": "#:fullscreen-pseudo-class",
+					"mdn": ":fullscreen"
 				},
 				"tests": ":fullscreen"
 			}
@@ -3933,42 +4313,48 @@ window.Specs = {
 			"break-before": {
 				"links": {
 					"tr": "#break-between",
-					"dev": "#break-between"
+					"dev": "#break-between",
+					"mdn": "break-before"
 				},
 				"tests": ["auto", "avoid", "avoid-page", "page", "left", "right", "recto", "verso", "avoid-column", "column", "avoid-region", "region "]
 			},
 			"break-after": {
 				"links": {
 					"tr": "#break-between",
-					"dev": "#break-between"
+					"dev": "#break-between",
+					"mdn": "break-after"
 				},
 				"tests": ["auto", "avoid", "avoid-page", "page", "left", "right", "recto", "verso", "avoid-column", "column", "avoid-region", "region "]
 			},
 			"break-inside": {
 				"links": {
 					"tr": "#break-within",
-					"dev": "#break-within"
+					"dev": "#break-within",
+					"mdn": "break-inside"
 				},
 				"tests": ["auto", "avoid", "avoid-page", "avoid-column", "avoid-region "]
 			},
 			"box-decoration-break": {
 				"links": {
 					"tr": "#break-decoration",
-					"dev": "#break-decoration"
+					"dev": "#break-decoration",
+					"mdn": "box-decoration-break"
 				},
 				"tests": ["slice", "clone"]
 			},
 			"orphans": {
 				"links": {
 					"tr": "#widows-orphans",
-					"dev": "#widows-orphans"
+					"dev": "#widows-orphans",
+					"mdn": "orphans"
 				},
 				"tests": ["1", "2"]
 			},
 			"widows": {
 				"links": {
 					"tr": "#widows-orphans",
-					"dev": "#widows-orphans"
+					"dev": "#widows-orphans",
+					"mdn": "widows"
 				},
 				"tests": ["1", "2"]
 			}
@@ -3985,7 +4371,8 @@ window.Specs = {
 			"position": {
 				"links": {
 					"tr": "#position",
-					"dev": "#position"
+					"dev": "#position",
+					"mdn": "position"
 				},
 				"tests": ["sticky"]
 			},
@@ -4026,7 +4413,8 @@ window.Specs = {
 			"will-change": {
 				"links": {
 					"tr": "#will-change",
-					"dev": "#will-change"
+					"dev": "#will-change",
+					"mdn": "will-change"
 				},
 				"tests": ["scroll-position", "contents", "transform", "top, left"]
 			}
@@ -4043,7 +4431,8 @@ window.Specs = {
 			"scroll-behavior": {
 				"links": {
 					"tr": "#smooth-scrolling",
-					"dev": "#smooth-scrolling"
+					"dev": "#smooth-scrolling",
+					"mdn": "scroll-behavior"
 				},
 				"tests": ["auto", "smooth "]
 			}
@@ -4060,14 +4449,16 @@ window.Specs = {
 			"display": {
 				"links": {
 					"tr": "#ruby-display",
-					"dev": "#ruby-display"
+					"dev": "#ruby-display",
+					"mdn": "display"
 				},
 				"tests": ["ruby", "ruby-base", "ruby-text", "ruby-base-container", "ruby-text-container"]
 			},
 			"ruby-position": {
 				"links": {
 					"tr": "#rubypos",
-					"dev": "#rubypos"
+					"dev": "#rubypos",
+					"mdn": "ruby-position"
 				},
 				"tests": ["over", "under", "inter-character"]
 			},
@@ -4081,7 +4472,8 @@ window.Specs = {
 			"ruby-align": {
 				"links": {
 					"tr": "#ruby-align-property",
-					"dev": "#ruby-align-property"
+					"dev": "#ruby-align-property",
+					"mdn": "ruby-align"
 				},
 				"tests": ["start", "center", "space-between", "space-around"]
 			}
@@ -4098,175 +4490,200 @@ window.Specs = {
 			"scroll-margin": {
 				"links": {
 					"tr": "#scroll-margin",
-					"dev": "#scroll-margin"
+					"dev": "#scroll-margin",
+					"mdn": "scroll-margin"
 				},
 				"tests": ["0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "20px 3em 1in 5rem", "calc(2px)", "calc(3 * 25px)", "calc(3 * 25px) 5px 10em calc(1vw - 5px)"]
 			},
 			"scroll-margin-block": {
 				"links": {
 					"tr": "#margin-longhands-logical",
-					"dev": "#margin-longhands-logical"
+					"dev": "#margin-longhands-logical",
+					"mdn": "scroll-margin-block"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"scroll-margin-block-end": {
 				"links": {
 					"tr": "#margin-longhands-logical",
-					"dev": "#margin-longhands-logical"
+					"dev": "#margin-longhands-logical",
+					"mdn": "scroll-margin-block-end"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-block-start": {
 				"links": {
 					"tr": "#margin-longhands-logical",
-					"dev": "#margin-longhands-logical"
+					"dev": "#margin-longhands-logical",
+					"mdn": "scroll-margin-block-start"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-bottom": {
 				"links": {
 					"tr": "#margin-longhands-physical",
-					"dev": "#margin-longhands-physical"
+					"dev": "#margin-longhands-physical",
+					"mdn": "scroll-margin-bottom"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-inline": {
 				"links": {
 					"tr": "#margin-longhands-logical",
-					"dev": "#margin-longhands-logical"
+					"dev": "#margin-longhands-logical",
+					"mdn": "scroll-margin-inline"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"scroll-margin-inline-start": {
 				"links": {
 					"tr": "#margin-longhands-logical",
-					"dev": "#margin-longhands-logical"
+					"dev": "#margin-longhands-logical",
+					"mdn": "scroll-margin-inline-start"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-inline-end": {
 				"links": {
 					"tr": "#margin-longhands-logical",
-					"dev": "#margin-longhands-logical"
+					"dev": "#margin-longhands-logical",
+					"mdn": "scroll-margin-inline-end"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-left": {
 				"links": {
 					"tr": "#margin-longhands-physical",
-					"dev": "#margin-longhands-physical"
+					"dev": "#margin-longhands-physical",
+					"mdn": "scroll-margin-left"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-right": {
 				"links": {
 					"tr": "#margin-longhands-physical",
-					"dev": "#margin-longhands-physical"
+					"dev": "#margin-longhands-physical",
+					"mdn": "scroll-margin-right"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-margin-top": {
 				"links": {
 					"tr": "#margin-longhands-physical",
-					"dev": "#margin-longhands-physical"
+					"dev": "#margin-longhands-physical",
+					"mdn": "scroll-margin-top"
 				},
 				"tests": ["10px"]
 			},
 			"scroll-padding": {
 				"links": {
 					"tr": "#scroll-padding",
-					"dev": "#scroll-padding"
+					"dev": "#scroll-padding",
+					"mdn": "scroll-padding"
 				},
 				"tests": ["auto", "0px", "6px 5px", "10px 20px 30px", "10px 20px 30px 40px", "10px auto 30px auto", "10%", "20% 3em 1in 5rem", "calc(2px)", "calc(50%)", "calc(3 * 25px)", "calc(3 * 25px) 5px 10% calc(10% - 5px)"]
 			},
 			"scroll-padding-block": {
 				"links": {
 					"tr": "#padding-longhands-logical",
-					"dev": "#padding-longhands-logical"
+					"dev": "#padding-longhands-logical",
+					"mdn": "scroll-padding-block"
 				},
 				"tests": ["10px", "50%", "10px 50%", "50% 50%"]
 			},
 			"scroll-padding-block-end": {
 				"links": {
 					"tr": "#padding-longhands-logical",
-					"dev": "#padding-longhands-logical"
+					"dev": "#padding-longhands-logical",
+					"mdn": "scroll-padding-block-end"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-block-start": {
 				"links": {
 					"tr": "#padding-longhands-logical",
-					"dev": "#padding-longhands-logical"
+					"dev": "#padding-longhands-logical",
+					"mdn": "scroll-padding-block-start"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-bottom": {
 				"links": {
 					"tr": "#padding-longhands-physical",
-					"dev": "#padding-longhands-physical"
+					"dev": "#padding-longhands-physical",
+					"mdn": "scroll-padding-bottom"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-inline": {
 				"links": {
 					"tr": "#padding-longhands-logical",
-					"dev": "#padding-longhands-logical"
+					"dev": "#padding-longhands-logical",
+					"mdn": "scroll-padding-inline"
 				},
 				"tests": ["10px", "50%", "10px 50%", "50% 50%"]
 			},
 			"scroll-padding-inline-end": {
 				"links": {
 					"tr": "#padding-longhands-logical",
-					"dev": "#padding-longhands-logical"
+					"dev": "#padding-longhands-logical",
+					"mdn": "scroll-padding-inline-end"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-inline-start": {
 				"links": {
 					"tr": "#padding-longhands-logical",
-					"dev": "#padding-longhands-logical"
+					"dev": "#padding-longhands-logical",
+					"mdn": "scroll-padding-inline-start"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-left": {
 				"links": {
 					"tr": "#padding-longhands-physical",
-					"dev": "#padding-longhands-physical"
+					"dev": "#padding-longhands-physical",
+					"mdn": "scroll-padding-left"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-right": {
 				"links": {
 					"tr": "#padding-longhands-physical",
-					"dev": "#padding-longhands-physical"
+					"dev": "#padding-longhands-physical",
+					"mdn": "scroll-padding-right"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-padding-top": {
 				"links": {
 					"tr": "#padding-longhands-physical",
-					"dev": "#padding-longhands-physical"
+					"dev": "#padding-longhands-physical",
+					"mdn": "scroll-padding-top"
 				},
 				"tests": ["10px", "50%"]
 			},
 			"scroll-snap-align": {
 				"links": {
 					"tr": "#scroll-snap-align",
-					"dev": "#scroll-snap-align"
+					"dev": "#scroll-snap-align",
+					"mdn": "scroll-snap-align"
 				},
 				"tests": ["none", "start", "end", "center", "none start", "end center", "center start", "end none", "center center"]
 			},
 			"scroll-snap-stop": {
 				"links": {
 					"tr": "#scroll-snap-stop",
-					"dev": "#scroll-snap-stop"
+					"dev": "#scroll-snap-stop",
+					"mdn": "scroll-snap-stop"
 				},
 				"tests": ["normal", "always"]
 			},
 			"scroll-snap-type": {
 				"links": {
 					"tr": "#scroll-snap-type",
-					"dev": "#scroll-snap-type"
+					"dev": "#scroll-snap-type",
+					"mdn": "scroll-snap-type"
 				},
 				"tests": [
 					"none", "x mandatory", "y mandatory", "block mandatory", "inline mandatory", "both mandatory",
@@ -4284,7 +4701,8 @@ window.Specs = {
 		"properties": {
 			"overflow-anchor": {
 				"links": {
-					"dev": "#exclusion-api"
+					"dev": "#exclusion-api",
+					"mdn": "overflow-anchor"
 				},
 				"tests": ["none", "auto"]
 			}
@@ -4301,448 +4719,512 @@ window.Specs = {
 			"caption-side": {
 				"links": {
 					"tr": "#caption-side",
-					"dev": "#caption-side"
+					"dev": "#caption-side",
+					"mdn": "caption-side"
 				},
 				"tests": ["inline-start", "inline-end"]
 			},
 			"float": {
 				"links": {
 					"tr": "#float-clear",
-					"dev": "#float-clear"
+					"dev": "#float-clear",
+					"mdn": "float"
 				},
 				"tests": ["inline-start", "inline-end"]
 			},
 			"clear": {
 				"links": {
 					"tr": "#float-clear",
-					"dev": "#float-clear"
+					"dev": "#float-clear",
+					"mdn": "clear"
 				},
 				"tests": ["inline-start", "inline-end"]
 			},
 			"text-align": {
 				"links": {
 					"tr": "#text-align",
-					"dev": "#text-align"
+					"dev": "#text-align",
+					"mdn": "text-align"
 				},
 				"tests": ["start", "end"]
 			},
 			"resize": {
 				"links": {
 					"tr": "#resize",
-					"dev": "#resize"
+					"dev": "#resize",
+					"mdn": "resize"
 				},
 				"tests": ["block", "inline"]
 			},
 			"block-size": {
 				"links": {
 					"tr": "#dimension-properties",
-					"dev": "#dimension-properties"
+					"dev": "#dimension-properties",
+					"mdn": "block-size"
 				},
 				"tests": ["100px"]
 			},
 			"inline-size": {
 				"links": {
 					"tr": "#dimension-properties",
-					"dev": "#dimension-properties"
+					"dev": "#dimension-properties",
+					"mdn": "inline-size"
 				},
 				"tests": ["100px"]
 			},
 			"min-block-size": {
 				"links": {
 					"tr": "#dimension-properties",
-					"dev": "#dimension-properties"
+					"dev": "#dimension-properties",
+					"mdn": "min-block-size"
 				},
 				"tests": ["100px"]
 			},
 			"min-inline-size": {
 				"links": {
 					"tr": "#dimension-properties",
-					"dev": "#dimension-properties"
+					"dev": "#dimension-properties",
+					"mdn": "min-inline-size"
 				},
 				"tests": ["100px"]
 			},
 			"max-block-size": {
 				"links": {
 					"tr": "#dimension-properties",
-					"dev": "#dimension-properties"
+					"dev": "#dimension-properties",
+					"mdn": "max-block-size"
 				},
 				"tests": ["100px"]
 			},
 			"max-inline-size": {
 				"links": {
 					"tr": "#dimension-properties",
-					"dev": "#dimension-properties"
+					"dev": "#dimension-properties",
+					"mdn": "max-inline-size"
 				},
 				"tests": ["100px"]
 			},
 			"margin-block": {
 				"links": {
 					"tr": "#margin-properties",
-					"dev": "#margin-properties"
+					"dev": "#margin-properties",
+					"mdn": "margin-block"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"margin-block-start": {
 				"links": {
 					"tr": "#margin-properties",
-					"dev": "#margin-properties"
+					"dev": "#margin-properties",
+					"mdn": "margin-block-start"
 				},
 				"tests": ["10px"]
 			},
 			"margin-block-end": {
 				"links": {
 					"tr": "#margin-properties",
-					"dev": "#margin-properties"
+					"dev": "#margin-properties",
+					"mdn": "margin-block-end"
 				},
 				"tests": ["10px"]
 			},
 			"margin-inline": {
 				"links": {
 					"tr": "#margin-properties",
-					"dev": "#margin-properties"
+					"dev": "#margin-properties",
+					"mdn": "margin-inline"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"margin-inline-start": {
 				"links": {
 					"tr": "#margin-properties",
-					"dev": "#margin-properties"
+					"dev": "#margin-properties",
+					"mdn": "margin-inline-start"
 				},
 				"tests": ["10px"]
 			},
 			"margin-inline-end": {
 				"links": {
 					"tr": "#margin-properties",
-					"dev": "#margin-properties"
+					"dev": "#margin-properties",
+					"mdn": "margin-inline-end"
 				},
 				"tests": ["10px"]
 			},
 			"inset": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset"
 				},
 				"tests": ["10px", "10px 10px", "10px 10px 10px", "10px 10px 10px 10px"]
 			},
 			"inset-block": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset-block"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"inset-block-start": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset-block-start"
 				},
 				"tests": ["10px"]
 			},
 			"inset-block-end": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset-block-end"
 				},
 				"tests": ["10px"]
 			},
 			"inset-inline": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset-inline"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"inset-inline-start": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset-inline-start"
 				},
 				"tests": ["10px"]
 			},
 			"inset-inline-end": {
 				"links": {
 					"tr": "#inset-properties",
-					"dev": "#inset-properties"
+					"dev": "#inset-properties",
+					"mdn": "inset-inline-end"
 				},
 				"tests": ["10px"]
 			},
 			"padding-block": {
 				"links": {
 					"tr": "#padding-properties",
-					"dev": "#padding-properties"
+					"dev": "#padding-properties",
+					"mdn": "padding-block"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"padding-block-start": {
 				"links": {
 					"tr": "#padding-properties",
-					"dev": "#padding-properties"
+					"dev": "#padding-properties",
+					"mdn": "padding-block-start"
 				},
 				"tests": ["10px"]
 			},
 			"padding-block-end": {
 				"links": {
 					"tr": "#padding-properties",
-					"dev": "#padding-properties"
+					"dev": "#padding-properties",
+					"mdn": "padding-block-end"
 				},
 				"tests": ["10px"]
 			},
 			"padding-inline": {
 				"links": {
 					"tr": "#padding-properties",
-					"dev": "#padding-properties"
+					"dev": "#padding-properties",
+					"mdn": "padding-inline"
 				},
 				"tests": ["10px", "10px 10px"]
 			},
 			"padding-inline-start": {
 				"links": {
 					"tr": "#padding-properties",
-					"dev": "#padding-properties"
+					"dev": "#padding-properties",
+					"mdn": "padding-inline-start"
 				},
 				"tests": ["10px"]
 			},
 			"padding-inline-end": {
 				"links": {
 					"tr": "#padding-properties",
-					"dev": "#padding-properties"
+					"dev": "#padding-properties",
+					"mdn": "padding-inline-end"
 				},
 				"tests": ["10px"]
 			},
 			"border-block": {
 				"links": {
 					"tr": "#border-shorthands",
-					"dev": "#border-shorthands"
+					"dev": "#border-shorthands",
+					"mdn": "border-block"
 				},
 				"tests": ["1px", "2px dotted", "medium dashed green"]
 			},
 			"border-block-start": {
 				"links": {
 					"tr": "#border-shorthands",
-					"dev": "#border-shorthands"
+					"dev": "#border-shorthands",
+					"mdn": "border-block-start"
 				},
 				"tests": ["1px", "2px dotted", "medium dashed green"]
 			},
 			"border-block-start-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-block-start-width"
 				},
 				"tests": ["thin"]
 			},
 			"border-block-start-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-block-start-width"
 				},
 				"tests": ["thin"]
 			},
 			"border-block-start-style": {
 				"links": {
 					"tr": "#border-style",
-					"dev": "#border-style"
+					"dev": "#border-style",
+					"mdn": "border-block-start-style"
 				},
 				"tests": ["dotted"]
 			},
 			"border-block-start-color": {
 				"links": {
 					"tr": "#border-color",
-					"dev": "#border-color"
+					"dev": "#border-color",
+					"mdn": "border-block-start-color"
 				},
 				"tests": ["navy"]
 			},
 			"border-block-end": {
 				"links": {
 					"tr": "#border-shorthands",
-					"dev": "#border-shorthands"
+					"dev": "#border-shorthands",
+					"mdn": "border-block-end"
 				},
 				"tests": ["1px", "2px dotted", "medium dashed green"]
 			},
 			"border-block-end-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-block-end-width"
 				},
 				"tests": ["thin"]
 			},
 			"border-block-end-style": {
 				"links": {
 					"tr": "#border-style",
-					"dev": "#border-style"
+					"dev": "#border-style",
+					"mdn": "border-block-end-style"
 				},
 				"tests": ["dotted"]
 			},
 			"border-block-end-color": {
 				"links": {
 					"tr": "#border-color",
-					"dev": "#border-color"
+					"dev": "#border-color",
+					"mdn": "border-block-end-color"
 				},
 				"tests": ["navy"]
 			},
 			"border-block-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-block-width"
 				},
 				"tests": ["thin 2px"]
 			},
 			"border-block-style": {
 				"links": {
 					"tr": "#border-style",
-					"dev": "#border-style"
+					"dev": "#border-style",
+					"mdn": "border-block-style"
 				},
 				"tests": ["dotted dashed"]
 			},
 			"border-block-color": {
 				"links": {
 					"tr": "#border-color",
-					"dev": "#border-color"
+					"dev": "#border-color",
+					"mdn": "border-block-color"
 				},
 				"tests": ["navy blue"]
 			},
 			"border-inline": {
 				"links": {
 					"tr": "#border-shorthands",
-					"dev": "#border-shorthands"
+					"dev": "#border-shorthands",
+					"mdn": "border-inline"
 				},
 				"tests": ["1px", "2px dotted", "medium dashed green"]
 			},
 			"border-inline-start": {
 				"links": {
 					"tr": "#border-shorthands",
-					"dev": "#border-shorthands"
+					"dev": "#border-shorthands",
+					"mdn": "border-inline-start"
 				},
 				"tests": ["1px", "2px dotted", "medium dashed green"]
 			},
 			"border-inline-start-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-inline-start-width"
 				},
 				"tests": ["thin"]
 			},
 			"border-inline-start-style": {
 				"links": {
 					"tr": "#border-style",
-					"dev": "#border-style"
+					"dev": "#border-style",
+					"mdn": "border-inline-start-style"
 				},
 				"tests": ["dotted"]
 			},
 			"border-inline-start-color": {
 				"links": {
 					"tr": "#border-color",
-					"dev": "#border-color"
+					"dev": "#border-color",
+					"mdn": "border-inline-start-color"
 				},
 				"tests": ["navy"]
 			},
 			"border-inline-end": {
 				"links": {
 					"tr": "#border-shorthands",
-					"dev": "#border-shorthands"
+					"dev": "#border-shorthands",
+					"mdn": "border-inline-end"
 				},
 				"tests": ["1px", "2px dotted", "medium dashed green"]
 			},
 			"border-inline-end-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-inline-end-width"
 				},
 				"tests": ["thin"]
 			},
 			"border-inline-end-style": {
 				"links": {
 					"tr": "#border-style",
-					"dev": "#border-style"
+					"dev": "#border-style",
+					"mdn": "border-inline-end-style"
 				},
 				"tests": ["dotted"]
 			},
 			"border-inline-end-color": {
 				"links": {
 					"tr": "#border-color",
-					"dev": "#border-color"
+					"dev": "#border-color",
+					"mdn": "border-inline-end-color"
 				},
 				"tests": ["navy"]
 			},
 			"border-inline-width": {
 				"links": {
 					"tr": "#border-width",
-					"dev": "#border-width"
+					"dev": "#border-width",
+					"mdn": "border-inline-width"
 				},
 				"tests": ["thin 2px"]
 			},
 			"border-inline-style": {
 				"links": {
 					"tr": "#border-style",
-					"dev": "#border-style"
+					"dev": "#border-style",
+					"mdn": "border-inline-style"
 				},
 				"tests": ["dotted dashed"]
 			},
 			"border-inline-color": {
 				"links": {
 					"tr": "#border-color",
-					"dev": "#border-color"
+					"dev": "#border-color",
+					"mdn": "border-inline-color"
 				},
 				"tests": ["navy blue"]
 			},
 			"border-start-start-radius": {
 				"links": {
 					"tr": "#border-radius-shorthands",
-					"dev": "#border-radius-properties"
+					"dev": "#border-radius-properties",
+					"mdn": "border-start-start-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-start-end-radius": {
 				"links": {
 					"tr": "#border-radius-shorthands",
-					"dev": "#border-radius-properties"
+					"dev": "#border-radius-properties",
+					"mdn": "border-start-end-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-end-start-radius": {
 				"links": {
 					"tr": "#border-radius-shorthands",
-					"dev": "#border-radius-properties"
+					"dev": "#border-radius-properties",
+					"mdn": "border-end-start-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"border-end-end-radius": {
 				"links": {
 					"tr": "#border-radius-shorthands",
-					"dev": "#border-radius-properties"
+					"dev": "#border-radius-properties",
+					"mdn": "border-end-end-radius"
 				},
 				"tests": ["0", "50%", "250px 100px"]
 			},
 			"margin": {
 				"links": {
 					"tr": "#logical-shorthand-keyword",
-					"dev": "#logical-shorthand-keyword"
+					"dev": "#logical-shorthand-keyword",
+					"mdn": "margin"
 				},
 				"tests": ["logical 5px 10px 15px 20px"]
 			},
 			"padding": {
 				"links": {
 					"tr": "#logical-shorthand-keyword",
-					"dev": "#logical-shorthand-keyword"
+					"dev": "#logical-shorthand-keyword",
+					"mdn": "padding"
 				},
 				"tests": ["logical 5px 10px 15px 20px"]
 			},
 			"border-color": {
 				"links": {
 					"tr": "#logical-shorthand-keyword",
-					"dev": "#logical-shorthand-keyword"
+					"dev": "#logical-shorthand-keyword",
+					"mdn": "border-color"
 				},
 				"tests": ["logical red green blue yellow"]
 			},
 			"border-style": {
 				"links": {
 					"tr": "#logical-shorthand-keyword",
-					"dev": "#logical-shorthand-keyword"
+					"dev": "#logical-shorthand-keyword",
+					"mdn": "border-style"
 				},
 				"tests": ["logical solid dotted dashed none"]
 			},
 			"border-width": {
 				"links": {
 					"tr": "#logical-shorthand-keyword",
-					"dev": "#logical-shorthand-keyword"
+					"dev": "#logical-shorthand-keyword",
+					"mdn": "border-width"
 				},
 				"tests": ["logical 5px 10px 15px 20px"]
 			}
@@ -4759,7 +5241,8 @@ window.Specs = {
 			"list-style-type": {
 				"links": {
 					"tr": "#text-markers",
-					"dev": "#text-markers"
+					"dev": "#text-markers",
+					"mdn": "list-style-type"
 				},
 				"tests": [
 					"disclosure-closed", "disclosure-open",
@@ -4799,28 +5282,32 @@ window.Specs = {
 			"counter-reset": {
 				"links": {
 					"tr": "#counter-reset",
-					"dev": "#counter-reset"
+					"dev": "#counter-reset",
+					"mdn": "counter-reset"
 				},
 				"tests": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"]
 			},
 			"counter-set": {
 				"links": {
 					"tr": "#increment-set",
-					"dev": "#increment-set"
+					"dev": "#increment-set",
+					"mdn": "counter-set"
 				},
 				"tests": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"]
 			},
 			"counter-increment": {
 				"links": {
 					"tr": "#increment-set",
-					"dev": "#increment-set"
+					"dev": "#increment-set",
+					"mdn": "counter-increment"
 				},
 				"tests": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"]
 			},
 			"content": {
 				"links": {
 					"tr": "#counter-functions",
-					"dev": "#counter-functions"
+					"dev": "#counter-functions",
+					"mdn": "content"
 				},
 				"tests": [
 					"counter(chno, upper-latin) '. '",
@@ -4845,7 +5332,8 @@ window.Specs = {
 			"@counter-style": {
 				"links": {
 					"tr": "#the-counter-style-rule",
-					"dev": "#the-counter-style-rule"
+					"dev": "#the-counter-style-rule",
+					"mdn": "@counter-style"
 				},
 				"tests": "@counter-style foo {\n  system: numeric;\n  symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';\n}"
 			}
@@ -4862,7 +5350,8 @@ window.Specs = {
 			"line-clamp": {
 				"links": {
 					"tr": "#line-clamp",
-					"dev": "#line-clamp"
+					"dev": "#line-clamp",
+					"mdn": "-webkit-line-clamp"
 				},
 				"tests": ["none", "1", "5 clip", "5 ellipsis", "5 \"… (continued on next page)\""]
 			},
@@ -4876,28 +5365,32 @@ window.Specs = {
 			"overflow-x": {
 				"links": {
 					"tr": "#overflow-properties",
-					"dev": "#overflow-properties"
+					"dev": "#overflow-properties",
+					"mdn": "overflow-x"
 				},
 				"tests": ["visible", "hidden", "clip", "scroll", "auto"]
 			},
 			"overflow-y": {
 				"links": {
 					"tr": "#overflow-properties",
-					"dev": "#overflow-properties"
+					"dev": "#overflow-properties",
+					"mdn": "overflow-y"
 				},
 				"tests": ["visible", "hidden", "clip", "scroll", "auto"]
 			},
 			"overflow-inline": {
 				"links": {
 					"tr": "#logical",
-					"dev": "#logical"
+					"dev": "#logical",
+					"mdn": "overflow-inline"
 				},
 				"tests": ["visible", "hidden", "clip", "scroll", "auto"]
 			},
 			"overflow-block": {
 				"links": {
 					"tr": "#logical",
-					"dev": "#logical"
+					"dev": "#logical",
+					"mdn": "overflow-block"
 				},
 				"tests": ["visible", "hidden", "clip", "scroll", "auto"]
 			},
@@ -4944,7 +5437,8 @@ window.Specs = {
 			"contain": {
 				"links": {
 					"tr": "#contain-property",
-					"dev": "#contain-property"
+					"dev": "#contain-property",
+					"mdn": "contain"
 				},
 				"tests": [
 					"none", "strict", "content", "size", "layout", "paint",
@@ -4964,7 +5458,8 @@ window.Specs = {
 			"contain": {
 				"links": {
 					"tr": "#contain-property",
-					"dev": "#contain-property"
+					"dev": "#contain-property",
+					"mdn": "contain"
 				},
 				"tests": [
 					"style",
@@ -4991,49 +5486,56 @@ window.Specs = {
 			"width": {
 				"links": {
 					"tr": "#preferred-size-properties",
-					"dev": "#preferred-size-properties"
+					"dev": "#preferred-size-properties",
+					"mdn": "width"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			},
 			"min-width": {
 				"links": {
 					"tr": "#min-size-properties",
-					"dev": "#min-size-properties"
+					"dev": "#min-size-properties",
+					"mdn": "min-width"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			},
 			"max-width": {
 				"links": {
 					"tr": "#max-size-properties",
-					"dev": "#max-size-properties"
+					"dev": "#max-size-properties",
+					"mdn": "max-width"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			},
 			"height": {
 				"links": {
 					"tr": "#preferred-size-properties",
-					"dev": "#preferred-size-properties"
+					"dev": "#preferred-size-properties",
+					"mdn": "height"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			},
 			"min-height": {
 				"links": {
 					"tr": "#min-size-properties",
-					"dev": "#min-size-properties"
+					"dev": "#min-size-properties",
+					"mdn": "min-height"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			},
 			"max-height": {
 				"links": {
 					"tr": "#max-size-properties",
-					"dev": "#max-size-properties"
+					"dev": "#max-size-properties",
+					"mdn": "max-height"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			},
 			"column-width": {
 				"links": {
 					"tr": "#column-sizing",
-					"dev": "#column-sizing"
+					"dev": "#column-sizing",
+					"mdn": "column-width"
 				},
 				"tests": ["stretch", "max-content", "min-content", "fit-content", "fit-content(10%)"]
 			}
@@ -5048,7 +5550,8 @@ window.Specs = {
 		"properties": {
 			"aspect-ratio": {
 				"links": {
-					"dev": "#aspect-ratio"
+					"dev": "#aspect-ratio",
+					"mdn": "aspect-ratio"
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
 			},
@@ -5128,14 +5631,16 @@ window.Specs = {
 			"scrollbar-color": {
 				"links": {
 					"tr": "#scrollbar-color",
-					"dev": "#scrollbar-color"
+					"dev": "#scrollbar-color",
+					"mdn": "scrollbar-color"
 				},
 				"tests": ["auto", "dark", "light", "red blue"]
 			},
 			"scrollbar-width": {
 				"links": {
 					"tr": "#scrollbar-width",
-					"dev": "#scrollbar-width"
+					"dev": "#scrollbar-width",
+					"mdn": "scrollbar-width"
 				},
 				"tests": ["auto", "thin", "none", "12px"]
 			}
@@ -5153,28 +5658,32 @@ window.Specs = {
 			"::cue": {
 				"links": {
 					"tr": "#the-cue-pseudo-element",
-					"dev": "#the-cue-pseudo-element"
+					"dev": "#the-cue-pseudo-element",
+					"mdn": "::cue"
 				},
 				"tests": ["::cue"]
 			},
 			"::cue()": {
 				"links": {
 					"tr": "#the-cue-pseudo-element",
-					"dev": "#the-cue-pseudo-element"
+					"dev": "#the-cue-pseudo-element",
+					"mdn": "::cue"
 				},
 				"tests": ["::cue(span)"]
 			},
 			"::cue-region": {
 				"links": {
 					"tr": "#the-cue-region-pseudo-element",
-					"dev": "#the-cue-region-pseudo-element"
+					"dev": "#the-cue-region-pseudo-element",
+					"mdn": "::cue-region"
 				},
 				"tests": ["::cue-region"]
 			},
 			"::cue-region()": {
 				"links": {
 					"tr": "#the-cue-region-pseudo-element",
-					"dev": "#the-cue-region-pseudo-element"
+					"dev": "#the-cue-region-pseudo-element",
+					"mdn": "::cue-region"
 				},
 				"tests": ['::cue-region(span)']
 			}
@@ -5199,7 +5708,8 @@ window.Specs = {
 			"paint()": {
 				"links": {
 					"tr": "#paint-notation",
-					"dev": "#paint-notation"
+					"dev": "#paint-notation",
+					"mdn": "paint"
 				},
 				"tests": [
 					"paint(company-logo)", "paint(chat-bubble, blue)", "paint(failing-argument-syntax, 1px, 2px)", "paint(arc, purple, 0.4turn, 0.8turn, 40px, 15px)"
@@ -5219,7 +5729,8 @@ window.Specs = {
 			"display": {
 				"links": {
 					"tr": "#layout-api-containers",
-					"dev": "#layout-api-containers"
+					"dev": "#layout-api-containers",
+					"mdn": "display"
 				},
 				"tests": "layout(foo)"
 			}
@@ -5233,10 +5744,11 @@ window.Specs = {
 			"dev": "css-shadow-parts"
 		},
 		"selectors": {
-			"::part": {
+			"::part()": {
 				"links": {
 					"tr": "#part",
-					"dev": "#part"
+					"dev": "#part",
+					"mdn": "::part"
 				},
 				"tests": ["::part(label)"]
 			}
@@ -5253,14 +5765,16 @@ window.Specs = {
 			"--*": {
 				"links": {
 					"tr": "#defining-variables",
-					"dev": "#defining-variables"
+					"dev": "#defining-variables",
+					"mdn": "--*"
 				},
 				"tests": ["--foo: 2px"]
 			},
 			"var(--*)": {
 				"links": {
 					"tr": "#using-variables",
-					"dev": "#using-variables"
+					"dev": "#using-variables",
+					"mdn": "--*"
 				},
 				"tests": [
 					"width: var(--foo)", "width: var(--FOO)", "width: var(--foo, 4px)",
@@ -5281,7 +5795,8 @@ window.Specs = {
 			"fill": {
 				"links": {
 					"tr": "#fill-shorthand",
-					"dev": "#fill-shorthand"
+					"dev": "#fill-shorthand",
+					"mdn": "fill"
 				},
 				"tests": [
 					"url(foo.png), url(bar.svg)",
@@ -5294,7 +5809,8 @@ window.Specs = {
 			"fill-rule": {
 				"links": {
 					"tr": "#fill-rule",
-					"dev": "#fill-rule"
+					"dev": "#fill-rule",
+					"mdn": "fill-rule"
 				},
 				"tests": ["nonzero", "evenodd"]
 			},
@@ -5359,14 +5875,16 @@ window.Specs = {
 			"fill-opacity": {
 				"links": {
 					"tr": "#fill-opacity",
-					"dev": "#fill-opacity"
+					"dev": "#fill-opacity",
+					"mdn": "fill-opacity"
 				},
 				"tests": ["0.5", "45%"]
 			},
 			"stroke": {
 				"links": {
 					"tr": "#stroke-shorthand",
-					"dev": "#stroke-shorthand"
+					"dev": "#stroke-shorthand",
+					"mdn": "stroke"
 				},
 				"tests": [
 					"url(foo.png), url(bar.svg)",
@@ -5379,7 +5897,8 @@ window.Specs = {
 			"stroke-width": {
 				"links": {
 					"tr": "#stroke-width",
-					"dev": "#stroke-width"
+					"dev": "#stroke-width",
+					"mdn": "stroke-width"
 				},
 				"tests": ["0", "1px", "25%"]
 			},
@@ -5393,14 +5912,16 @@ window.Specs = {
 			"stroke-linecap": {
 				"links": {
 					"tr": "#stroke-linecap",
-					"dev": "#stroke-linecap"
+					"dev": "#stroke-linecap",
+					"mdn": "stroke-linecap"
 				},
 				"tests": ["butt", "round", "square "]
 			},
 			"stroke-linejoin": {
 				"links": {
 					"tr": "#stroke-linejoin",
-					"dev": "#stroke-linejoin"
+					"dev": "#stroke-linejoin",
+					"mdn": "stroke-linejoin"
 				},
 				"tests": [
 					"crop", "arcs", "miter", "bevel", "round", "fallback",
@@ -5410,7 +5931,8 @@ window.Specs = {
 			"stroke-miterlimit": {
 				"links": {
 					"tr": "#stroke-miterlimit",
-					"dev": "#stroke-miterlimit"
+					"dev": "#stroke-miterlimit",
+					"mdn": "stroke-miterlimit"
 				},
 				"tests": "4"
 			},
@@ -5424,14 +5946,16 @@ window.Specs = {
 			"stroke-dasharray": {
 				"links": {
 					"tr": "#stroke-dasharray",
-					"dev": "#stroke-dasharray"
+					"dev": "#stroke-dasharray",
+					"mdn": "stroke-dasharray"
 				},
 				"tests": ["none", "0", "4px", "4px 12%", "4px 12% 3em", "4px 12% 3em 5px", "4px 12% 3em 5px 10%"]
 			},
 			"stroke-dashoffset": {
 				"links": {
 					"tr": "#stroke-dashoffset",
-					"dev": "#stroke-dashoffset"
+					"dev": "#stroke-dashoffset",
+					"mdn": "stroke-dashoffset"
 				},
 				"tests": ["0", "4px", "12%"]
 			},
@@ -5507,7 +6031,8 @@ window.Specs = {
 			"stroke-opacity": {
 				"links": {
 					"tr": "#stroke-opacity",
-					"dev": "#stroke-opacity"
+					"dev": "#stroke-opacity",
+					"mdn": "stroke-opacity"
 				},
 				"tests": ["0.5", "45%"]
 			}
@@ -5525,49 +6050,56 @@ window.Specs = {
 			"cx": {
 				"links": {
 					"tr": "#CX",
-					"dev": "#CX"
+					"dev": "#CX",
+					"mdn": "SVG/cx"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
 			"cy": {
 				"links": {
 					"tr": "#CY",
-					"dev": "#CY"
+					"dev": "#CY",
+					"mdn": "SVG/cy"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
 			"r": {
 				"links": {
 					"tr": "#R",
-					"dev": "#R"
+					"dev": "#R",
+					"mdn": "SVG/r"
 				},
 				"tests": ["0", "1px", "25%"]
 			},
 			"rx": {
 				"links": {
 					"tr": "#RX",
-					"dev": "#RX"
+					"dev": "#RX",
+					"mdn": "SVG/rx"
 				},
 				"tests": ["auto", "0", "1px", "25%"]
 			},
 			"ry": {
 				"links": {
 					"tr": "#RY",
-					"dev": "#RY"
+					"dev": "#RY",
+					"mdn": "SVG/ry"
 				},
 				"tests": ["auto", "0", "1px", "25%"]
 			},
 			"x": {
 				"links": {
 					"tr": "#X",
-					"dev": "#X"
+					"dev": "#X",
+					"mdn": "SVG/x"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
 			"y": {
 				"links": {
 					"tr": "#Y",
-					"dev": "#Y"
+					"dev": "#Y",
+					"mdn": "SVG/y"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			}
@@ -5585,7 +6117,8 @@ window.Specs = {
 			"vector-effect": {
 				"links": {
 					"tr": "#VectorEffects",
-					"dev": "#VectorEffects"
+					"dev": "#VectorEffects",
+					"mdn": "SVG/vector-effect"
 				},
 				"tests": [
 					"none",
@@ -5612,7 +6145,8 @@ window.Specs = {
 			"d": {
 				"links": {
 					"tr": "#TheDProperty",
-					"dev": "#TheDProperty"
+					"dev": "#TheDProperty",
+					"mdn": "SVG/d"
 				},
 				"tests": ["none", "'M 20 20 H 80 V 30'"]
 			}
@@ -5646,7 +6180,8 @@ window.Specs = {
 			"text-anchor": {
 				"links": {
 					"tr": "#TextAnchoringProperties",
-					"dev": "#TextAnchoringProperties"
+					"dev": "#TextAnchoringProperties",
+					"mdn": "SVG/text-anchor"
 				},
 				"tests": ["start", "middle", "end"]
 			},
@@ -5692,7 +6227,8 @@ window.Specs = {
 			"color-interpolation": {
 				"links": {
 					"tr": "#ColorInterpolation",
-					"dev": "#ColorInterpolation"
+					"dev": "#ColorInterpolation",
+					"mdn": "SVG/color-interpolation"
 				},
 				"tests": ["auto", "sRGB", "linearRGB"]
 			},
@@ -5712,42 +6248,48 @@ window.Specs = {
 			"marker-end": {
 				"links": {
 					"tr": "#VertexMarkerProperties",
-					"dev": "#VertexMarkerProperties"
+					"dev": "#VertexMarkerProperties",
+					"mdn": "SVG/marker-end"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
 			"marker-mid": {
 				"links": {
 					"tr": "#VertexMarkerProperties",
-					"dev": "#VertexMarkerProperties"
+					"dev": "#VertexMarkerProperties",
+					"mdn": "SVG/marker-mid"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
 			"marker-start": {
 				"links": {
 					"tr": "#VertexMarkerProperties",
-					"dev": "#VertexMarkerProperties"
+					"dev": "#VertexMarkerProperties",
+					"mdn": "SVG/marker-start"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
 			"paint-order": {
 				"links": {
 					"tr": "#PaintOrder",
-					"dev": "#PaintOrder"
+					"dev": "#PaintOrder",
+					"mdn": "paint-order"
 				},
 				"tests": ["normal", "fill", "stroke", "markers", "fill stroke markers"]
 			},
 			"shape-rendering": {
 				"links": {
 					"tr": "#ShapeRendering",
-					"dev": "#ShapeRendering"
+					"dev": "#ShapeRendering",
+					"mdn": "SVG/shape-rendering"
 				},
 				"tests": ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision"]
 			},
 			"text-rendering": {
 				"links": {
 					"tr": "#TextRendering",
-					"dev": "#TextRendering"
+					"dev": "#TextRendering",
+					"mdn": "text-rendering"
 				},
 				"tests": ["auto", "optimizeSpeed", "optimizeLegibility", "geometricPrecision"]
 			}
@@ -5764,13 +6306,15 @@ window.Specs = {
 		"properties": {
 			"stop-color": {
 				"links": {
-					"dev": "#StopColorProperty"
+					"dev": "#StopColorProperty",
+					"mdn": "SVG/stop-color"
 				},
 				"tests": ["green"]
 			},
 			"stop-opacity": {
 				"links": {
-					"dev": "#StopOpacityProperty"
+					"dev": "#StopOpacityProperty",
+					"mdn": "SVG/stop-opacity"
 				},
 				"tests": [".5", "45%"]
 			}
@@ -5788,7 +6332,8 @@ window.Specs = {
 			"pointer-events": {
 				"links": {
 					"tr": "#PointerEventsProp",
-					"dev": "#PointerEventsProp"
+					"dev": "#PointerEventsProp",
+					"mdn": "pointer-events"
 				},
 				"tests": ["auto", "bounding-box", "visiblePainted", "visibleFill", "visibleStroke", "visible", "painted", "fill", "stroke", "all", "none"]
 			}
@@ -5805,7 +6350,8 @@ window.Specs = {
 			"line-height-step": {
 				"links": {
 					"tr": "#line-height-step",
-					"dev": "#line-height-step"
+					"dev": "#line-height-step",
+					"mdn": "line-height-step"
 				},
 				"tests": ["none", "30px", "2em"]
 			},
