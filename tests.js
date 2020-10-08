@@ -5052,29 +5052,12 @@ window.Specs = {
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
 			},
-			"intrinsic-block-size": {
-				"links": {
+			"contain-intrinsic-size": {
+				"links:" {
+					"tr": "#intrinsic-size-override",
 					"dev": "#intrinsic-size-override"
 				},
-				"tests": ["legacy", "auto", "10px"]
-			},
-			"intrinsic-inline-size": {
-				"links": {
-					"dev": "#intrinsic-size-override"
-				},
-				"tests": ["legacy", "auto", "10px"]
-			},
-			"intrinsic-height": {
-				"links": {
-					"dev": "#intrinsic-size-override"
-				},
-				"tests": ["legacy", "auto", "10px"]
-			},
-			"intrinsic-width": {
-				"links": {
-					"dev": "#intrinsic-size-override"
-				},
-				"tests": ["legacy", "auto", "10px"]
+				"tests": ["none", "10px", "10px 15px"]
 			}
 		}
 	},
