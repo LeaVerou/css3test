@@ -1045,32 +1045,28 @@ window.Specs = {
 			"device-width": {
 				"links": {
 					"tr": "#device-width",
-					"dev": "#device-width",
-					"mdnGroup": "@media"
+					"dev": "#device-width"
 				},
 				"tests": ["(device-width)", "(min-device-width:1px)", "(max-device-width:1000000px)"]
 			},
 			"device-height": {
 				"links": {
 					"tr": "#device-height",
-					"dev": "#device-height",
-					"mdnGroup": "@media"
+					"dev": "#device-height"
 				},
 				"tests": ["(device-height)", "(min-device-height:1px)", "(max-device-height:1000000px)"]
 			},
 			"orientation": {
 				"links": {
 					"tr": "#orientation",
-					"dev": "#orientation",
-					"mdnGroup": "@media"
+					"dev": "#orientation"
 				},
 				"tests": "(orientation:portrait), (orientation:landscape)"
 			},
 			"aspect-ratio": {
 				"links": {
 					"tr": "#aspect-ratio",
-					"dev": "#aspect-ratio",
-					"mdnGroup": "@media"
+					"dev": "#aspect-ratio"
 				},
 				"tests": [
 					"(aspect-ratio)",
@@ -1082,8 +1078,7 @@ window.Specs = {
 			"device-aspect-ratio": {
 				"links": {
 					"tr": "#device-aspect-ratio",
-					"dev": "#device-aspect-ratio",
-					"mdnGroup": "@media"
+					"dev": "#device-aspect-ratio"
 				},
 				"tests": [
 					"(device-aspect-ratio)",
@@ -1095,8 +1090,7 @@ window.Specs = {
 			"color": {
 				"links": {
 					"tr": "#color",
-					"dev": "#color",
-					"mdnGroup": "@media"
+					"dev": "#color"
 				},
 				"tests": [
 					"(color)", "(min-color: 0)", "(max-color: 100)"
@@ -1105,8 +1099,7 @@ window.Specs = {
 			"color-index": {
 				"links": {
 					"tr": "#color-index",
-					"dev": "#color-index",
-					"mdnGroup": "@media"
+					"dev": "#color-index"
 				},
 				"tests": [
 					"all, (color-index)",
@@ -1117,8 +1110,7 @@ window.Specs = {
 			"monochrome": {
 				"links": {
 					"tr": "#monochrome",
-					"dev": "#monochrome",
-					"mdnGroup": "@media"
+					"dev": "#monochrome"
 				},
 				"tests": [
 					"all, (monochrome)", "(min-monochrome: 0)", "(max-monochrome: 10000)"
@@ -1127,8 +1119,7 @@ window.Specs = {
 			"resolution": {
 				"links": {
 					"tr": "#resolution",
-					"dev": "#resolution",
-					"mdnGroup": "@media"
+					"dev": "#resolution"
 				},
 				"tests": [
 					"(resolution)",
@@ -1140,16 +1131,14 @@ window.Specs = {
 			"scan": {
 				"links": {
 					"tr": "#scan",
-					"dev": "#scan",
-					"mdnGroup": "@media"
+					"dev": "#scan"
 				},
 				"tests": ["not tv, (scan: progressive)", "not tv, (scan: interlace)"]
 			},
 			"grid": {
 				"links": {
 					"tr": "#grid",
-					"dev": "#grid",
-					"mdnGroup": "@media"
+					"dev": "#grid"
 				},
 				"tests": ["all, (grid)", "(grid: 0), (grid: 1)"]
 			}
@@ -1166,80 +1155,70 @@ window.Specs = {
 			"resolution": {
 				"links": {
 					"tr": "#resolution",
-					"dev": "#resolution",
-					"mdnGroup": "@media"
+					"dev": "#resolution"
 				},
 				"tests": ["(resolution: infinite)"]
 			},
 			"hover": {
 				"links": {
 					"tr": "#hover",
-					"dev": "#hover",
-					"mdnGroup": "@media"
+					"dev": "#hover"
 				},
 				"tests": ["(hover)", "(hover: none)", "(hover: hover)"]
 			},
 			"any-hover": {
 				"links": {
 					"tr": "#any-input",
-					"dev": "#any-input",
-					"mdnGroup": "@media"
+					"dev": "#any-input"
 				},
 				"tests": ["(any-hover)", "(any-hover: none)", "(any-hover: hover)"]
 			},
 			"pointer": {
 				"links": {
 					"tr": "#pointer",
-					"dev": "#pointer",
-					"mdnGroup": "@media"
+					"dev": "#pointer"
 				},
 				"tests": ["(pointer)", "(pointer: none)", "(pointer: coarse)", "(pointer: fine)"]
 			},
 			"any-pointer": {
 				"links": {
 					"tr": "#any-input",
-					"dev": "#any-input",
-					"mdnGroup": "@media"
+					"dev": "#any-input"
 				},
 				"tests": ["(any-pointer)", "(any-pointer: none)", "(any-pointer: coarse)", "(any-pointer: fine)"]
 			},
 			"update": {
 				"links": {
 					"tr": "#update",
-					"dev": "#update",
-					"mdnGroup": "@media"
+					"dev": "#update"
 				},
 				"tests": ["(update)", "(update: none)", "(update: slow)", "(update: fast)"]
 			},
 			"overflow-block": {
 				"links": {
 					"tr": "#mf-overflow-block",
-					"dev": "#mf-overflow-block",
-					"mdnGroup": "@media"
+					"dev": "#mf-overflow-block"
 				},
 				"tests": ["(overflow-block: none)", "(overflow-block: scroll)", "(overflow-block: optional-paged)", "(overflow-block: paged)"]
 			},
 			"overflow-inline": {
 				"links": {
 					"tr": "#mf-overflow-inline",
-					"dev": "#mf-overflow-inline",
-					"mdnGroup": "@media"
+					"dev": "#mf-overflow-inline"
 				},
 				"tests": ["(overflow-inline: none)", "(overflow-inline: scroll)"]
 			},
 			"color-gamut": {
 				"links": {
 					"tr": "#color-gamut",
-					"dev": "#color-gamut",
-					"mdnGroup": "@media"
+					"dev": "#color-gamut"
 				},
 				"tests": ["(color-gamut)", "(color-gamut: srgb)", "(color-gamut: p3)", "(color-gamut: rec2020)"]
 			},
 			"aspect-ratio": {
 				"links": {
 					"tr": "#aspect-ratio",
-					"dev": "#aspect-ratio",
-					"mdnGroup": "@media"
+					"dev": "#aspect-ratio"
 				},
 				"tests": [
 					"(aspect-ratio: 1280.1/720.01)",
@@ -1250,8 +1229,7 @@ window.Specs = {
 			"device-aspect-ratio": {
 				"links": {
 					"tr": "#device-aspect-ratio",
-					"dev": "#device-aspect-ratio",
-					"mdnGroup": "@media"
+					"dev": "#device-aspect-ratio"
 				},
 				"tests": [
 					"(device-aspect-ratio:1280.1/720.01)",
@@ -1270,82 +1248,71 @@ window.Specs = {
 		"Media queries": {
 			"prefers-reduced-motion": {
 				"links": {
-					"dev": "#prefers-reduced-motion",
-					"mdnGroup": "@media"
+					"dev": "#prefers-reduced-motion"
 				},
 				"tests": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"]
 			},
 			"prefers-reduced-transparency": {
 				"links": {
-					"dev": "#prefers-reduced-transparency",
-					"mdnGroup": "@media"
+					"dev": "#prefers-reduced-transparency"
 				},
 				"tests": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-transparency: reduce)"]
 			},
 			"prefers-contrast": {
 				"links": {
-					"dev": "#prefers-contrast",
-					"mdnGroup": "@media"
+					"dev": "#prefers-contrast"
 				},
 				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)", "(prefers-contrast: forced)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
-					"dev": "#prefers-color-scheme",
-					"mdnGroup": "@media"
+					"dev": "#prefers-color-scheme"
 				},
 				"tests": ["(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
 			},
 			"scripting": {
 				"links": {
-					"dev": "#scripting",
-					"mdnGroup": "@media"
+					"dev": "#scripting"
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
 			"environment-blending": {
 				"links": {
-					"dev": "#environment-blending",
-					"mdnGroup": "@media"
+					"dev": "#environment-blending"
 				},
 				"tests": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"]
 			},
 			"forced-colors": {
 				"links": {
 					"tr": "#forced-colors",
-					"dev": "#prefers-contrast",
-					"mdnGroup": "@media"
+					"dev": "#prefers-contrast"
 				},
 				"tests": ["(forced-colors: none)", "(forced-color: active)"]
 			},
 			"dynamic-range": {
 				"links": {
 					"tr": "#dynamic-range",
-					"dev": "#dynamic-range",
-					"mdnGroup": "@media"
+					"dev": "#dynamic-range"
 				},
 				"tests": ["(dynamic-range: standard)", "(dynamic-range: high)"]
 			},
 			"inverted-colors": {
 				"links": {
-					"dev": "#inverted",
-					"mdnGroup": "@media"
+					"dev": "#inverted"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
 			},
 			"video-color-gamut": {
 				"links": {
 					"dev": "#video-color-gamut",
-					"tr": "#video-color-gamut",
-					"mdnGroup": "@media"
+					"tr": "#video-color-gamut"
 				},
 				"tests": ["(video-color-gamut: srgb)", "(video-color-gamut: p3)", "(video-color-gamut: rec2020)"]
 			},
 			"video-dynamic-range": {
 				"links": {
 					"dev": "#video-dynamic-range",
-					"tr": "#video-dynamic-range",
-					"mdnGroup": "@media"
+					"tr": "#video-dynamic-range"
 				},
 				"tests": ["(video-dynamic-range: standard)", "(video-dynamic-range: high)"]
 			}

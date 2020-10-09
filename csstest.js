@@ -217,14 +217,15 @@ Test.prototype = {
 
 				var mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/';
 				switch (links.mdnGroup) {
-					case '@media':
-						mdnLink += 'CSS/@media/';
-						break;
 					case 'SVG':
 						mdnLink += 'SVG/Attribute/';
 						break;
 					default:
 						mdnLink += 'CSS/';
+						// add exception for Media Queries if no link define
+						if (what === "Media queries" && !links.mdn) {
+							mdnLink += '@media/';
+						}
 						break;
 				}
 				mdnLink += !links.mdn
