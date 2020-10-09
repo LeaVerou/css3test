@@ -1000,8 +1000,7 @@ window.Specs = {
 			},
 			"::slotted()": {
 				"links": {
-					"dev": "#slotted-pseudo",
-					"mdn": "::slotted"
+					"dev": "#slotted-pseudo"
 				},
 				"tests": ["::slotted(*)", "::slotted(.foo)"]
 			}
@@ -3999,15 +3998,13 @@ window.Specs = {
 		"selectors": {
 			"::backdrop": {
 				"links": {
-					"dev": "#::backdrop-pseudo-element",
-					"mdn": "::backdrop"
+					"dev": "#::backdrop-pseudo-element"
 				},
 				"tests": "::backdrop"
 			},
 			":fullscreen": {
 				"links": {
-					"dev": "#:fullscreen-pseudo-class",
-					"mdn": ":fullscreen"
+					"dev": "#:fullscreen-pseudo-class"
 				},
 				"tests": ":fullscreen"
 			}
