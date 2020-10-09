@@ -5270,7 +5270,7 @@ window.Specs = {
 	"webvtt": {
 		"title": "WebVTT: The Web Video Text Tracks Format",
 		"links": {
-			"tr": "webvtt",
+			"tr": "webvtt1",
 			"dev": "webvtt",
 			"devtype": "github"
 		},
