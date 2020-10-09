@@ -3981,7 +3981,7 @@ window.Specs = {
 	"pointerevents": {
 		"title": "Pointer Events",
 		"links": {
-			"tr": "pointerevents",
+			"tr": "pointerevents1",
 			"dev": "pointerevents",
 			"devtype": "github"
 		},
