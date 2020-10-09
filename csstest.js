@@ -73,7 +73,7 @@ var devLinkLogo = function (params) {
 var Test = function (spec) {
 	this.tests = spec.tests;
 	this.id = spec.id;
-	this.title = spec.tests.title;
+	this.title = spec.title;
 
 	this.score = new Score(mainScore);
 
@@ -447,15 +447,20 @@ onload = function () {
 		duration = 0,
 		specs = [];
 
+	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
+
 	for (var spec in Specs) {
 		specs.push({
 			id: spec,
+			// Shorten the title by removing parentheticals,
+			// subheadings, CSS and Module words
+			title: Specs[spec].title.replace(removedWords, "$1").trim(),
 			tests: Specs[spec]
 		});
 	}
 
 	specs.sort(function (a, b) {
-		return a.tests.title.localeCompare(b.tests.title);
+		return a.title.localeCompare(b.title);
 	});
 
 

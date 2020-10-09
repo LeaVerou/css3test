@@ -1,6 +1,6 @@
 window.Specs = {
 	"css3-background": {
-		"title": "Backgrounds and Borders Level 3",
+		"title": "CSS Backgrounds and Borders Module Level 3",
 		"links": {
 			"tr": "css-backgrounds-3",
 			"dev": "css-backgrounds"
@@ -157,7 +157,7 @@ window.Specs = {
 	},
 
 	"css-backgrounds-4": {
-		"title": "Backgrounds and Borders Level 4",
+		"title": "CSS Backgrounds and Borders Module Level 4",
 		"links": {
 			"dev": "css-backgrounds-4",
 		},
@@ -178,7 +178,7 @@ window.Specs = {
 	},
 
 	"css3-images": {
-		"title": "Image Values Level 3",
+		"title": "CSS Images Module Level 3",
 		"links": {
 			"tr": "css3-images",
 			"dev": "css-images-3"
@@ -276,7 +276,7 @@ window.Specs = {
 	},
 
 	"css-images-4": {
-		"title": "Image Values Level 4",
+		"title": "CSS Images Module Level 4",
 		"links": {
 			"tr": "css-images-4",
 			"dev": "css-images-4"
@@ -918,7 +918,7 @@ window.Specs = {
 	},
 
 	"css-pseudo": {
-		"title": "Pseudo-Elements Level 4",
+		"title": "CSS Pseudo-Elements Module Level 4",
 		"links": {
 			"tr": "css-pseudo",
 			"dev": "css-pseudo-4"
@@ -970,7 +970,7 @@ window.Specs = {
 	},
 
 	"css-scoping": {
-		"title": "Scoping Level 1",
+		"title": "CSS Scoping Module Level 1",
 		"links": {
 			"tr": "css-scoping",
 			"dev": "css-scoping"
@@ -1321,7 +1321,7 @@ window.Specs = {
 	},
 
 	"css3-ui": {
-		"title": "Basic User Interface Level 3",
+		"title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
 		"links": {
 			"tr": "css-ui-3",
 			"dev": "css-ui-3"
@@ -1384,7 +1384,7 @@ window.Specs = {
 	},
 
 	"css-ui-4": {
-		"title": "Basic User Interface Level 4",
+		"title": "CSS Basic User Interface Module Level 4",
 		"links": {
 			"tr": "css-ui-4",
 			"dev": "css-ui-4"
@@ -1457,7 +1457,7 @@ window.Specs = {
 	},
 
 	"css3-transitions": {
-		"title": "Transitions",
+		"title": "CSS Transitions",
 		"links": {
 			"tr": "css-transitions-1",
 			"dev": "css-transitions-1"
@@ -1507,7 +1507,7 @@ window.Specs = {
 	},
 
 	"css-easing-1": {
-		"title": "Easing Functions",
+		"title": "CSS Easing Functions Level 1",
 		"links": {
 			"tr": "css-easing-1",
 			"dev": "css-easing-1"
@@ -1524,7 +1524,7 @@ window.Specs = {
 	},
 
 	"css3-animations": {
-		"title": "Animations",
+		"title": "CSS Animations Level 1",
 		"links": {
 			"tr": "css-animations-1",
 			"dev": "css-animations"
@@ -1611,7 +1611,7 @@ window.Specs = {
 	},
 
 	"css-transforms-1": {
-		"title": "Transforms Level 1",
+		"title": "CSS Transforms Module Level 1",
 		"links": {
 			"tr": "css-transforms-1",
 			"dev": "css-transforms-1"
@@ -1656,7 +1656,7 @@ window.Specs = {
 	},
 
 	"css-transforms-2": {
-		"title": "Transforms Level 2",
+		"title": "CSS Transforms Module Level 2",
 		"links": {
 			"tr": "css-transforms-2",
 			"dev": "css-transforms-2"
@@ -1835,7 +1835,7 @@ window.Specs = {
 	},
 
 	"css-text-3": {
-		"title": "Text Level 3",
+		"title": "CSS Text Module Level 3",
 		"links": {
 			"tr": "css-text-3",
 			"dev": "css-text-3"
@@ -1953,7 +1953,7 @@ window.Specs = {
 	},
 
 	"css-text-4": {
-		"title": "Text Level 4",
+		"title": "CSS Text Module Level 4",
 		"links": {
 			"tr": "css-text-4",
 			"dev": "css-text-4"
@@ -2043,7 +2043,7 @@ window.Specs = {
 	},
 
 	"css-text-decor-3": {
-		"title": "Text Decoration Level 3",
+		"title": "CSS Text Decoration Module Level 3",
 		"links": {
 			"tr": "css-text-decor-3",
 			"dev": "css-text-decor-3"
@@ -2123,7 +2123,7 @@ window.Specs = {
 	},
 
 	"css-text-decor-4": {
-		"title": "Text Decoration Level 4",
+		"title": "CSS Text Decoration Module Level 4",
 		"links": {
 			"tr": "css-text-decor-4",
 			"dev": "css-text-decor-4"
@@ -2174,7 +2174,7 @@ window.Specs = {
 	},
 
 	"css-content-3": {
-		"title": "Generated Content Level 3",
+		"title": "CSS Generated Content Module Level 3",
 		"links": {
 			"tr": "css-content-3",
 			"dev": "css-content-3"
@@ -2201,7 +2201,7 @@ window.Specs = {
 	},
 
 	"css-line-grid-1": {
-		"title": "Line Grid Level 1",
+		"title": "CSS Line Grid Module Level 1",
 		"links": {
 			"tr": "css-line-grid-1",
 			"dev": "css-line-grid-1"
@@ -2232,7 +2232,7 @@ window.Specs = {
 	},
 
 	"css3-fonts": {
-		"title": "Fonts Level 3",
+		"title": "CSS Fonts Module Level 3",
 		"links": {
 			"tr": "css-fonts-3",
 			"dev": "css-fonts"
@@ -2357,7 +2357,7 @@ window.Specs = {
 	},
 
 	"css4-fonts": {
-		"title": "Fonts Level 4",
+		"title": "CSS Fonts Module Level 4",
 		"links": {
 			"tr": "css-fonts-4",
 			"dev": "css-fonts-4"
@@ -2450,7 +2450,7 @@ window.Specs = {
 	},
 
 	"css-writing-modes-3": {
-		"title": "Writing Modes Level 3",
+		"title": "CSS Writing Modes Level 3",
 		"links": {
 			"tr": "css-writing-modes-3",
 			"dev": "css-writing-modes-3"
@@ -2495,7 +2495,7 @@ window.Specs = {
 	},
 
 	"css-writing-modes-4": {
-		"title": "Writing Modes Level 4",
+		"title": "CSS Writing Modes Level 4",
 		"links": {
 			"tr": "css-writing-modes-4",
 			"dev": "css-writing-modes-4"
@@ -2519,7 +2519,7 @@ window.Specs = {
 	},
 
 	"css-color-3": {
-		"title": "Color Level 3",
+		"title": "CSS Color Module Level 3",
 		"links": {
 			"tr": "css-color-3",
 			"dev": "css-color-3"
@@ -2593,7 +2593,7 @@ window.Specs = {
 	},
 
 	"css-color-4": {
-		"title": "Color Level 4",
+		"title": "CSS Color Module Level 4",
 		"links": {
 			"tr": "css-color-4",
 			"dev": "css-color"
@@ -2728,7 +2728,7 @@ window.Specs = {
 	},
 
 	"css-color-adjust-1": {
-		"title": "Color Adjustment Level 1",
+		"title": "CSS Color Adjustment Module Level 1",
 		"links": {
 			"tr": "css-color-adjust-1",
 			"dev": "css-color-adjust-1"
@@ -2762,7 +2762,7 @@ window.Specs = {
 	},
 
 	"css3-multicol": {
-		"title": "Multi-column Layout",
+		"title": "CSS Multi-column Layout Module Level 1",
 		"links": {
 			"tr": "css-multicol-1",
 			"dev": "css-multicol"
@@ -2835,7 +2835,7 @@ window.Specs = {
 	},
 
 	"css-values-3": {
-		"title": "Values and Units Level 3",
+		"title": "CSS Values and Units Module Level 3",
 		"links": {
 			"tr": "css-values-3",
 			"dev": "css-values-3"
@@ -2933,7 +2933,7 @@ window.Specs = {
 	},
 
 	"css-values-4": {
-		"title": "Values and Units Level 4",
+		"title": "CSS Values and Units Module Level 4",
 		"links": {
 			"tr": "css-values-4",
 			"dev": "css-values-4"
@@ -3000,7 +3000,7 @@ window.Specs = {
 	},
 
 	"css-regions-1": {
-		"title": "Regions",
+		"title": "CSS Regions Module Level 1",
 		"links": {
 			"tr": "css-regions-1",
 			"dev": "css-regions-1"
@@ -3031,7 +3031,7 @@ window.Specs = {
 	},
 
 	"css3-flexbox": {
-		"title": "Flexible Box Layout",
+		"title": "CSS Flexible Box Layout Module Level 1",
 		"links": {
 			"tr": "css-flexbox-1",
 			"dev": "css-flexbox-1",
@@ -3147,7 +3147,7 @@ window.Specs = {
 	},
 
 	"css-grid-1": {
-		"title": "Grid Layout Level 1",
+		"title": "CSS Grid Layout Module Level 1",
 		"links": {
 			"tr": "css-grid-1",
 			"dev": "css-grid",
@@ -3320,7 +3320,7 @@ window.Specs = {
 	},
 
 	"css-grid-2": {
-		"title": "Grid Layout Level 2",
+		"title": "CSS Grid Layout Module Level 2",
 		"links": {
 			"tr": "css-grid-2",
 			"dev": "css-grid-2",
@@ -3361,7 +3361,7 @@ window.Specs = {
 	},
 
 	"css3-align": {
-		"title": "Box Alignment",
+		"title": "CSS Box Alignment Module Level 3",
 		"links": {
 			"tr": "css-align-3",
 			"dev": "css-align"
@@ -3448,7 +3448,7 @@ window.Specs = {
 	},
 
 	"css-box-4": {
-		"title": "Box Model Level 4",
+		"title": "CSS Box Model Module Level 4",
 		"links": {
 			"tr": "css-box-4",
 			"dev": "css-box-4"
@@ -3465,7 +3465,7 @@ window.Specs = {
 	},
 
 	"css-cascade-3": {
-		"title": "Cascading and Inheritance Level 3",
+		"title": "CSS Cascading and Inheritance Level 3",
 		"links": {
 			"tr": "css-cascade-3",
 			"dev": "css-cascade-3"
@@ -3497,7 +3497,7 @@ window.Specs = {
 	},
 
 	"css-cascade-4": {
-		"title": "Cascading and Inheritance Level 4",
+		"title": "CSS Cascading and Inheritance Level 4",
 		"links": {
 			"tr": "css-cascade-4",
 			"dev": "css-cascade"
@@ -3529,7 +3529,7 @@ window.Specs = {
 	},
 
 	"css-conditional-3": {
-		"title": "Conditional Rules Level 3",
+		"title": "CSS Conditional Rules Module Level 3",
 		"links": {
 			"tr": "css3-conditional",
 			"dev": "css-conditional-3"
@@ -3553,7 +3553,7 @@ window.Specs = {
 	},
 
 	"css-conditional-4": {
-		"title": "Conditional Rules Level 4",
+		"title": "CSS Conditional Rules Module Level 4",
 		"links": {
 			"tr": "css-conditional-4",
 			"dev": "css-conditional-4"
@@ -3574,7 +3574,7 @@ window.Specs = {
 	},
 
 	"css-masking": {
-		"title": "Masking",
+		"title": "CSS Masking Module Level 1",
 		"links": {
 			"tr": "css-masking-1",
 			"dev": "css-masking-1",
@@ -3735,7 +3735,7 @@ window.Specs = {
 	},
 
 	"compositing": {
-		"title": "Compositing and Blending",
+		"title": "Compositing and Blending Level 1",
 		"links": {
 			"tr": "compositing-1",
 			"dev": "compositing-1",
@@ -3767,7 +3767,7 @@ window.Specs = {
 	},
 
 	"css-display": {
-		"title": "Display",
+		"title": "CSS Display Module Level 3",
 		"links": {
 			"tr": "css-display-3",
 			"dev": "css-display"
@@ -3793,7 +3793,7 @@ window.Specs = {
 	},
 
 	"css-shapes-1": {
-		"title": "Shapes Level 1",
+		"title": "CSS Shapes Module Level 1",
 		"links": {
 			"tr": "css-shapes-1",
 			"dev": "css-shapes"
@@ -3831,7 +3831,7 @@ window.Specs = {
 	},
 
 	"css-shapes-2": {
-		"title": "Shapes Level 2",
+		"title": "CSS Shapes Module Level 2",
 		"links": {
 			"dev": "css-shapes-2"
 		},
@@ -3856,7 +3856,7 @@ window.Specs = {
 	},
 
 	"css3-exclusions": {
-		"title": "Exclusions",
+		"title": "CSS Exclusions Module Level 1",
 		"links": {
 			"tr": "css3-exclusions",
 			"dev": "css-exclusions"
@@ -3880,7 +3880,7 @@ window.Specs = {
 	},
 
 	"filter-effects": {
-		"title": "Filter Effects Level 1",
+		"title": "Filter Effects Module Level 1",
 		"links": {
 			"tr": "filter-effects-1",
 			"dev": "filter-effects-1",
@@ -3941,7 +3941,7 @@ window.Specs = {
 	},
 
 	"filters-2": {
-		"title": "Filter Effects Level 2",
+		"title": "Filter Effects Module Level 2",
 		"links": {
 			"dev": "filter-effects-2",
 			"devtype": "fxtf"
@@ -4015,7 +4015,7 @@ window.Specs = {
 	},
 
 	"css3-break": {
-		"title": "Fragmentation",
+		"title": "CSS Fragmentation Module Level 3",
 		"links": {
 			"tr": "css-break-3",
 			"dev": "css-break"
@@ -4067,7 +4067,7 @@ window.Specs = {
 	},
 
 	"css3-positioning": {
-		"title": "Positioned Layout",
+		"title": "CSS Positioned Layout Module Level 3",
 		"links": {
 			"tr": "css-position-3",
 			"dev": "css-position"
@@ -4108,7 +4108,7 @@ window.Specs = {
 	},
 
 	"css-will-change": {
-		"title": "Will Change",
+		"title": "CSS Will Change Module Level 1",
 		"links": {
 			"tr": "css-will-change-1",
 			"dev": "css-will-change"
@@ -4142,7 +4142,7 @@ window.Specs = {
 	},
 
 	"css-ruby-1": {
-		"title": "Ruby",
+		"title": "CSS Ruby Layout Module Level 1",
 		"links": {
 			"tr": "css-ruby-1",
 			"dev": "css-ruby-1"
@@ -4180,7 +4180,7 @@ window.Specs = {
 	},
 
 	"css-scroll-snap": {
-		"title": "Scroll Snap",
+		"title": "CSS Scroll Snap Module Level 1",
 		"links": {
 			"tr": "css-scroll-snap-1",
 			"dev": "css-scroll-snap-1"
@@ -4368,7 +4368,7 @@ window.Specs = {
 	},
 
 	"css-scroll-anchoring": {
-		"title": "Scroll Anchoring",
+		"title": "CSS Scroll Anchoring Module Level 1",
 		"links": {
 			"dev": "css-scroll-anchoring"
 		},
@@ -4383,7 +4383,7 @@ window.Specs = {
 	},
 
 	"css-logical-1": {
-		"title": "Logical Properties",
+		"title": "CSS Logical Properties and Values Level 1",
 		"links": {
 			"tr": "css-logical-1",
 			"dev": "css-logical-1",
@@ -4841,7 +4841,7 @@ window.Specs = {
 	},
 
 	"css-lists": {
-		"title": "Lists Level 3",
+		"title": "CSS Lists Module Level 3",
 		"links": {
 			"tr": "css-lists-3",
 			"dev": "css-lists-3"
@@ -4927,7 +4927,7 @@ window.Specs = {
 	},
 
 	"css-counter-styles": {
-		"title": "Counter Styles Level 3",
+		"title": "CSS Counter Styles Level 3",
 		"links": {
 			"tr": "css-counter-styles-3",
 			"dev": "css-counter-styles-3"
@@ -4944,7 +4944,7 @@ window.Specs = {
 	},
 
 	"css-overflow-3": {
-		"title": "Overflow Level 3",
+		"title": "CSS Overflow Module Level 3",
 		"links": {
 			"tr": "css-overflow-3",
 			"dev": "css-overflow-3"
@@ -5004,7 +5004,7 @@ window.Specs = {
 	},
 
 	"css-overflow-4": {
-		"title": "Overflow Level 4",
+		"title": "CSS Overflow Module Level 4",
 		"links": {
 			"tr": "css-overflow-4",
 			"dev": "css-overflow-4"
@@ -5027,7 +5027,7 @@ window.Specs = {
 	},
 
 	"css-containment-1": {
-		"title": "Containment Level 1",
+		"title": "CSS Containment Module Level 1",
 		"links": {
 			"tr": "css-contain-1",
 			"dev": "css-contain-1"
@@ -5047,7 +5047,7 @@ window.Specs = {
 	},
 
 	"css-containment-2": {
-		"title": "Containment Level 2",
+		"title": "CSS Containment Module Level 2",
 		"links": {
 			"tr": "css-contain-2",
 			"dev": "css-contain-2"
@@ -5074,7 +5074,7 @@ window.Specs = {
 	},
 
 	"css-sizing-3": {
-		"title": "Intrinsic & Extrinsic Sizing Level 3",
+		"title": "CSS Box Sizing Module Level 3",
 		"links": {
 			"tr": "css-sizing-3",
 			"dev": "css-sizing-3"
@@ -5133,7 +5133,7 @@ window.Specs = {
 	},
 
 	"css-sizing-4": {
-		"title": "Box Sizing Level 4",
+		"title": "CSS Box Sizing Module Level 4",
 		"links": {
 			"tr": "css-sizing-4",
 			"dev": "css-sizing-4"
@@ -5198,7 +5198,7 @@ window.Specs = {
 	},
 
 	"overscroll-behavior": {
-		"title": "Overscroll Behavior",
+		"title": "CSS Overscroll Behavior Module Level 1",
 		"links": {
 			"dev": "css-overscroll-behavior"
 		},
@@ -5237,7 +5237,7 @@ window.Specs = {
 	},
 
 	"css-scrollbars-1": {
-		"title": "Scrollbars Level 1",
+		"title": "CSS Scrollbars Module Level 1",
 		"links": {
 			"tr": "css-scrollbars-1",
 			"dev": "css-scrollbars"
@@ -5261,7 +5261,7 @@ window.Specs = {
 	},
 
 	"webvtt": {
-		"title": "WebVTT",
+		"title": "WebVTT: The Web Video Text Tracks Format",
 		"links": {
 			"tr": "webvtt1",
 			"dev": "webvtt",
@@ -5300,7 +5300,7 @@ window.Specs = {
 	},
 
 	"css-paint-api-1": {
-		"title": "Painting API Level 1",
+		"title": "CSS Painting API Level 1",
 		"links": {
 			"tr": "css-paint-api-1",
 			"dev": "css-paint-api-1",
@@ -5327,7 +5327,7 @@ window.Specs = {
 	},
 
 	"css-layout-api-1": {
-		"title": "Layout API Level 1",
+		"title": "CSS Layout API Level 1",
 		"links": {
 			"tr": "css-layout-api-1",
 			"dev": "css-layout-api-1",
@@ -5345,7 +5345,7 @@ window.Specs = {
 	},
 
 	"css-shadow-parts": {
-		"title": "Shadow Parts",
+		"title": "CSS Shadow Parts",
 		"links": {
 			"tr": "css-shadow-parts-1",
 			"dev": "css-shadow-parts"
@@ -5362,7 +5362,7 @@ window.Specs = {
 	},
 
 	"css-variables": {
-		"title": "Custom Properties for Cascading Variables",
+		"title": "CSS Custom Properties for Cascading Variables Module Level 1",
 		"links": {
 			"tr": "css-variables",
 			"dev": "css-variables-1"
@@ -5390,7 +5390,7 @@ window.Specs = {
 	},
 
 	"fill-stroke": {
-		"title": "Fill and Stroke Level 3",
+		"title": "CSS Fill and Stroke Module Level 3",
 		"links": {
 			"tr": "fill-stroke-3",
 			"dev": "fill-stroke",
@@ -5932,7 +5932,7 @@ window.Specs = {
 	},
 
 	"css-rhythmic": {
-		"title": "Rhythmic Sizing",
+		"title": "CSS Rhythmic Sizing",
 		"links": {
 			"tr": "css-rhythm-1",
 			"dev": "css-rhythm"
