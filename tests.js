@@ -267,6 +267,7 @@ window.Specs = {
 			},
 			"image-rendering": {
 				"links": {
+					"tr": "#the-image-rendering",
 					"dev": "#the-image-rendering"
 				},
 				"tests": ["auto", "smooth", "high-quality", "crisp-edges", "pixelated"]
@@ -335,7 +336,8 @@ window.Specs = {
 			"image()": {
 				"links": {
 					"tr": "#image-notation",
-					"dev": "#image-notation"
+					"dev": "#image-notation",
+					"mdn": "imagefunction"
 				},
 				"tests": [
 					"image('sprites.png#xywh=10,30,60,20')",
@@ -390,13 +392,15 @@ window.Specs = {
 		"title": "Selectors Level 3",
 		"links": {
 			"tr": "selectors-3",
-			"dev": "selectors-3"
+			"dev": "selectors-3",
+			"mdn": "Glossary/CSS_Selector"
 		},
 		"selectors": {
 			"Sibling combinator": {
 				"links": {
 					"tr": "#sibling-combinators",
-					"dev": "#sibling-combinators"
+					"dev": "#sibling-combinators",
+					"mdn": "General_sibling_combinator"
 				},
 				"tests": "foo ~ bar"
 			},
@@ -431,28 +435,32 @@ window.Specs = {
 			"[att^=val]": {
 				"links": {
 					"tr": "#attribute-substrings",
-					"dev": "#attribute-substrings"
+					"dev": "#attribute-substrings",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att^=val]", "[att^=\"val\"]"]
 			},
 			"[att*=val]": {
 				"links": {
 					"tr": "#attribute-substrings",
-					"dev": "#attribute-substrings"
+					"dev": "#attribute-substrings",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att*=val]", "[att*=\"val\"]"]
 			},
 			"[att$=val]": {
 				"links": {
 					"tr": "#attribute-substrings",
-					"dev": "#attribute-substrings"
+					"dev": "#attribute-substrings",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att$=val]", "[att$=\"val\"]"]
 			},
 			"Namespaces": {
 				"links": {
 					"tr": "#attrnmsp",
-					"dev": "#attrnmsp"
+					"dev": "#attrnmsp",
+					"mdn": "CSS_Namespaces"
 				},
 				"tests": ["*|html", "[*|attr]", "[*|attr=val]", "*|html[*|attr]"]
 			},
@@ -498,7 +506,7 @@ window.Specs = {
 				},
 				"tests": ":root"
 			},
-			":nth-child": {
+			":nth-child()": {
 				"links": {
 					"tr": "#nth-child-pseudo",
 					"dev": "#nth-child-pseudo"
@@ -511,7 +519,7 @@ window.Specs = {
 					":nth-child(-n+1)", ":nth-child(-n-1)", ":nth-child(3n-1)"
 				]
 			},
-			":nth-last-child": {
+			":nth-last-child()": {
 				"links": {
 					"tr": "#nth-last-child-pseudo",
 					"dev": "#nth-last-child-pseudo"
@@ -524,7 +532,7 @@ window.Specs = {
 					":nth-last-child(-n+1)", ":nth-last-child(-n-1)", ":nth-last-child(3n-1)"
 				]
 			},
-			":nth-of-type": {
+			":nth-of-type()": {
 				"links": {
 					"tr": "#nth-of-type-pseudo",
 					"dev": "#nth-of-type-pseudo"
@@ -537,7 +545,7 @@ window.Specs = {
 					":nth-of-type(-n+1)", ":nth-of-type(-n-1)", ":nth-of-type(3n-1)"
 				]
 			},
-			":nth-last-of-type": {
+			":nth-last-of-type()": {
 				"links": {
 					"tr": "#nth-last-of-type-pseudo",
 					"dev": "#nth-last-of-type-pseudo"
@@ -820,7 +828,8 @@ window.Specs = {
 			":nth-child of": {
 				"links": {
 					"tr": "#the-nth-child-pseudo",
-					"dev": "#the-nth-child-pseudo"
+					"dev": "#the-nth-child-pseudo",
+					"mdn": ":nth-child"
 				},
 				"tests": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"]
 			},
@@ -860,42 +869,48 @@ window.Specs = {
 			"[att^=val i]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att^=val i]", "[att^=\"val\" i]", "[att^=val I]", "[att^=\"val\" I]"]
 			},
 			"[att*=val i]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att*=val i]", "[att*=\"val\" i]", "[att*=val I]", "[att*=\"val\" I]"]
 			},
 			"[att$=val i]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att$=val i]", "[att$=\"val\" i]", "[att$=val I]", "[att$=\"val\" I]"]
 			},
 			"[att^=val s]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att^=val s]", "[att^=\"val\" s]", "[att^=val S]", "[att^=\"val\" S]"]
 			},
 			"[att*=val s]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att*=val s]", "[att*=\"val\" s]", "[att*=val S]", "[att*=\"val\" S]"]
 			},
 			"[att$=val s]": {
 				"links": {
 					"tr": "#attribute-case",
-					"dev": "#attribute-case"
+					"dev": "#attribute-case",
+					"mdn": "Attribute_selectors"
 				},
 				"tests": ["[att$=val s]", "[att$=\"val\" s]", "[att$=val S]", "[att$=\"val\" S]"]
 			}
@@ -971,7 +986,8 @@ window.Specs = {
 			":host()": {
 				"links": {
 					"tr": "#host-selector",
-					"dev": "#host-selector"
+					"dev": "#host-selector",
+					"mdn": ":host()"
 				},
 				"tests": [":host(*)", ":host(.foo)"]
 			},
@@ -984,7 +1000,8 @@ window.Specs = {
 			},
 			"::slotted()": {
 				"links": {
-					"dev": "#slotted-pseudo"
+					"dev": "#slotted-pseudo",
+					"mdn": "::slotted"
 				},
 				"tests": ["::slotted(*)", "::slotted(.foo)"]
 			}
@@ -1004,21 +1021,24 @@ window.Specs = {
 			"negation": {
 				"links": {
 					"tr": "#media0",
-					"dev": "#media0"
+					"dev": "#media0",
+					"mdn": "Media_Queries/Using_media_queries"
 				},
 				"tests": ["not print", "not all and (width:1px)"]
 			},
 			"width": {
 				"links": {
 					"tr": "#width",
-					"dev": "#width"
+					"dev": "#width",
+					"mdn": "Media_Queries/Using_media_queries"
 				},
 				"tests": ["(width)", "(min-width:1px)", "(max-width:1000000px)"]
 			},
 			"height": {
 				"links": {
 					"tr": "#height",
-					"dev": "#height"
+					"dev": "#height",
+					"mdn": "Media_Queries/Using_media_queries"
 				},
 				"tests": ["(height)", "(min-height:1px)", "(max-height:1000000px)"]
 			},
@@ -1391,7 +1411,13 @@ window.Specs = {
 				},
 				"tests": ["auto", "bar", "block", "underscore"]
 			},
-			"text-overflow": ["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2),
+			"text-overflow": {
+				"links": {
+					"tr": "#text-overflow",
+					"dev": "#text-overflow"
+				},
+				"tests": ["clip", "ellipsis", "fade", "fade(10px)", "fade(10%)", "'foo'"].times(1, 2)
+			},
 			"user-select": {
 				"links": {
 					"tr": "#content-selection",
@@ -1588,7 +1614,7 @@ window.Specs = {
 		"title": "Transforms Level 1",
 		"links": {
 			"tr": "css-transforms-1",
-			"dev": "css-transforms"
+			"dev": "css-transforms-1"
 		},
 		"properties": {
 			"transform": {
@@ -1632,47 +1658,55 @@ window.Specs = {
 	"css-transforms-2": {
 		"title": "Transforms Level 2",
 		"links": {
+			"tr": "css-transforms-2",
 			"dev": "css-transforms-2"
 		},
 		"properties": {
 			"translate": {
 				"links": {
+					"tr": "#individual-transforms",
 					"dev": "#individual-transforms"
 				},
 				"tests": ["none", "50%", "50% 50%", "50% 50% 10px"]
 			},
 			"scale": {
 				"links": {
+					"tr": "#individual-transforms",
 					"dev": "#individual-transforms"
 				},
 				"tests": ["none"].concat(["2"].times(1, 3))
 			},
 			"rotate": {
 				"links": {
+					"tr": "#individual-transforms",
 					"dev": "#individual-transforms"
 				},
 				"tests": ["none"].concat(["", "x", "y", "z", "-1 0 2"].and(["45deg"])).concat(["45deg"].and(["x", "y", "z", "-1 0 2"]))
 			},
 			"transform-style": {
 				"links": {
+					"tr": "#transform-style-property",
 					"dev": "#transform-style-property"
 				},
 				"tests": ["flat", "preserve-3d"]
 			},
 			"perspective": {
 				"links": {
+					"tr": "#perspective-property",
 					"dev": "#perspective-property"
 				},
 				"tests": ["none", "600px"]
 			},
 			"perspective-origin": {
 				"links": {
+					"tr": "#perspective-origin-property",
 					"dev": "#perspective-origin-property"
 				},
 				"tests": ["10px", "top", "top left", "50% 100%", "left 0%"]
 			},
 			"backface-visibility": {
 				"links": {
+					"tr": "#backface-visibility-property",
 					"dev": "#backface-visibility-property"
 				},
 				"tests": ["visible", "hidden"]
@@ -2096,6 +2130,10 @@ window.Specs = {
 		},
 		"properties": {
 			"text-decoration": {
+				"links": {
+					"tr": "#text-decoration-property",
+					"dev": "#text-decoration-property"
+				},
 				"tests": ["underline solid blue 1px"]
 			},
 			"text-decoration-skip": {
@@ -2497,42 +2535,48 @@ window.Specs = {
 			"rgba": {
 				"links": {
 					"tr": "#rgba-color",
-					"dev": "#rgba-color"
+					"dev": "#rgba-color",
+					"mdn": "color_value"
 				},
 				"tests": "rgba(0,0,0,.5)"
 			},
 			"#RGB": {
 				"links": {
 					"tr": "#rgb-color",
-					"dev": "#rgb-color"
+					"dev": "#rgb-color",
+					"mdn": "color_value"
 				},
 				"tests": ["#F06", "#FF0066"]
 			},
 			"hsl": {
 				"links": {
 					"tr": "#hsl-color",
-					"dev": "#hsl-color"
+					"dev": "#hsl-color",
+					"mdn": "color_value"
 				},
 				"tests": "hsl(0,0%,0%)"
 			},
 			"hsla": {
 				"links": {
 					"tr": "#hsla-color",
-					"dev": "#hsla-color"
+					"dev": "#hsla-color",
+					"mdn": "color_value"
 				},
-				"tests": "hsla(0,0%,0%,.5)"
+				"tests": "hsl(0,0%,0%,.5)"
 			},
 			"transparent": {
 				"links": {
 					"tr": "#transparent",
-					"dev": "#transparent"
+					"dev": "#transparent",
+					"mdn": "color_value"
 				},
 				"tests": "transparent"
 			},
 			"currentColor": {
 				"links": {
 					"tr": "#currentcolor",
-					"dev": "#currentcolor"
+					"dev": "#currentcolor",
+					"mdn": "color_value"
 				},
 				"tests": "currentColor"
 			}
@@ -2565,42 +2609,48 @@ window.Specs = {
 			"comma-less colors": {
 				"links": {
 					"tr": "#funcdef-rgb",
-					"dev": "#funcdef-rgb"
+					"dev": "#funcdef-rgb",
+					"mdn": "color_value"
 				},
 				"tests": ["rgb(0% 20% 70%)", "rgb(0 64 185)", "hsl(0 0% 0%)"]
 			},
 			"/ alpha": {
 				"links": {
 					"tr": "#funcdef-rgb",
-					"dev": "#funcdef-rgb"
+					"dev": "#funcdef-rgb",
+					"mdn": "color_value"
 				},
 				"tests": ["rgba(0% 20% 70% / 50%)", "rgba(0% 20% 70% / .5)", "rgba(0 64 185 / 50%)", "rgba(0 64 185 / .5)", "hsla(0 0% 0% /.5)"]
 			},
 			"optional alpha": {
 				"links": {
 					"tr": "#funcdef-rgb",
-					"dev": "#funcdef-rgb"
+					"dev": "#funcdef-rgb",
+					"mdn": "color_value"
 				},
 				"tests": ["rgb(0% 20% 70% / 50%)", "rgb(0% 20% 70% / .5)", "rgb(0 64 185 / 50%)", "rgb(0 64 185 / .5)", "hsl(0 0% 0% / .5)"]
 			},
 			"Hex with alpha": {
 				"links": {
 					"tr": "#hex-notation",
-					"dev": "#hex-notation"
+					"dev": "#hex-notation",
+					"mdn": "color_value"
 				},
 				"tests": ["#000F", "#000000FF"]
 			},
 			"rebeccapurple": {
 				"links": {
 					"tr": "#named-colors",
-					"dev": "#named-colors"
+					"dev": "#named-colors",
+					"mdn": "color_value"
 				},
 				"tests": "rebeccapurple"
 			},
 			"system colors": {
 				"links": {
 					"tr": "#css-system-colors",
-					"dev": "#css-system-colors"
+					"dev": "#css-system-colors",
+					"mdn": "color_value"
 				},
 				"tests": [
 					"Canvas", "CanvasText", "LinkText", "VisitedText", "ActiveText", "ButtonFace", "Field", "FieldText",
@@ -2610,28 +2660,32 @@ window.Specs = {
 			"hwb()": {
 				"links": {
 					"tr": "#the-hwb-notation",
-					"dev": "#the-hwb-notation"
+					"dev": "#the-hwb-notation",
+					"mdn": "color_value"
 				},
 				"tests": ["hwb(0 0% 0%)", "hwb(0 0% 0% / .5)"]
 			},
 			"lab()": {
 				"links": {
 					"tr": "#specifying-lab-lch",
-					"dev": "#specifying-lab-lch"
+					"dev": "#specifying-lab-lch",
+					"mdn": "color_value"
 				},
 				"tests": ["lab(0% 0 0)", "lab(0% 0 0 /.5)"]
 			},
 			"lch()": {
 				"links": {
 					"tr": "#specifying-lab-lch",
-					"dev": "#specifying-lab-lch"
+					"dev": "#specifying-lab-lch",
+					"mdn": "color_value"
 				},
 				"tests": ["lch(0% 0 0)", "lch(0% 0 0 / .5)"]
 			},
 			"color()": {
 				"links": {
 					"tr": "#color-function",
-					"dev": "#color-function"
+					"dev": "#color-function",
+					"mdn": "color_value"
 				},
 				"tests": [
 					"color(.2 .4 .6)",
@@ -2656,7 +2710,8 @@ window.Specs = {
 			"device-cmyk()": {
 				"links": {
 					"tr": "#cmyk-colors",
-					"dev": "#cmyk-colors"
+					"dev": "#cmyk-colors",
+					"mdn": "color_value"
 				},
 				"tests": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 			}
@@ -2793,49 +2848,56 @@ window.Specs = {
 			"rem": {
 				"links": {
 					"tr": "#font-relative-lengths",
-					"dev": "#font-relative-lengths"
+					"dev": "#font-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5rem"
 			},
 			"ch": {
 				"links": {
 					"tr": "#font-relative-lengths",
-					"dev": "#font-relative-lengths"
+					"dev": "#font-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5ch"
 			},
 			"vw": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vw"
 			},
 			"vh": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vh"
 			},
 			"vmin": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vmin"
 			},
 			"vmax": {
 				"links": {
 					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths"
+					"dev": "#viewport-relative-lengths",
+					"mdn": "length"
 				},
 				"tests": "5vmax"
 			},
 			"q": {
 				"links": {
 					"tr": "#absolute-lengths",
-					"dev": "#absolute-lengths"
+					"dev": "#absolute-lengths",
+					"mdn": "length"
 				},
 				"tests": "5q"
 			},
@@ -2972,7 +3034,8 @@ window.Specs = {
 		"title": "Flexible Box Layout",
 		"links": {
 			"tr": "css-flexbox-1",
-			"dev": "css-flexbox-1"
+			"dev": "css-flexbox-1",
+			"mdn": "Glossary/Flexbox"
 		},
 		"properties": {
 			"align-content": {
@@ -3087,7 +3150,8 @@ window.Specs = {
 		"title": "Grid Layout Level 1",
 		"links": {
 			"tr": "css-grid-1",
-			"dev": "css-grid"
+			"dev": "css-grid",
+			"mdn": "Glossary/Grid"
 		},
 		"properties": {
 			"display": {
@@ -3259,7 +3323,8 @@ window.Specs = {
 		"title": "Grid Layout Level 2",
 		"links": {
 			"tr": "css-grid-2",
-			"dev": "css-grid-2"
+			"dev": "css-grid-2",
+			"mdn": "Glossary/Grid"
 		},
 		"properties": {
 			"grid-template-columns": {
@@ -3884,7 +3949,8 @@ window.Specs = {
 		"properties": {
 			"backdrop-filter": {
 				"links": {
-					"dev": "#BackdropFilterProperty"
+					"dev": "#BackdropFilterProperty",
+					"mdn": "backdrop-filter"
 				},
 				"tests": [
 					"none",
@@ -3933,13 +3999,15 @@ window.Specs = {
 		"selectors": {
 			"::backdrop": {
 				"links": {
-					"dev": "#::backdrop-pseudo-element"
+					"dev": "#::backdrop-pseudo-element",
+					"mdn": "::backdrop"
 				},
 				"tests": "::backdrop"
 			},
 			":fullscreen": {
 				"links": {
-					"dev": "#:fullscreen-pseudo-class"
+					"dev": "#:fullscreen-pseudo-class",
+					"mdn": ":fullscreen"
 				},
 				"tests": ":fullscreen"
 			}
@@ -4885,7 +4953,8 @@ window.Specs = {
 			"line-clamp": {
 				"links": {
 					"tr": "#line-clamp",
-					"dev": "#line-clamp"
+					"dev": "#line-clamp",
+					"mdn": "-webkit-line-clamp"
 				},
 				"tests": ["none", "1", "5 clip", "5 ellipsis", "5 \"… (continued on next page)\""]
 			},
@@ -5282,7 +5351,7 @@ window.Specs = {
 			"dev": "css-shadow-parts"
 		},
 		"selectors": {
-			"::part": {
+			"::part()": {
 				"links": {
 					"tr": "#part",
 					"dev": "#part"
@@ -5309,7 +5378,8 @@ window.Specs = {
 			"var(--*)": {
 				"links": {
 					"tr": "#using-variables",
-					"dev": "#using-variables"
+					"dev": "#using-variables",
+					"mdn": "--*"
 				},
 				"tests": [
 					"width: var(--foo)", "width: var(--FOO)", "width: var(--foo, 4px)",
@@ -5574,49 +5644,56 @@ window.Specs = {
 			"cx": {
 				"links": {
 					"tr": "#CX",
-					"dev": "#CX"
+					"dev": "#CX",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
 			"cy": {
 				"links": {
 					"tr": "#CY",
-					"dev": "#CY"
+					"dev": "#CY",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
 			"r": {
 				"links": {
 					"tr": "#R",
-					"dev": "#R"
+					"dev": "#R",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "25%"]
 			},
 			"rx": {
 				"links": {
 					"tr": "#RX",
-					"dev": "#RX"
+					"dev": "#RX",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "0", "1px", "25%"]
 			},
 			"ry": {
 				"links": {
 					"tr": "#RY",
-					"dev": "#RY"
+					"dev": "#RY",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "0", "1px", "25%"]
 			},
 			"x": {
 				"links": {
 					"tr": "#X",
-					"dev": "#X"
+					"dev": "#X",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			},
 			"y": {
 				"links": {
 					"tr": "#Y",
-					"dev": "#Y"
+					"dev": "#Y",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["0", "1px", "-5px", "25%"]
 			}
@@ -5634,7 +5711,8 @@ window.Specs = {
 			"vector-effect": {
 				"links": {
 					"tr": "#VectorEffects",
-					"dev": "#VectorEffects"
+					"dev": "#VectorEffects",
+					"mdnGroup": "SVG"
 				},
 				"tests": [
 					"none",
@@ -5661,7 +5739,8 @@ window.Specs = {
 			"d": {
 				"links": {
 					"tr": "#TheDProperty",
-					"dev": "#TheDProperty"
+					"dev": "#TheDProperty",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "'M 20 20 H 80 V 30'"]
 			}
@@ -5695,7 +5774,8 @@ window.Specs = {
 			"text-anchor": {
 				"links": {
 					"tr": "#TextAnchoringProperties",
-					"dev": "#TextAnchoringProperties"
+					"dev": "#TextAnchoringProperties",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["start", "middle", "end"]
 			},
@@ -5741,7 +5821,8 @@ window.Specs = {
 			"color-interpolation": {
 				"links": {
 					"tr": "#ColorInterpolation",
-					"dev": "#ColorInterpolation"
+					"dev": "#ColorInterpolation",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "sRGB", "linearRGB"]
 			},
@@ -5761,21 +5842,24 @@ window.Specs = {
 			"marker-end": {
 				"links": {
 					"tr": "#VertexMarkerProperties",
-					"dev": "#VertexMarkerProperties"
+					"dev": "#VertexMarkerProperties",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
 			"marker-mid": {
 				"links": {
 					"tr": "#VertexMarkerProperties",
-					"dev": "#VertexMarkerProperties"
+					"dev": "#VertexMarkerProperties",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
 			"marker-start": {
 				"links": {
 					"tr": "#VertexMarkerProperties",
-					"dev": "#VertexMarkerProperties"
+					"dev": "#VertexMarkerProperties",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["none", "url(#marker)"]
 			},
@@ -5789,7 +5873,8 @@ window.Specs = {
 			"shape-rendering": {
 				"links": {
 					"tr": "#ShapeRendering",
-					"dev": "#ShapeRendering"
+					"dev": "#ShapeRendering",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["auto", "optimizeSpeed", "crispEdges", "geometricPrecision"]
 			},
@@ -5813,13 +5898,15 @@ window.Specs = {
 		"properties": {
 			"stop-color": {
 				"links": {
-					"dev": "#StopColorProperty"
+					"dev": "#StopColorProperty",
+					"mdnGroup": "SVG"
 				},
 				"tests": ["green"]
 			},
 			"stop-opacity": {
 				"links": {
-					"dev": "#StopOpacityProperty"
+					"dev": "#StopOpacityProperty",
+					"mdnGroup": "SVG"
 				},
 				"tests": [".5", "45%"]
 			}

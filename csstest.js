@@ -56,6 +56,20 @@ var devLinkFormat = function (params) {
 	}
 };
 
+
+var devLinkLogo = function (params) {
+	switch (params.devtype) {
+		case "whatwg":
+			return params.devtype;
+		case "svgwg":
+		case "houdini":
+		case "fxtf":
+		case "github":
+		default:
+			return 'w3c';
+	}
+};
+
 var Test = function (spec) {
 	this.tests = spec.tests;
 	this.id = spec.id;
@@ -73,7 +87,7 @@ var Test = function (spec) {
 					href: 'https://www.w3.org/TR/' + spec.tests.links.tr,
 					target: '_blank',
 					textContent: 'TR',
-					className: 'spec-link'
+					className: 'spec-link w3c-link'
 				}
 			}));
 		}
@@ -85,7 +99,19 @@ var Test = function (spec) {
 					href: devLinkFormat(spec.tests.links),
 					target: '_blank',
 					textContent: 'DEV',
-					className: 'spec-link'
+					className: 'spec-link ' + devLinkLogo(spec.tests.links) + '-link'
+				}
+			}));
+		}
+
+		if (spec.tests.links.mdn) {
+			contents.push($.create({
+				tag: 'a',
+				properties: {
+					href: 'https://developer.mozilla.org/en-US/docs/' + spec.tests.links.mdn,
+					target: '_blank',
+					textContent: 'MDN',
+					className: 'spec-link mdn-link'
 				}
 			}));
 		}
@@ -163,30 +189,58 @@ Test.prototype = {
 				null // for prefix
 			];
 
-			if (theseTests[feature].links) {
-				if (theseTests[feature].links.tr) {
+			var links = theseTests[feature].links;
+			if (links) {
+				if (links.tr) {
 					dtContents.push($.create({
 						tag: 'a',
 						properties: {
-							href: 'https://www.w3.org/TR/' + this.tests.links.tr + theseTests[feature].links.tr,
+							href: 'https://www.w3.org/TR/' + this.tests.links.tr + links.tr,
 							target: '_blank',
 							textContent: 'TR',
-							className: 'spec-link'
+							className: 'spec-link w3c-link'
 						}
 					}));
 				}
 
-				if (theseTests[feature].links.dev) {
+				if (links.dev) {
 					dtContents.push($.create({
 						tag: 'a',
 						properties: {
-							href: devLinkFormat(this.tests.links) + theseTests[feature].links.dev,
+							href: devLinkFormat(this.tests.links) + links.dev,
 							target: '_blank',
 							textContent: 'DEV',
-							className: 'spec-link'
+							className: 'spec-link ' + devLinkLogo(this.tests.links) + '-link'
 						}
 					}));
 				}
+
+				var mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/';
+				switch (links.mdnGroup) {
+					case 'SVG':
+						mdnLink += 'SVG/Attribute/';
+						break;
+					default:
+						mdnLink += 'CSS/';
+						// add exception for Media Queries if no link define
+						if (what === "Media queries" && !links.mdn) {
+							mdnLink += '@media/';
+						}
+						break;
+				}
+				mdnLink += !links.mdn
+					? feature.replace('()', '')
+					: links.mdn;
+
+				dtContents.push($.create({
+					tag: 'a',
+					properties: {
+						href: mdnLink,
+						target: '_blank',
+						textContent: 'MDN',
+						className: 'spec-link mdn-link'
+					}
+				}));
 			}
 
 			var passed = 0,
