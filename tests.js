@@ -1,9 +1,9 @@
 window.Specs = {
-	"css3-background": {
+	"css-background-3": {
 		"title": "CSS Backgrounds and Borders Module Level 3",
 		"links": {
 			"tr": "css-backgrounds-3",
-			"dev": "css-backgrounds"
+			"dev": "css-backgrounds-3"
 		},
 		"properties": {
 			"background-repeat": {
@@ -177,7 +177,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-images": {
+	"css-images-3": {
 		"title": "CSS Images Module Level 3",
 		"links": {
 			"tr": "css3-images",
@@ -388,7 +388,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-selectors": {
+	"selectors-3": {
 		"title": "Selectors Level 3",
 		"links": {
 			"tr": "selectors-3",
@@ -610,7 +610,7 @@ window.Specs = {
 		}
 	},
 
-	"selectors": {
+	"selectors-4": {
 		"title": "Selectors Level 4",
 		"links": {
 			"tr": "selectors-4",
@@ -917,10 +917,10 @@ window.Specs = {
 		}
 	},
 
-	"css-pseudo": {
+	"css-pseudo-4": {
 		"title": "CSS Pseudo-Elements Module Level 4",
 		"links": {
-			"tr": "css-pseudo",
+			"tr": "css-pseudo-4",
 			"dev": "css-pseudo-4"
 		},
 		"selectors": {
@@ -969,11 +969,11 @@ window.Specs = {
 		}
 	},
 
-	"css-scoping": {
+	"css-scoping-1": {
 		"title": "CSS Scoping Module Level 1",
 		"links": {
-			"tr": "css-scoping",
-			"dev": "css-scoping"
+			"tr": "css-scoping-1",
+			"dev": "css-scoping-1"
 		},
 		"selectors": {
 			":host": {
@@ -1010,7 +1010,7 @@ window.Specs = {
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
-	"css3-mediaqueries": {
+	"mediaqueries-3": {
 		"title": "Media Queries Level 3",
 		"links": {
 			"tr": "css3-mediaqueries",
@@ -1248,36 +1248,42 @@ window.Specs = {
 		"Media queries": {
 			"prefers-reduced-motion": {
 				"links": {
+					"tr": "#prefers-reduced-motion",
 					"dev": "#prefers-reduced-motion"
 				},
 				"tests": ["(prefers-reduced-motion: no-preference)", "(prefers-reduced-motion: reduce)"]
 			},
 			"prefers-reduced-transparency": {
 				"links": {
+					"tr": "#prefers-reduced-transparency",
 					"dev": "#prefers-reduced-transparency"
 				},
 				"tests": ["(prefers-reduced-transparency: no-preference)", "(prefers-reduced-transparency: reduce)"]
 			},
 			"prefers-contrast": {
 				"links": {
+					"tr": "#prefers-contrast",
 					"dev": "#prefers-contrast"
 				},
 				"tests": ["(prefers-contrast: no-preference)", "(prefers-contrast: high)", "(prefers-contrast: low)", "(prefers-contrast: forced)"]
 			},
 			"prefers-color-scheme": {
 				"links": {
+					"tr": "#prefers-color-scheme",
 					"dev": "#prefers-color-scheme"
 				},
 				"tests": ["(prefers-color-scheme: light)", "(prefers-color-scheme: dark)"]
 			},
 			"scripting": {
 				"links": {
+					"tr": "#scripting",
 					"dev": "#scripting"
 				},
 				"tests": ["(scripting: none)", "(scripting: initial-only)", "(scripting: enabled)"]
 			},
 			"environment-blending": {
 				"links": {
+					"tr": "#environment-blending",
 					"dev": "#environment-blending"
 				},
 				"tests": ["(environment-blending: opaque)", "(environment-blending: additive)", "(environment-blending: subtractive)"]
@@ -1298,6 +1304,7 @@ window.Specs = {
 			},
 			"inverted-colors": {
 				"links": {
+					"tr": "#inverted",
 					"dev": "#inverted"
 				},
 				"tests": ["(inverted-colors: none)", "(light-level: inverted)"]
@@ -1319,7 +1326,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-ui": {
+	"css-ui-3": {
 		"title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
 		"links": {
 			"tr": "css-ui-3",
@@ -1455,7 +1462,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-transitions": {
+	"css-transitions-1": {
 		"title": "CSS Transitions",
 		"links": {
 			"tr": "css-transitions-1",
@@ -1522,11 +1529,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-animations": {
+	"css-animations-1": {
 		"title": "CSS Animations Level 1",
 		"links": {
 			"tr": "css-animations-1",
-			"dev": "css-animations"
+			"dev": "css-animations-1"
 		},
 		"properties": {
 			"animation-name": {
@@ -1713,7 +1720,7 @@ window.Specs = {
 		}
 	},
 
-	"css-motion-1": {
+	"motion-1": {
 		"title": "Motion Path Module Level 1",
 		"links": {
 			"tr": "motion-1",
@@ -2230,11 +2237,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-fonts": {
+	"css-fonts-3": {
 		"title": "CSS Fonts Module Level 3",
 		"links": {
 			"tr": "css-fonts-3",
-			"dev": "css-fonts"
+			"dev": "css-fonts-3"
 		},
 		"properties": {
 			"font-stretch": {
@@ -2355,7 +2362,7 @@ window.Specs = {
 		}
 	},
 
-	"css4-fonts": {
+	"css-fonts-4": {
 		"title": "CSS Fonts Module Level 4",
 		"links": {
 			"tr": "css-fonts-4",
@@ -2595,7 +2602,7 @@ window.Specs = {
 		"title": "CSS Color Module Level 4",
 		"links": {
 			"tr": "css-color-4",
-			"dev": "css-color"
+			"dev": "css-color-4"
 		},
 		"values": {
 			"properties": [
@@ -2760,11 +2767,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-multicol": {
+	"css-multicol-1": {
 		"title": "CSS Multi-column Layout Module Level 1",
 		"links": {
 			"tr": "css-multicol-1",
-			"dev": "css-multicol"
+			"dev": "css-multicol-1"
 		},
 		"properties": {
 			"column-width": {
@@ -3029,7 +3036,7 @@ window.Specs = {
 		}
 	},
 
-	"css3-flexbox": {
+	"css-flexbox-1": {
 		"title": "CSS Flexible Box Layout Module Level 1",
 		"links": {
 			"tr": "css-flexbox-1",
@@ -3149,7 +3156,7 @@ window.Specs = {
 		"title": "CSS Grid Layout Module Level 1",
 		"links": {
 			"tr": "css-grid-1",
-			"dev": "css-grid",
+			"dev": "css-grid-1",
 			"mdn": "Glossary/Grid"
 		},
 		"properties": {
@@ -3359,11 +3366,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-align": {
+	"css-align-3": {
 		"title": "CSS Box Alignment Module Level 3",
 		"links": {
 			"tr": "css-align-3",
-			"dev": "css-align"
+			"dev": "css-align-3"
 		},
 		"properties": {
 			"align-self": {
@@ -3499,7 +3506,7 @@ window.Specs = {
 		"title": "CSS Cascading and Inheritance Level 4",
 		"links": {
 			"tr": "css-cascade-4",
-			"dev": "css-cascade"
+			"dev": "css-cascade-4"
 		},
 		"values": {
 			"properties": [
@@ -3572,7 +3579,7 @@ window.Specs = {
 		}
 	},
 
-	"css-masking": {
+	"css-masking-1": {
 		"title": "CSS Masking Module Level 1",
 		"links": {
 			"tr": "css-masking-1",
@@ -3733,7 +3740,7 @@ window.Specs = {
 		}
 	},
 
-	"compositing": {
+	"compositing-1": {
 		"title": "Compositing and Blending Level 1",
 		"links": {
 			"tr": "compositing-1",
@@ -3765,11 +3772,11 @@ window.Specs = {
 		}
 	},
 
-	"css-display": {
+	"css-display-3": {
 		"title": "CSS Display Module Level 3",
 		"links": {
 			"tr": "css-display-3",
-			"dev": "css-display"
+			"dev": "css-display-3"
 		},
 		"properties": {
 			"display": {
@@ -3795,7 +3802,7 @@ window.Specs = {
 		"title": "CSS Shapes Module Level 1",
 		"links": {
 			"tr": "css-shapes-1",
-			"dev": "css-shapes"
+			"dev": "css-shapes-1"
 		},
 		"properties": {
 			"shape-outside": {
@@ -3854,11 +3861,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-exclusions": {
+	"css-exclusions-1": {
 		"title": "CSS Exclusions Module Level 1",
 		"links": {
 			"tr": "css3-exclusions",
-			"dev": "css-exclusions"
+			"dev": "css-exclusions-1"
 		},
 		"properties": {
 			"wrap-flow": {
@@ -3878,7 +3885,7 @@ window.Specs = {
 		}
 	},
 
-	"filter-effects": {
+	"filter-effects-1": {
 		"title": "Filter Effects Module Level 1",
 		"links": {
 			"tr": "filter-effects-1",
@@ -3974,7 +3981,7 @@ window.Specs = {
 	"pointerevents": {
 		"title": "Pointer Events",
 		"links": {
-			"tr": "pointerevents2",
+			"tr": "pointerevents1",
 			"dev": "pointerevents",
 			"devtype": "github"
 		},
@@ -4011,11 +4018,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-break": {
+	"css-break-3": {
 		"title": "CSS Fragmentation Module Level 3",
 		"links": {
 			"tr": "css-break-3",
-			"dev": "css-break"
+			"dev": "css-break-3"
 		},
 		"properties": {
 			"break-before": {
@@ -4063,11 +4070,11 @@ window.Specs = {
 		}
 	},
 
-	"css3-positioning": {
+	"css-position-3": {
 		"title": "CSS Positioned Layout Module Level 3",
 		"links": {
 			"tr": "css-position-3",
-			"dev": "css-position"
+			"dev": "css-position-3"
 		},
 		"properties": {
 			"position": {
@@ -4104,11 +4111,11 @@ window.Specs = {
 		}
 	},
 
-	"css-will-change": {
+	"css-will-change-1": {
 		"title": "CSS Will Change Module Level 1",
 		"links": {
 			"tr": "css-will-change-1",
-			"dev": "css-will-change"
+			"dev": "css-will-change-1"
 		},
 		"properties": {
 			"will-change": {
@@ -4121,11 +4128,11 @@ window.Specs = {
 		}
 	},
 
-	"cssom-view": {
+	"cssom-view-1": {
 		"title": "CSSOM View Module",
 		"links": {
 			"tr": "cssom-view-1",
-			"dev": "cssom-view"
+			"dev": "cssom-view-1"
 		},
 		"properties": {
 			"scroll-behavior": {
@@ -4176,7 +4183,7 @@ window.Specs = {
 		}
 	},
 
-	"css-scroll-snap": {
+	"css-scroll-snap-1": {
 		"title": "CSS Scroll Snap Module Level 1",
 		"links": {
 			"tr": "css-scroll-snap-1",
@@ -4364,10 +4371,11 @@ window.Specs = {
 		}
 	},
 
-	"css-scroll-anchoring": {
+	"css-scroll-anchoring-1": {
 		"title": "CSS Scroll Anchoring Module Level 1",
 		"links": {
-			"dev": "css-scroll-anchoring"
+			"tr": "css-scroll-anchoring-1",
+			"dev": "css-scroll-anchoring-1"
 		},
 		"properties": {
 			"overflow-anchor": {
@@ -4383,7 +4391,7 @@ window.Specs = {
 		"title": "CSS Logical Properties and Values Level 1",
 		"links": {
 			"tr": "css-logical-1",
-			"dev": "css-logical-1",
+			"dev": "css-logical-1"
 		},
 		"properties": {
 			"caption-side": {
@@ -4837,7 +4845,7 @@ window.Specs = {
 		}
 	},
 
-	"css-lists": {
+	"css-lists-3": {
 		"title": "CSS Lists Module Level 3",
 		"links": {
 			"tr": "css-lists-3",
@@ -4923,7 +4931,7 @@ window.Specs = {
 		}
 	},
 
-	"css-counter-styles": {
+	"css-counter-styles-3": {
 		"title": "CSS Counter Styles Level 3",
 		"links": {
 			"tr": "css-counter-styles-3",
@@ -5138,6 +5146,7 @@ window.Specs = {
 		"properties": {
 			"aspect-ratio": {
 				"links": {
+					"tr": "#aspect-ratio",
 					"dev": "#aspect-ratio"
 				},
 				"tests": ["auto", "2", "16 / 9", "auto 16 / 9"]
@@ -5194,10 +5203,11 @@ window.Specs = {
 		}
 	},
 
-	"overscroll-behavior": {
+	"css-overscroll-1": {
 		"title": "CSS Overscroll Behavior Module Level 1",
 		"links": {
-			"dev": "css-overscroll-behavior"
+			"tr": "css-overscroll-1",
+			"dev": "css-overscroll-1"
 		},
 		"properties": {
 			"overscroll-behavior": {
@@ -5237,7 +5247,7 @@ window.Specs = {
 		"title": "CSS Scrollbars Module Level 1",
 		"links": {
 			"tr": "css-scrollbars-1",
-			"dev": "css-scrollbars"
+			"dev": "css-scrollbars-1"
 		},
 		"properties": {
 			"scrollbar-color": {
@@ -5341,11 +5351,11 @@ window.Specs = {
 		}
 	},
 
-	"css-shadow-parts": {
+	"css-shadow-parts-1": {
 		"title": "CSS Shadow Parts",
 		"links": {
 			"tr": "css-shadow-parts-1",
-			"dev": "css-shadow-parts"
+			"dev": "css-shadow-parts-1"
 		},
 		"selectors": {
 			"::part()": {
@@ -5358,10 +5368,10 @@ window.Specs = {
 		}
 	},
 
-	"css-variables": {
+	"css-variables-1": {
 		"title": "CSS Custom Properties for Cascading Variables Module Level 1",
 		"links": {
-			"tr": "css-variables",
+			"tr": "css-variables-1",
 			"dev": "css-variables-1"
 		},
 		"declaration": {
@@ -5386,11 +5396,11 @@ window.Specs = {
 		}
 	},
 
-	"fill-stroke": {
+	"fill-stroke-3": {
 		"title": "CSS Fill and Stroke Module Level 3",
 		"links": {
 			"tr": "fill-stroke-3",
-			"dev": "fill-stroke",
+			"dev": "fill-stroke-3",
 			"devtype": "fxtf"
 		},
 		"properties": {
@@ -5928,11 +5938,11 @@ window.Specs = {
 		}
 	},
 
-	"css-rhythmic": {
+	"css-rhythmic-1": {
 		"title": "CSS Rhythmic Sizing",
 		"links": {
 			"tr": "css-rhythm-1",
-			"dev": "css-rhythm"
+			"dev": "css-rhythm-1"
 		},
 		"properties": {
 			"line-height-step": {
