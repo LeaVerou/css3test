@@ -183,8 +183,7 @@ Test.prototype = {
 				inside: this.section
 			});
 
-			var dl = document.createElement('dl');
-			var dtContents = [
+			var summaryContents = [
 				document.createTextNode(feature),
 				null // for prefix
 			];
@@ -192,7 +191,7 @@ Test.prototype = {
 			var links = theseTests[feature].links;
 			if (links) {
 				if (links.tr) {
-					dtContents.push($.create({
+					summaryContents.push($.create({
 						tag: 'a',
 						properties: {
 							href: 'https://www.w3.org/TR/' + this.tests.links.tr + links.tr,
@@ -204,7 +203,7 @@ Test.prototype = {
 				}
 
 				if (links.dev) {
-					dtContents.push($.create({
+					summaryContents.push($.create({
 						tag: 'a',
 						properties: {
 							href: devLinkFormat(this.tests.links) + links.dev,
@@ -232,7 +231,7 @@ Test.prototype = {
 					? feature.replace('()', '')
 					: links.mdn;
 
-				dtContents.push($.create({
+				summaryContents.push($.create({
 					tag: 'a',
 					properties: {
 						href: mdnLink,
@@ -263,40 +262,43 @@ Test.prototype = {
 
 				passed += +success;
 
-				testsResults.push({
-					tag: 'dd',
+				testsResults.push($.create({
+					tag: 'li',
 					innerHTML: test
 						+ (prefix ? '<span class="prefix">' + prefix + '</span>' : '')
 						+ (note ? '<small>' + note + '</small>' : ''),
 					className: passclass({ passed: Math.round(success * 10000), total: 10000 }),
-					inside: dl
-				});
+				}));
 			}
 
 			if (propertyPrefix) {
-				dtContents[1] = $.create({
+				summaryContents[1] = $.create({
 					tag: 'span',
 					className: 'prefix',
 					textContent: propertyPrefix
 				});
 			}
 
-			var dt = $.create({
-				tag: 'dt',
-				tabIndex: '0',
-				contents: dtContents,
-				inside: dl
+			var detailsContents = [
+				$.create({
+					tag: 'summary',
+					className: passclass({ passed: passed, total: tests.length }),
+					contents: summaryContents,
+				}),
+				$.create({
+					tag: 'ul',
+					contents: testsResults,
+				})
+			];
+
+			var details = $.create({
+				tag: 'details',
+				contents: detailsContents
 			});
 
-			for (var j = 0; j < testsResults.length; j++) {
-				$.create(testsResults[j]);
-			}
+			thisSection.appendChild(details);
 
 			this.score.update({ passed: passed, total: tests.length });
-
-			dt.className = passclass({ passed: passed, total: tests.length });
-
-			thisSection.appendChild(dl);
 
 			// Add to browserscope
 			_bTestResults[this.id + ' / ' + feature.replace(/[,=]/g, '')] = Math.round(100 * passed / tests.length);
@@ -383,18 +385,6 @@ function passclass(info) {
 	var index = Math.round(success * (classes.length - 1));
 
 	return classes[index];
-}
-
-document.onclick = function (evt) {
-	var target = evt.target;
-
-	if (/^dt$/i.test(target.nodeName)) {
-		evt.stopPropagation();
-
-		var dl = target.parentNode;
-
-		dl.className = dl.className === 'open' ? '' : 'open';
-	}
 }
 
 Array.prototype.and = function (arr2, separator) {
