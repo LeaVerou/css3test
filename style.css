@@ -68,21 +68,21 @@ h1, h2 {
 		.mdn-link::before {
 			background-image: url("data:image/svg+xml,<?xml version='1.0' encoding='UTF-8'?> <svg width='16' height='16' version='1.1' viewBox='0 0 4.2333 4.2333' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'> <path d='m2.4076 0.6707c-0.51041-0.29724-1.0833-0.14856-1.4449 0.16704l-0.9605 0.9438 0.65147-0.016704-0.3675 0.42596 0.66817 0.016704-0.41761 0.44267 0.56795 0.0083521-0.15034 0.47607c0.41841 0.41283 0.90754 0.64883 1.4199 0.82686 0.1437-0.54959-0.046954-1.3818 0.45937-1.4366 0.33349-0.036107 0.55014 0.12707 0.7517 0.091874s0.25892-0.16704 0.25892-0.16704c0.20521 0.05062 0.25615-0.15587 0.33409-0.31738 0.017978-0.12377 0.0011606-0.21275-0.025056-0.29233 0.0085525-0.16476 0.02152-0.33151-0.22011-0.38909-0.16275-0.063531-0.30787-0.13398-0.51488-0.21226-0.11763-0.036416-0.22295-0.13562-0.28397-0.35914-0.036707-0.13446-0.14207-0.20802-0.29367-0.21808-0.089008-0.005906-0.28178 0.097323-0.43297 0.009278z' fill='%23fefefe' fill-rule='evenodd'/> </svg>");
 		}
-		
+
 		.whatwg-link::before {
 			background-image: url("data:image/svg+xml,<?xml version='1.0' encoding='UTF-8'?> <svg xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' version='1.1' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'> <circle cx='50' cy='50' r='45' fill='none' stroke='%23fff' stroke-width='10'/> <path d='m38 38c0-12 24-15 23-2 0 9-16 13-16 23v7h10v-4c0-9 17-12 17-27-2-22-45-22-45 3zm7 32h10v10h-10' fill='%23fff'/> <script/> </svg>");
 		}
-		
-		dt > .spec-link {
+
+		details summary > .spec-link {
 			display: none;
 			vertical-align: inherit;
 		}
 
-		dt:hover > .spec-link {
+		details summary:hover > .spec-link {
 			display: inline-block;
 		}
 
-		dt > .spec-link::before {
+		details summary > .spec-link::before {
 			height: 18px;
 			width: 18px;
 			background-size: 18px 18px;
@@ -156,16 +156,12 @@ body > h1 {
 			font-size: 80%;
 		}
 
-dl {
+details {
 	margin: .3em 0;
 	font: 100% Monaco, Consolas, monospace;
 }
 
-	dl dl {
-		margin:0;
-	}
-
-dt, dd[class] {
+details summary, details li[class] {
 	padding: .5em;
 	background: gray;
 	color: white;
@@ -174,60 +170,75 @@ dt, dd[class] {
 	position: relative;
 }
 
-dt {
+details summary {
+	list-style: none;
 	cursor: pointer;
 }
 
-dd {
-	margin: .3em 0 .3em 2em;
-	font-size: 90%;
+details summary::-webkit-details-marker {
+	display: none;
 }
 
-	dd dd {
-		border: 1px solid white;
-	}
+details ul {
+	margin: 0;
+	padding: 0 0 0 2em;
+}
 
-	dd small {
+details li[class] {
+	list-style: none;
+	margin: .3em 0;
+	font-size: 90%;
+	white-space: pre;
+}
+
+	details li[class] small {
 		display: block;
 		opacity: .8;
 	}
 
-dl .pass,
+details summary.pass,
+details li.pass,
 #specsTested li.pass:before {
 	background-color: #490;
 }
 
-dl .almost-pass,
+details summary.almost-pass,
+details li.almost-pass,
 #specsTested li.almost-pass:before {
 	background-color: #8c0;
 }
 
-dl .slightly-buggy,
+details summary.slightly-buggy,
+details li.slightly-buggy,
 #specsTested li.slightly-buggy:before {
 	background-color: #bb0;
 }
 
-dl .buggy,
+details summary.buggy,
+details li.buggy,
 #specsTested li.buggy:before {
 	background-color: #e80;
 }
 
-dl .very-buggy,
+details summary.very-buggy,
+details li.very-buggy,
 #specsTested li.very-buggy:before {
 	background-color: #e40;
 }
 
-dl .fail,
+details summary.fail,
+details li.fail,
 #specsTested li.fail:before {
 	background-color: #e20;
 }
 
-dl .epic-fail,
+details summary.epic-fail,
+details li.epic-fail,
 #specsTested li.epic-fail:before {
 	background-color: #b00;
 }
 
-dt:before {
+details summary:before {
 	content: '▶';
 	display: inline-block;
 	margin-right: .5em;
@@ -235,17 +246,8 @@ dt:before {
 	opacity: .5;
 }
 
-dl.open > dt:before {
+details[open] summary:before {
 	content: '▼';
-}
-
-dl > dd {
-	display: none;
-}
-
-dl.open > dd {
-	display: block;
-	white-space: pre;
 }
 
 .prefix {
@@ -263,16 +265,16 @@ dl.open > dd {
 
 /* Emoticons */
 
-dt:after,
-dd[class]:after,
+details summary:after,
+details li[class]:after,
 #specsTested li:after {
 	opacity: 0.75;
 	position: absolute;
 	top: 0;
 }
 
-dt:after,
-dd[class]:after {
+details summary:after,
+details li[class]:after {
 	letter-spacing: -2px;
 	line-height: 35px;
 	right: 10px;
