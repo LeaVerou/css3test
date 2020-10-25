@@ -50,6 +50,9 @@ var devLinkFormat = function (params) {
 		case "whatwg":
 			// WHATWG
 			return 'https://' + params.dev + '.spec.whatwg.org/';
+		case "math":
+			// The MathML Refresh Community Group
+			return 'https://mathml-refresh.github.io/' + params.dev;
 		default:
 			// CSS Working Group Editor Drafts
 			return 'https://drafts.csswg.org/' + params.dev;
@@ -65,6 +68,7 @@ var devLinkLogo = function (params) {
 		case "houdini":
 		case "fxtf":
 		case "github":
+		case "math":
 		default:
 			return 'w3c';
 	}
@@ -206,7 +210,7 @@ Test.prototype = {
 					summaryContents.push($.create({
 						tag: 'a',
 						properties: {
-							href: devLinkFormat(this.tests.links) + links.dev,
+							href: devLinkFormat(this.tests.links).replace(/#.*/, '') + links.dev,
 							target: '_blank',
 							textContent: 'DEV',
 							className: 'spec-link ' + devLinkLogo(this.tests.links) + '-link'
