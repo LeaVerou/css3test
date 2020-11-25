@@ -2733,6 +2733,72 @@ window.Specs = {
 		}
 	},
 
+	"css-color-5": {
+		"title": "CSS Color Module Level 5",
+		"links": {
+			"dev": "css-color-5"
+		},
+		"values": {
+			"properties": [
+				"color",
+				"background-color",
+				"border-color",
+				"text-decoration-color",
+				"column-rule-color"
+			],
+			"color-mix()": {
+				"links": {
+					"dev": "#color-mix",
+					"mdn": "color_value"
+				},
+				"tests": [
+					"color-mix(peru  40%, lightgoldenrod)",
+					"color-mix(teal 65%, olive)",
+					"color-mix(rgb(0% 42.35% 33.33%) lightness 40%, rgb(41.2% 69.88% 96.64%))",
+					"color-mix(lch(52% 58.1 22.7) hue 75.23%, lch(56% 49.1 257.1))",
+					"color-mix(lch(52% 58.1 22.7) hue longer 75.23%, lch(56% 49.1 257.1) )",
+					"color-mix(rgb(82.02% 30.21% 35.02%) hue 75.23% lightness 68.4%, rgb(5.64% 55.94% 85.31%) )",
+					"color-mix(xyz rgb(82.02% 30.21% 35.02%) 75.23%, rgb(5.64% 55.94% 85.31%))",
+					"color-mix(red lightness 30%, yellow )",
+					"color-mix(lab rgb(82.02% 30.21% 35.02%) a 38% b 38%, rgb(5.64% 55.94% 85.31%))"
+				]
+			},
+			"color-contrast()": {
+				"links": {
+					"dev": "#colorcontrast",
+					"mdn": "color_value"
+				},
+				"tests": [
+					"color-contrast(wheat vs tan, sienna, #b22222, #d2691e)",
+					"color-contrast(hsl(200 50% 80%) vs hsl(200 83% 23%), purple, hsl(300 100% 25%))"
+				]
+			},
+			"color-adjust()": {
+				"links": {
+
+					"dev": "#coloradjust",
+					"mdn": "color_value"
+				},
+				"tests": [
+					"color-adjust(peru lightness -20%)"
+				]
+			},
+
+			"relative color": {
+				"links": {
+					"dev": "#relative-colors",
+					"mdn": "color_value"
+				},
+				"tests": [
+					"rgb(from indianred 255 g b)",
+					"hsl(from lightseagreen calc(h+180) s l)",
+					"lab(from orchid l 0 0)",
+					"lch(from peru calc(l * 0.8) c h)"
+				]
+			}
+		}
+	},
+
 	"css-color-adjust-1": {
 		"title": "CSS Color Adjustment Module Level 1",
 		"links": {
