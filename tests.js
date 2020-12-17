@@ -4095,20 +4095,50 @@ window.Specs = {
 		}
 	},
 
-	"pointerevents": {
-		"title": "Pointer Events",
+	"pointerevents1": {
+		"title": "Pointer Events Level 1",
 		"links": {
-			"tr": "pointerevents1",
+			"tr": "pointerevents1"
+		},
+		"properties": {
+			"touch-action": {
+				"links": {
+					"tr": "#the-touch-action-css-property"
+				},
+				"tests": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
+			}
+		}
+	},
+
+	"pointerevents3": {
+		"title": "Pointer Events Level 3",
+		"links": {
+			"tr": "pointerevents3",
 			"dev": "pointerevents",
 			"devtype": "github"
 		},
 		"properties": {
 			"touch-action": {
 				"links": {
-					"tr": "#the-touch-action-css-property",
 					"dev": "#the-touch-action-css-property"
 				},
-				"tests": ["auto", "none", "pan-x", "pan-y", "pan-x pan-y", "manipulation"]
+				"tests": ["pan-left", "pan-right", "pan-up", "pan-down", "pan-left pan-up"]
+			}
+		}
+	},
+
+	"compat": {
+		"title": "Compatibility",
+		"links": {
+			"dev": "compat",
+			"devtype": "whatwg"
+		},
+		"properties": {
+			"touch-action": {
+				"links": {
+					"dev": "#touch-action"
+				},
+				"tests": ["pinch-zoom", "pan-x pinch-zoom", "pan-y pinch-zoom", "pan-x pan-y pinch-zoom"]
 			}
 		}
 	},
