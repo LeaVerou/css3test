@@ -336,8 +336,7 @@ window.Specs = {
 			"image()": {
 				"links": {
 					"tr": "#image-notation",
-					"dev": "#image-notation",
-					"mdn": "imagefunction"
+					"dev": "#image-notation"
 				},
 				"tests": [
 					"image('sprites.png#xywh=10,30,60,20')",
@@ -825,11 +824,10 @@ window.Specs = {
 				},
 				"tests": [":defined"]
 			},
-			":nth-child of": {
+			":nth-child()": {
 				"links": {
 					"tr": "#the-nth-child-pseudo",
-					"dev": "#the-nth-child-pseudo",
-					"mdn": ":nth-child"
+					"dev": "#the-nth-child-pseudo"
 				},
 				"tests": [":nth-child(-n+3 of li.important)", ":nth-child(even of :not([hidden])"]
 			},
@@ -994,7 +992,8 @@ window.Specs = {
 			":host-context()": {
 				"links": {
 					"tr": "#host-selector",
-					"dev": "#host-selector"
+					"dev": "#host-selector",
+					"mdn": ":host-context()"
 				},
 				"tests": [":host-context(*)", ":host-context(.foo)"]
 			},
@@ -3027,7 +3026,7 @@ window.Specs = {
 					"tr": "#calc-notation",
 					"dev": "#comp-func"
 				},
-				"tests": ["max(10 * (1vw + 1vh) / 2, 12px)"]
+				"tests": ["min(10 * (1vw + 1vh) / 2, 12px)"]
 			},
 			"max()": {
 				"links": {
@@ -3058,7 +3057,6 @@ window.Specs = {
 			],
 			"env()": {
 				"links": {
-					"tr": "#env-function",
 					"dev": "#env-function"
 				},
 				"tests": [
@@ -3685,7 +3683,7 @@ window.Specs = {
 			"dev": "css-conditional-4"
 		},
 		"@rules": {
-			"@supports selector()": {
+			"@supports": {
 				"links": {
 					"tr": "#at-supports-ext",
 					"dev": "#at-supports-ext"
@@ -4075,8 +4073,7 @@ window.Specs = {
 		"properties": {
 			"backdrop-filter": {
 				"links": {
-					"dev": "#BackdropFilterProperty",
-					"mdn": "backdrop-filter"
+					"dev": "#BackdropFilterProperty"
 				},
 				"tests": [
 					"none",

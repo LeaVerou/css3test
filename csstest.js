@@ -231,9 +231,11 @@ Test.prototype = {
 						}
 						break;
 				}
-				mdnLink += !links.mdn
+				mdnLink += links.mdn
+					? links.mdn
+					: feature.startsWith(':')
 					? feature.replace('()', '')
-					: links.mdn;
+					: feature;
 
 				summaryContents.push($.create({
 					tag: 'a',
