@@ -5005,29 +5005,8 @@ window.Specs = {
 					"dev": "#text-markers"
 				},
 				"tests": [
-					"disclosure-closed", "disclosure-open",
-					"hebrew",
-					"cjk-decimal", "cjk-ideographic",
-					"hiragana", "katakana", "hiragana-iroha", "katakana-iroha",
-					"japanese-informal", "japanese-formal", "korean-hangul-formal",
-					"korean-hanja-informal", "korean-hanja-formal",
-					"simp-chinese-informal", "simp-chinese-formal",
-					"trad-chinese-informal", "trad-chinese-formal",
-					"cjk-heavenly-stem", "cjk-earthly-branch",
-					"trad-chinese-informal", "trad-chinese-formal",
-					"simp-chinese-informal", "simp-chinese-formal",
-					"japanese-informal", "japanese-formal",
-					"arabic-indic", "persian", "urdu",
-					"devanagari", "gurmukhi", "gujarati",
-					"oriya", "kannada", "malayalam", "bengali",
-					"tamil", "telugu", "thai", "lao",
-					"myanmar", "khmer",
-					"hangul", "hangul-consonant",
-					"ethiopic-halehame", "ethiopic-numeric",
-					"ethiopic-halehame-am",
-					"ethiopic-halehame-ti-er", "ethiopic-halehame-ti-et",
-					"other-style", "inside", "outside", "\\32 style",
-					'"-"', "'-'",
+					'"-"',
+					"'-'",
 					"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
 					"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
 				]
@@ -5079,10 +5058,99 @@ window.Specs = {
 	},
 
 	"css-counter-styles-3": {
-		"title": "CSS Counter Styles Level 3",
+		"title": "CSS Lists and Counters Module Level 3",
 		"links": {
 			"tr": "css-counter-styles-3",
 			"dev": "css-counter-styles-3"
+		},
+		"values": {
+			"properties": [
+				"list-style-type"
+			],
+			"Simple: Numeric": {
+				"links": {
+					"tr": "#simple-numeric",
+					"dev": "#simple-numeric",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"decimal", "decimal-leading-zero", "arabic-indic", "armenian", "upper-armenian", "lower-armenian",
+					"bengali", "cambodian", "khmer", "cjk-decimal", "devanagari", "georgian", "gujarati", "gurmukhi",
+					"hebrew", "kannada", "lao", "malayalam", "mongolian", "myanmar", "oriya", "persian", "lower-roman",
+					"upper-roman", "tamil", "telugu", "thai", "tibetan"
+				]
+			},
+			"Simple: Alphabetic": {
+				"links": {
+					"tr": "#simple-alphabetic",
+					"dev": "#simple-alphabetic",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"lower-alpha", "lower-latin", "upper-alpha", "upper-latin", "lower-greek", "hiragana",
+					"hiragana-iroha", "katakana", "katakana-iroha"
+				]
+			},
+			"Simple: Symbolic": {
+				"links": {
+					"tr": "#simple-symbolic",
+					"dev": "#simple-symbolic",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"disclosure-open", "disclosure-closed"
+				]
+			},
+			"Simple: Fixed": {
+				"links": {
+					"tr": "#simple-fixed",
+					"dev": "#simple-fixed",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"dcjk-earthly-branch", "cjk-heavenly-stem"
+				]
+			},
+			"Complex: Japanese": {
+				"links": {
+					"tr": "#limited-japanese",
+					"dev": "#limited-japanese",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"japanese-informal", "japanese-formal"
+				]
+			},
+			"Complex: Korean": {
+				"links": {
+					"tr": "#limited-korean",
+					"dev": "#limited-korean",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"korean-hangul-formal", "korean-hanja-informal", "korean-hanja-formal"
+				]
+			},
+			"Complex: Chinese": {
+				"links": {
+					"tr": "#limited-chinese",
+					"dev": "#limited-chinese",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"simp-chinese-informal", "simp-chinese-formal", "trad-chinese-informal", "trad-chinese-formal"
+				]
+			},
+			"Complex: Ethiopic": {
+				"links": {
+					"tr": "#ethiopic-numeric-counter-style",
+					"dev": "#ethiopic-numeric-counter-style",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"ethiopic-numeric"
+				]
+			}
 		},
 		"@rules": {
 			"@counter-style": {
@@ -5092,6 +5160,150 @@ window.Specs = {
 				},
 				"tests": "@counter-style foo {\n  system: numeric;\n  symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';\n}"
 			}
+		}
+	},
+
+	"predefined-counter-styles": {
+		"title": "Ready-made Counter Styles",
+		"links": {
+			"tr": "predefined-counter-styles",
+			"dev": "predefined-counter-styles"
+		},
+		"values": {
+			"properties": [
+				"list-style-type"
+			],
+			"Arabic": {
+				"links": {
+					"tr": "#arabic-styles",
+					"dev": "#arabic-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"arabic-abjad", "maghrebi-abjad", "persian-abjad", "persian-alphabetic"
+				]
+			},
+			"Cyrillic": {
+				"links": {
+					"tr": "#cyrillic-styles",
+					"dev": "#cyrillic-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"lower-belorussian", "lower-bulgarian", "lower-macedonian", "lower-russian", "lower-russian-full",
+					"lower-serbo-croatian", "lower-ukrainian", "lower-ukrainian-full", "upper-belorussian",
+					"upper-bulgarian", "upper-macedonian", "upper-russian", "upper-russian-full", "upper-serbo-croatian",
+					"upper-ukrainian", "upper-ukrainian-full"
+				]
+			},
+			"Devanagari": {
+				"links": {
+					"tr": "#devanagari-styles",
+					"dev": "#devanagari-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"hindi"
+				]
+			},
+			"Ethiopic": {
+				"links": {
+					"tr": "#ethiopic-styles",
+					"dev": "#ethiopic-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"afar", "agaw", "ari", "blin", "dizi", "gedeo", "gumuz", "hadiyya", "harari", "kaffa", "kebena",
+					"kembata", "konso", "kunama", "meen", "oromo", "saho", "sidama", "silti", "tigre", "wolaita", "yemsa"
+				]
+			},
+			"Greek": {
+				"links": {
+					"tr": "#greek-styles",
+					"dev": "#greek-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"greek-lower-modern", "greek-upper-modern", "greek-lower-ancient", "greek-upper-ancient"
+				]
+			},
+			"Han Ideographic": {
+				"links": {
+					"tr": "#chinese-styles",
+					"dev": "#chinese-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"circled-ideograph", "parenthesized-ideograph"
+				]
+			},
+			"Japanese": {
+				"links": {
+					"tr": "#kana-styles",
+					"dev": "#kana-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"circled-katakana"
+				]
+			},
+			"Korean": {
+				"links": {
+					"tr": "#korean-styles",
+					"dev": "#korean-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"circled-korean-consonant", "circled-korean-syllable", "korean-consonant", "korean-syllable",
+					"parenthesized-hangul-consonant", "parenthesized-hangul-syllable"
+				]
+			},
+			"Latin": {
+				"links": {
+					"tr": "#latin-styles",
+					"dev": "#latin-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"fullwidth-lower-alpha", "fullwidth-upper-alpha", "lower-alpha-symbolic", "lower-oromo-qubee",
+					"upper-alpha-symbolic", "upper-oromo-qubee", "parenthesized-lower-latin"
+				]
+			},
+			"Lepcha": {
+				"links": {
+					"tr": "#lepcha-styles",
+					"dev": "#lepcha-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"lepcha"
+				]
+			},
+			"Tamil": {
+				"links": {
+					"tr": "#tamil-styles",
+					"dev": "#tamil-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"ancient-tamil"
+				]
+			},
+			"European Digits & Roman": {
+				"links": {
+					"tr": "#digit-styles",
+					"dev": "#digit-styles",
+					"mdn": "list-style-type"
+				},
+				"tests": [
+					"binary", "circled-decimal", "circled-lower-latin", "circled-upper-latin", "decimal-leading-zero",
+					"dotted-decimal", "double-circled-decimal", "filled-circled-decimal", "fullwidth-decimal",
+					"fullwidth-lower-roman", "fullwidth-upper-roman", "lower-hexadecimal", "new-base-60", "octal",
+					"parenthesized-decimal", "simple-lower-roman", "simple-upper-roman", "super-decimal",
+					"upper-hexadecimal"
+				]
+			}
+
 		}
 	},
 
