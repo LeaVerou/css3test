@@ -4993,7 +4993,7 @@ window.Specs = {
 	},
 
 	"css-lists-3": {
-		"title": "CSS Lists Module Level 3",
+		"title": "CSS Lists and Counters Module Level 3",
 		"links": {
 			"tr": "css-lists-3",
 			"dev": "css-lists-3"
@@ -5007,8 +5007,6 @@ window.Specs = {
 				"tests": [
 					'"-"',
 					"'-'",
-					"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
-					"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')"
 				]
 			},
 			"marker-side": {
@@ -5058,7 +5056,7 @@ window.Specs = {
 	},
 
 	"css-counter-styles-3": {
-		"title": "CSS Lists and Counters Module Level 3",
+		"title": "CSS Counter Styles Level 3",
 		"links": {
 			"tr": "css-counter-styles-3",
 			"dev": "css-counter-styles-3"
@@ -5138,7 +5136,8 @@ window.Specs = {
 					"mdn": "list-style-type"
 				},
 				"tests": [
-					"simp-chinese-informal", "simp-chinese-formal", "trad-chinese-informal", "trad-chinese-formal"
+					"simp-chinese-informal", "simp-chinese-formal", "trad-chinese-informal", "trad-chinese-formal",
+					"cjk-ideographic"
 				]
 			},
 			"Complex: Ethiopic": {
@@ -5149,6 +5148,22 @@ window.Specs = {
 				},
 				"tests": [
 					"ethiopic-numeric"
+				]
+			},
+			"symbols()": {
+				"links": {
+					"tr": "#ethiopic-numeric-counter-style",
+					"dev": "#ethiopic-numeric-counter-style"
+				},
+				"tests": [
+					"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
+					"symbols(cyclic '*' '\\2020' '\\2021' '\\A7')",
+					"symbols(numeric '0' '1' '2' '3')",
+					"symbols(alphabetic 'A' 'B' 'C' 'D')",
+					"symbols(symbolic '*' '\\2020' '\\2021' '\\A7')",
+					"symbols(fixed '*' '\\2020' '\\2021' '\\A7')",
+					"symbols('*' '\\2020' '\\2021' linear-gradient(yellow, blue))",
+					"symbols('*' '\\2020' '\\2021' url(foo.png))"
 				]
 			}
 		},
