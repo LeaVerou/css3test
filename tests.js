@@ -5005,8 +5005,9 @@ window.Specs = {
 					"dev": "#text-markers"
 				},
 				"tests": [
+					'none',
 					'"-"',
-					"'-'",
+					"'-'"
 				]
 			},
 			"marker-side": {
@@ -5072,7 +5073,7 @@ window.Specs = {
 					"mdn": "list-style-type"
 				},
 				"tests": [
-					"decimal", "decimal-leading-zero", "arabic-indic", "armenian", "upper-armenian", "lower-armenian",
+					"decimal", "arabic-indic", "armenian", "upper-armenian", "lower-armenian",
 					"bengali", "cambodian", "khmer", "cjk-decimal", "devanagari", "georgian", "gujarati", "gurmukhi",
 					"hebrew", "kannada", "lao", "malayalam", "mongolian", "myanmar", "oriya", "persian", "lower-roman",
 					"upper-roman", "tamil", "telugu", "thai", "tibetan"
@@ -5182,7 +5183,8 @@ window.Specs = {
 		"title": "Ready-made Counter Styles",
 		"links": {
 			"tr": "predefined-counter-styles",
-			"dev": "predefined-counter-styles"
+			"dev": "predefined-counter-styles",
+			"devtype": "github"
 		},
 		"values": {
 			"properties": [
