@@ -5005,8 +5005,8 @@ window.Specs = {
 					"dev": "#text-markers"
 				},
 				"tests": [
-					'none',
-					'"-"',
+					"none",
+					"\"-\"",
 					"'-'"
 				]
 			},
@@ -5153,8 +5153,8 @@ window.Specs = {
 			},
 			"symbols()": {
 				"links": {
-					"tr": "#ethiopic-numeric-counter-style",
-					"dev": "#ethiopic-numeric-counter-style"
+					"tr": "#symbols-function",
+					"dev": "#symbols-function"
 				},
 				"tests": [
 					"symbols(\"*\" \"\\2020\" \"\\2021\" \"\\A7\")",
