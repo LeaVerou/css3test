@@ -5073,7 +5073,7 @@ window.Specs = {
 					"mdn": "list-style-type"
 				},
 				"tests": [
-					"decimal", "arabic-indic", "armenian", "upper-armenian", "lower-armenian",
+					"decimal", "decimal-leading-zero", "arabic-indic", "armenian", "upper-armenian", "lower-armenian",
 					"bengali", "cambodian", "khmer", "cjk-decimal", "devanagari", "georgian", "gujarati", "gurmukhi",
 					"hebrew", "kannada", "lao", "malayalam", "mongolian", "myanmar", "oriya", "persian", "lower-roman",
 					"upper-roman", "tamil", "telugu", "thai", "tibetan"
@@ -5313,7 +5313,7 @@ window.Specs = {
 					"mdn": "list-style-type"
 				},
 				"tests": [
-					"binary", "circled-decimal", "circled-lower-latin", "circled-upper-latin", "decimal-leading-zero",
+					"binary", "circled-decimal", "circled-lower-latin", "circled-upper-latin",
 					"dotted-decimal", "double-circled-decimal", "filled-circled-decimal", "fullwidth-decimal",
 					"fullwidth-lower-roman", "fullwidth-upper-roman", "lower-hexadecimal", "new-base-60", "octal",
 					"parenthesized-decimal", "simple-lower-roman", "simple-upper-roman", "super-decimal",
