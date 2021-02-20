@@ -4127,6 +4127,22 @@ window.Specs = {
 		}
 	},
 
+	"html": {
+		"title": "HTML Living Standard",
+		"links": {
+			"dev": "html",
+			"devtype": "whatwg"
+		},
+		"selectors": {
+			":autofill": {
+				"links": {
+					"dev": "#selector-autofill"
+				},
+				"tests": ":autofill"
+			}
+		}
+	},
+
 	"compat": {
 		"title": "Compatibility",
 		"links": {
