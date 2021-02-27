@@ -3578,7 +3578,7 @@ window.Specs = {
 			"dev": "css-box-4"
 		},
 		"properties": {
-			"align-self": {
+			"margin-trim": {
 				"links": {
 					"tr": "#margin-trim",
 					"dev": "#margin-trim"
