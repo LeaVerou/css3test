@@ -234,8 +234,8 @@ Test.prototype = {
 				mdnLink += links.mdn
 					? links.mdn
 					: feature.startsWith(':')
-					? feature.replace('()', '')
-					: feature;
+						? feature.replace('()', '')
+						: feature;
 
 				summaryContents.push($.create({
 					tag: 'a',
@@ -277,6 +277,7 @@ Test.prototype = {
 				}));
 			}
 
+			// for prefix
 			if (propertyPrefix) {
 				summaryContents[1] = $.create({
 					tag: 'span',
@@ -285,11 +286,29 @@ Test.prototype = {
 				});
 			}
 
+			// for progress bar
+			var progressbar = null;
+			if (passed > 0 && passed !== tests.length) {
+				progressbar = $.create({
+					tag: 'div',
+					properties: {
+						className: 'progress-bar',
+						style: 'width: ' + (passed / tests.length * 100) + '%'
+					}
+				});
+			}
+
 			var detailsContents = [
 				$.create({
 					tag: 'summary',
 					className: passclass({ passed: passed, total: tests.length }),
-					contents: summaryContents,
+					contents: [
+						progressbar,
+						{
+							tag: 'div',
+							contents: summaryContents
+						}
+					]
 				}),
 				$.create({
 					tag: 'ul',

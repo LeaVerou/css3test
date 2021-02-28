@@ -5323,6 +5323,34 @@ window.Specs = {
 			},
 			"contain-intrinsic-width": {
 				"links": {
+					"tr": "#propdef-contain-intrinsic-size",
+					"dev": "#propdef-contain-intrinsic-size"
+				},
+				"tests": ["none", "10px"]
+			},
+			"contain-intrinsic-height": {
+				"links": {
+					"tr": "#intrinsic-size-override",
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["none", "10px"]
+			},
+			"contain-intrinsic-block-size": {
+				"links": {
+					"tr": "#intrinsic-size-override",
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["none", "10px"]
+			},
+			"contain-intrinsic-inline-size": {
+				"links": {
+					"tr": "#intrinsic-size-override",
+					"dev": "#intrinsic-size-override"
+				},
+				"tests": ["none", "10px"]
+			},
+			"contain-intrinsic-width": {
+				"links": {
 					"tr": "#intrinsic-size-override",
 					"dev": "#intrinsic-size-override"
 				},
@@ -5357,6 +5385,48 @@ window.Specs = {
 				"tests": ["stretch", "fit-content", "contain"]
 			},
 			"min-width": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"inline-size": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"min-inline-size": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"max-inline-size": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"block-size": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"min-block-size": {
+				"links": {
+					"tr": "#sizing-values",
+					"dev": "#sizing-values"
+				},
+				"tests": ["stretch", "fit-content", "contain"]
+			},
+			"max-block-size": {
 				"links": {
 					"tr": "#sizing-values",
 					"dev": "#sizing-values"

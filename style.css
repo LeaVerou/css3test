@@ -80,17 +80,23 @@ h1, h2 {
 			background-image: url("data:image/svg+xml,<?xml version='1.0' encoding='UTF-8'?> <svg xmlns:cc='http://creativecommons.org/ns%23' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' version='1.1' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'> <circle cx='50' cy='50' r='45' fill='none' stroke='%23fff' stroke-width='10'/> <path d='m38 38c0-12 24-15 23-2 0 9-16 13-16 23v7h10v-4c0-9 17-12 17-27-2-22-45-22-45 3zm7 32h10v10h-10' fill='%23fff'/> <script/> </svg>");
 		}
 
-		details summary > .spec-link {
+		details summary > :not(.progress-bar) {
+			z-index: 1;
+			display: inline-block;
+			position: relative;
+		}
+
+		details summary .spec-link {
 			display: none;
 			vertical-align: inherit;
 		}
 
-		details summary:hover > .spec-link,
-		details summary:focus-within > .spec-link {
+		details summary:hover .spec-link,
+		details summary:focus-within .spec-link {
 			display: inline-block;
 		}
 
-		details summary > .spec-link::before {
+		details summary .spec-link::before {
 			height: 18px;
 			width: 18px;
 			background-size: 18px 18px;
@@ -185,6 +191,8 @@ details summary, details li[class] {
 details summary {
 	list-style: none;
 	cursor: pointer;
+	position: relative;
+	overflow: hidden;
 }
 
 details summary::-webkit-details-marker {
@@ -310,6 +318,15 @@ details li[class]:after {
 .slightly-buggy:after { content: ':|'; }
 
 .very-buggy:after { content: ':o'; }
+
+.progress-bar {
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 125, 0, .2);
+	background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 5px, rgba(0, 0, 0, 0) 5px, rgba(0, 0, 0, 0) 10px);
+    top: 0;
+    left: 0;
+}
 
 /* End emoticons */
 
