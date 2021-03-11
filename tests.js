@@ -4327,7 +4327,7 @@ window.Specs = {
 					"tr": "#rubypos",
 					"dev": "#rubypos"
 				},
-				"tests": ["over", "under", "inter-character"]
+				"tests": ["alternate", "over", "under", "alternate over", "alternate under", "inter-character"]
 			},
 			"ruby-merge": {
 				"links": {
