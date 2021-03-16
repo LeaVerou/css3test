@@ -2751,15 +2751,15 @@ window.Specs = {
 					"mdn": "color_value"
 				},
 				"tests": [
-					"color-mix(peru  40%, lightgoldenrod)",
-					"color-mix(teal 65%, olive)",
-					"color-mix(rgb(0% 42.35% 33.33%) lightness 40%, rgb(41.2% 69.88% 96.64%))",
-					"color-mix(lch(52% 58.1 22.7) hue 75.23%, lch(56% 49.1 257.1))",
-					"color-mix(lch(52% 58.1 22.7) hue longer 75.23%, lch(56% 49.1 257.1) )",
-					"color-mix(rgb(82.02% 30.21% 35.02%) hue 75.23% lightness 68.4%, rgb(5.64% 55.94% 85.31%) )",
-					"color-mix(xyz rgb(82.02% 30.21% 35.02%) 75.23%, rgb(5.64% 55.94% 85.31%))",
-					"color-mix(red lightness 30%, yellow )",
-					"color-mix(lab rgb(82.02% 30.21% 35.02%) a 38% b 38%, rgb(5.64% 55.94% 85.31%))"
+					"color-mix(in srgb, teal 65%, olive)",
+					"color-mix(in srgb, rgb(255, 0, 0, .2) 65%, olive)",
+					"color-mix(in srgb, currentColor, rgba(0, 0, 0, .5) 65%",
+					"color-mix(in srgb, currentColor 10%, rgba(0, 0, 0, .5) 65%",
+					"color-mix(in lch, teal 65%, olive)",
+					"color-mix(in hsl, teal 65%, olive)",
+					"color-mix(in hwb, teal 65%, olive)",
+					"color-mix(in xyz, teal 65%, olive)",
+					"color-mix(in lab, teal 65%, olive)",
 				]
 			},
 			"color-contrast()": {
