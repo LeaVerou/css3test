@@ -322,11 +322,23 @@ details li[class]:after {
 .progress-bar {
     height: 100%;
     position: absolute;
-    background: rgba(255, 125, 0, .2);
-	background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 5px, rgba(0, 0, 0, 0) 5px, rgba(0, 0, 0, 0) 10px);
+	left: 0;
     top: 0;
-    left: 0;
 }
+
+.pass .progress-bar { background: #367a00; }
+
+.almost-pass .progress-bar { background: #6da300;  }
+
+.slightly-buggy .progress-bar { background: #969600;  }
+
+.buggy .progress-bar { background:  #be6d00}
+
+.very-buggy .progress-bar { background: #be3600; }
+
+.fail .progress-bar { background: #be1b00;; }
+
+.epic-fail .progress-bar { background:  #960000; }
 
 /* End emoticons */
 
