@@ -351,7 +351,16 @@ window.Specs = {
 					"dev": "#image-set-notation"
 				},
 				"tests": [
-					"image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi)"
+					"image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi)",
+					"image-set(linear-gradient(green, green) 1x, url(foobar.png) 2x)",
+					"image-set(linear-gradient(red, red), url(foobar.png) 2x)",
+					"image-set(url(foobar.png) 2x)",
+					"image-set(url(foobar.png) 1x, url(bar.png) 2x, url(baz.png) 3x)",
+					"image-set('foobar.png', 'bar.png' 2x, url(baz.png) 3x)",
+					"image-set(image-set('foobar.png', 'bar.png' 2x) 1x, url(baz.png) 3x)",
+					"image-set(url(foobar.png) type('image/png'))",
+					"image-set(url(foobar.png) 1x type('image/png'))",
+					"image-set(url(foobar.png) type('image/png') 1x)"
 				]
 			},
 			"element()": {
