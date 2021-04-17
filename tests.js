@@ -5170,6 +5170,14 @@ window.Specs = {
 				},
 				"tests": ["visible", "hidden", "clip", "scroll", "auto"]
 			},
+			"overflow-clip-margin": {
+				"links": {
+					"tr": "#overflow-clip-margin",
+					"dev": "#overflow-clip-margin"
+				},
+				"tests": ["content-box", "padding-box", "border-box", "20px"]
+
+			},
 			"continue": {
 				"links": {
 					"tr": "#continue",
