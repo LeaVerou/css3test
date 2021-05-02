@@ -118,7 +118,15 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 
 		descriptorvalue: function (descriptor, value) {
 			/* doesn't handle prefixes for descriptor or value */
-			style.textContent = "@font-face {" + descriptor + ":" + value + "}";
+			if (descriptor.match(/@.*\//)) {
+				var part = descriptor.split('/');
+				var rule = part[0];
+				descriptor = part[1];
+			} else {
+				var rule = '@font-face'
+			}
+
+			style.textContent = rule + " {" + descriptor + ":" + value + "}";
 			try {
 				return {
 					success: style.sheet.cssRules.length == 1

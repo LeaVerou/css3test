@@ -2351,7 +2351,63 @@ window.Specs = {
 			}
 		},
 		"descriptors": {
-			"unicode-range": {
+			"@font-face/src": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"url(http://example.com/fonts/Gentium.woff)",
+					"url(ideal-sans-serif.woff2) format(\"woff2\"), url(good-sans-serif.woff) format(\"woff\"), url(basic-sans-serif.ttf) format(\"opentype\")",
+					"local(Gentium), url(Gentium.woff)"
+				]
+			},
+			"@font-face/font-family": {
+				"links": {
+					"tr": "#descdef-font-family",
+					"dev": "#descdef-font-family"
+				},
+				"tests": ["Gentium"]
+			},
+			"@font-face/font-style": {
+				"links": {
+					"tr": "#font-prop-desc",
+					"dev": "#font-prop-desc"
+				},
+				"tests": ["normal", "italic", "oblique "]
+			},
+			"@font-face/font-weight": {
+				"links": {
+					"tr": "#font-prop-desc",
+					"dev": "#font-prop-desc"
+				},
+				"tests": ["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]
+			},
+			"@font-face/font-stretch": {
+				"links": {
+					"tr": "#font-prop-desc",
+					"dev": "#font-prop-desc"
+				},
+				"tests": [
+					"normal", "ultra-condensed", "extra-condensed", "condensed", "semi-condensed", "semi-expanded",
+					"expanded", "extra-expanded", "ultra-expanded "
+				]
+			},
+			"@font-face/font-feature-settings": {
+				"links": {
+					"tr": "#font-rend-desc",
+					"dev": "#font-rend-desc"
+				},
+				"tests": ["normal", "'c2sc'", "'smcp' on", "'liga' off", "'smcp', 'swsh' 2"]
+			},
+			"@font-face/font-variation-settings": {
+				"links": {
+					"tr": "#font-rend-desc",
+					"dev": "#font-rend-desc"
+				},
+				"tests": ["normal", "'swsh' 2"]
+			},
+			"@font-face/unicode-range": {
 				"links": {
 					"tr": "#unicode-range-desc",
 					"dev": "#unicode-range-desc"
@@ -2390,7 +2446,10 @@ window.Specs = {
 					"dev": "#font-variant-prop"
 				},
 				"tests": [
-					"none", "normal", "all-petite-caps", "historical-forms", "super", "sub lining-nums contextual ruby"
+					"none", "normal", "all-petite-caps", "historical-forms", "super",
+					"sub lining-nums contextual ruby",
+					"annotation(circled)",
+					"discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U)"
 				]
 			},
 			"font-variant-alternates": {
@@ -2399,7 +2458,10 @@ window.Specs = {
 					"dev": "#font-variant-alternates-prop"
 				},
 				"tests": [
-					"normal", "historical-forms", "styleset(ss01)", "character-variant(cv02)", "swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
+					"normal", "historical-forms",
+					"styleset(ss01)", "styleset(stacked-g, geometric-m)",
+					"character-variant(cv02)", "character-variant(beta-3, gamma)",
+					"swash(flowing)", "ornaments(leaves)", "annotation(blocky)"
 				]
 			},
 			"font-feature-settings": {
@@ -2459,7 +2521,66 @@ window.Specs = {
 					"dev": "#font-palette-values"
 				},
 				"tests": "@font-palette-values Augusta {\n  font-family: Handover Sans;\n  base-palette: 3;\n}"
+			},
+		},
+		"descriptors": {
+			"@font-face/ascent-override": {
+				"links": {
+					"tr": "#descdef-font-face-ascent-override",
+					"dev": "#descdef-font-face-ascent-override"
+				},
+				"tests": ["normal", "125%"]
+			},
+			"@font-face/descent-override": {
+				"links": {
+					"tr": "#descdef-font-face-descent-override",
+					"dev": "#descdef-font-face-descent-override"
+				},
+				"tests": ["normal", "125%"]
+			},
+			"@font-face/line-gap-override": {
+				"links": {
+					"tr": "#descdef-font-face-line-gap-override",
+					"dev": "#descdef-font-face-line-gap-override"
+				},
+				"tests": ["normal", "90%"]
+			},
+			"@font-face/font-named-instance": {
+				"links": {
+					"tr": "#font-named-instance",
+					"dev": "#font-named-instance"
+				},
+				"tests": ["auto", "'Grotesque'"]
+			},
+			"@font-face/font-display": {
+				"links": {
+					"tr": "#descdef-font-face-font-display",
+					"dev": "#descdef-font-face-font-display"
+				},
+				"tests": ["auto", "block", "swap", "fallback", "optional"]
+			},
+			"@font-feature-values/font-display": {
+				"links": {
+					"tr": "#font-display-font-feature-values",
+					"dev": "#font-display-font-feature-values"
+				},
+				"tests": ["auto", "block", "swap", "fallback", "optional"]
 			}
+		}
+	},
+
+	"css-fonts-5": {
+		"title": "CSS Fonts Module Level 5",
+		"links": {
+			"dev": "css-fonts-5"
+		},
+		"descriptors": {
+			"@font-face/size-adjust": {
+				"links": {
+					"dev": "#size-adjust-desc"
+				},
+				"tests": ["100%"]
+			},
 		}
 	},
 
