@@ -1626,7 +1626,10 @@ window.Specs = {
 					"tr": "#keyframes",
 					"dev": "#keyframes"
 				},
-				"tests": "@keyframes foo {\n  from: {\n    color: blue;\n  }\n  to: {\n    color: red;\n  }\n}"
+				"tests": [
+					"@keyframes foo {\n  from: {\n    color: blue;\n  }\n  to: {\n    color: red;\n  }\n}",
+					"@keyframes foo {\n  from: {\n    color: blue;\n  }\n  50%: {\n    color: green;\n  }\n  to: {\n    color: red;\n  }\n}"
+				]
 			}
 		}
 	},
