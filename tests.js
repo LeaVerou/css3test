@@ -933,31 +933,38 @@ window.Specs = {
 		"selectors": {
 			"::selection": {
 				"links": {
-					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"tr": "#selectordef-selection",
+					"dev": "#selectordef-selection"
 				},
 				"tests": ["::selection"]
 			},
-			"::inactive-selection": {
+			"::target-text": {
 				"links": {
-					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"tr": "#selectordef-target-text",
+					"dev": "#selectordef-target-text"
 				},
-				"tests": ["::inactive-selection"]
+				"tests": ["::target-text"]
 			},
 			"::spelling-error": {
 				"links": {
-					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"tr": "#selectordef-spelling-error",
+					"dev": "#selectordef-spelling-error"
 				},
 				"tests": ["::spelling-error"]
 			},
 			"::grammar-error": {
 				"links": {
-					"tr": "#highlight-selectors",
-					"dev": "#highlight-selectors"
+					"tr": "#selectordef-grammar-error",
+					"dev": "#selectordef-grammar-error"
 				},
 				"tests": ["::grammar-error"]
+			},
+			"::file-selector-button": {
+				"links": {
+					"tr": "#marker-pseudo",
+					"dev": "#marker-pseudo"
+				},
+				"tests": ["::file-selector-button"]
 			},
 			"::marker": {
 				"links": {
