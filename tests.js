@@ -5248,6 +5248,85 @@ window.Specs = {
 				},
 				"tests": "@counter-style foo {\n  system: numeric;\n  symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';\n}"
 			}
+		},
+		"descriptors": {
+			"@counter-style example/system": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"cyclic", "numeric", "alphabetic", "symbolic", "additive", "fixed 3", "extends decimal"
+				]
+			},
+			"@counter-style example/negative": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"'-'", "'(' ')'"
+				]
+			},
+			"@counter-style example/prefix": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"»", "url(https://lea.verou.me/mark.svg)"
+				]
+			},
+			"@counter-style example/suffix": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"»", "url(https://lea.verou.me/mark.svg)"
+				]
+			},
+			"@counter-style example/range": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"auto", "2 5", "infinite 10", "10 infinite", "infinite infinite", "2 5, 8 10", "infinite 8, 6 infinite"
+				]
+			},
+			"@counter-style example/symbols": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"A B C D E F",
+					"'\24B6' '\24B7' '\24B8' D E F",
+					"'0' '1' '2' '4' '5' '6' '7'",
+					"'1' url('second.svg') '2'",
+					"url('first.svg') url('second.svg') url('third.svg')",
+					"custom-numbers"
+				]
+			},
+			"@counter-style example/additive-symbols": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"3 '0'", "3 '1', 2 '\2E\20'", "3 '1', 2 url(symbol.svg)",
+				]
+			},
+			"@counter-style example/speak-as": {
+				"links": {
+					"tr": "#descdef-src",
+					"dev": "#descdef-src"
+				},
+				"tests": [
+					"auto", "bullets", "numbers", "words", "spell-out", "example-counter",
+				]
+			}
 		}
 	},
 

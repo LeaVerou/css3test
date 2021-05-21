@@ -118,20 +118,41 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 
 		descriptorvalue: function (descriptor, value) {
 			/* doesn't handle prefixes for descriptor or value */
+			var add = '', pos = 0;
 			if (descriptor.match(/@.*\//)) {
 				var part = descriptor.split('/');
 				var rule = part[0];
 				descriptor = part[1];
+
+				// exceptions for @counter-style
+				if (rule.match(/@counter-style.*/)) {
+					if (descriptor === 'additive-symbols') {
+						add = 'system: additive;'
+					} else if (descriptor === 'symbols' && value === "custom-numbers") {
+						rule = '@counter-style custom-numbers { system: fixed; symbols: A B C D E;} ' + rule;
+						pos = 1;
+					} else if (descriptor === 'symbols') {
+						add = 'system: alphabetic;';
+					} else if (descriptor !== 'system' || descriptor === 'system' && value.indexOf('extends') === -1) {
+						add = 'system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C; ';
+					}
+				}
+
 			} else {
 				var rule = '@font-face'
 			}
 
-			style.textContent = rule + " {" + descriptor + ":" + value + "}";
+			style.textContent = rule + " {" + add + descriptor + ":" + value + "}";
 			try {
-				return {
-					success: style.sheet.cssRules.length == 1
-						&& style.sheet.cssRules[0].style.length == 1
-				};
+				if (style.sheet.cssRules.length) {
+					return {
+						success:
+							style.sheet.cssRules[pos].style && style.sheet.cssRules[pos].style.length === 1 ||
+							!!style.sheet.cssRules[pos][camelCase(descriptor)]
+					};
+				} else {
+					return { success: false };
+				}
 			} catch (e) {
 				return { success: false };
 			}

@@ -234,8 +234,8 @@ Test.prototype = {
 				mdnLink += links.mdn
 					? links.mdn
 					: feature.startsWith(':')
-					? feature.replace('()', '')
-					: feature;
+						? feature.replace('()', '')
+						: feature.replace(/(@[^ ]+)[^\/]+(\/.*)/, '$1$2');
 
 				summaryContents.push($.create({
 					tag: 'a',
