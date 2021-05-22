@@ -185,8 +185,6 @@ details summary, details li[class] {
 details summary {
 	list-style: none;
 	cursor: pointer;
-	position: relative;
-	overflow: hidden;
 	background: linear-gradient(rgb(0 0 0 / .3), rgb(0 0 0 / .3)) no-repeat 0 0 / calc(var(--progress) * 1%) .4em;
 }
 

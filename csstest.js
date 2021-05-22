@@ -293,12 +293,7 @@ Test.prototype = {
 						className: passclass({ passed: passed, total: tests.length }),
 						style: '--progress: ' + (passed / tests.length * 100),
 					},
-					contents: [
-						{
-							tag: 'div',
-							contents: summaryContents
-						}
-					]
+					contents: summaryContents
 				}),
 				$.create({
 					tag: 'ul',
