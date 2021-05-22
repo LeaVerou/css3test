@@ -286,24 +286,14 @@ Test.prototype = {
 				});
 			}
 
-			// for progress bar
-			var progressbar = null;
-			if (passed > 0 && passed !== tests.length) {
-				progressbar = $.create({
-					tag: 'div',
-					properties: {
-						className: 'progress-bar',
-						style: 'width: ' + (passed / tests.length * 100) + '%'
-					}
-				});
-			}
-
 			var detailsContents = [
 				$.create({
 					tag: 'summary',
-					className: passclass({ passed: passed, total: tests.length }),
+					properties: {
+						className: passclass({ passed: passed, total: tests.length }),
+						style: '--progress: ' + (passed / tests.length * 100),
+					},
 					contents: [
-						progressbar,
 						{
 							tag: 'div',
 							contents: summaryContents
