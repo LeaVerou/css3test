@@ -320,10 +320,10 @@ details li[class]:after {
 .very-buggy:after { content: ':o'; }
 
 .progress-bar {
-    height: 100%;
-    position: absolute;
+	height: 7px;
+	position: absolute;
 	left: 0;
-    top: 0;
+	top: 0;
 }
 
 .pass .progress-bar { background: #367a00; }
@@ -336,7 +336,7 @@ details li[class]:after {
 
 .very-buggy .progress-bar { background: #be3600; }
 
-.fail .progress-bar { background: #be1b00;; }
+.fail .progress-bar { background: #be1b00; }
 
 .epic-fail .progress-bar { background:  #960000; }
 
