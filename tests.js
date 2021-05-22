@@ -5252,8 +5252,8 @@ window.Specs = {
 		"descriptors": {
 			"@counter-style example/system": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-system",
+					"dev": "#counter-style-system"
 				},
 				"tests": [
 					"cyclic", "numeric", "alphabetic", "symbolic", "additive", "fixed 3", "extends decimal"
@@ -5261,8 +5261,8 @@ window.Specs = {
 			},
 			"@counter-style example/negative": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-negative",
+					"dev": "#counter-style-negative"
 				},
 				"tests": [
 					"'-'", "'(' ')'"
@@ -5270,8 +5270,8 @@ window.Specs = {
 			},
 			"@counter-style example/prefix": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-prefix",
+					"dev": "#counter-style-prefix"
 				},
 				"tests": [
 					"»", "url(https://lea.verou.me/mark.svg)"
@@ -5279,8 +5279,8 @@ window.Specs = {
 			},
 			"@counter-style example/suffix": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-suffix",
+					"dev": "#counter-style-suffix"
 				},
 				"tests": [
 					"»", "url(https://lea.verou.me/mark.svg)"
@@ -5288,8 +5288,8 @@ window.Specs = {
 			},
 			"@counter-style example/range": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-range",
+					"dev": "#counter-style-range"
 				},
 				"tests": [
 					"auto", "2 5", "infinite 10", "10 infinite", "infinite infinite", "2 5, 8 10", "infinite 8, 6 infinite"
@@ -5297,8 +5297,8 @@ window.Specs = {
 			},
 			"@counter-style example/symbols": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-symbols",
+					"dev": "#counter-style-symbols"
 				},
 				"tests": [
 					"A B C D E F",
@@ -5311,17 +5311,35 @@ window.Specs = {
 			},
 			"@counter-style example/additive-symbols": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#additive-system",
+					"dev": "#descdef-counter-style-additive-symbols"
 				},
 				"tests": [
 					"3 '0'", "3 '1', 2 '\2E\20'", "3 '1', 2 url(symbol.svg)",
 				]
 			},
+			"@counter-style example/pad": {
+				"links": {
+					"tr": "#counter-style-pad",
+					"dev": "#counter-style-pad"
+				},
+				"tests": [
+					"0 ''", "3 '0'", "'0' 3"
+				]
+			},
+			"@counter-style example/fallback": {
+				"links": {
+					"tr": "#counter-style-fallback",
+					"dev": "#counter-style-fallback"
+				},
+				"tests": [
+					"decimal"
+				]
+			},
 			"@counter-style example/speak-as": {
 				"links": {
-					"tr": "#descdef-src",
-					"dev": "#descdef-src"
+					"tr": "#counter-style-speak-as",
+					"dev": "#counter-style-speak-as"
 				},
 				"tests": [
 					"auto", "bullets", "numbers", "words", "spell-out", "example-counter",
