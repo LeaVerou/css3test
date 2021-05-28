@@ -58,8 +58,8 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 			else if (_.property.cached[property]) {
 				return {
 					success: true,
-					property: _.property.cached[property],
-					prefix: i > 0
+					property: _.property.cached[property].property,
+					prefix: _.property.cached[property].prefix
 				};
 			}
 
@@ -67,7 +67,7 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 				var prefixed = _.prefixes[i] + property;
 
 				if (camelCase(prefixed) in inline) {
-					_.property.cached[property] = prefixed;
+					_.property.cached[property] = { property: prefixed, prefix: _.prefixes[i] };
 					return {
 						success: true,
 						property: prefixed,
