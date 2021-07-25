@@ -1428,12 +1428,30 @@ window.Specs = {
 			"dev": "css-ui-4"
 		},
 		"properties": {
+			"accent-color": {
+				"links": {
+					"tr": "#widget-accent",
+					"dev": "#widget-accent"
+				},
+				"tests": ["auto", "red"]
+			},
 			"appearance": {
 				"links": {
 					"tr": "#appearance-switching",
 					"dev": "#appearance-switching"
 				},
-				"tests": ["auto", "none"]
+				"tests": [
+					"auto", "none", "textfield", "menulist-button", "searchfield", "textarea", "push-button",
+					"slider-horizontal", "checkbox", "radio", "square-button", "menulist", "listbox", "meter",
+					"progress-bar", "button"
+				],
+			},
+			"input-security": {
+				"links": {
+					"tr": "#input-security",
+					"dev": "#input-security"
+				},
+				"tests": ["auto", "red"]
 			},
 			"caret": {
 				"links": {
