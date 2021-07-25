@@ -1022,6 +1022,23 @@ window.Specs = {
 		}
 	},
 
+	"css-highlight-api-1": {
+		"title": "CSS Custom Highlight API Module Level 1",
+		"links": {
+			"tr": "css-highlight-api-1",
+			"dev": "css-highlight-api-1"
+		},
+		"selectors": {
+			 '::highlight()' : {
+				"links": {
+					"tr": "#custom-highlight-pseudo",
+					"dev": "#custom-highlight-pseudo"
+				},
+				"tests": ['::highlight(example-highlight)']
+			}
+		}
+	},
+
 	/*
 	 * Note: the following media queries must be true in supporting UAs!
 	 */
