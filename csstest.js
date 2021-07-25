@@ -340,8 +340,16 @@ Test.groups = {
 		return Supports.value(property, value);
 	},
 
-	'descriptors': function (value, descriptor) {
-		return Supports.descriptorvalue(descriptor, value);
+	'descriptors': function (value, descriptor, tests) {
+		var required = undefined;
+		if (tests[descriptor].required) {
+			if (tests[descriptor].required[value]) {
+				required = tests[descriptor].required[value];
+			} else if (tests[descriptor].required['*'] ) {
+				required = tests[descriptor].required['*'];
+			}
+		}
+		return Supports.descriptorvalue(descriptor, value, required);
 	},
 
 	'selectors': function (test) {

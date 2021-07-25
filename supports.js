@@ -1,4 +1,4 @@
-/*! matchMedia() polyfill - Test a CSS media type/query in JS. 
+/*! matchMedia() polyfill - Test a CSS media type/query in JS.
 Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas. Dual MIT/BSD license */
 window.matchMedia = window.matchMedia || (function (doc, undefined) {
 
@@ -116,7 +116,7 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 			};
 		},
 
-		descriptorvalue: function (descriptor, value) {
+		descriptorvalue: function (descriptor, value, required) {
 			/* doesn't handle prefixes for descriptor or value */
 			var add = '', pos = 0;
 			if (descriptor.match(/@.*\//)) {
@@ -124,20 +124,15 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 				var rule = part[0];
 				descriptor = part[1];
 
-				// exceptions for @counter-style
-				if (rule.match(/@counter-style.*/)) {
-					if (descriptor === 'additive-symbols') {
-						add = 'system: additive;'
-					} else if (descriptor === 'symbols' && value === "custom-numbers") {
-						rule = '@counter-style custom-numbers { system: fixed; symbols: A B C D E;} ' + rule;
+				if (required) {
+					if (required.rule) {
+						rule = required.rule + ' ' + rule;
 						pos = 1;
-					} else if (descriptor === 'symbols') {
-						add = 'system: alphabetic;';
-					} else if (descriptor !== 'system' || descriptor === 'system' && value.indexOf('extends') === -1) {
-						add = 'system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C; ';
+					}
+					if (required.descriptor) {
+						add = required.descriptor + '; ';
 					}
 				}
-
 			} else {
 				var rule = '@font-face'
 			}

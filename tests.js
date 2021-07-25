@@ -5255,6 +5255,10 @@ window.Specs = {
 					"tr": "#counter-style-system",
 					"dev": "#counter-style-system"
 				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"},
+					'extends decimal' : { }
+				},
 				"tests": [
 					"cyclic", "numeric", "alphabetic", "symbolic", "additive", "fixed 3", "extends decimal"
 				]
@@ -5263,6 +5267,9 @@ window.Specs = {
 				"links": {
 					"tr": "#counter-style-negative",
 					"dev": "#counter-style-negative"
+				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"'-'", "'(' ')'"
@@ -5273,6 +5280,9 @@ window.Specs = {
 					"tr": "#counter-style-prefix",
 					"dev": "#counter-style-prefix"
 				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+				},
 				"tests": [
 					"»", "url(https://lea.verou.me/mark.svg)"
 				]
@@ -5281,6 +5291,9 @@ window.Specs = {
 				"links": {
 					"tr": "#counter-style-suffix",
 					"dev": "#counter-style-suffix"
+				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"»", "url(https://lea.verou.me/mark.svg)"
@@ -5291,6 +5304,9 @@ window.Specs = {
 					"tr": "#counter-style-range",
 					"dev": "#counter-style-range"
 				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+				},
 				"tests": [
 					"auto", "2 5", "infinite 10", "10 infinite", "infinite infinite", "2 5, 8 10", "infinite 8, 6 infinite"
 				]
@@ -5299,6 +5315,10 @@ window.Specs = {
 				"links": {
 					"tr": "#counter-style-symbols",
 					"dev": "#counter-style-symbols"
+				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic"},
+					'custom-numbers' : { "rule" : "@counter-style custom-numbers { system: fixed; symbols: A B C D E;}"}
 				},
 				"tests": [
 					"A B C D E F",
@@ -5314,6 +5334,9 @@ window.Specs = {
 					"tr": "#additive-system",
 					"dev": "#descdef-counter-style-additive-symbols"
 				},
+				"required" : {
+					'*' : { "descriptor" : "system: additive"}
+				},
 				"tests": [
 					"3 '0'", "3 '1', 2 '\2E\20'", "3 '1', 2 url(symbol.svg)",
 				]
@@ -5322,6 +5345,9 @@ window.Specs = {
 				"links": {
 					"tr": "#counter-style-pad",
 					"dev": "#counter-style-pad"
+				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"0 ''", "3 '0'", "'0' 3"
@@ -5332,6 +5358,9 @@ window.Specs = {
 					"tr": "#counter-style-fallback",
 					"dev": "#counter-style-fallback"
 				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+				},
 				"tests": [
 					"decimal"
 				]
@@ -5340,6 +5369,9 @@ window.Specs = {
 				"links": {
 					"tr": "#counter-style-speak-as",
 					"dev": "#counter-style-speak-as"
+				},
+				"required" : {
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"auto", "bullets", "numbers", "words", "spell-out", "example-counter",
