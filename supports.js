@@ -1,4 +1,4 @@
-/*! matchMedia() polyfill - Test a CSS media type/query in JS. 
+/*! matchMedia() polyfill - Test a CSS media type/query in JS.
 Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas. Dual MIT/BSD license */
 window.matchMedia = window.matchMedia || (function (doc, undefined) {
 
@@ -116,22 +116,38 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 			};
 		},
 
-		descriptorvalue: function (descriptor, value) {
+		descriptorvalue: function (descriptor, value, required) {
 			/* doesn't handle prefixes for descriptor or value */
+			var add = '', pos = 0;
 			if (descriptor.match(/@.*\//)) {
 				var part = descriptor.split('/');
 				var rule = part[0];
 				descriptor = part[1];
+
+				if (required) {
+					if (required.rule) {
+						rule = required.rule + ' ' + rule;
+						pos = 1;
+					}
+					if (required.descriptor) {
+						add = required.descriptor + '; ';
+					}
+				}
 			} else {
 				var rule = '@font-face'
 			}
 
-			style.textContent = rule + " {" + descriptor + ":" + value + "}";
+			style.textContent = rule + " {" + add + descriptor + ":" + value + "}";
 			try {
-				return {
-					success: style.sheet.cssRules.length == 1
-						&& style.sheet.cssRules[0].style.length == 1
-				};
+				if (style.sheet.cssRules.length) {
+					return {
+						success:
+							style.sheet.cssRules[pos].style && style.sheet.cssRules[pos].style.length === 1 ||
+							!!style.sheet.cssRules[pos][camelCase(descriptor)]
+					};
+				} else {
+					return { success: false };
+				}
 			} catch (e) {
 				return { success: false };
 			}
