@@ -4012,6 +4012,54 @@ window.Specs = {
 		}
 	},
 
+	"css-cascade-5": {
+		"title": "CSS Cascading and Inheritance Level 5",
+		"links": {
+			"tr": "css-cascade-5",
+			"dev": "css-cascade-5"
+		},
+		"values": {
+			"properties": [
+				"color",
+				"font-weight",
+				"background-image",
+				"all"
+			],
+			"revert-layer": {
+				"links": {
+					"tr": "#revert-layer",
+					"dev": "#revert-layer"
+				},
+				"tests": "revert-layer"
+			}
+		},
+		"properties": {
+			"all": {
+				"links": {
+					"tr": "#revert-layer",
+					"dev": "#revert-layer"
+				},
+				"tests": "revert-layer"
+			}
+		},
+		"@rules": {
+			"@layer": {
+				"links": {
+					"tr": "#at-layer",
+					"dev": "#at-layer"
+				},
+				"tests": [
+					"@layer framework {\n  h1, h2 { color: maroon; background: white;\n}",
+					"@layer framework {\n  h1, h2 { color: maroon; background: white;}\n  \n  @media (prefers-color-scheme: dark) {\n    h1, h2 { color: red; background: black; }\n  }\n}",
+					"@layer framework;",
+					"@layer default, framework;"
+				]
+			}
+		}
+	},
+
+	//"@layer default;",	"@import url(theme.css) layer(theme);",
+
 	"css-conditional-3": {
 		"title": "CSS Conditional Rules Module Level 3",
 		"links": {
