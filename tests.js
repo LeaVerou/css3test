@@ -4137,8 +4137,6 @@ window.Specs = {
 		}
 	},
 
-	//"@layer default;",	"@import url(theme.css) layer(theme);",
-
 	"css-conditional-3": {
 		"title": "CSS Conditional Rules Module Level 3",
 		"links": {
@@ -5791,6 +5789,15 @@ window.Specs = {
 					"dev": "#continue"
 				},
 				"tests": ["auto", "discard"]
+			},
+			"scrollbar-gutter": {
+				"links": {
+					"tr": "scrollbar-gutter-property",
+					"dev": "#scrollbar-gutter-property"
+				},
+				"tests": [
+					"auto", "stable", "both-edges stable", "stable both-edges",
+				]
 			}
 		}
 	},
