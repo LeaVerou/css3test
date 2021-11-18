@@ -6119,7 +6119,7 @@ window.Specs = {
 					"tr": "#scrollbar-color",
 					"dev": "#scrollbar-color"
 				},
-				"tests": ["auto", "dark", "light", "red blue"]
+				"tests": ["auto", "red blue"]
 			},
 			"scrollbar-width": {
 				"links": {
