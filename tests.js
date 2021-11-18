@@ -6126,7 +6126,7 @@ window.Specs = {
 					"tr": "#scrollbar-width",
 					"dev": "#scrollbar-width"
 				},
-				"tests": ["auto", "thin", "none", "12px"]
+				"tests": ["auto", "thin", "none"]
 			}
 		}
 	},
