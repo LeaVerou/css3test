@@ -1768,11 +1768,9 @@ window.Specs = {
 					"skew(45deg)", "skew(45deg, 15deg)", "skewX(45deg)", "skewY(45deg)",
 					"matrix(1,-.2,0,1,0,0)", "matrix(1,-.2,0,1,10,10)",
 					"translate(50px, -24px) rotate(180deg) scale(.5) skew(0, 22.5deg)",
-					"translate3d(0, 0, 5px)", "translateZ(5px)",
-					"scale3d(1, 0, -1)", "scaleZ(1.5)",
-					"rotate3d(1, 1, 1, 45deg)", "rotateX(-45deg)", "rotateY(-45deg)", "rotateZ(-45deg)",
-					"matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "matrix3d(0,0,0,0,0,0,0,0,0,0,1,0,10,10,0,1)",
-					"translate3d(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
+					"translateZ(5px)",
+					"scaleZ(1.5)",
+					"rotateX(-45deg)", "rotateY(-45deg)", "rotateZ(-45deg)",
 					"perspective(600px)"
 				]
 			},
@@ -1820,6 +1818,20 @@ window.Specs = {
 					"dev": "#individual-transforms"
 				},
 				"tests": ["none"].concat(["", "x", "y", "z", "-1 0 2"].and(["45deg"])).concat(["45deg"].and(["x", "y", "z", "-1 0 2"]))
+			},
+			"transform": {
+				"links": {
+					"tr": "#transform-property",
+					"dev": "#transform-property"
+				},
+				"tests": [
+					"perspective(none)",
+					"translate3d(0, 0, 5px)",
+					"scale3d(1, 0, -1)",
+					"rotate3d(1, 1, 1, 45deg)",
+					"matrix3d(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", "matrix3d(0,0,0,0,0,0,0,0,0,0,1,0,10,10,0,1)",
+					"translate3d(50px, -24px, 5px) rotate3d(1, 2, 3, 180deg) scale3d(-1, 0, .5)",
+				]
 			},
 			"transform-style": {
 				"links": {
@@ -3328,9 +3340,9 @@ window.Specs = {
 					"dev": "#round-func"
 				},
 				"tests": [
-					"round(down, 5.5px, 5px)", 
-					"up(down, 5.5px, 5px)", 
-					"down(down, 5.5px, 5px)", 
+					"round(down, 5.5px, 5px)",
+					"up(down, 5.5px, 5px)",
+					"down(down, 5.5px, 5px)",
 					"round(to-zero, 5.5px, 5px)"
 				]
 			},
