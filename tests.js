@@ -2159,7 +2159,7 @@ window.Specs = {
 					"tr": "#hyphenate-character",
 					"dev": "#hyphenate-character"
 				},
-				"tests": ["auto", "'\u2010'"]
+				"tests": ["auto", "'\\2010'"]
 			},
 			"hyphenate-limit-zone": {
 				"links": {
@@ -5696,7 +5696,7 @@ window.Specs = {
 				},
 				"tests": [
 					"A B C D E F",
-					"'\24B6' '\24B7' '\24B8' D E F",
+					"'\\24B6' '\\24B7' '\\24B8' D E F",
 					"'0' '1' '2' '4' '5' '6' '7'",
 					"'1' url('second.svg') '2'",
 					"url('first.svg') url('second.svg') url('third.svg')",
@@ -5712,7 +5712,7 @@ window.Specs = {
 					'*' : { "descriptor" : "system: additive"}
 				},
 				"tests": [
-					"3 '0'", "3 '1', 2 '\2E\20'", "3 '1', 2 url(symbol.svg)",
+					"3 '0'", "3 '1', 2 '\\2E\\20'", "3 '1', 2 url(symbol.svg)",
 				]
 			},
 			"@counter-style example/pad": {
