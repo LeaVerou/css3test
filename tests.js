@@ -3114,7 +3114,7 @@ window.Specs = {
 					"tr": "#forced",
 					"dev": "#forced"
 				},
-				"tests": ["auto", "none"]
+				"tests": ["auto", "none", "preserve-parent-color"]
 			},
 			"color-scheme": {
 				"links": {
