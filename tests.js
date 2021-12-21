@@ -2159,7 +2159,7 @@ window.Specs = {
 					"tr": "#hyphenate-character",
 					"dev": "#hyphenate-character"
 				},
-				"tests": ["auto", "'\2010'"]
+				"tests": ["auto", "'\u2010'"]
 			},
 			"hyphenate-limit-zone": {
 				"links": {
