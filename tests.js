@@ -5630,7 +5630,7 @@ window.Specs = {
 					"dev": "#counter-style-system"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"},
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"},
 					'extends decimal' : { }
 				},
 				"tests": [
@@ -5643,7 +5643,7 @@ window.Specs = {
 					"dev": "#counter-style-negative"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"'-'", "'(' ')'"
@@ -5655,7 +5655,7 @@ window.Specs = {
 					"dev": "#counter-style-prefix"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"»", "url(https://lea.verou.me/mark.svg)"
@@ -5667,7 +5667,7 @@ window.Specs = {
 					"dev": "#counter-style-suffix"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"»", "url(https://lea.verou.me/mark.svg)"
@@ -5679,7 +5679,7 @@ window.Specs = {
 					"dev": "#counter-style-range"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"auto", "2 5", "infinite 10", "10 infinite", "infinite infinite", "2 5, 8 10", "infinite 8, 6 infinite"
@@ -5691,8 +5691,8 @@ window.Specs = {
 					"dev": "#counter-style-symbols"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic"},
-					'custom-numbers' : { "rule" : "@counter-style custom-numbers { system: fixed; symbols: A B C D E;}"}
+					'*' : { "descriptor" : "system: alphabetic"},
+					'custom-numbers' : { "rule" : "@counter-style custom-numbers { system: fixed; symbols: A B C D E;}"}
 				},
 				"tests": [
 					"A B C D E F",
@@ -5709,7 +5709,7 @@ window.Specs = {
 					"dev": "#descdef-counter-style-additive-symbols"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: additive"}
+					'*' : { "descriptor" : "system: additive"}
 				},
 				"tests": [
 					"3 '0'", "3 '1', 2 '\\2E\\20'", "3 '1', 2 url(symbol.svg)",
@@ -5721,7 +5721,7 @@ window.Specs = {
 					"dev": "#counter-style-pad"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"0 ''", "3 '0'", "'0' 3"
@@ -5733,7 +5733,7 @@ window.Specs = {
 					"dev": "#counter-style-fallback"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"decimal"
@@ -5745,7 +5745,7 @@ window.Specs = {
 					"dev": "#counter-style-speak-as"
 				},
 				"required" : {
-					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
+					'*' : { "descriptor" : "system: alphabetic; symbols: A B C D; additive-symbols: 1000 M, 500 C"}
 				},
 				"tests": [
 					"auto", "bullets", "numbers", "words", "spell-out", "example-counter",
