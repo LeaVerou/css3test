@@ -2821,7 +2821,7 @@ window.Specs = {
 				"links": {
 					"tr": "#rgba-color",
 					"dev": "#rgba-color",
-					"mdn": "color_value"
+					"mdn": "color_value/rgba()"
 				},
 				"tests": "rgba(0,0,0,.5)"
 			},
@@ -2837,7 +2837,7 @@ window.Specs = {
 				"links": {
 					"tr": "#hsl-color",
 					"dev": "#hsl-color",
-					"mdn": "color_value"
+					"mdn": "color_value/hsl()"
 				},
 				"tests": "hsl(0,0%,0%)"
 			},
@@ -2845,7 +2845,7 @@ window.Specs = {
 				"links": {
 					"tr": "#hsla-color",
 					"dev": "#hsla-color",
-					"mdn": "color_value"
+					"mdn": "color_value/hsla()"
 				},
 				"tests": "hsl(0,0%,0%,.5)"
 			},
@@ -2946,7 +2946,7 @@ window.Specs = {
 				"links": {
 					"tr": "#the-hwb-notation",
 					"dev": "#the-hwb-notation",
-					"mdn": "color_value"
+					"mdn": "color_value/hwb()"
 				},
 				"tests": ["hwb(0 0% 0%)", "hwb(0 0% 0% / .5)"]
 			},
@@ -2954,23 +2954,40 @@ window.Specs = {
 				"links": {
 					"tr": "#specifying-lab-lch",
 					"dev": "#specifying-lab-lch",
-					"mdn": "color_value"
+					"mdn": "color_value/lab()"
 				},
 				"tests": ["lab(0% 0 0)", "lab(0% 0 0 /.5)"]
 			},
+			"oklab()": {
+				"links": {
+					"tr": "#specifying-oklab-lch",
+					"dev": "#specifying-oklab-lch",
+					"mdn": "color_value/oklab()"
+				},
+				"tests": ["oklab(0% 0 0)", "oklab(40.101% 0.1147 0.0453 / .5)"]
+			},
+
 			"lch()": {
 				"links": {
-					"tr": "#specifying-lab-lch",
-					"dev": "#specifying-lab-lch",
-					"mdn": "color_value"
+					"tr": "#specifying-lch-lch",
+					"dev": "#specifying-lch-lch",
+					"mdn": "color_value/lch()"
 				},
-				"tests": ["lch(0% 0 0)", "lch(0% 0 0 / .5)"]
+				"tests": ["lch(0% 0 0)", "lch(none 0% none)", "lch(0% 0 0 / .5)"]
+			},
+			"oklch()": {
+				"links": {
+					"tr": "#specifying-oklch-lch",
+					"dev": "#specifying-oklch-lch",
+					"mdn": "color_value/oklch()"
+				},
+				"tests": ["oklch(0% 0 0)", "oklch(40.101% 0.12332 21.555 / .5)"]
 			},
 			"color()": {
 				"links": {
 					"tr": "#color-function",
 					"dev": "#color-function",
-					"mdn": "color_value"
+					"mdn": "color_value/color()"
 				},
 				"tests": [
 					"color(.2 .4 .6)",
@@ -2996,7 +3013,7 @@ window.Specs = {
 				"links": {
 					"tr": "#cmyk-colors",
 					"dev": "#cmyk-colors",
-					"mdn": "color_value"
+					"mdn": "color_value/device-cmyk()"
 				},
 				"tests": ["device-cmyk(.2 .3 .4 .5)", "device-cmyk(.2 .3 .4 .5 / .5)", "device-cmyk(.2 .3 .4 .5 / 50%)"]
 			}
