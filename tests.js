@@ -3215,59 +3215,59 @@ window.Specs = {
 			],
 			"rem": {
 				"links": {
-					"tr": "#font-relative-lengths",
-					"dev": "#font-relative-lengths",
+					"tr": "#rem",
+					"dev": "#rem",
 					"mdn": "length"
 				},
 				"tests": "5rem"
 			},
 			"ch": {
 				"links": {
-					"tr": "#font-relative-lengths",
-					"dev": "#font-relative-lengths",
+					"tr": "#ch",
+					"dev": "#ch",
 					"mdn": "length"
 				},
 				"tests": "5ch"
 			},
 			"vw": {
 				"links": {
-					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths",
+					"tr": "#vw",
+					"dev": "#vw",
 					"mdn": "length"
 				},
 				"tests": "5vw"
 			},
 			"vh": {
 				"links": {
-					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths",
+					"tr": "#vh",
+					"dev": "#vh",
 					"mdn": "length"
 				},
 				"tests": "5vh"
 			},
 			"vmin": {
 				"links": {
-					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths",
+					"tr": "#vmin",
+					"dev": "#vmin",
 					"mdn": "length"
 				},
 				"tests": "5vmin"
 			},
 			"vmax": {
 				"links": {
-					"tr": "#viewport-relative-lengths",
-					"dev": "#viewport-relative-lengths",
+					"tr": "#vmax",
+					"dev": "#vmax",
 					"mdn": "length"
 				},
 				"tests": "5vmax"
 			},
-			"q": {
+			"Q": {
 				"links": {
-					"tr": "#absolute-lengths",
-					"dev": "#absolute-lengths",
+					"tr": "#Q",
+					"dev": "#Q",
 					"mdn": "length"
 				},
-				"tests": "5q"
+				"tests": "5Q"
 			},
 			"attr()": {
 				"links": {
@@ -3311,6 +3311,86 @@ window.Specs = {
 				"width",
 				"padding"
 			],
+			"ex": {
+				"links": {
+					"tr": "#ex",
+					"dev": "#ex",
+					"mdn": "length"
+				},
+				"tests": "5ex"
+			},
+			"rex": {
+				"links": {
+					"tr": "#rex",
+					"dev": "#rex",
+					"mdn": "length"
+				},
+				"tests": "5rex"
+			},
+			"cap": {
+				"links": {
+					"tr": "#cap",
+					"dev": "#cap",
+					"mdn": "length"
+				},
+				"tests": "5cap"
+			},
+			"rcap": {
+				"links": {
+					"tr": "#rcap",
+					"dev": "#rcap",
+					"mdn": "length"
+				},
+				"tests": "5rcap"
+			},
+			"rch": {
+				"links": {
+					"tr": "#rch",
+					"dev": "#rcap",
+					"mdn": "length"
+				},
+				"tests": "5rch"
+			},
+			"rch": {
+				"links": {
+					"tr": "#rch",
+					"dev": "#rcap",
+					"mdn": "length"
+				},
+				"tests": "5rch"
+			},
+			"ic": {
+				"links": {
+					"tr": "#ic",
+					"dev": "#ic",
+					"mdn": "length"
+				},
+				"tests": "5ic"
+			},
+			"ric": {
+				"links": {
+					"tr": "#ric",
+					"dev": "#ric",
+					"mdn": "length"
+				},
+				"tests": "5ric"
+			},
+			"lh": {
+				"links": {
+					"tr": "#lh",
+					"dev": "#lh",
+					"mdn": "length"
+				},
+				"tests": "5lh"
+			},
+			"rlh": {
+				"links": {
+					"tr": "#rlh",
+					"dev": "#rlh",
+					"mdn": "length"
+				},
+				"tests": "5rlh"
+			},
 			"toggle()": {
 				"links": {
 					"tr": "#toggle-notation",
