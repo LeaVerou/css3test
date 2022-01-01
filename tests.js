@@ -3405,6 +3405,21 @@ window.Specs = {
 		}
 	},
 
+	"css-multicol-2": {
+		"title": "CSS Multi-column Layout Module Level 2",
+		"links": {
+			"dev": "css-multicol-2"
+		},
+		"properties": {
+			"column-span": {
+				"links": {
+					"dev": "#column-span"
+				},
+				"tests": ["2", "auto"]
+			}
+		}
+	},
+
 	"css-overflow-3": {
 		"title": "CSS Overflow Module Level 3",
 		"links": {
