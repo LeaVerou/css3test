@@ -476,7 +476,7 @@ window.Specs = {
 					"tr": "#break-within",
 					"dev": "#break-within"
 				},
-				"tests": ["auto", "avoid", "avoid-page", "avoid-column", "avoid-region "]
+				"tests": ["auto", "avoid", "avoid-page", "avoid-column", "avoid-region"]
 			},
 			"box-decoration-break": {
 				"links": {
@@ -498,6 +498,45 @@ window.Specs = {
 					"dev": "#widows-orphans"
 				},
 				"tests": ["1", "2"]
+			}
+		}
+	},
+
+	"css-break-4": {
+		"title": "CSS Fragmentation Module Level 4",
+		"links": {
+			"tr": "css-break-4",
+			"dev": "css-break-4"
+		},
+		"values": {
+			"properties": [
+				"break-before",
+				"break-after"
+			],
+			"always": {
+				"links": {
+					"tr": "#valdef-break-before-always",
+					"dev": "#valdef-break-before-always",
+					"mdn": "break-before#values"
+				},
+				"tests": "always"
+			},
+			"all": {
+				"links": {
+					"tr": "#valdef-break-before-all",
+					"dev": "#valdef-break-before-all",
+					"mdn": "break-before#values"
+				},
+				"tests": "all"
+			}
+		},
+		"properties": {
+			"margin-break": {
+				"links": {
+					"tr": "#break-margins",
+					"dev": "#break-margins"
+				},
+				"tests": ["auto", "keep", "discard"]
 			}
 		}
 	},
