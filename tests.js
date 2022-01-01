@@ -2679,7 +2679,21 @@ window.Specs = {
 					"tr": "#counter-reset",
 					"dev": "#counter-reset"
 				},
-				"tests": ["foo", "foo 1", "foo 1 bar", "foo 1 bar 2", "none"]
+				"tests": [
+					"none",
+					"foo",
+					"foo 1",
+					"foo -3",
+					"foo 1 bar",
+					"foo 1 bar 2",
+					"list-item",
+					"list-item 1",
+					"list-item 1 bar 2",
+					"reversed(foo)",
+					"reversed(foo) -3",
+					"reversed(list-item)",
+					"reversed(foo1) 1 foo2 9 reversed(foo3) 4"
+				]
 			},
 			"counter-set": {
 				"links": {
