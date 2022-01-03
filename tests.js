@@ -3434,6 +3434,37 @@ window.Specs = {
 		}
 	},
 
+	"css-nav-1": {
+		"title": "CSS Spatial Navigation Level 1",
+		"links": {
+			"tr": "css-nav-1",
+			"dev": "css-nav-1"
+		},
+		"properties": {
+			"spatial-navigation-action": {
+				"links": {
+					"tr": "#css-property-spatialnavigationaction",
+					"dev": "#css-property-spatialnavigationaction"
+				},
+				"tests": ["auto", "focus", "scroll"]
+			},
+			"spatial-navigation-contain": {
+				"links": {
+					"tr": "#container",
+					"dev": "#container"
+				},
+				"tests": ["auto", "contain"]
+			},
+			"spatial-navigation-function": {
+				"links": {
+					"tr": "#css-property-spatialnavigationfunction",
+					"dev": "#css-property-spatialnavigationfunction"
+				},
+				"tests": ["normal", "grid"]
+			}
+		}
+	},
+
 	"css-overflow-3": {
 		"title": "CSS Overflow Module Level 3",
 		"links": {
@@ -4472,37 +4503,6 @@ window.Specs = {
 					"dev": "#sizing-values"
 				},
 				"tests": ["stretch", "fit-content", "contain"]
-			}
-		}
-	},
-
-	"css-nav-1": {
-		"title": "CSS Spatial Navigation Level 1",
-		"links": {
-			"tr": "css-nav-1",
-			"dev": "css-nav-1"
-		},
-		"properties": {
-			"spatial-navigation-action": {
-				"links": {
-					"tr": "#css-property-spatialnavigationaction",
-					"dev": "#css-property-spatialnavigationaction"
-				},
-				"tests": ["auto", "focus", "scroll"]
-			},
-			"spatial-navigation-contain": {
-				"links": {
-					"tr": "#container",
-					"dev": "#container"
-				},
-				"tests": ["auto", "contain"]
-			},
-			"spatial-navigation-function": {
-				"links": {
-					"tr": "#css-property-spatialnavigationfunction",
-					"dev": "#css-property-spatialnavigationfunction"
-				},
-				"tests": ["normal", "grid"]
 			}
 		}
 	},
