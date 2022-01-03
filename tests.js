@@ -3689,35 +3689,60 @@ window.Specs = {
 		"properties": {
 			"position": {
 				"links": {
-					"tr": "#position",
-					"dev": "#position"
+					"tr": "#position-property",
+					"dev": "#position-property"
 				},
 				"tests": ["sticky"]
 			},
-			"inset-before": {
+			"inset": {
 				"links": {
-					"dev": "#logical-box-offsets-beaso"
+					"tr": "#inset-shorthands",
+					"dev": "#inset-shorthands"
+				},
+				"tests": ["auto", "10px", "50%", "10px 5%", "10px 5% 20px", "10px 5% 20px 10%"]
+			},
+			"inset-block": {
+				"links": {
+					"tr": "#inset-shorthands",
+					"dev": "#inset-shorthands"
+				},
+				"tests": ["auto", "10px", "50%", "10px 5%"]
+			},
+			"inset-inline": {
+				"links": {
+					"tr": "#inset-shorthands",
+					"dev": "#inset-shorthands"
+				},
+				"tests": ["auto", "10px", "50%", "10px 5%"]
+			},
+			"inset-block-start": {
+				"links": {
+					"tr": "#insets",
+					"dev": "#insets"
 				},
 				"tests": ["auto", "10px", "50%"]
 			},
-			"inset-after": {
+			"inset-block-end": {
 				"links": {
-					"dev": "#logical-box-offsets-beaso"
+					"tr": "#insets",
+					"dev": "#insets"
 				},
 				"tests": ["auto", "10px", "50%"]
 			},
-			"inset-start": {
+			"inset-inline-start": {
 				"links": {
-					"dev": "#logical-box-offsets-beaso"
+					"tr": "#insets",
+					"dev": "#insets"
 				},
 				"tests": ["auto", "10px", "50%"]
 			},
-			"inset-end": {
+			"inset-inline-end": {
 				"links": {
-					"dev": "#logical-box-offsets-beaso"
+					"tr": "#insets",
+					"dev": "#insets"
 				},
 				"tests": ["auto", "10px", "50%"]
-			}
+			},
 		}
 	},
 
