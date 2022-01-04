@@ -4605,7 +4605,7 @@ window.Specs = {
 			},
 			"voice-balance": {
 				"links": {
-					"tr": "#<mixing-props-voice-balance",
+					"tr": "#mixing-props-voice-balance",
 					"dev": "#mixing-props-voice-balance"
 				},
 				"tests": ["20.4", "left", "center", "right", "leftwards", "rightwards"]
@@ -4663,8 +4663,8 @@ window.Specs = {
 			},
 			"voice-volume": {
 				"links": {
-					"tr": "#voice-props-voice-volume",
-					"dev": "#voice-props-voice-volume"
+					"tr": "#mixing-props-voice-volume",
+					"dev": "#mixing-props-voice-volume"
 				},
 				"tests": ["silent", "x-soft", "soft", "medium", "loud", "x-loud", "20dB", "loud -10dB"]
 			}
