@@ -419,6 +419,8 @@ function runTests(filter = '') {
 		// Filter list of specifications
 		if (filter === 'stable' && Specs[spec]?.status?.stability !== 'stable') {
 			continue;
+		} else if (filter === 'experimental' && Specs[spec]?.status?.stability === 'stable') {
+			continue;
 		} else if (Number(filter) > 0) {
 			if (Specs[spec]?.status?.['first-snapshot'] === undefined) {
 				continue;
