@@ -412,7 +412,6 @@ function resetOutput() {
 function runTests(filter = '') {
 	let specs = [];
 	let timeBefore = +new Date;
-	let duration = 0;
 
 	let removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
 
@@ -450,10 +449,6 @@ function runTests(filter = '') {
 	specs.forEach(spec => {
 		// Run tests
 		new Test(spec);
-
-		// Count test duration
-		duration += +new Date - timeBefore;
-		timeBefore = +new Date;
 
 		// Output current score
 		ele('score').textContent = mainScore + '';
