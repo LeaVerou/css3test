@@ -446,16 +446,14 @@ function runTests(filter = '') {
 		return a.title.localeCompare(b.title);
 	});
 
-	specs.forEach(spec => {
-		// Run tests
-		new Test(spec);
+	// Run tests
+	specs.forEach(spec => new Test(spec));
 
-		// Output current score
-		ele('score').textContent = mainScore + '';
-		ele('passedTests').textContent = ~~mainScore.passedTests;
-		ele('totalTests').textContent = mainScore.totalTests;
-		ele('total').textContent = mainScore.total;
-	});
+	// Output score
+	ele('score').textContent = mainScore + '';
+	ele('passedTests').textContent = ~~mainScore.passedTests;
+	ele('totalTests').textContent = mainScore.totalTests;
+	ele('total').textContent = mainScore.total;
 
 	// Display time taken
 	ele('timeTaken').textContent = +new Date - timeBefore + 'ms';
