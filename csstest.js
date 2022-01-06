@@ -417,19 +417,19 @@ function runTests(filter = '') {
 
 	for (let spec in Specs) {
 		// Filter list of specifications
-		if (filter === 'stable' && Specs[spec]?.status?.stability !== 'stable') {
+		if (filter === 'stable' && Specs[spec].status && Specs[spec].status.stability !== 'stable') {
 			continue;
-		} else if (filter === 'experimental' && Specs[spec]?.status?.stability === 'stable') {
+		} else if (filter === 'experimental' && Specs[spec].status && Specs[spec].status.stability === 'stable') {
 			continue;
 		} else if (Number(filter) > 0) {
-			if (Specs[spec]?.status?.['first-snapshot'] === undefined) {
+			if (!Specs[spec].status || Specs[spec].status['first-snapshot'] === undefined) {
 				continue;
 			}
 
 			const snapshot = Number(filter);
 			if (
 				Specs[spec].status['first-snapshot'] > snapshot ||
-				Specs[spec]?.status?.['last-snapshot'] < snapshot
+				(Specs[spec].status && Specs[spec].status['last-snapshot'] < snapshot)
 			) {
 				continue;
 			}
