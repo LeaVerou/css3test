@@ -413,9 +413,9 @@ function runTests(filter = '') {
 	let specs = [];
 	let timeBefore = +new Date;
 
-	let removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
+	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
 
-	for (let spec in Specs) {
+	for (var spec in Specs) {
 		// Filter list of specifications
 		if (filter === 'stable' && Specs[spec].status && Specs[spec].status.stability !== 'stable') {
 			continue;
