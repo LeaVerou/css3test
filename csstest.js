@@ -413,7 +413,7 @@ function runTests(filter = '') {
 	var specs = [];
 	var timeBefore = +new Date;
 
-	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
+	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS(?! 2)|Module)\b)( *)/g;
 
 	for (var spec in Specs) {
 		// Filter list of specifications

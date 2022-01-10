@@ -54,6 +54,800 @@ window.Specs = {
 		}
 	},
 
+	"css2": {
+		"title": "Cascading Style Sheets Level 2 Revision 1",
+		"links": {
+			"tr": "CSS2/",
+			"dev": "css2/"
+		},
+		"properties": {
+			"background-attachment": {
+				"links": {
+					"tr": "colors.html#propdef-background-attachment",
+					"dev": "#propdef-background-attachment"
+				},
+				tests: ["scroll", "fixed"]
+			},
+			"background-color": {
+				"links": {
+					"tr": "colors.html#propdef-background-color",
+					"dev": "#propdef-background-color"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"background-image": {
+				"links": {
+					"tr": "colors.html#propdef-background-image",
+					"dev": "#propdef-background-image"
+				},
+				tests: ["none", "url('image.png')", "url(image.png)"]
+			},
+			"background-position": {
+				"links": {
+					"tr": "colors.html#propdef-background-position",
+					"dev": "#propdef-background-position"
+				},
+				tests: [
+					"10% 100px", "100px center", "center 10%", "left", "center",
+					"right", "top", "bottom", "left center", "center bottom"
+				]
+			},
+			"background-repeat": {
+				"links": {
+					"tr": "colors.html#propdef-background-repeat",
+					"dev": "#propdef-background-repeat"
+				},
+				tests: ["repeat", "repeat-x", "repeat-y", "no-repeat"]
+			},
+			"background": {
+				"links": {
+					"tr": "colors.html#propdef-background",
+					"dev": "#propdef-background"
+				},
+				tests: [
+					"none", "black", "url('image.png')", "repeat-x", "fixed", "10% center",
+					"#ffffff url('image.png')", "url(image.png) repeat-y", "scroll center 100px"
+				]
+			},
+			"border-collapse": {
+				"links": {
+					"tr": "tables.html#propdef-border-collapse",
+					"dev": "#propdef-border-collapse"
+				},
+				tests: ["collapse", "separate"]
+			},
+			"border-color": {
+				"links": {
+					"tr": "box.html#propdef-border-color",
+					"dev": "#border-color-properties"
+				},
+				tests: [
+					"black", "#ff0000 rgb(0, 255, 0)",
+					"rgb(0%, 0%, 100%) #0f0 transparent",
+					"red green blue yellow"
+				]
+			},
+			"border-spacing": {
+				"links": {
+					"tr": "tables.html#propdef-border-spacing",
+					"dev": "#propdef-border-spacing"
+				},
+				tests: ["10px", "1em 0.5cm"]
+			},
+			"border-style": {
+				"links": {
+					"tr": "box.html#border-style-properties",
+					"dev": "#border-style-properties"
+				},
+				tests: [
+					"none", "none dashed", "none dashed dotted", "none dashed dotted solid"
+				]
+			},
+			"border-top": {
+				"links": {
+					"tr": "box.html#border-shorthand-properties",
+					"dev": "#border-shorthand-properties"
+				},
+				tests: [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
+				]
+			},
+			"border-right": {
+				"links": {
+					"tr": "box.html#border-shorthand-properties",
+					"dev": "#border-shorthand-properties"
+				},
+				tests: [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
+				]
+			},
+			"border-bottom": {
+				"links": {
+					"tr": "box.html#border-shorthand-properties",
+					"dev": "#border-shorthand-properties"
+				},
+				tests: [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
+				]
+			},
+			"border-left": {
+				"links": {
+					"tr": "box.html#border-shorthand-properties",
+					"dev": "#border-shorthand-properties"
+				},
+				tests: [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
+				]
+			},
+			"border-top-color": {
+				"links": {
+					"tr": "box.html#border-color-properties",
+					"dev": "#border-color-properties"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"border-right-color": {
+				"links": {
+					"tr": "box.html#border-color-properties",
+					"dev": "#border-color-properties"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"border-bottom-color": {
+				"links": {
+					"tr": "box.html#border-color-properties",
+					"dev": "#border-color-properties"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"border-left-color": {
+				"links": {
+					"tr": "box.html#border-color-properties",
+					"dev": "#border-color-properties"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"border-top-style": {
+				"links": {
+					"tr": "box.html#border-style-properties",
+					"dev": "#border-style-properties"
+				},
+				tests: [
+					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
+					"ridge", "inset", "outset"
+				]
+			},
+			"border-right-style": {
+				"links": {
+					"tr": "box.html#border-style-properties",
+					"dev": "#border-style-properties"
+				},
+				tests: [
+					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
+					"ridge", "inset", "outset"
+				]
+			},
+			"border-bottom-style": {
+				"links": {
+					"tr": "box.html#border-style-properties",
+					"dev": "#border-style-properties"
+				},
+				tests: [
+					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
+					"ridge", "inset", "outset"
+				]
+			},
+			"border-left-style": {
+				"links": {
+					"tr": "box.html#border-style-properties",
+					"dev": "#border-style-properties"
+				},
+				tests: [
+					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
+					"ridge", "inset", "outset"
+				]
+			},
+			"border-top-width": {
+				"links": {
+					"tr": "box.html#border-width-properties",
+					"dev": "#border-width-properties"
+				},
+				tests: ["thin", "medium", "thick", "5px"]
+			},
+			"border-right-width": {
+				"links": {
+					"tr": "box.html#border-width-properties",
+					"dev": "#border-width-properties"
+				},
+				tests: ["thin", "medium", "thick", "5px"]
+			},
+			"border-bottom-width": {
+				"links": {
+					"tr": "box.html#border-width-properties",
+					"dev": "#border-width-properties"
+				},
+				tests: ["thin", "medium", "thick", "5px"]
+			},
+			"border-left-width": {
+				"links": {
+					"tr": "box.html#border-width-properties",
+					"dev": "#border-width-properties"
+				},
+				tests: ["thin", "medium", "thick", "5px"]
+			},
+			"border-width": {
+				"links": {
+					"tr": "box.html#border-width-properties",
+					"dev": "#border-width-properties"
+				},
+				tests: [
+					"thin", "thin medium", "thin medium thick", "thin medium thick 5px"
+				]
+			},
+			"border": {
+				"links": {
+					"tr": "box.html#border-shorthand-properties",
+					"dev": "#border-shorthand-properties"
+				},
+				tests: [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "rgb(100%, 50%, 50%) double 0.8mm"
+				]
+			},
+			"bottom": {
+				"links": {
+					"tr": "visuren.html#position-props",
+					"dev": "#position-props"
+				},
+				tests: ["auto", "100px", "10%"]
+			},
+			"caption-side": {
+				"links": {
+					"tr": "tables.html#caption-position",
+					"dev": "#caption-position"
+				},
+				tests: ["top", "bottom"]
+			},
+			"clear": {
+				"links": {
+					"tr": "#clear",
+					"dev": "#clear"
+				},
+				tests: ["none", "left", "right", "both"]
+			},
+			"clip": {
+				"links": {
+					"tr": "visuren.html#flow-control",
+					"dev": "#flow-control"
+				},
+				tests: ["auto", "rect(1px, 10em, 3ex, 0.2mm)"]
+			},
+			"color": {
+				"links": {
+					"tr": "colors.html#colors",
+					"dev": "#colors"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"content": {
+				"links": {
+					"tr": "generate.html#content",
+					"dev": "#content"
+				},
+				tests: [
+					"normal", "none", "\"content\"", "'content'", "url(image.png)", "attr(x)",
+					"open-quote", "close-quote", "no-open-quote", "no-close-quote",
+					"open-quote close-quote", "\"content\" url(image.png)"
+				]
+			},
+			"counter-increment": {
+				"links": {
+					"tr": "generate.html#counters",
+					"dev": "#counters"
+				},
+				tests: [
+					"none", "example-counter 1", "example-counter1 2 example-counter2"
+				]
+			},
+			"counter-reset": {
+				"links": {
+					"tr": "generate.html#counters",
+					"dev": "#counters"
+				},
+				tests: [
+					"none", "example-counter 1", "example-counter1 2 example-counter2"
+				]
+			},
+			"cursor": {
+				"links": {
+					"tr": "ui.html#cursor-props",
+					"dev": "#cursor-props"
+				},
+				tests: [
+					"auto", "crosshair", "default", "pointer", "move", "e-resize",
+					"ne-resize", "nw-resize", "n-resize", "se-resize", "sw-resize",
+					"s-resize", "w-resize", "text", "wait", "help", "progress",
+					"url(cursor.png), auto", "url(cursor.svg), url(cursor.png), pointer"
+				]
+			},
+			"direction": {
+				"links": {
+					"tr": "visuren.html#propdef-direction",
+					"dev": "#propdef-direction"
+				},
+				tests: ["ltr", "rtl"]
+			},
+			"display": {
+				"links": {
+					"tr": "visuren.html#display-prop",
+					"dev": "#display-prop"
+				},
+				tests: [
+					"none", "inline", "block", "list-item", "inline-block", "table",
+					"inline-table", "table-row-group", "table-header-group",
+					"table-footer-group", "table-row", "table-column-group",
+					"table-column", "table-cell", "table-caption"
+				]
+			},
+			"empty-cells": {
+				"links": {
+					"tr": "tables.html#empty-cells",
+					"dev": "#empty-cells"
+				},
+				tests: ["show", "hide"]
+			},
+			"float": {
+				"links": {
+					"tr": "visuren.html#float-position",
+					"dev": "#float-position"
+				},
+				tests: ["none", "left", "right"]
+			},
+			"font-family": {
+				"links": {
+					"tr": "fonts.html#font-family-prop",
+					"dev": "#font-family-prop"
+				},
+				tests: [
+					"Arial", "\"Helvetica\"", "'Some font'", "serif", "sans-serif",
+					"cursive", "fantasy", "monospace", "'Some font', Arial, sans-serif"
+				]
+			},
+			"font-size": {
+				"links": {
+					"tr": "fonts.html#font-size-props",
+					"dev": "#font-size-props"
+				},
+				tests: [
+					"xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large",
+					"larger", "smaller", "1.5em", "80%"
+				]
+			},
+			"font-style": {
+				"links": {
+					"tr": "fonts.html#font-styling",
+					"dev": "#font-styling"
+				},
+				tests: ["normal", "italic", "oblique"]
+			},
+			"font-variant": {
+				"links": {
+					"tr": "fonts.html#small-caps",
+					"dev": "#small-caps"
+				},
+				tests: ["normal", "small-caps"]
+			},
+			"font-weight": {
+				"links": {
+					"tr": "fonts.html#font-boldness",
+					"dev": "#font-boldness"
+				},
+				tests: [
+					"normal", "bold", "bolder", "lighter", "100", "200", "300", "400", "500",
+					"600", "700", "800", "900"
+				]
+			},
+			"font": {
+				"links": {
+					"tr": "fonts.html#font-shorthand",
+					"dev": "#font-shorthand"
+				},
+				tests: [
+					"caption", "icon", "menu", "message-box", "small-caption", "status-bar",
+					"2em Arial", "italic 2em Arial", "small-caps 2em Arial", "bold 2em Arial",
+					"italic 2em \'Custom font\', Arial, sans-serif", "small-caps 2em Arial",
+					"bolder 2em Arial", "italic 200 2em Arial", "2em / 2 Arial"
+				]
+			},
+			"height": {
+				"links": {
+					"tr": "visudet.html#the-height-property",
+					"dev": "#the-height-property"
+				},
+				tests: ["auto", "100px", "10%"]
+			},
+			"left": {
+				"links": {
+					"tr": "visuren.html#position-props",
+					"dev": "#position-props"
+				},
+				tests: ["auto", "100px", "10%"]
+			},
+			"letter-spacing": {
+				"links": {
+					"tr": "text.html#propdef-letter-spacing",
+					"dev": "#propdef-letter-spacing"
+				},
+				tests: ["normal", "10px"]
+			},
+			"line-height": {
+				"links": {
+					"tr": "visudet.html#propdef-line-height",
+					"dev": "#propdef-line-height"
+				},
+				tests: ["normal", "2", "2em", "150%"]
+			},
+			"list-style-image": {
+				"links": {
+					"tr": "generate.html#propdef-list-style-image",
+					"dev": "#propdef-list-style-image"
+				},
+				tests: ["none", "url(image.png)"]
+			},
+			"list-style-position": {
+				"links": {
+					"tr": "generate.html#propdef-list-style-position",
+					"dev": "#propdef-list-style-position"
+				},
+				tests: ["inside", "outside"]
+			},
+			"list-style-type": {
+				"links": {
+					"tr": "generate.html#propdef-list-style-type",
+					"dev": "#propdef-list-style-type"
+				},
+				tests: [
+					"disc", "circle", "square", "decimal", "decimal-leading-zero",
+					"lower-roman", "upper-roman", "lower-greek", "lower-latin", "upper-latin",
+					"armenian", "georgian", "lower-alpha", "upper-alpha", "none"
+				]
+			},
+			"list-style": {
+				"links": {
+					"tr": "generate.html#propdef-list-style",
+					"dev": "#propdef-list-style"
+				},
+				tests: [
+					"disc", "inside", "url('image.png')", "circle outside",
+					"square url(image.png)", "decimal inside url(image.png)"
+				]
+			},
+			"margin-right": {
+				"links": {
+					"tr": "box.html#propdef-margin-right",
+					"dev": "#propdef-margin-right"
+				},
+				tests: ["auto", "10px", "5%"]
+			},
+			"margin-left": {
+				"links": {
+					"tr": "box.html#propdef-margin-left",
+					"dev": "#propdef-margin-left"
+				},
+				tests: ["auto", "10px", "5%"]
+			},
+			"margin-top": {
+				"links": {
+					"tr": "box.html#propdef-margin-top",
+					"dev": "#propdef-margin-top"
+				},
+				tests: ["auto", "10px", "5%"]
+			},
+			"margin-bottom": {
+				"links": {
+					"tr": "box.html#propdef-margin-bottom",
+					"dev": "#propdef-margin-bottom"
+				},
+				tests: ["auto", "10px", "5%"]
+			},
+			"margin": {
+				"links": {
+					"tr": "box.html#propdef-margin",
+					"dev": "#propdef-margin"
+				},
+				tests: [
+					"10px", "10px 5%", "10px 5px auto", "10px 5px auto 1em"
+				]
+			},
+			"max-height": {
+				"links": {
+					"tr": "visudet.html#min-max-heights",
+					"dev": "#min-max-heights"
+				},
+				tests: ["none", "100px", "80%"]
+			},
+			"max-width": {
+				"links": {
+					"tr": "visudet.html#min-max-widths",
+					"dev": "#min-max-widths"
+				},
+				tests: ["none", "100px", "80%"]
+			},
+			"min-height": {
+				"links": {
+					"tr": "visudet.html#min-max-heights",
+					"dev": "#min-max-heights"
+				},
+				tests: ["100px", "10%"]
+			},
+			"min-width": {
+				"links": {
+					"tr": "visudet.html#min-max-widths",
+					"dev": "#min-max-widths"
+				},
+				tests: ["100px", "10%"]
+			},
+			"orphans": {
+				"links": {
+					"tr": "page.html#break-inside",
+					"dev": "#break-inside"
+				},
+				tests: ["1", "2"]
+			},
+			"outline-color": {
+				"links": {
+					"tr": "ui.html#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				tests: [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"outline-style": {
+				"links": {
+					"tr": "ui.html#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				tests: [
+					"none", "dotted", "dashed", "solid", "double", "groove",
+					"ridge", "inset", "outset"
+				]
+			},
+			"outline-width": {
+				"links": {
+					"tr": "ui.html#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				tests: ["thin", "medium", "thick", "5px"]
+			},
+			"outline": {
+				"links": {
+					"tr": "ui.html#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				tests: [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
+				]
+			},
+			"overflow": {
+				"links": {
+					"tr": "visufx.html#overflow",
+					"dev": "#overflow①"
+				},
+				tests: ["auto", "visible", "hidden", "scroll"]
+			},
+			"padding-top": {
+				"links": {
+					"tr": "box.html#padding-properties",
+					"dev": "#padding-properties"
+				},
+				tests: ["10px", "5%"]
+			},
+			"padding-right": {
+				"links": {
+					"tr": "box.html#padding-properties",
+					"dev": "#padding-properties"
+				},
+				tests: ["10px", "5%"]
+			},
+			"padding-bottom": {
+				"links": {
+					"tr": "box.html#padding-properties",
+					"dev": "#padding-properties"
+				},
+				tests: ["10px", "5%"]
+			},
+			"padding-left": {
+				"links": {
+					"tr": "box.html#padding-properties",
+					"dev": "#padding-properties"
+				},
+				tests: ["10px", "5%"]
+			},
+			"padding": {
+				"links": {
+					"tr": "box.html#padding-properties",
+					"dev": "#padding-properties"
+				},
+				tests: [
+					"10px", "10px 5%", "10px 5% 0.5em", "10px 5% 0.5em 0.8mm"
+				]
+			},
+			"page-break-after": {
+				"links": {
+					"tr": "page.html#page-break-props",
+					"dev": "#page-break-props"
+				},
+				tests: ["auto", "always", "avoid", "left", "right"]
+			},
+			"page-break-before": {
+				"links": {
+					"tr": "page.html#page-break-props",
+					"dev": "#page-break-props"
+				},
+				tests: ["auto", "always", "avoid", "left", "right"]
+			},
+			"page-break-inside": {
+				"links": {
+					"tr": "page.html#page-break-props",
+					"dev": "#page-break-props"
+				},
+				tests: ["auto", "avoid"]
+			},
+			"position": {
+				"links": {
+					"tr": "visuren.html#choose-position",
+					"dev": "#choose-position"
+				},
+				tests: ["static", "relative", "absolute", "fixed"]
+			},
+			"quotes": {
+				"links": {
+					"tr": "generate.html#quotes-specify",
+					"dev": "#quotes-specify"
+				},
+				tests: ["none", "\"»\" \"«\"", "'\"' '\"' \"'\" \"'\""]
+			},
+			"right": {
+				"links": {
+					"tr": "visuren.html#position-props",
+					"dev": "#position-props"
+				},
+				tests: ["auto", "100px", "10%"]
+			},
+			"table-layout": {
+				"links": {
+					"tr": "tables.html#width-layout",
+					"dev": "#width-layout"
+				},
+				tests: ["auto", "fixed"]
+			},
+			"text-align": {
+				"links": {
+					"tr": "text.html#alignment-prop",
+					"dev": "#alignment-prop"
+				},
+				tests: ["left", "right", "center", "justify"]
+			},
+			"text-decoration": {
+				"links": {
+					"tr": "text.html#lining-striking-props",
+					"dev": "#lining-striking-props"
+				},
+				tests: [
+					"none", "underline", "overline", "line-through", "blink",
+					"underline overline", "underline overline line-through"
+				]
+			},
+			"text-indent": {
+				"links": {
+					"tr": "text.html#indentation-prop",
+					"dev": "#indentation-prop"
+				},
+				tests: ["10px", "10%"]
+			},
+			"text-transform": {
+				"links": {
+					"tr": "text.html#caps-prop",
+					"dev": "#caps-prop"
+				},
+				tests: ["none", "capitalize", "uppercase", "lowercase"]
+			},
+			"top": {
+				"links": {
+					"tr": "visuren.html#position-props",
+					"dev": "#position-props"
+				},
+				tests: ["100px", "10%", "auto"]
+			},
+			"unicode-bidi": {
+				"links": {
+					"tr": "visuren.html#propdef-unicode-bidi",
+					"dev": "#propdef-unicode-bidi"
+				},
+				tests: ["normal", "embed", "bidi-override"]
+			},
+			"vertical-align": {
+				"links": {
+					"tr": "visudet.html#propdef-vertical-align",
+					"dev": "#propdef-vertical-align"
+				},
+				tests: [
+					"baseline", "sub", "super", "top", "text-top", "middle", "bottom",
+					"text-bottom", "10px", "10%"
+				]
+			},
+			"visibility": {
+				"links": {
+					"tr": "visufx.html#visibility",
+					"dev": "#visibility"
+				},
+				tests: ["visible", "hidden", "collapse"]
+			},
+			"white-space": {
+				"links": {
+					"tr": "text.html#white-space-prop",
+					"dev": "#white-space-prop"
+				},
+				tests: ["normal", "pre", "nowrap", "pre-wrap", "pre-line"]
+			},
+			"widows": {
+				"links": {
+					"tr": "page.html#break-inside",
+					"dev": "#break-inside"
+				},
+				tests: ["1", "2"]
+			},
+			"width": {
+				"links": {
+					"tr": "visudet.html#the-width-property",
+					"dev": "#the-width-property"
+				},
+				tests: ["auto", "100px", "10%"]
+			},
+			"word-spacing": {
+				"links": {
+					"tr": "text.html#propdef-word-spacing",
+					"dev": "#propdef-word-spacing"
+				},
+				tests: ["normal", "10px"]
+			},
+			"z-index": {
+				"links": {
+					"tr": "visuren.html#z-index",
+					"dev": "#z-index"
+				},
+				tests: [
+					"auto", "1", "-1"
+				]
+			}
+		}
+	},
+
 	"css-align-3": {
 		"title": "CSS Box Alignment Module Level 3",
 		"links": {
@@ -513,20 +1307,6 @@ window.Specs = {
 					"dev": "#break-decoration"
 				},
 				"tests": ["slice", "clone"]
-			},
-			"orphans": {
-				"links": {
-					"tr": "#widows-orphans",
-					"dev": "#widows-orphans"
-				},
-				"tests": ["1", "2"]
-			},
-			"widows": {
-				"links": {
-					"tr": "#widows-orphans",
-					"dev": "#widows-orphans"
-				},
-				"tests": ["1", "2"]
 			}
 		}
 	},
@@ -721,14 +1501,6 @@ window.Specs = {
 				},
 				"tests": "rgba(0,0,0,.5)"
 			},
-			"#RGB": {
-				"links": {
-					"tr": "#rgb-color",
-					"dev": "#rgb-color",
-					"mdn": "color_value"
-				},
-				"tests": ["#F06", "#FF0066"]
-			},
 			"hsl": {
 				"links": {
 					"tr": "#hsl-color",
@@ -744,14 +1516,6 @@ window.Specs = {
 					"mdn": "color_value/hsla()"
 				},
 				"tests": "hsl(0,0%,0%,.5)"
-			},
-			"transparent": {
-				"links": {
-					"tr": "#transparent",
-					"dev": "#transparent",
-					"mdn": "color_value"
-				},
-				"tests": "transparent"
 			},
 			"currentColor": {
 				"links": {
@@ -1929,7 +2693,7 @@ window.Specs = {
 					"dev": "#font-variant-prop"
 				},
 				"tests": [
-					"none", "normal", "all-petite-caps", "historical-forms", "super",
+					"none", "all-petite-caps", "historical-forms", "super",
 					"sub lining-nums contextual ruby",
 					"annotation(circled)",
 					"discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U)"
@@ -4960,7 +5724,7 @@ window.Specs = {
 					"tr": "#text-align-property",
 					"dev": "#text-align-property"
 				},
-				"tests": ["start", "end", "left", "right", "center", "justify", "match-parent", "justify-all"]
+				"tests": ["start", "end", "match-parent", "justify-all"]
 			},
 			"text-align-all": {
 				"links": {
@@ -5468,7 +6232,7 @@ window.Specs = {
 					"dev": "#cursor"
 				},
 				"tests": [
-					"url(foo.png) 2 2, auto", "default", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
+					"url(foo.png) 2 2, auto", "none", "context-menu", "cell", "vertical-text", "alias", "copy", "no-drop", "not-allowed",
 					"grab", "grabbing", "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "col-resize", "row-resize", "all-scroll", "zoom-in",
 					"zoom-out"
 				]
@@ -6038,19 +6802,12 @@ window.Specs = {
 			"first-snapshot": 2017
 		},
 		"properties": {
-			"direction": {
-				"links": {
-					"tr": "#direction",
-					"dev": "#direction"
-				},
-				"tests": ["ltr", "rtl"]
-			},
 			"unicode-bidi": {
 				"links": {
 					"tr": "#unicode-bidi",
 					"dev": "#unicode-bidi"
 				},
-				"tests": ["normal", "embed", "isolate", "bidi-override", "isolate-override", "plaintext"]
+				"tests": ["isolate", "isolate-override", "plaintext"]
 			},
 			"writing-mode": {
 				"links": {
