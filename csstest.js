@@ -410,8 +410,8 @@ function resetOutput() {
 }
 
 function runTests(filter = '') {
-	let specs = [];
-	let timeBefore = +new Date;
+	var specs = [];
+	var timeBefore = +new Date;
 
 	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
 
