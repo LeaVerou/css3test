@@ -60,6 +60,11 @@ window.Specs = {
 			"tr": "CSS2/box.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"border-color": {
 				"links": {
@@ -331,6 +336,11 @@ window.Specs = {
 			"tr": "CSS2/colors.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"background-attachment": {
 				"links": {
@@ -402,6 +412,11 @@ window.Specs = {
 			"tr": "CSS22/fonts.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"font-family": {
 				"links": {
@@ -467,6 +482,11 @@ window.Specs = {
 		"links": {
 			"tr": "CSS22/generate.html",
 			"dev": "css2/"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
 		},
 		"properties": {
 			"content": {
@@ -549,6 +569,11 @@ window.Specs = {
 			"tr": "CSS22/page.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"orphans": {
 				"links": {
@@ -594,6 +619,11 @@ window.Specs = {
 			"tr": "CSS22/tables.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"border-collapse": {
 				"links": {
@@ -638,6 +668,11 @@ window.Specs = {
 		"links": {
 			"tr": "CSS22/text.html",
 			"dev": "css2/"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
 		},
 		"properties": {
 			"letter-spacing": {
@@ -701,6 +736,11 @@ window.Specs = {
 			"tr": "CSS22/ui.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"cursor": {
 				"links": {
@@ -759,6 +799,11 @@ window.Specs = {
 		"links": {
 			"tr": "CSS22/visudet.html",
 			"dev": "css2/"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
 		},
 		"properties": {
 			"height": {
@@ -829,6 +874,11 @@ window.Specs = {
 			"tr": "CSS22/visufx.html",
 			"dev": "css2/"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
+		},
 		"properties": {
 			"clip": {
 				"links": {
@@ -859,6 +909,11 @@ window.Specs = {
 		"links": {
 			"tr": "CSS22/visuren.html",
 			"dev": "css2/"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 1998,
+			"last-snapshot": 1998
 		},
 		"properties": {
 			"bottom": {

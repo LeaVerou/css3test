@@ -433,6 +433,8 @@ function runTests(filter = '') {
 			) {
 				continue;
 			}
+		} else if (filter === '' && Specs[spec].status && Specs[spec].status['first-snapshot'] === 1998) {
+			continue;
 		}
 
 		specs.push({
