@@ -54,309 +54,427 @@ window.Specs = {
 		}
 	},
 
-	"css2": {
-		"title": "Cascading Style Sheets Level 2 Revision 1",
+	"css2-box": {
+		"title": "CSS 2 Box Model",
 		"links": {
-			"tr": "CSS2/",
+			"tr": "CSS2/box.html",
 			"dev": "css2/"
 		},
 		"properties": {
-			"background-attachment": {
-				"links": {
-					"tr": "colors.html#propdef-background-attachment",
-					"dev": "#propdef-background-attachment"
-				},
-				tests: ["scroll", "fixed"]
-			},
-			"background-color": {
-				"links": {
-					"tr": "colors.html#propdef-background-color",
-					"dev": "#propdef-background-color"
-				},
-				tests: [
-					"black", "#00f", "#000000", "rgb(255, 255, 255)",
-					"rgb(100%, 50%, 50%)", "transparent"
-				]
-			},
-			"background-image": {
-				"links": {
-					"tr": "colors.html#propdef-background-image",
-					"dev": "#propdef-background-image"
-				},
-				tests: ["none", "url('image.png')", "url(image.png)"]
-			},
-			"background-position": {
-				"links": {
-					"tr": "colors.html#propdef-background-position",
-					"dev": "#propdef-background-position"
-				},
-				tests: [
-					"10% 100px", "100px center", "center 10%", "left", "center",
-					"right", "top", "bottom", "left center", "center bottom"
-				]
-			},
-			"background-repeat": {
-				"links": {
-					"tr": "colors.html#propdef-background-repeat",
-					"dev": "#propdef-background-repeat"
-				},
-				tests: ["repeat", "repeat-x", "repeat-y", "no-repeat"]
-			},
-			"background": {
-				"links": {
-					"tr": "colors.html#propdef-background",
-					"dev": "#propdef-background"
-				},
-				tests: [
-					"none", "black", "url('image.png')", "repeat-x", "fixed", "10% center",
-					"#ffffff url('image.png')", "url(image.png) repeat-y", "scroll center 100px"
-				]
-			},
-			"border-collapse": {
-				"links": {
-					"tr": "tables.html#propdef-border-collapse",
-					"dev": "#propdef-border-collapse"
-				},
-				tests: ["collapse", "separate"]
-			},
 			"border-color": {
 				"links": {
-					"tr": "box.html#propdef-border-color",
+					"tr": "#propdef-border-color",
 					"dev": "#border-color-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "#ff0000 rgb(0, 255, 0)",
 					"rgb(0%, 0%, 100%) #0f0 transparent",
 					"red green blue yellow"
 				]
 			},
-			"border-spacing": {
-				"links": {
-					"tr": "tables.html#propdef-border-spacing",
-					"dev": "#propdef-border-spacing"
-				},
-				tests: ["10px", "1em 0.5cm"]
-			},
 			"border-style": {
 				"links": {
-					"tr": "box.html#border-style-properties",
+					"tr": "#border-style-properties",
 					"dev": "#border-style-properties"
 				},
-				tests: [
+				"tests": [
 					"none", "none dashed", "none dashed dotted", "none dashed dotted solid"
 				]
 			},
 			"border-top": {
 				"links": {
-					"tr": "box.html#border-shorthand-properties",
+					"tr": "#border-shorthand-properties",
 					"dev": "#border-shorthand-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
 				]
 			},
 			"border-right": {
 				"links": {
-					"tr": "box.html#border-shorthand-properties",
+					"tr": "#border-shorthand-properties",
 					"dev": "#border-shorthand-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
 				]
 			},
 			"border-bottom": {
 				"links": {
-					"tr": "box.html#border-shorthand-properties",
+					"tr": "#border-shorthand-properties",
 					"dev": "#border-shorthand-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
 				]
 			},
 			"border-left": {
 				"links": {
-					"tr": "box.html#border-shorthand-properties",
+					"tr": "#border-shorthand-properties",
 					"dev": "#border-shorthand-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
 				]
 			},
 			"border-top-color": {
 				"links": {
-					"tr": "box.html#border-color-properties",
+					"tr": "#border-color-properties",
 					"dev": "#border-color-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
 					"rgb(100%, 50%, 50%)", "transparent"
 				]
 			},
 			"border-right-color": {
 				"links": {
-					"tr": "box.html#border-color-properties",
+					"tr": "#border-color-properties",
 					"dev": "#border-color-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
 					"rgb(100%, 50%, 50%)", "transparent"
 				]
 			},
 			"border-bottom-color": {
 				"links": {
-					"tr": "box.html#border-color-properties",
+					"tr": "#border-color-properties",
 					"dev": "#border-color-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
 					"rgb(100%, 50%, 50%)", "transparent"
 				]
 			},
 			"border-left-color": {
 				"links": {
-					"tr": "box.html#border-color-properties",
+					"tr": "#border-color-properties",
 					"dev": "#border-color-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
 					"rgb(100%, 50%, 50%)", "transparent"
 				]
 			},
 			"border-top-style": {
 				"links": {
-					"tr": "box.html#border-style-properties",
+					"tr": "#border-style-properties",
 					"dev": "#border-style-properties"
 				},
-				tests: [
+				"tests": [
 					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
 					"ridge", "inset", "outset"
 				]
 			},
 			"border-right-style": {
 				"links": {
-					"tr": "box.html#border-style-properties",
+					"tr": "#border-style-properties",
 					"dev": "#border-style-properties"
 				},
-				tests: [
+				"tests": [
 					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
 					"ridge", "inset", "outset"
 				]
 			},
 			"border-bottom-style": {
 				"links": {
-					"tr": "box.html#border-style-properties",
+					"tr": "#border-style-properties",
 					"dev": "#border-style-properties"
 				},
-				tests: [
+				"tests": [
 					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
 					"ridge", "inset", "outset"
 				]
 			},
 			"border-left-style": {
 				"links": {
-					"tr": "box.html#border-style-properties",
+					"tr": "#border-style-properties",
 					"dev": "#border-style-properties"
 				},
-				tests: [
+				"tests": [
 					"none", "hidden", "dotted", "dashed", "solid", "double", "groove",
 					"ridge", "inset", "outset"
 				]
 			},
 			"border-top-width": {
 				"links": {
-					"tr": "box.html#border-width-properties",
+					"tr": "#border-width-properties",
 					"dev": "#border-width-properties"
 				},
-				tests: ["thin", "medium", "thick", "5px"]
+				"tests": ["thin", "medium", "thick", "5px"]
 			},
 			"border-right-width": {
 				"links": {
-					"tr": "box.html#border-width-properties",
+					"tr": "#border-width-properties",
 					"dev": "#border-width-properties"
 				},
-				tests: ["thin", "medium", "thick", "5px"]
+				"tests": ["thin", "medium", "thick", "5px"]
 			},
 			"border-bottom-width": {
 				"links": {
-					"tr": "box.html#border-width-properties",
+					"tr": "#border-width-properties",
 					"dev": "#border-width-properties"
 				},
-				tests: ["thin", "medium", "thick", "5px"]
+				"tests": ["thin", "medium", "thick", "5px"]
 			},
 			"border-left-width": {
 				"links": {
-					"tr": "box.html#border-width-properties",
+					"tr": "#border-width-properties",
 					"dev": "#border-width-properties"
 				},
-				tests: ["thin", "medium", "thick", "5px"]
+				"tests": ["thin", "medium", "thick", "5px"]
 			},
 			"border-width": {
 				"links": {
-					"tr": "box.html#border-width-properties",
+					"tr": "#border-width-properties",
 					"dev": "#border-width-properties"
 				},
-				tests: [
+				"tests": [
 					"thin", "thin medium", "thin medium thick", "thin medium thick 5px"
 				]
 			},
 			"border": {
 				"links": {
-					"tr": "box.html#border-shorthand-properties",
+					"tr": "#border-shorthand-properties",
 					"dev": "#border-shorthand-properties"
 				},
-				tests: [
+				"tests": [
 					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "rgb(100%, 50%, 50%) double 0.8mm"
 				]
 			},
-			"bottom": {
+			"margin-right": {
 				"links": {
-					"tr": "visuren.html#position-props",
-					"dev": "#position-props"
+					"tr": "#propdef-margin-right",
+					"dev": "#propdef-margin-right"
 				},
-				tests: ["auto", "100px", "10%"]
+				"tests": ["auto", "10px", "5%"]
 			},
-			"caption-side": {
+			"margin-left": {
 				"links": {
-					"tr": "tables.html#caption-position",
-					"dev": "#caption-position"
+					"tr": "#propdef-margin-left",
+					"dev": "#propdef-margin-left"
 				},
-				tests: ["top", "bottom"]
+				"tests": ["auto", "10px", "5%"]
 			},
-			"clear": {
+			"margin-top": {
 				"links": {
-					"tr": "#clear",
-					"dev": "#clear"
+					"tr": "#propdef-margin-top",
+					"dev": "#propdef-margin-top"
 				},
-				tests: ["none", "left", "right", "both"]
+				"tests": ["auto", "10px", "5%"]
 			},
-			"clip": {
+			"margin-bottom": {
 				"links": {
-					"tr": "visuren.html#flow-control",
-					"dev": "#flow-control"
+					"tr": "#propdef-margin-bottom",
+					"dev": "#propdef-margin-bottom"
 				},
-				tests: ["auto", "rect(1px, 10em, 3ex, 0.2mm)"]
+				"tests": ["auto", "10px", "5%"]
 			},
-			"color": {
+			"margin": {
 				"links": {
-					"tr": "colors.html#colors",
-					"dev": "#colors"
+					"tr": "#propdef-margin",
+					"dev": "#propdef-margin"
 				},
-				tests: [
+				"tests": [
+					"10px", "10px 5%", "10px 5px auto", "10px 5px auto 1em"
+				]
+			},
+			"padding-top": {
+				"links": {
+					"tr": "#padding-properties",
+					"dev": "#padding-properties"
+				},
+				"tests": ["10px", "5%"]
+			},
+			"padding-right": {
+				"links": {
+					"tr": "#padding-properties",
+					"dev": "#padding-properties"
+				},
+				"tests": ["10px", "5%"]
+			},
+			"padding-bottom": {
+				"links": {
+					"tr": "#padding-properties",
+					"dev": "#padding-properties"
+				},
+				"tests": ["10px", "5%"]
+			},
+			"padding-left": {
+				"links": {
+					"tr": "#padding-properties",
+					"dev": "#padding-properties"
+				},
+				"tests": ["10px", "5%"]
+			},
+			"padding": {
+				"links": {
+					"tr": "#padding-properties",
+					"dev": "#padding-properties"
+				},
+				"tests": [
+					"10px", "10px 5%", "10px 5% 0.5em", "10px 5% 0.5em 0.8mm"
+				]
+			}
+		}
+	},
+
+	"css2-colors": {
+		"title": "CSS 2 Colors and Backgrounds",
+		"links": {
+			"tr": "CSS2/colors.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"background-attachment": {
+				"links": {
+					"tr": "#propdef-background-attachment",
+					"dev": "#propdef-background-attachment"
+				},
+				"tests": ["scroll", "fixed"]
+			},
+			"background-color": {
+				"links": {
+					"tr": "#propdef-background-color",
+					"dev": "#propdef-background-color"
+				},
+				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
 					"rgb(100%, 50%, 50%)", "transparent"
 				]
 			},
+			"background-image": {
+				"links": {
+					"tr": "#propdef-background-image",
+					"dev": "#propdef-background-image"
+				},
+				"tests": ["none", "url('image.png')", "url(image.png)"]
+			},
+			"background-position": {
+				"links": {
+					"tr": "#propdef-background-position",
+					"dev": "#propdef-background-position"
+				},
+				"tests": [
+					"10% 100px", "100px center", "center 10%", "left", "center",
+					"right", "top", "bottom", "left center", "center bottom"
+				]
+			},
+			"background-repeat": {
+				"links": {
+					"tr": "#propdef-background-repeat",
+					"dev": "#propdef-background-repeat"
+				},
+				"tests": ["repeat", "repeat-x", "repeat-y", "no-repeat"]
+			},
+			"background": {
+				"links": {
+					"tr": "#propdef-background",
+					"dev": "#propdef-background"
+				},
+				"tests": [
+					"none", "black", "url('image.png')", "repeat-x", "fixed", "10% center",
+					"#ffffff url('image.png')", "url(image.png) repeat-y", "scroll center 100px"
+				]
+			},
+			"color": {
+				"links": {
+					"tr": "#colors",
+					"dev": "#colors"
+				},
+				"tests": [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			}
+		}
+	},
+
+	"css2-fonts": {
+		"title": "CSS 2 Fonts",
+		"links": {
+			"tr": "CSS22/fonts.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"font-family": {
+				"links": {
+					"tr": "#font-family-prop",
+					"dev": "#font-family-prop"
+				},
+				"tests": [
+					"Arial", "\"Helvetica\"", "'Some font'", "serif", "sans-serif",
+					"cursive", "fantasy", "monospace", "'Some font', Arial, sans-serif"
+				]
+			},
+			"font-size": {
+				"links": {
+					"tr": "#font-size-props",
+					"dev": "#font-size-props"
+				},
+				"tests": [
+					"xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large",
+					"larger", "smaller", "1.5em", "80%"
+				]
+			},
+			"font-style": {
+				"links": {
+					"tr": "#font-styling",
+					"dev": "#font-styling"
+				},
+				"tests": ["normal", "italic", "oblique"]
+			},
+			"font-variant": {
+				"links": {
+					"tr": "#small-caps",
+					"dev": "#small-caps"
+				},
+				"tests": ["normal", "small-caps"]
+			},
+			"font-weight": {
+				"links": {
+					"tr": "#font-boldness",
+					"dev": "#font-boldness"
+				},
+				"tests": [
+					"normal", "bold", "bolder", "lighter", "100", "200", "300", "400", "500",
+					"600", "700", "800", "900"
+				]
+			},
+			"font": {
+				"links": {
+					"tr": "#font-shorthand",
+					"dev": "#font-shorthand"
+				},
+				"tests": [
+					"caption", "icon", "menu", "message-box", "small-caption", "status-bar",
+					"2em Arial", "italic 2em Arial", "small-caps 2em Arial", "bold 2em Arial",
+					"italic 2em \'Custom font\', Arial, sans-serif", "small-caps 2em Arial",
+					"bolder 2em Arial", "italic 200 2em Arial", "2em / 2 Arial"
+				]
+			}
+		}
+	},
+
+	"css2-generate": {
+		"title": "CSS 2 Generated Content, Automatic Numbering, and Lists",
+		"links": {
+			"tr": "CSS22/generate.html",
+			"dev": "css2/"
+		},
+		"properties": {
 			"content": {
 				"links": {
-					"tr": "generate.html#content",
-					"dev": "#content"
+					"tr": "#content",
+					"dev": "#content①"
 				},
-				tests: [
+				"tests": [
 					"normal", "none", "\"content\"", "'content'", "url(image.png)", "attr(x)",
 					"open-quote", "close-quote", "no-open-quote", "no-close-quote",
 					"open-quote close-quote", "\"content\" url(image.png)"
@@ -364,171 +482,42 @@ window.Specs = {
 			},
 			"counter-increment": {
 				"links": {
-					"tr": "generate.html#counters",
+					"tr": "#counters",
 					"dev": "#counters"
 				},
-				tests: [
+				"tests": [
 					"none", "example-counter 1", "example-counter1 2 example-counter2"
 				]
 			},
 			"counter-reset": {
 				"links": {
-					"tr": "generate.html#counters",
+					"tr": "#counters",
 					"dev": "#counters"
 				},
-				tests: [
+				"tests": [
 					"none", "example-counter 1", "example-counter1 2 example-counter2"
 				]
 			},
-			"cursor": {
-				"links": {
-					"tr": "ui.html#cursor-props",
-					"dev": "#cursor-props"
-				},
-				tests: [
-					"auto", "crosshair", "default", "pointer", "move", "e-resize",
-					"ne-resize", "nw-resize", "n-resize", "se-resize", "sw-resize",
-					"s-resize", "w-resize", "text", "wait", "help", "progress",
-					"url(cursor.png), auto", "url(cursor.svg), url(cursor.png), pointer"
-				]
-			},
-			"direction": {
-				"links": {
-					"tr": "visuren.html#propdef-direction",
-					"dev": "#propdef-direction"
-				},
-				tests: ["ltr", "rtl"]
-			},
-			"display": {
-				"links": {
-					"tr": "visuren.html#display-prop",
-					"dev": "#display-prop"
-				},
-				tests: [
-					"none", "inline", "block", "list-item", "inline-block", "table",
-					"inline-table", "table-row-group", "table-header-group",
-					"table-footer-group", "table-row", "table-column-group",
-					"table-column", "table-cell", "table-caption"
-				]
-			},
-			"empty-cells": {
-				"links": {
-					"tr": "tables.html#empty-cells",
-					"dev": "#empty-cells"
-				},
-				tests: ["show", "hide"]
-			},
-			"float": {
-				"links": {
-					"tr": "visuren.html#float-position",
-					"dev": "#float-position"
-				},
-				tests: ["none", "left", "right"]
-			},
-			"font-family": {
-				"links": {
-					"tr": "fonts.html#font-family-prop",
-					"dev": "#font-family-prop"
-				},
-				tests: [
-					"Arial", "\"Helvetica\"", "'Some font'", "serif", "sans-serif",
-					"cursive", "fantasy", "monospace", "'Some font', Arial, sans-serif"
-				]
-			},
-			"font-size": {
-				"links": {
-					"tr": "fonts.html#font-size-props",
-					"dev": "#font-size-props"
-				},
-				tests: [
-					"xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large",
-					"larger", "smaller", "1.5em", "80%"
-				]
-			},
-			"font-style": {
-				"links": {
-					"tr": "fonts.html#font-styling",
-					"dev": "#font-styling"
-				},
-				tests: ["normal", "italic", "oblique"]
-			},
-			"font-variant": {
-				"links": {
-					"tr": "fonts.html#small-caps",
-					"dev": "#small-caps"
-				},
-				tests: ["normal", "small-caps"]
-			},
-			"font-weight": {
-				"links": {
-					"tr": "fonts.html#font-boldness",
-					"dev": "#font-boldness"
-				},
-				tests: [
-					"normal", "bold", "bolder", "lighter", "100", "200", "300", "400", "500",
-					"600", "700", "800", "900"
-				]
-			},
-			"font": {
-				"links": {
-					"tr": "fonts.html#font-shorthand",
-					"dev": "#font-shorthand"
-				},
-				tests: [
-					"caption", "icon", "menu", "message-box", "small-caption", "status-bar",
-					"2em Arial", "italic 2em Arial", "small-caps 2em Arial", "bold 2em Arial",
-					"italic 2em \'Custom font\', Arial, sans-serif", "small-caps 2em Arial",
-					"bolder 2em Arial", "italic 200 2em Arial", "2em / 2 Arial"
-				]
-			},
-			"height": {
-				"links": {
-					"tr": "visudet.html#the-height-property",
-					"dev": "#the-height-property"
-				},
-				tests: ["auto", "100px", "10%"]
-			},
-			"left": {
-				"links": {
-					"tr": "visuren.html#position-props",
-					"dev": "#position-props"
-				},
-				tests: ["auto", "100px", "10%"]
-			},
-			"letter-spacing": {
-				"links": {
-					"tr": "text.html#propdef-letter-spacing",
-					"dev": "#propdef-letter-spacing"
-				},
-				tests: ["normal", "10px"]
-			},
-			"line-height": {
-				"links": {
-					"tr": "visudet.html#propdef-line-height",
-					"dev": "#propdef-line-height"
-				},
-				tests: ["normal", "2", "2em", "150%"]
-			},
 			"list-style-image": {
 				"links": {
-					"tr": "generate.html#propdef-list-style-image",
+					"tr": "#propdef-list-style-image",
 					"dev": "#propdef-list-style-image"
 				},
-				tests: ["none", "url(image.png)"]
+				"tests": ["none", "url(image.png)"]
 			},
 			"list-style-position": {
 				"links": {
-					"tr": "generate.html#propdef-list-style-position",
+					"tr": "#propdef-list-style-position",
 					"dev": "#propdef-list-style-position"
 				},
-				tests: ["inside", "outside"]
+				"tests": ["inside", "outside"]
 			},
 			"list-style-type": {
 				"links": {
-					"tr": "generate.html#propdef-list-style-type",
+					"tr": "#propdef-list-style-type",
 					"dev": "#propdef-list-style-type"
 				},
-				tests: [
+				"tests": [
 					"disc", "circle", "square", "decimal", "decimal-leading-zero",
 					"lower-roman", "upper-roman", "lower-greek", "lower-latin", "upper-latin",
 					"armenian", "georgian", "lower-alpha", "upper-alpha", "none"
@@ -536,312 +525,423 @@ window.Specs = {
 			},
 			"list-style": {
 				"links": {
-					"tr": "generate.html#propdef-list-style",
+					"tr": "#propdef-list-style",
 					"dev": "#propdef-list-style"
 				},
-				tests: [
+				"tests": [
 					"disc", "inside", "url('image.png')", "circle outside",
 					"square url(image.png)", "decimal inside url(image.png)"
 				]
 			},
-			"margin-right": {
+			"quotes": {
 				"links": {
-					"tr": "box.html#propdef-margin-right",
-					"dev": "#propdef-margin-right"
+					"tr": "#quotes-specify",
+					"dev": "#quotes-specify"
 				},
-				tests: ["auto", "10px", "5%"]
-			},
-			"margin-left": {
-				"links": {
-					"tr": "box.html#propdef-margin-left",
-					"dev": "#propdef-margin-left"
-				},
-				tests: ["auto", "10px", "5%"]
-			},
-			"margin-top": {
-				"links": {
-					"tr": "box.html#propdef-margin-top",
-					"dev": "#propdef-margin-top"
-				},
-				tests: ["auto", "10px", "5%"]
-			},
-			"margin-bottom": {
-				"links": {
-					"tr": "box.html#propdef-margin-bottom",
-					"dev": "#propdef-margin-bottom"
-				},
-				tests: ["auto", "10px", "5%"]
-			},
-			"margin": {
-				"links": {
-					"tr": "box.html#propdef-margin",
-					"dev": "#propdef-margin"
-				},
-				tests: [
-					"10px", "10px 5%", "10px 5px auto", "10px 5px auto 1em"
-				]
-			},
-			"max-height": {
-				"links": {
-					"tr": "visudet.html#min-max-heights",
-					"dev": "#min-max-heights"
-				},
-				tests: ["none", "100px", "80%"]
-			},
-			"max-width": {
-				"links": {
-					"tr": "visudet.html#min-max-widths",
-					"dev": "#min-max-widths"
-				},
-				tests: ["none", "100px", "80%"]
-			},
-			"min-height": {
-				"links": {
-					"tr": "visudet.html#min-max-heights",
-					"dev": "#min-max-heights"
-				},
-				tests: ["100px", "10%"]
-			},
-			"min-width": {
-				"links": {
-					"tr": "visudet.html#min-max-widths",
-					"dev": "#min-max-widths"
-				},
-				tests: ["100px", "10%"]
-			},
+				"tests": ["none", "\"»\" \"«\"", "'\"' '\"' \"'\" \"'\""]
+			}
+		}
+	},
+
+	"css2-page": {
+		"title": "CSS 2 Paged Media",
+		"links": {
+			"tr": "CSS22/page.html",
+			"dev": "css2/"
+		},
+		"properties": {
 			"orphans": {
 				"links": {
-					"tr": "page.html#break-inside",
+					"tr": "#break-inside",
 					"dev": "#break-inside"
 				},
-				tests: ["1", "2"]
-			},
-			"outline-color": {
-				"links": {
-					"tr": "ui.html#dynamic-outlines",
-					"dev": "#dynamic-outlines"
-				},
-				tests: [
-					"black", "#00f", "#000000", "rgb(255, 255, 255)",
-					"rgb(100%, 50%, 50%)", "transparent"
-				]
-			},
-			"outline-style": {
-				"links": {
-					"tr": "ui.html#dynamic-outlines",
-					"dev": "#dynamic-outlines"
-				},
-				tests: [
-					"none", "dotted", "dashed", "solid", "double", "groove",
-					"ridge", "inset", "outset"
-				]
-			},
-			"outline-width": {
-				"links": {
-					"tr": "ui.html#dynamic-outlines",
-					"dev": "#dynamic-outlines"
-				},
-				tests: ["thin", "medium", "thick", "5px"]
-			},
-			"outline": {
-				"links": {
-					"tr": "ui.html#dynamic-outlines",
-					"dev": "#dynamic-outlines"
-				},
-				tests: [
-					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
-					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
-				]
-			},
-			"overflow": {
-				"links": {
-					"tr": "visufx.html#overflow",
-					"dev": "#overflow①"
-				},
-				tests: ["auto", "visible", "hidden", "scroll"]
-			},
-			"padding-top": {
-				"links": {
-					"tr": "box.html#padding-properties",
-					"dev": "#padding-properties"
-				},
-				tests: ["10px", "5%"]
-			},
-			"padding-right": {
-				"links": {
-					"tr": "box.html#padding-properties",
-					"dev": "#padding-properties"
-				},
-				tests: ["10px", "5%"]
-			},
-			"padding-bottom": {
-				"links": {
-					"tr": "box.html#padding-properties",
-					"dev": "#padding-properties"
-				},
-				tests: ["10px", "5%"]
-			},
-			"padding-left": {
-				"links": {
-					"tr": "box.html#padding-properties",
-					"dev": "#padding-properties"
-				},
-				tests: ["10px", "5%"]
-			},
-			"padding": {
-				"links": {
-					"tr": "box.html#padding-properties",
-					"dev": "#padding-properties"
-				},
-				tests: [
-					"10px", "10px 5%", "10px 5% 0.5em", "10px 5% 0.5em 0.8mm"
-				]
+				"tests": ["1", "2"]
 			},
 			"page-break-after": {
 				"links": {
-					"tr": "page.html#page-break-props",
+					"tr": "#page-break-props",
 					"dev": "#page-break-props"
 				},
-				tests: ["auto", "always", "avoid", "left", "right"]
+				"tests": ["auto", "always", "avoid", "left", "right"]
 			},
 			"page-break-before": {
 				"links": {
-					"tr": "page.html#page-break-props",
+					"tr": "#page-break-props",
 					"dev": "#page-break-props"
 				},
-				tests: ["auto", "always", "avoid", "left", "right"]
+				"tests": ["auto", "always", "avoid", "left", "right"]
 			},
 			"page-break-inside": {
 				"links": {
-					"tr": "page.html#page-break-props",
+					"tr": "#page-break-props",
 					"dev": "#page-break-props"
 				},
-				tests: ["auto", "avoid"]
+				"tests": ["auto", "avoid"]
 			},
-			"position": {
+			"widows": {
 				"links": {
-					"tr": "visuren.html#choose-position",
-					"dev": "#choose-position"
+					"tr": "#break-inside",
+					"dev": "#break-inside"
 				},
-				tests: ["static", "relative", "absolute", "fixed"]
+				"tests": ["1", "2"]
+			}
+		}
+	},
+
+	"css2-tables": {
+		"title": "CSS 2 Tables",
+		"links": {
+			"tr": "CSS22/tables.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"border-collapse": {
+				"links": {
+					"tr": "#propdef-border-collapse",
+					"dev": "#propdef-border-collapse"
+				},
+				"tests": ["collapse", "separate"]
 			},
-			"quotes": {
+			"border-spacing": {
 				"links": {
-					"tr": "generate.html#quotes-specify",
-					"dev": "#quotes-specify"
+					"tr": "#propdef-border-spacing",
+					"dev": "#propdef-border-spacing"
 				},
-				tests: ["none", "\"»\" \"«\"", "'\"' '\"' \"'\" \"'\""]
+				"tests": ["10px", "1em 0.5cm"]
 			},
-			"right": {
+			"caption-side": {
 				"links": {
-					"tr": "visuren.html#position-props",
-					"dev": "#position-props"
+					"tr": "#caption-position",
+					"dev": "#caption-position"
 				},
-				tests: ["auto", "100px", "10%"]
+				"tests": ["top", "bottom"]
+			},
+			"empty-cells": {
+				"links": {
+					"tr": "#empty-cells",
+					"dev": "#empty-cells"
+				},
+				"tests": ["show", "hide"]
 			},
 			"table-layout": {
 				"links": {
-					"tr": "tables.html#width-layout",
+					"tr": "#width-layout",
 					"dev": "#width-layout"
 				},
-				tests: ["auto", "fixed"]
+				"tests": ["auto", "fixed"]
+			}
+		}
+	},
+
+	"css2-text": {
+		"title": "CSS 2 Text",
+		"links": {
+			"tr": "CSS22/text.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"letter-spacing": {
+				"links": {
+					"tr": "#propdef-letter-spacing",
+					"dev": "#propdef-letter-spacing"
+				},
+				"tests": ["normal", "10px"]
 			},
 			"text-align": {
 				"links": {
-					"tr": "text.html#alignment-prop",
+					"tr": "#alignment-prop",
 					"dev": "#alignment-prop"
 				},
-				tests: ["left", "right", "center", "justify"]
+				"tests": ["left", "right", "center", "justify"]
 			},
 			"text-decoration": {
 				"links": {
-					"tr": "text.html#lining-striking-props",
+					"tr": "#lining-striking-props",
 					"dev": "#lining-striking-props"
 				},
-				tests: [
+				"tests": [
 					"none", "underline", "overline", "line-through", "blink",
 					"underline overline", "underline overline line-through"
 				]
 			},
 			"text-indent": {
 				"links": {
-					"tr": "text.html#indentation-prop",
+					"tr": "#indentation-prop",
 					"dev": "#indentation-prop"
 				},
-				tests: ["10px", "10%"]
+				"tests": ["10px", "10%"]
 			},
 			"text-transform": {
 				"links": {
-					"tr": "text.html#caps-prop",
+					"tr": "#caps-prop",
 					"dev": "#caps-prop"
 				},
-				tests: ["none", "capitalize", "uppercase", "lowercase"]
+				"tests": ["none", "capitalize", "uppercase", "lowercase"]
 			},
-			"top": {
+			"white-space": {
 				"links": {
-					"tr": "visuren.html#position-props",
-					"dev": "#position-props"
+					"tr": "#white-space-prop",
+					"dev": "#white-space-prop"
 				},
-				tests: ["100px", "10%", "auto"]
+				"tests": ["normal", "pre", "nowrap", "pre-wrap", "pre-line"]
 			},
-			"unicode-bidi": {
+			"word-spacing": {
 				"links": {
-					"tr": "visuren.html#propdef-unicode-bidi",
-					"dev": "#propdef-unicode-bidi"
+					"tr": "#propdef-word-spacing",
+					"dev": "#propdef-word-spacing"
 				},
-				tests: ["normal", "embed", "bidi-override"]
+				"tests": ["normal", "10px"]
+			}
+		}
+	},
+
+	"css2-ui": {
+		"title": "CSS 2 User Interface",
+		"links": {
+			"tr": "CSS22/ui.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"cursor": {
+				"links": {
+					"tr": "#cursor-props",
+					"dev": "#cursor-props"
+				},
+				"tests": [
+					"auto", "crosshair", "default", "pointer", "move", "e-resize",
+					"ne-resize", "nw-resize", "n-resize", "se-resize", "sw-resize",
+					"s-resize", "w-resize", "text", "wait", "help", "progress",
+					"url(cursor.png), auto", "url(cursor.svg), url(cursor.png), pointer"
+				]
+			},
+			"outline-color": {
+				"links": {
+					"tr": "#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				"tests": [
+					"black", "#00f", "#000000", "rgb(255, 255, 255)",
+					"rgb(100%, 50%, 50%)", "transparent"
+				]
+			},
+			"outline-style": {
+				"links": {
+					"tr": "#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				"tests": [
+					"none", "dotted", "dashed", "solid", "double", "groove",
+					"ridge", "inset", "outset"
+				]
+			},
+			"outline-width": {
+				"links": {
+					"tr": "#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				"tests": ["thin", "medium", "thick", "5px"]
+			},
+			"outline": {
+				"links": {
+					"tr": "#dynamic-outlines",
+					"dev": "#dynamic-outlines"
+				},
+				"tests": [
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
+				]
+			}
+		}
+	},
+
+	"css2-visudet": {
+		"title": "CSS 2 Visual Formatting Model",
+		"links": {
+			"tr": "CSS22/visudet.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"height": {
+				"links": {
+					"tr": "#the-height-property",
+					"dev": "#the-height-property"
+				},
+				"tests": ["auto", "100px", "10%"]
+			},
+			"line-height": {
+				"links": {
+					"tr": "#propdef-line-height",
+					"dev": "#propdef-line-height"
+				},
+				"tests": ["normal", "2", "2em", "150%"]
+			},
+			"max-height": {
+				"links": {
+					"tr": "#min-max-heights",
+					"dev": "#min-max-heights"
+				},
+				"tests": ["none", "100px", "80%"]
+			},
+			"max-width": {
+				"links": {
+					"tr": "#min-max-widths",
+					"dev": "#min-max-widths"
+				},
+				"tests": ["none", "100px", "80%"]
+			},
+			"min-height": {
+				"links": {
+					"tr": "#min-max-heights",
+					"dev": "#min-max-heights"
+				},
+				"tests": ["100px", "10%"]
+			},
+			"min-width": {
+				"links": {
+					"tr": "#min-max-widths",
+					"dev": "#min-max-widths"
+				},
+				"tests": ["100px", "10%"]
 			},
 			"vertical-align": {
 				"links": {
-					"tr": "visudet.html#propdef-vertical-align",
+					"tr": "#propdef-vertical-align",
 					"dev": "#propdef-vertical-align"
 				},
-				tests: [
+				"tests": [
 					"baseline", "sub", "super", "top", "text-top", "middle", "bottom",
 					"text-bottom", "10px", "10%"
 				]
 			},
-			"visibility": {
-				"links": {
-					"tr": "visufx.html#visibility",
-					"dev": "#visibility"
-				},
-				tests: ["visible", "hidden", "collapse"]
-			},
-			"white-space": {
-				"links": {
-					"tr": "text.html#white-space-prop",
-					"dev": "#white-space-prop"
-				},
-				tests: ["normal", "pre", "nowrap", "pre-wrap", "pre-line"]
-			},
-			"widows": {
-				"links": {
-					"tr": "page.html#break-inside",
-					"dev": "#break-inside"
-				},
-				tests: ["1", "2"]
-			},
 			"width": {
 				"links": {
-					"tr": "visudet.html#the-width-property",
+					"tr": "#the-width-property",
 					"dev": "#the-width-property"
 				},
-				tests: ["auto", "100px", "10%"]
-			},
-			"word-spacing": {
+				"tests": ["auto", "100px", "10%"]
+			}
+		}
+	},
+
+	"css2-visufx": {
+		"title": "CSS 2 Visual Effects",
+		"links": {
+			"tr": "CSS22/visufx.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"clip": {
 				"links": {
-					"tr": "text.html#propdef-word-spacing",
-					"dev": "#propdef-word-spacing"
+					"tr": "#clipping",
+					"dev": "#clipping"
 				},
-				tests: ["normal", "10px"]
+				"tests": ["auto", "rect(1px, 10em, 3ex, 0.2mm)"]
+			},
+			"overflow": {
+				"links": {
+					"tr": "#overflow",
+					"dev": "#overflow①"
+				},
+				"tests": ["auto", "visible", "hidden", "scroll"]
+			},
+			"visibility": {
+				"links": {
+					"tr": "#visibility",
+					"dev": "#visibility"
+				},
+				"tests": ["visible", "hidden", "collapse"]
+			}
+		}
+	},
+
+	"css2-visuren": {
+		"title": "CSS 2 Visual Formatting Model",
+		"links": {
+			"tr": "CSS22/visuren.html",
+			"dev": "css2/"
+		},
+		"properties": {
+			"bottom": {
+				"links": {
+					"tr": "#position-props",
+					"dev": "#position-props"
+				},
+				"tests": ["auto", "100px", "10%"]
+			},
+			"clear": {
+				"links": {
+					"tr": "#flow-control",
+					"dev": "#flow-control"
+				},
+				"tests": ["none", "left", "right", "both"]
+			},
+			"direction": {
+				"links": {
+					"tr": "#propdef-direction",
+					"dev": "#propdef-direction"
+				},
+				"tests": ["ltr", "rtl"]
+			},
+			"display": {
+				"links": {
+					"tr": "#display-prop",
+					"dev": "#display-prop"
+				},
+				"tests": [
+					"none", "inline", "block", "list-item", "inline-block", "table",
+					"inline-table", "table-row-group", "table-header-group",
+					"table-footer-group", "table-row", "table-column-group",
+					"table-column", "table-cell", "table-caption"
+				]
+			},
+			"float": {
+				"links": {
+					"tr": "#float-position",
+					"dev": "#float-position"
+				},
+				"tests": ["none", "left", "right"]
+			},
+			"left": {
+				"links": {
+					"tr": "#position-props",
+					"dev": "#position-props"
+				},
+				"tests": ["auto", "100px", "10%"]
+			},
+			"position": {
+				"links": {
+					"tr": "#choose-position",
+					"dev": "#choose-position"
+				},
+				"tests": ["static", "relative", "absolute", "fixed"]
+			},
+			"right": {
+				"links": {
+					"tr": "#position-props",
+					"dev": "#position-props"
+				},
+				"tests": ["auto", "100px", "10%"]
+			},
+			"top": {
+				"links": {
+					"tr": "#position-props",
+					"dev": "#position-props"
+				},
+				"tests": ["100px", "10%", "auto"]
+			},
+			"unicode-bidi": {
+				"links": {
+					"tr": "#propdef-unicode-bidi",
+					"dev": "#propdef-unicode-bidi"
+				},
+				"tests": ["normal", "embed", "bidi-override"]
 			},
 			"z-index": {
 				"links": {
-					"tr": "visuren.html#z-index",
+					"tr": "#z-index",
 					"dev": "#z-index"
 				},
-				tests: [
+				"tests": [
 					"auto", "1", "-1"
 				]
 			}
