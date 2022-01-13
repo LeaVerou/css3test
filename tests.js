@@ -5,6 +5,9 @@ window.Specs = {
 			"dev": "compat",
 			"devtype": "whatwg"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"touch-action": {
 				"links": {
@@ -21,6 +24,10 @@ window.Specs = {
 			"tr": "compositing-1",
 			"dev": "compositing-1",
 			"devtype": "fxtf"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
 		},
 		"properties": {
 			"mix-blend-mode": {
@@ -52,6 +59,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-align-3",
 			"dev": "css-align-3"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"align-self": {
@@ -139,6 +149,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-animations-1",
 			"dev": "css-animations-1"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"animation-name": {
@@ -230,6 +243,9 @@ window.Specs = {
 			"tr": "css-animations-2",
 			"dev": "css-animations-2"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"animation-composition": {
 				"links": {
@@ -260,6 +276,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-backgrounds-3",
 			"dev": "css-backgrounds-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
 		},
 		"properties": {
 			"background-repeat": {
@@ -417,6 +437,9 @@ window.Specs = {
 		"links": {
 			"dev": "css-backgrounds-4",
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"background-position-x": {
 				"links": {
@@ -439,6 +462,9 @@ window.Specs = {
 			"tr": "css-box-4",
 			"dev": "css-box-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"margin-trim": {
 				"links": {
@@ -455,6 +481,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-break-3",
 			"dev": "css-break-3"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"break-before": {
@@ -508,6 +537,9 @@ window.Specs = {
 			"tr": "css-break-4",
 			"dev": "css-break-4"
 		},
+		"status": {
+			"stability": "experimental",
+		},
 		"values": {
 			"properties": [
 				"break-before",
@@ -547,6 +579,11 @@ window.Specs = {
 			"tr": "css-cascade-3",
 			"dev": "css-cascade-3"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015,
+			"last-snapshot": 2018
+		},
 		"values": {
 			"properties": [
 				"color",
@@ -579,6 +616,10 @@ window.Specs = {
 			"tr": "css-cascade-4",
 			"dev": "css-cascade-4"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2020
+		},
 		"values": {
 			"properties": [
 				"color",
@@ -610,6 +651,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-cascade-5",
 			"dev": "css-cascade-5"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"values": {
 			"properties": [
@@ -656,6 +700,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-color-3",
 			"dev": "css-color-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2007
 		},
 		"values": {
 			"properties": [
@@ -730,6 +778,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-color-4",
 			"dev": "css-color-4"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"values": {
 			"properties": [
@@ -882,6 +933,9 @@ window.Specs = {
 		"links": {
 			"dev": "css-color-5"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"values": {
 			"properties": [
 				"color",
@@ -949,6 +1003,9 @@ window.Specs = {
 			"tr": "css-color-adjust-1",
 			"dev": "css-color-adjust-1"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"color-adjust": {
 				"links": {
@@ -983,6 +1040,10 @@ window.Specs = {
 			"tr": "css3-conditional",
 			"dev": "css-conditional-3"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
+		},
 		"@rules": {
 			"@supports": {
 				"links": {
@@ -1007,6 +1068,9 @@ window.Specs = {
 			"tr": "css-conditional-4",
 			"dev": "css-conditional-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"@rules": {
 			"@supports": {
 				"links": {
@@ -1027,6 +1091,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-conditional-5",
 			"dev": "css-conditional-5"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"@rules": {
 			"@supports": {
@@ -1073,6 +1140,10 @@ window.Specs = {
 			"tr": "css-contain-1",
 			"dev": "css-contain-1"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2020
+		},
 		"properties": {
 			"contain": {
 				"links": {
@@ -1092,6 +1163,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-contain-2",
 			"dev": "css-contain-2"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"contain": {
@@ -1119,6 +1193,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-contain-3",
 			"dev": "css-contain-3"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"@rules": {
 			"@container": {
@@ -1246,6 +1323,9 @@ window.Specs = {
 			"tr": "css-content-3",
 			"dev": "css-content-3"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"quotes": {
 				"links": {
@@ -1272,6 +1352,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-counter-styles-3",
 			"dev": "css-counter-styles-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2021
 		},
 		"@rules": {
 			"@counter-style": {
@@ -1419,6 +1503,9 @@ window.Specs = {
 			"tr": "css-display-3",
 			"dev": "css-display-3"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"display": {
 				"links": {
@@ -1445,6 +1532,10 @@ window.Specs = {
 			"tr": "css-easing-1",
 			"dev": "css-easing-1"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2020
+		},
 		"properties": {
 			"transition-timing-function": {
 				"links": {
@@ -1460,6 +1551,9 @@ window.Specs = {
 		"title": "Environment Variables Level 1",
 		"links": {
 			"dev": "css-env-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"values": {
 			"properties": [
@@ -1486,6 +1580,9 @@ window.Specs = {
 			"tr": "css3-exclusions",
 			"dev": "css-exclusions-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"wrap-flow": {
 				"links": {
@@ -1510,6 +1607,10 @@ window.Specs = {
 			"tr": "css-flexbox-1",
 			"dev": "css-flexbox-1",
 			"mdn": "Glossary/Flexbox"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2018
 		},
 		"properties": {
 			"align-content": {
@@ -1625,6 +1726,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-fonts-3",
 			"dev": "css-fonts-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
 		},
 		"properties": {
 			"font-stretch": {
@@ -1807,6 +1912,9 @@ window.Specs = {
 			"tr": "css-fonts-4",
 			"dev": "css-fonts-4"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"font-size": {
 				"links": {
@@ -1949,6 +2057,9 @@ window.Specs = {
 		"links": {
 			"dev": "css-fonts-5"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"font-size-adjust": {
 				"links": {
@@ -1979,6 +2090,9 @@ window.Specs = {
 			"tr": "css-grid-1",
 			"dev": "css-grid-1",
 			"mdn": "Glossary/Grid"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"display": {
@@ -2153,6 +2267,9 @@ window.Specs = {
 			"dev": "css-grid-2",
 			"mdn": "Glossary/Grid"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"grid-template-columns": {
 				"links": {
@@ -2191,6 +2308,9 @@ window.Specs = {
 		"title": "CSS Grid Layout Module Level 3",
 		"links": {
 			"dev": "css-grid-3",
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"grid-template-columns": {
@@ -2247,6 +2367,9 @@ window.Specs = {
 			"tr": "css-highlight-api-1",
 			"dev": "css-highlight-api-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"selectors": {
 			 '::highlight()' : {
 				"links": {
@@ -2263,6 +2386,10 @@ window.Specs = {
 		"links": {
 			"tr": "css3-images",
 			"dev": "css-images-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
 		},
 		"values": {
 			"properties": [
@@ -2361,6 +2488,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-images-4",
 			"dev": "css-images-4"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"values": {
 			"properties": [
@@ -2483,6 +2613,9 @@ window.Specs = {
 			"dev": "css-inline-3",
 			"tr": "css-inline-3",
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"alignment-baseline": {
 				"links": {
@@ -2585,6 +2718,9 @@ window.Specs = {
 			"dev": "css-layout-api-1",
 			"devtype": "houdini"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"display": {
 				"links": {
@@ -2601,6 +2737,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-line-grid-1",
 			"dev": "css-line-grid-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"box-snap": {
@@ -2632,6 +2771,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-lists-3",
 			"dev": "css-lists-3"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"list-style-type": {
@@ -2732,6 +2874,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-logical-1",
 			"dev": "css-logical-1"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"caption-side": {
@@ -3192,6 +3337,9 @@ window.Specs = {
 			"dev": "css-masking-1",
 			"devtype": "fxtf"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"clip-path": {
 				"links": {
@@ -3352,6 +3500,10 @@ window.Specs = {
 			"tr": "css-multicol-1",
 			"dev": "css-multicol-1"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
+		},
 		"properties": {
 			"column-width": {
 				"links": {
@@ -3424,6 +3576,9 @@ window.Specs = {
 		"links": {
 			"dev": "css-multicol-2"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"column-span": {
 				"links": {
@@ -3439,6 +3594,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-nav-1",
 			"dev": "css-nav-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"spatial-navigation-action": {
@@ -3470,6 +3628,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-overflow-3",
 			"dev": "css-overflow-3"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"line-clamp": {
@@ -3548,6 +3709,9 @@ window.Specs = {
 			"tr": "css-overflow-4",
 			"dev": "css-overflow-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"selectors": {
 			"::nth-fragment()": {
 				"links": {
@@ -3570,6 +3734,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-overscroll-1",
 			"dev": "css-overscroll-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"overscroll-behavior": {
@@ -3610,6 +3777,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-page-3",
 			"dev": "css-page-3"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"page": {
@@ -3691,6 +3861,9 @@ window.Specs = {
 			"dev": "css-paint-api-1",
 			"devtype": "houdini"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"values": {
 			"properties": [
 				"background-image",
@@ -3716,6 +3889,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-position-3",
 			"dev": "css-position-3"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"position": {
@@ -3783,6 +3959,9 @@ window.Specs = {
 			"tr": "css-pseudo-4",
 			"dev": "css-pseudo-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"selectors": {
 			"::selection": {
 				"links": {
@@ -3842,6 +4021,9 @@ window.Specs = {
 			"tr": "css-regions-1",
 			"dev": "css-regions-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"flow-from": {
 				"links": {
@@ -3872,6 +4054,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-rhythm-1",
 			"dev": "css-rhythm-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"line-height-step": {
@@ -3933,6 +4118,9 @@ window.Specs = {
 			"tr": "css-ruby-1",
 			"dev": "css-ruby-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"display": {
 				"links": {
@@ -3970,6 +4158,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-scoping-1",
 			"dev": "css-scoping-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"selectors": {
 			":host": {
@@ -4010,6 +4201,9 @@ window.Specs = {
 			"tr": "css-scroll-anchoring-1",
 			"dev": "css-scroll-anchoring-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"overflow-anchor": {
 				"links": {
@@ -4025,6 +4219,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-scroll-snap-1",
 			"dev": "css-scroll-snap-1"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"scroll-margin": {
@@ -4214,6 +4411,9 @@ window.Specs = {
 			"tr": "css-scrollbars-1",
 			"dev": "css-scrollbars-1"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"scrollbar-color": {
 				"links": {
@@ -4238,6 +4438,9 @@ window.Specs = {
 			"tr": "css-shadow-parts-1",
 			"dev": "css-shadow-parts-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"selectors": {
 			"::part()": {
 				"links": {
@@ -4254,6 +4457,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-shapes-1",
 			"dev": "css-shapes-1"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"shape-outside": {
@@ -4292,6 +4498,9 @@ window.Specs = {
 		"links": {
 			"dev": "css-shapes-2"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"shape-inside": {
 				"links": {
@@ -4317,6 +4526,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-sizing-3",
 			"dev": "css-sizing-3"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"width": {
@@ -4376,6 +4588,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-sizing-4",
 			"dev": "css-sizing-4"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"aspect-ratio": {
@@ -4512,6 +4727,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-speech-1",
 			"dev": "css-speech-1"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"cue": {
@@ -4677,6 +4895,9 @@ window.Specs = {
 			"tr": "css-text-3",
 			"dev": "css-text-3"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"text-transform": {
 				"links": {
@@ -4795,6 +5016,9 @@ window.Specs = {
 			"tr": "css-text-4",
 			"dev": "css-text-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"text-space-collapse": {
 				"links": {
@@ -4885,6 +5109,9 @@ window.Specs = {
 			"tr": "css-text-decor-3",
 			"dev": "css-text-decor-3"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"text-decoration": {
 				"links": {
@@ -4965,6 +5192,9 @@ window.Specs = {
 			"tr": "css-text-decor-4",
 			"dev": "css-text-decor-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"text-decoration": {
 				"links": {
@@ -5016,6 +5246,10 @@ window.Specs = {
 			"tr": "css-transforms-1",
 			"dev": "css-transforms-1"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2017
+		},
 		"properties": {
 			"transform": {
 				"links": {
@@ -5058,6 +5292,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-transforms-2",
 			"dev": "css-transforms-2"
+		},
+		"status": {
+			"stability": "stable"
 		},
 		"properties": {
 			"translate": {
@@ -5132,6 +5369,9 @@ window.Specs = {
 			"tr": "css-transitions-1",
 			"dev": "css-transitions-1"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"transition-property": {
 				"links": {
@@ -5181,6 +5421,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-ui-3",
 			"dev": "css-ui-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
 		},
 		"properties": {
 			"box-sizing": {
@@ -5244,6 +5488,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-ui-4",
 			"dev": "css-ui-4"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"accent-color": {
@@ -5335,6 +5582,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-values-3",
 			"dev": "css-values-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2015
 		},
 		"values": {
 			"properties": [
@@ -5433,6 +5684,9 @@ window.Specs = {
 		"links": {
 			"tr": "css-values-4",
 			"dev": "css-values-4"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"values": {
 			"properties": [
@@ -5727,6 +5981,10 @@ window.Specs = {
 			"tr": "css-variables-1",
 			"dev": "css-variables-1"
 		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2018
+		},
 		"declaration": {
 			"--*": {
 				"links": {
@@ -5755,6 +6013,9 @@ window.Specs = {
 			"tr": "css-will-change-1",
 			"dev": "css-will-change-1"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"will-change": {
 				"links": {
@@ -5771,6 +6032,10 @@ window.Specs = {
 		"links": {
 			"tr": "css-writing-modes-3",
 			"dev": "css-writing-modes-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2017
 		},
 		"properties": {
 			"direction": {
@@ -5817,6 +6082,9 @@ window.Specs = {
 			"tr": "css-writing-modes-4",
 			"dev": "css-writing-modes-4"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"writing-mode": {
 				"links": {
@@ -5841,6 +6109,9 @@ window.Specs = {
 			"tr": "cssom-view-1",
 			"dev": "cssom-view-1"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"scroll-behavior": {
 				"links": {
@@ -5858,6 +6129,9 @@ window.Specs = {
 			"tr": "fill-stroke-3",
 			"dev": "fill-stroke-3",
 			"devtype": "fxtf"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"fill": {
@@ -6103,6 +6377,9 @@ window.Specs = {
 			"dev": "filter-effects-1",
 			"devtype": "fxtf"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"filter": {
 				"links": {
@@ -6163,6 +6440,9 @@ window.Specs = {
 			"dev": "filter-effects-2",
 			"devtype": "fxtf"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"backdrop-filter": {
 				"links": {
@@ -6194,6 +6474,9 @@ window.Specs = {
 			"dev": "fullscreen",
 			"devtype": "whatwg"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"selectors": {
 			"::backdrop": {
 				"links": {
@@ -6216,6 +6499,9 @@ window.Specs = {
 			"dev": "html",
 			"devtype": "whatwg"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"selectors": {
 			":autofill": {
 				"links": {
@@ -6231,6 +6517,9 @@ window.Specs = {
 		"links": {
 			"dev": "mathml-core/#css-extensions-for-math-layout",
 			"devtype": "math"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"display": {
@@ -6287,6 +6576,10 @@ window.Specs = {
 		"links": {
 			"tr": "css3-mediaqueries",
 			"dev": "mediaqueries-3"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2010
 		},
 		"Media queries": {
 			"negation": {
@@ -6422,6 +6715,9 @@ window.Specs = {
 			"tr": "mediaqueries-4",
 			"dev": "mediaqueries-4"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"Media queries": {
 			"resolution": {
 				"links": {
@@ -6517,6 +6813,9 @@ window.Specs = {
 			"tr": "mediaqueries-5",
 			"dev": "mediaqueries-5"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"Media queries": {
 			"prefers-reduced-motion": {
 				"links": {
@@ -6605,6 +6904,9 @@ window.Specs = {
 			"tr": "motion-1",
 			"devtype": "fxtf"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"offset-anchor": {
 				"links": {
@@ -6691,6 +6993,9 @@ window.Specs = {
 		"links": {
 			"tr": "pointerevents1"
 		},
+		"status": {
+			"stability": "stable"
+		},
 		"properties": {
 			"touch-action": {
 				"links": {
@@ -6708,6 +7013,9 @@ window.Specs = {
 			"dev": "pointerevents",
 			"devtype": "github"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"touch-action": {
 				"links": {
@@ -6723,6 +7031,9 @@ window.Specs = {
 		"links": {
 			"tr": "scroll-animations-1",
 			"dev": "scroll-animations-1"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"@rules": {
 			"@scroll-timeline": {
@@ -6776,6 +7087,10 @@ window.Specs = {
 			"tr": "selectors-3",
 			"dev": "selectors-3",
 			"mdn": "Glossary/CSS_Selector"
+		},
+		"status": {
+			"stability": "stable",
+			"first-snapshot": 2007
 		},
 		"selectors": {
 			"Sibling combinator": {
@@ -6997,6 +7312,9 @@ window.Specs = {
 		"links": {
 			"tr": "selectors-4",
 			"dev": "selectors-4"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"selectors": {
 			":indeterminate": {
@@ -7305,6 +7623,9 @@ window.Specs = {
 			"dev": "svg2-draft/coords.html",
 			"devtype": "svgwg"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"vector-effect": {
 				"links": {
@@ -7332,6 +7653,9 @@ window.Specs = {
 			"tr": "svg2/geometry.html",
 			"dev": "svg2-draft/geometry.html",
 			"devtype": "svgwg"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"cx": {
@@ -7400,6 +7724,9 @@ window.Specs = {
 			"dev": "svg2-draft/interact.html",
 			"devtype": "svgwg"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"pointer-events": {
 				"links": {
@@ -7417,6 +7744,9 @@ window.Specs = {
 			"tr": "svg2/painting.html",
 			"dev": "svg2-draft/painting.html",
 			"devtype": "svgwg"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"color-interpolation": {
@@ -7496,6 +7826,9 @@ window.Specs = {
 			"dev": "svg2-draft/paths.html",
 			"devtype": "svgwg"
 		},
+		"status": {
+			"stability": "experimental"
+		},
 		"properties": {
 			"d": {
 				"links": {
@@ -7514,6 +7847,9 @@ window.Specs = {
 			"tr": "svg2/pservers.html",
 			"dev": "svg2-draft/pservers.html",
 			"devtype": "svgwg"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"stop-color": {
@@ -7539,6 +7875,9 @@ window.Specs = {
 			"tr": "svg2/text.html",
 			"dev": "svg2-draft/text.html",
 			"devtype": "svgwg"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"properties": {
 			"shape-subtract": {
@@ -7602,6 +7941,9 @@ window.Specs = {
 			"tr": "webvtt1",
 			"dev": "webvtt",
 			"devtype": "github"
+		},
+		"status": {
+			"stability": "experimental"
 		},
 		"selectors": {
 			"::cue": {
