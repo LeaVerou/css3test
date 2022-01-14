@@ -57,7 +57,7 @@ window.Specs = {
 	"css2-box": {
 		"title": "CSS 2 Box Model",
 		"links": {
-			"tr": "CSS2/box.html",
+			"tr": "CSS22/box.html",
 			"dev": "css2/"
 		},
 		"status": {
@@ -68,7 +68,7 @@ window.Specs = {
 		"properties": {
 			"border-color": {
 				"links": {
-					"tr": "#propdef-border-color",
+					"tr": "#border-color-properties",
 					"dev": "#border-color-properties"
 				},
 				"tests": [
@@ -83,7 +83,8 @@ window.Specs = {
 					"dev": "#border-style-properties"
 				},
 				"tests": [
-					"none", "none dashed", "none dashed dotted", "none dashed dotted solid"
+					"none", "hidden", "none dashed", "none dashed dotted",
+					"none dashed dotted solid"
 				]
 			},
 			"border-top": {
@@ -333,7 +334,7 @@ window.Specs = {
 	"css2-colors": {
 		"title": "CSS 2 Colors and Backgrounds",
 		"links": {
-			"tr": "CSS2/colors.html",
+			"tr": "CSS22/colors.html",
 			"dev": "css2/"
 		},
 		"status": {
@@ -400,7 +401,7 @@ window.Specs = {
 				},
 				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
-					"rgb(100%, 50%, 50%)", "transparent"
+					"rgb(100%, 50%, 50%)"
 				]
 			}
 		}
@@ -761,7 +762,7 @@ window.Specs = {
 				},
 				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
-					"rgb(100%, 50%, 50%)", "transparent"
+					"rgb(100%, 50%, 50%)", "invert"
 				]
 			},
 			"outline-style": {
@@ -787,7 +788,7 @@ window.Specs = {
 					"dev": "#dynamic-outlines"
 				},
 				"tests": [
-					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"black", "invert", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
 				]
 			}
@@ -795,7 +796,7 @@ window.Specs = {
 	},
 
 	"css2-visudet": {
-		"title": "CSS 2 Visual Formatting Model",
+		"title": "CSS 2 Visual Formatting Model Details",
 		"links": {
 			"tr": "CSS22/visudet.html",
 			"dev": "css2/"
@@ -1679,6 +1680,14 @@ window.Specs = {
 					"mdn": "color_value"
 				},
 				"tests": "currentColor"
+			},
+			"transparent": {
+				"links": {
+					"tr": "#transparent",
+					"dev": "#transparent",
+					"mdn": "color_value"
+				},
+				"tests": "transparent"
 			}
 		},
 		"properties": {
