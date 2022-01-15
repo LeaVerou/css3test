@@ -321,7 +321,7 @@ Test.groups = {
 			}
 		}
 
-		success = properties.length == 0 ? 0 : 1 - failed.length / properties.length;
+		success = properties.length > 0 ? 1 - failed.length / properties.length : 0;
 
 		return {
 			success: success,
