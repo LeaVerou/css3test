@@ -762,7 +762,7 @@ window.Specs = {
 				},
 				"tests": [
 					"black", "#00f", "#000000", "rgb(255, 255, 255)",
-					"rgb(100%, 50%, 50%)", "invert"
+					"rgb(100%, 50%, 50%)"
 				]
 			},
 			"outline-style": {
@@ -788,7 +788,7 @@ window.Specs = {
 					"dev": "#dynamic-outlines"
 				},
 				"tests": [
-					"black", "invert", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
+					"black", "dotted", "5px", "#ff0000 dashed", "solid 0.2em",
 					"rgb(0, 0, 255) 0.1ex", "#0f0 double 0.8mm"
 				]
 			}
