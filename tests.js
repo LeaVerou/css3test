@@ -6164,6 +6164,13 @@ window.Specs = {
 					"dev": "#text-decoration-width-property"
 				},
 				"tests": ["auto", "from-font", "3px", "10%"]
+			},
+			"text-shadow": {
+				"links": {
+					"tr": "#text-shadow-property",
+					"dev": "#text-shadow-property"
+				},
+				"tests": ["1px 2px 3px 4px black"]
 			}
 		}
 	},
