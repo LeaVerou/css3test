@@ -587,6 +587,22 @@ window.Specs = {
 				},
 				"tests": ["none", "\"»\" \"«\"", "'\"' '\"' \"'\" \"'\""]
 			}
+		},
+		"selectors": {
+			":before": {
+				"links": {
+					"tr": "#before-after-content",
+					"dev": "#before-after-content"
+				},
+				"tests": ":before"
+			},
+			":after": {
+				"links": {
+					"tr": "#before-after-content",
+					"dev": "#before-after-content"
+				},
+				"tests": ":after"
+			}
 		}
 	},
 
@@ -609,7 +625,10 @@ window.Specs = {
 					"dev": "#at-media-rule"
 				},
 				"tests": [
-					"@media print { color: green; }", "@media print, screen { color: green; }"
+					"@media all {\n  p {\n    color: green;\n  }\n}",
+					"@media print {\n  p {\n    color: green;\n  }\n}",
+					"@media screen {\n  p {\n    color: green;\n  }\n}",
+					"@media print, screen {\n  p {\n    color: green;\n  }\n}"
 				]
 			}
 		}
@@ -634,10 +653,13 @@ window.Specs = {
 				},
 				"tests": [
 					"@page { margin: 2cm; }",
+					"@page { margin-top: 2cm; }",
+					"@page { margin-right: 2cm; }",
+					"@page { margin-bottom: 2cm; }",
+					"@page { margin-left: 2cm; }",
 					"@page :left { margin: 2cm; }",
 					"@page :right { margin: 2cm; }",
-					"@page :first { margin: 2cm; }",
-					"@page :blank { margin: 2cm; }"
+					"@page :first { margin: 2cm; }"
 				]
 			}
 		},
@@ -683,7 +705,7 @@ window.Specs = {
 	"css2-selectors": {
 		"title": "CSS 2 Selectors",
 		"links": {
-			"tr": "CSS22/selectors.html",
+			"tr": "CSS22/selector.html",
 			"dev": "css2/"
 		},
 		"status": {
@@ -725,7 +747,7 @@ window.Specs = {
 					"tr": "#adjacent-selectors",
 					"dev": "#adjacent-selectors"
 				},
-				"tests": "div > p"
+				"tests": "div + p"
 			},
 			"Attribute selectors": {
 				"links": {
@@ -735,6 +757,15 @@ window.Specs = {
 				"tests": [
 					"[title]", "[title=example]", "[title=\"example\"]", "[rel~=copyright]",
 					"[rel~=\"copyright\"]", "[lang|=en]", "[lang|=\"en\"]"
+				]
+			},
+			"Class selector": {
+				"links": {
+					"tr": "#class-html",
+					"dev": "#class-html"
+				},
+				"tests": [
+					".class"
 				]
 			},
 			"ID selector": {
@@ -806,20 +837,6 @@ window.Specs = {
 					"dev": "#first-letter"
 				},
 				"tests": ":first-letter"
-			},
-			":before": {
-				"links": {
-					"tr": "#before-and-after",
-					"dev": "#before-and-after"
-				},
-				"tests": ":before"
-			},
-			":after": {
-				"links": {
-					"tr": "#before-and-after",
-					"dev": "#before-and-after"
-				},
-				"tests": ":after"
 			}
 		}
 	},
@@ -4935,6 +4952,7 @@ window.Specs = {
 					"dev": "#at-page-rule"
 				},
 				"tests": [
+					"@page :blank { margin: 2cm; }",
 					"@page customName { margin: 2cm; }"
 				]
 			}
