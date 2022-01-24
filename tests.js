@@ -653,15 +653,68 @@ window.Specs = {
 				},
 				"tests": [
 					"@page { margin: 2cm; }",
-					"@page { margin-top: 2cm; }",
-					"@page { margin-right: 2cm; }",
-					"@page { margin-bottom: 2cm; }",
-					"@page { margin-left: 2cm; }",
 					"@page :left { margin: 2cm; }",
 					"@page :right { margin: 2cm; }",
 					"@page :first { margin: 2cm; }"
 				]
 			}
+		},
+		"descriptors": {
+			"@page/margin": {
+				"links": {
+					"tr": "#page-box",
+					"dev": "#page-box"
+				},
+				"tests": [
+					"2cm",
+					"4%",
+					"auto"
+				]
+			},
+			"@page/margin-top": {
+				"links": {
+					"tr": "#page-box",
+					"dev": "#page-box"
+				},
+				"tests": [
+					"2cm",
+					"4%",
+					"auto"
+				]
+			},
+			"@page/margin-right": {
+				"links": {
+					"tr": "#page-box",
+					"dev": "#page-box"
+				},
+				"tests": [
+					"2cm",
+					"4%",
+					"auto"
+				]
+			},
+			"@page/margin-bottom": {
+				"links": {
+					"tr": "#page-box",
+					"dev": "#page-box"
+				},
+				"tests": [
+					"2cm",
+					"4%",
+					"auto"
+				]
+			},
+			"@page/margin-left": {
+				"links": {
+					"tr": "#page-box",
+					"dev": "#page-box"
+				},
+				"tests": [
+					"2cm",
+					"4%",
+					"auto"
+				]
+			},
 		},
 		"properties": {
 			"orphans": {
