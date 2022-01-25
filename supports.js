@@ -142,7 +142,7 @@ window.matchMedia = window.matchMedia || (function (doc, undefined) {
 				if (style.sheet.cssRules.length) {
 					return {
 						success:
-							style.sheet.cssRules[pos].style && style.sheet.cssRules[pos].style.length === 1 ||
+							style.sheet.cssRules[pos].style && style.sheet.cssRules[pos].style.length >= 1 ||
 							!!style.sheet.cssRules[pos][camelCase(descriptor)]
 					};
 				} else {
