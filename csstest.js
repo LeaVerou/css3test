@@ -1,11 +1,9 @@
+import Specs from './tests.js';
+
 var Score = function (parent) {
 	this.passed = this.total = this.passedTests = this.totalTests = 0;
 	this.parent = parent || null;
 };
-
-var ele = function (name) {
-	return document.getElementById(name);
-}
 
 Score.prototype = {
 	update: function (data) {
@@ -146,7 +144,7 @@ var Test = function (spec) {
 		inside: h1
 	});
 
-	ele('all').appendChild(this.section);
+	$('#all').appendChild(this.section);
 
 	// Add to list of tested specs
 	$.create({
@@ -160,7 +158,7 @@ var Test = function (spec) {
 				contents: this.title
 			}
 		],
-		inside: ele('specsTested')
+		inside: $('#specsTested')
 	});
 }
 
@@ -321,7 +319,7 @@ Test.groups = {
 			}
 		}
 
-		success = properties.length > 0 ? 1 - failed.length / properties.length : 0;
+		var success = properties.length > 0 ? 1 - failed.length / properties.length : 0;
 
 		return {
 			success: success,
@@ -394,22 +392,22 @@ function passclass(info) {
 	return classes[index];
 }
 
-function resetOutput() {
+window.resetOutput = function() {
 	mainScore = new Score();
 
 	// Output current score
-	ele('score').textContent = '';
-	ele('passedTests').textContent = '';
-	ele('totalTests').textContent = '';
-	ele('total').textContent = '';
-	ele('specsTested').textContent = '';
-	ele('all').textContent = '';
+	$('#score').textContent = '';
+	$('#passedTests').textContent = '';
+	$('#totalTests').textContent = '';
+	$('#total').textContent = '';
+	$('#specsTested').textContent = '';
+	$('#all').textContent = '';
 
 	// Display time taken
-	ele('timeTaken').textContent = '';
+	$('#timeTaken').textContent = '';
 }
 
-function runTests(filter = '') {
+window.runTests = function(filter = '') {
 	var specs = [];
 	var timeBefore = +new Date;
 
@@ -454,61 +452,16 @@ function runTests(filter = '') {
 	specs.forEach(spec => new Test(spec));
 
 	// Output score
-	ele('score').textContent = mainScore + '';
-	ele('passedTests').textContent = ~~mainScore.passedTests;
-	ele('totalTests').textContent = mainScore.totalTests;
-	ele('total').textContent = mainScore.total;
+	$('#score').textContent = mainScore + '';
+	$('#passedTests').textContent = ~~mainScore.passedTests;
+	$('#totalTests').textContent = mainScore.totalTests;
+	$('#total').textContent = mainScore.total;
 
 	// Display time taken
-	ele('timeTaken').textContent = +new Date - timeBefore + 'ms';
+	$('#timeTaken').textContent = +new Date - timeBefore + 'ms';
 }
 
-Array.prototype.and = function (arr2, separator) {
-	separator = separator || ' ';
-
-	var ret = [],
-		map = function (val) {
-			return val + separator + arr2[j]
-		};
-
-	for (var j = 0; j < arr2.length; j++) {
-		ret = ret.concat(this.map(map));
-	}
-
-	return ret;
-};
-
-// [ x or y or z ]{min, max}
-Array.prototype.times = function (min, max, separator) {
-	separator = separator || ' ';
-
-	max = max || min;
-
-	var ret = [];
-
-
-	if (min === max) {
-		if (min === 1) {
-			ret = this.slice(); // clone
-		}
-		else {
-			ret = this.and(this, separator);
-
-			for (var i = 2; i < min; i++) {
-				ret = this.and(ret, separator);
-			}
-		}
-	}
-	else if (min < max) {
-		for (var i = min; i <= max; i++) {
-			ret = ret.concat(this.times(i, i, separator));
-		}
-	}
-
-	return ret;
-};
-
 onload = function () {
-	ele('filter').value = localStorage.getItem('filter') || '';
+	$('#filter').value = localStorage.getItem('filter') || '';
 	runTests(localStorage.getItem('filter') || '');
 }
