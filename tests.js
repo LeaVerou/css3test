@@ -195,8 +195,6 @@ export default {
 	"css-ruby-1": cssRuby1,
 	"css-scoping-1": cssScoping1,
 	"css-scroll-anchoring-1": cssScrollAnchoring1,
-	"css-scoping-1": cssScoping1,
-	"css-scroll-anchoring-1": cssScrollAnchoring1,
 	"css-scroll-snap-1": cssScrollSnap1,
 	"css-scrollbars-1": cssScrollbars1,
 	"css-shadow-parts-1": cssShadowParts1,
