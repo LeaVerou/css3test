@@ -175,7 +175,8 @@ details li[class] {
 details summary {
 	list-style: none;
 	cursor: pointer;
-	background: linear-gradient(rgb(0 0 0 / .3), rgb(0 0 0 / .3)) no-repeat 0 0 / calc(var(--progress) * 1%) .4em;
+	padding-top: .7em;
+	background: linear-gradient(rgb(0 0 0 / .3), rgb(0 0 0 / .3)) no-repeat 0 0 / calc(var(--progress) * 1%) .2em;
 }
 
 details summary::-webkit-details-marker {
@@ -280,7 +281,7 @@ details li[class]::after,
 details summary::after,
 details li[class]::after {
 	letter-spacing: -2px;
-	line-height: 35px;
+	padding-top: .7em;
 	right: 10px;
 }
 
