@@ -1,11 +1,9 @@
+import Specs from './tests.js';
+
 var Score = function (parent) {
 	this.passed = this.total = this.passedTests = this.totalTests = 0;
 	this.parent = parent || null;
 };
-
-var ele = function (name) {
-	return document.getElementById(name);
-}
 
 Score.prototype = {
 	update: function (data) {
@@ -31,8 +29,7 @@ Score.prototype = {
 	}
 };
 
-var mainScore = new Score(),
-	_bTestResults = {};
+var mainScore = new Score();
 
 var devLinkFormat = function (params) {
 	switch (params.devtype) {
@@ -139,9 +136,6 @@ var Test = function (spec) {
 		this.group(id, Test.groups[id]);
 	}
 
-	// Add overall spec score to BrowserScope
-	_bTestResults[this.id] = mainScore.percent();
-
 	// Display score for this spec
 	$.create({
 		tag: 'span',
@@ -150,7 +144,7 @@ var Test = function (spec) {
 		inside: h1
 	});
 
-	ele('all').appendChild(this.section);
+	$('#all').appendChild(this.section);
 
 	// Add to list of tested specs
 	$.create({
@@ -164,7 +158,7 @@ var Test = function (spec) {
 				contents: this.title
 			}
 		],
-		inside: ele('specsTested')
+		inside: $('#specsTested')
 	});
 }
 
@@ -235,7 +229,7 @@ Test.prototype = {
 					? links.mdn
 					: feature.startsWith(':')
 						? feature.replace('()', '')
-						: feature;
+						: feature.replace(/(@[^ \/]+)[^\/]*(\/.*)/, '$1$2');
 
 				summaryContents.push($.create({
 					tag: 'a',
@@ -277,7 +271,6 @@ Test.prototype = {
 				}));
 			}
 
-			// for prefix
 			if (propertyPrefix) {
 				summaryContents[1] = $.create({
 					tag: 'span',
@@ -309,9 +302,6 @@ Test.prototype = {
 			thisSection.appendChild(details);
 
 			this.score.update({ passed: passed, total: tests.length });
-
-			// Add to browserscope
-			_bTestResults[this.id + ' / ' + feature.replace(/[,=]/g, '')] = Math.round(100 * passed / tests.length);
 		}
 	}
 }
@@ -332,7 +322,7 @@ Test.groups = {
 			}
 		}
 
-		success = 1 - failed.length / properties.length;
+		var success = properties.length > 0 ? 1 - failed.length / properties.length : 0;
 
 		return {
 			success: success,
@@ -344,8 +334,16 @@ Test.groups = {
 		return Supports.value(property, value);
 	},
 
-	'descriptors': function (value, descriptor) {
-		return Supports.descriptorvalue(descriptor, value);
+	'descriptors': function (value, descriptor, tests) {
+		var required = undefined;
+		if (tests[descriptor].required) {
+			if (tests[descriptor].required[value]) {
+				required = tests[descriptor].required[value];
+			} else if (tests[descriptor].required['*'] ) {
+				required = tests[descriptor].required['*'];
+			}
+		}
+		return Supports.descriptorvalue(descriptor, value, required);
 	},
 
 	'selectors': function (test) {
@@ -397,59 +395,49 @@ function passclass(info) {
 	return classes[index];
 }
 
-Array.prototype.and = function (arr2, separator) {
-	separator = separator || ' ';
+window.resetOutput = function() {
+	mainScore = new Score();
 
-	var ret = [],
-		map = function (val) {
-			return val + separator + arr2[j]
-		};
+	// Output current score
+	$('#score').textContent = '';
+	$('#passedTests').textContent = '';
+	$('#totalTests').textContent = '';
+	$('#total').textContent = '';
+	$('#specsTested').textContent = '';
+	$('#all').textContent = '';
 
-	for (var j = 0; j < arr2.length; j++) {
-		ret = ret.concat(this.map(map));
-	}
+	// Display time taken
+	$('#timeTaken').textContent = '';
+}
 
-	return ret;
-};
+window.runTests = function(filter = '') {
+	var specs = [];
+	var timeBefore = +new Date;
 
-// [ x or y or z ]{min, max}
-Array.prototype.times = function (min, max, separator) {
-	separator = separator || ' ';
-
-	max = max || min;
-
-	var ret = [];
-
-
-	if (min === max) {
-		if (min === 1) {
-			ret = this.slice(); // clone
-		}
-		else {
-			ret = this.and(this, separator);
-
-			for (var i = 2; i < min; i++) {
-				ret = this.and(ret, separator);
-			}
-		}
-	}
-	else if (min < max) {
-		for (var i = min; i <= max; i++) {
-			ret = ret.concat(this.times(i, i, separator));
-		}
-	}
-
-	return ret;
-};
-
-onload = function () {
-	var timeBefore = +new Date,
-		duration = 0,
-		specs = [];
-
-	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS|Module)\b)( *)/g;
+	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS(?! 2)|Module)\b)( *)/g;
 
 	for (var spec in Specs) {
+		// Filter list of specifications
+		if (filter === 'stable' && Specs[spec].status && Specs[spec].status.stability !== 'stable') {
+			continue;
+		} else if (filter === 'experimental' && Specs[spec].status && Specs[spec].status.stability === 'stable') {
+			continue;
+		} else if (Number(filter) > 0) {
+			if (!Specs[spec].status || Specs[spec].status['first-snapshot'] === undefined) {
+				continue;
+			}
+
+			const snapshot = Number(filter);
+			if (
+				Specs[spec].status['first-snapshot'] > snapshot ||
+				(Specs[spec].status && Specs[spec].status['last-snapshot'] < snapshot)
+			) {
+				continue;
+			}
+		} else if (filter === '' && Specs[spec].status && Specs[spec].status['first-snapshot'] === 1998) {
+			continue;
+		}
+
 		specs.push({
 			id: spec,
 			// Shorten the title by removing parentheticals,
@@ -463,48 +451,20 @@ onload = function () {
 		return a.title.localeCompare(b.title);
 	});
 
+	// Run tests
+	specs.forEach(spec => new Test(spec));
 
-	(function () {
-		if (specs.length) {
-			// Get spec id
-			var spec = specs.shift();
+	// Output score
+	$('#score').textContent = mainScore + '';
+	$('#passedTests').textContent = ~~mainScore.passedTests;
+	$('#totalTests').textContent = mainScore.totalTests;
+	$('#total').textContent = mainScore.total;
 
-			// Run tests
-			var test = new Test(spec);
+	// Display time taken
+	$('#timeTaken').textContent = +new Date - timeBefore + 'ms';
+}
 
-			// Count test duration
-			duration += +new Date - timeBefore;
-			timeBefore = +new Date;
-
-			// Output current score
-			ele('score').textContent = mainScore + '';
-			ele('passedTests').textContent = ~~mainScore.passedTests;
-			ele('totalTests').textContent = mainScore.totalTests;
-			ele('total').textContent = mainScore.total;
-
-			// Schedule next test
-			setTimeout(arguments.callee, 50)
-		}
-		else {
-			// Done!
-
-			// Display time taken
-			ele('timeTaken').textContent = +new Date - timeBefore + 'ms';
-
-			// Send to Browserscope
-			var testKey = 'agt1YS1wcm9maWxlcnINCxIEVGVzdBidzawNDA';
-
-			_bTestResults['Overall'] = mainScore.percent();
-
-			$.create({
-				tag: 'script',
-				src: '//www.browserscope.org/user/beacon/' + testKey,
-				inside: $('head')
-			});
-		}
-	})();
-
-
-
-
+onload = function () {
+	$('#filter').value = localStorage.getItem('filter') || '';
+	runTests(localStorage.getItem('filter') || '');
 }

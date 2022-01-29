@@ -36,6 +36,28 @@
 	</section>
 
 	<section>
+		<h1>Filter:</h1>
+		<form>
+			<select id="filter">
+				<option value="" title="All specifications including experimental ones but without CSS 2.2">All except CSS 2.2</option>
+				<option value="all" title="All specifications including experimental ones">All</option>
+				<option value="stable" title="All specifications listed in the latest CSS snapshot, their predecessors and others that won't change much anymore">Stable</option>
+				<option value="experimental" title="All specifications not listed in the latest CSS snapshot">Experimental</option>
+				<optgroup label="CSS snapshots">
+					<option value="1998" title="Everything included in CSS 2.2">CSS 2.2</option>
+					<option value="2007" title="All specifications marked as official part of the CSS 2007 snapshot">CSS 2007</option>
+					<option value="2010" title="All specifications marked as official part of the CSS 2010 snapshot">CSS 2010</option>
+					<option value="2015" title="All specifications marked as official part of the CSS 2015 snapshot">CSS 2015</option>
+					<option value="2017" title="All specifications marked as official part of the CSS 2017 snapshot">CSS 2017</option>
+					<option value="2018" title="All specifications marked as official part of the CSS 2018 snapshot">CSS 2018</option>
+					<option value="2020" title="All specifications marked as official part of the CSS 2020 snapshot">CSS 2020</option>
+					<option value="2021" title="All specifications marked as official part of the CSS 2021 snapshot">CSS 2021</option>
+				</optgroup>
+			</select>
+		</form>
+	</section>
+
+	<section>
 		<h1>Specs tested:</h1>
 		<ul id="specsTested"></ul>
 		Want more tests? <a href="https://github.com/LeaVerou/css3test" target="_blank">Be my guest!</a>
@@ -60,8 +82,8 @@
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=blissfuljs"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blissfuljs/1.0.3/bliss.js"></script>
 <script src="supports.js"></script>
-<script src="csstest.js"></script>
-<script src="tests.js"></script>
+<script src="csstest.js" type="module"></script>
+<script src="filter.js"></script>
 
 </body>
 </html>
