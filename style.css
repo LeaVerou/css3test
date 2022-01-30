@@ -175,7 +175,7 @@ details li[class] {
 details summary {
 	list-style: none;
 	cursor: pointer;
-	padding-top: .7em;
+	padding-top: .6em;
 	background: linear-gradient(rgb(0 0 0 / .3), rgb(0 0 0 / .3)) no-repeat 0 0 / calc(var(--progress) * 1%) .2em;
 }
 
@@ -281,7 +281,7 @@ details li[class]::after,
 details summary::after,
 details li[class]::after {
 	letter-spacing: -2px;
-	padding-top: .7em;
+	padding-top: .6em;
 	right: 10px;
 }
 
