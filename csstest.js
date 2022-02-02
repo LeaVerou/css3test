@@ -282,8 +282,11 @@ Test.prototype = {
 			var detailsContents = [
 				$.create({
 					tag: 'summary',
-					className: passclass({ passed: passed, total: tests.length }),
-					contents: summaryContents,
+					properties: {
+						className: passclass({ passed: passed, total: tests.length }),
+						style: '--progress: ' + (passed / tests.length * 100),
+					},
+					contents: summaryContents
 				}),
 				$.create({
 					tag: 'ul',
