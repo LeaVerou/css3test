@@ -16,6 +16,7 @@ import cssColor4 from './tests/css-color-4.js';
 import cssColor5 from './tests/css-color-5.js';
 import cssColorAdjust1 from './tests/css-color-adjust-1.js';
 import cssComposition1 from './tests/css-composition-1.js';
+import cssComposition2 from './tests/css-composition-2.js';
 import cssConditional3 from './tests/css-conditional-3.js';
 import cssConditional4 from './tests/css-conditional-4.js';
 import cssConditional5 from './tests/css-conditional-5.js';
@@ -120,6 +121,7 @@ import svg2PServers from './tests/svg2-pservers.js';
 import svg2Text from './tests/svg2-text.js';
 import webVtt from './tests/webvtt.js';
 
+
 export default {
 	compat: compat,
 	'css2-cascade': css2Cascade,
@@ -152,6 +154,7 @@ export default {
 	'css-colors-5': cssColor5,
 	'css-colors-adjust-1': cssColorAdjust1,
 	'css-composition-1': cssComposition1,
+	'css-composition-2': cssComposition2,
 	'css-conditional-3': cssConditional3,
 	'css-conditional-4': cssConditional4,
 	'css-conditional-5': cssConditional5,
