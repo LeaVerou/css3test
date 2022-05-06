@@ -7,7 +7,9 @@ var Score = function (parent) {
 
 Score.prototype = {
 	update: function (data) {
-		if (!data.total) { return; }
+		if (!data.total) {
+			return;
+		}
 
 		this.passedTests += data.passed;
 		this.totalTests += data.total;
@@ -25,29 +27,29 @@ Score.prototype = {
 	},
 
 	percent: function () {
-		return Math.round(100 * this.passed / this.total);
-	}
+		return Math.round((100 * this.passed) / this.total);
+	},
 };
 
 var mainScore = new Score();
 
 var devLinkFormat = function (params) {
 	switch (params.devtype) {
-		case "fxtf":
+		case 'fxtf':
 			// FX Task Force Editor Drafts
 			return 'https://drafts.fxtf.org/' + params.dev;
-		case "houdini":
+		case 'houdini':
 			// CSS-TAG Houdini Editor Drafts
 			return 'https://drafts.css-houdini.org/' + params.dev;
-		case "github":
+		case 'github':
 			return 'https://w3c.github.io/' + params.dev;
-		case "svgwg":
+		case 'svgwg':
 			// SVG Working Group Editor Drafts
 			return 'https://svgwg.org/' + params.dev;
-		case "whatwg":
+		case 'whatwg':
 			// WHATWG
 			return 'https://' + params.dev + '.spec.whatwg.org/';
-		case "math":
+		case 'math':
 			// The MathML Refresh Community Group
 			return 'https://mathml-refresh.github.io/' + params.dev;
 		default:
@@ -56,16 +58,15 @@ var devLinkFormat = function (params) {
 	}
 };
 
-
 var devLinkLogo = function (params) {
 	switch (params.devtype) {
-		case "whatwg":
+		case 'whatwg':
 			return params.devtype;
-		case "svgwg":
-		case "houdini":
-		case "fxtf":
-		case "github":
-		case "math":
+		case 'svgwg':
+		case 'houdini':
+		case 'fxtf':
+		case 'github':
+		case 'math':
 		default:
 			return 'w3c';
 	}
@@ -82,45 +83,51 @@ var Test = function (spec) {
 
 	if (spec.tests.links) {
 		if (spec.tests.links.tr) {
-			contents.push($.create({
-				tag: 'a',
-				properties: {
-					href: 'https://www.w3.org/TR/' + spec.tests.links.tr,
-					target: '_blank',
-					textContent: 'TR',
-					className: 'spec-link w3c-link'
-				}
-			}));
+			contents.push(
+				$.create({
+					tag: 'a',
+					properties: {
+						href: 'https://www.w3.org/TR/' + spec.tests.links.tr,
+						target: '_blank',
+						textContent: 'TR',
+						className: 'spec-link w3c-link',
+					},
+				}),
+			);
 		}
 
 		if (spec.tests.links.dev) {
-			contents.push($.create({
-				tag: 'a',
-				properties: {
-					href: devLinkFormat(spec.tests.links),
-					target: '_blank',
-					textContent: 'DEV',
-					className: 'spec-link ' + devLinkLogo(spec.tests.links) + '-link'
-				}
-			}));
+			contents.push(
+				$.create({
+					tag: 'a',
+					properties: {
+						href: devLinkFormat(spec.tests.links),
+						target: '_blank',
+						textContent: 'DEV',
+						className: 'spec-link ' + devLinkLogo(spec.tests.links) + '-link',
+					},
+				}),
+			);
 		}
 
 		if (spec.tests.links.mdn) {
-			contents.push($.create({
-				tag: 'a',
-				properties: {
-					href: 'https://developer.mozilla.org/en-US/docs/' + spec.tests.links.mdn,
-					target: '_blank',
-					textContent: 'MDN',
-					className: 'spec-link mdn-link'
-				}
-			}));
+			contents.push(
+				$.create({
+					tag: 'a',
+					properties: {
+						href: 'https://developer.mozilla.org/en-US/docs/' + spec.tests.links.mdn,
+						target: '_blank',
+						textContent: 'MDN',
+						className: 'spec-link mdn-link',
+					},
+				}),
+			);
 		}
 	}
 
 	var h1 = $.create({
 		tag: 'h1',
-		contents: contents
+		contents: contents,
 	});
 
 	// Wrapper section
@@ -128,7 +135,7 @@ var Test = function (spec) {
 		tag: 'section',
 		id: this.id,
 		className: 'tests',
-		contents: [h1]
+		contents: [h1],
 	});
 
 	// Perform tests
@@ -141,7 +148,7 @@ var Test = function (spec) {
 		tag: 'span',
 		contents: this.score + '',
 		className: 'score',
-		inside: h1
+		inside: h1,
 	});
 
 	$('#all').appendChild(this.section);
@@ -149,67 +156,77 @@ var Test = function (spec) {
 	// Add to list of tested specs
 	$.create({
 		tag: 'li',
-		className: passclass({ passed: this.score.passed, total: this.score.total }),
+		className: passclass({
+			passed: this.score.passed,
+			total: this.score.total,
+		}),
 		title: this.score + ' passed',
 		contents: [
 			{
 				tag: 'a',
 				href: '#' + spec.id,
-				contents: this.title
-			}
+				contents: this.title,
+			},
 		],
-		inside: $('#specsTested')
+		inside: $('#specsTested'),
 	});
-}
+};
 
 Test.prototype = {
 	group: function (what, testCallback) {
-		var thisSection, theseTests = this.tests[what];
+		var thisSection,
+			theseTests = this.tests[what];
 
 		for (var feature in theseTests) {
 			if (feature === 'properties') {
 				continue;
 			}
 
-			thisSection = thisSection || $.create({
-				tag: 'section',
-				className: 'tests ' + what,
-				contents: {
-					tag: 'h1',
-					contents: what
-				},
-				inside: this.section
-			});
+			thisSection =
+				thisSection ||
+				$.create({
+					tag: 'section',
+					className: 'tests ' + what,
+					contents: {
+						tag: 'h1',
+						contents: what,
+					},
+					inside: this.section,
+				});
 
 			var summaryContents = [
 				document.createTextNode(feature),
-				null // for prefix
+				null, // for prefix
 			];
 
 			var links = theseTests[feature].links;
 			if (links) {
 				if (links.tr) {
-					summaryContents.push($.create({
-						tag: 'a',
-						properties: {
-							href: 'https://www.w3.org/TR/' + this.tests.links.tr + links.tr,
-							target: '_blank',
-							textContent: 'TR',
-							className: 'spec-link w3c-link'
-						}
-					}));
+					summaryContents.push(
+						$.create({
+							tag: 'a',
+							properties: {
+								href: 'https://www.w3.org/TR/' + this.tests.links.tr + links.tr,
+								target: '_blank',
+								textContent: 'TR',
+								className: 'spec-link w3c-link',
+							},
+						}),
+					);
 				}
 
 				if (links.dev) {
-					summaryContents.push($.create({
-						tag: 'a',
-						properties: {
-							href: devLinkFormat(this.tests.links).replace(/#.*/, '') + links.dev,
-							target: '_blank',
-							textContent: 'DEV',
-							className: 'spec-link ' + devLinkLogo(this.tests.links) + '-link'
-						}
-					}));
+					summaryContents.push(
+						$.create({
+							tag: 'a',
+							properties: {
+								href: devLinkFormat(this.tests.links).replace(/#.*/, '') + links.dev,
+								target: '_blank',
+								textContent: 'DEV',
+								className: 'spec-link ' + devLinkLogo(this.tests.links) + '-link',
+							},
+						}),
+					);
 				}
 
 				var mdnLink = 'https://developer.mozilla.org/en-US/docs/Web/';
@@ -220,7 +237,7 @@ Test.prototype = {
 					default:
 						mdnLink += 'CSS/';
 						// add exception for Media Queries if no link define
-						if (what === "Media queries" && !links.mdn) {
+						if (what === 'Media queries' && !links.mdn) {
 							mdnLink += '@media/';
 						}
 						break;
@@ -228,18 +245,20 @@ Test.prototype = {
 				mdnLink += links.mdn
 					? links.mdn
 					: feature.startsWith(':')
-						? feature.replace('()', '')
-						: feature.replace(/(@[^ \/]+)[^\/]*(\/.*)/, '$1$2');
+					? feature.replace('()', '')
+					: feature.replace(/(@[^ \/]+)[^\/]*(\/.*)/, '$1$2');
 
-				summaryContents.push($.create({
-					tag: 'a',
-					properties: {
-						href: mdnLink,
-						target: '_blank',
-						textContent: 'MDN',
-						className: 'spec-link mdn-link'
-					}
-				}));
+				summaryContents.push(
+					$.create({
+						tag: 'a',
+						properties: {
+							href: mdnLink,
+							target: '_blank',
+							textContent: 'MDN',
+							className: 'spec-link mdn-link',
+						},
+					}),
+				);
 			}
 
 			var passed = 0,
@@ -249,9 +268,12 @@ Test.prototype = {
 
 			tests = tests instanceof Array ? tests : [tests];
 
-			for (var i = 0, test; test = tests[i++];) {
+			for (var i = 0, test; (test = tests[i++]); ) {
 				var results = testCallback(test, feature, theseTests),
-					success, prefix, propertyPrefix, note;
+					success,
+					prefix,
+					propertyPrefix,
+					note;
 
 				if (typeof results === 'object') {
 					success = results.success;
@@ -262,20 +284,26 @@ Test.prototype = {
 
 				passed += +success;
 
-				testsResults.push($.create({
-					tag: 'li',
-					innerHTML: test
-						+ (prefix ? '<span class="prefix">' + prefix + '</span>' : '')
-						+ (note ? '<small>' + note + '</small>' : ''),
-					className: passclass({ passed: Math.round(success * 10000), total: 10000 }),
-				}));
+				testsResults.push(
+					$.create({
+						tag: 'li',
+						innerHTML:
+							test +
+							(prefix ? '<span class="prefix">' + prefix + '</span>' : '') +
+							(note ? '<small>' + note + '</small>' : ''),
+						className: passclass({
+							passed: Math.round(success * 10000),
+							total: 10000,
+						}),
+					}),
+				);
 			}
 
 			if (propertyPrefix) {
 				summaryContents[1] = $.create({
 					tag: 'span',
 					className: 'prefix',
-					textContent: propertyPrefix
+					textContent: propertyPrefix,
 				});
 			}
 
@@ -283,35 +311,38 @@ Test.prototype = {
 				$.create({
 					tag: 'summary',
 					properties: {
-						className: passclass({ passed: passed, total: tests.length }),
-						style: '--progress: ' + (passed / tests.length * 100),
+						className: passclass({
+							passed: passed,
+							total: tests.length,
+						}),
+						style: '--progress: ' + (passed / tests.length) * 100,
 					},
-					contents: summaryContents
+					contents: summaryContents,
 				}),
 				$.create({
 					tag: 'ul',
 					contents: testsResults,
-				})
+				}),
 			];
 
 			var details = $.create({
 				tag: 'details',
-				contents: detailsContents
+				contents: detailsContents,
 			});
 
 			thisSection.appendChild(details);
 
 			this.score.update({ passed: passed, total: tests.length });
 		}
-	}
-}
+	},
+};
 
 Test.groups = {
-	'values': function (test, label, tests) {
+	values: function (test, label, tests) {
 		var properties = tests.properties,
 			failed = [];
 
-		for (var j = 0, property; property = properties[j++];) {
+		for (var j = 0, property; (property = properties[j++]); ) {
 			if (!Supports.property(property).success) {
 				properties.splice(--j, 1);
 				continue;
@@ -326,31 +357,31 @@ Test.groups = {
 
 		return {
 			success: success,
-			note: success > 0 && success < 1 ? 'Failed in: ' + failed.join(', ') : ''
-		}
+			note: success > 0 && success < 1 ? 'Failed in: ' + failed.join(', ') : '',
+		};
 	},
 
-	'properties': function (value, property) {
+	properties: function (value, property) {
 		return Supports.value(property, value);
 	},
 
-	'descriptors': function (value, descriptor, tests) {
+	descriptors: function (value, descriptor, tests) {
 		var required = undefined;
 		if (tests[descriptor].required) {
 			if (tests[descriptor].required[value]) {
 				required = tests[descriptor].required[value];
-			} else if (tests[descriptor].required['*'] ) {
+			} else if (tests[descriptor].required['*']) {
 				required = tests[descriptor].required['*'];
 			}
 		}
 		return Supports.descriptorvalue(descriptor, value, required);
 	},
 
-	'selectors': function (test) {
+	selectors: function (test) {
 		return Supports.selector(test);
 	},
 
-	'declaration': function (test) {
+	declaration: function (test) {
 		return Supports.declaration(test);
 	},
 
@@ -362,12 +393,11 @@ Test.groups = {
 		var matches = matchMedia(test);
 		if (matches.media !== 'invalid' && matches.matches) {
 			return { success: true };
-		}
-		else {
+		} else {
 			var matches = matchMedia('not ' + test);
-			return { success: matches.media !== 'invalid' && matches.matches }
+			return { success: matches.media !== 'invalid' && matches.matches };
 		}
-	}
+	},
 };
 
 function passclass(info) {
@@ -375,27 +405,18 @@ function passclass(info) {
 
 	if ('passed' in info) {
 		success = info.passed / info.total;
-	}
-	else if ('failed' in info) {
+	} else if ('failed' in info) {
 		success = 1 - info.failed / info.total;
 	}
 
-	var classes = [
-		'epic-fail',
-		'fail',
-		'very-buggy',
-		'buggy',
-		'slightly-buggy',
-		'almost-pass',
-		'pass'
-	];
+	var classes = ['epic-fail', 'fail', 'very-buggy', 'buggy', 'slightly-buggy', 'almost-pass', 'pass'];
 
 	var index = Math.round(success * (classes.length - 1));
 
 	return classes[index];
 }
 
-window.resetOutput = function() {
+window.resetOutput = function () {
 	mainScore = new Score();
 
 	// Output current score
@@ -408,11 +429,11 @@ window.resetOutput = function() {
 
 	// Display time taken
 	$('#timeTaken').textContent = '';
-}
+};
 
-window.runTests = function(filter = '') {
+window.runTests = function (filter = '') {
 	var specs = [];
-	var timeBefore = +new Date;
+	var timeBefore = +new Date();
 
 	var removedWords = / *(?:\([^)]*\)|:.*|\b(?:CSS(?! 2)|Module)\b)( *)/g;
 
@@ -442,8 +463,8 @@ window.runTests = function(filter = '') {
 			id: spec,
 			// Shorten the title by removing parentheticals,
 			// subheadings, CSS and Module words
-			title: Specs[spec].title.replace(removedWords, "$1").trim(),
-			tests: Specs[spec]
+			title: Specs[spec].title.replace(removedWords, '$1').trim(),
+			tests: Specs[spec],
 		});
 	}
 
@@ -461,10 +482,10 @@ window.runTests = function(filter = '') {
 	$('#total').textContent = mainScore.total;
 
 	// Display time taken
-	$('#timeTaken').textContent = +new Date - timeBefore + 'ms';
-}
+	$('#timeTaken').textContent = +new Date() - timeBefore + 'ms';
+};
 
 onload = function () {
 	$('#filter').value = localStorage.getItem('filter') || '';
 	runTests(localStorage.getItem('filter') || '');
-}
+};

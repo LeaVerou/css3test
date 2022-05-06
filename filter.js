@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	$('#filter').addEventListener('change', evt => {
 		localStorage.setItem('filter', evt.target.value);
 		resetOutput();
