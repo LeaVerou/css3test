@@ -11,6 +11,7 @@ import cssBreak4 from './tests/css-break-4.js';
 import cssCascade3 from './tests/css-cascade-3.js';
 import cssCascade4 from './tests/css-cascade-4.js';
 import cssCascade5 from './tests/css-cascade-5.js';
+import cssCascade6 from './tests/css-cascade-6.js';
 import cssColor3 from './tests/css-color-3.js';
 import cssColor4 from './tests/css-color-4.js';
 import cssColor5 from './tests/css-color-5.js';
@@ -149,6 +150,7 @@ export default {
 	'css-cascade-3': cssCascade3,
 	'css-cascade-4': cssCascade4,
 	'css-cascade-5': cssCascade5,
+	'css-cascade-6': cssCascade6,
 	'css-colors-3': cssColor3,
 	'css-colors-4': cssColor4,
 	'css-colors-5': cssColor5,
