@@ -32,6 +32,35 @@
 	--aside-foreground-color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-background-color: hsl(24 20% 5%);
+		--primary-foreground-color: hsl(24 20% 95%);
+		--secondary-background-color: hsl(200 10% 20%);
+		--secondary-foreground-color: white;
+		--tertiary-background-color: transparent;
+		--tertiary-foreground-color: hsl(200 10% 90%);
+		--primary-shadow-color: black;
+		--secondary-shadow-color: hsl(0 0% 25% / .5);
+		--primary-border-color: hsl(0 0% 25% / .25);
+		--secondary-border-color: var(--secondary-background-color);
+
+		--pass-color: #370;
+		--almost-pass-color: #7a0;
+		--slightly-buggy-color: #990;
+		--buggy-color: #c70;
+		--very-buggy-color: #c30;
+		--fail-color: #c10;
+		--epic-fail-color: #900;
+
+		--aside-border-color: hsl(0 0% 20% / .8);
+		--aside-background-color: hsl(0 0% 2% / .6);
+		--aside-foreground-color: white;
+
+		color-scheme: dark;
+	}
+}
+
 :focus {
 	outline: .1em dotted var(--highlight-background-color);
 	outline-offset: .1em;
