@@ -1,5 +1,39 @@
+:root {
+	--primary-background-color: hsl(24 20% 95%);
+	--primary-foreground-color: hsl(24 20% 5%);
+	--secondary-background-color: hsl(200 10% 20%);
+	--secondary-foreground-color: white;
+	--tertiary-background-color: transparent;
+	--tertiary-foreground-color: hsl(200 10% 20%);
+	--primary-shadow-color: white;
+	--secondary-shadow-color: hsl(0 0% 0% / .5);
+	--primary-border-color: hsl(0 0% 0% / .25);
+	--secondary-border-color: var(--secondary-background-color);
+	--shade-color: hsl(0 0% 0% / .3);
+
+	--spec-link-background-color: var(--secondary-background-color);
+	--spec-link-foreground-color: var(--secondary-foreground-color);
+	--highlight-background-color: #f06;
+	--highlight-foreground-color: white;
+	--prefix-background-color: var(--shade-color);
+	--prefix-foreground-color: var(--spec-link-foreground-color);
+	--progress-color: var(--shade-color);
+
+	--pass-color: #490;
+	--almost-pass-color: #8c0;
+	--slightly-buggy-color: #bb0;
+	--buggy-color: #e80;
+	--very-buggy-color: #e40;
+	--fail-color: #e20;
+	--epic-fail-color: #b00;
+
+	--aside-border-color: hsl(0 0% 80% / .8);
+	--aside-background-color: hsl(0 0% 98% / .6);
+	--aside-foreground-color: black;
+}
+
 :focus {
-	outline: .1em dotted #f06;
+	outline: .1em dotted var(--highlight-background-color);
 	outline-offset: .1em;
 }
 
@@ -7,13 +41,15 @@ body {
 	max-width: 60em;
 	padding: 1em;
 	margin: auto;
-	background: url(https://dabblet.com/img/noise.png) hsl(24, 20%, 95%);
+	background: url(https://dabblet.com/img/noise.png) var(--primary-background-color);
+	color: var(--primary-foreground-color);
 	font: 100%/1.5 sans-serif;
-	text-shadow: 0 1px white;
+	text-shadow: 0 1px var(--primary-shadow-color);
 }
 
 a {
-	color: hsl(200, 10%, 20%);
+	background-color: var(--tertiary-background-color);
+	color: var(--tertiary-foreground-color);
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -30,7 +66,8 @@ body > section section section h1 {
 }
 
 section section section section h1 {
-	color: hsla(200, 10%, 20%, .5);
+	background-color: var(--tertiary-background-color);
+	color: var(--tertiary-foreground-color);
 	font-size: 120%;
 	font-weight: bold;
 	text-transform: capitalize;
@@ -47,17 +84,18 @@ h1 > .score {
 	margin: -.5em 0 -.5em .3em;
 	font-family: sans-serif;
 	font-size: 0.9rem;
-	background: hsl(200, 10%, 20%);
-	color: white;
+	background-color: var(--spec-link-background-color);
+	color: var(--spec-link-foreground-color);
 	border-radius: .3em;
 	vertical-align: middle;
-	text-shadow: 0 .1em .1em black;
+	text-shadow: 0 .1em .1em var(--secondary-shadow-color);
 }
 
 .spec-link:hover,
 .spec-link:focus {
 	outline: none;
-	background: #f06;
+	background-color: var(--highlight-background-color);
+	color: var(--highlight-foreground-color);
 }
 
 .w3c-link::before,
@@ -103,13 +141,13 @@ body > h1 {
 	left: 0;
 	top: 0;
 	padding: .5em 1em;
-	background: hsl(200, 10%, 20%);
-	box-shadow: -2px 2px 10px rgba(0,0,0,.5);
-	color: white;
+	background: var(--secondary-background-color);
+	box-shadow: -2px 2px 10px var(--secondary-shadow-color);
+	color: var(--secondary-foreground-color);
 	font-size: 150%;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-shadow: 0 .1em .1em black;
+	text-shadow: 0 .1em .1em var(--secondary-shadow-color);
 	z-index: 1;
 
 	transform:  rotate(-90deg) translateX(-100%);
@@ -127,7 +165,7 @@ body > h1 {
 	display: block;
 	width: 50px;
 	border-radius: 50%;
-	box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+	box-shadow: 2px 2px 10px var(--secondary-shadow-color);
 
 	transform: rotate(-15deg);
 }
@@ -168,7 +206,7 @@ details li[class] {
 	background: gray;
 	color: white;
 	border-radius: .3em;
-	text-shadow: 0 -.05em .1em rgba(0,0,0,.5);
+	text-shadow: 0 -.05em .1em var(--secondary-shadow-color);
 	position: relative;
 }
 
@@ -176,7 +214,7 @@ details summary {
 	list-style: none;
 	cursor: pointer;
 	padding-top: .6em;
-	background: linear-gradient(rgb(0 0 0 / .3), rgb(0 0 0 / .3)) no-repeat 0 0 / calc(var(--progress) * 1%) .2em;
+	background: linear-gradient(var(--progress-color), var(--progress-color)) no-repeat 0 0 / calc(var(--progress) * 1%) .2em;
 }
 
 details summary::-webkit-details-marker {
@@ -204,43 +242,43 @@ details li[class] small {
 details summary.pass,
 details li.pass,
 #specsTested li.pass::before {
-	background-color: #490;
+	background-color: var(--pass-color);
 }
 
 details summary.almost-pass,
 details li.almost-pass,
 #specsTested li.almost-pass::before {
-	background-color: #8c0;
+	background-color: var(--almost-pass-color);
 }
 
 details summary.slightly-buggy,
 details li.slightly-buggy,
 #specsTested li.slightly-buggy::before {
-	background-color: #bb0;
+	background-color: var(--slightly-buggy-color);
 }
 
 details summary.buggy,
 details li.buggy,
 #specsTested li.buggy::before {
-	background-color: #e80;
+	background-color: var(--buggy-color);
 }
 
 details summary.very-buggy,
 details li.very-buggy,
 #specsTested li.very-buggy::before {
-	background-color: #e40;
+	background-color: var(--very-buggy-color);
 }
 
 details summary.fail,
 details li.fail,
 #specsTested li.fail::before {
-	background-color: #e20;
+	background-color: var(--fail-color);
 }
 
 details summary.epic-fail,
 details li.epic-fail,
 #specsTested li.epic-fail::before {
-	background-color: #b00;
+	background-color: var(--epic-fail-color);
 }
 
 details summary::before {
@@ -261,11 +299,11 @@ details[open] summary::before {
 	margin: -.5em 0 -.5em .3em;
 	font-family: sans-serif;
 	font-size: 0.7rem;
-	background: hsla(0, 0%, 0%, 0.3);
-	color: white;
+	background: var(--prefix-background-color);
+	color: var(--prefix-foreground-color);
 	border-radius: .3em;
 	vertical-align: middle;
-	text-shadow: 0 .1em .1em black;
+	text-shadow: 0 .1em .1em var(--secondary-shadow-color);
 }
 
 /* Emoticons */
@@ -331,9 +369,9 @@ aside section {
 aside .caution p {
 	padding: 1em;
 	margin-left: 2em;
-	background: hsl(200, 10%, 20%);
-	color: white;
-	text-shadow: 0 -.1em .2em black;
+	background: var(--secondary-background-color);
+	color: var(--secondary-foreground-color);
+	text-shadow: 0 -.1em .2em var(--secondary-shadow-color);
 }
 
 aside h1 {
@@ -348,8 +386,7 @@ aside ul {
 aside li {
 	list-style: none;
 	padding: .3em 0;
-	border-bottom: 2px dotted rgba(0,0,0,.25);
-	border-top: 2px dotted white;
+	border-bottom: 2px dotted var(--primary-border-color);
 }
 
 aside li:first-child {
@@ -372,7 +409,7 @@ aside li:last-child {
 	margin-right: .5em;
 	vertical-align: -.2em;
 	border-radius: 50%;
-	box-shadow: 0 2px white;
+	box-shadow: 0 2px var(--primary-shadow-color);
 }
 
 footer {
@@ -384,24 +421,25 @@ footer {
 footer > p {
 	margin-left: 2em;
 	padding: 1em 0;
-	border-top: 1px solid hsl(200, 10%, 20%);
+	border-top: 1px solid var(--secondary-border-color);
 	text-align: center;
 }
 
 /* Carbon Ads */
 #carbonads {
-  display: block;
-  overflow: hidden;
-  padding: 1em;
-  border: solid 1px hsla(0, 0%, 80%, .8);
-  background-color: hsla(0, 0%, 98%, .6);
-  box-shadow: inset 0 1px hsla(0, 0%, 100%, .6);
-  font-size: 12px;
-  line-height: 1.5;
+	display: block;
+	overflow: hidden;
+	padding: 1em;
+	border: solid 1px var(--aside-border-color);
+	background-color: var(--aside-background-color);
+	font-size: 12px;
+	line-height: 1.5;
 }
 
 #carbonads a {
-  font-weight: 400;
+	font-weight: 400;
+	color: var(--aside-foreground-color);
+	text-shadow: none;
 }
 
 #carbonads span {
