@@ -2,10 +2,10 @@
 	--primary-background-color: hsl(24 20% 95%);
 	--primary-foreground-color: hsl(24 20% 5%);
 	--secondary-background-color: hsl(200 10% 20%);
-	--secondary-foreground-color: white;
+	--secondary-foreground-color: hsl(0 0% 100%);
 	--tertiary-background-color: transparent;
 	--tertiary-foreground-color: hsl(200 10% 20%);
-	--primary-shadow-color: white;
+	--primary-shadow-color: hsl(0 0% 100%);
 	--secondary-shadow-color: hsl(0 0% 0% / .5);
 	--primary-border-color: hsl(0 0% 0% / .25);
 	--secondary-border-color: var(--secondary-background-color);
@@ -13,23 +13,23 @@
 
 	--spec-link-background-color: var(--secondary-background-color);
 	--spec-link-foreground-color: var(--secondary-foreground-color);
-	--highlight-background-color: #f06;
-	--highlight-foreground-color: white;
+	--highlight-background-color: hsl(336 100% 50%);
+	--highlight-foreground-color: hsl(0 0% 100%);
 	--prefix-background-color: var(--shade-color);
 	--prefix-foreground-color: var(--spec-link-foreground-color);
 	--progress-color: var(--shade-color);
 
-	--pass-color: #490;
-	--almost-pass-color: #8c0;
-	--slightly-buggy-color: #bb0;
-	--buggy-color: #e80;
-	--very-buggy-color: #e40;
-	--fail-color: #e20;
-	--epic-fail-color: #b00;
+	--pass-color: hsl(93 100% 30%);
+	--almost-pass-color: hsl(80 100% 40%);
+	--slightly-buggy-color: hsl(60 100% 37%);
+	--buggy-color: hsl(34 100% 47%);
+	--very-buggy-color: hsl(17 100% 47%);
+	--fail-color: hsl(9 100% 47%);
+	--epic-fail-color: hsl(0 100% 37%);
 
 	--aside-border-color: hsl(0 0% 80% / .8);
 	--aside-background-color: hsl(0 0% 98% / .6);
-	--aside-foreground-color: black;
+	--aside-foreground-color: hsl(0 0% 0%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,25 +37,25 @@
 		--primary-background-color: hsl(24 20% 5%);
 		--primary-foreground-color: hsl(24 20% 95%);
 		--secondary-background-color: hsl(200 10% 20%);
-		--secondary-foreground-color: white;
+		--secondary-foreground-color: hsl(0 0% 100%);
 		--tertiary-background-color: transparent;
 		--tertiary-foreground-color: hsl(200 10% 90%);
-		--primary-shadow-color: black;
+		--primary-shadow-color: hsl(0 0% 0%);
 		--secondary-shadow-color: hsl(0 0% 25% / .5);
 		--primary-border-color: hsl(0 0% 25% / .25);
 		--secondary-border-color: var(--secondary-background-color);
 
-		--pass-color: #370;
-		--almost-pass-color: #7a0;
-		--slightly-buggy-color: #990;
-		--buggy-color: #c70;
-		--very-buggy-color: #c30;
-		--fail-color: #c10;
-		--epic-fail-color: #900;
+		--pass-color: hsl(93 100% 25%);
+		--almost-pass-color: hsl(80 100% 35%);
+		--slightly-buggy-color: hsl(60 100% 32%);
+		--buggy-color: hsl(34 100% 42%);
+		--very-buggy-color: hsl(17 100% 42%);
+		--fail-color: hsl(9 100% 42%);
+		--epic-fail-color: hsl(0 100% 32%);
 
 		--aside-border-color: hsl(0 0% 20% / .8);
 		--aside-background-color: hsl(0 0% 2% / .6);
-		--aside-foreground-color: white;
+		--aside-foreground-color: hsl(0 0% 100%);
 
 		color-scheme: dark;
 	}
