@@ -29,6 +29,7 @@ import cssContent3 from './tests/css-content-3.js';
 import cssCounterStyles3 from './tests/css-counter-styles-3.js';
 import cssDisplay3 from './tests/css-display-3.js';
 import cssEasing1 from './tests/css-easing-1.js';
+import cssEasing2 from './tests/css-easing-2.js';
 import cssEnv1 from './tests/css-env-1.js';
 import cssExclusions1 from './tests/css-exclusions-1.js';
 import cssFlexbox1 from './tests/css-flexbox-1.js';
@@ -169,6 +170,7 @@ export default {
 	'css-counter-styles-3': cssCounterStyles3,
 	'css-display-3': cssDisplay3,
 	'css-easing-1': cssEasing1,
+	'css-easing-2': cssEasing2,
 	'css-env-1': cssEnv1,
 	'css-exclusions-1': cssExclusions1,
 	'css-flexbox-1': cssFlexbox1,
