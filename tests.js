@@ -50,6 +50,7 @@ import cssLogical1 from './tests/css-logical-1.js';
 import cssMasking1 from './tests/css-masking-1.js';
 import cssMulticol1 from './tests/css-multicol-1.js';
 import cssMulticol2 from './tests/css-multicol-2.js';
+import cssNamespaces3 from './tests/css-namespaces-3.js';
 import cssNav1 from './tests/css-nav-1.js';
 import cssOverflow3 from './tests/css-overflow-3.js';
 import cssOverflow4 from './tests/css-overflow-4.js';
@@ -191,6 +192,7 @@ export default {
 	'css-masking-1': cssMasking1,
 	'css-multicol-1': cssMulticol1,
 	'css-multicol-2': cssMulticol2,
+	'css-namespaces-3': cssNamespaces3,
 	'css-nav-1': cssNav1,
 	'css-overflow-3': cssOverflow3,
 	'css-overflow-4': cssOverflow4,
