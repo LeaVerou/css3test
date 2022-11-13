@@ -83,6 +83,7 @@ import cssUi3 from './tests/css-ui-3.js';
 import cssUi4 from './tests/css-ui-4.js';
 import cssValues3 from './tests/css-values-3.js';
 import cssValues4 from './tests/css-values-4.js';
+import cssValues5 from './tests/css-values-5.js';
 import cssVariables1 from './tests/css-variables-1.js';
 import cssWillChange1 from './tests/css-will-change-1.js';
 import cssWritingModes3 from './tests/css-writing-modes-3.js';
@@ -225,6 +226,7 @@ export default {
 	'css-ui-4': cssUi4,
 	'css-values-3': cssValues3,
 	'css-values-4': cssValues4,
+	'css-values-5': cssValues5,
 	'css-variables-1': cssVariables1,
 	'css-will-change-1': cssWillChange1,
 	'css-writing-modes-3': cssWritingModes3,
