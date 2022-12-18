@@ -42,6 +42,7 @@ import cssGrid3 from './tests/css-grid-3.js';
 import cssHighlightApi1 from './tests/css-highlight-api-1.js';
 import cssImages3 from './tests/css-images-3.js';
 import cssImages4 from './tests/css-images-4.js';
+import cssImages5 from './tests/css-images-5.js';
 import cssInline3 from './tests/css-inline-3.js';
 import cssLayoutApi1 from './tests/css-layout-api-1.js';
 import cssLineGrid1 from './tests/css-line-grid-1.js';
@@ -185,6 +186,7 @@ export default {
 	'css-highlight-api-1': cssHighlightApi1,
 	'css-images-3': cssImages3,
 	'css-images-4': cssImages4,
+	'css-images-5': cssImages5,
 	'css-inline-3': cssInline3,
 	'css-layout-api-1': cssLayoutApi1,
 	'css-line-grid-1': cssLineGrid1,
