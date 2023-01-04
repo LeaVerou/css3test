@@ -28,6 +28,7 @@ import cssContainment3 from './tests/css-containment-3.js';
 import cssContent3 from './tests/css-content-3.js';
 import cssCounterStyles3 from './tests/css-counter-styles-3.js';
 import cssDisplay3 from './tests/css-display-3.js';
+import cssDisplay4 from './tests/css-display-4.js';
 import cssEasing1 from './tests/css-easing-1.js';
 import cssEasing2 from './tests/css-easing-2.js';
 import cssEnv1 from './tests/css-env-1.js';
@@ -172,6 +173,7 @@ export default {
 	'css-content-3': cssContent3,
 	'css-counter-styles-3': cssCounterStyles3,
 	'css-display-3': cssDisplay3,
+	'css-display-4': cssDisplay4,
 	'css-easing-1': cssEasing1,
 	'css-easing-2': cssEasing2,
 	'css-env-1': cssEnv1,
