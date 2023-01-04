@@ -68,6 +68,7 @@ import cssRuby1 from './tests/css-ruby-1.js';
 import cssScoping1 from './tests/css-scoping-1.js';
 import cssScrollAnchoring1 from './tests/css-scroll-anchoring-1.js';
 import cssScrollSnap1 from './tests/css-scroll-snap-1.js';
+import cssScrollSnap2 from './tests/css-scroll-snap-2.js';
 import cssScrollbars1 from './tests/css-scrollbars-1.js';
 import cssShadowParts1 from './tests/css-shadow-parts-1.js';
 import cssShapes1 from './tests/css-shapes-1.js';
@@ -214,6 +215,7 @@ export default {
 	'css-scoping-1': cssScoping1,
 	'css-scroll-anchoring-1': cssScrollAnchoring1,
 	'css-scroll-snap-1': cssScrollSnap1,
+	'css-scroll-snap-2': cssScrollSnap2,
 	'css-scrollbars-1': cssScrollbars1,
 	'css-shadow-parts-1': cssShadowParts1,
 	'css-shapes-1': cssShapes1,
