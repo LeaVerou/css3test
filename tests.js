@@ -89,6 +89,7 @@ import cssValues3 from './tests/css-values-3.js';
 import cssValues4 from './tests/css-values-4.js';
 import cssValues5 from './tests/css-values-5.js';
 import cssVariables1 from './tests/css-variables-1.js';
+import cssViewTransitions1 from './tests/css-view-transitions-1.js';
 import cssWillChange1 from './tests/css-will-change-1.js';
 import cssWritingModes3 from './tests/css-writing-modes-3.js';
 import cssWritingModes4 from './tests/css-writing-modes-4.js';
@@ -236,6 +237,7 @@ export default {
 	'css-values-4': cssValues4,
 	'css-values-5': cssValues5,
 	'css-variables-1': cssVariables1,
+	'css-view-transitions-1': cssViewTransitions1,
 	'css-will-change-1': cssWillChange1,
 	'css-writing-modes-3': cssWritingModes3,
 	'css-writing-modes-4': cssWritingModes4,
