@@ -47,6 +47,7 @@ import cssImages5 from './tests/css-images-5.js';
 import cssInline3 from './tests/css-inline-3.js';
 import cssLayoutApi1 from './tests/css-layout-api-1.js';
 import cssLineGrid1 from './tests/css-line-grid-1.js';
+import cssLinkParams1 from './tests/css-link-params-1.js';
 import cssLists3 from './tests/css-lists-3.js';
 import cssLogical1 from './tests/css-logical-1.js';
 import cssMasking1 from './tests/css-masking-1.js';
@@ -192,6 +193,7 @@ export default {
 	'css-inline-3': cssInline3,
 	'css-layout-api-1': cssLayoutApi1,
 	'css-line-grid-1': cssLineGrid1,
+	'css-link-params-1': cssLinkParams1,
 	'css-lists-3': cssLists3,
 	'css-logical-1': cssLogical1,
 	'css-masking-1': cssMasking1,
