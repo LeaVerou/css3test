@@ -40,6 +40,7 @@ window.matchMedia =
 
 	var _ = (window.Supports = {
 		prefixes: ['', '-moz-', '-webkit-', '-o-', '-ms-', 'ms-', '-khtml-'],
+		domPrefixes: ['', 'Moz', 'Webkit', 'WebKit'],
 
 		property: function (property) {
 			if (property.charAt(0) === '-') {
@@ -245,6 +246,105 @@ window.matchMedia =
 					: Supports.variable(val[1], val[2]).success,
 			};
 		},
+
+		interface: function (interface) {
+			if (!_.interface.cached) {
+				_.interface.cached = {};
+			} else if (_.interface.cached[interface]) {
+				return {
+					success: true,
+					interface: _.interface.cached[interface].interface,
+					prefix: _.interface.cached[interface].prefix,
+				};
+			}
+
+			for (var i = 0; i < _.domPrefixes.length; i++) {
+				var prefixed = getPrefixedVariants(interface, _.domPrefixes[i]);
+
+				for (var j = 0; j < prefixed.length; j++) {
+					if (prefixed[j] in window) {
+						_.interface.cached[interface] = {
+							interface: prefixed[j],
+							prefix: _.domPrefixes[i],
+						};
+
+						return {
+							success: true,
+							interface: prefixed[j],
+							prefix: _.domPrefixes[i],
+						};
+					}
+				}
+			}
+
+			_.interface.cached[interface] = false;
+			return {
+				success: false,
+				interface: interface,
+			};
+		},
+
+		attributeOrMethod: function (interface, attributeOrMethod, required, interfaceCallback) {
+			function getInterfaceFromRules(rules, interfaceName) {
+				for (var i = 0; i < rules.length; i++) {
+					if (rules[i].constructor.name === interfaceName) {
+						return rules[i];
+					}
+
+					if (rules[i].cssRules) {
+						var interface = getInterfaceFromRules(rules[i].cssRules, interfaceName);
+						if (interface) {
+							return interface;
+						}
+					}
+				}
+
+				return null;
+			}
+
+			interface = _.interface(interface);
+
+			if (!interface.success) {
+				return interface;
+			}
+
+			// If no CSS rules are defined to test against and no interface is defined explicitly,
+			// only return the interface info
+			if (!required && !interfaceCallback) {
+				return interface;
+			}
+
+			style.textContent = required;
+
+			var cssInterface = null;
+			try {
+				if (interfaceCallback) {
+						cssInterface = interfaceCallback(style);
+				} else {
+					cssInterface = getInterfaceFromRules(style.sheet.cssRules, interface.interface);
+				}
+			} catch (e) {
+				return interface;
+			}
+
+			if (cssInterface) {
+				for (var i = 0; i < _.domPrefixes.length; i++) {
+					var prefixed = _.domPrefixes[i] + attributeOrMethod;
+
+					if (prefixed in cssInterface) {
+						return {
+							success: true,
+							prefix: _.domPrefixes[i],
+							interfacePrefix: interface.prefix,
+						};
+					}
+				}
+			}
+
+			return {
+				success: false,
+			};
+		},
 	});
 
 	/**
@@ -256,5 +356,12 @@ window.matchMedia =
 				return $1.toUpperCase();
 			})
 			.replace('-', '');
+	}
+
+	function getPrefixedVariants(featureName, prefix) {
+		return [
+			prefix + featureName,
+			featureName.replace('CSS', 'CSS' + prefix),
+		]
 	}
 })();
