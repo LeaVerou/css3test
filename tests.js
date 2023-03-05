@@ -34,6 +34,7 @@ import cssEasing2 from './tests/css-easing-2.js';
 import cssEnv1 from './tests/css-env-1.js';
 import cssExclusions1 from './tests/css-exclusions-1.js';
 import cssFlexbox1 from './tests/css-flexbox-1.js';
+import cssFontLoading3 from './tests/css-font-loading-3.js';
 import cssFonts3 from './tests/css-fonts-3.js';
 import cssFonts4 from './tests/css-fonts-4.js';
 import cssFonts5 from './tests/css-fonts-5.js';
@@ -55,6 +56,7 @@ import cssMulticol1 from './tests/css-multicol-1.js';
 import cssMulticol2 from './tests/css-multicol-2.js';
 import cssNamespaces3 from './tests/css-namespaces-3.js';
 import cssNav1 from './tests/css-nav-1.js';
+import cssNesting1 from './tests/css-nesting-1.js';
 import cssOverflow3 from './tests/css-overflow-3.js';
 import cssOverflow4 from './tests/css-overflow-4.js';
 import cssOverscroll1 from './tests/css-overscroll-1.js';
@@ -83,6 +85,7 @@ import cssTextDecor4 from './tests/css-text-decor-4.js';
 import cssTransforms1 from './tests/css-transforms-1.js';
 import cssTransforms2 from './tests/css-transforms-2.js';
 import cssTransitions1 from './tests/css-transitions-1.js';
+import cssTransitions2 from './tests/css-transitions-2.js';
 import cssUi3 from './tests/css-ui-3.js';
 import cssUi4 from './tests/css-ui-4.js';
 import cssValues3 from './tests/css-values-3.js';
@@ -106,6 +109,7 @@ import css2Ui from './tests/css2-ui.js';
 import css2VisuDet from './tests/css2-visudet.js';
 import css2VisuFx from './tests/css2-visufx.js';
 import css2VisuRen from './tests/css2-visuren.js';
+import cssom1 from './tests/cssom-1.js';
 import cssomView1 from './tests/cssom-view-1.js';
 import fillStroke3 from './tests/fill-stroke-3.js';
 import filterEffects1 from './tests/filter-effects-1.js';
@@ -119,6 +123,7 @@ import mediaQueries5 from './tests/mediaqueries-5.js';
 import motion1 from './tests/motion-1.js';
 import pointerEvents1 from './tests/pointerevents1.js';
 import pointerEvents3 from './tests/pointerevents3.js';
+import resizeObserver1 from './tests/resize-observer-1.js';
 import scrollAnimations1 from './tests/scroll-animations-1.js';
 import selectors3 from './tests/selectors-3.js';
 import selectors4 from './tests/selectors-4.js';
@@ -129,6 +134,8 @@ import svg2Painting from './tests/svg2-painting.js';
 import svg2Paths from './tests/svg2-paths.js';
 import svg2PServers from './tests/svg2-pservers.js';
 import svg2Text from './tests/svg2-text.js';
+import webAnimations1 from './tests/web-animations-1.js';
+import webAnimations2 from './tests/web-animations-2.js';
 import webVtt from './tests/webvtt.js';
 
 
@@ -182,6 +189,7 @@ export default {
 	'css-env-1': cssEnv1,
 	'css-exclusions-1': cssExclusions1,
 	'css-flexbox-1': cssFlexbox1,
+	'css-font-loading-3': cssFontLoading3,
 	'css-fonts-3': cssFonts3,
 	'css-fonts-4': cssFonts4,
 	'css-fonts-5': cssFonts5,
@@ -203,6 +211,7 @@ export default {
 	'css-multicol-2': cssMulticol2,
 	'css-namespaces-3': cssNamespaces3,
 	'css-nav-1': cssNav1,
+	'css-nesting-1': cssNesting1,
 	'css-overflow-3': cssOverflow3,
 	'css-overflow-4': cssOverflow4,
 	'css-overscroll-1': cssOverscroll1,
@@ -231,6 +240,7 @@ export default {
 	'css-transforms-1': cssTransforms1,
 	'css-transforms-2': cssTransforms2,
 	'css-transitions-1': cssTransitions1,
+	'css-transitions-2': cssTransitions2,
 	'css-ui-3': cssUi3,
 	'css-ui-4': cssUi4,
 	'css-values-3': cssValues3,
@@ -241,6 +251,7 @@ export default {
 	'css-will-change-1': cssWillChange1,
 	'css-writing-modes-3': cssWritingModes3,
 	'css-writing-modes-4': cssWritingModes4,
+	'cssom-1': cssom1,
 	'cssom-view-1': cssomView1,
 	'fill-stroke-3': fillStroke3,
 	'filter-effects-1': filterEffects1,
@@ -254,6 +265,7 @@ export default {
 	'motion-1': motion1,
 	'pointerevents-1': pointerEvents1,
 	'pointerevents-3': pointerEvents3,
+	'resize-observer-1': resizeObserver1,
 	'scroll-animations-1': scrollAnimations1,
 	'selectors-3': selectors3,
 	'selectors-4': selectors4,
@@ -264,5 +276,7 @@ export default {
 	'svg2-paths': svg2Paths,
 	'svg2-pServers': svg2PServers,
 	'svg2-text': svg2Text,
+	'web-animations-1': webAnimations1,
+	'web-animations-2': webAnimations2,
 	webvtt: webVtt,
 };
