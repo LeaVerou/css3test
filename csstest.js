@@ -234,6 +234,9 @@ Test.prototype = {
 					case 'SVG':
 						mdnLink += 'SVG/Attribute/';
 						break;
+					case 'DOM':
+						mdnLink += 'API/';
+						break;
 					default:
 						mdnLink += 'CSS/';
 						// add exception for Media Queries if no link define
@@ -385,6 +388,10 @@ Test.groups = {
 
 	'@rules': function (test) {
 		return Supports.atrule(test);
+	},
+
+	interfaces: function (value, name, tests) {
+		return Supports.attributeOrMethod(name, value, tests[name].required, tests[name].interface);
 	},
 
 	'Media queries': function (test) {
