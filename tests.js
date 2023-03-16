@@ -1,5 +1,6 @@
 import compat from './tests/compat.js';
 import cssAlign3 from './tests/css-align-3.js';
+import cssAnimationWorklet1 from './tests/css-animation-worklet-1.js';
 import cssAnimations1 from './tests/css-animations-1.js';
 import cssAnimations2 from './tests/css-animations-2.js';
 import cssBackgrounds3 from './tests/css-backgrounds-3.js';
@@ -63,6 +64,7 @@ import cssOverscroll1 from './tests/css-overscroll-1.js';
 import cssPage3 from './tests/css-page-3.js';
 import cssPaintApi1 from './tests/css-paint-api-1.js';
 import cssPosition3 from './tests/css-position-3.js';
+import cssPropertiesValuesApi1 from './tests/css-properties-values-api-1.js';
 import cssPseudo4 from './tests/css-pseudo-4.js';
 import cssRegions1 from './tests/css-regions-1.js';
 import cssRhythmic from './tests/css-rhythmic-1.js';
@@ -86,6 +88,7 @@ import cssTransforms1 from './tests/css-transforms-1.js';
 import cssTransforms2 from './tests/css-transforms-2.js';
 import cssTransitions1 from './tests/css-transitions-1.js';
 import cssTransitions2 from './tests/css-transitions-2.js';
+import cssTypedOm1 from './tests/css-typed-om-1.js';
 import cssUi3 from './tests/css-ui-3.js';
 import cssUi4 from './tests/css-ui-4.js';
 import cssValues3 from './tests/css-values-3.js';
@@ -157,6 +160,7 @@ export default {
 	'css-align-3': cssAlign3,
 	'css-animation-1': cssAnimations1,
 	'css-animation-2': cssAnimations2,
+	'css-animation-worklet-1': cssAnimationWorklet1,
 	'css-backgrounds-3': cssBackgrounds3,
 	'css-backgrounds-4': cssBackgrounds4,
 	'css-box-3': cssBox3,
@@ -218,6 +222,7 @@ export default {
 	'css-page-3': cssPage3,
 	'css-paint-api-1': cssPaintApi1,
 	'css-position-3': cssPosition3,
+	'css-properties-values-api-1': cssPropertiesValuesApi1,
 	'css-pseudo-4': cssPseudo4,
 	'css-regions-1': cssRegions1,
 	'css-rhythmic': cssRhythmic,
@@ -241,6 +246,7 @@ export default {
 	'css-transforms-2': cssTransforms2,
 	'css-transitions-1': cssTransitions1,
 	'css-transitions-2': cssTransitions2,
+	'css-typed-om-1': cssTypedOm1,
 	'css-ui-3': cssUi3,
 	'css-ui-4': cssUi4,
 	'css-values-3': cssValues3,
