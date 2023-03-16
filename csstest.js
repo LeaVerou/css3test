@@ -289,7 +289,7 @@ Test.prototype = {
 					$.create({
 						tag: 'li',
 						innerHTML:
-							test +
+							test.replace(/</g, '&lt;').replace(/>/g, '&gt;') +
 							(prefix ? '<span class="prefix">' + prefix + '</span>' : '') +
 							(note ? '<small>' + note + '</small>' : ''),
 						className: passclass({
