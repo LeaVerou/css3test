@@ -8,13 +8,13 @@ export default {
 		stability: 'stable',
 	},
 	values: {
-		properties: ['font-family'],
 		'system-ui': {
 			links: {
 				tr: '#system-ui-def',
 				dev: '#system-ui-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'system-ui',
 		},
 		'emoji': {
@@ -23,6 +23,7 @@ export default {
 				dev: '#emoji-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'emoji',
 		},
 		'math': {
@@ -31,6 +32,7 @@ export default {
 				dev: '#math-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'math',
 		},
 		'fangsong': {
@@ -39,6 +41,7 @@ export default {
 				dev: '#fangsong-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'fangsong',
 		},
 		'ui-serif': {
@@ -47,6 +50,7 @@ export default {
 				dev: '#ui-serif-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'ui-serif',
 		},
 		'ui-sans-serif': {
@@ -55,6 +59,7 @@ export default {
 				dev: '#ui-sans-serif-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'ui-sans-serif',
 		},
 		'ui-monospace': {
@@ -63,6 +68,7 @@ export default {
 				dev: '#ui-monospace-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'ui-monospace',
 		},
 		'ui-rounded': {
@@ -71,39 +77,65 @@ export default {
 				dev: '#ui-rounded-def',
 				mdn: 'font-family',
 			},
+			properties: ['font-family'],
 			tests: 'ui-rounded',
 		},
-	},
-	properties: {
-		'font-size': {
+		'xxx-large': {
 			links: {
 				tr: '#font-size-prop',
 				dev: '#font-size-prop',
 			},
-			tests: ['xxx-large', 'math'],
+			properties: ['font-size'],
+			tests: ['xxx-large'],
 		},
-		'font-size-adjust': {
+		'math font-size': {
 			links: {
-				tr: '#font-size-adjust-prop',
-				dev: '#font-size-adjust-prop',
+				tr: '#font-size-prop',
+				dev: '#font-size-prop',
 			},
-			tests: ['none', '0', '1.234'],
+			properties: ['font-size'],
+			tests: ['math'],
 		},
-		'font-variant': {
+		'arbitrary font weights': {
+			links: {
+				tr: '#font-weight-prop',
+				dev: '#font-weight-prop',
+			},
+			properties: ['font-weight'],
+			tests: ['1', '90', '750', '1000'],
+		},
+		'angle for oblique': {
+			links: {
+				tr: '#font-style-prop',
+				dev: '#font-style-prop',
+			},
+			properties: ['font-style'],
+			tests: ['oblique 15deg', 'oblique -15deg', 'oblique 0deg'],
+		},
+		'font-variant functions and keywords': {
 			links: {
 				tr: '#font-variant-prop',
 				dev: '#font-variant-prop',
 			},
+			properties: ['font-variant'],
 			tests: [
-				'none',
-				'all-petite-caps',
+				'stylistic(salt01)',
 				'historical-forms',
-				'super',
-				'sub lining-nums contextual ruby',
-				'annotation(circled)',
+				'styleset(ss01)',
+				'styleset(stacked-g, geometric-m)',
+				'character-variant(cv02)',
+				'character-variant(beta-3, gamma)',
+				'swash(flowing)',
+				'ornaments(leaves)',
+				'annotation(blocky)',
+				'text',
+				'emoji',
+				'unicode',
 				'discretionary-ligatures character-variant(leo-B, leo-M, leo-N, leo-T, leo-U)',
 			],
 		},
+	},
+	properties: {
 		'font-variant-alternates': {
 			links: {
 				tr: '#font-variant-alternates-prop',
@@ -158,20 +190,6 @@ export default {
 				dev: '#font-language-override',
 			},
 			tests: ['normal', "'SRB'"],
-		},
-		'font-weight': {
-			links: {
-				tr: '#font-weight-prop',
-				dev: '#font-weight-prop',
-			},
-			tests: ['1', '90', '750', '1000'],
-		},
-		'font-style': {
-			links: {
-				tr: '#font-style-prop',
-				dev: '#font-style-prop',
-			},
-			tests: ['oblique 15deg', 'oblique -15deg', 'oblique 0deg'],
 		},
 		'font-synthesis-weight': {
 			links: {

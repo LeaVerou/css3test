@@ -7,11 +7,11 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
-		properties: ['width', 'padding'],
 		'attr()': {
 			links: {
 				dev: '#attr-notation',
 			},
+			properties: ['width', 'padding'],
 			tests: [
 				'attr(data-px)',
 				'attr(data-px px)',
@@ -29,11 +29,26 @@ export default {
 				'attr(data-flex flex)',
 			],
 		},
-		'toggle()': {
+		'toggle() with lengths': {
 			links: {
 				dev: '#toggle-notation',
 			},
-			tests: ['toggle(1px, 2px)', 'toggle(italic, normal)', 'toggle(disc, circle, square, box)'],
+			properties: ['width', 'padding'],
+			tests: ['toggle(1px, 2px)'],
+		},
+		'toggle() with keywords': {
+			links: {
+				dev: '#toggle-notation',
+			},
+			properties: ['font-style'],
+			tests: ['toggle(italic, normal)'],
+		},
+		'toggle() with mixed keywords and lengths': {
+			links: {
+				dev: '#toggle-notation',
+			},
+			properties: ['background-position'],
+			tests: ['toggle(top left, 100% 50%)'],
 		},
 	},
 };

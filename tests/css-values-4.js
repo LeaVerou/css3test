@@ -8,13 +8,13 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
-		properties: ['width', 'padding'],
 		ex: {
 			links: {
 				tr: '#ex',
 				dev: '#ex',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5ex',
 		},
 		rex: {
@@ -23,6 +23,7 @@ export default {
 				dev: '#rex',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5rex',
 		},
 		cap: {
@@ -31,6 +32,7 @@ export default {
 				dev: '#cap',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5cap',
 		},
 		rcap: {
@@ -39,6 +41,7 @@ export default {
 				dev: '#rcap',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5rcap',
 		},
 		rch: {
@@ -47,6 +50,7 @@ export default {
 				dev: '#rcap',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5rch',
 		},
 		rch: {
@@ -55,6 +59,7 @@ export default {
 				dev: '#rcap',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5rch',
 		},
 		ic: {
@@ -63,6 +68,7 @@ export default {
 				dev: '#ic',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5ic',
 		},
 		ric: {
@@ -71,6 +77,7 @@ export default {
 				dev: '#ric',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5ric',
 		},
 		lh: {
@@ -79,6 +86,7 @@ export default {
 				dev: '#lh',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5lh',
 		},
 		rlh: {
@@ -87,6 +95,7 @@ export default {
 				dev: '#rlh',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5rlh',
 		},
 		svh: {
@@ -95,6 +104,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5svh',
 		},
 		lvh: {
@@ -103,6 +113,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5lvh',
 		},
 		dvh: {
@@ -111,6 +122,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5dvh',
 		},
 		svw: {
@@ -119,6 +131,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5svw',
 		},
 		lvw: {
@@ -127,6 +140,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5lvw',
 		},
 		dvw: {
@@ -135,6 +149,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5dvw',
 		},
 		dvmin: {
@@ -143,6 +158,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5dvmin',
 		},
 		dvmax: {
@@ -151,6 +167,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5dvmax',
 		},
 		vb: {
@@ -159,6 +176,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5vb',
 		},
 		vi: {
@@ -167,6 +185,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5vi',
 		},
 		svb: {
@@ -175,6 +194,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5dvb',
 		},
 		dvi: {
@@ -183,6 +203,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5dvi',
 		},
 		lvd: {
@@ -191,6 +212,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5lvb',
 		},
 		lvi: {
@@ -199,6 +221,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5lvi',
 		},
 		svb: {
@@ -207,6 +230,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5svb',
 		},
 		svi: {
@@ -215,6 +239,7 @@ export default {
 				dev: '#viewport-relative-lengths',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5svi',
 		},
 		'min()': {
@@ -222,6 +247,7 @@ export default {
 				tr: '#calc-notation',
 				dev: '#comp-func',
 			},
+			properties: ['width', 'padding'],
 			tests: ['min(10 * (1vw + 1vh) / 2, 12px)'],
 		},
 		'max()': {
@@ -229,6 +255,7 @@ export default {
 				tr: '#calc-notation',
 				dev: '#comp-func',
 			},
+			properties: ['width', 'padding'],
 			tests: ['max(10 * (1vw + 1vh) / 2, 12px)'],
 		},
 		'clamp()': {
@@ -236,13 +263,15 @@ export default {
 				tr: '#calc-notation',
 				dev: '#comp-func',
 			},
+			properties: ['width', 'padding'],
 			tests: ['clamp(12px, 10 * (1vw + 1vh) / 2, 100px)'],
 		},
-		'calc()': {
+		'math functions in calc()': {
 			links: {
 				tr: '#calc-func',
 				dev: '#calc-func',
 			},
+			properties: ['width', 'padding'],
 			tests: [
 				'calc(1rem * pow(1.5, -1))',
 				'calc(1rem * (pow(e, pi) - pi))',
@@ -255,6 +284,7 @@ export default {
 				tr: '#round-func',
 				dev: '#round-func',
 			},
+			properties: ['width', 'padding'],
 			tests: [
 				'round(down, 5.5px, 5px)',
 				'round(up, 5.5px, 5px)',
@@ -267,6 +297,7 @@ export default {
 				tr: '#round-func',
 				dev: '#round-func',
 			},
+			properties: ['width', 'padding'],
 			tests: ['mod(18px, 5px)', 'calc(1px * sin(mod(-140deg, -90deg))'],
 		},
 		'rem()': {
@@ -274,6 +305,7 @@ export default {
 				tr: '#round-func',
 				dev: '#round-func',
 			},
+			properties: ['width', 'padding'],
 			tests: ['rem(-18px, 5px)'],
 		},
 		'sin()': {
@@ -281,6 +313,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(45deg)', 'calc(1px * sin(.125turn))', 'calc(1px * sin(3.14159 / 4))'],
 		},
 		'cos()': {
@@ -288,6 +321,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * cos(45deg))', 'calc(1px * cos(.125turn))', 'calc(1px * cos(3.14159 / 4))'],
 		},
 		'tan()': {
@@ -295,6 +329,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * tan(1))'],
 		},
 		'asin()': {
@@ -302,6 +337,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(asin(1)))'],
 		},
 		'acos()': {
@@ -309,6 +345,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(acos(-1)))'],
 		},
 		'atan()': {
@@ -316,6 +353,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(atan(-1)))', 'calc(1px * sin(atan(tan(90deg))))'],
 		},
 		'atan2()': {
@@ -323,6 +361,7 @@ export default {
 				tr: '#trig-funcs',
 				dev: '#trig-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(atan2(15deg, 90deg)))'],
 		},
 		'pow()': {
@@ -330,6 +369,7 @@ export default {
 				tr: '#exponent-funcs',
 				dev: '#exponent-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * pow(1.5, -1))'],
 		},
 		'sqrt()': {
@@ -337,6 +377,7 @@ export default {
 				tr: '#exponent-funcs',
 				dev: '#exponent-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sqrt(2))'],
 		},
 		'hypot()': {
@@ -344,6 +385,7 @@ export default {
 				tr: '#exponent-funcs',
 				dev: '#exponent-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * hypot(2))', 'calc(1px * hypot(2, 2))'],
 		},
 		'log()': {
@@ -351,6 +393,7 @@ export default {
 				tr: '#exponent-funcs',
 				dev: '#exponent-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * log(2))'],
 		},
 		'exp()': {
@@ -358,6 +401,7 @@ export default {
 				tr: '#exponent-funcs',
 				dev: '#exponent-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * exp(2))'],
 		},
 		'abs()': {
@@ -365,6 +409,7 @@ export default {
 				tr: '#sign-funcs',
 				dev: '#sign-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * abs(-2))'],
 		},
 		'sign()': {
@@ -372,6 +417,7 @@ export default {
 				tr: '#sign-funcs',
 				dev: '#sign-funcs',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sign(10%))'],
 		},
 		e: {
@@ -379,6 +425,7 @@ export default {
 				tr: '#calc-constants',
 				dev: '#calc-constants',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * calc(e))'],
 		},
 		pi: {
@@ -386,6 +433,7 @@ export default {
 				tr: '#calc-constants',
 				dev: '#calc-constants',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * calc(pi))'],
 		},
 		infinity: {
@@ -393,6 +441,7 @@ export default {
 				tr: '#calc-error-constants',
 				dev: '#ccalc-error-constants',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(tan(atan(infinity))))'],
 		},
 		'-infinity': {
@@ -400,6 +449,7 @@ export default {
 				tr: '#calc-error-constants',
 				dev: '#ccalc-error-constants',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(tan(atan(-infinity))))'],
 		},
 		NaN: {
@@ -407,6 +457,7 @@ export default {
 				tr: '#calc-error-constants',
 				dev: '#ccalc-error-constants',
 			},
+			properties: ['width', 'padding'],
 			tests: ['calc(1px * sin(tan(atan(NaN))))'],
 		},
 	},

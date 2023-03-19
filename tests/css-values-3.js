@@ -9,13 +9,13 @@ export default {
 		'first-snapshot': 2015,
 	},
 	values: {
-		properties: ['width', 'padding'],
 		rem: {
 			links: {
 				tr: '#rem',
 				dev: '#rem',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5rem',
 		},
 		ch: {
@@ -24,6 +24,7 @@ export default {
 				dev: '#ch',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5ch',
 		},
 		vw: {
@@ -32,6 +33,7 @@ export default {
 				dev: '#vw',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5vw',
 		},
 		vh: {
@@ -40,6 +42,7 @@ export default {
 				dev: '#vh',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5vh',
 		},
 		vmin: {
@@ -48,6 +51,7 @@ export default {
 				dev: '#vmin',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5vmin',
 		},
 		vmax: {
@@ -56,6 +60,7 @@ export default {
 				dev: '#vmax',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5vmax',
 		},
 		Q: {
@@ -64,6 +69,7 @@ export default {
 				dev: '#Q',
 				mdn: 'length',
 			},
+			properties: ['width', 'padding'],
 			tests: '5Q',
 		},
 		'calc()': {
@@ -71,6 +77,7 @@ export default {
 				tr: '#calc-notation',
 				dev: '#calc-notation',
 			},
+			properties: ['width', 'padding'],
 			tests: [
 				'calc(1px + 2px)',
 				'calc(5px*2)',
@@ -81,8 +88,13 @@ export default {
 				'calc(calc(100%))',
 			],
 		},
-	},
-	properties: {
-		transform: ['rotate(calc(15deg + 30deg))'],
+		'nested calc()': {
+			links: {
+				tr: '#calc-notation',
+				dev: '#calc-notation',
+			},
+			properties: ['transform'],
+			tests: ['translateX(calc(1px + 2px))'],
+		}
 	},
 };
