@@ -8,12 +8,12 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['color', 'font-weight', 'background-image', 'all'],
 		'revert-layer': {
 			links: {
 				tr: '#revert-layer',
 				dev: '#revert-layer',
 			},
-			properties: ['color', 'font-weight', 'background-image', 'all'],
 			tests: 'revert-layer',
 		},
 	},

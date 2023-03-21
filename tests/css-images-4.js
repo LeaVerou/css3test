@@ -8,12 +8,12 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 		'Double-position color stops in linear-gradient()': {
 			links: {
 				tr: '#linear-gradients',
 				dev: '#linear-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: ['linear-gradient(45deg, #f06 25%, yellow 25% 50%, #f06 50% 75%, yellow 75%)'],
 		},
 		'Double-position color stops in radial-gradient()': {
@@ -21,7 +21,6 @@ export default {
 				tr: '#radial-gradients',
 				dev: '#radial-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: ['radial-gradient(center, red 0% 25%, blue 25% 75%, red 75% 100%)'],
 		},
 		'conic-gradient()': {
@@ -29,7 +28,6 @@ export default {
 				tr: '#conic-gradients',
 				dev: '#conic-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: [
 				'conic-gradient(white, black)',
 				'conic-gradient(from 5deg, white, black)',
@@ -46,7 +44,6 @@ export default {
 				tr: '#repeating-gradients',
 				dev: '#repeating-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: [
 				'repeating-conic-gradient(white, black)',
 				'repeating-conic-gradient(hsla(0, 0%, 100%, .2) 0deg 15deg, hsla(0, 0%, 100%, 0) 0deg 30deg)',
@@ -57,7 +54,6 @@ export default {
 				tr: '#image-notation',
 				dev: '#image-notation',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: [
 				"image('sprites.png#xywh=10,30,60,20')",
 				"image('wavy.svg', 'wavy.png' , 'wavy.gif')",
@@ -70,7 +66,6 @@ export default {
 				tr: '#image-set-notation',
 				dev: '#image-set-notation',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: [
 				"image-set('foo.png' 1x, 'foo-2x.png' 2x, 'foo-print.png' 600dpi)",
 				'image-set(linear-gradient(green, green) 1x, url(foobar.png) 2x)',
@@ -89,7 +84,6 @@ export default {
 				tr: '#element-notation',
 				dev: '#element-notation',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: 'element(#foo)',
 		},
 		'cross-fade()': {
@@ -97,7 +91,6 @@ export default {
 				tr: '#cross-fade-function',
 				dev: '#cross-fade-function',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: [
 				'cross-fade(url(a.png), url(b.png))',
 				'cross-fade(url(a.png) 50%, url(b.png))',

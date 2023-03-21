@@ -7,12 +7,12 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 		'color-mix()': {
 			links: {
 				dev: '#color-mix',
 				mdn: 'color_value/color-mix',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: [
 				'color-mix(in srgb, teal 65%, olive)',
 				'color-mix(in srgb, rgb(255, 0, 0, .2) 65%, olive)',
@@ -30,7 +30,6 @@ export default {
 				dev: '#coloradjust',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['color-adjust(peru lightness -20%)'],
 		},
 
@@ -39,7 +38,6 @@ export default {
 				dev: '#relative-colors',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: [
 				'rgb(from indianred 255 g b)',
 				'hsl(from lightseagreen calc(h+180) s l)',

@@ -9,13 +9,13 @@ export default {
 		'first-snapshot': 2022,
 	},
 	values: {
+		properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 		'comma-less colors': {
 			links: {
 				tr: '#funcdef-rgb',
 				dev: '#funcdef-rgb',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['rgb(0% 20% 70%)', 'rgb(0 64 185)', 'hsl(0 0% 0%)'],
 		},
 		'/ alpha': {
@@ -24,7 +24,6 @@ export default {
 				dev: '#funcdef-rgb',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: [
 				'rgba(0% 20% 70% / 50%)',
 				'rgba(0% 20% 70% / .5)',
@@ -39,7 +38,6 @@ export default {
 				dev: '#funcdef-rgb',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: [
 				'rgb(0% 20% 70% / 50%)',
 				'rgb(0% 20% 70% / .5)',
@@ -54,7 +52,6 @@ export default {
 				dev: '#hex-notation',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['#000F', '#000000FF'],
 		},
 		rebeccapurple: {
@@ -63,7 +60,6 @@ export default {
 				dev: '#named-colors',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: 'rebeccapurple',
 		},
 		'system colors': {
@@ -72,7 +68,6 @@ export default {
 				dev: '#css-system-colors',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: [
 				'Canvas',
 				'CanvasText',
@@ -93,7 +88,6 @@ export default {
 				dev: '#the-hwb-notation',
 				mdn: 'color_value/hwb',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['hwb(0 0% 0%)', 'hwb(0 0% 0% / .5)'],
 		},
 		'lab()': {
@@ -102,7 +96,6 @@ export default {
 				dev: '#specifying-lab-lch',
 				mdn: 'color_value/lab',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['lab(0% 0 0)', 'lab(0% 0 0 /.5)'],
 		},
 		'oklab()': {
@@ -111,17 +104,14 @@ export default {
 				dev: '#specifying-oklab-lch',
 				mdn: 'color_value/oklab',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['oklab(0% 0 0)', 'oklab(40.101% 0.1147 0.0453 / .5)'],
 		},
-
 		'lch()': {
 			links: {
 				tr: '#specifying-lch-lch',
 				dev: '#specifying-lch-lch',
 				mdn: 'color_value/lch',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['lch(0% 0 0)', 'lch(none 0% none)', 'lch(0% 0 0 / .5)'],
 		},
 		'oklch()': {
@@ -130,7 +120,6 @@ export default {
 				dev: '#specifying-oklch-lch',
 				mdn: 'color_value/oklch',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['oklch(0% 0 0)', 'oklch(40.101% 0.12332 21.555 / .5)'],
 		},
 		'color()': {
@@ -139,7 +128,6 @@ export default {
 				dev: '#color-function',
 				mdn: 'color_value/color',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: [
 				'color(.2 .4 .6)',
 				'color(display-p3 .2. 4 .6)',
@@ -166,7 +154,6 @@ export default {
 				dev: '#cmyk-colors',
 				mdn: 'color_value/device-cmyk',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: ['device-cmyk(.2 .3 .4 .5)', 'device-cmyk(.2 .3 .4 .5 / .5)', 'device-cmyk(.2 .3 .4 .5 / 50%)'],
 		},
 		'percentages in opacity': {

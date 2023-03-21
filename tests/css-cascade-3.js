@@ -10,12 +10,12 @@ export default {
 		'last-snapshot': 2018,
 	},
 	values: {
+		properties: ['color', 'font-weight', 'background-image', 'width'],
 		unset: {
 			links: {
 				tr: '#inherit-initial',
 				dev: '#inherit-initial',
 			},
-			properties: ['color', 'font-weight', 'background-image', 'width'],
 			tests: 'unset',
 		},
 	},

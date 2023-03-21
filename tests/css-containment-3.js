@@ -33,13 +33,13 @@ export default {
 		},
 	},
 	values: {
+		properties: ['width'],
 		cqw: {
 			links: {
 				tr: '#container-lengths',
 				dev: '#container-lengths',
 				mdn: 'length',
 			},
-			properties: ['width'],
 			tests: '5cqw',
 		},
 		cqh: {
@@ -48,7 +48,6 @@ export default {
 				dev: '#container-lengths',
 				mdn: 'length',
 			},
-			properties: ['width'],
 			tests: '5cqh',
 		},
 		cqi: {
@@ -57,7 +56,6 @@ export default {
 				dev: '#container-lengths',
 				mdn: 'length',
 			},
-			properties: ['width'],
 			tests: '5cqi',
 		},
 		cqb: {
@@ -66,7 +64,6 @@ export default {
 				dev: '#container-lengths',
 				mdn: 'length',
 			},
-			properties: ['width'],
 			tests: '5cqb',
 		},
 		cqmin: {
@@ -75,7 +72,6 @@ export default {
 				dev: '#container-lengths',
 				mdn: 'length',
 			},
-			properties: ['width'],
 			tests: '5cqmin',
 		},
 		cqmax: {
@@ -84,7 +80,6 @@ export default {
 				dev: '#container-lengths',
 				mdn: 'length',
 			},
-			properties: ['width'],
 			tests: '5cqmax',
 		},
 	},

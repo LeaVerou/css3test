@@ -9,12 +9,12 @@ export default {
 		'first-snapshot': 2015,
 	},
 	values: {
+		properties: ['background-image', 'list-style-image', 'border-image', 'content'],
 		'linear-gradient()': {
 			links: {
 				tr: '#linear-gradients',
 				dev: '#linear-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'content'],
 			tests: [
 				'linear-gradient(white, black)',
 				'linear-gradient(to right, white, black)',
@@ -31,7 +31,6 @@ export default {
 				tr: '#radial-gradients',
 				dev: '#radial-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'content'],
 			tests: [
 				'radial-gradient(white, black)',
 				'radial-gradient(circle, white, black)',
@@ -53,7 +52,6 @@ export default {
 				tr: '#repeating-gradients',
 				dev: '#repeating-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'content'],
 			tests: 'repeating-linear-gradient(white, black)',
 		},
 		'repeating-radial-gradient()': {
@@ -61,7 +59,6 @@ export default {
 				tr: '#repeating-gradients',
 				dev: '#repeating-gradients',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'content'],
 			tests: 'repeating-radial-gradient(white, black)',
 		},
 	},

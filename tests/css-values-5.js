@@ -7,11 +7,11 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['width', 'padding'],
 		'attr()': {
 			links: {
 				dev: '#attr-notation',
 			},
-			properties: ['width', 'padding'],
 			tests: [
 				'attr(data-px)',
 				'attr(data-px px)',
@@ -33,7 +33,6 @@ export default {
 			links: {
 				dev: '#toggle-notation',
 			},
-			properties: ['width', 'padding'],
 			tests: ['toggle(1px, 2px)'],
 		},
 		'toggle() with keywords': {

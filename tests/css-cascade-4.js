@@ -9,12 +9,12 @@ export default {
 		'first-snapshot': 2020,
 	},
 	values: {
+		properties: ['color', 'font-weight', 'background-image', 'all'],
 		revert: {
 			links: {
 				tr: '#default',
 				dev: '#default',
 			},
-			properties: ['color', 'font-weight', 'background-image', 'all'],
 			tests: 'revert',
 		},
 	},

@@ -8,13 +8,13 @@ export default {
 		stability: 'stable',
 	},
 	values: {
+		properties: ['font-family'],
 		'system-ui': {
 			links: {
 				tr: '#system-ui-def',
 				dev: '#system-ui-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'system-ui',
 		},
 		'emoji': {
@@ -23,7 +23,6 @@ export default {
 				dev: '#emoji-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'emoji',
 		},
 		'math': {
@@ -32,7 +31,6 @@ export default {
 				dev: '#math-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'math',
 		},
 		'fangsong': {
@@ -41,7 +39,6 @@ export default {
 				dev: '#fangsong-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'fangsong',
 		},
 		'ui-serif': {
@@ -50,7 +47,6 @@ export default {
 				dev: '#ui-serif-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'ui-serif',
 		},
 		'ui-sans-serif': {
@@ -59,7 +55,6 @@ export default {
 				dev: '#ui-sans-serif-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'ui-sans-serif',
 		},
 		'ui-monospace': {
@@ -68,7 +63,6 @@ export default {
 				dev: '#ui-monospace-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'ui-monospace',
 		},
 		'ui-rounded': {
@@ -77,7 +71,6 @@ export default {
 				dev: '#ui-rounded-def',
 				mdn: 'font-family',
 			},
-			properties: ['font-family'],
 			tests: 'ui-rounded',
 		},
 		'xxx-large': {

@@ -9,12 +9,12 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 		'paint()': {
 			links: {
 				tr: '#paint-notation',
 				dev: '#paint-notation',
 			},
-			properties: ['background-image', 'list-style-image', 'border-image', 'cursor', 'content'],
 			tests: [
 				'paint(company-logo)',
 				'paint(simple, blue)',

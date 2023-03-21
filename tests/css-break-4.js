@@ -8,13 +8,13 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['break-before', 'break-after'],
 		always: {
 			links: {
 				tr: '#valdef-break-before-always',
 				dev: '#valdef-break-before-always',
 				mdn: 'break-before#values',
 			},
-			properties: ['break-before', 'break-after'],
 			tests: 'always',
 		},
 		all: {
@@ -23,7 +23,6 @@ export default {
 				dev: '#valdef-break-before-all',
 				mdn: 'break-before#values',
 			},
-			properties: ['break-before', 'break-after'],
 			tests: 'all',
 		},
 	},

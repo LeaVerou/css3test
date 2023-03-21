@@ -10,13 +10,13 @@ export default {
 		'last-snapshot': 2021,
 	},
 	values: {
+		properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 		rgba: {
 			links: {
 				tr: '#rgba-color',
 				dev: '#rgba-color',
 				mdn: 'color_value/rgba()',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: 'rgba(0,0,0,.5)',
 		},
 		hsl: {
@@ -25,7 +25,6 @@ export default {
 				dev: '#hsl-color',
 				mdn: 'color_value/hsl()',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: 'hsl(0,0%,0%)',
 		},
 		hsla: {
@@ -34,7 +33,6 @@ export default {
 				dev: '#hsla-color',
 				mdn: 'color_value/hsla()',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: 'hsl(0,0%,0%,.5)',
 		},
 		currentColor: {
@@ -43,7 +41,6 @@ export default {
 				dev: '#currentcolor',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: 'currentColor',
 		},
 		transparent: {
@@ -52,7 +49,6 @@ export default {
 				dev: '#transparent',
 				mdn: 'color_value',
 			},
-			properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
 			tests: 'transparent',
 		},
 	},

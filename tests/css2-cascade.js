@@ -10,12 +10,12 @@ export default {
 		'last-snapshot': 1998,
 	},
 	values: {
+		properties: ['color', 'border-color'],
 		inherit: {
 			links: {
 				tr: '#value-def-inherit',
 				dev: '#value-def-inherit',
 			},
-			properties: ['color', 'border-color'],
 			tests: 'inherit',
 		},
 	},

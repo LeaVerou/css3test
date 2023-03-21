@@ -7,11 +7,11 @@ export default {
 		stability: 'experimental',
 	},
 	values: {
+		properties: ['width', 'padding'],
 		'env()': {
 			links: {
 				dev: '#env-function',
 			},
-			properties: ['width', 'padding'],
 			tests: [
 				'env(safe-area-inset-top)',
 				'env(safe-area-inset-top, 12px)',
