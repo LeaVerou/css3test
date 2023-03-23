@@ -339,8 +339,8 @@ Test.prototype = {
 };
 
 Test.groups = {
-	values: function (test, label, tests) {
-		var properties = tests.properties,
+	values: function (test, name, tests) {
+		var properties = tests[name].properties || tests.properties,
 			failed = [];
 
 		for (var j = 0, property; (property = properties[j++]); ) {
