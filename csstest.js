@@ -462,6 +462,16 @@ window.runTests = function (filter = '') {
 			}
 		} else if (filter === '' && Specs[spec].status && Specs[spec].status['first-snapshot'] === 1998) {
 			continue;
+		} else if (filter === 'csswg' && Specs[spec].links.devtype && !Specs[spec].links.devtype.match(/fxtf/)) {
+			continue;
+		} else if (filter === 'houdini' && (!('devtype' in Specs[spec].links) || !Specs[spec].links.devtype.match(/houdini/))) {
+			continue;
+		} else if (filter === 'svgwg' && Specs[spec].links.devtype !== 'svgwg') {
+			continue;
+		} else if (filter === 'whatwg' && Specs[spec].links.devtype !== 'whatwg') {
+			continue;
+		} else if (filter === 'others' && (!('devtype' in Specs[spec].links) || Specs[spec].links.devtype.match(/fxtf|houdini|svgwg|whatwg/))) {
+			continue;
 		}
 
 		specs.push({
