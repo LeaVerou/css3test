@@ -1,5 +1,6 @@
 import compat from './tests/compat.js';
 import cssAlign3 from './tests/css-align-3.js';
+import cssAnchorPosition1 from './tests/css-anchor-position-1.js';
 import cssAnimationWorklet1 from './tests/css-animation-worklet-1.js';
 import cssAnimations1 from './tests/css-animations-1.js';
 import cssAnimations2 from './tests/css-animations-2.js';
@@ -158,6 +159,7 @@ export default {
 	'css2-visufx': css2VisuFx,
 	'css2-visuren': css2VisuRen,
 	'css-align-3': cssAlign3,
+	'css-anchor-position-1': cssAnchorPosition1,
 	'css-animation-1': cssAnimations1,
 	'css-animation-2': cssAnimations2,
 	'css-animation-worklet-1': cssAnimationWorklet1,
