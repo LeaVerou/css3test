@@ -6,6 +6,7 @@ import cssAnimations1 from './tests/css-animations-1.js';
 import cssAnimations2 from './tests/css-animations-2.js';
 import cssBackgrounds3 from './tests/css-backgrounds-3.js';
 import cssBackgrounds4 from './tests/css-backgrounds-4.js';
+import cssBorders4 from './tests/css-borders-4.js';
 import cssBox3 from './tests/css-box-3.js';
 import cssBox4 from './tests/css-box-4.js';
 import cssBreak3 from './tests/css-break-3.js';
@@ -165,6 +166,7 @@ export default {
 	'css-animation-worklet-1': cssAnimationWorklet1,
 	'css-backgrounds-3': cssBackgrounds3,
 	'css-backgrounds-4': cssBackgrounds4,
+	'css-borders-4': cssBorders4,
 	'css-box-3': cssBox3,
 	'css-box-4': cssBox4,
 	'css-break-3': cssBreak3,
