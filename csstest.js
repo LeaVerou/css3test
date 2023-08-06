@@ -395,13 +395,7 @@ Test.groups = {
 	},
 
 	'Media queries': function (test) {
-		var matches = matchMedia(test);
-		if (matches.media !== 'invalid' && matches.matches) {
-			return { success: true };
-		} else {
-			var matches = matchMedia('not ' + test);
-			return { success: matches.media !== 'invalid' && matches.matches };
-		}
+		return Supports.mq(test);
 	},
 };
 
