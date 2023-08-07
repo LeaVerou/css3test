@@ -456,13 +456,10 @@ aside li:last-child {
 }
 
 footer {
-	margin-left: 65%;
-	font-size: 85%;
 	word-spacing: -1px;
 }
 
 footer > p {
-	margin-left: 2em;
 	padding: 1em 0;
 	border-top: 1px solid var(--secondary-border-color);
 	text-align: center;
