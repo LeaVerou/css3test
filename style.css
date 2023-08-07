@@ -103,11 +103,13 @@ h2 {
 	line-height: 1;
 }
 
-body > section section section h1 {
+#content > section section section h1 {
+	display: flex;
+	align-items: center;
 	font-size: 180%;
 }
 
-section section section section h1 {
+#content > section section section section h1 {
 	background-color: var(--tertiary-background-color);
 	color: var(--tertiary-foreground-color);
 	font-size: 120%;
@@ -116,7 +118,7 @@ section section section section h1 {
 }
 
 h1 > .score {
-	float: right;
+	margin-left: auto;
 	font-weight: bold;
 }
 
@@ -212,10 +214,13 @@ body > h1 {
 	transform: rotate(-15deg);
 }
 
+#content {
+	display: flex;
+	gap: 2em;
+}
+
 #tests {
-	float: left;
-	width: 65%;
-	margin-right: 2em;
+	flex: 2;
 }
 
 #tests #hgroup {
@@ -401,16 +406,12 @@ details li[class]::after {
 /* End emoticons */
 
 aside {
+	flex: 1;
 	font-size: 85%;
-}
-
-aside section {
-	margin-left: 66%;
 }
 
 aside .caution p {
 	padding: 1em;
-	margin-left: 2em;
 	background: var(--secondary-background-color);
 	color: var(--secondary-foreground-color);
 	text-shadow: 0 -.1em .2em var(--secondary-shadow-color);
@@ -422,7 +423,7 @@ aside h1 {
 
 aside ul {
 	margin: .5em 0;
-	padding: 0 0 0 2em;
+	padding: 0;
 }
 
 aside li {

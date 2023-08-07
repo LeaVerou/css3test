@@ -14,63 +14,65 @@
 
 <h1>The CSS3 test</h1>
 
-<section id="tests">
-	<div id="hgroup">
-		<h1>Your browser scores <strong id="score">0%</strong></h1>
-		<h2>Determined by passing <strong id="passedTests"></strong> tests out of <strong id="totalTests"></strong> total for <strong id="total"></strong> features</h2>
-	</div>
+<div id="content">
+	<section id="tests">
+		<div id="hgroup">
+			<h1>Your browser scores <strong id="score">0%</strong></h1>
+			<h2>Determined by passing <strong id="passedTests"></strong> tests out of <strong id="totalTests"></strong> total for <strong id="total"></strong> features</h2>
+		</div>
 
-	<section id="all"></section>
-</section>
-
-<aside>
-	<section class="caution">
-		<p><strong>Caution:</strong>
-		This test checks which CSS3 features the browser recognizes, <em>not</em> whether they are implemented correctly.</p>
+		<section id="all"></section>
 	</section>
 
-	<p>Time taken: <strong id="timeTaken"></strong></p>
+	<aside>
+		<section class="caution">
+			<p><strong>Caution:</strong>
+			This test checks which CSS3 features the browser recognizes, <em>not</em> whether they are implemented correctly.</p>
+		</section>
 
-	<section>
-		<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=css3testcom" id="_carbonads_js"></script>
-	</section>
+		<p>Time taken: <strong id="timeTaken"></strong></p>
 
-	<section>
-		<h1>Filter:</h1>
-		<form>
-			<select id="filter">
-				<option value="" title="All specifications including experimental ones but without CSS 2.2">All except CSS 2.2</option>
-				<option value="all" title="All specifications including experimental ones">All</option>
-				<option value="stable" title="All specifications listed in the latest CSS snapshot, their predecessors and others that won't change much anymore">Stable</option>
-				<option value="experimental" title="All specifications not listed in the latest CSS snapshot">Experimental</option>
-				<optgroup label="Standardization groups">
-					<option value="csswg" title="All specifications managed by the CSS Working Group (CSSWG) except CSS Houdini">CSS</option>
-					<option value="houdini" title="All specifications related to CSS Houdini managed by the CSS Working Group (CSSWG)">CSS Houdini</option>
-					<option value="svgwg" title="All specifications managed by the SVG Working Group (SVGWG)">SVG</option>
-					<option value="whatwg" title="All specifications managed by the Web Hypertext Application Technology Working Group (WHATWG)">WHATWG</option>
-					<option value="others" title="All specifications managed by other standardization groups">Others</option>
-				</optgroup>
-				<optgroup label="CSS snapshots">
-					<option value="1998" title="Everything included in CSS 2.2">CSS 2.2</option>
-					<option value="2007" title="All specifications marked as official part of the CSS 2007 snapshot">CSS 2007</option>
-					<option value="2010" title="All specifications marked as official part of the CSS 2010 snapshot">CSS 2010</option>
-					<option value="2015" title="All specifications marked as official part of the CSS 2015 snapshot">CSS 2015</option>
-					<option value="2017" title="All specifications marked as official part of the CSS 2017 snapshot">CSS 2017</option>
-					<option value="2018" title="All specifications marked as official part of the CSS 2018 snapshot">CSS 2018</option>
-					<option value="2020" title="All specifications marked as official part of the CSS 2020 snapshot">CSS 2020</option>
-					<option value="2021" title="All specifications marked as official part of the CSS 2021 snapshot">CSS 2021</option>
-					<option value="2022" title="All specifications marked as official part of the CSS 2022 snapshot">CSS 2022</option>
-				</optgroup>
-			</select>
-		</form>
-	</section>
+		<section>
+			<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=css3testcom" id="_carbonads_js"></script>
+		</section>
 
-	<section>
-		<h1>Specs tested:</h1>
-		<ul id="specsTested"></ul>
-		Want more tests? <a href="https://github.com/LeaVerou/css3test" target="_blank">Be my guest!</a>
-	</section>
-</aside>
+		<section>
+			<h1>Filter:</h1>
+			<form>
+				<select id="filter">
+					<option value="" title="All specifications including experimental ones but without CSS 2.2">All except CSS 2.2</option>
+					<option value="all" title="All specifications including experimental ones">All</option>
+					<option value="stable" title="All specifications listed in the latest CSS snapshot, their predecessors and others that won't change much anymore">Stable</option>
+					<option value="experimental" title="All specifications not listed in the latest CSS snapshot">Experimental</option>
+					<optgroup label="Standardization groups">
+						<option value="csswg" title="All specifications managed by the CSS Working Group (CSSWG) except CSS Houdini">CSS</option>
+						<option value="houdini" title="All specifications related to CSS Houdini managed by the CSS Working Group (CSSWG)">CSS Houdini</option>
+						<option value="svgwg" title="All specifications managed by the SVG Working Group (SVGWG)">SVG</option>
+						<option value="whatwg" title="All specifications managed by the Web Hypertext Application Technology Working Group (WHATWG)">WHATWG</option>
+						<option value="others" title="All specifications managed by other standardization groups">Others</option>
+					</optgroup>
+					<optgroup label="CSS snapshots">
+						<option value="1998" title="Everything included in CSS 2.2">CSS 2.2</option>
+						<option value="2007" title="All specifications marked as official part of the CSS 2007 snapshot">CSS 2007</option>
+						<option value="2010" title="All specifications marked as official part of the CSS 2010 snapshot">CSS 2010</option>
+						<option value="2015" title="All specifications marked as official part of the CSS 2015 snapshot">CSS 2015</option>
+						<option value="2017" title="All specifications marked as official part of the CSS 2017 snapshot">CSS 2017</option>
+						<option value="2018" title="All specifications marked as official part of the CSS 2018 snapshot">CSS 2018</option>
+						<option value="2020" title="All specifications marked as official part of the CSS 2020 snapshot">CSS 2020</option>
+						<option value="2021" title="All specifications marked as official part of the CSS 2021 snapshot">CSS 2021</option>
+						<option value="2022" title="All specifications marked as official part of the CSS 2022 snapshot">CSS 2022</option>
+					</optgroup>
+				</select>
+			</form>
+		</section>
+
+		<section>
+			<h1>Specs tested:</h1>
+			<ul id="specsTested"></ul>
+			Want more tests? <a href="https://github.com/LeaVerou/css3test" target="_blank">Be my guest!</a>
+		</section>
+	</aside>
+</div>
 
 <footer>
 	<a id="mark" href="https://lea.verou.me"><img src="https://lea.verou.me/mark.svg" title="Lea Verou was here" alt="Lea Verou was here" /></a>
