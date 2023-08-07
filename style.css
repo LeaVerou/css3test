@@ -408,6 +408,9 @@ details li[class]::after {
 aside {
 	flex: 1;
 	font-size: 85%;
+	align-self: flex-end;
+	position: sticky;
+	bottom: 0;
 }
 
 aside .caution p {
@@ -422,6 +425,8 @@ aside h1 {
 }
 
 aside ul {
+	max-height: calc(100vh - 18em);
+	overflow: auto;
 	margin: .5em 0;
 	padding: 0;
 }
