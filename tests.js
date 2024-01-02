@@ -20,6 +20,7 @@ import cssColor4 from './tests/css-color-4.js';
 import cssColor5 from './tests/css-color-5.js';
 import cssColor6 from './tests/css-color-6.js';
 import cssColorAdjust1 from './tests/css-color-adjust-1.js';
+import cssColorHdr1 from './tests/css-color-hdr-1.js';
 import cssComposition1 from './tests/css-composition-1.js';
 import cssComposition2 from './tests/css-composition-2.js';
 import cssConditional3 from './tests/css-conditional-3.js';
@@ -182,6 +183,7 @@ export default {
 	'css-colors-5': cssColor5,
 	'css-colors-6': cssColor6,
 	'css-colors-adjust-1': cssColorAdjust1,
+	'css-colors-hdr-1': cssColorHdr1,
 	'css-composition-1': cssComposition1,
 	'css-composition-2': cssComposition2,
 	'css-conditional-3': cssConditional3,
