@@ -117,7 +117,7 @@
 					return {
 						success:
 							(style.sheet.cssRules[pos].style && style.sheet.cssRules[pos].style.length >= 1) ||
-							!!style.sheet.cssRules[pos][camelCase(descriptor)],
+							style.sheet.cssRules[pos][camelCase(descriptor)] !== undefined,
 					};
 				} else {
 					return { success: false };
