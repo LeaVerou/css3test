@@ -29,6 +29,8 @@ export default {
 			tests: [
 				'anchor(inside)',
 				'anchor(outside)',
+				'anchor(inside, 20px)',
+				'anchor(outside, 30%)',
 				'anchor(top)',
 				'anchor(left)',
 				'anchor(right)',
@@ -39,17 +41,15 @@ export default {
 				'anchor(self-end)',
 				'anchor(center)',
 				'anchor(30%)',
-				'anchor(inside, 20px)',
-				'anchor(outside, 30%)',
 				'anchor(top, 20px)',
 				'anchor(start, 30%)',
 				'anchor(30%, 20px)',
 				'anchor(--anchor top)',
 				'anchor(--anchor top, 20px)',
 				'anchor(--anchor top, 5%)',
-				'anchor(implicit top)',
-				'anchor(implicit top, 20px)',
-				'anchor(implicit top, 5%)',
+				'anchor(auto top)',
+				'anchor(auto top, 20px)',
+				'anchor(auto top, 5%)',
 			],
 		},
 		'anchor-center': {
@@ -89,20 +89,13 @@ export default {
 				'anchor-size(--anchor width)',
 				'anchor-size(--anchor width, 20px)',
 				'anchor-size(--anchor width, 5%)',
-				'anchor-size(implicit width)',
-				'anchor-size(implicit width, 20px)',
-				'anchor-size(implicit width, 5%)',
+				'anchor-size(width)',
+				'anchor-size(width, 20px)',
+				'anchor-size(width, 5%)',
 			],
 		},
 	},
 	properties: {
-		'anchor-default': {
-			links: {
-				tr: '#anchor-default',
-				dev: '#anchor-default',
-			},
-			tests: ['--anchor', 'implicit'],
-		},
 		'anchor-name': {
 			links: {
 				tr: '#name',
@@ -190,12 +183,16 @@ export default {
 				'span-self-start span-self-end',
 			],
 		},
+		// The old name is anchor-default
 		'position-anchor': {
 			links: {
 				tr: '#position-anchor',
 				dev: '#position-anchor',
 			},
-			tests: ['implicit', '--fallback'],
+			tests: [
+				'auto', // the old name is implicit, https://github.com/w3c/csswg-drafts/issues/10312#issuecomment-2112984254
+				'--fallback'
+			],
 		},
 		'position-try': {
 			links: {
