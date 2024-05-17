@@ -84,6 +84,12 @@ export default {
 				'min-height',
 				'max-width',
 				'max-height',
+				'inline-size',
+				'block-size',
+				'min-inline-size',
+				'max-inline-size',
+				'min-block-size',
+				'max-block-size',
 			],
 			tests: [
 				'anchor-size(width)',
