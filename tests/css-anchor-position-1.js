@@ -61,6 +61,8 @@ export default {
 				'align-self',
 				'justify-items',
 				'align-items',
+				'place-self',
+				'place-items',
 			],
 			tests: [
 				'anchor-center',
