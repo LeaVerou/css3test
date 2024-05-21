@@ -51,9 +51,9 @@ export default {
 				'anchor(--anchor top)',
 				'anchor(--anchor top, 20px)',
 				'anchor(--anchor top, 5%)',
-				'anchor(auto top)',
-				'anchor(auto top, 20px)',
-				'anchor(auto top, 5%)',
+				'anchor(top)',
+				'anchor(top, 20px)',
+				'anchor(top, 5%)',
 			],
 		},
 		'anchor-center': {
