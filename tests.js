@@ -80,6 +80,7 @@ import cssScrollbars1 from './tests/css-scrollbars-1.js';
 import cssShadowParts1 from './tests/css-shadow-parts-1.js';
 import cssShapes1 from './tests/css-shapes-1.js';
 import cssShapes2 from './tests/css-shapes-2.js';
+import cssSizeAdjust1 from './tests/css-size-adjust-1.js';
 import cssSizing3 from './tests/css-sizing-3.js';
 import cssSizing4 from './tests/css-sizing-4.js';
 import cssSpeech1 from './tests/css-speech-1.js';
@@ -244,6 +245,7 @@ export default {
 	'css-shadow-parts-1': cssShadowParts1,
 	'css-shapes-1': cssShapes1,
 	'css-shapes-2': cssShapes2,
+	'css-size-adjust-1': cssSizeAdjust1,
 	'css-sizing-3': cssSizing3,
 	'css-sizing-4': cssSizing4,
 	'css-speech-1': cssSpeech1,
