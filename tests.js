@@ -63,6 +63,7 @@ import cssNav1 from './tests/css-nav-1.js';
 import cssNesting1 from './tests/css-nesting-1.js';
 import cssOverflow3 from './tests/css-overflow-3.js';
 import cssOverflow4 from './tests/css-overflow-4.js';
+import cssOverflow5 from './tests/css-overflow-5.js';
 import cssOverscroll1 from './tests/css-overscroll-1.js';
 import cssPage3 from './tests/css-page-3.js';
 import cssPaintApi1 from './tests/css-paint-api-1.js';
@@ -228,6 +229,7 @@ export default {
 	'css-nesting-1': cssNesting1,
 	'css-overflow-3': cssOverflow3,
 	'css-overflow-4': cssOverflow4,
+	'css-overflow-5': cssOverflow5,
 	'css-overscroll-1': cssOverscroll1,
 	'css-page-3': cssPage3,
 	'css-paint-api-1': cssPaintApi1,
