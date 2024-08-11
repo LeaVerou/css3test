@@ -139,14 +139,13 @@
 			for (var i = 0; i < _.prefixes.length; i++) {
 				var prefixed = selector.replace(/^(:+)/, '$1' + _.prefixes[i]);
 
-				try {
-					document.querySelector(prefixed);
+				if (CSS.supports('selector(' + prefixed + ')')) {
 					_.selector.cached[selector] = true;
 					return {
 						success: true,
-						propertyPrefix: _.prefixes[i],
+						prefix: _.prefixes[i],
 					};
-				} catch (e) {}
+				}
 			}
 
 			_.selector.cached[selector] = false;
