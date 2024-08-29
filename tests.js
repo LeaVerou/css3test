@@ -138,6 +138,7 @@ import resizeObserver1 from './tests/resize-observer-1.js';
 import scrollAnimations1 from './tests/scroll-animations-1.js';
 import selectors3 from './tests/selectors-3.js';
 import selectors4 from './tests/selectors-4.js';
+import selectors5 from './tests/selectors-5.js';
 import svg2Coords from './tests/svg2-coords.js';
 import svg2Geometry from './tests/svg2-geometry.js';
 import svg2Interact from './tests/svg2-interact.js';
@@ -291,6 +292,7 @@ export default {
 	'scroll-animations-1': scrollAnimations1,
 	'selectors-3': selectors3,
 	'selectors-4': selectors4,
+	'selectors-5': selectors5,
 	'svg2-coords': svg2Coords,
 	'svg2-geometry': svg2Geometry,
 	'svg2-interact': svg2Interact,
