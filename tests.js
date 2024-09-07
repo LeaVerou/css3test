@@ -150,6 +150,7 @@ import svg2Text from './tests/svg2-text.js';
 import webAnimations1 from './tests/web-animations-1.js';
 import webAnimations2 from './tests/web-animations-2.js';
 import webVtt from './tests/webvtt.js';
+import webxrDomOverlays1 from './tests/webxr-dom-overlays-1.js';
 
 
 export default {
@@ -305,4 +306,5 @@ export default {
 	'web-animations-1': webAnimations1,
 	'web-animations-2': webAnimations2,
 	webvtt: webVtt,
+	'webxr-dom-overlays-1': webxrDomOverlays1,
 };
