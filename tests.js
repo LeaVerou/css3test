@@ -56,6 +56,7 @@ import cssLinkParams1 from './tests/css-link-params-1.js';
 import cssLists3 from './tests/css-lists-3.js';
 import cssLogical1 from './tests/css-logical-1.js';
 import cssMasking1 from './tests/css-masking-1.js';
+import cssMixins1 from './tests/css-mixins-1.js';
 import cssMulticol1 from './tests/css-multicol-1.js';
 import cssMulticol2 from './tests/css-multicol-2.js';
 import cssNamespaces3 from './tests/css-namespaces-3.js';
@@ -223,6 +224,7 @@ export default {
 	'css-lists-3': cssLists3,
 	'css-logical-1': cssLogical1,
 	'css-masking-1': cssMasking1,
+	'css-mixins-1': cssMixins1,
 	'css-multicol-1': cssMulticol1,
 	'css-multicol-2': cssMulticol2,
 	'css-namespaces-3': cssNamespaces3,
