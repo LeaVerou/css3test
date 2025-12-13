@@ -6,7 +6,15 @@ export default {
 	properties: {
 		'text-decoration': {
 			link: '#text-decoration-property',
-			tests: ['underline solid blue 1px'],
+			tests: [
+				'underline solid blue 1px',
+				'underline 0.3em limegreen',
+				'underline wavy 2px blue',
+			],
+		},
+		'text-decoration-inset': {
+			link: '#text-decoration-property',
+			tests: ['auto', '20px', '20px 1em'],
 		},
 		'text-decoration-skip': {
 			link: '#text-decoration-skip-property',
@@ -57,21 +65,11 @@ export default {
 		},
 		'text-decoration-skip-spaces': {
 			link: '#text-decoration-skip-spaces-property',
-			tests: [
-				'none',
-				'all',
-				'start',
-				'end',
-				'start end',
-			],
+			tests: ['none', 'all', 'start', 'end', 'start end'],
 		},
 		'text-decoration-trim': {
 			link: '#text-decoration-skip-inset-property',
-			tests: [
-				'auto',
-				'10px',
-				'5px 10px',
-			],
+			tests: ['auto', '10px', '5px 10px'],
 		},
 		'text-underline-offset': {
 			link: '#underline-offset',
@@ -79,12 +77,7 @@ export default {
 		},
 		'text-underline-position': {
 			link: '#text-underline-position-property',
-			tests: [
-				'from-font',
-				'from-font left',
-				'from-font right',
-				'right from-font',
-			],
+			tests: ['from-font', 'from-font left', 'from-font right', 'right from-font'],
 		},
 		'text-decoration-thickness': {
 			link: '#text-decoration-thickness-property',
