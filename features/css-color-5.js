@@ -4,7 +4,13 @@ export default {
 	link: 'css-color-5',
 	status: 'experimental',
 	values: {
-		properties: ['color', 'background-color', 'border-color', 'text-decoration-color', 'column-rule-color'],
+		properties: [
+			'color',
+			'background-color',
+			'border-color',
+			'text-decoration-color',
+			'column-rule-color',
+		],
 		'color-mix()': {
 			link: '#color-mix',
 			mdn: 'color_value/color-mix',
@@ -25,7 +31,11 @@ export default {
 			mdn: 'color_value',
 			tests: ['color-adjust(peru lightness -20%)'],
 		},
-
+		'contrast-color()': {
+			link: '#contrast-color',
+			mdn: 'color_value/contrast-color',
+			tests: ['contrast-color(red)', 'contrast-color(rgb(255, 0, 0, .2))'],
+		},
 		'relative color': {
 			link: '#relative-colors',
 			mdn: 'color_value',
@@ -37,20 +47,22 @@ export default {
 				'oklab(from oklab(54.3% -22.5% -5%) calc(1.0 - l) calc(a * 0.8) b)',
 				'oklch(from oklch(52.6% 0.115 44.6deg) l c  calc(h + 90))',
 				'color(from color(srgb 0 0 0 / 60%) srgb alpha 0.6 0.6 / 0.9)',
-				'linear-gradient(in oklab to right, oklch(from hsl(none 3% 50%) calc(l * 0.8) c h), #4C3)'
+				'linear-gradient(in oklab to right, oklch(from hsl(none 3% 50%) calc(l * 0.8) c h), #4C3)',
 			],
 		},
-
 		'light-dark()': {
 			link: '#light-dark',
-			mdn: 'light-dark',
+			mdn: 'color_value/light-dark',
 			tests: ['light-dark(green, red)'],
 		},
-
 		'device-cmyk()': {
 			link: '#cmyk-colors',
 			mdn: 'color_value/device-cmyk',
-			tests: ['device-cmyk(.2 .3 .4 .5)', 'device-cmyk(.2 .3 .4 .5 / .5)', 'device-cmyk(.2 .3 .4 .5 / 50%)'],
+			tests: [
+				'device-cmyk(.2 .3 .4 .5)',
+				'device-cmyk(.2 .3 .4 .5 / .5)',
+				'device-cmyk(.2 .3 .4 .5 / 50%)',
+			],
 		},
 	},
 	globals: {
@@ -60,5 +72,5 @@ export default {
 			extends: 'CSSRule',
 			members: ['name', 'src', 'renderingIntent', 'components'],
 		},
-	}
+	},
 };
